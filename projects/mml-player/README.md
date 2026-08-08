@@ -2,8 +2,8 @@
 
 2002年に作成・公開したJava製MMLプレイヤーのソースコードを、歴史的資料として再収録したものです。
 
-- 新サイトの記事（公開予定）: `https://asamomiji.jp/articles/mml-player-archive/`
-- 旧記事: `https://asamomiji.jp/blog/mml-player/`
+- 新サイトの記事（公開予定）: [Java製MMLプレイヤーを作った記録（2002年）](https://asamomiji.jp/articles/mml-player-archive/)
+- 旧記事: [MMLプレイヤ](https://asamomiji.jp/blog/mml-player/)
 - 原作成期間: 2002年5月12日〜2002年6月30日
 - Git収録日: 2026年8月8日
 - 原テスト環境: J2SDK 1.4.1 Beta、Windows XP Home
