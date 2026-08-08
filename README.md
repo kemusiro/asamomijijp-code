@@ -6,6 +6,10 @@
 
 詳細は[リポジトリ運用方針](docs/repository-policy.md)を参照してください。
 
+## 収録プロジェクト
+
+- [MMLプレイヤー](projects/mml-player/README.md) — 2002年に作成したJava製MMLプレイヤーの歴史的ソースコード
+
 ## ライセンス
 
 所有者が作成して本リポジトリで公開するコードは、個別の明示がない限り[BSD 2-Clause License](LICENSE)に従います。第三者コードや別ライセンスの対象は、各プロジェクトで個別に明示します。
