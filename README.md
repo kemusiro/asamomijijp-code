@@ -8,6 +8,7 @@
 
 ## 収録プロジェクト
 
+- [MicroPythonコードエミッタの実機ベンチマーク](projects/micropython-performance-techniques/README.md) — Pico 2 W上でbytecode、native、Viper、Thumbインラインアセンブラを比較した検証コードと測定記録
 - [MMLプレイヤー](projects/mml-player/README.md) — 2002年に作成したJava製MMLプレイヤーの歴史的ソースコード
 - [micro:bit 5-queen](projects/microbit-five-queens/README.md) — 2018年にPythonとC++で5-queen問題を解いた実験コード
 

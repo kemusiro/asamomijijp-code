@@ -1,0 +1,17 @@
+run,workload,emitter,min_us,median_us,max_us,speedup_vs_bytecode
+1,integer,bytecode,797638,797669,797703,1.000
+1,integer,native,371833,371860,371897,2.145
+1,integer,viper,29531,29551,29589,26.993
+1,integer,asm_thumb,10851,10870,10909,73.383
+1,buffer,bytecode,424698,424722,424735,1.000
+1,buffer,native,308832,308854,308868,1.375
+1,buffer,viper,21520,21536,21546,19.721
+1,buffer,asm_thumb,4688,4705,4713,90.270
+2,integer,bytecode,797642,797662,797705,1.000
+2,integer,native,371830,371856,371897,2.145
+2,integer,viper,29529,29551,29587,26.993
+2,integer,asm_thumb,10851,10870,10909,73.382
+2,buffer,bytecode,424698,424722,424732,1.000
+2,buffer,native,308832,308844,308860,1.375
+2,buffer,viper,21520,21531,21545,19.726
+2,buffer,asm_thumb,4687,4704,4712,90.290

@@ -1,0 +1,279 @@
+MicroPython 1.28.0 mpy-cross -march=armv7emsp
+GNU Arm Embedded objdump 2.36.1, -D -b binary -marm -Mforce-thumb
+
+===== sum_native =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5fe      	push	{r1, r2, r3, r4, r5, r6, r7, lr}
+   2:	b086      	sub	sp, #24
+   4:	6847      	ldr	r7, [r0, #4]
+   6:	68be      	ldr	r6, [r7, #8]
+   8:	68ff      	ldr	r7, [r7, #12]
+   a:	683f      	ldr	r7, [r7, #0]
+   c:	9000      	str	r0, [sp, #0]
+   e:	2004      	movs	r0, #4
+  10:	9003      	str	r0, [sp, #12]
+  12:	a800      	add	r0, sp, #0
+  14:	f8d7 40b4 	ldr.w	r4, [r7, #180]	; 0xb4
+  18:	47a0      	blx	r4
+  1a:	9c08      	ldr	r4, [sp, #32]
+  1c:	9d07      	ldr	r5, [sp, #28]
+  1e:	2501      	movs	r5, #1
+  20:	f000 b80c 	b.w	0x3c
+  24:	4622      	mov	r2, r4
+  26:	4629      	mov	r1, r5
+  28:	200e      	movs	r0, #14
+  2a:	6cbb      	ldr	r3, [r7, #72]	; 0x48
+  2c:	4798      	blx	r3
+  2e:	4605      	mov	r5, r0
+  30:	2203      	movs	r2, #3
+  32:	4621      	mov	r1, r4
+  34:	200f      	movs	r0, #15
+  36:	6cbb      	ldr	r3, [r7, #72]	; 0x48
+  38:	4798      	blx	r3
+  3a:	4604      	mov	r4, r0
+  3c:	4620      	mov	r0, r4
+  3e:	6c3b      	ldr	r3, [r7, #64]	; 0x40
+  40:	4798      	blx	r3
+  42:	2800      	cmp	r0, #0
+  44:	d1ee      	bne.n	0x24
+  46:	4628      	mov	r0, r5
+  48:	f000 b800 	b.w	0x4c
+  4c:	b006      	add	sp, #24
+  4e:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+  50:	0419      	lsls	r1, r3, #16
+  52:	0903      	lsrs	r3, r0, #4
+
+===== sum_viper =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5fe      	push	{r1, r2, r3, r4, r5, r6, r7, lr}
+   2:	6847      	ldr	r7, [r0, #4]
+   4:	68be      	ldr	r6, [r7, #8]
+   6:	68ff      	ldr	r7, [r7, #12]
+   8:	683f      	ldr	r7, [r7, #0]
+   a:	4608      	mov	r0, r1
+   c:	4611      	mov	r1, r2
+   e:	461d      	mov	r5, r3
+  10:	2900      	cmp	r1, #0
+  12:	f040 8004 	bne.w	0x1e
+  16:	2201      	movs	r2, #1
+  18:	4290      	cmp	r0, r2
+  1a:	f000 8007 	beq.w	0x2c
+  1e:	f240 0202 	movw	r2, #2
+  22:	f2c0 0202 	movt	r2, #2
+  26:	f8d7 30b0 	ldr.w	r3, [r7, #176]	; 0xb0
+  2a:	4798      	blx	r3
+  2c:	6828      	ldr	r0, [r5, #0]
+  2e:	2102      	movs	r1, #2
+  30:	68fb      	ldr	r3, [r7, #12]
+  32:	4798      	blx	r3
+  34:	4604      	mov	r4, r0
+  36:	2500      	movs	r5, #0
+  38:	f000 b807 	b.w	0x4a
+  3c:	4629      	mov	r1, r5
+  3e:	1909      	adds	r1, r1, r4
+  40:	460d      	mov	r5, r1
+  42:	2201      	movs	r2, #1
+  44:	4621      	mov	r1, r4
+  46:	1a89      	subs	r1, r1, r2
+  48:	460c      	mov	r4, r1
+  4a:	4620      	mov	r0, r4
+  4c:	2800      	cmp	r0, #0
+  4e:	d1f5      	bne.n	0x3c
+  50:	4628      	mov	r0, r5
+  52:	2102      	movs	r1, #2
+  54:	693b      	ldr	r3, [r7, #16]
+  56:	4798      	blx	r3
+  58:	f000 b800 	b.w	0x5c
+  5c:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+
+===== sum_asm =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5f2      	push	{r1, r4, r5, r6, r7, lr}
+   2:	2100      	movs	r1, #0
+   4:	1809      	adds	r1, r1, r0
+   6:	3801      	subs	r0, #1
+   8:	d1fc      	bne.n	0x4
+   a:	4608      	mov	r0, r1
+   c:	bdf2      	pop	{r1, r4, r5, r6, r7, pc}
+
+===== xor_native =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5fe      	push	{r1, r2, r3, r4, r5, r6, r7, lr}
+   2:	b08c      	sub	sp, #48	; 0x30
+   4:	6847      	ldr	r7, [r0, #4]
+   6:	68be      	ldr	r6, [r7, #8]
+   8:	68ff      	ldr	r7, [r7, #12]
+   a:	683f      	ldr	r7, [r7, #0]
+   c:	9000      	str	r0, [sp, #0]
+   e:	200a      	movs	r0, #10
+  10:	9003      	str	r0, [sp, #12]
+  12:	a800      	add	r0, sp, #0
+  14:	f8d7 40b4 	ldr.w	r4, [r7, #180]	; 0xb4
+  18:	47a0      	blx	r4
+  1a:	9c0e      	ldr	r4, [sp, #56]	; 0x38
+  1c:	9d0d      	ldr	r5, [sp, #52]	; 0x34
+  1e:	9505      	str	r5, [sp, #20]
+  20:	2101      	movs	r1, #1
+  22:	9106      	str	r1, [sp, #24]
+  24:	f000 b821 	b.w	0x6a
+  28:	9806      	ldr	r0, [sp, #24]
+  2a:	9006      	str	r0, [sp, #24]
+  2c:	900b      	str	r0, [sp, #44]	; 0x2c
+  2e:	980b      	ldr	r0, [sp, #44]	; 0x2c
+  30:	4621      	mov	r1, r4
+  32:	9107      	str	r1, [sp, #28]
+  34:	9109      	str	r1, [sp, #36]	; 0x24
+  36:	4601      	mov	r1, r0
+  38:	9008      	str	r0, [sp, #32]
+  3a:	9809      	ldr	r0, [sp, #36]	; 0x24
+  3c:	2204      	movs	r2, #4
+  3e:	6bfb      	ldr	r3, [r7, #60]	; 0x3c
+  40:	4798      	blx	r3
+  42:	9009      	str	r0, [sp, #36]	; 0x24
+  44:	980c      	ldr	r0, [sp, #48]	; 0x30
+  46:	4602      	mov	r2, r0
+  48:	9909      	ldr	r1, [sp, #36]	; 0x24
+  4a:	200a      	movs	r0, #10
+  4c:	6cbb      	ldr	r3, [r7, #72]	; 0x48
+  4e:	4798      	blx	r3
+  50:	9908      	ldr	r1, [sp, #32]
+  52:	9a07      	ldr	r2, [sp, #28]
+  54:	9007      	str	r0, [sp, #28]
+  56:	4610      	mov	r0, r2
+  58:	9a07      	ldr	r2, [sp, #28]
+  5a:	6bfb      	ldr	r3, [r7, #60]	; 0x3c
+  5c:	4798      	blx	r3
+  5e:	2203      	movs	r2, #3
+  60:	9906      	ldr	r1, [sp, #24]
+  62:	200e      	movs	r0, #14
+  64:	6cbb      	ldr	r3, [r7, #72]	; 0x48
+  66:	4798      	blx	r3
+  68:	9006      	str	r0, [sp, #24]
+  6a:	9806      	ldr	r0, [sp, #24]
+  6c:	9905      	ldr	r1, [sp, #20]
+  6e:	9006      	str	r0, [sp, #24]
+  70:	9105      	str	r1, [sp, #20]
+  72:	460a      	mov	r2, r1
+  74:	4601      	mov	r1, r0
+  76:	2000      	movs	r0, #0
+  78:	6cbb      	ldr	r3, [r7, #72]	; 0x48
+  7a:	4798      	blx	r3
+  7c:	6c3b      	ldr	r3, [r7, #64]	; 0x40
+  7e:	4798      	blx	r3
+  80:	2800      	cmp	r0, #0
+  82:	d1d1      	bne.n	0x28
+  84:	6838      	ldr	r0, [r7, #0]
+  86:	f000 b800 	b.w	0x8a
+  8a:	b00c      	add	sp, #48	; 0x30
+  8c:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+  8e:	084b      	lsrs	r3, r1, #1
+  90:	0a05      	lsrs	r5, r0, #8
+  92:	0b09      	lsrs	r1, r1, #12
+
+===== xor_viper =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5fe      	push	{r1, r2, r3, r4, r5, r6, r7, lr}
+   2:	b086      	sub	sp, #24
+   4:	6847      	ldr	r7, [r0, #4]
+   6:	68be      	ldr	r6, [r7, #8]
+   8:	68ff      	ldr	r7, [r7, #12]
+   a:	683f      	ldr	r7, [r7, #0]
+   c:	4608      	mov	r0, r1
+   e:	4611      	mov	r1, r2
+  10:	461d      	mov	r5, r3
+  12:	2900      	cmp	r1, #0
+  14:	f040 8004 	bne.w	0x20
+  18:	2203      	movs	r2, #3
+  1a:	4290      	cmp	r0, r2
+  1c:	f000 8007 	beq.w	0x2e
+  20:	f240 0206 	movw	r2, #6
+  24:	f2c0 0206 	movt	r2, #6
+  28:	f8d7 30b0 	ldr.w	r3, [r7, #176]	; 0xb0
+  2c:	4798      	blx	r3
+  2e:	6828      	ldr	r0, [r5, #0]
+  30:	4604      	mov	r4, r0
+  32:	6868      	ldr	r0, [r5, #4]
+  34:	2102      	movs	r1, #2
+  36:	68fb      	ldr	r3, [r7, #12]
+  38:	4798      	blx	r3
+  3a:	9008      	str	r0, [sp, #32]
+  3c:	68a8      	ldr	r0, [r5, #8]
+  3e:	2102      	movs	r1, #2
+  40:	68fb      	ldr	r3, [r7, #12]
+  42:	4798      	blx	r3
+  44:	9007      	str	r0, [sp, #28]
+  46:	9d08      	ldr	r5, [sp, #32]
+  48:	4620      	mov	r0, r4
+  4a:	2105      	movs	r1, #5
+  4c:	68fb      	ldr	r3, [r7, #12]
+  4e:	4798      	blx	r3
+  50:	9006      	str	r0, [sp, #24]
+  52:	9500      	str	r5, [sp, #0]
+  54:	2100      	movs	r1, #0
+  56:	9101      	str	r1, [sp, #4]
+  58:	f000 b81a 	b.w	0x90
+  5c:	9801      	ldr	r0, [sp, #4]
+  5e:	9001      	str	r0, [sp, #4]
+  60:	9005      	str	r0, [sp, #20]
+  62:	9806      	ldr	r0, [sp, #24]
+  64:	9002      	str	r0, [sp, #8]
+  66:	9805      	ldr	r0, [sp, #20]
+  68:	4601      	mov	r1, r0
+  6a:	9802      	ldr	r0, [sp, #8]
+  6c:	5c40      	ldrb	r0, [r0, r1]
+  6e:	9002      	str	r0, [sp, #8]
+  70:	9807      	ldr	r0, [sp, #28]
+  72:	4602      	mov	r2, r0
+  74:	9902      	ldr	r1, [sp, #8]
+  76:	4051      	eors	r1, r2
+  78:	9806      	ldr	r0, [sp, #24]
+  7a:	9003      	str	r0, [sp, #12]
+  7c:	9805      	ldr	r0, [sp, #20]
+  7e:	9102      	str	r1, [sp, #8]
+  80:	4601      	mov	r1, r0
+  82:	9803      	ldr	r0, [sp, #12]
+  84:	9a02      	ldr	r2, [sp, #8]
+  86:	5442      	strb	r2, [r0, r1]
+  88:	2201      	movs	r2, #1
+  8a:	9901      	ldr	r1, [sp, #4]
+  8c:	1889      	adds	r1, r1, r2
+  8e:	9101      	str	r1, [sp, #4]
+  90:	9801      	ldr	r0, [sp, #4]
+  92:	9900      	ldr	r1, [sp, #0]
+  94:	9001      	str	r0, [sp, #4]
+  96:	9100      	str	r1, [sp, #0]
+  98:	460a      	mov	r2, r1
+  9a:	4601      	mov	r1, r0
+  9c:	4291      	cmp	r1, r2
+  9e:	bfb4      	ite	lt
+  a0:	2001      	movlt	r0, #1
+  a2:	2000      	movge	r0, #0
+  a4:	2800      	cmp	r0, #0
+  a6:	d1d9      	bne.n	0x5c
+  a8:	6838      	ldr	r0, [r7, #0]
+  aa:	f000 b800 	b.w	0xae
+  ae:	b006      	add	sp, #24
+  b0:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+
+===== xor_asm =====
+Disassembly of section .data:
+
+00000000 <.data>:
+   0:	b5f2      	push	{r1, r4, r5, r6, r7, lr}
+   2:	7803      	ldrb	r3, [r0, #0]
+   4:	4053      	eors	r3, r2
+   6:	7003      	strb	r3, [r0, #0]
+   8:	3001      	adds	r0, #1
+   a:	3901      	subs	r1, #1
+   c:	d1f9      	bne.n	0x2
+   e:	bdf2      	pop	{r1, r4, r5, r6, r7, pc}
