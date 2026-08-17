@@ -1,0 +1,32 @@
+META,implementation,(name='micropython', version=(1, 28, 0, ''), _machine='Raspberry Pi Pico 2 W with RP2350', _mpy=7942, _build='RPI_PICO2_W', _thread='unsafe')
+META,uname,(sysname='rp2', nodename='rp2', release='1.28.0', version='v1.28.0 on 2026-04-06 (GNU 14.2.0 MinSizeRel)', machine='Raspberry Pi Pico 2 W with RP2350')
+META,cpu_hz,150000000
+META,width,64
+META,height,48
+META,samples,11
+VERIFY,hits,1481
+VERIFY,pixel_sum,323731
+RAW,raytrace,bytecode,1,192609
+RAW,raytrace,native,1,97606
+RAW,raytrace,native,2,97617
+RAW,raytrace,bytecode,2,192488
+RAW,raytrace,bytecode,3,192404
+RAW,raytrace,native,3,97614
+RAW,raytrace,native,4,97622
+RAW,raytrace,bytecode,4,192419
+RAW,raytrace,bytecode,5,192477
+RAW,raytrace,native,5,97624
+RAW,raytrace,native,6,97609
+RAW,raytrace,bytecode,6,192471
+RAW,raytrace,bytecode,7,192494
+RAW,raytrace,native,7,97627
+RAW,raytrace,native,8,97616
+RAW,raytrace,bytecode,8,192375
+RAW,raytrace,bytecode,9,192450
+RAW,raytrace,native,9,97627
+RAW,raytrace,native,10,97612
+RAW,raytrace,bytecode,10,192481
+RAW,raytrace,bytecode,11,192409
+RAW,raytrace,native,11,97595
+SUMMARY,raytrace,bytecode,192375,192471,192609,1.000
+SUMMARY,raytrace,native,97595,97616,97627,1.972

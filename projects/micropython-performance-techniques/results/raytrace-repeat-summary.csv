@@ -1,0 +1,5 @@
+run,variant,min_us,median_us,max_us,speedup_vs_bytecode
+1,bytecode,192382,192472,192547,1.000
+1,native,97605,97619,97634,1.972
+2,bytecode,192375,192471,192609,1.000
+2,native,97595,97616,97627,1.972
