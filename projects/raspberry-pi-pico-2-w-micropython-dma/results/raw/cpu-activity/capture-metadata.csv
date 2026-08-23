@@ -1,0 +1,4 @@
+output_hz,sample_hz,purpose,dma_elapsed_us,activity_toggles,capture_date
+100000,10000000,cpu_signal,1310410,140589,2026-08-23
+1000000,10000000,cpu_signal,131119,14056,2026-08-23
+10000000,20000000,cpu_signal,13187,1402,2026-08-23

@@ -1,0 +1,4 @@
+file,pattern_hz,sample_hz,capture_bytes,ideal_us,dma_us,cpu_us,cpu_over_dma,background_iterations,checksum,recovered_bits,bit_errors,bit_samples_min,bit_samples_median,bit_samples_max
+capture_10000000Hz_100000000Sps.bin,10000000,100000000,16384,1310.720,1340,71208,53.140,190,5825c281,13100,0,9.000,10.000,11.000
+capture_1000000Hz_10000000Sps.bin,1000000,10000000,16384,13107.200,13138,71558,5.447,2098,30bff8ca,13100,0,9.000,10.000,11.000
+capture_5000000Hz_50000000Sps.bin,5000000,50000000,16384,2621.440,2651,71171,26.847,403,7f2aae4a,13100,0,9.000,10.000,11.000

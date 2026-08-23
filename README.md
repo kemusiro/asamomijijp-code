@@ -8,6 +8,7 @@
 
 ## 収録プロジェクト
 
+- [Raspberry Pi Pico 2 WのMicroPython DMA実験](projects/raspberry-pi-pico-2-w-micropython-dma/README.md) — メモリー間DMA、PIO TX連携、PIO＋DMA簡易ロジックアナライザーのコードと実測ログ
 - [MicroPythonコードエミッタの実機ベンチマーク](projects/micropython-performance-techniques/README.md) — Pico 2 W上でbytecode、native、Viper、Thumbインラインアセンブラを比較した検証コードと測定記録
 - [MMLプレイヤー](projects/mml-player/README.md) — 2002年に作成したJava製MMLプレイヤーの歴史的ソースコード
 - [micro:bit 5-queen](projects/microbit-five-queens/README.md) — 2018年にPythonとC++で5-queen問題を解いた実験コード

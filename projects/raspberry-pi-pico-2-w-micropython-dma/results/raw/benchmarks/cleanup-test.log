@@ -1,0 +1,7 @@
+VERIFY,active_before_exception,1
+VERIFY,exception_caught,1
+VERIFY,state_machine_active_after_cleanup,0
+VERIFY,gp16_after_cleanup,0
+VERIFY,first_dma_channel,0
+VERIFY,replacement_dma_channel,0
+STATUS,ok

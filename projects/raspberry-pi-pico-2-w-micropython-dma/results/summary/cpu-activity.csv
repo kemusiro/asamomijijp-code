@@ -1,0 +1,4 @@
+file,output_hz,sample_hz,purpose,captured_bits,mismatch_count,bit_width_min_us,bit_width_median_us,bit_width_max_us,dio1_transition_count,dio1_transition_interval_median_us,dma_elapsed_us,activity_toggles,capture_date
+10000000Hz_20000000Sps_cpu_signal.csv,10000000,20000000,cpu_signal,1755,0,0.100000000,0.100000000,0.100000000,15,9.350000000,13187,1402,2026-08-23
+1000000Hz_10000000Sps_cpu_signal.csv,1000000,10000000,cpu_signal,354,0,1.000000000,1.000000000,1.000000000,35,9.300000000,131119,14056,2026-08-23
+100000Hz_10000000Sps_cpu_signal.csv,100000,10000000,cpu_signal,39,0,10.000000000,10.000000000,10.000000000,40,9.300000000,1310410,140589,2026-08-23
