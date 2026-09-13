@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*.mpy
+build/
+output/
+recordings/
+network_config.py
+network_config.*.py
+!network_config.example.py
