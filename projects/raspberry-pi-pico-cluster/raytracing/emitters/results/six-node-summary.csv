@@ -1,0 +1,6 @@
+variant,worker_timeout_seconds,e2e_ms,worker_compute_total_ms,change_vs_original,result
+original,5,35052.376,197771,baseline,pass
+native,5,30249.129,168991,13.7% faster,pass
+limited_viper,5,,,,all workers timed out
+limited_viper_diagnostic,10,35314.571,199063,0.7% slower,pass
+native_inline_asm,5,30832.078,172316,12.0% faster,pass
