@@ -13,8 +13,8 @@
 - 実際のWeb IDEで入力例→.m5f2読み込み→Python再生成: 成功。
 - 読み込んだSetupのSleep 2を3へ編集し、time.sleep(3)への再生成: 成功。
 - PORT.A版のUiFlow2読み込み、編集可能なブロックの復元、`RGBUnit((33, 32), 3)`のPython再生成: 成功。
-- M5Stack Core2 v1.3／Unit RGB（M5STACK-U003）／UiFlow2ファームウェア`v2.5.3-CORE2`の実機実行: **未検証**。Core2本体側面へ直接接続するPORT.A版を実機確認に使う。
-- 詳しい再現手順・保存形式対応表・未検証事項: [調査記録](results/research-2026-09-21.md)。
+- M5Stack Core2 v1.3／Unit RGB（M5STACK-U003）／UiFlow2ファームウェア`v2.5.3-CORE2`の実機実行: 成功。Core2本体側面のPORT.Aへ接続し、赤2秒の後、緑1秒と消灯1秒を繰り返すことを確認した。
+- 詳しい再現手順・保存形式対応表・検証範囲: [調査記録](results/research-2026-09-21.md)。
 
 ## 実行
 
@@ -52,12 +52,12 @@ Web IDEのフォルダーメニュー→Import project from local fileで出力�
 
 - `convert.py`、`tests/`、`examples/blink.py`: 今回作成したコード。リポジトリ既定BSD-2-Clause。
 - `fixtures/`: UIで作成・保存した実験設定、取得順の7段階。SHA256.jsonで原データを特定。
-- `results/blink-port-a.m5f2`: 現在の変換器によるPORT.A版の出力。実機確認対象。
+- `results/blink-port-a.m5f2`: 現在の変換器によるPORT.A版の出力。UiFlow2で読み込み・再生成を確認した実機検証対象。
 - `results/blink.m5f2`: 初期調査時のPORT.B版出力。比較記録。
 - `results/roundtrip.m5f2`: 上記をWeb IDEへ読み込んで再保存した結果。
 - `results/roundtrip.py`: Web IDEエディターから全選択・コピーして取得した生成Pythonを転記。実行していない。
 - `results/edited-sleep3.m5f2`: 読み込み後、ブロック側だけで2秒→3秒に変更して再保存。
-- `results/roundtrip-port-a.m5f2`、`results/roundtrip-port-a.py`: PORT.A設定をUiFlow2で再保存し、再生成Pythonを採取した結果。
+- `results/roundtrip-port-a.m5f2`、`results/roundtrip-port-a.py`: PORT.A設定をUiFlow2で再保存し、再生成Pythonを採取した結果。後者をCore2のRAM上で実行して点灯を確認した。
 - 公式音声サンプル全文は再配布せず、URL・ハッシュ・観察だけを記録。
 
 第三者ツール由来の生成物は独自コードと区別する。[THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)参照。
