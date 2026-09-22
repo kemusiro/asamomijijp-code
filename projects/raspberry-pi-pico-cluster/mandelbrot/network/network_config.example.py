@@ -1,0 +1,11 @@
+"""Copy to network_config.py locally and replace every placeholder."""
+
+WIFI_SSID = "CHANGE_ME"
+WIFI_PASSWORD = "CHANGE_ME"
+MANAGER_HOST = "192.0.2.10"
+MANAGER_PORT = 8765
+UDP_PORT = 8766
+NODE_ID = "pico-01"
+WIFI_TIMEOUT_SECONDS = 20
+SOCKET_TIMEOUT_SECONDS = 30
+RECONNECT_DELAY_SECONDS = 3

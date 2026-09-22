@@ -9,6 +9,7 @@
 ## 収録プロジェクト
 
 - [Terraformで構築するALBとprivate subnetのEC2](projects/terraform-aws-iac-basics/README.md) — VPC、public/private subnet、NAT Gateway、ALB、EC2を含むAWS学習用構成
+- [Raspberry Pi Pico 2 Wクラスタ実験](projects/raspberry-pi-pico-cluster/README.md) — Raspberry Pi 5と複数Pico 2 WによるMandelbrot／レイトレーシング並列計算、実測結果、進捗動画
 - [Raspberry Pi Pico 2 WのMicroPython DMA実験](projects/raspberry-pi-pico-2-w-micropython-dma/README.md) — メモリー間DMA、PIO TX連携、PIO＋DMA簡易ロジックアナライザーのコードと実測ログ
 - [MicroPythonコードエミッタの実機ベンチマーク](projects/micropython-performance-techniques/README.md) — Pico 2 W上でbytecode、native、Viper、Thumbインラインアセンブラを比較した検証コードと測定記録
 - [MMLプレイヤー](projects/mml-player/README.md) — 2002年に作成したJava製MMLプレイヤーの歴史的ソースコード
