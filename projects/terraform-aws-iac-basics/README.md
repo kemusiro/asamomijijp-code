@@ -86,10 +86,13 @@ terraform apply destroy.tfplan
 
 - 2026年9月23日：Terraform CLI 1.16.3で`terraform fmt -check -recursive`に合格
 - 2026年9月23日：`terraform init -backend=false`でHashiCorp AWS Provider 6.66.0を選択し、`terraform validate`に合格
-- 2026年9月23日：東京リージョンのAmazon Linux 2023 x86_64 AMIと文書用IPv4 CIDRを指定し、AWSへ接続した`terraform plan`に成功。結果は29 to add、0 to change、0 to destroy
-- AWS上でのapply、疎通、再plan、destroyは未実施
+- 2026年9月23日：東京リージョン（`ap-northeast-1`）のAvailability Zone `ap-northeast-1a`と`ap-northeast-1c`で、Amazon Linux 2023 x86_64 AMI `ami-06380d26ad7176f2c`と検証端末の公開IPv4 `/32`を指定して検証
+- 作成前のplanは29 to add、0 to change、0 to destroyで、保存したplanのapplyは29 added、0 changed、0 destroyedで完了
+- ALBの2ターゲットがともに`healthy`になり、ALBへの複数回のHTTPアクセスで`Hello from a`と`Hello from c`の両方を確認
+- apply後の再planは`No changes`で、設定、state、AWS上の実状態に差分がないことを確認
+- destroy planは0 to add、0 to change、29 to destroyで、適用結果は0 added、0 changed、29 destroyed。削除後はTerraform stateが空であり、AWS APIでもALB、稼働中または停止中のEC2、非削除状態のNAT Gateway、Elastic IPが0件、VPCとEC2に付属していたEBSボリュームが`NotFound`であることを確認
 
-planでは、VPC 1個、public/private subnet各2個、Internet Gateway 1個、zonal NAT Gateway 1個、EC2 2台、ALB 1台と、その通信に必要なルート、Security Group規則、ターゲットグループ、リスナーがすべて新規作成として計画されることを確認しました。AMI ID、確認端末のCIDR、AWSアカウントIDなど、実行環境を識別する値は収録していません。
+VPC 1個、public/private subnet各2個、Internet Gateway 1個、zonal NAT Gateway 1個、EC2 2台、ALB 1台と、その通信に必要なルート、Security Group規則、ターゲットグループ、リスナーを実際に作成し、疎通確認後に削除しました。検証端末のCIDRやAWSアカウントIDなど、実行環境を識別する値は収録していません。
 
 ## 来歴、第三者要素、ライセンス
 
