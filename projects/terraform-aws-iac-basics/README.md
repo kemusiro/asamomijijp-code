@@ -2,7 +2,7 @@
 
 `asamomiji.jp`の記事「TerraformでAWSリソースをIaC化する」の完全版Terraform設定です。東京リージョンの2つのAvailability Zoneにpublic subnetとprivate subnetを配置し、internet-facing ALBからprivate subnetのEC2 2台へHTTPリクエストを転送します。
 
-掲載予定先：<https://asamomiji.jp/articles/terraform-aws-iac-basics/>（2026年9月時点では未公開）
+対応記事：<https://asamomiji.jp/articles/terraform-aws-iac-basics/>
 
 ## 構成
 
