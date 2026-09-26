@@ -2,6 +2,50 @@
 
 Arduino版と同じAQM1602XA-RN-GBW（販売コード108896）を対象とするドライバーです。`machine.I2C`または`machine.SoftI2C`の初期化済みオブジェクトを渡します。クラスはI2Cピンやクロックを変更しません。
 
+## mipでの導入
+
+プロジェクト直下の[`package.json`](../package.json)で、`aqm1602.py`とBSD-2-Clauseのライセンス文書`aqm1602.LICENSE`を導入します。外部パッケージへの依存はありません。通常はボードの`/lib`へ保存されます。サンプル・テスト・Arduino版は導入しません。
+
+以下のGitHub経由のコマンドは、この`package.json`を含む変更が`main`へ公開された後に使えます。PCに`mpremote`を用意し、MicroPythonのボードをUSB接続して実行します。PCにはインターネット接続が必要ですが、ボードのWi-Fi接続は不要です。
+
+```sh
+mpremote mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json
+mpremote exec "from aqm1602 import Aqm1602; print(hex(Aqm1602.ADDRESS))"
+```
+
+後者は`0x3e`を表示し、LCDへの通信を行わずにインポートを確認します。複数のボードを接続している場合は、`mpremote connect <ポート名> mip install ...`で対象を指定してください。導入はボードのファイルへ書き込み、同名の導入先ファイルは上書きします。ルートに手動配置した`aqm1602.py`がある場合は、古い版を読み込まないよう配置を整理してください。
+
+ネットワーク接続済みで`mip`が使えるボードでは、REPLからも導入できます。
+
+```python
+import mip
+
+mip.install("github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json")
+```
+
+導入後は`from aqm1602 import Aqm1602`で利用できます。更新前のモジュールを既に読み込んでいる場合は、soft resetして読み直してください。
+
+### 検証済みの版を固定する
+
+上記コマンドはデフォルトブランチの内容を取得します。記事などで再現性が必要な場合は、`package.json`を含む公開済みコミットの完全なSHAを指定します。次の`COMMIT_SHA`は実際の値へ置き換えてください。
+
+```sh
+mpremote mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json@COMMIT_SHA
+```
+
+ボード上では同じSHAを`mip.install(..., version="COMMIT_SHA")`に渡します。`package.json`の`version`は配布版の情報であり、それだけで取得元のGitコミットを固定するものではありません。
+
+### 公開前のローカル導入確認
+
+プロジェクトルートで次を実行すると、GitHubへの公開前にローカルの定義からボードへ導入できます。
+
+```sh
+mpremote mip install ./package.json
+mpremote exec "from aqm1602 import Aqm1602; print(hex(Aqm1602.ADDRESS))"
+```
+
+実際の表示確認は、下記の配線・最小例を使用してください。配布形式は[MicroPython公式のパッケージ管理仕様](https://docs.micropython.org/en/latest/reference/packages.html#writing-publishing-packages)に従います。
+
 ## Pico 2 Wの接続例
 
 - MicroPython 1.29.0

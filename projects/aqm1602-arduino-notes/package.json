@@ -1,0 +1,13 @@
+{
+  "urls": [
+    [
+      "aqm1602.py",
+      "micropython/aqm1602.py"
+    ],
+    [
+      "aqm1602.LICENSE",
+      "LICENSE"
+    ]
+  ],
+  "version": "1.0.0"
+}

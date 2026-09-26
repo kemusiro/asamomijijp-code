@@ -4,7 +4,7 @@
 
 2026-09-26に記事内の説明用クラスを起点として新規実装しました。Arduino版は`Print`を継承し、動的メモリー確保なしで動作します。MicroPython版は初期化済みのI2Cバスを受け取ります。両版で自動テストを行い、Pico 2 W（3.3 V）で実LCDの表示・機能を確認しています。Arduino版はUNO R4 WiFi／Minima（5 V）でも実機確認済みです。詳細は[検証記録](VALIDATION.md)を参照してください。
 
-- [MicroPython版の導入・API・実行方法](micropython/README.md)
+- [MicroPython版の導入・API・実行方法](micropython/README.md)（`package.json`によるmip導入に対応）
 - 以下はArduino版の導入とAPIです。
 
 ## Arduino版の導入と最小例
