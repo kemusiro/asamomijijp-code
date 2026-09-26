@@ -1,0 +1,28 @@
+2026-09-26: Pico 2 W, MicroPython 1.29.0
+Firmware version: v1.29.0 on 2026-08-24 (GNU 16.1.0 MinSizeRel)
+Machine: Raspberry Pi Pico 2 W with RP2350
+LCD: AQM1602XA-RN-GBW, 108896 (owner confirmed)
+Wiring: 3.3 V, SDA GP16, SCL GP17, onboard pull-ups enabled (owner reported)
+
+Probe:
+I2C(0, freq=100000, scl=17, sda=16, timeout=50000)
+['0x3e']
+
+Fake-I2C suite on the device:
+PASS: MicroPython driver initialization, controls, RAM, validation, failures
+
+Basic example:
+I2C addresses: ['0x3e']
+LCD writes completed; ready: True
+Owner visual confirmation: both lines readable and correct.
+
+Features example:
+STEP 1: diamond glyph, cursor and blinking block
+STEP 2: scroll left four positions, then right four
+STEP 3: display off, then on with text retained
+STEP 4: CBA at the right end of the second line
+STEP 5: second line is a space followed by 99
+DONE: all I2C writes ACKed; visual result must be checked separately
+
+Repeated once at owner request with the same script; all writes succeeded.
+Owner visual confirmation after repeat: all demonstrated features displayed correctly.

@@ -1,0 +1,12 @@
+2026-09-26 Arduino-Pico 5.7.0 / Pico 2 W / AQM1602XA
+3.3 V, SDA=GP16, SCL=GP17, 100 kHz, contrast=35
+READY: Arduino Pico2W basic display
+Owner visually confirmed both basic lines.
+START: features in 5 seconds
+glyph / cursor / blink
+scroll left / right
+display OFF / ON
+CBA at lower right
+100 -> space99
+PASS: all feature writes; visual confirmation required
+Owner visually confirmed all listed feature stages and final display.
