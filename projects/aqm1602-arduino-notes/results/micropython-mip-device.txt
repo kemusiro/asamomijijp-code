@@ -1,0 +1,22 @@
+Date: 2026-09-26
+mpremote: 1.29.0
+Port: /dev/cu.usbmodem31301
+Published commit: 3dd51c0d97a653415a655eee6a16f57069dacbc2
+
+$ mpremote connect /dev/cu.usbmodem31301 mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json@3dd51c0d97a653415a655eee6a16f57069dacbc2
+Install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json
+Installing github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json to /lib
+Installing: /lib/aqm1602.py
+Installing: /lib/aqm1602.LICENSE
+Done
+
+Device verification after automatic soft reset (no mount):
+(name='micropython', version=(1, 29, 0, ''), _machine='Raspberry Pi Pico 2 W with RP2350', _mpy=7942, _build='RPI_PICO2_W', _thread='unsafe')
+MODULE: /lib/aqm1602.py
+SHA256: /lib/aqm1602.LICENSE 935da954cade597c79a68aefb1a813e4cd698908d1034f0b5bc2649527eeac10
+SHA256: /benchmark.py ead6024967cdb12b346b27eece6d0ddd8347be5585a6c8b304390fe778c2d00e
+SHA256: /network_protocol.py e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+SHA256: /mandelbrot_core.py 3e4971b512b67f105cf89710bae8da25b87d8d95f74abc99f1663b983a6c9a3b
+SHA256: /lib/aqm1602.py 87d26bc779abde95e90b39d5a8912b381c6605e2f3028f5d16024cbdb17e47e6
+PASS: installed files match published sources; existing files unchanged
+PASS: MicroPython driver initialization, controls, RAM, validation, failures

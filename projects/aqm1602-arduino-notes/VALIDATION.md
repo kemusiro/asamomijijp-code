@@ -112,7 +112,29 @@ Arduino版の実機確認は上記のPico 2 W（3.3 V）とUNO R4 WiFi／Minima�
 - `sh tests/run.sh`: 成功（既存Arduino版ホストテスト）。
 - `git diff --check`: 成功。
 
-以上はホスト上の静的検査・自動テスト。今回の配布定義による実機への`mip`導入、公開後のGitHub経由の取得、新たな実LCD表示試験は未実施。既存の実機確認記録とは区別する。公開前のローカル導入と公開後の取得・インポート確認手順は[MicroPython版README](micropython/README.md)に記載した。
+以上はホスト上の静的検査・自動テスト。続いて所有者の指示により、公開後の実機導入検証を実施した。
+
+### 公開済みパッケージの実機導入
+
+- 日付: 2026-09-26
+- PC側ツール: mpremote 1.29.0
+- ボード: Raspberry Pi Pico 2 W with RP2350、MicroPython 1.29.0（`v1.29.0 on 2026-08-24 (GNU 16.1.0 MinSizeRel)`）
+- シリアルポート: `/dev/cu.usbmodem31301`
+- 配布元: 公開済みコミット`3dd51c0d97a653415a655eee6a16f57069dacbc2`
+
+```sh
+mpremote connect /dev/cu.usbmodem31301 mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json@3dd51c0d97a653415a655eee6a16f57069dacbc2
+```
+
+GitHub経由の取得と`/lib/aqm1602.py`・`/lib/aqm1602.LICENSE`の導入が成功。導入前は`/lib`と同名モジュールが存在しないことを確認した。自動soft reset後に、`mount`を使わず導入済みモジュールをインポートし、`aqm1602.__file__ == "/lib/aqm1602.py"`と`Aqm1602.ADDRESS == 0x3e`を確認した。
+
+導入した2ファイルのSHA-256は公開元のローカルファイルと一致。既存の`benchmark.py`、`mandelbrot_core.py`、`network_protocol.py`は導入前後のSHA-256が一致し、それ以外のファイル追加がないことも確認した。
+
+導入済みモジュールを読み込んだ状態で、既存の`micropython/tests/test_driver.py`をRAM上で実行し、初期化・制御・RAMモデル・引数検査・通信失敗処理の全テストが成功した。テスト用スクリプトはボードへ保存していない。ログは[results/micropython-mip-device.txt](results/micropython-mip-device.txt)。ドライバーとライセンスは導入した状態で残している。
+
+続いて所有者がLCD電源とプルアップ先3.3 V、SDA=GP16、SCL=GP17、GND共通の配線を確認した。`mount`を使わず、導入済み`/lib/aqm1602.py`の読み込み元を確認して`micropython/examples/basic.py`を実行。I2C scanは`['0x3e']`、全送信成功、`ready=True`。上段「AQM1602 / Pico2W」、下段「MicroPython 1.29」がともに正常に読めることを所有者が目視確認した。LCD表示ログは[results/micropython-mip-lcd.txt](results/micropython-mip-lcd.txt)。サンプルはRAM上で実行し、ボードへ保存していない。
+
+今回確認したのはPC経由の`mpremote mip install`と導入済みモジュールによる基本2行表示。ボード単体のネットワーク経由の`mip.install()`は未実施。外字・スクロール等の機能表示は今回再試験せず、先の実機確認記録を参照する。導入・確認手順は[MicroPython版README](micropython/README.md)を参照。
 
 ## 記事との対応
 

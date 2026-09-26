@@ -1,0 +1,10 @@
+Date: 2026-09-26
+Driver: /lib/aqm1602.py installed via mip from 3dd51c0d97a653415a655eee6a16f57069dacbc2
+Wiring confirmed by owner: LCD and pull-ups 3.3 V, SDA GP16, SCL GP17, common GND
+Command: mpremote connect /dev/cu.usbmodem31301 exec "import aqm1602; print('MODULE:', aqm1602.__file__); assert aqm1602.__file__ == '/lib/aqm1602.py'" run micropython/examples/basic.py
+
+MODULE: /lib/aqm1602.py
+I2C addresses: ['0x3e']
+LCD writes completed; ready: True
+
+Owner visual confirmation: both lines AQM1602 / Pico2W and MicroPython 1.29 are readable and correct.

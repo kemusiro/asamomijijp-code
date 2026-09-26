@@ -7,6 +7,19 @@
 - [MicroPython版の導入・API・実行方法](micropython/README.md)（`package.json`によるmip導入に対応）
 - 以下はArduino版の導入とAPIです。
 
+## MicroPython版をmipで導入する
+
+MicroPythonのボードをPCへUSB接続し、PC側の`mpremote`で次を実行します。ボード側のWi-Fi設定は不要です。
+
+```sh
+mpremote mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json
+mpremote exec "from aqm1602 import Aqm1602; print(hex(Aqm1602.ADDRESS))"
+```
+
+[`package.json`](package.json)は、通常ボードの`/lib`へ`aqm1602.py`と`aqm1602.LICENSE`を導入します。外部パッケージへの依存はありません。2つ目のコマンドはLCDと通信せず、`0x3e`を表示してインポートを確認します。
+
+Pico 2 W／MicroPython 1.29.0では、公開済みコミット`3dd51c0d97a653415a655eee6a16f57069dacbc2`を指定した導入、導入済みモジュールの単体テスト、LCDの基本2行表示を確認しました。同じ版を導入するには上記URLの末尾へ`@3dd51c0d97a653415a655eee6a16f57069dacbc2`を付けます。配線・使用例・ボード単体での導入方法は[MicroPython版README](micropython/README.md)、確認範囲は[検証記録](VALIDATION.md)を参照してください。
+
 ## Arduino版の導入と最小例
 
 このフォルダー全体をArduinoのライブラリフォルダーへ`Aqm1602`という名前で配置するか、Arduino CLIの`--library`で指定します。`src/`だけをコピーするとサンプルや説明が欠けるため、フォルダー全体を使用してください。

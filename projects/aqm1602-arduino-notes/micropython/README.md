@@ -6,7 +6,7 @@ Arduino版と同じAQM1602XA-RN-GBW（販売コード108896）を対象とする
 
 プロジェクト直下の[`package.json`](../package.json)で、`aqm1602.py`とBSD-2-Clauseのライセンス文書`aqm1602.LICENSE`を導入します。外部パッケージへの依存はありません。通常はボードの`/lib`へ保存されます。サンプル・テスト・Arduino版は導入しません。
 
-以下のGitHub経由のコマンドは、この`package.json`を含む変更が`main`へ公開された後に使えます。PCに`mpremote`を用意し、MicroPythonのボードをUSB接続して実行します。PCにはインターネット接続が必要ですが、ボードのWi-Fi接続は不要です。
+GitHubで公開している`package.json`を使って導入します。PCに`mpremote`を用意し、MicroPythonのボードをUSB接続して実行します。PCにはインターネット接続が必要ですが、ボードのWi-Fi接続は不要です。
 
 ```sh
 mpremote mip install github:kemusiro/asamomijijp-code/projects/aqm1602-arduino-notes/package.json
@@ -45,6 +45,8 @@ mpremote exec "from aqm1602 import Aqm1602; print(hex(Aqm1602.ADDRESS))"
 ```
 
 実際の表示確認は、下記の配線・最小例を使用してください。配布形式は[MicroPython公式のパッケージ管理仕様](https://docs.micropython.org/en/latest/reference/packages.html#writing-publishing-packages)に従います。
+
+Pico 2 W／MicroPython 1.29.0では、公開済みコミット`3dd51c0d97a653415a655eee6a16f57069dacbc2`からのPC経由の導入、導入済みモジュールの単体テスト、下記の基本2行表示を確認しました。詳細は[検証記録](../VALIDATION.md)を参照してください。
 
 ## Pico 2 Wの接続例
 
