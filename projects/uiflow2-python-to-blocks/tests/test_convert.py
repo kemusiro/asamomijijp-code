@@ -2,9 +2,10 @@ import ast
 import json
 import unittest
 import xml.etree.ElementTree as ET
-from convert import BASE, TEMPLATE, ConversionError, convert, parse
+from convert import BASE, TEMPLATE, ConversionError, convert, parse, parse_program
 
 SOURCE = (BASE / 'examples/blink.py').read_text()
+GENERATED_SOURCE = (BASE / 'examples/blink-uiflow2-generated.py').read_text()
 
 
 class ConverterTests(unittest.TestCase):
@@ -56,6 +57,41 @@ class ConverterTests(unittest.TestCase):
             original = next(n for n in expected.body if isinstance(n, ast.FunctionDef) and n.name == fn.name)
             self.assertEqual([ast.dump(n) for n in fn.body],
                              [ast.dump(n) for n in prefixes[fn.name] + original.body])
+
+    def test_generated_python_full_input(self):
+        parsed = parse_program(GENERATED_SOURCE)
+        self.assertEqual(parsed.mode, 'generated')
+        self.assertEqual(parsed.operations, parse(SOURCE))
+        self.assertEqual(convert(GENERATED_SOURCE), convert(SOURCE))
+
+    def test_generated_page_metadata_is_applied(self):
+        source = GENERATED_SOURCE.replace(
+            '"rotation":1,"background":"#ffffff"',
+            '"rotation":2,"background":"#123456"')
+        source = source.replace('Widgets.setRotation(1)', 'Widgets.setRotation(2)')
+        source = source.replace('bg_c=0xffffff', 'bg_c=0x123456')
+        project = convert(source)
+        self.assertEqual(project['components'][0]['backgroundColor'], '#123456')
+        self.assertEqual(project['screen'][0]['rotation'], 2)
+
+    def test_generated_metadata_is_required_and_checked(self):
+        cases = [
+            GENERATED_SOURCE.replace(
+                '# uiflow2-unit: {"name":"rgb_0","type":"rgb","port":"A","leds":3}\n', ''),
+            GENERATED_SOURCE.replace('"port":"A"', '"port":"B"'),
+            GENERATED_SOURCE.replace('"firmware":"v2.5.3-CORE2"', '"firmware":"other"'),
+            GENERATED_SOURCE.replace('Widgets.setRotation(1)', 'Widgets.setRotation(2)'),
+            GENERATED_SOURCE.replace('rgb_0.fill_color(0xff0000)', 'rgb_0.set_color(0xff0000)'),
+        ]
+        for source in cases:
+            with self.subTest(source=source), self.assertRaises(ConversionError):
+                parse_program(source)
+
+    def test_generated_unknown_code_reports_location(self):
+        source = GENERATED_SOURCE.replace(
+            '  time.sleep(2)', '  time.sleep(2)\n  value = 1')
+        with self.assertRaisesRegex(ConversionError, r'line \d+, column \d+: unsupported statement'):
+            parse_program(source)
 
     def test_observed_editability(self):
         original = json.loads((BASE / 'results/roundtrip.m5f2').read_text())
