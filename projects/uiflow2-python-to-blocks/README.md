@@ -13,16 +13,26 @@
 - 本体: M5Stack Core2 v1.3
 - UiFlow2: V2.5.3
 - ファームウェア: `v2.5.3-CORE2`
-- Unit: RGB LED Unit（SK6812、M5STACK-U003）、PORT.A、LED 3個
+- Unit: RGB LED Unit（SK6812、M5STACK-U003）、プロファイル接続PORT.A、LED 3個（公式標準はPORT.B）
 - 画面: `page0`一つ
 - 対応命令: `time.sleep(整数)`、`rgb_0.fill_color(整数)`
 
 本体、UiFlow2、ファームウェア、Unitのいずれかが異なるPythonは、このプロファイルの入力として扱わない。
-Unit追加は、初期化・メソッド・保存JSON・Blockly XMLの対応表と検証用fixtureをUnitごとに追加して行う。
+Unit追加は、公式ランタイム実装と同一タグのサンプル対を調べたうえで、初期化・メソッド・保存JSON・Blockly XMLの対応表とV2.5.3検証用fixtureをUnitごとに追加して行う。
+
+## 仕様の根拠
+
+機械可読な対応プロファイルは[`profile.json`](profile.json)に置く。変換器はこのファイルからプロファイルID、ファームウェア、RGB UnitのLED数、検証対象PORT.AのGPIOを読み込む。
+
+M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropython)のタグ[`2.5.3`](https://github.com/m5stack/uiflow-micropython/tree/2.5.3)、コミット[`50e440780492aa847378c7d3477ab912f7063bac`](https://github.com/m5stack/uiflow-micropython/commit/50e440780492aa847378c7d3477ab912f7063bac)をAPI仕様の一次資料として固定した。参照ファイル、SHA-256、採用した仕様、公式ソースだけでは決められない範囲は[公式ソース参照記録](docs/official-uiflow-micropython-2.5.3.md)に記載する。
+
+公式例はRGB UnitをPORT.B、`RGBUnit((36, 26), 3)`としている。今回のプロファイルはCore2 v1.3本体側面への接続を対象に、UiFlow2 V2.5.3の往復変換と実機で確認したPORT.A、`RGBUnit((33, 32), 3)`を使う。
+
+公式リポジトリにはデバイス側ランタイム、文書、`.m5f2`とPythonのサンプル対があるが、Web IDEのBlockly生成器や`.m5f2`の完全なスキーマはない。そのため、APIと標準Port Bは公式ソース、V2.5.3保存形式とPORT.A設定は今回採取したfixtureを根拠にする。
 
 ## 現状
 
-- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト12件: 成功。
+- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト13件: 成功。
 - 短縮入力と、UiFlow2 V2.5.3が生成したPython全文の両方に対応。
 - 2026-09-26、全文入力例から生成した`.m5f2`をWeb IDEへ読み込み、編集可能なRGB／Sleepブロックと、`RGBUnit((33, 32), 3)`を含むPython再生成を確認。
 - 実際のWeb IDEで短縮入力例→`.m5f2`読み込み→Python再生成: 成功。
@@ -106,7 +116,7 @@ def loop():
 
 ## 対応範囲とエラー
 
-待機は0〜86400の整数秒、色は0〜`0xffffff`。
+待機は0〜86400の整数秒、色は0〜`0xffffff`。公式RGB APIで確認した`set_brightness`と`set_color`はプロファイルへ記録しているが、V2.5.3 Web IDEでの往復確認前なので変換対象には含めない。
 デモで往復確認した色は赤、緑（`#33ff33`）、黒。全色・全待機値を実機検証したものではない。
 
 次はエラーにする。
@@ -143,6 +153,7 @@ UiFlow2固有の初期化、更新、終了処理はプロファイルの標準�
 ## 成果物と来歴
 
 - `convert.py`、`tests/`、`examples/`: 今回作成したコード。リポジトリ既定BSD-2-Clause。
+- `profile.json`、`docs/`: 公式タグに固定した参照情報、抽出仕様、今回の検証プロファイル。第三者コード本文は複製していない。
 - `fixtures/`: UIで作成・保存した実験設定、取得順の7段階。`SHA256.json`で原データを特定。
 - `results/blink-port-a.m5f2`: 変換器によるPORT.A版の出力。UiFlow2で読み込み・再生成を確認した実機検証対象。
 - `results/roundtrip-port-a.m5f2`、`results/roundtrip-port-a.py`: PORT.A設定をUiFlow2で再保存し、再生成Pythonを採取した結果。後者をCore2のRAM上で実行して点灯を確認した。

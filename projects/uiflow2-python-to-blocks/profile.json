@@ -1,0 +1,92 @@
+{
+  "schema": 1,
+  "id": "core2-v1.3-uiflow2-v2.5.3",
+  "device": {
+    "family": "M5Stack Core2",
+    "revision": "v1.3",
+    "uiflow_type": "core2"
+  },
+  "uiflow": {
+    "ide": "V2.5.3",
+    "firmware": "v2.5.3-CORE2"
+  },
+  "official_source": {
+    "repository": "https://github.com/m5stack/uiflow-micropython",
+    "tag": "2.5.3",
+    "commit": "50e440780492aa847378c7d3477ab912f7063bac",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "m5stack/libs/unit/rgb.py",
+        "sha256": "68b3a4424e4d0d6233578b33941fce5652ce2c5df41614804a6b23a903be040c",
+        "role": "RGBUnit runtime class and port data-pin selection"
+      },
+      {
+        "path": "examples/unit/rgb/rgb_core.py",
+        "sha256": "c751ace75d97d1f8a3d42b1db4f660d6eba72fc2d5e563f19dc63bca0bc97f7e",
+        "role": "official generated-Python example"
+      },
+      {
+        "path": "examples/unit/rgb/rgb_core.m5f2",
+        "sha256": "01f3c0ee6376409e655bed78c01a94b141b9de2667280fcb69e1d18ddbea35a5",
+        "role": "official editable-project example paired with generated Python"
+      },
+      {
+        "path": "docs/source/unit/rgb.rst",
+        "sha256": "0febdaf056188917987ab349a8c2c8d41661202a5bcdb9dbe3357c09b9b3cfaf",
+        "role": "official RGB Unit API documentation source"
+      }
+    ]
+  },
+  "unit": {
+    "product_name": "RGB LED Unit (SK6812)",
+    "product_id": "M5STACK-U003",
+    "runtime_class": "RGBUnit",
+    "runtime_base": "SK6812",
+    "led_count": 3,
+    "driver_data_pin_argument_index": 1,
+    "standard_port": {
+      "name": "B",
+      "pins": [
+        36,
+        26
+      ],
+      "evidence": "official 2.5.3 rgb_core.m5f2 and rgb_core.py pair"
+    },
+    "profile_port": {
+      "name": "A",
+      "pins": [
+        33,
+        32
+      ],
+      "evidence": "UiFlow2 V2.5.3 round trip and Core2 v1.3 hardware test"
+    },
+    "official_methods": [
+      {
+        "python": "set_brightness",
+        "block": "unit_rgb_set_brightness",
+        "arguments": [
+          "brightness: 0..100"
+        ]
+      },
+      {
+        "python": "fill_color",
+        "block": "unit_rgb_set_fill_color",
+        "arguments": [
+          "RGB888 color: 0x000000..0xffffff"
+        ]
+      },
+      {
+        "python": "set_color",
+        "block": "unit_rgb_set_index_color",
+        "arguments": [
+          "LED index",
+          "RGB888 color: 0x000000..0xffffff"
+        ]
+      }
+    ],
+    "converter_supported_methods": [
+      "fill_color"
+    ]
+  }
+}

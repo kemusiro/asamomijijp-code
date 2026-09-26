@@ -14,9 +14,13 @@ import xml.etree.ElementTree as ET
 BASE = Path(__file__).resolve().parent
 TEMPLATE = BASE / 'fixtures/06-port-a.m5f2'
 TEMPLATE_SHA = json.loads((BASE / 'fixtures/SHA256.json').read_text())['06-port-a.m5f2']
+PROFILE_SPEC = json.loads((BASE / 'profile.json').read_text())
 
-PROFILE = 'core2-v1.3-uiflow2-v2.5.3'
-FIRMWARE = 'v2.5.3-CORE2'
+PROFILE = PROFILE_SPEC['id']
+FIRMWARE = PROFILE_SPEC['uiflow']['firmware']
+UNIT_SPEC = PROFILE_SPEC['unit']
+PROFILE_PORT = UNIT_SPEC['profile_port']
+RGB_PINS = tuple(PROFILE_PORT['pins'])
 DIRECTIVE_PREFIXES = {
     'convert': '# uiflow2-convert:',
     'unit': '# uiflow2-unit:',
@@ -104,7 +108,12 @@ def validate_metadata(directives):
 
     unit_token, unit = directives['unit'][0]
     require_keys(unit_token, unit, 'unit', ('name', 'type', 'port', 'leds'))
-    expected_unit = {'name': 'rgb_0', 'type': 'rgb', 'port': 'A', 'leds': 3}
+    expected_unit = {
+        'name': 'rgb_0',
+        'type': 'rgb',
+        'port': PROFILE_PORT['name'],
+        'leds': UNIT_SPEC['led_count'],
+    }
     if unit != expected_unit:
         raise ConversionError(
             f'line {unit_token.start[0]}: this prototype requires unit metadata {expected_unit}')
@@ -210,13 +219,15 @@ def require_sequence(actual, expected, label):
 def generated_setup_prefix(metadata):
     rotation = metadata['page']['rotation']
     background = int(metadata['page']['background'][1:], 16)
+    pin0, pin1 = RGB_PINS
+    leds = UNIT_SPEC['led_count']
     return ast.parse(f'''\
 global page0, rgb_0
 M5.begin()
 Widgets.setRotation({rotation})
 m5ui.init()
 page0 = m5ui.M5Page(bg_c={background})
-rgb_0 = RGBUnit((33, 32), 3)
+rgb_0 = RGBUnit(({pin0}, {pin1}), {leds})
 page0.screen_load()
 ''').body
 

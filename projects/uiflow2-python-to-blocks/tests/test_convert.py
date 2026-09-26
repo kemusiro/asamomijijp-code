@@ -2,13 +2,35 @@ import ast
 import json
 import unittest
 import xml.etree.ElementTree as ET
-from convert import BASE, TEMPLATE, ConversionError, convert, parse, parse_program
+from convert import (BASE, FIRMWARE, PROFILE, PROFILE_PORT, PROFILE_SPEC, RGB_PINS,
+                     TEMPLATE, UNIT_SPEC, ConversionError, convert, parse, parse_program)
 
 SOURCE = (BASE / 'examples/blink.py').read_text()
 GENERATED_SOURCE = (BASE / 'examples/blink-uiflow2-generated.py').read_text()
 
 
 class ConverterTests(unittest.TestCase):
+    def test_profile_is_grounded_in_pinned_official_sources(self):
+        source = PROFILE_SPEC['official_source']
+        self.assertEqual(PROFILE, 'core2-v1.3-uiflow2-v2.5.3')
+        self.assertEqual(FIRMWARE, 'v2.5.3-CORE2')
+        self.assertEqual(source['tag'], '2.5.3')
+        self.assertEqual(source['commit'], '50e440780492aa847378c7d3477ab912f7063bac')
+        self.assertEqual(UNIT_SPEC['runtime_class'], 'RGBUnit')
+        self.assertEqual(UNIT_SPEC['runtime_base'], 'SK6812')
+        self.assertEqual(UNIT_SPEC['standard_port'], {
+            'name': 'B',
+            'pins': [36, 26],
+            'evidence': 'official 2.5.3 rgb_core.m5f2 and rgb_core.py pair',
+        })
+        self.assertEqual(PROFILE_PORT['name'], 'A')
+        self.assertEqual(RGB_PINS, (33, 32))
+        self.assertEqual(UNIT_SPEC['led_count'], 3)
+        self.assertEqual(UNIT_SPEC['converter_supported_methods'], ['fill_color'])
+        self.assertEqual({item['python'] for item in UNIT_SPEC['official_methods']},
+                         {'set_brightness', 'fill_color', 'set_color'})
+        self.assertTrue(all(len(item['sha256']) == 64 for item in source['files']))
+
     def test_sequences_and_bootstrap(self):
         project = convert(SOURCE)
         original = json.loads(TEMPLATE.read_text())
