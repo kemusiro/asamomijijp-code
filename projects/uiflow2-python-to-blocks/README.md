@@ -30,6 +30,8 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 
 公式リポジトリにはデバイス側ランタイム、文書、`.m5f2`とPythonのサンプル対があるが、Web IDEのBlockly生成器や`.m5f2`の完全なスキーマはない。そのため、APIと標準Port Bは公式ソース、V2.5.3保存形式とPORT.A設定は今回採取したfixtureを根拠にする。
 
+`.m5f2`のJSON外枠、Blockly XML断片、画面・Unit・ブロック間の参照関係、確認済み項目と未確定事項は[`.m5f2`構造調査メモ](docs/m5f2-structure.md)にまとめる。
+
 ## 現状
 
 - ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト13件: 成功。
