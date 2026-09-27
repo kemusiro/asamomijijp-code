@@ -36,7 +36,7 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 
 ## 現状
 
-- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト24件（厳密変換13件、最善努力変換11件）: 成功。
+- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト28件（厳密変換13件、最善努力変換11件、自動化4件）: 成功。
 - 短縮入力と、UiFlow2 V2.5.3が生成したPython全文の両方に対応。
 - 2026-09-26、全文入力例から生成した`.m5f2`をWeb IDEへ読み込み、編集可能なRGB／Sleepブロックと、`RGBUnit((33, 32), 3)`を含むPython再生成を確認。
 - 実際のWeb IDEで短縮入力例→`.m5f2`読み込み→Python再生成: 成功。
@@ -46,6 +46,20 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 - コメントでrotationや背景色を既定値以外へ変更した出力は、Web IDEと実機ではまだ再確認していない。
 - 2026-09-26、全文入力例をCore2のRAM上で実行し、赤2秒の後、緑1秒と消灯1秒を繰り返すことを再確認。診断時の実測は赤2002ms、緑・消灯1001〜1002msだった。
 - 詳しい再現手順・保存形式対応表・検証範囲: [調査記録](results/research-2026-09-21.md)。
+
+## エディターからの自動変換
+
+`workflow.py`を使うと、VS Codeなどで保存したPythonを監視し、`.m5f2`、JSON／Markdown注記、
+完了通知用`ready.json`を`build/`へ自動更新できる。
+
+```sh
+python3 workflow.py /path/to/main.py --watch --copy-path --open-uiflow
+```
+
+VS Code用に、一回変換と保存監視のタスクも同梱する。変換成功時に`.m5f2`の絶対パスを
+クリップボードへコピーするため、macOSのファイル選択画面では`Command+Shift+G`、貼り付け、Enterで
+対象ファイルを指定できる。詳しい手順とWeb UI自動化の境界は
+[VS CodeからUiFlow2 Web IDEまでの自動化](docs/automation-workflow.md)を参照する。
 
 ## 実行
 
