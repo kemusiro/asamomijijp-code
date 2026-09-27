@@ -20,6 +20,8 @@
 本体、UiFlow2、ファームウェア、Unitのいずれかが異なるPythonは、このプロファイルの入力として扱わない。
 Unit追加は、公式ランタイム実装と同一タグのサンプル対を調べたうえで、初期化・メソッド・保存JSON・Blockly XMLの対応表とV2.5.3検証用fixtureをUnitごとに追加して行う。
 
+次の拡張対象は、画面上のLabel、TextArea、Line、Canvasと、Core2内蔵のBtnA／BtnB／BtnC、Speaker、IMU、Touch、Mic、SDカードとする。実装順、必要な中間表現、APIごとの完成条件は[Core2内蔵デバイスと画面部品への対応計画](docs/core2-builtins-extension.md)に記載する。
+
 ## 仕様の根拠
 
 機械可読な対応プロファイルは[`profile.json`](profile.json)に置く。変換器はこのファイルからプロファイルID、ファームウェア、RGB UnitのLED数、検証対象PORT.AのGPIOを読み込む。
@@ -62,6 +64,8 @@ Web IDEのフォルダーメニュー→Import project from local fileで出力�
 `exec`、`eval`、入力ファイルのimportは行わない。
 
 ## UiFlow2生成Python全文モード
+
+受理するPythonの全体構造、必須コメント、許可する文法、値域、エラー条件は[Blockを生成できるMicroPython入力仕様](docs/input-python-spec.md)にまとめる。
 
 入力例は [`examples/blink-uiflow2-generated.py`](examples/blink-uiflow2-generated.py)。
 UiFlow2からコピーした生成Pythonの先頭へ、次の3行を追加する。
