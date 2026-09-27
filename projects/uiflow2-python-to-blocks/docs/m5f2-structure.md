@@ -116,6 +116,66 @@ Core2／UiFlow2 V2.5.3の採取例には次のトップレベル項目がある�
 画面部品の属性は部品型ごとに異なる。位置、寸法、色、フォント、テキストなどは、対応する部品を
 V2.5.3で一つずつ保存して差分を採取しない限り、一般化できない。
 
+最善努力変換器がカウント例から生成したTextAreaは次の構造である。
+
+```json
+{
+  "name": "count_box",
+  "type": "lvgl_textarea",
+  "layer": 1,
+  "screenId": "builtin",
+  "id": "py2blocks_approx_1",
+  "x": 60,
+  "y": 70,
+  "width": 200,
+  "height": 90,
+  "color": "#ffffff",
+  "borderColor": "#ffffff",
+  "backgroundColor": "#003078",
+  "text": "0",
+  "placeholder": "",
+  "font": "lv.font_montserrat_48",
+  "pageId": "kS0qQwL%Oa0BAIH!",
+  "isLVGL": true,
+  "isSelected": false
+}
+```
+
+`pageId`は親の`lvgl_page`部品IDを参照する。これは変換器の現在の出力であり、このカウント例全体を
+Web IDEへ読み込んだ結果ではない。V2.5.3での最終互換性確認は残っている。
+
+### TextArea文字色の確認例
+
+2026-09-28にCore2／UiFlow2 V2.5.3でTextAreaを配置し、既定状態の文字色を変更するBlockを作成した。
+保存された中心部分は次の形だった。
+
+```xml
+<block type="lvgl_textarea_set_text_color">
+  <field name="NAME">textarea0</field>
+  <field name="MODE">DEFAULT</field>
+  <value name="COLOR">
+    <block type="color_rgb_palette">
+      <field name="COLOR">#6600cc</field>
+    </block>
+  </value>
+  <value name="OPA">
+    <shadow type="math_slider">
+      <field name="NUM">255</field>
+    </shadow>
+  </value>
+</block>
+```
+
+生成Pythonは次の形だった。
+
+```python
+textarea0.set_text_color(0x6600cc, 255, lv.PART.MAIN | lv.STATE.DEFAULT)
+```
+
+`MODE=DEFAULT`が上記part/stateへ対応することはこの例で確認した。他のMODE、part、state、透明度入力の
+全範囲は未確認である。変換器は現在、`lv.OPA.COVER`または0～255と、
+`lv.PART.MAIN | lv.STATE.DEFAULT`の組み合わせだけを専用Blockへ変換する。
+
 ## リソースとUnit: `resources`と`units`
 
 RGB Unitを追加した例では、`resources`が次の二要素を持つ。
@@ -332,6 +392,8 @@ V2.5.3 Web IDEで段階的に保存したfixtureの差分は次の通りだっ�
 JSON/XMLの構文検査だけでは、Web IDE内部の意味検査を代替できない。
 
 ## 未確定事項
+
+最新の機能別検証段階と残る実機試験は[現在仕様・対応状況](current-status.md)も参照する。
 
 現時点で次は仕様として断定できない。
 

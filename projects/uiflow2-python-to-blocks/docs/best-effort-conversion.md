@@ -52,7 +52,10 @@ SpeakerのPythonとBlockの対応は、公式の
 Blockly XMLと、`set_text_color(色, 255, lv.PART.MAIN | lv.STATE.DEFAULT)`のPython生成を確認した。
 2026-09-28にUiFlow2 V2.5.3でCore2を選択したWeb IDEを確認し、Systemカテゴリに
 `Execute mpy code (e.g. import ...)`と`Execute mpy code`が表示されることを確認した。
-この試作が生成した`.m5f2`のImport、Python再生成、実機実行は未確認である。
+TextArea文字色の最小BlockはWeb IDEで確認済みだが、最善努力変換器が生成した
+[`results/count-three.m5f2`](../results/count-three.m5f2)全体のImport、Python再生成、実機実行は未確認である。
+
+実装済みと検証済みを区別した一覧は[現在仕様・対応状況](current-status.md)に記載する。
 
 独自のBlockly型をXMLへ追加するだけでは、UiFlow2 Web IDE側に表示定義とPython生成器がないため編集できない。
 この試作では新しい非公式Block型を作らず、公式のコードBlockをフォールバックとして使う。

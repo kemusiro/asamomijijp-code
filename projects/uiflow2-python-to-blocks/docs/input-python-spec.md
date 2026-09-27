@@ -5,6 +5,11 @@
 この文書は、現在の試作変換器[`convert.py`](../convert.py)が、編集可能なUiFlow2 `.m5f2`プロジェクトへ
 変換できるPython入力を定義する。
 
+ここで定義するのは、未知の構文をエラーにする**厳密変換**の仕様である。制御構文、変数、ボタン、Speaker、
+M5Page、M5TextAreaを含む入力は[`best_effort.py`](../best_effort.py)で扱う。その近似変換規則と意味差は
+[任意MicroPythonの最善努力変換](best-effort-conversion.md)、機能別の検証段階は
+[現在仕様・対応状況](current-status.md)を参照する。
+
 対応プロファイルは次に固定する。
 
 | 項目 | 対応値 |

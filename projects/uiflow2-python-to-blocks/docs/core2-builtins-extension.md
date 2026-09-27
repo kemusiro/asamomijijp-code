@@ -242,6 +242,10 @@ ASTから直接XMLを作らず、一度この中間表現へ正規化する。Py
 
 ## 実装順序
 
+この節は今後の追加順を示す。当初の段階1・2のうち、M5Page、M5TextAreaの基本操作、Speakerの一部、
+BtnA/B/Cの`wasPressed`、変数と基本的な制御構文は実装済みである。ただし機能ごとの完成条件8項目を
+すべて満たしたわけではない。最新の検証段階は[現在仕様・対応状況](current-status.md)を正本とする。
+
 ### 段階1: 画面出力と単純な出力デバイス
 
 - `M5Label`、`M5TextArea`、`M5Line`の静的配置
@@ -249,7 +253,8 @@ ASTから直接XMLを作らず、一度この中間表現へ正規化する。Py
 - Speakerの`begin`、音量、`tone`、`stop`、`end`
 - 既存RGB UnitとSleepとの混在
 
-この段階は、リテラルと直列処理を中心に現在の変換器を拡張できる。
+M5TextAreaの静的配置、`set_one_line`、`set_text`、既定状態の`set_text_color`、Speakerの`begin`、
+音量、`tone`は実装済みである。Label、Line、Speakerの`stop`／`end`は未実装である。
 
 ### 段階2: 入力デバイスと値式
 
@@ -259,7 +264,8 @@ ASTから直接XMLを作らず、一度この中間表現へ正規化する。Py
 - IMUの加速度・角速度と軸選択
 - 変数、比較、文字列化、ラベル表示
 
-ここで中間表現を本格的に導入する。
+BtnA／BtnB／BtnCの`wasPressed`、単純な制御構文、変数、比較、文字列化は実装済みである。
+他のボタン状態、Touch、IMUは未実装である。
 
 ### 段階3: イベントと図形
 

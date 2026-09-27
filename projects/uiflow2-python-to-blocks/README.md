@@ -1,6 +1,7 @@
 # UiFlow2生成Python→編集可能ブロック変換（試作版）
 
-2026-09-21作成、2026-09-26にUiFlow2生成Python全文の入力へ拡張。
+2026-09-21作成、2026-09-26にUiFlow2生成Python全文の入力へ拡張、2026-09-28に最善努力変換と
+Core2内蔵UI・ボタン・Speakerの対応を追加。
 対象プロファイルを固定し、生成Pythonから動作が同等な編集可能UiFlow2プロジェクトを作る。
 元のブロック配置、ID、分割方法を復元するものではなく、対応する処理を標準的なブロック列へ正規化する。
 
@@ -34,6 +35,9 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 
 `.m5f2`のJSON外枠、Blockly XML断片、画面・Unit・ブロック間の参照関係、確認済み項目と未確定事項は[`.m5f2`構造調査メモ](docs/m5f2-structure.md)にまとめる。
 
+現在の完成条件、変換方式、機能別の「実装／Web確認／実機確認」、残る作業は
+[現在仕様・対応状況](docs/current-status.md)に集約する。
+
 ## 現状
 
 - ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト33件（厳密変換13件、最善努力変換16件、自動化4件）: 成功。
@@ -43,6 +47,8 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 - 読み込んだSetupのSleep 2を3へ編集し、`time.sleep(3)`への再生成: 成功。
 - PORT.A版のUiFlow2読み込み、編集可能なブロックの復元、`RGBUnit((33, 32), 3)`のPython再生成: 成功。
 - Core2 v1.3／M5STACK-U003／`v2.5.3-CORE2`の実機実行: 成功。赤2秒の後、緑1秒と消灯1秒を繰り返すことを確認した。
+- 最善努力変換の制御構文、変数、BtnA/B/C、Speaker、M5Page、M5TextArea: 自動テスト済み。TextArea文字色の最小BlockはWeb IDEでXMLとPython生成を確認した。
+- `results/count-three.m5f2`全体のWeb IDE読み込み・Python再生成と、ボタン／画面／スピーカーの実機確認: 未実施。
 - コメントでrotationや背景色を既定値以外へ変更した出力は、Web IDEと実機ではまだ再確認していない。
 - 2026-09-26、全文入力例をCore2のRAM上で実行し、赤2秒の後、緑1秒と消灯1秒を繰り返すことを再確認。診断時の実測は赤2002ms、緑・消灯1001〜1002msだった。
 - 詳しい再現手順・保存形式対応表・検証範囲: [調査記録](results/research-2026-09-21.md)。

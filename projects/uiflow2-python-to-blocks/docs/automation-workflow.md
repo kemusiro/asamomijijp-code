@@ -28,6 +28,10 @@ build/main.ready.json
 `ready.json`は全成果物の書き込みが完了したことを示す。元ソース、SHA-256、プロファイル、変換戦略、
 警告数、各成果物の絶対パスを記録する。
 
+変換戦略は`strict-native`、`best-effort-native`、`hybrid-native-and-raw`、`whole-module-raw`のいずれかである。
+意味と現在の対応状況は[現在仕様・対応状況](current-status.md)を参照する。たとえば
+[`examples/count-three.py`](../examples/count-three.py)は、現在`best-effort-native`としてコードBlockなしで変換できる。
+
 ## 保存を監視する
 
 ```sh

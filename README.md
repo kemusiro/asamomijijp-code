@@ -8,6 +8,7 @@
 
 ## 収録プロジェクト
 
+- [UiFlow2生成Python→編集可能Block変換](projects/uiflow2-python-to-blocks/README.md) — Core2／UiFlow2 V2.5.3固定プロファイルの厳密変換、最善努力変換、`.m5f2`構造調査、Web IDE・実機検証記録
 - [Raspberry Pi Pico 2 WのMicroPython DMA実験](projects/raspberry-pi-pico-2-w-micropython-dma/README.md) — メモリー間DMA、PIO TX連携、PIO＋DMA簡易ロジックアナライザーのコードと実測ログ
 - [MicroPythonコードエミッタの実機ベンチマーク](projects/micropython-performance-techniques/README.md) — Pico 2 W上でbytecode、native、Viper、Thumbインラインアセンブラを比較した検証コードと測定記録
 - [MMLプレイヤー](projects/mml-player/README.md) — 2002年に作成したJava製MMLプレイヤーの歴史的ソースコード
