@@ -36,7 +36,7 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 
 ## 現状
 
-- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト13件: 成功。
+- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト24件（厳密変換13件、最善努力変換11件）: 成功。
 - 短縮入力と、UiFlow2 V2.5.3が生成したPython全文の両方に対応。
 - 2026-09-26、全文入力例から生成した`.m5f2`をWeb IDEへ読み込み、編集可能なRGB／Sleepブロックと、`RGBUnit((33, 32), 3)`を含むPython再生成を確認。
 - 実際のWeb IDEで短縮入力例→`.m5f2`読み込み→Python再生成: 成功。
@@ -56,6 +56,20 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 python3 -m unittest discover -s tests -v
 python3 convert.py examples/blink-uiflow2-generated.py /tmp/blink-new.m5f2
 ```
+
+厳密変換で対応できない一般的なMicroPythonには、注記付きの最善努力変換を使用できる。
+
+```sh
+python3 best_effort.py examples/arbitrary-micropython.py /tmp/arbitrary.m5f2
+```
+
+対応部分は通常Block、未知の部分は公式の`execute_code`／`execute_code_import` Blockへ変換し、
+`/tmp/arbitrary.notes.json`と`/tmp/arbitrary.notes.md`へ意味・動作の差を記録する。詳細は
+[任意MicroPythonの最善努力変換](docs/best-effort-conversion.md)を参照する。
+UiFlow2 V2.5.3でCore2を選択したWeb IDEのSystemカテゴリに、両Blockが表示されることも確認した。
+最善努力変換では`if`、`for`、`while`を入れ子2段まで通常Blockへ変換する。3段目の制御構文は
+その子孫を含めて一つの`execute_code` Blockへ格納する。例は
+[`examples/control-flow.py`](examples/control-flow.py)に置く。
 
 出力先は新しいファイル名を指定する。既存ファイルは上書きしない。
 Web IDEのフォルダーメニュー→Import project from local fileで出力を開く。
