@@ -1,0 +1,248 @@
+{
+  "schema": 1,
+  "converter": "uiflow2-python-to-blocks-best-effort-v1",
+  "profile": "core2-v1.3-uiflow2-v2.5.3",
+  "max_control_depth": 2,
+  "source_sha256": "d5b25f19907c22b5cf1a811d05911c86e22b5459d0173ee183e63ede87e633a0",
+  "strategy": "best-effort-native",
+  "strict_conversion_error": "generated mode requires exactly one convert directive",
+  "summary": {
+    "native_blocks": 8,
+    "ui_components": 2,
+    "structured_control_blocks": 2,
+    "control_depth_fallback_blocks": 0,
+    "raw_statement_blocks": 0,
+    "raw_top_level_blocks": 0,
+    "skipped_nodes": 20
+  },
+  "notes": [
+    {
+      "severity": "warning",
+      "code": "main_guard_replaced",
+      "message": "The source __main__ guard is replaced by the fixed UiFlow2 main loop.",
+      "line": 68,
+      "column": 1,
+      "source": "if __name__ == \"__main__\":\n    try:\n        setup()\n        while True:\n            loop()\n    except (Exception, KeyboardInterrupt) as error:\n        try:\n            m5ui.deinit()\n            from utility import print_error_msg\n\n            print_error_msg(error)\n        except ImportError:\n            print(error)",
+      "emitted_as": "profile main loop",
+      "semantic_difference": "Exception handling, loop termination, and calls around setup()/loop() may differ."
+    },
+    {
+      "severity": "info",
+      "code": "global_declaration_normalized",
+      "message": "UiFlow2 derives global declarations from components and workspace variables.",
+      "line": 20,
+      "column": 5,
+      "source": "global app_page, count_box, count",
+      "emitted_as": "components[] and <variables>",
+      "semantic_difference": "The explicit Python global statement is omitted; UiFlow2 regenerates it from project references."
+    },
+    {
+      "severity": "info",
+      "code": "profile_bootstrap_normalized",
+      "message": "setup bootstrap statement is supplied by the fixed profile.",
+      "line": 22,
+      "column": 5,
+      "source": "M5.begin()",
+      "emitted_as": "profile bootstrap",
+      "semantic_difference": "Arguments that differ from the fixed Core2/page0/RGB profile are not preserved."
+    },
+    {
+      "severity": "info",
+      "code": "profile_bootstrap_normalized",
+      "message": "setup bootstrap statement is supplied by the fixed profile.",
+      "line": 23,
+      "column": 5,
+      "source": "Widgets.setRotation(1)",
+      "emitted_as": "profile bootstrap",
+      "semantic_difference": "Arguments that differ from the fixed Core2/page0/RGB profile are not preserved."
+    },
+    {
+      "severity": "info",
+      "code": "profile_bootstrap_normalized",
+      "message": "setup bootstrap statement is supplied by the fixed profile.",
+      "line": 24,
+      "column": 5,
+      "source": "m5ui.init()",
+      "emitted_as": "profile bootstrap",
+      "semantic_difference": "Arguments that differ from the fixed Core2/page0/RGB profile are not preserved."
+    },
+    {
+      "severity": "info",
+      "code": "ui_component_converted",
+      "message": "M5Page app_page is represented as an editable UiFlow2 component.",
+      "line": 26,
+      "column": 5,
+      "source": "app_page = m5ui.M5Page(bg_c=BLUE)",
+      "emitted_as": "components[]",
+      "semantic_difference": "Component ID, layer, and createTime are regenerated."
+    },
+    {
+      "severity": "info",
+      "code": "ui_component_converted",
+      "message": "M5TextArea count_box is represented as an editable UiFlow2 component.",
+      "line": 27,
+      "column": 5,
+      "source": "count_box = m5ui.M5TextArea(\n    text=\"0\",\n    x=60,\n    y=70,\n    w=200,\n    h=90,\n    font=lv.font_montserrat_48,\n    bg_c=DARK_BLUE,\n    border_c=WHITE,\n    text_c=WHITE,\n    parent=app_page,\n)",
+      "emitted_as": "components[]",
+      "semantic_difference": "Component ID, layer, and createTime are regenerated."
+    },
+    {
+      "severity": "info",
+      "code": "ui_page_load_normalized",
+      "message": "app_page.screen_load() uses the profile page-load block.",
+      "line": 40,
+      "column": 5,
+      "source": "app_page.screen_load()",
+      "emitted_as": "lvgl_page_screen_load",
+      "semantic_difference": "The page-load Block ID and position are regenerated."
+    },
+    {
+      "severity": "info",
+      "code": "global_declaration_normalized",
+      "message": "UiFlow2 derives global declarations from components and workspace variables.",
+      "line": 48,
+      "column": 5,
+      "source": "global count",
+      "emitted_as": "components[] and <variables>",
+      "semantic_difference": "The explicit Python global statement is omitted; UiFlow2 regenerates it from project references."
+    },
+    {
+      "severity": "info",
+      "code": "profile_bootstrap_normalized",
+      "message": "loop bootstrap statement is supplied by the fixed profile.",
+      "line": 50,
+      "column": 5,
+      "source": "M5.update()",
+      "emitted_as": "profile bootstrap",
+      "semantic_difference": "Arguments that differ from the fixed Core2/page0/RGB profile are not preserved."
+    },
+    {
+      "severity": "info",
+      "code": "module_docstring_omitted",
+      "message": "The module docstring has no UiFlow2 Block representation and is omitted.",
+      "line": 1,
+      "column": 1,
+      "source": "\"\"\"Core2 button counter with a visual and audible rule for the number 3.\"\"\"",
+      "emitted_as": "conversion note",
+      "semantic_difference": "The generated module __doc__ value is None instead of the source text."
+    },
+    {
+      "severity": "info",
+      "code": "profile_import_normalized",
+      "message": "The fixed UiFlow2 profile generates this import automatically.",
+      "line": 3,
+      "column": 1,
+      "source": "import M5",
+      "emitted_as": "profile imports",
+      "semantic_difference": "Import spelling and ordering are regenerated by UiFlow2."
+    },
+    {
+      "severity": "info",
+      "code": "profile_import_normalized",
+      "message": "The fixed UiFlow2 profile generates this import automatically.",
+      "line": 4,
+      "column": 1,
+      "source": "from M5 import *",
+      "emitted_as": "profile imports",
+      "semantic_difference": "Import spelling and ordering are regenerated by UiFlow2."
+    },
+    {
+      "severity": "info",
+      "code": "profile_import_normalized",
+      "message": "The fixed UiFlow2 profile generates this import automatically.",
+      "line": 5,
+      "column": 1,
+      "source": "import m5ui",
+      "emitted_as": "profile imports",
+      "semantic_difference": "Import spelling and ordering are regenerated by UiFlow2."
+    },
+    {
+      "severity": "info",
+      "code": "profile_import_normalized",
+      "message": "The fixed UiFlow2 profile generates this import automatically.",
+      "line": 6,
+      "column": 1,
+      "source": "import lvgl as lv",
+      "emitted_as": "profile imports",
+      "semantic_difference": "Import spelling and ordering are regenerated by UiFlow2."
+    },
+    {
+      "severity": "info",
+      "code": "constant_inlined",
+      "message": "Constant BLUE is embedded in the converted component or Block value.",
+      "line": 9,
+      "column": 1,
+      "source": "BLUE = 0x0050C8",
+      "emitted_as": "component property or value Block",
+      "semantic_difference": "The generated Python contains the literal value at each converted use instead of a mutable module constant."
+    },
+    {
+      "severity": "info",
+      "code": "constant_inlined",
+      "message": "Constant DARK_BLUE is embedded in the converted component or Block value.",
+      "line": 10,
+      "column": 1,
+      "source": "DARK_BLUE = 0x003078",
+      "emitted_as": "component property or value Block",
+      "semantic_difference": "The generated Python contains the literal value at each converted use instead of a mutable module constant."
+    },
+    {
+      "severity": "info",
+      "code": "constant_inlined",
+      "message": "Constant WHITE is embedded in the converted component or Block value.",
+      "line": 11,
+      "column": 1,
+      "source": "WHITE = 0xFFFFFF",
+      "emitted_as": "component property or value Block",
+      "semantic_difference": "The generated Python contains the literal value at each converted use instead of a mutable module constant."
+    },
+    {
+      "severity": "info",
+      "code": "constant_inlined",
+      "message": "Constant RED is embedded in the converted component or Block value.",
+      "line": 12,
+      "column": 1,
+      "source": "RED = 0xFF0000",
+      "emitted_as": "component property or value Block",
+      "semantic_difference": "The generated Python contains the literal value at each converted use instead of a mutable module constant."
+    },
+    {
+      "severity": "info",
+      "code": "top_level_declaration_normalized",
+      "message": "Top-level declaration for app_page is supplied by UiFlow2 generation.",
+      "line": 14,
+      "column": 1,
+      "source": "app_page = None",
+      "emitted_as": "component or workspace-variable declaration",
+      "semantic_difference": "UiFlow2 emits a module-level None declaration and applies the converted setup value later."
+    },
+    {
+      "severity": "info",
+      "code": "top_level_declaration_normalized",
+      "message": "Top-level declaration for count_box is supplied by UiFlow2 generation.",
+      "line": 15,
+      "column": 1,
+      "source": "count_box = None",
+      "emitted_as": "component or workspace-variable declaration",
+      "semantic_difference": "UiFlow2 emits a module-level None declaration and applies the converted setup value later."
+    },
+    {
+      "severity": "info",
+      "code": "top_level_declaration_normalized",
+      "message": "Top-level declaration for count is supplied by UiFlow2 generation.",
+      "line": 16,
+      "column": 1,
+      "source": "count = 0",
+      "emitted_as": "component or workspace-variable declaration",
+      "semantic_difference": "UiFlow2 emits a module-level None declaration and applies the converted setup value later."
+    }
+  ],
+  "global_limitations": [
+    "UiFlow2 and profile bootstrap code may be added or normalized.",
+    "Raw-code blocks preserve Python text but are not decomposed into ordinary blocks.",
+    "Control structures are converted to ordinary blocks through depth 2; deeper subtrees become one raw-code block.",
+    "Comments, formatting, exact exception timing, and global/local scope may differ.",
+    "The Core2 V2.5.3 Web IDE exposes execute_code_import and execute_code blocks, but import and round-trip of this converter output remain to be verified.",
+    "The output always includes one verified Core2 LVGL page and the Port A RGB Unit template; a supported M5Page constructor can rename and recolor that page."
+  ]
+}

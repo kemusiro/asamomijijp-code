@@ -27,6 +27,18 @@ class ConverterTests(unittest.TestCase):
         self.assertEqual(RGB_PINS, (33, 32))
         self.assertEqual(UNIT_SPEC['led_count'], 3)
         self.assertEqual(UNIT_SPEC['converter_supported_methods'], ['fill_color'])
+        self.assertEqual(
+            PROFILE_SPEC['hardware']['button']['runtime_objects'],
+            ['BtnA', 'BtnB', 'BtnC'],
+        )
+        self.assertEqual(
+            PROFILE_SPEC['hardware']['button']['converter_supported_methods'],
+            ['wasPressed'],
+        )
+        self.assertEqual(
+            PROFILE_SPEC['hardware']['button']['block_type'],
+            'button_was_pressed',
+        )
         self.assertEqual({item['python'] for item in UNIT_SPEC['official_methods']},
                          {'set_brightness', 'fill_color', 'set_color'})
         self.assertTrue(all(len(item['sha256']) == 64 for item in source['files']))

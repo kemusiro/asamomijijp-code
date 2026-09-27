@@ -210,6 +210,23 @@ V2.5.3 Core2の採取例では、トップレベルにSetupとLoopが一つず�
 | `next` | 次に実行する文ブロックを接続する |
 | `mutation` | 標準XMLだけでは表せないブロック固有の形状・モード情報 |
 
+### ワークスペース変数とPythonの`global`
+
+公式例ではPythonの`global`文そのものに対応するBlockはなく、ワークスペース変数を次の二層で表現する。
+
+1. `<variables>`内の`<variable>`が名前と一意なIDを宣言する。
+2. `variables_set`／`variables_get`の`<field name="VAR" id="...">`が同じIDを参照する。
+
+`cores3_m5ui_table_example.m5f2`には`i`、`info`、`row`、`k`が`<variables>`にあり、対になる
+`cores3_m5ui_table_example.py`では各名前がモジュール先頭で`None`へ初期化され、生成された関数内に
+`global`宣言が追加されている。`.m5f2`内には`global`専用Blockがない。この観察から、V2.5.3の
+Python生成器はワークスペース変数をすべてモジュール変数として扱い、必要な`global`文を自動生成すると判断した。
+UI部品名は`components`と部品操作Blockから同様に導出される。
+
+この挙動はUiFlow2のエディターと生成器に関する観察仕様であり、公式リポジトリには生成器本体や完全な
+`.m5f2`スキーマが公開されていない。そのため、ローカル変数を表す別スコープや未参照変数の扱いまでは
+保証しない。
+
 文の実行順は、最初の`block`から`next/block`をたどる鎖で表現される。
 引数は`value`内のブロックまたはshadowで表現される。たとえば整数秒の待機は概略次の形になる。
 

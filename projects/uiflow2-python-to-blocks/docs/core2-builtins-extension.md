@@ -9,7 +9,10 @@
 対応範囲のPythonから、Core2／UiFlow2 V2.5.3で読み込み、編集、Python再生成、実機実行できる、
 動作が同等な`.m5f2`プロジェクトを生成する。
 
-現在の実装はRGB Unitの`fill_color`と`time.sleep`だけに対応する。この文書にある機能は、
+現在の実装はRGB Unitの`fill_color`、`time.sleep`、最善努力変換での
+`M5Page`、`M5TextArea`、`BtnA/B/C.wasPressed()`、Speakerの`begin`、
+`setVolumePercentage`、`tone`に対応する。
+この文書にあるその他の機能は、
 V2.5.3 Core2でのfixture採取、実装、自動テスト、Web IDE往復、実機確認が終わるまで
 「対応済み」とは扱わない。
 
@@ -58,6 +61,15 @@ API名とブロック型の候補には使えるが、Core2 V2.5.3の保存形�
 部品コンストラクターは主に外側JSONの`components`へ変換する。画面読み込み後の`set_text`、
 `add_text`、`add_point`などはBlocklyの操作ブロックへ変換する。
 
+このうち`M5Page`一つと`M5TextArea`の静的配置、`set_one_line`、`set_text`、既定状態の
+`set_text_color`は最善努力変換へ
+実装した。コンストラクターのリテラルまたはトップレベル定数から、位置、寸法、初期文字列、
+placeholder、フォント、背景色、枠色、文字色、親ページを`components`へ反映する。文字色はRGB888の
+リテラルまたはトップレベル定数、不透明度0～255、`lv.PART.MAIN | lv.STATE.DEFAULT`に対応する。
+追記、消去、イベントと他のpart/stateは未対応である。自動テストではJSON部品構造とBlockly参照を確認し、
+文字色BlockのXMLとPython生成はCore2を選択したUiFlow2 V2.5.3 Web IDEで確認した。変換済みの
+カウント例全体の再読み込みと実機動作は未確認である。
+
 テキストフィールドを配置するだけの対応と、画面上で文字入力する対応は分ける。
 入力にはキーボード部品、フォーカス、イベント処理が必要になるため後段で扱う。
 
@@ -71,6 +83,12 @@ Core2は`BtnA`、`BtnB`、`BtnC`を持つ。
 - `BtnA.isPressed()`、`BtnB.isPressed()`、`BtnC.isPressed()`
 - `wasPressed()`、`wasReleased()`、`wasClicked()`、`wasDoubleClicked()`、`wasHold()`
 - 上記の真偽値を条件にする`if`
+
+このうち`BtnA/B/C.wasPressed()`は、公式Button APIとBtnA／BtnB／BtnCを含む公式サンプル対で確認した
+`button_was_pressed`を使い、
+最善努力変換の条件式として実装した。BtnA・BtnB・BtnCを同じ入力で変換し、それぞれ異なる
+`NAME`値を持つ専用Blockになることを自動テストで確認済みだが、
+V2.5.3 Web IDEでの読み込み、Python再生成、実機動作は未確認である。
 
 Blocklyには状態取得ブロックと`button_callback`イベントブロックがある。
 最初はLoop内のポーリングを対応し、イベントコールバックはトップレベルイベント構造を扱えるようになってから追加する。
@@ -106,17 +124,22 @@ Core2はNS4168を搭載し、`Speaker`は`M5`モジュールから提供され�
 ```python
 Speaker.begin()
 Speaker.setVolume(128)
-Speaker.setVolumePercentage(20)
+Speaker.setVolumePercentage(0.2)
 Speaker.tone(440, 500)
 Speaker.stop()
 Speaker.end()
 ```
 
-値域は公式APIに合わせ、音量は`0`～`255`、百分率は`0`～`100`、チャンネル指定を追加する場合は
+値域は公式APIに合わせ、音量は`0`～`255`とする。`setVolumePercentage`は公式生成Pythonで
+0.0～1.0、対応するBlockのスライダーで0～100としている。チャンネル指定を追加する場合は
 `0`～`7`を検査する。
 
 `playWavFile`は、`.m5f2`だけでなく音声ファイルの配置とパスの扱いを決める必要があるため後段とする。
 `playRaw`はバッファ型を実装した後に追加する。
+
+`begin`、`setVolumePercentage`、`tone`は、公式のPython／`.m5f2`サンプル対を根拠に
+最善努力変換の専用Blockとして実装した。音量はPython側の0.0～1.0をBlock上の0～100へ換算する。
+自動テストではXML構造と換算値を確認済みだが、Core2 V2.5.3 Web IDEでの往復と実機動作は未確認である。
 
 ### タッチパネル
 

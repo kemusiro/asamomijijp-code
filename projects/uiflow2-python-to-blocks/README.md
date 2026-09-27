@@ -14,13 +14,13 @@
 - UiFlow2: V2.5.3
 - ファームウェア: `v2.5.3-CORE2`
 - Unit: RGB LED Unit（SK6812、M5STACK-U003）、プロファイル接続PORT.A、LED 3個（公式標準はPORT.B）
-- 画面: `page0`一つ
-- 対応命令: `time.sleep(整数)`、`rgb_0.fill_color(整数)`
+- 画面: LVGLページ一つ（既定`page0`、対応する`M5Page`から名前と背景色を設定可能）
+- 対応命令・部品: `time.sleep(整数)`、`rgb_0.fill_color(整数)`、最善努力変換での`M5Page`、`M5TextArea`、`BtnA/B/C.wasPressed()`、`Speaker.begin()`、`Speaker.setVolumePercentage()`、`Speaker.tone()`
 
 本体、UiFlow2、ファームウェア、Unitのいずれかが異なるPythonは、このプロファイルの入力として扱わない。
 Unit追加は、公式ランタイム実装と同一タグのサンプル対を調べたうえで、初期化・メソッド・保存JSON・Blockly XMLの対応表とV2.5.3検証用fixtureをUnitごとに追加して行う。
 
-次の拡張対象は、画面上のLabel、TextArea、Line、Canvasと、Core2内蔵のBtnA／BtnB／BtnC、Speaker、IMU、Touch、Mic、SDカードとする。実装順、必要な中間表現、APIごとの完成条件は[Core2内蔵デバイスと画面部品への対応計画](docs/core2-builtins-extension.md)に記載する。
+次の拡張対象は、画面上のLabel、Line、Canvas、TextAreaの追加操作と、Core2内蔵のボタン追加操作、Speaker追加操作、IMU、Touch、Mic、SDカードとする。実装順、必要な中間表現、APIごとの完成条件は[Core2内蔵デバイスと画面部品への対応計画](docs/core2-builtins-extension.md)に記載する。
 
 ## 仕様の根拠
 
@@ -36,7 +36,7 @@ M5Stack公式[`uiflow-micropython`](https://github.com/m5stack/uiflow-micropytho
 
 ## 現状
 
-- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト28件（厳密変換13件、最善努力変換11件、自動化4件）: 成功。
+- ASTによる静的解析、コメントメタデータ解析、XML生成、自動テスト33件（厳密変換13件、最善努力変換16件、自動化4件）: 成功。
 - 短縮入力と、UiFlow2 V2.5.3が生成したPython全文の両方に対応。
 - 2026-09-26、全文入力例から生成した`.m5f2`をWeb IDEへ読み込み、編集可能なRGB／Sleepブロックと、`RGBUnit((33, 32), 3)`を含むPython再生成を確認。
 - 実際のWeb IDEで短縮入力例→`.m5f2`読み込み→Python再生成: 成功。
@@ -84,6 +84,24 @@ UiFlow2 V2.5.3でCore2を選択したWeb IDEのSystemカテゴリに、両Block�
 最善努力変換では`if`、`for`、`while`を入れ子2段まで通常Blockへ変換する。3段目の制御構文は
 その子孫を含めて一つの`execute_code` Blockへ格納する。例は
 [`examples/control-flow.py`](examples/control-flow.py)に置く。
+
+Core2のBtnAを押すたびに数値を増やし、3の倍数または数字の3を含む場合に赤字とブザーで
+知らせる自然なMicroPython例は[`examples/count-three.py`](examples/count-three.py)に置く。
+変換結果は[`results/count-three.m5f2`](results/count-three.m5f2)、意味・動作の差は
+[`results/count-three.notes.md`](results/count-three.notes.md)で確認できる。`BtnA.wasPressed()`は
+専用の`button_was_pressed` Blockと、その条件を持つ`controls_if`へ分解する。Speakerの初期化、
+音量、toneも専用Blockへ分解する。カウント、表示用文字列、3判定の結果は`variables_set`／
+`variables_get`で表現する。`M5Page`と`M5TextArea`は`components`へ変換し、TextAreaの一行表示と
+文字設定と既定状態の文字色変更は専用Blockへ変換する。入力Pythonの`global`文は独立したBlockにせず、`components`と
+Blocklyの`<variables>`宣言へ正規化する。UiFlow2はそこからモジュール変数と関数内の`global`文を
+Python生成時に補う。文字色はRGB888値または定数と、`lv.OPA.COVER`、
+`lv.PART.MAIN | lv.STATE.DEFAULT`の組み合わせに対応する。
+固定プロファイルが生成するimportは省略し、変換済み箇所だけで使われる色定数は部品属性と色Blockへ
+インライン化する。この例の出力には`execute_code`と`execute_code_import`が残らない。
+出力には固定プロファイルのPORT.A RGB Unitも含まれる。
+
+同じ変換を`BtnB.wasPressed()`と`BtnC.wasPressed()`にも適用する。Blockの`NAME`フィールドへ
+`BtnA`、`BtnB`、`BtnC`をそれぞれ保存し、三つを混同しないことを自動テストで確認する。
 
 出力先は新しいファイル名を指定する。既存ファイルは上書きしない。
 Web IDEのフォルダーメニュー→Import project from local fileで出力を開く。
