@@ -1,0 +1,188 @@
+{
+  "schema": 1,
+  "id": "core2-v1.3-uiflow2-v2.5.3",
+  "device": {
+    "family": "M5Stack Core2",
+    "revision": "v1.3",
+    "uiflow_type": "core2"
+  },
+  "uiflow": {
+    "ide": "V2.5.3",
+    "firmware": "v2.5.3-CORE2"
+  },
+  "official_source": {
+    "repository": "https://github.com/m5stack/uiflow-micropython",
+    "tag": "2.5.3",
+    "commit": "50e440780492aa847378c7d3477ab912f7063bac",
+    "license": "MIT",
+    "files": [
+      {
+        "path": "m5stack/libs/unit/rgb.py",
+        "sha256": "68b3a4424e4d0d6233578b33941fce5652ce2c5df41614804a6b23a903be040c",
+        "role": "RGBUnit runtime class and port data-pin selection"
+      },
+      {
+        "path": "examples/unit/rgb/rgb_core.py",
+        "sha256": "c751ace75d97d1f8a3d42b1db4f660d6eba72fc2d5e563f19dc63bca0bc97f7e",
+        "role": "official generated-Python example"
+      },
+      {
+        "path": "examples/unit/rgb/rgb_core.m5f2",
+        "sha256": "01f3c0ee6376409e655bed78c01a94b141b9de2667280fcb69e1d18ddbea35a5",
+        "role": "official editable-project example paired with generated Python"
+      },
+      {
+        "path": "docs/source/unit/rgb.rst",
+        "sha256": "0febdaf056188917987ab349a8c2c8d41661202a5bcdb9dbe3357c09b9b3cfaf",
+        "role": "official RGB Unit API documentation source"
+      },
+      {
+        "path": "docs/source/hardware/button.rst",
+        "sha256": "af71f27cb94ff9ceda59bf84e9737b937524eec6265ce342fb9b9e459a5191ba",
+        "role": "official BtnA, BtnB, and BtnC API documentation source"
+      },
+      {
+        "path": "examples/hat/speaker2/speaker2_stickcplus2_example.py",
+        "sha256": "7258730ccb3e31c5248a5d8b10b5a40be441d1c07f8dc7aaf2bc636c389d2189",
+        "role": "official generated-Python example using BtnA.wasPressed and BtnB.wasPressed"
+      },
+      {
+        "path": "examples/hat/speaker2/speaker2_stickcplus2_example.m5f2",
+        "sha256": "88669abe48df4308dbbe04ddccda8b2c203bca8e6d0cacd979c4857a2ab5d883",
+        "role": "official editable-project example for BtnA and BtnB button_was_pressed blocks"
+      },
+      {
+        "path": "examples/unit/relay2/relay2_core2_example.py",
+        "sha256": "822b4efb477f79434c5e242cc4345258a6398b99fe88144ca4e00bac416471da",
+        "role": "official Core2 generated-Python example using BtnA.wasPressed and BtnC.wasPressed"
+      },
+      {
+        "path": "examples/unit/relay2/relay2_core2_example.m5f2",
+        "sha256": "160829f41c37eaaee631cfa151c5aaeee23db3c4335d6459563e12cb5eceae6d",
+        "role": "official Core2 editable-project example for BtnA and BtnC button_was_pressed blocks"
+      },
+      {
+        "path": "examples/controllers/stackchan/stackchan_servo_control_example.py",
+        "sha256": "299f5145d76124dcac1d2ec301854487abbf26b6f85f8023c928e52673f32a5a",
+        "role": "official generated-Python example for speaker begin, volume percentage, and tone"
+      },
+      {
+        "path": "examples/controllers/stackchan/stackchan_servo_control_example.m5f2",
+        "sha256": "4f9661524192f26cfeda82f7a5bae1b3c7ac82a50a8f798b1058cd4f915fe7fc",
+        "role": "official editable-project example for speaker blocks"
+      },
+      {
+        "path": "docs/source/hardware/speaker.rst",
+        "sha256": "e27682d9c9325b3e2a9aa499d4b5241eb8ca5443b9e26c8e5ee2bbd5b817cab1",
+        "role": "official built-in Speaker API documentation source"
+      },
+      {
+        "path": "examples/m5ui/table/cores3_m5ui_table_example.py",
+        "sha256": "cf28e610f885576a6c6f3c6497f3e046c28cd4c85166c801d5b7601616c38100",
+        "role": "official generated-Python example using str() conversion"
+      },
+      {
+        "path": "examples/m5ui/table/cores3_m5ui_table_example.m5f2",
+        "sha256": "d169b5a9ee7e776f9ae23f321ee603e94ce68692284d04e36e866bab754b3c60",
+        "role": "official editable-project example using text_convert_str"
+      },
+      {
+        "path": "examples/module/llm/tts.m5f2",
+        "sha256": "89c6b9d149d26463be59254465b00fbbcf5c39ca483fd09b5867b651a59b7954",
+        "role": "official editable-project example using text_replace"
+      },
+      {
+        "path": "examples/m5ui/buttonmatrix/cores3_buttonmatrix_basic_example.py",
+        "sha256": "4e894f7273636bb2be3da9259d930dfc8138ac55f501eb474e651c21a263b71b",
+        "role": "official generated-Python example containing M5Page and M5TextArea"
+      },
+      {
+        "path": "examples/m5ui/buttonmatrix/cores3_buttonmatrix_basic_example.m5f2",
+        "sha256": "d23a8141c2e20cc5047ea87f9a82864e479f6aa1186754051cc85f914df8f0f1",
+        "role": "official editable-project example for lvgl_page and lvgl_textarea components"
+      },
+      {
+        "path": "m5stack/libs/m5ui/base.py",
+        "sha256": "074e55799b08710d5b3608a490a162d85a040d2f3634f05affc1da827c1d307b",
+        "role": "official runtime implementation of set_text_color color, opacity, and part semantics"
+      },
+      {
+        "path": "m5stack/libs/m5ui/textarea.py",
+        "sha256": "375f416857d7e5c5825de2e390918d165ad429a7e8fb23709fd3dfded9a855de",
+        "role": "official M5TextArea runtime class using set_text_color for its initial text color"
+      }
+    ]
+  },
+  "hardware": {
+    "button": {
+      "runtime_objects": [
+        "BtnA",
+        "BtnB",
+        "BtnC"
+      ],
+      "converter_supported_methods": [
+        "wasPressed"
+      ],
+      "block_type": "button_was_pressed"
+    },
+    "speaker": {
+      "runtime_object": "Speaker",
+      "converter_supported_methods": [
+        "begin",
+        "setVolumePercentage",
+        "tone"
+      ]
+    }
+  },
+  "unit": {
+    "product_name": "RGB LED Unit (SK6812)",
+    "product_id": "M5STACK-U003",
+    "runtime_class": "RGBUnit",
+    "runtime_base": "SK6812",
+    "led_count": 3,
+    "driver_data_pin_argument_index": 1,
+    "standard_port": {
+      "name": "B",
+      "pins": [
+        36,
+        26
+      ],
+      "evidence": "official 2.5.3 rgb_core.m5f2 and rgb_core.py pair"
+    },
+    "profile_port": {
+      "name": "A",
+      "pins": [
+        33,
+        32
+      ],
+      "evidence": "UiFlow2 V2.5.3 round trip and Core2 v1.3 hardware test"
+    },
+    "official_methods": [
+      {
+        "python": "set_brightness",
+        "block": "unit_rgb_set_brightness",
+        "arguments": [
+          "brightness: 0..100"
+        ]
+      },
+      {
+        "python": "fill_color",
+        "block": "unit_rgb_set_fill_color",
+        "arguments": [
+          "RGB888 color: 0x000000..0xffffff"
+        ]
+      },
+      {
+        "python": "set_color",
+        "block": "unit_rgb_set_index_color",
+        "arguments": [
+          "LED index",
+          "RGB888 color: 0x000000..0xffffff"
+        ]
+      }
+    ],
+    "converter_supported_methods": [
+      "fill_color"
+    ]
+  }
+}

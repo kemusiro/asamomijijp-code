@@ -1,0 +1,107 @@
+{
+  "version": "V2.0",
+  "versionNumber": "V2.5.3",
+  "type": "core2",
+  "components": [
+    {
+      "name": "app_page",
+      "type": "lvgl_page",
+      "layer": 0,
+      "screenId": "builtin",
+      "screenName": "",
+      "id": "kS0qQwL%Oa0BAIH!",
+      "createTime": 1790000358885,
+      "backgroundColor": "#0050c8",
+      "isLVGL": true,
+      "isSelected": true
+    },
+    {
+      "name": "count_box",
+      "type": "lvgl_textarea",
+      "layer": 1,
+      "screenId": "builtin",
+      "screenName": "",
+      "id": "py2blocks_approx_1",
+      "createTime": 1790000358886,
+      "x": 60,
+      "y": 70,
+      "width": 200,
+      "height": 90,
+      "color": "#ffffff",
+      "borderColor": "#ffffff",
+      "backgroundColor": "#003078",
+      "text": "0",
+      "placeholder": "",
+      "font": "lv.font_montserrat_48",
+      "pageId": "kS0qQwL%Oa0BAIH!",
+      "isLVGL": true,
+      "isSelected": false
+    }
+  ],
+  "resources": [
+    {
+      "hardware": [
+        "hardware_button",
+        "hardware_pin_button",
+        "imu",
+        "speaker",
+        "touch",
+        "sdcard",
+        "mic"
+      ]
+    },
+    {
+      "unit": [
+        "unit_rgb"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "type": "unit_rgb",
+      "name": "rgb_0",
+      "portList": [
+        "A",
+        "B",
+        "C",
+        "Custom"
+      ],
+      "portType": "A",
+      "userPort": [
+        22,
+        21
+      ],
+      "id": "i+7Epf7!lKE^nrnq",
+      "createTime": 1790003395835,
+      "initBlockId": "e*J`pYa~OuH?$}($*$j|"
+    }
+  ],
+  "hats": [],
+  "caps": [],
+  "chains": [],
+  "bases": [],
+  "plcmodules": [],
+  "stamps": [],
+  "tab5modules": [],
+  "poep4modules": [],
+  "i2cs": [],
+  "chainBus": [],
+  "blockly": "<variables><variable id=\"py2blocks_approx_8\">count</variable><variable id=\"py2blocks_approx_17\">count_text</variable><variable id=\"py2blocks_approx_21\">special_number</variable></variables><block type=\"basic_on_setup\" id=\"setup_block\" deletable=\"false\" x=\"50\" y=\"50\"><mutation isBegin=\"true\" /><field name=\"UPDATEOP\">true</field><statement name=\"FUNC\"><block type=\"system_m5_begin\" id=\"kVz]bg,uiH)puL-y]dA=\"><next><block type=\"unit_rgb_init\" id=\"e*J`pYa~OuH?$}($*$j|\"><field name=\"NAME\">rgb_0</field><value name=\"NUMBER\"><shadow type=\"math_number\" id=\"EI`Y:rMa}wGbB1d{e{%W\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">3</field></shadow></value><next><block type=\"lvgl_textarea_set_one_line\" id=\"py2blocks_approx_2\"><field name=\"NAME\">count_box</field><value name=\"VALUE\"><shadow type=\"lvgl_textarea_bool_option\" id=\"py2blocks_approx_3\"><field name=\"VALUE\">True</field></shadow></value><next><block type=\"lvgl_page_screen_load\" id=\"VsU.M}N(]S[K;`k+yANX\"><field name=\"NAME\">app_page</field><next><block type=\"speaker_begin\" id=\"py2blocks_approx_4\"><next><block type=\"speaker_set_volume_percentage\" id=\"py2blocks_approx_5\"><value name=\"VOLUME\"><shadow type=\"math_slider\" id=\"py2blocks_approx_6\"><mutation max=\"100\" min=\"0\" step=\"1\" precision=\"1\" /><field name=\"NUM\">50</field></shadow></value><next><block type=\"variables_set\" id=\"py2blocks_approx_7\"><field name=\"VAR\" id=\"py2blocks_approx_8\">count</field><value name=\"VALUE\"><block type=\"math_number\" id=\"py2blocks_approx_9\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">0</field></block></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type=\"basic_on_loop\" id=\"loop_block\" deletable=\"false\" x=\"450\" y=\"50\"><mutation isUpdate=\"true\" /><field name=\"UPDATEOP\">true</field><statement name=\"FUNC\"><block type=\"system_m5_update\" id=\"17v.xs@%-np#,R79J@+0\"><next><block type=\"controls_if\" id=\"py2blocks_approx_11\"><value name=\"IF0\"><block type=\"button_was_pressed\" id=\"py2blocks_approx_10\"><field name=\"NAME\">BtnA</field></block></value><statement name=\"DO0\"><block type=\"variables_set\" id=\"py2blocks_approx_15\"><field name=\"VAR\" id=\"py2blocks_approx_8\">count</field><value name=\"VALUE\"><block type=\"math_arithmetic\" id=\"py2blocks_approx_12\"><field name=\"OP\">ADD</field><value name=\"A\"><block type=\"variables_get\" id=\"py2blocks_approx_13\"><field name=\"VAR\" id=\"py2blocks_approx_8\">count</field></block></value><value name=\"B\"><block type=\"math_number\" id=\"py2blocks_approx_14\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">1</field></block></value></block></value><next><block type=\"variables_set\" id=\"py2blocks_approx_16\"><field name=\"VAR\" id=\"py2blocks_approx_17\">count_text</field><value name=\"VALUE\"><block type=\"text_convert_str\" id=\"py2blocks_approx_18\"><value name=\"VALUE\"><block type=\"variables_get\" id=\"py2blocks_approx_19\"><field name=\"VAR\" id=\"py2blocks_approx_8\">count</field></block></value></block></value><next><block type=\"variables_set\" id=\"py2blocks_approx_20\"><field name=\"VAR\" id=\"py2blocks_approx_21\">special_number</field><value name=\"VALUE\"><block type=\"logic_operation\" id=\"py2blocks_approx_27\"><field name=\"OP\">OR</field><value name=\"A\"><block type=\"logic_compare\" id=\"py2blocks_approx_22\"><field name=\"OP\">EQ</field><value name=\"A\"><block type=\"math_modulo\" id=\"py2blocks_approx_23\"><value name=\"DIVIDEND\"><block type=\"variables_get\" id=\"py2blocks_approx_24\"><field name=\"VAR\" id=\"py2blocks_approx_8\">count</field></block></value><value name=\"DIVISOR\"><block type=\"math_number\" id=\"py2blocks_approx_25\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">3</field></block></value></block></value><value name=\"B\"><block type=\"math_number\" id=\"py2blocks_approx_26\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">0</field></block></value></block></value><value name=\"B\"><block type=\"logic_compare\" id=\"py2blocks_approx_32\"><field name=\"OP\">NEQ</field><value name=\"A\"><block type=\"variables_get\" id=\"py2blocks_approx_33\"><field name=\"VAR\" id=\"py2blocks_approx_17\">count_text</field></block></value><value name=\"B\"><block type=\"text_replace\" id=\"py2blocks_approx_28\"><value name=\"FROM\"><block type=\"text\" id=\"py2blocks_approx_29\"><field name=\"TEXT\">3</field></block></value><value name=\"TO\"><block type=\"text\" id=\"py2blocks_approx_30\"><field name=\"TEXT\" /></block></value><value name=\"TEXT\"><block type=\"variables_get\" id=\"py2blocks_approx_31\"><field name=\"VAR\" id=\"py2blocks_approx_17\">count_text</field></block></value></block></value></block></value></block></value><next><block type=\"lvgl_textarea_set_text\" id=\"py2blocks_approx_34\"><field name=\"NAME\">count_box</field><value name=\"VALUE\"><shadow type=\"text\" id=\"py2blocks_approx_35\"><field name=\"TEXT\">hello M5</field></shadow><block type=\"variables_get\" id=\"py2blocks_approx_36\"><field name=\"VAR\" id=\"py2blocks_approx_17\">count_text</field></block></value><next><block type=\"controls_if\" id=\"py2blocks_approx_38\"><mutation else=\"1\" /><value name=\"IF0\"><block type=\"variables_get\" id=\"py2blocks_approx_37\"><field name=\"VAR\" id=\"py2blocks_approx_21\">special_number</field></block></value><statement name=\"DO0\"><block type=\"lvgl_textarea_set_text_color\" id=\"py2blocks_approx_39\"><field name=\"NAME\">count_box</field><field name=\"MODE\">DEFAULT</field><value name=\"COLOR\"><block type=\"color_rgb_palette\" id=\"py2blocks_approx_40\"><mutation mode=\"palette\" /><field name=\"MODE\">palette</field><field name=\"COLOR\">#ff0000</field></block></value><value name=\"OPA\"><shadow type=\"math_slider\" id=\"py2blocks_approx_41\"><mutation max=\"255\" min=\"0\" step=\"10\" precision=\"1\" /><field name=\"NUM\">255</field></shadow></value><next><block type=\"speaker_tone\" id=\"py2blocks_approx_42\"><value name=\"FREQ\"><shadow type=\"math_number\" id=\"py2blocks_approx_43\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">880</field></shadow></value><value name=\"MS\"><shadow type=\"math_number\" id=\"py2blocks_approx_44\"><mutation max=\"Infinity\" min=\"-Infinity\" precision=\"0\" /><field name=\"NUM\">150</field></shadow></value></block></next></block></statement><statement name=\"ELSE\"><block type=\"lvgl_textarea_set_text_color\" id=\"py2blocks_approx_45\"><field name=\"NAME\">count_box</field><field name=\"MODE\">DEFAULT</field><value name=\"COLOR\"><block type=\"color_rgb_palette\" id=\"py2blocks_approx_46\"><mutation mode=\"palette\" /><field name=\"MODE\">palette</field><field name=\"COLOR\">#ffffff</field></block></value><value name=\"OPA\"><shadow type=\"math_slider\" id=\"py2blocks_approx_47\"><mutation max=\"255\" min=\"0\" step=\"10\" precision=\"1\" /><field name=\"NUM\">255</field></shadow></value></block></statement></block></next></block></next></block></next></block></next></block></statement></block></next></block></statement></block>",
+  "screen": [
+    {
+      "simulationName": "Built-in",
+      "type": "builtin",
+      "width": 320,
+      "height": 240,
+      "scale": 0.77,
+      "screenName": "",
+      "blockId": "",
+      "screenColorType": 0,
+      "rotation": 1,
+      "id": "builtin",
+      "createTime": 1790000358882
+    }
+  ],
+  "logicWhenNum": 0,
+  "customList": []
+}

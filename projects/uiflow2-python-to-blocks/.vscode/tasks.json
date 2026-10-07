@@ -1,0 +1,39 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "UiFlow2: Convert active Python",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/workflow.py",
+        "${file}",
+        "--output-dir",
+        "${workspaceFolder}/build",
+        "--copy-path"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "UiFlow2: Watch active Python",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/workflow.py",
+        "${file}",
+        "--output-dir",
+        "${workspaceFolder}/build",
+        "--watch",
+        "--copy-path",
+        "--open-uiflow"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
