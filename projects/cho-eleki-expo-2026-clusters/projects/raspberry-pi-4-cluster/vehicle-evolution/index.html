@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>走れるカタチを、進化させる。</title><link rel="stylesheet" href="/style.css"></head>
+<body><main>
+  <header><div><p class="eyebrow">EVOLUTION GARAGE <span>01 / VEHICLE DESIGN</span></p><h1>走れるカタチを、進化させる。</h1><p id="condition-note" class="intro">車体を変える。走らせる。遠くへ進んだ車から、次の世代をつくる。</p></div>
+    <div class="controls"><div id="mode" class="mode">計算環境を確認中</div><div class="buttons"><button id="pause" type="button">探索を一時停止</button><button id="reset" type="button" class="primary">最初から再計算</button></div>
+      <details class="settings"><summary>探索条件</summary><div class="run-settings"><label>地形 <select id="course-profile" aria-label="再計算する地形"><option value="rolling-v1">起伏</option><option value="obstacles-v1">急坂45°・谷6m</option><option value="obstacles-55-7p5-v1">台地55°・谷7.5m</option></select></label><label>コースseed <input id="course-seed" type="number" min="0" max="2147483647" value="2026" aria-label="固定するコースのseed"></label><label>初期集団seed <input id="population-seed" type="number" min="0" max="2147483647" value="2026" aria-label="初期集団の開始seed"></label><label>試行数（0で連続） <input id="run-count" type="number" min="0" max="8" value="0" aria-label="試行数（0で連続探索）"></label><label>各試行の世代 <input id="generations" type="number" min="1" max="1000" value="20" aria-label="各試行で共通の世代数"></label></div>
+      </details>
+    </div>
+  </header>
+  <section class="metrics" aria-label="進化の結果">
+    <article><span>現在の世代</span><strong id="generation">—<small>世代</small></strong><p id="generation-note">初代を評価しています</p></article>
+    <article><span>この試行の最良到達距離</span><strong id="distance">—<small>m</small></strong><p id="best-note">全車に同じ走行時間・コース</p></article>
+    <article class="gain"><span>全探索の最高到達距離</span><strong id="gain">—<small>m</small></strong><p id="initial-note">初代の評価後に表示します</p></article>
+    <article><span>再計算後に評価した車体</span><strong id="evaluated">—<small>台</small></strong><p id="progress-note">選択 → 交叉 → 突然変異</p></article>
+  </section>
+  <div class="workspace">
+    <section class="race-panel" aria-label="初代と最良車の比較走行">
+      <div class="panel-heading"><div><p class="eyebrow">THE SAME ROAD. A NEW DESIGN.</p><h2 id="replay-title">最初の走行結果を待っています</h2></div><div class="legend"><span id="replay-current-label" class="current">この試行の最良車</span><span class="original">初代の最良車</span></div></div>
+      <div class="stage"><canvas id="race" width="1200" height="420" aria-label="物理計算した初代と最良車を同じ時刻で再生"></canvas><div id="stage-message">車体を評価中です…</div><div id="replay-result" class="replay-result" hidden><div class="result-card"><div role="status" aria-live="polite" aria-atomic="true"><p id="result-source" class="result-source"></p><p class="result-label">最長到達距離</p><strong id="result-distance"></strong><p id="result-baseline" class="result-baseline"></p></div><p id="result-next" class="result-next"></p></div></div></div>
+      <div class="replay-controls"><span id="replay-clock">0.0 / 30.0 秒</span><span id="replay-note">保存した走行を再生 · 探索は並行して継続</span><button id="latest" type="button" hidden>新しい最良車で再生</button><button id="play" type="button">再生を止める</button></div>
+      <div class="position-map" aria-label="コース全体での現在位置"><span>START</span><div><i id="map-original"></i><i id="map-current"></i></div><span>160 m</span></div>
+    </section>
+    <aside class="insight-panel"><div class="panel-heading"><div><p class="eyebrow">EVOLUTION LOG</p><h2>初期集団ごとの成績</h2></div><span id="phase" class="phase">準備中</span></div>
+      <div id="chart-legend" class="chart-legend"><span class="current">最良到達距離</span><span class="mean">集団の平均</span></div>
+      <svg id="history" viewBox="0 0 400 240" role="img" aria-label="同じコース・世代数で初期集団seedごとの最良到達距離を比較"></svg>
+      <div class="generation-progress"><span id="progress-text">候補の評価を待っています</span><div><i id="progress-fill"></i></div></div>
+      <div id="trial-results" class="trial-results" aria-label="初期集団ごとの探索結果"></div>
+    </aside>
+  </div>
+  <section class="lineage-section"><div class="section-heading"><h2>ワースト3 / ベスト3</h2><span id="ranking-note">全評価から選出 · 同じ形を除外</span></div><div id="lineage" class="lineage"><p>最初の世代の評価後に表示します。</p></div></section>
+  <section class="worker-section"><div class="section-heading"><h2>候補を評価するワーカー</h2><span id="worker-note">候補ごとに独立した物理計算</span></div><div id="workers" class="workers"></div></section>
+  <p id="notice" role="status" hidden></p>
+  <footer><span id="mix-note">小さな改良と、大きな変化を混ぜて探索。</span><span id="updated">状態を取得しています</span></footer>
+</main><script type="module" src="/app.mjs"></script></body></html>

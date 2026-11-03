@@ -1,0 +1,315 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vehicle-evolution
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: vehicle-results
+spec:
+  accessModes:
+  - ReadWriteMany
+  storageClassName: nfs-rwx-retain
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vehicle-workers
+spec:
+  clusterIP: None
+  selector:
+    app.kubernetes.io/name: vehicle-worker
+  ports:
+  - name: http
+    port: 8790
+    targetPort: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vehicle-dashboard
+spec:
+  type: NodePort
+  selector:
+    app.kubernetes.io/name: vehicle-coordinator
+  ports:
+  - name: http
+    port: 80
+    targetPort: http
+    nodePort: 30096
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: vehicle-worker
+  labels:
+    app.kubernetes.io/name: vehicle-worker
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vehicle-worker
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: vehicle-worker
+        app.kubernetes.io/part-of: vehicle-evolution
+    spec:
+      automountServiceAccountToken: false
+      nodeSelector:
+        exhibition.asamomiji.jp/role: compute
+        exhibition.asamomiji.jp/vehicle-worker: enabled
+      securityContext:
+        runAsGroup: 65534
+        runAsUser: 1000
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
+        fsGroup: 65534
+        fsGroupChangePolicy: OnRootMismatch
+      containers:
+      - name: worker
+        image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+        imagePullPolicy: IfNotPresent
+        command:
+        - node
+        - "/app/worker.mjs"
+        - "--host"
+        - 0.0.0.0
+        - "--port"
+        - '8790'
+        - "--id"
+        - "$(NODE_NAME)"
+        ports:
+        - name: http
+          containerPort: 8790
+        readinessProbe:
+          httpGet:
+            path: "/health"
+            port: http
+          periodSeconds: 5
+          timeoutSeconds: 5
+        livenessProbe:
+          tcpSocket:
+            port: http
+          initialDelaySeconds: 20
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 9
+        resources:
+          requests:
+            cpu: 250m
+            memory: 128Mi
+          limits:
+            cpu: '1'
+            memory: 512Mi
+        securityContext: &1
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true
+        volumeMounts:
+        - name: app
+          mountPath: "/app"
+          readOnly: true
+        - name: tmp
+          mountPath: "/tmp"
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+      terminationGracePeriodSeconds: 45
+      volumes:
+      - name: source
+        configMap:
+          name: vehicle-source
+      - name: vendor
+        configMap:
+          name: vehicle-vendor
+      - name: tmp
+        emptyDir:
+          sizeLimit: 64Mi
+      - name: app
+        emptyDir:
+          sizeLimit: 16Mi
+      initContainers:
+      - name: prepare-source
+        image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+        imagePullPolicy: IfNotPresent
+        command:
+        - sh
+        - "-c"
+        - set -eu; cp -L /source/* /app/; mkdir -p /app/vendor; cp -L /vendor/* /app/vendor/
+        resources:
+          requests:
+            cpu: 50m
+            memory: 32Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        securityContext: *1
+        volumeMounts:
+        - name: source
+          mountPath: "/source"
+          readOnly: true
+        - name: vendor
+          mountPath: "/vendor"
+          readOnly: true
+        - name: app
+          mountPath: "/app"
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vehicle-coordinator
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: vehicle-coordinator
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: vehicle-coordinator
+        app.kubernetes.io/part-of: vehicle-evolution
+    spec:
+      automountServiceAccountToken: false
+      nodeSelector:
+        exhibition.asamomiji.jp/role: compute
+        kubernetes.io/hostname: node21
+      securityContext:
+        runAsGroup: 65534
+        runAsUser: 1000
+        runAsNonRoot: true
+        seccompProfile:
+          type: RuntimeDefault
+        fsGroup: 65534
+        fsGroupChangePolicy: OnRootMismatch
+      containers:
+      - name: coordinator
+        image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+        imagePullPolicy: IfNotPresent
+        command:
+        - node
+        - "/app/cluster-server.mjs"
+        - "--host"
+        - 0.0.0.0
+        - "--port"
+        - '8090'
+        - "--population"
+        - '36'
+        - "--generations"
+        - '20'
+        - "--course-seed"
+        - '2026'
+        - "--population-seed"
+        - '2026'
+        - "--runs"
+        - '0'
+        - "--strategy"
+        - "profile-v2"
+        - "--course-profile"
+        - "obstacles-55-7p5-v1"
+        - "--generation-delay-ms"
+        - '100'
+        - "--state-file"
+        - "/results/issue126-stable-evaluation.json"
+        ports:
+        - name: http
+          containerPort: 8090
+        readinessProbe:
+          httpGet:
+            path: "/health"
+            port: http
+          periodSeconds: 5
+          timeoutSeconds: 5
+        livenessProbe:
+          tcpSocket:
+            port: http
+          initialDelaySeconds: 20
+          periodSeconds: 10
+          timeoutSeconds: 5
+          failureThreshold: 9
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: '1'
+            memory: 512Mi
+        securityContext: &2
+          allowPrivilegeEscalation: false
+          capabilities:
+            drop:
+            - ALL
+          readOnlyRootFilesystem: true
+        volumeMounts:
+        - name: app
+          mountPath: "/app"
+          readOnly: true
+        - name: tmp
+          mountPath: "/tmp"
+        - name: results
+          mountPath: "/results"
+        env:
+        - name: WORKER_SERVICE
+          value: vehicle-workers.vehicle-evolution.svc.cluster.local
+        - name: EXPECTED_WORKERS
+          value: '12'
+        startupProbe:
+          httpGet:
+            path: "/health"
+            port: http
+          periodSeconds: 5
+          timeoutSeconds: 5
+          failureThreshold: 30
+      terminationGracePeriodSeconds: 45
+      volumes:
+      - name: source
+        configMap:
+          name: vehicle-source
+      - name: vendor
+        configMap:
+          name: vehicle-vendor
+      - name: tmp
+        emptyDir:
+          sizeLimit: 64Mi
+      - name: results
+        persistentVolumeClaim:
+          claimName: vehicle-results
+      - name: app
+        emptyDir:
+          sizeLimit: 16Mi
+      initContainers:
+      - name: prepare-source
+        image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+        imagePullPolicy: IfNotPresent
+        command:
+        - sh
+        - "-c"
+        - set -eu; cp -L /source/* /app/; mkdir -p /app/vendor; cp -L /vendor/* /app/vendor/
+        resources:
+          requests:
+            cpu: 50m
+            memory: 32Mi
+          limits:
+            cpu: 500m
+            memory: 128Mi
+        securityContext: *2
+        volumeMounts:
+        - name: source
+          mountPath: "/source"
+          readOnly: true
+        - name: vendor
+          mountPath: "/vendor"
+          readOnly: true
+        - name: app
+          mountPath: "/app"

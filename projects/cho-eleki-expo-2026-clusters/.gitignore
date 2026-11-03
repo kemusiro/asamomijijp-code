@@ -1,0 +1,10 @@
+**/__pycache__/
+**/output/
+**/recordings/
+**/network_config.py
+**/network_config.pico-*.py
+**/shutdown-hosts.local.json
+**/local.json
+**/observer.json
+*.mpy
+*.uf2

@@ -1,0 +1,11 @@
+{
+  "mode": "observer",
+  "interval": 30,
+  "timeout": 4,
+  "host": "192.0.2.1",
+  "ssh_port": 22,
+  "k3s_url": "https://192.0.2.1:6443/livez",
+  "k3s_ca": "/etc/pi4-management-monitor-server-ca.crt",
+  "vehicle_url": "http://192.0.2.1:30096",
+  "pico_url": "http://127.0.0.1:8080"
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "patterns": [
+    {
+      "id": "eastwest-rush",
+      "name": "東西ラッシュ",
+      "description": "東西方向へ8台の車群が周期的に到着します",
+      "pattern": {
+        "platoonSize": 8,
+        "period": 48,
+        "spacing": 1,
+        "jitter": 1.5,
+        "phase": 9,
+        "reverseRate": 0.01,
+        "crossRate": 0.02
+      }
+    },
+    {
+      "id": "balanced",
+      "name": "均等交通",
+      "description": "東西と南北の流入量をほぼ同じにします",
+      "pattern": {
+        "platoonSize": 5,
+        "period": 48,
+        "spacing": 1,
+        "jitter": 0.75,
+        "phase": 4,
+        "reverseRate": 0.035,
+        "crossRate": 0.07
+      }
+    },
+    {
+      "id": "northsouth-rush",
+      "name": "南北ラッシュ",
+      "description": "南北方向へ8台の車群が周期的に到着します",
+      "pattern": {
+        "platoonSize": 8,
+        "period": 48,
+        "spacing": 1,
+        "jitter": 1.5,
+        "phase": 9,
+        "reverseRate": 0.01,
+        "crossRate": 0.02,
+        "platoonAxis": "northsouth"
+      }
+    },
+    {
+      "id": "mixed-speed",
+      "name": "低速車混在",
+      "description": "30%の車が通常車の約半分の速度で走り、車列を作ります",
+      "pattern": {
+        "platoonSize": 6,
+        "period": 54,
+        "spacing": 1,
+        "jitter": 1,
+        "phase": 6,
+        "reverseRate": 0.02,
+        "crossRate": 0.045,
+        "slowRate": 0.3,
+        "slowSpeed": 10
+      }
+    }
+  ]
+}

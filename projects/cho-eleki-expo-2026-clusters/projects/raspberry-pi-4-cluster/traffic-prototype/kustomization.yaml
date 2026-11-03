@@ -1,0 +1,41 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: traffic-demo
+
+resources:
+  - k8s/workload.yaml
+
+configMapGenerator:
+  - name: traffic-worker-source
+    files:
+      - engine.mjs
+      - distributed-worker.mjs
+      - start-distributed-worker.mjs
+  - name: traffic-coordinator-source
+    files:
+      - engine.mjs
+      - distributed.mjs
+      - genetic.mjs
+      - distributed-run.mjs
+      - distributed-benchmark.mjs
+      - outer-search.mjs
+      - time-budget-benchmark.mjs
+      - exhibition-runner.mjs
+      - exhibition-patterns.json
+      - validate-time-budget.mjs
+      - validate-outer-search.mjs
+      - validate-distributed-benchmark.mjs
+      - validate-distributed-fault.mjs
+  - name: traffic-dashboard-source
+    files:
+      - dashboard-server.mjs
+      - engine.mjs
+      - dashboard.html
+      - dashboard.mjs
+      - dashboard.css
+      - exhibition-patterns.json
+
+generatorOptions:
+  labels:
+    app.kubernetes.io/part-of: traffic-demo

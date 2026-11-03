@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {VERSION,DURATION,INSTABILITY_POLICY,COURSE_PROFILES} from './physics.mjs';
+import {discoverWorkers} from './cluster-server.mjs';
+const request=async url=>({ok:true,json:async()=>({status:'ok',version:VERSION,durationSeconds:DURATION,instabilityPolicy:INSTABILITY_POLICY,courseProfiles:COURSE_PROFILES,workerId:url.includes('10.0.0.2:')?'node11':'node10'})});
+assert.deepEqual(await discoverWorkers({service:'vehicle-workers',expected:2,lookup:async()=>['10.0.0.2','10.0.0.1'],request}),['http://10.0.0.1:8790','http://10.0.0.2:8790']);
+await assert.rejects(discoverWorkers({service:'bad/host'}));
+await assert.rejects(discoverWorkers({service:'workers',expected:2,lookup:async()=>['10.0.0.1'],waitMs:10}),/worker数 1\/2/);
+await assert.rejects(discoverWorkers({service:'workers',expected:2,lookup:async()=>['10.0.0.1','10.0.0.2'],request:async()=>({ok:true,json:async()=>({status:'ok',version:VERSION,durationSeconds:DURATION,instabilityPolicy:INSTABILITY_POLICY,courseProfiles:COURSE_PROFILES,workerId:'same'})}),waitMs:10}),/ID重複/);
+await assert.rejects(discoverWorkers({service:'workers',expected:1,lookup:async()=>['10.0.0.1'],request:async()=>({ok:true,json:async()=>({status:'ok',version:'wrong',workerId:'node10'})}),waitMs:10}),/health不正/);
+const abort=new AbortController();abort.abort(Error('test-stop'));
+await assert.rejects(discoverWorkers({service:'workers',signal:abort.signal}),/test-stop/);
+console.log('PASS: DNS検出・worker ID順・台数不足・ID重複・モデル不一致・停止');

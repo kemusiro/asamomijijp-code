@@ -1,0 +1,161 @@
+{
+  "date": "2026-11-03",
+  "scope": "公開用展示版のホスト検証。実機接続・USB書込み・service変更・電源操作なし。",
+  "environment": {
+    "node": "v24.22.1",
+    "python": "3.12.14",
+    "platform": "macOS arm64"
+  },
+  "source_revision": "1469a66bf281ac00f78594366bc8ad29cbc8cffd",
+  "suites": [
+    {
+      "name": "projects/raspberry-pi-pico-cluster/mandelbrot/tests",
+      "result": "pass",
+      "seconds": 5.43,
+      "unittest_cases": 12
+    },
+    {
+      "name": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests",
+      "result": "pass",
+      "seconds": 15.41,
+      "unittest_cases": 79
+    },
+    {
+      "name": "projects/raspberry-pi-pico-cluster/raytracing/tests",
+      "result": "pass",
+      "seconds": 4.13,
+      "unittest_cases": 68
+    },
+    {
+      "name": "scripts/test-dual-display-kiosk.py",
+      "result": "pass",
+      "seconds": 11.89,
+      "unittest_cases": 19
+    },
+    {
+      "name": "scripts/test-pi4-management-monitor.py",
+      "result": "pass",
+      "seconds": 0.2,
+      "unittest_cases": 10
+    },
+    {
+      "name": "scripts/test-pi4-management-soak.py",
+      "result": "pass",
+      "seconds": 1.47,
+      "unittest_cases": 13
+    },
+    {
+      "name": "scripts/test-shutdown-exhibition.py",
+      "result": "pass",
+      "seconds": 0.14,
+      "unittest_cases": 17
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/cluster-test.mjs",
+      "result": "pass",
+      "seconds": 0.17
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/comparison-test.mjs",
+      "result": "pass",
+      "seconds": 2.54
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/continuous-test.mjs",
+      "result": "pass",
+      "seconds": 2.34
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/duration-test.mjs",
+      "result": "pass",
+      "seconds": 0.78
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/instability-test.mjs",
+      "result": "pass",
+      "seconds": 1.02
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/profile-test.mjs",
+      "result": "pass",
+      "seconds": 0.07
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/replay-test.mjs",
+      "result": "pass",
+      "seconds": 0.1
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-test.mjs",
+      "result": "pass",
+      "seconds": 1.69
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-tuning-test.mjs",
+      "result": "pass",
+      "seconds": 8.7
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/test.mjs",
+      "result": "pass",
+      "seconds": 3.62
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/vehicle-evolution/tuned-terrain-test.mjs",
+      "result": "pass",
+      "seconds": 0.91
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard-test.mjs",
+      "result": "pass",
+      "seconds": 0.08
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed-test.mjs",
+      "result": "pass",
+      "seconds": 0.95
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/exhibition-runner-test.mjs",
+      "result": "pass",
+      "seconds": 0.07
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/genetic-test.mjs",
+      "result": "pass",
+      "seconds": 0.27
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/test.mjs",
+      "result": "pass",
+      "seconds": 11.81
+    },
+    {
+      "name": "projects/raspberry-pi-4-cluster/traffic-prototype/time-budget-test.mjs",
+      "result": "pass",
+      "seconds": 2.25
+    },
+    {
+      "name": "display-state",
+      "result": "pass",
+      "seconds": 0.04
+    }
+  ],
+  "publication_layout_regression": {
+    "suite": "raytracing/tests/test_scene_install.py",
+    "unittest_cases": 8,
+    "result": "pass",
+    "note": "入れ子Git配置・macOSの/var別名を含む旧版参照、更新・復旧・破損転送拒否を再確認。"
+  },
+  "security_review": {
+    "tracked_text_only": true,
+    "binary_outputs_included": false,
+    "actual_wifi_and_ssh_credentials_included": false,
+    "actual_host_key_fingerprints_included": false,
+    "credential_like_literals": "network_config.example.pyのCHANGE_MEと、mock Wi-Fiテストのtest-passwordのみ。",
+    "source_mapping_files": 181,
+    "source_manifest_hashes": "全181件一致。物理・進化・描画コアは元ソースと一致。"
+  },
+  "third_party": "Planck.js MIT、NFS CSI manifest Apache-2.0の許諾文・帰属・原版hashを保持。",
+  "hardware_validation": "今回の公開用コピーの実機動作は未検証。原版には2026年10月のPi4/Pico16台実機確認記録があるが、公開処理では再測定していない。"
+}

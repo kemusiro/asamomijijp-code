@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Picoクラスタでレイトレーシング</title>
+    <link rel="stylesheet" href="/display.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="eyebrow">Raspberry Pi Pico 2 W Cluster</div>
+        <h1 id="cluster-title">16台で、1枚の絵を描く。</h1>
+        <div class="live"><span></span> LIVE</div>
+      </header>
+
+      <section class="stage" aria-label="レイトレーシング画像の計算進捗">
+        <div class="scene-caption"><strong id="scene-title">球体のレイトレーシング</strong><span id="scene-origin">Picoが計算した画像を表示</span></div>
+        <div id="frame" class="frame">
+          <img id="render-image" alt="16台が並列計算しているレイトレーシング画像">
+          <div id="tile-layer" class="tile-layer" aria-hidden="true"></div>
+          <div id="empty-message" class="empty-message">Picoの接続を待っています</div>
+        </div>
+        <div class="progress-row">
+          <div class="progress-track"><div id="progress-bar"></div></div>
+          <strong id="progress-text">0 / 240 tiles</strong>
+        </div>
+      </section>
+
+      <aside>
+        <section class="status-card">
+          <div id="mode-label" class="mode-label">起動中</div>
+          <div class="metric-row">
+            <div><strong id="ready-count">0</strong><span>/ <span id="expected-count">16</span>台 接続</span></div>
+            <div><strong id="elapsed">0.0</strong><span id="elapsed-label">計算中の経過秒</span></div>
+          </div>
+          <p id="scene-warning" hidden></p><p id="status-message">展示プログラムを準備しています</p>
+          <p id="freshness" role="status" hidden></p>
+        </section>
+
+        <section class="workers-card">
+          <div class="section-title"><span>並列計算の担当</span><span id="cycle">CYCLE —</span></div>
+          <div id="workers" class="workers"></div>
+        </section>
+
+        <section class="explanation">
+          <div class="step"><b>1</b><span>画像を小さな領域に分割</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><b id="step-workers">16</b><span>接続したPicoへ仕事を同時に配る</span></div>
+          <div class="arrow">→</div>
+          <div class="step"><b>1</b><span>届いた結果から1枚の画像を合成</span></div>
+        </section>
+
+        <footer>
+          <span>各色は計算を担当したPicoを表します</span>
+          <span id="validation-note"></span><span id="checksum"></span>
+        </footer>
+      </aside>
+    </main>
+    <script type="module" src="/display.mjs"></script>
+  </body>
+</html>

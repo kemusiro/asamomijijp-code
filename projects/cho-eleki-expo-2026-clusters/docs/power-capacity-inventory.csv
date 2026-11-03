@@ -1,0 +1,8 @@
+section,device,model,quantity,ac_w_each,basis,status
+Pi 4 cluster,Raspberry Pi 4 power supply,Raspberry Pi official 15W USB-C power supply,14,18.519,15W output / 81% minimum efficiency,specification estimate
+Pico cluster manager,Raspberry Pi 5 power supply,Raspberry Pi official 27W USB-C power supply,1,30.000,25.5W output / 87.9% low-load efficiency rounded up,specification estimate
+Pico worker power,16-port powered USB hub,ELECOM U2H-Z16SBK,1,50.000,40W adapter output / provisional 80% efficiency,specification estimate
+Display,18.5-inch display power adapter,Newsoul 18.5-inch 120Hz FHD display ASIN B0FZR7BRBY,2,37.500,30W supplied adapter output / provisional 80% efficiency,specification estimate
+Network,16-port Gigabit Ethernet switch,PLANEX FXG-16IM5,1,12.000,maker maximum AC consumption about 12W,specification estimate
+Pico network,Wi-Fi access point,Buffalo WCR-1166DHPL/N,1,15.000,12V/1A adapter output / provisional 80% efficiency; maker maximum consumption 9.1W,specification estimate
+Operations,Management terminal and shared charger,Apple MacBook Air 13-inch (M2 2022) + Anker 747 Charger,1,187.500,total output maximum 150W / provisional 80% efficiency; always connected to AC; other ports may charge phones,specification estimate

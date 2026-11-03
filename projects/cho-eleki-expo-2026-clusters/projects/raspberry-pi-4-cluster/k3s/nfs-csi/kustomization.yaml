@@ -1,0 +1,34 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - upstream-v4.13.4/rbac-csi-nfs.yaml
+  - upstream-v4.13.4/csi-nfs-driverinfo.yaml
+  - upstream-v4.13.4/csi-nfs-controller.yaml
+  - upstream-v4.13.4/csi-nfs-node.yaml
+  - storageclass.yaml
+
+patches:
+  - target:
+      group: apps
+      version: v1
+      kind: Deployment
+      name: csi-nfs-controller
+      namespace: kube-system
+    patch: |-
+      - op: add
+        path: /spec/template/spec/nodeSelector/exhibition.asamomiji.jp~1role
+        value: control-plane
+  - target:
+      group: apps
+      version: v1
+      kind: DaemonSet
+      name: csi-nfs-node
+      namespace: kube-system
+    patch: |-
+      - op: add
+        path: /spec/template/spec/nodeSelector/exhibition.asamomiji.jp~1role
+        value: compute
+      - op: add
+        path: /spec/template/spec/nodeSelector/exhibition.asamomiji.jp~1nfs-csi-ready
+        value: "true"

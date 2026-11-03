@@ -1,0 +1,43 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: vehicle-evolution
+resources:
+  - k8s/workload.yaml
+configMapGenerator:
+  - name: vehicle-source
+    files:
+      - physics.mjs
+      - evolution.mjs
+      - pool.mjs
+      - evaluator-thread.mjs
+      - controller.mjs
+      - worker.mjs
+      - server.mjs
+      - cluster-server.mjs
+      - benchmark.mjs
+      - comparison-test.mjs
+      - continuous-test.mjs
+      - terrain-test.mjs
+      - tuned-terrain-test.mjs
+      - instability-test.mjs
+      - instability-check.mjs
+      - instability-fixture.json
+      - duration-test.mjs
+      - replay-test.mjs
+      - terrain-benchmark.mjs
+      - profile-test.mjs
+      - profile-benchmark.mjs
+      - test.mjs
+      - cluster-test.mjs
+      - verify-cluster.mjs
+      - index.html
+      - style.css
+      - app.mjs
+      - draw.mjs
+  - name: vehicle-vendor
+    files:
+      - vendor/planck.mjs
+      - vendor/PLANCK-LICENSE.txt
+generatorOptions:
+  labels:
+    app.kubernetes.io/part-of: vehicle-evolution
