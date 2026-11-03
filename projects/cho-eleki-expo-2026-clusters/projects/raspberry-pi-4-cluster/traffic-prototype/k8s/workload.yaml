@@ -1,0 +1,295 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: traffic-demo
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: traffic-results
+spec:
+  accessModes:
+    - ReadWriteMany
+  storageClassName: nfs-rwx-retain
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: traffic-workers
+spec:
+  clusterIP: None
+  publishNotReadyAddresses: false
+  selector:
+    app.kubernetes.io/name: traffic-worker
+  ports:
+    - name: http
+      port: 8787
+      protocol: TCP
+      targetPort: http
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: traffic-dashboard
+spec:
+  type: NodePort
+  selector:
+    app.kubernetes.io/name: traffic-coordinator
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: dashboard
+      nodePort: 30095
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: traffic-worker
+spec:
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: traffic-worker
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: traffic-worker
+        app.kubernetes.io/part-of: traffic-demo
+    spec:
+      automountServiceAccountToken: false
+      nodeSelector:
+        exhibition.asamomiji.jp/role: compute
+        exhibition.asamomiji.jp/traffic-worker: enabled
+      securityContext:
+        runAsGroup: 1000
+        runAsNonRoot: true
+        runAsUser: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: worker
+          image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+          imagePullPolicy: IfNotPresent
+          command:
+            - node
+            - /app/start-distributed-worker.mjs
+            - --host
+            - 0.0.0.0
+            - --port
+            - "8787"
+            - --worker-id
+            - $(NODE_NAME)
+          env:
+            - name: NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+          ports:
+            - name: http
+              containerPort: 8787
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: http
+            initialDelaySeconds: 2
+            periodSeconds: 3
+            timeoutSeconds: 5
+            failureThreshold: 3
+          livenessProbe:
+            tcpSocket:
+              port: http
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 6
+          resources:
+            requests:
+              cpu: 500m
+              memory: 128Mi
+            limits:
+              cpu: "1"
+              memory: 512Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+          volumeMounts:
+            - name: source
+              mountPath: /app
+              readOnly: true
+            - name: tmp
+              mountPath: /tmp
+      terminationGracePeriodSeconds: 15
+      volumes:
+        - name: source
+          configMap:
+            name: traffic-worker-source
+        - name: tmp
+          emptyDir:
+            sizeLimit: 64Mi
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: traffic-coordinator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: traffic-coordinator
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: traffic-coordinator
+        app.kubernetes.io/part-of: traffic-demo
+    spec:
+      automountServiceAccountToken: false
+      nodeSelector:
+        exhibition.asamomiji.jp/role: compute
+        kubernetes.io/hostname: node21
+      securityContext:
+        fsGroup: 65534
+        fsGroupChangePolicy: OnRootMismatch
+        runAsGroup: 65534
+        runAsNonRoot: true
+        runAsUser: 1000
+        seccompProfile:
+          type: RuntimeDefault
+      containers:
+        - name: coordinator
+          image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+          imagePullPolicy: IfNotPresent
+          command:
+            - node
+            - /dashboard/dashboard-server.mjs
+          env:
+            - name: PORT
+              value: "8080"
+            - name: RESULTS_DIR
+              value: /results
+            - name: PATTERNS_FILE
+              value: /dashboard/exhibition-patterns.json
+            - name: WORKER_SERVICE
+              value: traffic-workers
+            - name: WORKER_PORT
+              value: "8787"
+            - name: EXPECTED_WORKERS
+              value: "12"
+            - name: FIRST_WORKER
+              value: "10"
+          ports:
+            - name: dashboard
+              containerPort: 8080
+              protocol: TCP
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: dashboard
+            initialDelaySeconds: 2
+            periodSeconds: 5
+            timeoutSeconds: 2
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: dashboard
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            timeoutSeconds: 2
+            failureThreshold: 3
+          resources:
+            requests:
+              cpu: 50m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+          volumeMounts:
+            - name: source
+              mountPath: /app
+              readOnly: true
+            - name: dashboard
+              mountPath: /dashboard
+              readOnly: true
+            - name: results
+              mountPath: /results
+            - name: tmp
+              mountPath: /tmp
+        - name: exhibition-runner
+          image: docker.io/library/node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94
+          imagePullPolicy: IfNotPresent
+          command:
+            - node
+            - /app/exhibition-runner.mjs
+          env:
+            - name: RESULTS_DIR
+              value: /results
+            - name: PATTERNS_FILE
+              value: /app/exhibition-patterns.json
+            - name: WORKER_SERVICE
+              value: traffic-workers
+            - name: WORKER_PORT
+              value: "8787"
+            - name: EXPECTED_WORKERS
+              value: "12"
+            - name: BUDGET_MS
+              value: "15000"
+            - name: POPULATION_SIZE
+              value: "12"
+            - name: SEED_BASE
+              value: "7026"
+            - name: WORKER_TIMEOUT_MS
+              value: "10000"
+            - name: MAX_RETRIES
+              value: "1"
+            - name: RESULT_HOLD_MS
+              value: "30000"
+            - name: RETRY_MS
+              value: "5000"
+          resources:
+            requests:
+              cpu: 50m
+              memory: 96Mi
+            limits:
+              cpu: "1"
+              memory: 512Mi
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+          volumeMounts:
+            - name: source
+              mountPath: /app
+              readOnly: true
+            - name: results
+              mountPath: /results
+            - name: tmp
+              mountPath: /tmp
+      terminationGracePeriodSeconds: 45
+      volumes:
+        - name: source
+          configMap:
+            name: traffic-coordinator-source
+        - name: dashboard
+          configMap:
+            name: traffic-dashboard-source
+        - name: results
+          persistentVolumeClaim:
+            claimName: traffic-results
+        - name: tmp
+          emptyDir:
+            sizeLimit: 64Mi

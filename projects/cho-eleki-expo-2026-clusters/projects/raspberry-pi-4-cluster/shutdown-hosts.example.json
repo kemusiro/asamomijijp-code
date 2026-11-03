@@ -1,0 +1,143 @@
+{
+  "expected_compute_count": 12,
+  "hosts": [
+    {
+      "name": "mng",
+      "address": "192.168.2.1",
+      "user": "ubuntu",
+      "role": "management",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "storage",
+      "address": "192.168.2.2",
+      "user": "ubuntu",
+      "role": "storage",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node10",
+      "address": "192.168.2.10",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node11",
+      "address": "192.168.2.11",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node12",
+      "address": "192.168.2.12",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node13",
+      "address": "192.168.2.13",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node14",
+      "address": "192.168.2.14",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node15",
+      "address": "192.168.2.15",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node16",
+      "address": "192.168.2.16",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node17",
+      "address": "192.168.2.17",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node18",
+      "address": "192.168.2.18",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node19",
+      "address": "192.168.2.19",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node20",
+      "address": "192.168.2.20",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "node21",
+      "address": "192.168.2.21",
+      "user": "ubuntu",
+      "role": "compute",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 4"
+    },
+    {
+      "name": "rpi5",
+      "address": "192.168.2.254",
+      "user": "pi",
+      "role": "gateway",
+      "host_key_sha256": "SHA256:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "model_prefix": "Raspberry Pi 5"
+    }
+  ],
+  "workloads": [
+    {
+      "namespace": "vehicle-evolution",
+      "coordinator": "vehicle-coordinator",
+      "worker": "vehicle-worker",
+      "label": "exhibition.asamomiji.jp/vehicle-worker"
+    },
+    {
+      "namespace": "traffic-demo",
+      "coordinator": "traffic-coordinator",
+      "worker": "traffic-worker",
+      "label": "exhibition.asamomiji.jp/traffic-worker"
+    }
+  ],
+  "pico_services": [
+    "pico-raytracing-runner.service",
+    "pico-raytracing-display.service"
+  ]
+}

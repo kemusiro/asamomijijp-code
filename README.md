@@ -8,6 +8,7 @@
 
 ## 収録プロジェクト
 
+- [超エレキ万博2026 展示版](projects/cho-eleki-expo-2026-clusters/README.md) — Pi 4車体進化、Pico 16台の車体・球体巡回描画、Pi 5の2画面、導入・監視・停止復旧コードとテスト
 - [Terraformで構築するALBとprivate subnetのEC2](projects/terraform-aws-iac-basics/README.md) — VPC、public/private subnet、NAT Gateway、ALB、EC2を含むAWS学習用構成
 - [AQM1602XA Arduino／MicroPythonクラス](projects/aqm1602-arduino-notes/README.md) — 文字表示・外字・スクロール・電源回路設定、Pico 2 W・UNO R4 WiFi／Minimaでの実機確認と自動テスト
 - [UiFlow2生成Python→編集可能Block変換](projects/uiflow2-python-to-blocks/README.md) — Core2／UiFlow2 V2.5.3固定プロファイルの厳密変換、最善努力変換、`.m5f2`構造調査、Web IDE・実機検証記録

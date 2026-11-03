@@ -1,0 +1,40 @@
+{
+  "elapsedMs": 540.934,
+  "tiles": 920,
+  "crc32": "cf64cc3f",
+  "platform": "CPython host reference, not Pico hardware",
+  "modelId": "7c359ac339dc3a0df13e937b959093dd55204cee02a58ac88b75606a6b7c89ed",
+  "source": {
+    "comparisonFile": "validation-seed-comparison-pi4-2026-10-17.json",
+    "comparisonSha256": "641bfe8c2f5d306ea93c982bd7db6beada19e666c1a6748c8b33bd37d5f8d637",
+    "sourceRevision": "efeb192",
+    "courseSeed": 2026,
+    "populationSeed": 2026,
+    "generation": 69,
+    "distanceM": 109.69799025537974
+  },
+  "job": {
+    "name": "vehicle-7c359ac339dc3a0d-exhibition",
+    "model_version": "vehicle-extrusion-v1",
+    "vehicle": [
+      0.4837014441867359,
+      0.6243268672109116,
+      0.3,
+      0.3,
+      0.3,
+      0.33929099511005917,
+      0.3644405657169409,
+      0.8302757703128736,
+      0.8462260307732504,
+      0.95,
+      1.45,
+      -0.25,
+      4.1909644056577235
+    ],
+    "width": 320,
+    "height": 180,
+    "samples": 1,
+    "shadow_samples": 1,
+    "max_bounces": 1
+  }
+}

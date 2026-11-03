@@ -1,0 +1,27 @@
+[Unit]
+Description=Read-only Pi 4 management diagnostics
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=300
+StartLimitBurst=5
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/python3 -B /usr/local/lib/pi4-management-monitor/monitor.py --config /etc/pi4-management-monitor.json --output-dir /var/lib/pi4-management-monitor
+StateDirectory=pi4-management-monitor
+StateDirectoryMode=0700
+UMask=0077
+Restart=on-failure
+RestartSec=30
+TimeoutStopSec=15
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=full
+CPUWeight=10
+IOWeight=10
+MemoryMax=256M
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target

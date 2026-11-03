@@ -1,0 +1,1280 @@
+{
+  "imported_date": "2026-11-03",
+  "source_revision": "1469a66bf281ac00f78594366bc8ad29cbc8cffd",
+  "source_note": "出展準備用の非公開リポジトリから、所有者承認でアプリ・運用script・テストを公開用に抽出。原本の私有URL、履歴、認証情報、稼働ログ・個人用バックアップは収録しない。",
+  "files": [
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/images.txt",
+      "source_blob": "86a0a29d77ae5f1dc21e0738bf3b10ab04a51f4c",
+      "source_sha256": "a1176c1c2308eb2493ad218642f1c47acc33a9f2f7c4dc73b129332e7c9999f6",
+      "published_sha256": "a1176c1c2308eb2493ad218642f1c47acc33a9f2f7c4dc73b129332e7c9999f6",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/kustomization.yaml",
+      "source_blob": "eb6b971cd6f8ecf0174dc7d6247269f6b2dae4ae",
+      "source_sha256": "65a9eb10b6c203e99dad168cc88260a09ee6b205d3fa02cf70b0b7249a0123de",
+      "published_sha256": "65a9eb10b6c203e99dad168cc88260a09ee6b205d3fa02cf70b0b7249a0123de",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/retain-smoke-test.yaml",
+      "source_blob": "ada33463254f80b641f70ee3bedfd8d8861f9509",
+      "source_sha256": "cf61e8ae8c678125221c572879883a5442c15a5bcd64ea6c8cb09ff24391c136",
+      "published_sha256": "cf61e8ae8c678125221c572879883a5442c15a5bcd64ea6c8cb09ff24391c136",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/rwx-smoke-test.yaml",
+      "source_blob": "af4a60cedf8fe39d5cc4c25fe5651b0409e0453e",
+      "source_sha256": "45c1436f2db7ddb4f1f60589ba00df7eb3d220575791ff72495ebd5cea57ff06",
+      "published_sha256": "45c1436f2db7ddb4f1f60589ba00df7eb3d220575791ff72495ebd5cea57ff06",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/storageclass.yaml",
+      "source_blob": "24bf5eb05e09188e9044304ee0adcbcc8375c58a",
+      "source_sha256": "5606e09d62dc436a3421c1ff79812149219781d1b0d58b63d0b945e226a71215",
+      "published_sha256": "5606e09d62dc436a3421c1ff79812149219781d1b0d58b63d0b945e226a71215",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/LICENSE",
+      "source_blob": "8dada3edaf50dbc082c9a125058f25def75e625a",
+      "source_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "published_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/UPSTREAM.md",
+      "source_blob": "308ec4e73d337e10fced3914e837c096c06cab74",
+      "source_sha256": "a5b987845d1aa14b3d44310c788f42cfa16d5a65f84bd1a6df38261fed4ad64c",
+      "published_sha256": "a5b987845d1aa14b3d44310c788f42cfa16d5a65f84bd1a6df38261fed4ad64c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/csi-nfs-controller.yaml",
+      "source_blob": "4491769d5e2440ff7780c12a28ce5fd96b644aaf",
+      "source_sha256": "dcc1aa5188c93bea3a3239175ce4e9ac577702818c4fb9fa611a0039aa5ab255",
+      "published_sha256": "dcc1aa5188c93bea3a3239175ce4e9ac577702818c4fb9fa611a0039aa5ab255",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/csi-nfs-driverinfo.yaml",
+      "source_blob": "ce1f04ffaf149f0596337d345299f5714578437f",
+      "source_sha256": "fa2bba4674821b3317d1e016f3c9d54abe04fcdc6fed3fce9e58994c8311c4a0",
+      "published_sha256": "fa2bba4674821b3317d1e016f3c9d54abe04fcdc6fed3fce9e58994c8311c4a0",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/csi-nfs-node.yaml",
+      "source_blob": "03d4a6a2fb965c3275f2b17afd809e342c070e47",
+      "source_sha256": "b66104b44d4569c926e11af5c6c3858fbc38fd16099b206fc4a0dc0f7fcd94d2",
+      "published_sha256": "b66104b44d4569c926e11af5c6c3858fbc38fd16099b206fc4a0dc0f7fcd94d2",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/nfs-csi/upstream-v4.13.4/rbac-csi-nfs.yaml",
+      "source_blob": "21e36effecf0d6665e356752969875ab1d8e1e48",
+      "source_sha256": "312de689d07627330d8280e50d7b51357e0b5f5ca0d8aa75794aec460ee4cff0",
+      "published_sha256": "312de689d07627330d8280e50d7b51357e0b5f5ca0d8aa75794aec460ee4cff0",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/k3s/node-smoke-test.yaml",
+      "source_blob": "edd511b03c4fa2db3a04d775ba863bad3a1d3652",
+      "source_sha256": "a2c283a935748ddb1d6c93fc6c37b1d4d7d28ebe03372d202e3c03f8875e3790",
+      "published_sha256": "a2c283a935748ddb1d6c93fc6c37b1d4d7d28ebe03372d202e3c03f8875e3790",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/management-monitor/local.example.json",
+      "source_blob": "8549c0df096bead1b447cf9c1842f0e2817e8df9",
+      "source_sha256": "56194ce8b91d045de8ceab8458426dd3e223e01827495b62b7a3b80735d7699c",
+      "published_sha256": "56194ce8b91d045de8ceab8458426dd3e223e01827495b62b7a3b80735d7699c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/management-monitor/observer.example.json",
+      "source_blob": "ec6c8fc3735f032433bd4bffba461aea015abe4d",
+      "source_sha256": "571a36c96a8b3775dea9ec1c181221e4ade20d10820ebd66a0b9ae1bc620a572",
+      "published_sha256": "571a36c96a8b3775dea9ec1c181221e4ade20d10820ebd66a0b9ae1bc620a572",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/management-monitor/pi4-management-monitor.service",
+      "source_blob": "28ed5f8e2017ba39793f594773f7f0a93c5792a5",
+      "source_sha256": "d7fe188fb81da6e6cf39fb5ebc009878df2a3d8679d94634cc9e28a10a6e73d0",
+      "published_sha256": "d7fe188fb81da6e6cf39fb5ebc009878df2a3d8679d94634cc9e28a10a6e73d0",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/app.mjs",
+      "source_blob": "d135b3c8eb697234bc950729cc1a38b7ceedaacd",
+      "source_sha256": "cb96f232374f9cee74698527be4c0b4ebec9fa833aedc65e901789da844485f1",
+      "published_sha256": "cb96f232374f9cee74698527be4c0b4ebec9fa833aedc65e901789da844485f1",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/benchmark.mjs",
+      "source_blob": "4bb5b72c6126e4d45ba8e1def099a77256b655b5",
+      "source_sha256": "20759ac87bc49ed2edb892439d437a4468a28ea63de0a8d06c9d978adab47902",
+      "published_sha256": "20759ac87bc49ed2edb892439d437a4468a28ea63de0a8d06c9d978adab47902",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard-server.mjs",
+      "source_blob": "b0f565fdde10aff760448cf0905d66b3b3b8ebdb",
+      "source_sha256": "56a6b27d7ec59de74d5bfea811120e1072b39bc2579ab50d5715cd859b007e98",
+      "published_sha256": "56a6b27d7ec59de74d5bfea811120e1072b39bc2579ab50d5715cd859b007e98",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard-test.mjs",
+      "source_blob": "bb68cccd78ef1896e4b8ebac0b17b9e058078868",
+      "source_sha256": "c5cf5fc7989fe66a557842fe659959dd57a7bf861d3611570d819849d5f141cb",
+      "published_sha256": "c5cf5fc7989fe66a557842fe659959dd57a7bf861d3611570d819849d5f141cb",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard.css",
+      "source_blob": "055c1398d63e1766a7e8bd6f38ea2352f9351a65",
+      "source_sha256": "e88bdcf2e8fa824e20eae0074d8d5828c8e34d3409d79a9cc1014e5aebd2de1d",
+      "published_sha256": "e88bdcf2e8fa824e20eae0074d8d5828c8e34d3409d79a9cc1014e5aebd2de1d",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard.html",
+      "source_blob": "b59d743e80331be0e0df0d6c4a3d597eb4270ea5",
+      "source_sha256": "d464d5cb51693862b014c8701269354ed0113cbc427f18ed6f458d56d906a2af",
+      "published_sha256": "d464d5cb51693862b014c8701269354ed0113cbc427f18ed6f458d56d906a2af",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/dashboard.mjs",
+      "source_blob": "0c5b8a882a55a8d72c469d4ec75f1a71ac63636b",
+      "source_sha256": "03b6d353f88754884c706dc80ce32751c089b0200c9781a90d340253ec966a97",
+      "published_sha256": "03b6d353f88754884c706dc80ce32751c089b0200c9781a90d340253ec966a97",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed-benchmark.mjs",
+      "source_blob": "f63716b2ca4fb30de7e2d92767e45fb6384db98a",
+      "source_sha256": "bd8079b9dc4dc41647bbfbf2225225ee2d68b444c2f3a71b0cfeb68134c3cd0f",
+      "published_sha256": "bd8079b9dc4dc41647bbfbf2225225ee2d68b444c2f3a71b0cfeb68134c3cd0f",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed-run.mjs",
+      "source_blob": "55f2f3ce48fca0cdbe4a85a83a0233b78d30b578",
+      "source_sha256": "0b4f383f52d928c76e7f8ea33e05756a6864836112354a76848f55ae8d6f5cbd",
+      "published_sha256": "0b4f383f52d928c76e7f8ea33e05756a6864836112354a76848f55ae8d6f5cbd",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed-test.mjs",
+      "source_blob": "d137bf707d056900e5e1ba9a08e37a1c74b54ea5",
+      "source_sha256": "2e09bc86127a672e6c60d4d40cd8017bd731ba9916501056fe89416e06e5492b",
+      "published_sha256": "2e09bc86127a672e6c60d4d40cd8017bd731ba9916501056fe89416e06e5492b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed-worker.mjs",
+      "source_blob": "0d37bfcec1877c231e769caa6fd757dc884ae0ab",
+      "source_sha256": "f9ad7a529381d01f4f2eb40fe10527ad18e748e2e4da1a641a837fdbdd73d221",
+      "published_sha256": "f9ad7a529381d01f4f2eb40fe10527ad18e748e2e4da1a641a837fdbdd73d221",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/distributed.mjs",
+      "source_blob": "58cc2e45ef8e9fcba5e1672c02af9316746883b9",
+      "source_sha256": "ca868383493a528e5da2a8f406d592905a47c5a5ea833406fa986e08f47bdc89",
+      "published_sha256": "ca868383493a528e5da2a8f406d592905a47c5a5ea833406fa986e08f47bdc89",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/engine.mjs",
+      "source_blob": "e731c0ecc8d92d6bc10594cf52e689f5e88a3c04",
+      "source_sha256": "97288973d8acc6d85bd5b31f9ef2f9a859fbb0fb6e336b4a7f7a619a06df3983",
+      "published_sha256": "97288973d8acc6d85bd5b31f9ef2f9a859fbb0fb6e336b4a7f7a619a06df3983",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/exhibition-patterns.json",
+      "source_blob": "07da0967079adec2f399de9d3e8a930f2bae5962",
+      "source_sha256": "055cdbd4fbfa41882485a43f73d4b923fe330023326a9a2b546746eabd39e881",
+      "published_sha256": "055cdbd4fbfa41882485a43f73d4b923fe330023326a9a2b546746eabd39e881",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/exhibition-runner-test.mjs",
+      "source_blob": "45709e145ce3ba12f6da436557cd2cd06f762bde",
+      "source_sha256": "5f137c31a2eb4aa8a4b72e89bed5f2485d73b839cb2e482c5fd8072ac5135e5b",
+      "published_sha256": "5f137c31a2eb4aa8a4b72e89bed5f2485d73b839cb2e482c5fd8072ac5135e5b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/exhibition-runner.mjs",
+      "source_blob": "c242f1620b371fd2b6a1ba253aac24897be06f94",
+      "source_sha256": "1d92d07d4ce673e4195a3a256d91cf33bcabaa5c276152566baf63a839516e6b",
+      "published_sha256": "1d92d07d4ce673e4195a3a256d91cf33bcabaa5c276152566baf63a839516e6b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/genetic-test.mjs",
+      "source_blob": "a96033bef128de12b72ab025cb3320cc346ff897",
+      "source_sha256": "d7ea210b99548bf052be35f02d4ce4153b80f2008cccd1dc30d646d71a2885c0",
+      "published_sha256": "d7ea210b99548bf052be35f02d4ce4153b80f2008cccd1dc30d646d71a2885c0",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/genetic.mjs",
+      "source_blob": "62ee4559b64ae352c832953d7feff51ce4932f26",
+      "source_sha256": "856e67a303cd758823ff7b37da0b805d7f24907531afe8234728a0ed8acb5c19",
+      "published_sha256": "856e67a303cd758823ff7b37da0b805d7f24907531afe8234728a0ed8acb5c19",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/index.html",
+      "source_blob": "63dfe90de0428a6b9df26d419147123c49cdd20f",
+      "source_sha256": "4ec833e0dd62fb1fa1b6cdf926d4a0ead30b9135f8e0a42bc1bcaa603da67cfa",
+      "published_sha256": "4ec833e0dd62fb1fa1b6cdf926d4a0ead30b9135f8e0a42bc1bcaa603da67cfa",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/k8s/images.txt",
+      "source_blob": "4af44e47b41fc04c5f57a34624a3acfd9f5df6d1",
+      "source_sha256": "cdd6341270190a2f8a86b6c919bf21c0d972527b18991b6343de7be86357153e",
+      "published_sha256": "cdd6341270190a2f8a86b6c919bf21c0d972527b18991b6343de7be86357153e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/k8s/workload.yaml",
+      "source_blob": "5d909479c662c23ec92306eb4ff9dd137bdd687a",
+      "source_sha256": "ede8b7b5269cc3078d0fb9b305448e9792181f0f7082a2207bf859ebadb72f78",
+      "published_sha256": "ede8b7b5269cc3078d0fb9b305448e9792181f0f7082a2207bf859ebadb72f78",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/kustomization.yaml",
+      "source_blob": "f763830c9b015c5f8f479c0b2dc5f11053110007",
+      "source_sha256": "ed1d839844342419e2d6d98423dd5df8371f0d2610ac97129037bcb6828d2c47",
+      "published_sha256": "ed1d839844342419e2d6d98423dd5df8371f0d2610ac97129037bcb6828d2c47",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/outer-search.mjs",
+      "source_blob": "7e1b7779e3bf82b77667cdeced108e9b6e2aefb1",
+      "source_sha256": "9f2a1d0328d780b34651596ec3f98c787c42f3e5cbec6a4f1be9acaed6fe3685",
+      "published_sha256": "9f2a1d0328d780b34651596ec3f98c787c42f3e5cbec6a4f1be9acaed6fe3685",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/search.mjs",
+      "source_blob": "d79f139ac52c9447d79b676c26ca39ae4cdc0fa5",
+      "source_sha256": "7a4d633a2e54a670de0baa6c5b82d3895445ccc1b87dd94e9a38a68e6a68f287",
+      "published_sha256": "7a4d633a2e54a670de0baa6c5b82d3895445ccc1b87dd94e9a38a68e6a68f287",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/start-distributed-worker.mjs",
+      "source_blob": "bb9f4a8afd1e199e9e0164c26b6aa3ac94865020",
+      "source_sha256": "ba3f9d2ab143880c02f8bce265f93eb869cc428aa86d0bf010aa595c98a832df",
+      "published_sha256": "ba3f9d2ab143880c02f8bce265f93eb869cc428aa86d0bf010aa595c98a832df",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/style.css",
+      "source_blob": "ebae7c075dd09aa846f0453a3ba71499953e76de",
+      "source_sha256": "770d7057bd962406352ce398e35ca91dbc398f9fec68791ced6f272dcf6d5395",
+      "published_sha256": "770d7057bd962406352ce398e35ca91dbc398f9fec68791ced6f272dcf6d5395",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/test.mjs",
+      "source_blob": "26d5977ca4bc07f19a8963eeaa6954f6ecfc53dc",
+      "source_sha256": "617b67983437405738cf2ea0bdd09dcb409590ba620b41daac218c457f859db4",
+      "published_sha256": "617b67983437405738cf2ea0bdd09dcb409590ba620b41daac218c457f859db4",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/time-budget-benchmark.mjs",
+      "source_blob": "d80552d2cb440c659f0d5904fe2f73067339c7f9",
+      "source_sha256": "1b917084f62fce2022e67eb7b88577e3c5a8593e87299023dd93f7a3fa92a14f",
+      "published_sha256": "1b917084f62fce2022e67eb7b88577e3c5a8593e87299023dd93f7a3fa92a14f",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/time-budget-test.mjs",
+      "source_blob": "07a52aa07c89d1495dc75f0a99bdf27f9c9b3460",
+      "source_sha256": "7e924dd7bfd56e20d3a2dcc8481facc11d8abc4be5e2c2086b9df5e15848915b",
+      "published_sha256": "7e924dd7bfd56e20d3a2dcc8481facc11d8abc4be5e2c2086b9df5e15848915b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/validate-distributed-benchmark.mjs",
+      "source_blob": "54ad75696aba2f149c3d6d1fd195b69c4375f518",
+      "source_sha256": "5d100a9ced3428ed63cb70013e908f7b249ba49270c3e8f79920074eb9e4e1a5",
+      "published_sha256": "5d100a9ced3428ed63cb70013e908f7b249ba49270c3e8f79920074eb9e4e1a5",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/validate-distributed-fault.mjs",
+      "source_blob": "db2692617b15cd941236a7171fd96aa0c72e0829",
+      "source_sha256": "134be17629beedf5a4df29551919da45acf2228985ab30ce910510afadfe2817",
+      "published_sha256": "134be17629beedf5a4df29551919da45acf2228985ab30ce910510afadfe2817",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/validate-outer-search.mjs",
+      "source_blob": "3fbd8aab73dcb71086b8cc8269e7e256dbc5e031",
+      "source_sha256": "36bdbca2d24addbba8cfca173861555277cf14961f5357fc11acd75b33c45516",
+      "published_sha256": "36bdbca2d24addbba8cfca173861555277cf14961f5357fc11acd75b33c45516",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/validate-time-budget.mjs",
+      "source_blob": "ac8549052ba252f2684ebf650243203b1b0600c2",
+      "source_sha256": "977e4c35d1cef7eb1928eb6d3b2ebf50a4ef5e68fe707c396e0a766b590a8727",
+      "published_sha256": "977e4c35d1cef7eb1928eb6d3b2ebf50a4ef5e68fe707c396e0a766b590a8727",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/traffic-prototype/worker.mjs",
+      "source_blob": "f30170d11a7cde6fafd2fe9d005d45937acbba16",
+      "source_sha256": "ee89c82f9bb36d08c349a49e78be4d2f20518b7815d1b534007b6ee232c93cf7",
+      "published_sha256": "ee89c82f9bb36d08c349a49e78be4d2f20518b7815d1b534007b6ee232c93cf7",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/THIRD_PARTY.md",
+      "source_blob": "fd580cfec65c687e7e7054081570fcbf877c3f82",
+      "source_sha256": "60e595ef1f31d8b3dfc96a959f76d29a78ddececab83140c54189a4f49cb3270",
+      "published_sha256": "60e595ef1f31d8b3dfc96a959f76d29a78ddececab83140c54189a4f49cb3270",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/app.mjs",
+      "source_blob": "0d0c5a988cd5005af397ddfeb576bcd613667d8c",
+      "source_sha256": "02a1017b2ef68c6bb9f45bcea6723f146e2dcfa9142202429d86dee1c404ca0b",
+      "published_sha256": "02a1017b2ef68c6bb9f45bcea6723f146e2dcfa9142202429d86dee1c404ca0b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/benchmark.mjs",
+      "source_blob": "f5ccd5ecf64dbeae1e4036a76c40304fb329337b",
+      "source_sha256": "c42d4474dd43ac25dac87a0371a5aef38f4b4b58298ea04596c2a55b2a81493e",
+      "published_sha256": "c42d4474dd43ac25dac87a0371a5aef38f4b4b58298ea04596c2a55b2a81493e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/cluster-server.mjs",
+      "source_blob": "331e60cbbe8ff81f560e5c13cf300f6b3d2cde6b",
+      "source_sha256": "81526b6b986c0eaf013872c5e8a3a928840b8431d8b7e2459f1922d8654f63e5",
+      "published_sha256": "81526b6b986c0eaf013872c5e8a3a928840b8431d8b7e2459f1922d8654f63e5",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/cluster-test.mjs",
+      "source_blob": "3d516ecf96a415c1788014679ffe3e7144a463b6",
+      "source_sha256": "bcada25e29ff92516186316e1d2e904cae11feac99e108bc6fe3da3b33d8320c",
+      "published_sha256": "bcada25e29ff92516186316e1d2e904cae11feac99e108bc6fe3da3b33d8320c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/comparison-test.mjs",
+      "source_blob": "15354f9d26b169df99a89eeaf774d761563440f5",
+      "source_sha256": "11646d5515f20d5fe547f9647db29da8924ebfd2b4fc7f9e426074da226c8989",
+      "published_sha256": "11646d5515f20d5fe547f9647db29da8924ebfd2b4fc7f9e426074da226c8989",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/continuous-test.mjs",
+      "source_blob": "1c718ab21461588d9a8091a25db19879e598f20b",
+      "source_sha256": "1dab6731376639c5a9f656969b8706656575fb9893b8332892e2012689e1b242",
+      "published_sha256": "1dab6731376639c5a9f656969b8706656575fb9893b8332892e2012689e1b242",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/controller.mjs",
+      "source_blob": "93667a17b05f7feaf0898f3541453e70682d7ccf",
+      "source_sha256": "24d4ecb375a1296a706fd0629601d6528cc77e6d365d235fd6953acad1763397",
+      "published_sha256": "24d4ecb375a1296a706fd0629601d6528cc77e6d365d235fd6953acad1763397",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/deploy-k3s.sh",
+      "source_blob": "5404c404e59fe41039f24c84b4616d506d5d4353",
+      "source_sha256": "2b113e39eb094b6174fd2340115f2c18c1855d967b162ce8343c8d626a64af88",
+      "published_sha256": "2b113e39eb094b6174fd2340115f2c18c1855d967b162ce8343c8d626a64af88",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/draw.mjs",
+      "source_blob": "ac87a1aac85a3ea39ccb3ba1442daf95be941c1c",
+      "source_sha256": "b3678045fc9b843814a9e82142f02b9347c8a38e5ab2fe822b2ead029dc7c620",
+      "published_sha256": "b3678045fc9b843814a9e82142f02b9347c8a38e5ab2fe822b2ead029dc7c620",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/duration-test.mjs",
+      "source_blob": "ba1948aa36638fb2cbd963a5719ad3478f4635f6",
+      "source_sha256": "34e7647ec071561f939dfdfd6406803bca29fda872865d76fe28605c9a8462ca",
+      "published_sha256": "34e7647ec071561f939dfdfd6406803bca29fda872865d76fe28605c9a8462ca",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/evaluator-thread.mjs",
+      "source_blob": "cb91e93d6531c5ed11406e4ddee8726f7e533d95",
+      "source_sha256": "f32b845643e89f107885bf51f7935eafcfe22f008ca48c3a06aa992d1eea912d",
+      "published_sha256": "f32b845643e89f107885bf51f7935eafcfe22f008ca48c3a06aa992d1eea912d",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/evolution.mjs",
+      "source_blob": "0ddbd1e63b4860271612847a7552418a7ea4d0c4",
+      "source_sha256": "eb138892d50b538bfd5543e89dbab42e4c4ff935149f6d43f13df8b22ef55788",
+      "published_sha256": "eb138892d50b538bfd5543e89dbab42e4c4ff935149f6d43f13df8b22ef55788",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/index.html",
+      "source_blob": "fbd14b3e0ffeddc1c364bc811e7bbf8d9b61ed48",
+      "source_sha256": "bf998a06fa4f74fa5d677a897b1fcdfaf2d88cb065f670550e4d58122381dcf9",
+      "published_sha256": "bf998a06fa4f74fa5d677a897b1fcdfaf2d88cb065f670550e4d58122381dcf9",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/instability-check.mjs",
+      "source_blob": "b42f1306a7877e5726c5620fb7259394533054a6",
+      "source_sha256": "885be4263d6427de9c094bedbdda215955c7269535783c926ac1b1e7e5751b45",
+      "published_sha256": "885be4263d6427de9c094bedbdda215955c7269535783c926ac1b1e7e5751b45",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/instability-fixture.json",
+      "source_blob": "24c538659875cf9ca1bee41d0fcd4d42035afc13",
+      "source_sha256": "55207595813ebd50c4b601a12f766ec27fe9267788e63872cce68ae4822ca1de",
+      "published_sha256": "55207595813ebd50c4b601a12f766ec27fe9267788e63872cce68ae4822ca1de",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/instability-test.mjs",
+      "source_blob": "c7531d3c84374ea049aa7dbe39935447a9c6659e",
+      "source_sha256": "1efd4eaec263c0cd357aaaf84ded4fdb46e09b338590006e2f1a1f0c3da43f4a",
+      "published_sha256": "1efd4eaec263c0cd357aaaf84ded4fdb46e09b338590006e2f1a1f0c3da43f4a",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/k8s/workload.yaml",
+      "source_blob": "5382154fbcd960c10075fcfef1007fa6cb31d11b",
+      "source_sha256": "e88d05b872a27b8994729c88ed860a37f7744ce0b1538a5ae20baf6d7c861333",
+      "published_sha256": "e88d05b872a27b8994729c88ed860a37f7744ce0b1538a5ae20baf6d7c861333",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/kustomization.yaml",
+      "source_blob": "f7c9f4da11dc474b0a451c4cf13e9742906e5e9d",
+      "source_sha256": "f9d0a7a5651ae3170b477cf1c9629ec5aac422f046401189d23de54133e220d6",
+      "published_sha256": "f9d0a7a5651ae3170b477cf1c9629ec5aac422f046401189d23de54133e220d6",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/physics.mjs",
+      "source_blob": "417a910905c2aa50ca3fcc6e5f4d37b1a9cc2fb7",
+      "source_sha256": "e805585c1b4edcf0e79647eff7e4513b41666d991bd56fb18e0f03f066b4aef9",
+      "published_sha256": "e805585c1b4edcf0e79647eff7e4513b41666d991bd56fb18e0f03f066b4aef9",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/pool.mjs",
+      "source_blob": "75b812567c376fb2e7c77cf675d3405746dfdf63",
+      "source_sha256": "eb35e28fa98f7122d9f080375c66d6ff652dd9467ed623d89db6d8c421767822",
+      "published_sha256": "eb35e28fa98f7122d9f080375c66d6ff652dd9467ed623d89db6d8c421767822",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/profile-benchmark.mjs",
+      "source_blob": "d8a1b53d1762276ed89e4a167292527ff678d890",
+      "source_sha256": "bcf4bf8f0d5bc55eec3f8ff94601c1b953c165c48a1b49efe2e30bd688d7d402",
+      "published_sha256": "bcf4bf8f0d5bc55eec3f8ff94601c1b953c165c48a1b49efe2e30bd688d7d402",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/profile-test.mjs",
+      "source_blob": "b41ab0f5ea60018047d574b438ce34748feca384",
+      "source_sha256": "0782c01465a9c389d8239272988c20ae770d78b2adc5fcc34681394dbda8924e",
+      "published_sha256": "0782c01465a9c389d8239272988c20ae770d78b2adc5fcc34681394dbda8924e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/replay-test.mjs",
+      "source_blob": "91f57084682cbc9327ff243c7d12860c2c80d748",
+      "source_sha256": "c419b855196b26a24a67f9e8adfde981fe92015b993d5393da21e6f8d06223db",
+      "published_sha256": "c419b855196b26a24a67f9e8adfde981fe92015b993d5393da21e6f8d06223db",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/server.mjs",
+      "source_blob": "83e1d193fa7849783c9fe3585ae47313bff9aa1c",
+      "source_sha256": "e7940ebfc64d52070abc353301e288b2a4f88c74a0ee2ee4637c204472d3a152",
+      "published_sha256": "e7940ebfc64d52070abc353301e288b2a4f88c74a0ee2ee4637c204472d3a152",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/style.css",
+      "source_blob": "dcbd3d131373787d38507d9a9a7b672e87145a64",
+      "source_sha256": "ae7cfa5d304dd5cc821e02805b1a63536726066bff918fc1647c6c3d57e706e3",
+      "published_sha256": "ae7cfa5d304dd5cc821e02805b1a63536726066bff918fc1647c6c3d57e706e3",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-benchmark.mjs",
+      "source_blob": "7287cb12bcab9e003773c92fa70fdb2531d0a6fe",
+      "source_sha256": "38e886e70bce226f3ecf87abbf1a648671e9ec795bf8c007b1dd158b44fefaef",
+      "published_sha256": "38e886e70bce226f3ecf87abbf1a648671e9ec795bf8c007b1dd158b44fefaef",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-test.mjs",
+      "source_blob": "9c656f1afe796316c30ff03a4cb039b7aeaec84a",
+      "source_sha256": "0532b5a5be25d1db1989c507aba425312ea1fd0933c30547736fbfce63170f32",
+      "published_sha256": "0532b5a5be25d1db1989c507aba425312ea1fd0933c30547736fbfce63170f32",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-tuning-benchmark.mjs",
+      "source_blob": "ec1f467a41758558258b4522511475bdf0698fc2",
+      "source_sha256": "ef8232270ed331de2e6a03f6f5b7e6c0204c5f60ade48f4fcb7b97db652cec2e",
+      "published_sha256": "ef8232270ed331de2e6a03f6f5b7e6c0204c5f60ade48f4fcb7b97db652cec2e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-tuning-test.mjs",
+      "source_blob": "ee91aeb12b0a8aad81393cbeb145ef41679ec37e",
+      "source_sha256": "ea3b879f450d20fedfcea04d06a3892e9093bd79d106324300fd3c2991c91715",
+      "published_sha256": "ea3b879f450d20fedfcea04d06a3892e9093bd79d106324300fd3c2991c91715",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-tuning-worker.mjs",
+      "source_blob": "2c50b859d9754d38a337f190b9fb5fbb88c634f1",
+      "source_sha256": "fc65041f85cc9a404f29699636453753e2d07a97d6ae272e51a082b81df0afe5",
+      "published_sha256": "fc65041f85cc9a404f29699636453753e2d07a97d6ae272e51a082b81df0afe5",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/terrain-tuning.mjs",
+      "source_blob": "9792f8c61de1e46940fdd4e1d943e3b5c77dcf6c",
+      "source_sha256": "451acca03830815ca74d8817bc65231628a1404ab5c1d0c3e56e6e60305ab9f2",
+      "published_sha256": "451acca03830815ca74d8817bc65231628a1404ab5c1d0c3e56e6e60305ab9f2",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/test.mjs",
+      "source_blob": "68e954d4126eac9d5328989466d7e158e7a34804",
+      "source_sha256": "a1ee04f90b858a764cd7056faf300d162e241b2295ff11d5d6e1b6bf474b059d",
+      "published_sha256": "a1ee04f90b858a764cd7056faf300d162e241b2295ff11d5d6e1b6bf474b059d",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/tuned-terrain-test.mjs",
+      "source_blob": "31701b1d01b3f7800f53b74aa83632cdfe2f1353",
+      "source_sha256": "37ec5cc7e788265019b4958929620ce3708b36f97b20bf1e4207e1887108ea16",
+      "published_sha256": "37ec5cc7e788265019b4958929620ce3708b36f97b20bf1e4207e1887108ea16",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/validation-seed-comparison-pi4-2026-10-17.json",
+      "source_blob": "3de700bf1ef9153b27447ee450dad9a13a178bf6",
+      "source_sha256": "641bfe8c2f5d306ea93c982bd7db6beada19e666c1a6748c8b33bd37d5f8d637",
+      "published_sha256": "641bfe8c2f5d306ea93c982bd7db6beada19e666c1a6748c8b33bd37d5f8d637",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/vendor/PLANCK-LICENSE.txt",
+      "source_blob": "494699749e775cc8e2ee447162f0461d56bdadea",
+      "source_sha256": "49fd3df949edd5f294edafb22e8905263dd7560b514bee6df2f17538069aafca",
+      "published_sha256": "49fd3df949edd5f294edafb22e8905263dd7560b514bee6df2f17538069aafca",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/vendor/planck.mjs",
+      "source_blob": "57668e5e66e17457e263dfd6eac07b8da8cc5f0a",
+      "source_sha256": "12379370cca3195280b9a37ef8bf5f264ea3de0070b41a30dbb7d1d499f0216b",
+      "published_sha256": "12379370cca3195280b9a37ef8bf5f264ea3de0070b41a30dbb7d1d499f0216b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/verify-cluster.mjs",
+      "source_blob": "f4f30140c3bbaac4de7997a241aa6580fbec51f2",
+      "source_sha256": "4b512ccd18d62eef2866e3cb129ec5548f130829a86e514312ed74429aa809ff",
+      "published_sha256": "4b512ccd18d62eef2866e3cb129ec5548f130829a86e514312ed74429aa809ff",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/vehicle-evolution/worker.mjs",
+      "source_blob": "4c7883e211e0b56a874db4b919b48bdc877b4d15",
+      "source_sha256": "ea8fc390431e1b2629ebbeb57f92a897420ae552c65735f3f8a9f8ff4b4825e2",
+      "published_sha256": "ea8fc390431e1b2629ebbeb57f92a897420ae552c65735f3f8a9f8ff4b4825e2",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/host/mandelbrot_reference.py",
+      "source_blob": "5a0016f1d917d18dd942465fee4c3fd1691fbea4",
+      "source_sha256": "dfc8931b804e045948c40d3c78625a1a3efca82ad99eba5de44fc95b8af23be5",
+      "published_sha256": "dfc8931b804e045948c40d3c78625a1a3efca82ad99eba5de44fc95b8af23be5",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/manager.py",
+      "source_blob": "b724ea1e07d7d23cfbf926fcfeed46a071df1f07",
+      "source_sha256": "fd7893917c997ae6ec602a17508d419c3a5977c5a764bc516c72b961df4becef",
+      "published_sha256": "fd7893917c997ae6ec602a17508d419c3a5977c5a764bc516c72b961df4becef",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/mock_worker.py",
+      "source_blob": "7e3caf82c909f46f134df6dfebd38ed1a6636b20",
+      "source_sha256": "6edfdd56960fc81e75f3a542db4e3eeb5fff2c19c856fc44c77ff744e554f26e",
+      "published_sha256": "6edfdd56960fc81e75f3a542db4e3eeb5fff2c19c856fc44c77ff744e554f26e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/network_config.example.py",
+      "source_blob": "8ea2659d96db0c0381ba837c553a31f3659ecfb2",
+      "source_sha256": "2d196b8e54a93215855fa697f263a85246741e01cdfde9d67d5ed98f5e51ab11",
+      "published_sha256": "2d196b8e54a93215855fa697f263a85246741e01cdfde9d67d5ed98f5e51ab11",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/network_protocol.py",
+      "source_blob": "e8c5f3137ac4a7e96a2819ad4b8d5fb88acebfe7",
+      "source_sha256": "d8514c8b0cf9b24650b1cd1b807668b2789f45127b968aa7d430369347320ae4",
+      "published_sha256": "d8514c8b0cf9b24650b1cd1b807668b2789f45127b968aa7d430369347320ae4",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/pico_main.py",
+      "source_blob": "945e64a36ca5156761390ad4b7534ccec0622cf9",
+      "source_sha256": "b434067250e5005825b05f12126d8133612135750016017594ae748301454c9f",
+      "published_sha256": "b434067250e5005825b05f12126d8133612135750016017594ae748301454c9f",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/pico_worker.py",
+      "source_blob": "44a304b495d3f73b1f251db24381a12ed74492e9",
+      "source_sha256": "5c53aa2b6012ca02f87e19bbaa7d1eb237dbb6ea8dca1ac851647bae0edeae8e",
+      "published_sha256": "5c53aa2b6012ca02f87e19bbaa7d1eb237dbb6ea8dca1ac851647bae0edeae8e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/progress_recording.py",
+      "source_blob": "beafc52b96042300d78f128844cdf6d19eb75899",
+      "source_sha256": "a489b37c084c3aba0a7d12f7fdc12086cf095051cbfb3b74f9103eb581e36ea1",
+      "published_sha256": "a489b37c084c3aba0a7d12f7fdc12086cf095051cbfb3b74f9103eb581e36ea1",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/render_progress_video.py",
+      "source_blob": "187dd6211196dabd4992a0884a178329fb993396",
+      "source_sha256": "f1a86d9c26aabaa57a6ba1dff18d6c9f564afe1e9fc3f0d68b46af2310d2f940",
+      "published_sha256": "f1a86d9c26aabaa57a6ba1dff18d6c9f564afe1e9fc3f0d68b46af2310d2f940",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/rgb_status.py",
+      "source_blob": "84183feead4cef6168b4de829122e4807efa6da6",
+      "source_sha256": "9efd87f417a23a7dff649a215c70f9bdc9ea8e6dcb1f3b54272f62c16af91495",
+      "published_sha256": "9efd87f417a23a7dff649a215c70f9bdc9ea8e6dcb1f3b54272f62c16af91495",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_exhibition_orchestrator.py",
+      "source_blob": "89435ae7e9c30c86135f7c04f918150e234c9f45",
+      "source_sha256": "1605f64cec2cd116ce8976ce1d8460e064e2ddd3d9aadd234874f1732506cdac",
+      "published_sha256": "1605f64cec2cd116ce8976ce1d8460e064e2ddd3d9aadd234874f1732506cdac",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_network.py",
+      "source_blob": "54f3dbc5f82e007c4d1c817b561351928def3a65",
+      "source_sha256": "89ebf832e240c7ac90aaf583f93bddd97ef07ffd86b843fd1a50bfc7d7f63a53",
+      "published_sha256": "89ebf832e240c7ac90aaf583f93bddd97ef07ffd86b843fd1a50bfc7d7f63a53",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_progress_recording.py",
+      "source_blob": "82249f7ee6007d615abeeeb1a898910c9c494a03",
+      "source_sha256": "6de16b205b5b6a82d9e4820574d612d4e58f0c8884f8b48f8565eeadde53cab4",
+      "published_sha256": "6de16b205b5b6a82d9e4820574d612d4e58f0c8884f8b48f8565eeadde53cab4",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_rgb_status.py",
+      "source_blob": "32bc60aef91e0087dd01077dc4b3a6145e394667",
+      "source_sha256": "da31895150fd644c3d8446d7cc317b91d218fe889a0a4dd526c157d76693c03f",
+      "published_sha256": "da31895150fd644c3d8446d7cc317b91d218fe889a0a4dd526c157d76693c03f",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_unresponsive_worker.py",
+      "source_blob": "484e8c8faea2d664d44bacd8185e1237849b6c1a",
+      "source_sha256": "8fb944e7bb9ddc074f33d119d4bec96143e4b7c2ad872e233cce30d09d7a22eb",
+      "published_sha256": "8fb944e7bb9ddc074f33d119d4bec96143e4b7c2ad872e233cce30d09d7a22eb",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/network/tests/test_watchdog_orchestrator.py",
+      "source_blob": "46bb725808808045f5566a449a6faa05d45c1a69",
+      "source_sha256": "b686624dbae96e3309b65a53e83dcbccd150d67d1a760c7f1c48b0b63393ecd4",
+      "published_sha256": "b686624dbae96e3309b65a53e83dcbccd150d67d1a760c7f1c48b0b63393ecd4",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/pico/benchmark.py",
+      "source_blob": "b8951821d035e53b4b11789ea62a5ce89211c73d",
+      "source_sha256": "ead6024967cdb12b346b27eece6d0ddd8347be5585a6c8b304390fe778c2d00e",
+      "published_sha256": "ead6024967cdb12b346b27eece6d0ddd8347be5585a6c8b304390fe778c2d00e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/pico/mandelbrot_core.py",
+      "source_blob": "f23ba4cc798e31f4ba6254d9b81cabf82a473130",
+      "source_sha256": "3e4971b512b67f105cf89710bae8da25b87d8d95f74abc99f1663b983a6c9a3b",
+      "published_sha256": "3e4971b512b67f105cf89710bae8da25b87d8d95f74abc99f1663b983a6c9a3b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/mandelbrot/tests/test_mandelbrot.py",
+      "source_blob": "e3d2a2134fd0b7fb5dd657253ce291a93bf4bbba",
+      "source_sha256": "41a2803978b2af1ead8dd450b94f699ff189db100b528c442fa616985e143b58",
+      "published_sha256": "41a2803978b2af1ead8dd450b94f699ff189db100b528c442fa616985e143b58",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/display/display-state.mjs",
+      "source_blob": "c60721a68e49f573db71d548b54543ac93123f1b",
+      "source_sha256": "be0e71d0defae3d5f15ce3be6df45b3d22b7a79c5c16b4d666068034b5cb1bcc",
+      "published_sha256": "be0e71d0defae3d5f15ce3be6df45b3d22b7a79c5c16b4d666068034b5cb1bcc",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/display/display.css",
+      "source_blob": "5655c4202aae3337f6da937cfb7dddb4d8ad0041",
+      "source_sha256": "dc05644a6476f8a1f9866123d8e82001bb23cef4e5bb2ac4f9e50f9d2afcef4a",
+      "published_sha256": "dc05644a6476f8a1f9866123d8e82001bb23cef4e5bb2ac4f9e50f9d2afcef4a",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/display/display.mjs",
+      "source_blob": "c952535cad705e4fea8330dc020e55fe3ccd1609",
+      "source_sha256": "c56d4463ab6aef78703f3012d7adf7f2f93ff701a2b58615307b42c15276b183",
+      "published_sha256": "c56d4463ab6aef78703f3012d7adf7f2f93ff701a2b58615307b42c15276b183",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/display/index.html",
+      "source_blob": "0f1a38488e5178941b8609b93a92f5b561236c1a",
+      "source_sha256": "347cb93e8309a5c563fb643280ee537d8710ce72846c49ae5f7c3767a2376697",
+      "published_sha256": "347cb93e8309a5c563fb643280ee537d8710ce72846c49ae5f7c3767a2376697",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/host/course_scene.py",
+      "source_blob": "f8d7d5caa191b3f73e9e7798b28a0bd27d01d700",
+      "source_sha256": "0473dce6bfd8667fe6400898e081ae85bf0b7718e791ba20a0b36241582426b3",
+      "published_sha256": "0473dce6bfd8667fe6400898e081ae85bf0b7718e791ba20a0b36241582426b3",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/host/live_vehicle.py",
+      "source_blob": "6fe7d6a0ee05ee396091c7099bfc5b3f0ab078f1",
+      "source_sha256": "41e84b9b04e93862c936d225ec19bc6fbe43d948e976796a2984f60a5c691c1c",
+      "published_sha256": "41e84b9b04e93862c936d225ec19bc6fbe43d948e976796a2984f60a5c691c1c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/host/render_reference.py",
+      "source_blob": "72ad945301ea7b748c265e1f2cc82a641a015031",
+      "source_sha256": "8340e263ab22e8d7d86e1aa3b864f2390537c88646009ea7bb75fd3effb804ea",
+      "published_sha256": "8340e263ab22e8d7d86e1aa3b864f2390537c88646009ea7bb75fd3effb804ea",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/host/render_vehicle.py",
+      "source_blob": "dc3d53a8b17f4645e4fd8d794305421081db5661",
+      "source_sha256": "a1e770619914c27deb9f29aaddfab4b363957f938aad35686e5717853d359f9c",
+      "published_sha256": "a1e770619914c27deb9f29aaddfab4b363957f938aad35686e5717853d359f9c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/host/vehicle_scene.py",
+      "source_blob": "cc539394090f27139ebc9cbeef0feb8e52b8c1ee",
+      "source_sha256": "38610a1572a7bc63dafe63f5b13135f4b08f733ed43b86abe66f0e3d49b0950a",
+      "published_sha256": "38610a1572a7bc63dafe63f5b13135f4b08f733ed43b86abe66f0e3d49b0950a",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/network/pico_main.py",
+      "source_blob": "0271d68be483a599fab62c5d9ecb95443b65876a",
+      "source_sha256": "cde57a8a38d2febad752b79be86cded701145e6997a9f1f13967684352214183",
+      "published_sha256": "cde57a8a38d2febad752b79be86cded701145e6997a9f1f13967684352214183",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/network/ray_manager.py",
+      "source_blob": "395d2de1c99948c57315f035e7286f23cee7cb8e",
+      "source_sha256": "3d93a6db4ae05c0a61cad5b40a9ad993963223eaa9d25f3c9049ff8c6ed4729b",
+      "published_sha256": "3d93a6db4ae05c0a61cad5b40a9ad993963223eaa9d25f3c9049ff8c6ed4729b",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/network/ray_worker.py",
+      "source_blob": "15382471e6cf10f4b2ec154531713fc5dfad6296",
+      "source_sha256": "69c10b4946edb6501a658b0527a669bcc2191528fe77541b61504f1f8421e9c6",
+      "published_sha256": "69c10b4946edb6501a658b0527a669bcc2191528fe77541b61504f1f8421e9c6",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/network/scene_manager.py",
+      "source_blob": "ee3745f996b2d1883f6e8222fd92032dcb06c349",
+      "source_sha256": "b4a351f5807ebf20106649cee8a43bd152a958f945423ab6c3859e5636f2305c",
+      "published_sha256": "b4a351f5807ebf20106649cee8a43bd152a958f945423ab6c3859e5636f2305c",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/network/vehicle_manager.py",
+      "source_blob": "d765aa7f55f3465f20ed890221c312b55cec4570",
+      "source_sha256": "8b2eb7e48fe9d4ffc63439ea2c436b188b927111ead10c4bbc7d3bc03e7ddb15",
+      "published_sha256": "8b2eb7e48fe9d4ffc63439ea2c436b188b927111ead10c4bbc7d3bc03e7ddb15",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/pico/raytracer_core.py",
+      "source_blob": "ffff845242999408887622711ba10f4746b9e668",
+      "source_sha256": "758e53bfb130c45c6901c4df396f1fa8c73891f2f10a1b45f93218519a1fe2f1",
+      "published_sha256": "758e53bfb130c45c6901c4df396f1fa8c73891f2f10a1b45f93218519a1fe2f1",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/pico/scene_raytracer.py",
+      "source_blob": "11449fcd9e021c367608759dec803cedc145dd1e",
+      "source_sha256": "0870c9453a86234c7717e50762d7f365659a227acbba6643576ce4606951af9d",
+      "published_sha256": "0870c9453a86234c7717e50762d7f365659a227acbba6643576ce4606951af9d",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/pico/vehicle_raytracer.py",
+      "source_blob": "af1050e71e760433e2ada5374eec67f96f44ef06",
+      "source_sha256": "f1df3a986e81c8360fdc5b63247458d242594feada70403f4d33fd0bc96b0574",
+      "published_sha256": "f1df3a986e81c8360fdc5b63247458d242594feada70403f4d33fd0bc96b0574",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/display-state-test.mjs",
+      "source_blob": "f2b323bc110e2bafa7f05db064fac751cc181cd2",
+      "source_sha256": "3d7ca576835fb24c45fb040a265ed388c76efb3605cc588990f44d40e3afafe8",
+      "published_sha256": "3d7ca576835fb24c45fb040a265ed388c76efb3605cc588990f44d40e3afafe8",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_display.py",
+      "source_blob": "de454484ab92232cd4f487f1c1332a4afb88a6d4",
+      "source_sha256": "a50375e3ceca923c560f53091e09844f6a0525fd08a824d84af5c3269dba0a5e",
+      "published_sha256": "a50375e3ceca923c560f53091e09844f6a0525fd08a824d84af5c3269dba0a5e",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_exhibition_cycle.py",
+      "source_blob": "0d7665f8f2a1e3fc7225c207232ad379997f8a0d",
+      "source_sha256": "0738b91bfaaf99d0a8dcaf215c921253e26a8feaf4b16b2cb161717adca3d8ac",
+      "published_sha256": "0738b91bfaaf99d0a8dcaf215c921253e26a8feaf4b16b2cb161717adca3d8ac",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_raytracer.py",
+      "source_blob": "454a432996d35b2e82b8e7fb5130614ddce2658d",
+      "source_sha256": "d5141e8f671e6e77340590f1d66ad7c4f36f209fe08c2e7cd044474021a52581",
+      "published_sha256": "d5141e8f671e6e77340590f1d66ad7c4f36f209fe08c2e7cd044474021a52581",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_scene_install.py",
+      "source_blob": "12b3c6b7b28916319712c7efee8f20c772a36087",
+      "source_sha256": "8a7aaaaa7cd8295f2f025286142a65f97a95e0de484031c250252ead534528d6",
+      "published_sha256": "b6e24473b48a08500c65fedab7826e67e5c386ab15153bfec82218807237abe7",
+      "changes": [
+        "実際の入れ子Gitリポジトリで旧版復元元を照合する回帰テストを追加"
+      ]
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_scene_soak.py",
+      "source_blob": "f99620d3ae199c36b613a33473b0de46ce9815fb",
+      "source_sha256": "8d9e1fc7f5568c03a41a6228a069b60338882feb2bb0f4ce6b70e17b56317d02",
+      "published_sha256": "8d9e1fc7f5568c03a41a6228a069b60338882feb2bb0f4ce6b70e17b56317d02",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_scenes.py",
+      "source_blob": "daf6ca565749a57a0be50ad2f2e06f085ca99e13",
+      "source_sha256": "347266e6cd1072b23661ca069a616026c73bd6a012fa6cf1f5564cabc01aaae7",
+      "published_sha256": "347266e6cd1072b23661ca069a616026c73bd6a012fa6cf1f5564cabc01aaae7",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_terrain.py",
+      "source_blob": "e623874d30d0342e3871d049d732546719bb37ed",
+      "source_sha256": "d524c908d0407e21d5e575fa71101a8079cecedefafa6488aaca00da45a233d2",
+      "published_sha256": "d524c908d0407e21d5e575fa71101a8079cecedefafa6488aaca00da45a233d2",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_vehicle.py",
+      "source_blob": "53b30774acc928e2334e80b61804debd6b322379",
+      "source_sha256": "ae2acfa4bb64c10414c05f4a0742737cbb317c0135b182f8bcc197a77e5fe222",
+      "published_sha256": "ae2acfa4bb64c10414c05f4a0742737cbb317c0135b182f8bcc197a77e5fe222",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_vehicle_probes.py",
+      "source_blob": "de377ba00302672a5052c928831fe13dbd7d410c",
+      "source_sha256": "4b3131d537a8dd178cb8730a8dc4522f662485bdf8ae8bb5417fe1842553a607",
+      "published_sha256": "4b3131d537a8dd178cb8730a8dc4522f662485bdf8ae8bb5417fe1842553a607",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/tests/test_wifi_power_cycles.py",
+      "source_blob": "29faf38bdfdb8639f380ec77450c8137d41603ab",
+      "source_sha256": "d93d037a125080bbca68087051223e6f68179e5da7d91a61eef5a3a2b3908417",
+      "published_sha256": "d93d037a125080bbca68087051223e6f68179e5da7d91a61eef5a3a2b3908417",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/vehicle/champion-2026.json",
+      "source_blob": "918e0d09c125593b4333e32bac68af8f13e89945",
+      "source_sha256": "13644f6b85594dae0296df076586a5bc1680a5b919459cf32246bd8014cbccfa",
+      "published_sha256": "13644f6b85594dae0296df076586a5bc1680a5b919459cf32246bd8014cbccfa",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-pico-cluster/raytracing/vehicle/champion-reference.json",
+      "source_blob": "b46fc4e56eeb489c6ea833c3f82cb159bb6ed316",
+      "source_sha256": "77bc3b1d564c9a3a4c4b002aab0997cb22e566f83be56501f7ce75d662aa65aa",
+      "published_sha256": "77bc3b1d564c9a3a4c4b002aab0997cb22e566f83be56501f7ce75d662aa65aa",
+      "changes": []
+    },
+    {
+      "path": "scripts/audit-pi4-management-soak.py",
+      "source_blob": "f80b07b10d021981001fd94811797f827f6cdf23",
+      "source_sha256": "778cee7f7b03075c0b08da8d3731a596019176312e3a1770d22b8e2174473f5d",
+      "published_sha256": "778cee7f7b03075c0b08da8d3731a596019176312e3a1770d22b8e2174473f5d",
+      "changes": []
+    },
+    {
+      "path": "scripts/audit-pico-scene-soak.py",
+      "source_blob": "63e69682f5d1b9af0ce74a051c170f17016b1286",
+      "source_sha256": "64eec5cb5e3fd59df0d1847f38203adf3cb911d7faede66b2661c270d96f9bd1",
+      "published_sha256": "64eec5cb5e3fd59df0d1847f38203adf3cb911d7faede66b2661c270d96f9bd1",
+      "changes": []
+    },
+    {
+      "path": "scripts/calculate-power-capacity.py",
+      "source_blob": "751e3b1a05198ce224f6983dc590f86ee64b66ca",
+      "source_sha256": "cca41207b7e299f27b337b2680faf0a57ffbb45f4797a62cfdaeb0f6d4c61822",
+      "published_sha256": "cca41207b7e299f27b337b2680faf0a57ffbb45f4797a62cfdaeb0f6d4c61822",
+      "changes": []
+    },
+    {
+      "path": "scripts/check-pico-raytracing-exhibition.py",
+      "source_blob": "dc409b224d0c62bd6651b3c99e14590da1c687ab",
+      "source_sha256": "f18d98bc9e13c6161e388237c5ae4b8ba2eaf01b80854c91d01f005209c221fb",
+      "published_sha256": "f18d98bc9e13c6161e388237c5ae4b8ba2eaf01b80854c91d01f005209c221fb",
+      "changes": []
+    },
+    {
+      "path": "scripts/configure-cluster-ssh.py",
+      "source_blob": "7a69b66f31c86c9bed55541c9368d69d9d8b97ba",
+      "source_sha256": "7ee8becfd77c35e270568e04483751a518fa0970d9f216b14f7947d5a5523d85",
+      "published_sha256": "7ee8becfd77c35e270568e04483751a518fa0970d9f216b14f7947d5a5523d85",
+      "changes": []
+    },
+    {
+      "path": "scripts/deploy-pico-wifi-recovery.py",
+      "source_blob": "2649b52ea17b3f8f92eacc48453d14fda90cf73e",
+      "source_sha256": "af73c0cfd6f94300b691b7d1a879c24b5d51ea693de5dc4d4ff2125df42eee84",
+      "published_sha256": "af73c0cfd6f94300b691b7d1a879c24b5d51ea693de5dc4d4ff2125df42eee84",
+      "changes": []
+    },
+    {
+      "path": "scripts/guard-pi4-traffic-soak.py",
+      "source_blob": "cf83247fa48e01e98a2a5b7d4cf944112546666e",
+      "source_sha256": "eb38a733ff48b22a05c6ae5d3b64b595b7fdf6643b18ff8be9be6eed78baab60",
+      "published_sha256": "eb38a733ff48b22a05c6ae5d3b64b595b7fdf6643b18ff8be9be6eed78baab60",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-dual-display-kiosk.py",
+      "source_blob": "1c943f2b5144aa51e08de4f0cc4636d9a1d546d2",
+      "source_sha256": "61694c7a482ed8f1526bdf6699088b00f3a00b431a83d7d94282284f9b7212d9",
+      "published_sha256": "61694c7a482ed8f1526bdf6699088b00f3a00b431a83d7d94282284f9b7212d9",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-k3s-node.sh",
+      "source_blob": "bebcab8b412f66583b63a1b54dd70f45bec79887",
+      "source_sha256": "155ce12f3aadee12942c5bd6d28fe8b9c2bc6754149cfeff67f452e89c0eb153",
+      "published_sha256": "155ce12f3aadee12942c5bd6d28fe8b9c2bc6754149cfeff67f452e89c0eb153",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-nfs-csi-airgap.sh",
+      "source_blob": "25960119cd42cd0d769bb2125e72774ea9bfc649",
+      "source_sha256": "400f443f0781da0dee6a75068ab43060ffa3e854316cd20933ea95bc8b6f649b",
+      "published_sha256": "400f443f0781da0dee6a75068ab43060ffa3e854316cd20933ea95bc8b6f649b",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-pico-raytracing-exhibition.sh",
+      "source_blob": "3a8e8ece2ee7e6b65548750676c0a047ada18774",
+      "source_sha256": "ae065bd57e27976726e3bd47db8bc9af9baae995500d77c452337e49fcb6b695",
+      "published_sha256": "ae065bd57e27976726e3bd47db8bc9af9baae995500d77c452337e49fcb6b695",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-pico-scene-cycle.sh",
+      "source_blob": "0a290a9db25d0d00a8acd980d2f6eb8c2d25e88a",
+      "source_sha256": "d2380b58a0c7ab49ad13407536a1934a2ab09e53963e1a6760159277786291f9",
+      "published_sha256": "d2380b58a0c7ab49ad13407536a1934a2ab09e53963e1a6760159277786291f9",
+      "changes": []
+    },
+    {
+      "path": "scripts/install-traffic-worker-airgap.sh",
+      "source_blob": "cccf71629787cf1f07d972718becd251a400875c",
+      "source_sha256": "9541f7cc8836755d52841857655b5c535da9311cf91d94c1fade3707fa37d366",
+      "published_sha256": "9541f7cc8836755d52841857655b5c535da9311cf91d94c1fade3707fa37d366",
+      "changes": []
+    },
+    {
+      "path": "scripts/manage-pico-scene-workers.py",
+      "source_blob": "a9f70e61c5843576928d681fdd84af8836adc6dc",
+      "source_sha256": "6a23fcabdf189e06760de561d202f86cba186b61fb470803ca2ddb032a213efc",
+      "published_sha256": "3af1ff44e8319bc3e555098ab9c88647783861d225d349c5e38565106848467b",
+      "changes": [
+        "公開プロジェクトの入れ子配置に合わせ、旧版Git参照をリポジトリルート基準へ変更"
+      ]
+    },
+    {
+      "path": "scripts/monitor-pi4-management.py",
+      "source_blob": "5ec00220ba20c225c3a1c441d7670004b6c43e07",
+      "source_sha256": "1ffcf627527f34cce79f4a32e03dd75266939a16f98ba19896195e4ac23d23a4",
+      "published_sha256": "1ffcf627527f34cce79f4a32e03dd75266939a16f98ba19896195e4ac23d23a4",
+      "changes": []
+    },
+    {
+      "path": "scripts/monitor-pico-usb-serials.py",
+      "source_blob": "521a7a410876a0958b19e7be6ea7214d559024cf",
+      "source_sha256": "9cf2ce51f54690dcc88bd99ffdfd3d8d2d1c3954d739f0a6ed7bf1dbf1ef1371",
+      "published_sha256": "9cf2ce51f54690dcc88bd99ffdfd3d8d2d1c3954d739f0a6ed7bf1dbf1ef1371",
+      "changes": []
+    },
+    {
+      "path": "scripts/probe-pi4-management-soak.py",
+      "source_blob": "26a295b1d121372411b7231b329fe84953232acd",
+      "source_sha256": "bc610f181c5878dd8f25146035b122c34ccfb52e7d2f8245eb01f5e6bd0811cd",
+      "published_sha256": "bc610f181c5878dd8f25146035b122c34ccfb52e7d2f8245eb01f5e6bd0811cd",
+      "changes": []
+    },
+    {
+      "path": "scripts/provision-iscsi-root.sh",
+      "source_blob": "91dd214e0960697e60e44137505eb7f13a380b7f",
+      "source_sha256": "c407fabc9a239098d11124a6c011d1be99f8e79be19d6d9be72c7cd2f79f8ddd",
+      "published_sha256": "c407fabc9a239098d11124a6c011d1be99f8e79be19d6d9be72c7cd2f79f8ddd",
+      "changes": []
+    },
+    {
+      "path": "scripts/run-k3s-traffic-benchmark.sh",
+      "source_blob": "c68c757c983b4c40e6680ccea631c7f19c3e9d7c",
+      "source_sha256": "90a1258f6b3e0645a938df9a4a00c311c3a7dd0ce405f367f4a314ae6b91dcfd",
+      "published_sha256": "90a1258f6b3e0645a938df9a4a00c311c3a7dd0ce405f367f4a314ae6b91dcfd",
+      "changes": []
+    },
+    {
+      "path": "scripts/run-k3s-traffic-time-budget.sh",
+      "source_blob": "ac7372aff1330b3c332672fc5803d5cc4da57dae",
+      "source_sha256": "446cb7622ad4afdac51f572bece59040b9f8776d9222e419b069d253aab74949",
+      "published_sha256": "446cb7622ad4afdac51f572bece59040b9f8776d9222e419b069d253aab74949",
+      "changes": []
+    },
+    {
+      "path": "scripts/run-pi4-management-soak.py",
+      "source_blob": "f44bcfb1f66e5508eda20c80e0e6c21f788e80fa",
+      "source_sha256": "10948c364ebc45d074a77a804d73640d1238571ff253812f13c936d1f5fe5699",
+      "published_sha256": "10948c364ebc45d074a77a804d73640d1238571ff253812f13c936d1f5fe5699",
+      "changes": []
+    },
+    {
+      "path": "scripts/run-pico-raytracing-exhibition.py",
+      "source_blob": "0cca6cfaf4acb77925438c18db442d9fc897fd66",
+      "source_sha256": "478143686972c29a0132b861aad10e5886299b6883dda06f9a9f95b6d32ca441",
+      "published_sha256": "478143686972c29a0132b861aad10e5886299b6883dda06f9a9f95b6d32ca441",
+      "changes": []
+    },
+    {
+      "path": "scripts/serve-pico-raytracing-display.py",
+      "source_blob": "c44789ce479e42129f44385cdc526db3eae27e2c",
+      "source_sha256": "c0473575f67731dcdffbe221bec8156f0e57b0f56000c90930a5374c15caa42c",
+      "published_sha256": "c0473575f67731dcdffbe221bec8156f0e57b0f56000c90930a5374c15caa42c",
+      "changes": []
+    },
+    {
+      "path": "scripts/shutdown-exhibition.py",
+      "source_blob": "e8dca6e5560921500c39e4f7de7de5b9c56c9750",
+      "source_sha256": "bf1662cc65bb2ec15dd799aa23757e9bb1f4689d5e094b3b059157caea8dd57c",
+      "published_sha256": "9733878f7fa723a104b81011a1a3f26b4b7d973f81ef9ac7fa267778a901fc5d",
+      "changes": [
+        "既定設定をダミーのshutdown-hosts.example.jsonへ変更"
+      ]
+    },
+    {
+      "path": "scripts/start-dual-display-kiosk.py",
+      "source_blob": "03632628aaf1b4598e5069a700f9b33929048668",
+      "source_sha256": "cf6345fee97cc799d07c214d2b7edc535962ff30b86de0cdc14bdd7c0175797b",
+      "published_sha256": "cf6345fee97cc799d07c214d2b7edc535962ff30b86de0cdc14bdd7c0175797b",
+      "changes": []
+    },
+    {
+      "path": "scripts/start-pico-raytracing-kiosk.sh",
+      "source_blob": "14fb4fd9e9ab01c2efe68a85d3906960140da852",
+      "source_sha256": "9a02f5007d715a7817c3a72ad90d66c500659850bb79e14ad1628bdf634d2faa",
+      "published_sha256": "9a02f5007d715a7817c3a72ad90d66c500659850bb79e14ad1628bdf634d2faa",
+      "changes": []
+    },
+    {
+      "path": "scripts/test-dual-display-kiosk.py",
+      "source_blob": "b5064d9ba4e411744a078b6762962c9c85213769",
+      "source_sha256": "fd7038069d359951fe170b3f5a2d77371a521d247911152bf4072725037c01b9",
+      "published_sha256": "fd7038069d359951fe170b3f5a2d77371a521d247911152bf4072725037c01b9",
+      "changes": []
+    },
+    {
+      "path": "scripts/test-k3s-traffic-worker-failure.sh",
+      "source_blob": "e75c8e5c0d9fd88726e82ca38c0ece67461a1200",
+      "source_sha256": "10d417c4700ba294c253fc52b40b45ce708a7a8a4694b46b4adbe3aba8008122",
+      "published_sha256": "10d417c4700ba294c253fc52b40b45ce708a7a8a4694b46b4adbe3aba8008122",
+      "changes": []
+    },
+    {
+      "path": "scripts/test-pi4-management-monitor.py",
+      "source_blob": "67fb1d123e145a5101788f92e60f14bb7d21d538",
+      "source_sha256": "159c068ca76f1f0f301edb639f4b140c816cb68328cfad04886bd79e99d95f7d",
+      "published_sha256": "159c068ca76f1f0f301edb639f4b140c816cb68328cfad04886bd79e99d95f7d",
+      "changes": []
+    },
+    {
+      "path": "scripts/test-pi4-management-soak.py",
+      "source_blob": "0f0d0a066afdfd37fce5edc3cc34e5a7be1626f8",
+      "source_sha256": "8d48ac9164cf437e757b8eccea2aa0455512cc2551e2cba2b7002fa34a59842e",
+      "published_sha256": "8d48ac9164cf437e757b8eccea2aa0455512cc2551e2cba2b7002fa34a59842e",
+      "changes": []
+    },
+    {
+      "path": "scripts/test-shutdown-exhibition.py",
+      "source_blob": "101d69cdb7606a39c3d4003f0c33a3361c9e1f4e",
+      "source_sha256": "48254279c3309063f6196ced79520b5ffdceadba894302898f62f72cce38cfae",
+      "published_sha256": "48254279c3309063f6196ced79520b5ffdceadba894302898f62f72cce38cfae",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-k3s-cluster.sh",
+      "source_blob": "456d8e6d38cf1946f152bdacc364c20784066d84",
+      "source_sha256": "bc66374fd85c6c72593b9e77a480330b120854f8daac946cb2c6a5d165b28e71",
+      "published_sha256": "bc66374fd85c6c72593b9e77a480330b120854f8daac946cb2c6a5d165b28e71",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-k3s-traffic-workers.sh",
+      "source_blob": "b1c83e3b9a284a036f528a1763c7b36ba08284e9",
+      "source_sha256": "3b70a8057c3421e09ce63864bf3f5685a70863260f418e2f5e8baf72182df4be",
+      "published_sha256": "3b70a8057c3421e09ce63864bf3f5685a70863260f418e2f5e8baf72182df4be",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-nfs-csi.sh",
+      "source_blob": "92b6b1a111cd8575f4503367a4f7999c0a06a2cf",
+      "source_sha256": "f3d9c0642fa036c0f6eeef5a3377ed6687f7fec8a911adf379b767913c0c9f3d",
+      "published_sha256": "f3d9c0642fa036c0f6eeef5a3377ed6687f7fec8a911adf379b767913c0c9f3d",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pi4-cluster-recovery.sh",
+      "source_blob": "735f0fb807014400bd590d7f776df03d31837121",
+      "source_sha256": "3fb09c14155c1479169392b3c03e0a58d2d8358ca51aa2eec657bedf9216168b",
+      "published_sha256": "3fb09c14155c1479169392b3c03e0a58d2d8358ca51aa2eec657bedf9216168b",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-manager.py",
+      "source_blob": "24c666933eede45f670e1c8442c859a27c81f9de",
+      "source_sha256": "49c5d428d2c3b3da08909e25d23ef9105e0ec4010bb1fcb62d9293af9761e06e",
+      "published_sha256": "49c5d428d2c3b3da08909e25d23ef9105e0ec4010bb1fcb62d9293af9761e06e",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-raytracing.py",
+      "source_blob": "6cff493d8af70f6c50688e0a4dbea0879f04ba66",
+      "source_sha256": "112505a25e1328657db35f8f19aec40b3410b21ea262b896e73431f834672850",
+      "published_sha256": "112505a25e1328657db35f8f19aec40b3410b21ea262b896e73431f834672850",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-vehicle-network.py",
+      "source_blob": "64b760e30fcea5343d22812ec4da3e3801a5a238",
+      "source_sha256": "bbef6b6d055ff77abd93675605690014c87064297df39f18a0cd8b5f7f64b6a1",
+      "published_sha256": "bbef6b6d055ff77abd93675605690014c87064297df39f18a0cd8b5f7f64b6a1",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-vehicle.py",
+      "source_blob": "7dd29ae66b5fd5dff05a7ce939811accba5b3366",
+      "source_sha256": "8bc3e4fe9ebf62aec81bef0e62f3dae3a73084044ea4c3a11d90cc173ff02822",
+      "published_sha256": "8bc3e4fe9ebf62aec81bef0e62f3dae3a73084044ea4c3a11d90cc173ff02822",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-watchdog.py",
+      "source_blob": "651478e9bd274b14b368abc9ab8cd692f1bcf2b1",
+      "source_sha256": "3076265979ba0304f9a8e5dc6721160df4fe99de154cb123d757ee0176bff8ce",
+      "published_sha256": "3076265979ba0304f9a8e5dc6721160df4fe99de154cb123d757ee0176bff8ce",
+      "changes": []
+    },
+    {
+      "path": "scripts/validate-pico-wifi-power-cycles.py",
+      "source_blob": "297fef9088713d8ac4ce64bf00da0d51bd4c8384",
+      "source_sha256": "c1335b790ed34d0e83179782ed3a2e574b9568a7afbe2606524c75ef572a626c",
+      "published_sha256": "c1335b790ed34d0e83179782ed3a2e574b9568a7afbe2606524c75ef572a626c",
+      "changes": []
+    },
+    {
+      "path": "scripts/verify-pico-usb-power-cycle.py",
+      "source_blob": "9814a5f71dba52d7d1ad0b8b25d5cfa145754d0f",
+      "source_sha256": "d81f856a92b42cd31e6b565e207540c913e6e3eb2c34e72dd1bf9912cf641b9a",
+      "published_sha256": "d81f856a92b42cd31e6b565e207540c913e6e3eb2c34e72dd1bf9912cf641b9a",
+      "changes": []
+    },
+    {
+      "path": "projects/raspberry-pi-4-cluster/shutdown-hosts.example.json",
+      "source_sha256": null,
+      "published_sha256": "2e648aaa74b2064361caa8470faa763fedb9265416f6f778904dafad5c60effe",
+      "changes": [
+        "実機のホスト鍵フィンガープリントをダミーに置換した設定例を生成"
+      ]
+    },
+    {
+      "path": "docs/power-capacity-inventory.csv",
+      "source_sha256": "a8361fe0df6e88769ccb1bc7caf38f41406f2aa2452f6fb601a1a0c786d0b17a",
+      "published_sha256": "a8361fe0df6e88769ccb1bc7caf38f41406f2aa2452f6fb601a1a0c786d0b17a",
+      "changes": []
+    }
+  ]
+}

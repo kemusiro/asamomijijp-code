@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>12台で信号を進化させる</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <p class="eyebrow">RASPBERRY PI × GENETIC SEARCH</p>
+        <h1>12台で信号を進化させる</h1>
+        <p class="intro">同じ15秒でより多くの候補を試し、交通の待ち時間を減らします。</p>
+      </div>
+      <nav class="pattern-picker" aria-label="交通パターン選択">
+        <div><span>TRAFFIC PATTERN</span><small>自動切替 · 押すと次回に予約</small></div>
+        <div id="pattern-buttons" class="pattern-buttons"></div>
+      </nav>
+      <div class="header-status">
+        <div id="phase-badge" class="phase-badge"><i></i><span>起動中</span></div>
+        <div id="cluster-state" class="cluster-state"><strong id="ready-count">— / 12</strong><small>計算ノード</small></div>
+      </div>
+    </header>
+
+    <div class="screen-grid">
+      <section class="traffic-panel" aria-label="交通シミュレーションの比較">
+        <div class="panel-head">
+          <div><span class="label">TRAFFIC IMPROVEMENT / CALCULATION RESULT</span><h2>同じ交通を、探索前と探索後で再生 <em id="replay-pattern">—</em></h2></div>
+          <strong id="replay-clock">シミュレーション — / 180秒</strong>
+        </div>
+        <div class="canvas-grid">
+          <article class="traffic-card baseline-card">
+            <div class="canvas-title"><div><span>探索前</span><strong>基準信号</strong></div><b id="base-wait">—</b></div>
+            <canvas id="base-canvas" width="700" height="410" aria-label="基準信号の交通"></canvas>
+            <div class="canvas-stats"><span>到着 <b id="base-arrived">—</b></span><span>残り <b id="base-remaining">—</b></span></div>
+          </article>
+          <article class="traffic-card optimized-card">
+            <div class="canvas-title"><div><span>12台で探索</span><strong>現在の最良信号</strong></div><b id="optimized-wait">—</b></div>
+            <canvas id="optimized-canvas" width="700" height="410" aria-label="最良信号の交通"></canvas>
+            <div class="canvas-stats"><span>到着 <b id="optimized-arrived">—</b></span><span>残り <b id="optimized-remaining">—</b></span></div>
+          </article>
+        </div>
+        <div class="improvement-strip">
+          <div><span>平均累積待ち時間</span><strong id="traffic-change">—</strong></div>
+          <div><span>未使用5条件での差</span><strong id="validation-change">—</strong></div>
+          <div class="signal-setting"><span>選ばれた信号</span><strong id="signal-config">—</strong></div>
+        </div>
+        <p class="traffic-note">左右は同じ車両発生条件です。表示は保存された探索結果の再生で、探索は右側で並行して進みます。<span id="speed-legend" hidden> 紫＝低速車</span></p>
+      </section>
+
+      <section class="search-panel" aria-label="並列探索の進行状況">
+        <div class="cycle-head">
+          <div><span class="label">AUTOMATIC EXHIBITION CYCLE</span><h2 id="cycle-title">サイクル —</h2></div>
+          <div class="phase-clock"><span id="phase-name">準備中</span><strong id="phase-clock">—</strong></div>
+        </div>
+        <div class="sequence" aria-label="自動実行の4段階">
+          <span data-phase="single">① 1台</span><i>→</i><span data-phase="distributed">② 12台</span><i>→</i><span data-phase="validation">③ 検証</span><i>→</i><span data-phase="result">④ 再生</span>
+        </div>
+
+        <div class="comparison-cards">
+          <article id="single-card">
+            <span class="node-label">1 NODE</span>
+            <strong id="single-count">—</strong>
+            <small id="single-generation">候補を探索</small>
+            <b id="single-quality">最良 —</b>
+          </article>
+          <div class="versus">VS</div>
+          <article id="multi-card" class="multi">
+            <span class="node-label">12 NODES</span>
+            <strong id="multi-count">—</strong>
+            <small id="multi-generation">候補を並列探索</small>
+            <b id="multi-quality">最良 —</b>
+          </article>
+        </div>
+        <div class="multiplier"><span>同じ時間に試せた候補</span><strong id="candidate-multiplier">—</strong></div>
+
+        <div class="progress-block">
+          <div><span id="progress-label">計算の開始を待っています</span><b id="progress-value">—</b></div>
+          <div class="progress-track"><i id="progress-fill"></i></div>
+        </div>
+
+        <div class="race-block">
+          <div class="race-title"><strong id="race-title">並列計算タイムライン</strong><span>横＝15秒 / 段＝ノード</span></div>
+          <div id="live-race" class="race"></div>
+        </div>
+
+        <div class="quality-block">
+          <div class="race-title"><strong>探索中の最良値</strong><span>下へ進むほど待ち時間が短い</span></div>
+          <svg id="quality-chart" viewBox="0 0 700 135" role="img" aria-label="最良待ち時間の推移"></svg>
+        </div>
+
+        <div id="workers" class="workers" aria-live="polite"></div>
+      </section>
+    </div>
+
+    <section id="notice" class="notice" hidden></section>
+    <footer><span id="explanation">遺伝的アルゴリズム：良い信号を残し、交叉と突然変異で次の候補を作ります。</span><span id="updated">状態を読み込んでいます</span></footer>
+  </main>
+  <script type="module" src="dashboard.mjs"></script>
+</body>
+</html>
