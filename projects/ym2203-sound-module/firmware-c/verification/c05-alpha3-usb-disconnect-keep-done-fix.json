@@ -1,0 +1,48 @@
+{
+  "target_version": "0.5.0-alpha.3",
+  "host_check_version": "1.1",
+  "date": "2026-11-14",
+  "hardware_results": {
+    "MIDI_USB_disconnect_step1": {
+      "passed": true,
+      "source": "User reports step1 behaved as specified; no new raw target log supplied"
+    },
+    "I2C_USB_disconnect_step2": {
+      "status": "old_host_error_fixed_retry_pending",
+      "source": "User HOST traceback after immediately unplugging Rev C USB on PLAY prompt",
+      "error": "KEEP rejected:code4 state3 error0 audio_ok=1;save Rev C STATUS/AUDIO log",
+      "HOST_SAFE": true,
+      "target_state_via_HOST": 3,
+      "result": 4,
+      "error_code": 0,
+      "audio_ok": true,
+      "full_target_log_supplied": false,
+      "numeric_event_count_supplied": false
+    }
+  },
+  "confirmed_software_cause": "Target may complete between last RUNNING response and arrival of a final KEEP; old host raised before checking matching DONE file state",
+  "fix_scope": "Host library only; strict command API unchanged; play_file accepts only fully verified sealed completion for its own final KEEP STATE rejection; rejected sequence remains unconsumed",
+  "target_firmware_changed": false,
+  "protocol_format_changed": false,
+  "verification": {
+    "native_tests": 99,
+    "before_fix_reproduces_exact_error": true,
+    "MicroPython_runtime": "v1.29.0 Unix",
+    "forced_KEEP_DONE_race": true,
+    "exact_order_writes": 191,
+    "negative_completion_cases": 14,
+    "explicit_KEEP_remains_strict": true,
+    "scope": "Real C stream core and actual host code with modelled time/wire; not physical USB or audible continuity"
+  },
+  "evidence_sha256": {
+    "c05-alpha3-keep-done-before.txt": "bf11b49b8bfe43dbce3a18206114fb7e6c5338807948d7f6bfa3d617bfc749ac",
+    "c05-alpha3-keep-done-native-tests.txt": "b8c6ae51615c8c86e356cdbe8befd9872e684f62d2bd08a1344c0caf22e61ad5",
+    "c05-alpha3-keep-done-micropython.json": "08698ee15eb00cde33d258670285681985ce2e76eefc291fa5c73254855c1377"
+  },
+  "package": "outputs/revc-c-0.5.0-alpha.3-usb-disconnect-host-v1.1-20261114.zip",
+  "package_sha256": "5b99a84b85a31cbefb28b24a3f9bed6594a6fd791a179f7d30465940ab63be51",
+  "not_verified": [
+    "Physical I2C continuity and final silence with host v1.1; retry step2 required",
+    "Exact DMA timing in historical fault16, measured audible latency and long-term operation"
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "version": "0.3.0-alpha.2",
+  "date": "2026-11-13",
+  "hardware_tested": false,
+  "scope": "FM-only attenuation correction and live0..unity FM level;SSG/event data and GPIO unchanged",
+  "previous_hardware_result": {
+    "version": "0.3.0-alpha.1",
+    "status": "full-score and audio-path playback confirmed;balance defect reported",
+    "audio_path_13s": "confirmed",
+    "YsII_full_score": "confirmed",
+    "left_and_right": "normal",
+    "distortion": false,
+    "dropouts": false,
+    "FM_SSG_balance": "SSG too loud,FM too quiet;WebLab reference had expected balance",
+    "numeric_timing_and_peak": "not supplied"
+  },
+  "cause": {
+    "alpha1_FM_gain": "1/8,about-18.06dB;diagnostic attenuation carried into C song playback",
+    "WebLab": "runtime/ymfm/wrapper.cpp normalizes FM and SSG by32768;renderer applies common gain after mixing",
+    "RevC": "FM and each SSG channel use100kohm input resistors into22kohm feedback mixer;digital gain applied to FM only"
+  },
+  "checks": {
+    "native_C_core": {
+      "tests": 18,
+      "passed": true,
+      "includes": [
+        "unity Python/C PCM comparison",
+        "all7168 valid floating-point codes at all9 gain settings,including PCM=-32768",
+        "legacy1/8 profile bit-exactness",
+        "bounded monotonic gain ramp and invalid-gain zero output",
+        "strict gain command parser",
+        "source register policy,all-score schedule,STOP/restart,SOF/clock calculation and UF2 container"
+      ]
+    },
+    "USB_console": {
+      "passed": true,
+      "scope": "Chromium with modelled Web Serial;level selection,no auto-play,legacyalpha1 BOOTSEL/update compatibility"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.2"
+      },
+      "memory": {
+        "text_bytes": 783620,
+        "data_bytes": 0,
+        "bss_bytes": 34580
+      },
+      "board": "pico2 / RP2350 Arm Secure"
+    },
+    "source_events": {
+      "count": 123137,
+      "period_ms": 298218,
+      "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+      "WYM1_preserved_byte_identical_once_in_UF2": true
+    },
+    "package": {
+      "ZIP_CRC_and_payload_hashes": "passed",
+      "sha256": "00fba65e0c2e9b3c18956d1c38dd664b1c674788fa7ebeb51e124f3c8f011201",
+      "uf2_sha256": "1aa100b2e0158fe382cf7eedb3e28413af862805a702a4c0cdd50317f7b0f38f"
+    }
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "97ce54f752f7647b6eaf6eb9bf71a1f33f6ac35120c4dbf7b6b21d6d708a7ad5",
+    "README.md": "a086e8e5d6be2202281924635f178b0d25a76e0e42103e0ea0c25f9c56173ad5",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "pc/revc-console.html": "ae9b7cfbffdaef00915ccebacf3618662498b0e3f6ee6e7b1117e4a518ce6cac",
+    "pio/fm_rx.pio": "6c722f9e46eb7fb521fe8d28be65b079138137326f25141b8c420d74b5d5e64a",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "75fea08a67f93664bb071d2a90c91aeadf153f06fcb5d977d081817f7af231bf",
+    "src/board.c": "8a2f5584b718eb989dd743196a8f22ff562bb08678dbc08feb7ebdcef5d4df36",
+    "src/main.c": "7675e306d5d26e2274fc86a3b122f803121f40a387bd577779b1d99cbc938a0f",
+    "src/revc.h": "39cc1fc02ccd6a28690f5c7d7491ddca434b1857680df2980a8d72120a85bc3f",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "a35a08f339fff1d0015cc20a05366590759a96032da0dfccf762202890fdf21d",
+    "src/wym1.h": "d48592497883f09a659b3e657d0f9fe24c47e333820774ff0a3ac428cb290657",
+    "tests/test_core.py": "756468fabf1d95272614b74631e4306da7acdfab2343d0f9e7d2001a8c52f6c2",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "0d88c9eac7ce096c7bd583b940bbce34b77c579aa75958c11a2900f9fd1e6e6b",
+    "tools/build.py": "d9c74e3486843a90bb5d5a1d5a837426a268c86edf8f8a8c64ebe9fad9884735",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "013fd2319b56ffb6b289f0ce48e4f721808aa8dd3bc41fac82cabcb966f2a0af"
+  },
+  "not_verified": [
+    "alpha2 audible FM/SSG balance",
+    "analog output levels/clipping/noise with corrected gain",
+    "alpha2 hardware maximum conversion time",
+    "physical gain-change transient",
+    "physical disconnect timing",
+    "I2C/MIDI C implementation"
+  ]
+}

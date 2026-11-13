@@ -1,0 +1,84 @@
+{
+  "reported_version": "0.5.0-alpha.1",
+  "fix_version": "0.5.0-alpha.3",
+  "date": "2026-11-14",
+  "user_report": "No initial six solo notes and no sustained chord at handover step1",
+  "observed_snapshot": {
+    "audio_ready": 0,
+    "fault": 16,
+    "state": 0,
+    "events": 0,
+    "total": 0,
+    "gates": 0,
+    "fm_gain_eighths": 8,
+    "audio_blocks": 2,
+    "audio_peak": 0,
+    "max_convert_us": 101,
+    "audio_queue_min": 8,
+    "audio_queue_max": 3,
+    "i2s_div256": 12500,
+    "log_drops": 0,
+    "rx_reject_observations": 0,
+    "clipped_samples": 0,
+    "bus_writes": 107,
+    "busy_retries": 206,
+    "max_bus_call_us": 26,
+    "max_dispatch_late_us": 0,
+    "I2C_state": 4,
+    "I2C_result": 0,
+    "I2C_error": 0,
+    "received": 0,
+    "executed": 0,
+    "queued": 0,
+    "sealed": 0,
+    "MIDI_owned": 0,
+    "MIDI_state": 0,
+    "MIDI_mask": 0,
+    "MIDI_gate": 0,
+    "MIDI_received": 23,
+    "MIDI_applied": 279,
+    "MIDI_rejected": 0,
+    "MIDI_invalid": 0,
+    "MIDI_ignored": 15,
+    "MIDI_panics": 0
+  },
+  "confirmed_from_log": "Audio engine unavailable due to fault16: TX FIFO did not prime within1ms; this explains silence independently of the normal-note-off discard defect fixed in alpha2",
+  "confirmed_code_defects": [
+    "Old pause/shutdown aborted enabled chained DMA without RP2350-E5 workaround",
+    "Restart reset PIO FIFO and descriptors without renewing peripheral DREQ handshake"
+  ],
+  "fix": [
+    "Disable all4 chain members before any abort; wait CHAN_ABORT to retire",
+    "After FIFO reset and descriptor reset, clear DREQ counters and re-enable nontriggering CTRL aliases",
+    "Snapshot FIFO,DMA CTRL,remaining counts,DREQ counters before fault16 shutdown"
+  ],
+  "model_evidence": {
+    "actual_production_audio_loop": true,
+    "native_tests": 93,
+    "restart_phases_us": [
+      125,
+      500,
+      2200,
+      4500,
+      15000
+    ],
+    "restarts_per_phase": 32,
+    "old_code_fault_under_stale_credit_model": 16,
+    "fixed_code_fault": 0,
+    "forced_prime_failure_still_stops_with_fault": 16,
+    "before_record": "verification/c05-alpha3-audio-before.txt",
+    "passed_record": "verification/c05-alpha3-native-tests.txt"
+  },
+  "interpretation_limits": [
+    "The old user snapshot does not include DMA registers; exact hardware timing and direct E5/credit contribution remain unproven",
+    "The model deliberately injects stale peripheral credit state across abort; it is not the recorded hardware waveform",
+    "Alpha2 normal-note-off fix is separately valid but did not address this fault16 report",
+    "No alpha3 physical success claimed"
+  ],
+  "hardware_tested": false,
+  "references": [
+    "https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2_common/hardware_dma/include/hardware/dma.h",
+    "https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/dma.h"
+  ],
+  "before_evidence_normalization": "Project path shortened and trailing whitespace trimmed; failure result unchanged"
+}

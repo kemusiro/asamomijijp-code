@@ -1,0 +1,11 @@
+{
+  "version": "0.3.0-alpha.6",
+  "ZIP_SHA256": "b9729723da36ffc13e16cea69c60c0e9bbd7006f9f2f212246751d658501a67f",
+  "UF2_SHA256": "d13a38067c808f5e27bc99934bf6528c220f10e00732e50f7ca70b1919db6069",
+  "memory": {
+    "text_bytes": 787924,
+    "data_bytes": 0,
+    "bss_bytes": 452992
+  },
+  "hardware_tested": false
+}

@@ -1,0 +1,20 @@
+PASS: ZIP CRC,all payload hashes,current source hashes and byte-identical full WYM1 appearing once in decoded RP2350 flash.
+{
+  "ZIP_SHA256": "09c34c2dde99887c80311a53e1f3288f06cbe967ced1e8c575d08253874c24c7",
+  "UF2_SHA256": "dfde71f8832cff8e511c6b9c0945bc9e454b28bee8391e1c0a5c14eda1eb554a",
+  "memory": {
+    "text_bytes": 784380,
+    "data_bytes": 0,
+    "bss_bytes": 34592
+  },
+  "events": {
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "crc32": 2925077129,
+    "kind": "local user-provided song;not for redistribution",
+    "event_bytes_preserved": true
+  }
+}

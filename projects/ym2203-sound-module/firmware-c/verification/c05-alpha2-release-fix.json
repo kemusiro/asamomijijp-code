@@ -1,0 +1,41 @@
+{
+  "version": "0.5.0-alpha.2",
+  "date": "2026-11-14",
+  "status": "reproduced_in_model_fixed_physical_check_pending",
+  "user_report": "At handover step1, chord does not sound or sustain",
+  "user_numeric_CDC_log_supplied": false,
+  "confirmed_code_defect": "Normal all-note-off released ownership after135ms then started STOP-only200ms input discard; a new Note On300ms after Note Off could be ignored",
+  "change": "Remove200ms discard only from ordinary MIDI ownership release; retain135ms audio tail and STOP/panic/USB safety discard",
+  "regression_before": {
+    "evidence": "verification/c05-alpha2-regression-before.txt",
+    "scope": "Real main.c against modelled USB/I2C/GPIO/time",
+    "expected_owned": [
+      1,
+      0,
+      1,
+      1
+    ],
+    "actual_owned": [
+      1,
+      0,
+      0,
+      0
+    ]
+  },
+  "after": {
+    "evidence": "verification/c05-alpha2-native-tests.txt",
+    "passed": true,
+    "tests": 91,
+    "added_checks": [
+      "Chord300ms after last solo note-off",
+      "Six solos followed by held chord at browser button1 timings",
+      "200ms discard retained for CDC STOP,MIDI panic,I2C STOP"
+    ]
+  },
+  "USB_GPIO_audio_pitch_I2C_sources_unchanged": true,
+  "limits": [
+    "The code timing defect is reproduced; its exact contribution to this user run awaits CDC data or corrected hardware result",
+    "No successful alpha2 hardware run claimed",
+    "Previous basic alpha1 report is retained, not rewritten as a full handover acceptance"
+  ]
+}

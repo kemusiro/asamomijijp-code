@@ -1,0 +1,119 @@
+{
+  "version": "0.4.0-alpha.2",
+  "date": "2026-11-14",
+  "check_version": 1,
+  "result": "pass_host_and_target_confirmed",
+  "scope": "Physical C I2C STOP,1800ms software release/rebind,lease mute and explicit replay; four sections accepted by user",
+  "host_verified": {
+    "sections": 4,
+    "completed": 2,
+    "explicit_interruptions": 1,
+    "lease_interruptions": 1,
+    "stop_executed": 185,
+    "lease_executed": 185,
+    "total": 191,
+    "final_state": 4,
+    "final_error": 0,
+    "final_queued": 0,
+    "final_flags": 3,
+    "HOST_PASS": true,
+    "DONE": true,
+    "HOST_SAFE": true
+  },
+  "target_completed_runs": [
+    {
+      "events": 191,
+      "total": 191,
+      "state": 2,
+      "gates": 0,
+      "audio_ready": 1,
+      "fault": 0,
+      "peak": 24512,
+      "max_convert_us": 87,
+      "clipped_samples": 0,
+      "log_drops": 0,
+      "queue_min": 1,
+      "queue_max": 2,
+      "max_dispatch_late_us": 4504,
+      "timing_bins": [
+        117,
+        74,
+        0,
+        0,
+        0
+      ],
+      "I2C_state": 3,
+      "I2C_error": 0,
+      "received": 191,
+      "queued": 0,
+      "sealed": 1
+    },
+    {
+      "events": 191,
+      "total": 191,
+      "state": 2,
+      "gates": 0,
+      "audio_ready": 1,
+      "fault": 0,
+      "peak": 24512,
+      "max_convert_us": 87,
+      "clipped_samples": 0,
+      "log_drops": 0,
+      "queue_min": 1,
+      "queue_max": 2,
+      "max_dispatch_late_us": 4581,
+      "timing_bins": [
+        117,
+        74,
+        0,
+        0,
+        0
+      ],
+      "I2C_state": 3,
+      "I2C_error": 0,
+      "received": 191,
+      "queued": 0,
+      "sealed": 1
+    }
+  ],
+  "target_lease_snapshot": {
+    "audio_ready": 1,
+    "fault": 0,
+    "state": 3,
+    "events": 185,
+    "total": 191,
+    "gates": 0,
+    "I2C_state": 5,
+    "I2C_error": 8,
+    "received": 191,
+    "queued": 0,
+    "sealed": 1,
+    "max_dispatch_late_us": 4556,
+    "timing_bins": [
+      111,
+      74,
+      0,
+      0,
+      0
+    ]
+  },
+  "user_reported": {
+    "all_four_sections_expected": true,
+    "STOP_four_second_silence": true,
+    "reattach_four_second_silence": true,
+    "automatic_mute": true,
+    "restart_from_beginning": true,
+    "both_channels_normal": true,
+    "distortion": false,
+    "unexpected_dropouts": false,
+    "final_audio_fault": 0,
+    "final_gates": 0
+  },
+  "interpretation": "FAIL I2C error8 is the intentionally induced lease stop; audio fault remained0. Final explicit STOP is present; final fault/gates also confirmed by user, not an additional final raw STATUS snapshot.",
+  "previous_preflight": "verification/c04-alpha2-recovery-preflight.json",
+  "limits": [
+    "Software I2C controller deinit/pin release/rebind, not physical cable removal or stuck-low faults",
+    "No latency or long-term reliability measurement",
+    "Does not constitute C0.5 USB-MIDI hardware acceptance"
+  ]
+}

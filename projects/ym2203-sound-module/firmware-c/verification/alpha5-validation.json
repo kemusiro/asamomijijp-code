@@ -1,0 +1,202 @@
+{
+  "version": "0.3.0-alpha.5",
+  "date": "2026-11-13",
+  "hardware_tested": true,
+  "scope": "Reduce FM-only buffering while preserving fixed-gain PCM,original WYM1 and GPIO;user reports improved listening result atFM100percent",
+  "previous_hardware_capture": {
+    "version": "0.3.0-alpha.4",
+    "status": "bounded raw capture,automatic stop and CRC-checked USB save confirmed by user RCD and console log;audible cause unresolved",
+    "scope": "bounded24-bit FM wire snapshot and prefix register-return timing trace;no audible fix claimed",
+    "artifact": "local-test-data/ym2203/ysii-fm-capture-20261113/revc-fm-diagnostic.rcd",
+    "FM_gain_percent": 100,
+    "capture_sha256": "ebf46031d999166b20cf697d7d0a0313391e7ae4fb8bdba9ef351ac21c113a42",
+    "capture_frames": 111250,
+    "trace_prefix_events": 13982,
+    "source_prefix_order_preserved": true,
+    "invalid_floating_exponents": 0,
+    "noncanonical_codes": 0,
+    "pcm_clipped_samples": 0,
+    "max_convert_us": 457,
+    "queue_min": 4,
+    "queue_max": 5,
+    "max_dispatch_late_us": 4364,
+    "max_write_return_late_us": 4390,
+    "window_write_return_late_max_us": 759,
+    "root_cause": "not established;reference and wire waveforms are close but not bit-identical;WebLab5Hz DC cut is absent in C and an offline comparison is prepared",
+    "analog_signal_recorded": false
+  },
+  "analog_recording_analysis": {
+    "date": "2026-11-13",
+    "input_sha256": "9b60afa73d6d53ce26a3d076fc13e13b197c5f2ef8e82715fb4209011fe8d61b",
+    "format": {
+      "container": "AIFF-C",
+      "codec": "signed24bit big endian PCM",
+      "sample_rate": 44100,
+      "channels": 2,
+      "duration_seconds": 44.17596371882086
+    },
+    "user_report": "Onsets sound abrupt rather than smooth;heard during recording near file35s",
+    "signal": {
+      "peak_left": 0.42082202434539795,
+      "peak_right": 0.42053914070129395,
+      "peak_dbFS": -7.518031120300293,
+      "LR_correlation": 0.9999995394465077,
+      "full_scale_samples": 0
+    },
+    "timing_fit": {
+      "reference": "WebLab unchanged ymfm wrapper,pinned81aec25ccbb98f4873a255f7551ac4dadac59b4a,raw separatedFM/SSG planes at48kHz",
+      "method": "Physical mono mean resampled44100->48000;both references and actual bandpass80..8000Hz,20ms power average at1kHz;nonnegative independent FM/SSG power fit plus constant,source1..35s",
+      "grid_resolution_ms": 2,
+      "FM_recording_offset_seconds": 5.815999999999992,
+      "SSG_recording_offset_seconds": 5.769999999999992,
+      "estimated_FM_relative_lag_ms": 46.0,
+      "best_power_MSE": 3.408949452925497e-07,
+      "forced_zero_lag_best_MSE": 3.7791814115861297e-07,
+      "recording35s_approx_source_seconds": 29.230000000000008,
+      "limits": "Envelope/mix-model estimate,not a direct GPIO/edge measurement;does not prove the sole cause or malformed AR/DR/RR. Earlier raw FM snapshot31..33s was not exactly this recording35s excerpt."
+    },
+    "code_analysis": {
+      "alpha4_input_frames": 625,
+      "alpha4_prime_blocks": 4,
+      "nominal_FM_buffering_ms": 45,
+      "SSG_path": "direct analog mixer",
+      "alpha5_input_frames": 125,
+      "alpha5_output_frames": 108,
+      "alpha5_prime_blocks": 2,
+      "alpha5_nominal_FM_buffering_ms": 4.5,
+      "alpha5_hardware_verified": false,
+      "fixed_gain_PCM_preserved": true,
+      "register_values_timestamps_order": "unchanged"
+    },
+    "tools": {
+      "python": "3.14.6",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "matplotlib": "3.11.2"
+    },
+    "recording_artifact": "local-test-data/ym2203/ysii-line-capture-20261113/recording.aifc"
+  },
+  "checks": {
+    "native_C_tests": {
+      "passed": true,
+      "tests": 36,
+      "includes": [
+        "old625/540 PCM equals five125/108 conversions at all17 gain settings",
+        "five short-block gain ramp continuity and retargeting",
+        "pending DMA cursor consumes once,publication ownership and32-bit wrap",
+        "10000-block jitter/ownership model",
+        "RCD1 logical625 frame preservation and mixed-size rejection",
+        "existing WYM1,bus,PIO and diagnostic tests"
+      ]
+    },
+    "console": {
+      "passed": true,
+      "scope": "modelled Web Serial;no auto-play,all controls,alpha1..4 compatibility and bounded CRC-checked diagnostic save"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.5"
+      },
+      "memory": {
+        "text_bytes": 787452,
+        "data_bytes": 0,
+        "bss_bytes": 452952
+      }
+    },
+    "package": {
+      "ZIP_SHA256": "a03aa5bbec357af184973a89eae6ccfb15d3c3bc09874f8972b873d56be559a2",
+      "UF2_SHA256": "706799fe19dabfb2eb3f9b164b15785c22f2bbdf29401bdd32773a134bf119db",
+      "source_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129,
+        "kind": "local user-provided song;not for redistribution",
+        "event_bytes_preserved": true
+      },
+      "all_payload_hashes": true,
+      "all_source_hashes": true
+    },
+    "original_WYM1_unchanged_and_once_in_flash": true
+  },
+  "pipeline": {
+    "input_frames": 125,
+    "output_frames": 108,
+    "prime_blocks": 2,
+    "old_nominal_buffer_us": 45000,
+    "new_nominal_buffer_us": 4500,
+    "excludes": "YM serial framing,PIO/FIFO and DAC group delay",
+    "gain_ramp_us": 11250,
+    "clock_window_blocks": 640
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "adb075f9d0c144f066722d8b8c130d878759758edd7f983e7467df0ee2de0eb6",
+    "README.md": "f56e15a2ba21b21b96476afe7eda78dc150bef6128bb0163d25b57d71b396685",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "pc/revc-console.html": "67dff82ec9cff79bb4e5e6f0cbc1b6fdc8996c54f973e0dcfdf398cdb9ecafd2",
+    "pio/fm_rx.pio": "6c722f9e46eb7fb521fe8d28be65b079138137326f25141b8c420d74b5d5e64a",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "2bdd46a2c7cc902181d9ce627fc0d22d3f851b64fc873e5b1faa5b5190cf3b3f",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/main.c": "92e00b1b3603ec91e3d5ba8cac3db87b0921628b9193de3bb042fcd9a908e347",
+    "src/revc.h": "ca02515c3d9177c99a8bea46a2a4d9a65bf6153aa06716c93f66307e5557e821",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "ad64c0602d71e973af06d6c4129e159672dcec47987ba54466360b364d2bf733",
+    "src/wym1.h": "2ab07a6f3723c1ae7bd51839e0c7dc5d648b185a09f24dddaf65015534f57231",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "8442223afbfbcc32bdacec88c95ff7d8c2eb09221d0065bc12d8b275cc298e28",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "0b22340f0550f23f6e3f2a6eea03e558f7dc1c5506cb60b4ba6738f90a644ba4",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "4ef8434b946d7f16ad1dac2ee6cd04b0cf0fc94c3f3362bb7895edb3adf09988"
+  },
+  "not_verified": [
+    "alpha5 full-score completion and numerical stream/timing counters",
+    "alpha5 actual measured FM/SSG delay",
+    "complete disappearance of abrupt attacks,not separately confirmed",
+    "effect of absent WebLab5Hz DC filter",
+    "I2C/MIDI C implementation"
+  ],
+  "hardware_test_scope": "Alpha5 subjective listening improvement and FM100percent balance reported;full-score completion,numeric counters and measured latency not newly verified",
+  "hardware_feedback": {
+    "version": "0.3.0-alpha.5",
+    "source": "User listening report in chat,2026-11-13",
+    "status": "User reports overall playback closer to original;FM100percent sounds appropriately balanced",
+    "FM_gain_percent": 100,
+    "audible_improvement_reported": true,
+    "limits": "Subjective listening report only;no new capture or numeric status supplied. Complete disappearance of abrupt attacks,full-score completion and stream counters not separately confirmed."
+  },
+  "source_sha256_scope": "Hashes describe alpha5 packaged build snapshot;later documentation and hardware feedback do not rebuild or alter the accepted UF2/ZIP"
+}

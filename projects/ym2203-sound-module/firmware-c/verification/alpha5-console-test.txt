@@ -1,0 +1,1 @@
+PASS: no auto-play,firmware identification,test/play/stop commands,gain boost,bus timing selection,alpha1/2/3/4 compatibility,explicit bounded CRC-checked diagnostic download and rejection of unsolicited/corrupt/oversized data,fault gating and disconnect;Web Serial is modelled

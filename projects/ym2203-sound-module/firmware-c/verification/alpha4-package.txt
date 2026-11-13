@@ -1,0 +1,20 @@
+PASS: ZIP CRC,payload hashes,current source hashes and original WYM1 once in decoded RP2350 flash.
+{
+  "ZIP_SHA256": "b7838cf9fbb0b64bb981c1ffa3e4c3a02375077828ac4fc3244cc33d72a238c1",
+  "UF2_SHA256": "89e16fdb0703eeaf65881409faa2ecfb67d3e490d03932d91e5157591e1705ab",
+  "memory": {
+    "text_bytes": 786828,
+    "data_bytes": 0,
+    "bss_bytes": 466772
+  },
+  "source_asset": {
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "crc32": 2925077129,
+    "kind": "local user-provided song;not for redistribution",
+    "event_bytes_preserved": true
+  }
+}

@@ -1,0 +1,30 @@
+test_CDC_STOP_is_global_and_buffered_notes_do_not_restart (test_control.ControlTests.test_CDC_STOP_is_global_and_buffered_notes_do_not_restart) ... ok
+test_I2C_score_ignores_MIDI_and_USB_reset_and_keeps_exact_completion (test_control.ControlTests.test_I2C_score_ignores_MIDI_and_USB_reset_and_keeps_exact_completion) ... ok
+test_MIDI_without_CDC_and_I2C_begin_rejected_then_STOP_preempts (test_control.ControlTests.test_MIDI_without_CDC_and_I2C_begin_rejected_then_STOP_preempts) ... ok
+test_chord_300ms_after_last_solo_note_off_is_accepted (test_control.ControlTests.test_chord_300ms_after_last_solo_note_off_is_accepted) ... FAIL
+test_reset_suspend_and_SOF_timeout_stop_MIDI_without_automatic_replay (test_control.ControlTests.test_reset_suspend_and_SOF_timeout_stop_MIDI_without_automatic_replay) ... ok
+
+======================================================================
+FAIL: test_chord_300ms_after_last_solo_note_off_is_accepted (test_control.ControlTests.test_chord_300ms_after_last_solo_note_off_is_accepted)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_control.py", line 134, in test_chord_300ms_after_last_solo_note_off_is_accepted
+    self.assertEqual([x[0] for x in s], [1, 0, 1, 1])
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [1, 0, 0, 0] != [1, 0, 1, 1]
+
+First differing element 2:
+0
+1
+
+- [1, 0, 0, 0]
+?        ^  ^
+
++ [1, 0, 1, 1]
+?        ^  ^
+
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.632s
+
+FAILED (failures=1)

@@ -1,0 +1,147 @@
+{
+  "version": "0.3.0-alpha.4",
+  "date": "2026-11-13",
+  "hardware_tested": true,
+  "scope": "Local digital FM capture and register-return timing diagnosis;no audible fix claimed",
+  "previous_hardware_result": {
+    "version": "0.3.0-alpha.3",
+    "status": "user confirmed FM150percent closer balance,normal L/R,no distortion or dropouts;granular sound persists at30..35s",
+    "scope": "BUSY-polled1us bus phases with old10us A/B option;FM0..2x with saturation count;default unity;source song and GPIO unchanged",
+    "granular_sound_cause": "not established;decode agrees withWebLab ymfm,actual serial signal and analog waveform not measured",
+    "FM_gain_percent": 150,
+    "granular_sound_window_seconds": [
+      30,
+      35
+    ],
+    "FM_zero_test": "granular sound disappears atFM0percent;does not identify which FM-path stage causes it",
+    "numeric_timing_and_peak": "alpha3 logs not supplied"
+  },
+  "checks": {
+    "native_C_tests": {
+      "passed": true,
+      "tests": 28,
+      "includes": [
+        "actual C bounded recorder,raw24-bit preservation and trace layout",
+        "abort/seal ownership,strict capture command,overflow flags and32bit timer wrap",
+        "real WYM1 prefix model fits16384 records;13982 events before snapshot completed",
+        "standalone offline analysis verifies source CRC/order and exports WAV",
+        "offline PCM matches actual C conversion for same captured words/gain",
+        "existing parser/converter/scheduler/PIO and bus timing model checks"
+      ]
+    },
+    "console": {
+      "passed": true,
+      "scope": "modelled Web Serial,explicit capture/save,fragmented input,CRC/size checking,unsolicited download rejection and legacyalpha1/2/3 control gating"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.4"
+      },
+      "memory": {
+        "text_bytes": 786828,
+        "data_bytes": 0,
+        "bss_bytes": 466772
+      }
+    },
+    "package": {
+      "ZIP_SHA256": "b7838cf9fbb0b64bb981c1ffa3e4c3a02375077828ac4fc3244cc33d72a238c1",
+      "UF2_SHA256": "89e16fdb0703eeaf65881409faa2ecfb67d3e490d03932d91e5157591e1705ab",
+      "memory": {
+        "text_bytes": 786828,
+        "data_bytes": 0,
+        "bss_bytes": 466772
+      },
+      "source_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129,
+        "kind": "local user-provided song;not for redistribution",
+        "event_bytes_preserved": true
+      }
+    },
+    "original_WYM1_unchanged_and_once_in_flash": true
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "286c04726d22111148787bc732ec86b878cc00e79d807c5a645e8290eca58962",
+    "README.md": "ac6a4086c2f70f643ee682779db1ac863a0666191562a8ccb3a96b8dcfaed098",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "fd9eda1bfff9589384d68d7d3733be22510441b01410bffbd07c3a0d1531819c",
+    "pc/revc-console.html": "8f41be8a9ea595407445d6e9497709d0ac0fc90f72e5fa72689eaf9a30e492be",
+    "pio/fm_rx.pio": "6c722f9e46eb7fb521fe8d28be65b079138137326f25141b8c420d74b5d5e64a",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "1590ea0e2cf104de2c5dba79f05897aafaf43a41b812e749ae385e4a26f23fea",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "9c1d6604091d81575fb262fc26cea08c6d6de1136c2bc71925f9089fd2e47900",
+    "src/diagnostic.h": "8ffd03f447c278efdabefafabb3201228d3c983b93af9fd0c0b829259d9ebd81",
+    "src/main.c": "46cbf1837d3acb84f43e8524f3332c63225de596e70b1ac629ccb70a7ba7a302",
+    "src/revc.h": "ca02515c3d9177c99a8bea46a2a4d9a65bf6153aa06716c93f66307e5557e821",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "bb05610b2e231258052fc31e9d889bbefac8473e7da98166a6777d1b516a9c02",
+    "src/wym1.h": "716769a726485285d2c54f7d3e621826a3d6b3f11f807f8e97a27c31c5bd6f34",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9241aee7bce87a1540ff68116118e244f26c419da119d529275516487216a25d",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "fd8d46af7ff0d6dc0bc5a64228730b784fdd9257eb84799ec90224d10a20acad",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "0b22340f0550f23f6e3f2a6eea03e558f7dc1c5506cb60b4ba6738f90a644ba4",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "ec9e43672d57d372925ab93f326fedc1319a2c7e17c466604d46e2613e60e28c"
+  },
+  "not_verified": [
+    "audible stage/cause of granular sound",
+    "effect of matching WebLab5Hz DC filter",
+    "actual analog/I2S output waveform",
+    "alpha4 full-song playback",
+    "I2C/MIDI C implementation"
+  ],
+  "hardware_test_scope": "Only capture31 through approximately33s,auto-stop and USB dump;not a full-song or audible-artifact acceptance",
+  "hardware_capture": {
+    "version": "0.3.0-alpha.4",
+    "status": "bounded raw capture,automatic stop and CRC-checked USB save confirmed by user RCD and console log;audible cause unresolved",
+    "scope": "bounded24-bit FM wire snapshot and prefix register-return timing trace;no audible fix claimed",
+    "artifact": "local-test-data/ym2203/ysii-fm-capture-20261113/revc-fm-diagnostic.rcd",
+    "FM_gain_percent": 100,
+    "capture_sha256": "ebf46031d999166b20cf697d7d0a0313391e7ae4fb8bdba9ef351ac21c113a42",
+    "capture_frames": 111250,
+    "trace_prefix_events": 13982,
+    "source_prefix_order_preserved": true,
+    "invalid_floating_exponents": 0,
+    "noncanonical_codes": 0,
+    "pcm_clipped_samples": 0,
+    "max_convert_us": 457,
+    "queue_min": 4,
+    "queue_max": 5,
+    "max_dispatch_late_us": 4364,
+    "max_write_return_late_us": 4390,
+    "window_write_return_late_max_us": 759,
+    "root_cause": "not established;reference and wire waveforms are close but not bit-identical;WebLab5Hz DC cut is absent in C and an offline comparison is prepared",
+    "analog_signal_recorded": false
+  }
+}

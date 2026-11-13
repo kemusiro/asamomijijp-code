@@ -1,0 +1,157 @@
+{
+  "version": "0.3.0-alpha.6",
+  "date": "2026-11-13",
+  "hardware_tested": false,
+  "scope": "Input settling margin and retained fail-safe converter checks,plus bounded fault snapshot;physical root cause and full-song completion pending",
+  "previous_alpha5": {
+    "version": "0.3.0-alpha.5",
+    "status": "User reports closer original timbre and suitable balance atFM100percent;subsequent full-score run stopped at46468/123137 withfault9;full-score acceptance failed",
+    "scope": "Reduce live input/output chunks to125/108 and prime2blocks,nominal FM buffering4.5ms;fixed-gainPCM and WYM1 order/data preserved",
+    "gain_control_ramp_ms": 11.25,
+    "DC_filter_change": false,
+    "I2S_wire_format_changed": false,
+    "GPIO_changed": false,
+    "source": "User listening report in chat,2026-11-13",
+    "FM_gain_percent": 100,
+    "audible_improvement_reported": true,
+    "limits": "Subjective listening report only;no new capture or numeric status supplied. Complete disappearance of abrupt attacks,full-score completion and stream counters not separately confirmed.",
+    "full_score_attempt": {
+      "source": "User full-score run log in chat",
+      "fault": 9,
+      "events_completed": 46468,
+      "events_total": 123137,
+      "state": 3,
+      "gates": 0,
+      "FM_gain_percent": 100,
+      "blocks": 49932,
+      "approx_audio_elapsed_seconds": 112.347,
+      "peak": 16512,
+      "max_convert_us": 179,
+      "queue_min": 1,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "log_drops": 0,
+      "clipped_samples": 0,
+      "bus_mode": "fast",
+      "bus_writes": 46468,
+      "busy_retries": 68697,
+      "max_bus_call_us": 34,
+      "max_dispatch_late_us": 4336,
+      "late_hist_lt1_5_10_20_100ms": [
+        46396,
+        72,
+        0,
+        0,
+        0
+      ],
+      "interpretation": "Fault9 is conversion/gain validation,not a duration cap or queue-underrun code. Gain8 is valid;forbidden exponent0 is a candidate. Missing failed raw frame and subreason prevent confirmation."
+    }
+  },
+  "changes": {
+    "extra_PIO_delay_cycles": 4,
+    "extra_SD_settling_ns": 125,
+    "PIO_hz": 32000000,
+    "nominal_buffer_us": 4500,
+    "default_FM_percent": 100,
+    "GPIO_changed": false,
+    "PCM_converter_values_changed": false,
+    "invalid_data_check_disabled": false
+  },
+  "checks": {
+    "native_C_tests": {
+      "passed": true,
+      "tests": 39,
+      "scope": "Existing36 tests plus synthetic input-settling/24-bit bit-order model,C snapshot first/middle/last,invalid input remains a conversion failure;not hardware timing measurements"
+    },
+    "console": {
+      "passed": true,
+      "scope": "Modelled Web Serial,alpha1..5 compatibility,explicit playback/diagnostic download,fault gating"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.6"
+      },
+      "memory": {
+        "text_bytes": 787924,
+        "data_bytes": 0,
+        "bss_bytes": 452992
+      }
+    },
+    "package": {
+      "ZIP_SHA256": "b9729723da36ffc13e16cea69c60c0e9bbd7006f9f2f212246751d658501a67f",
+      "UF2_SHA256": "d13a38067c808f5e27bc99934bf6528c220f10e00732e50f7ca70b1919db6069",
+      "all_payload_hashes": true,
+      "all_source_hashes": true,
+      "source_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129,
+        "kind": "local user-provided song;not for redistribution",
+        "event_bytes_preserved": true
+      }
+    },
+    "original_WYM1_unchanged_and_once_in_flash": true
+  },
+  "source_sha256_scope": "Packaged alpha6 build snapshot;later verification metadata is separate",
+  "source_sha256": {
+    "CMakeLists.txt": "050618e08bb8344fa36a4fe2351661a27355f49c81706ba47802d131d38f750b",
+    "README.md": "07bbad28364015c2a55aed75d74b62e9e76218799141906341a3ccb42368da8e",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "pc/revc-console.html": "788a85a8ebcf6e1caa5f1ac2d8f927ac743a4ecd8e2a434c3350b5be319bf6f8",
+    "pio/fm_rx.pio": "4b358eb9708001d9746addbc7a09b032090ea507ee01f340601c7de40dc3ceb6",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "08b65a3926a46c096a17a7503898b0cd612be30188f9f95c01dd069f922f09ac",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/main.c": "b514e5305aa771ea957e0082295257528bbb67cbe88df0124341c293bbd9b1be",
+    "src/revc.h": "4f3205bf783b168e52a9c192616699ddfef26faf543be6c7db9adad09697c1e6",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "d2a49a873f97fb6c7a726e27bcc59a238768d4332b14b42b014491260abae4d0",
+    "src/wym1.h": "d601807a10ac054192d5e0566078a577b7385437e6506c5283d687437597642c",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_rx_margin.py": "6671303f6ae1d9e1c191986337687eff8b2f7eaa368655ad13828cfb8b67039d",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "60d9806d39ff3121182e429b26135169050fbfb0675f7be603eac56e1ada88c2",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "0b22340f0550f23f6e3f2a6eea03e558f7dc1c5506cb60b4ba6738f90a644ba4",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "7fe658c9d85bb25cb8d6466678e649fc7e148d456c60e5d9ac704716cad26603"
+  },
+  "not_verified": [
+    "Physical cause of alpha5 fault9;new snapshot required if it recurs",
+    "alpha6 hardware playback and full-score completion",
+    "actual SD/CLK timing atPico inputs",
+    "I2C/MIDI C implementation"
+  ]
+}

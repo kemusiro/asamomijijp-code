@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "date": "2026-11-14",
+  "package": "outputs/revc-c-0.5.0-alpha.3-accepted-set-20261114.zip",
+  "package_sha256": "b5ad21e06b836486d6242e42c5b13e726c609f6410c53da32d289829af2cf8d8",
+  "firmware_rebuilt": false,
+  "UF2_unchanged": true,
+  "UF2_sha256": "f7e960cbe14bae7da8d5e1c3e809d5e745b6b697a8cf0e145eab8a7ad8a8919a",
+  "source_firmware_snapshot_matches_origin": true,
+  "host_matches_hardware_tested_v11": true,
+  "member_hashes_verified": true,
+  "deterministic_repack": true,
+  "new_music_included": false,
+  "members": 118,
+  "native_tests": 99,
+  "limits": "Package is a byte-preserving recombination,not a new physical reinstall; alpha3 full-song physical retest not claimed"
+}

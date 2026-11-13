@@ -1,0 +1,22 @@
+{
+  "result": {
+    "passed": true,
+    "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+    "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+    "events": 123137,
+    "period_ms": 298218,
+    "crc32": 2925077129,
+    "max_late_us": 5510,
+    "commands": 3869,
+    "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "register_value_order_exact": true
+  },
+  "runtime_profile": {
+    "runtime": "MicroPython v1.29.0",
+    "source_archive_sha256": "8072f6ad42c0e3bbfca88ed09bf8f1106ce207a39129af920f70081b8f2fe286",
+    "host": "macOS arm64 Unix",
+    "profile": "minimal variant with ROM level EXTRA_FEATURES;MICROPY_PY_THREAD=1;MICROPY_PY_BUILTINS_INPUT=0;MICROPY_DEBUG_PRINTERS=1",
+    "scope": "Validation-only native runtime;not the official RP2 binary or physical I2C/audio",
+    "host_scripts_mpy_cross": "v1.29.0,mpy6.3,Armv6m,compile passed"
+  }
+}

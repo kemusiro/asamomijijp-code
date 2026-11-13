@@ -1,0 +1,167 @@
+{
+  "version": "0.3.0-alpha.3",
+  "date": "2026-11-13",
+  "hardware_tested": false,
+  "scope": "Comparison build for residual quiet FM and granular sound;cause not established",
+  "previous_hardware_result": {
+    "version": "0.3.0-alpha.2",
+    "status": "full-score playback reported;balance closer at unity but FM still quiet;granular/popping FM at some passages",
+    "change": "Removed FM-only1/8 attenuation;default unity;live bounded0..unity FM control,one-block ramp;WYM1/SSG data unchanged",
+    "physical_analog_balance": "FM100percent much closer to reference but still quiet;some passages sound granular/popping",
+    "numeric_timing_and_peak": {
+      "source": "User-supplied console log in chat",
+      "events_completed": 123137,
+      "events_total": 123137,
+      "fault": 0,
+      "peak_pcm": 17985,
+      "max_convert_us": 475,
+      "queue_min": 3,
+      "queue_max": 5,
+      "i2s_div256": 12500,
+      "log_drops": 0,
+      "max_dispatch_late_us": 22437,
+      "late_hist_lt1_5_10_20_100ms": [
+        65816,
+        47357,
+        9863,
+        91,
+        10
+      ]
+    },
+    "granular_sound_window_seconds": [
+      30,
+      35
+    ],
+    "audio_interpretation": "No detected audio stream fault or PCM saturation at unity;this does not identify the audible artifact or exclude analog distortion"
+  },
+  "checks": {
+    "native_C_tests": {
+      "passed": true,
+      "tests": 22,
+      "includes": [
+        "actual board.c against timed GPIO/BUSY model in fast/slow modes",
+        "strict gain parser,extended gain saturation count and no signed wrap",
+        "ymfm exponent-transition encode/decode comparison",
+        "full WYM1 event sequence and timing models",
+        "legacy unity/1/8 conversion and PIO I2S model"
+      ]
+    },
+    "console": {
+      "passed": true,
+      "scope": "modelled Web Serial,extended controls and legacyalpha1/2 compatibility"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.3"
+      },
+      "memory": {
+        "text_bytes": 784380,
+        "data_bytes": 0,
+        "bss_bytes": 34592
+      }
+    },
+    "package": {
+      "ZIP_SHA256": "09c34c2dde99887c80311a53e1f3288f06cbe967ced1e8c575d08253874c24c7",
+      "UF2_SHA256": "dfde71f8832cff8e511c6b9c0945bc9e454b28bee8391e1c0a5c14eda1eb554a",
+      "memory": {
+        "text_bytes": 784380,
+        "data_bytes": 0,
+        "bss_bytes": 34592
+      },
+      "events": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129,
+        "kind": "local user-provided song;not for redistribution",
+        "event_bytes_preserved": true
+      }
+    },
+    "source_WYM1_byte_identical_once_in_UF2": true
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "83dc8c38cfe2dfbaf9c3edb265904aada15580552d7ea0239ee0bcbfe5b1221b",
+    "README.md": "6717b9460a29f2fec759384bccbf3640734f40246888adce38c69eb94c82c27c",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "pc/revc-console.html": "59f42a618077a6d5801e652e57e142764029d1957c32ba89a56fe425dd86f23c",
+    "pio/fm_rx.pio": "6c722f9e46eb7fb521fe8d28be65b079138137326f25141b8c420d74b5d5e64a",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "884b15bac4a8f67fb3ccf39416e3394e6f269d8b632e7d01817587f3ecc35b51",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/main.c": "d618dc44789bae05e4b6125e3cce304fbc93586d3382e6ec18b1e2bc14437869",
+    "src/revc.h": "ca02515c3d9177c99a8bea46a2a4d9a65bf6153aa06716c93f66307e5557e821",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "bb05610b2e231258052fc31e9d889bbefac8473e7da98166a6777d1b516a9c02",
+    "src/wym1.h": "716769a726485285d2c54f7d3e621826a3d6b3f11f807f8e97a27c31c5bd6f34",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "f36d72369311e9ccaabcf0d0d98ff595e32538ff9b03c617ec2518e4a53a1e94",
+    "tools/build.py": "d9c74e3486843a90bb5d5a1d5a837426a268c86edf8f8a8c64ebe9fad9884735",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "8e1e93deb4c4ba4408621e4d6cf0a4217fd0cc08f49d85d576faa82e6e1661c9"
+  },
+  "not_verified": [
+    "fast bus electrical timing and real register integrity",
+    "FM/SSG analog balance",
+    "audible cause or improvement of granular sound",
+    "physical stream timing and PCM saturation",
+    "physical USB disconnect timing",
+    "I2C/MIDI C implementation"
+  ],
+  "investigation": {
+    "user_report_window_seconds": [
+      30,
+      35
+    ],
+    "window_events": 2219,
+    "FM_events": 2060,
+    "SSG_events": 159,
+    "constant_write_service_models_us": {
+      "250": {
+        "max_late_us": 6500,
+        "p95_late_us": 5250
+      },
+      "100": {
+        "max_late_us": 1600,
+        "p95_late_us": 1200
+      },
+      "50": {
+        "max_late_us": 750,
+        "p95_late_us": 500
+      }
+    },
+    "model_limits": "Constant write cost assumes no USB/other jitter;not alpha3 hardware timing or proof of audible cause",
+    "recommended_initial_FM_compare_percent": [
+      100,
+      150,
+      175
+    ],
+    "200percent": "Observed alpha2 peak17985 would exceed signed16-bit at2x;do not start comparison at200percent"
+  }
+}

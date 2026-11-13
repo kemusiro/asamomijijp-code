@@ -19,9 +19,42 @@ Rev Cの実YM2203Cで、音色・書込み順序・演奏時刻を保って演�
 - 0.2.0-alpha.1のUSB-MIDI認識、FM/SSG音階、全音停止、Thonny接続は実機確認済み。
 - 6声・I2C/MIDI制御権切替もユーザーが確認済み。最後の報告は簡潔な確認であり、
   HOST全ログ・OS名・deadline missesの数値は提示されていない。
-- Ys IIの全曲再生は未実装。現行の1書込み/11.25 ms、HOSTの40 ms ACK待ち、
-  検証用10 kHz I2Cでは不足する。音源側C SDK版を主案としている。
-- USBの物理切断、遅延測定、24時間実機運転、USB/GNDノイズの絶縁対策は別途未検証。
+- [C SDK版0.5.0-alpha.3](firmware-c/README.md)でローカルWYM1再生とUF2生成を実装した。
+  alpha.1の音声経路・Ys II全曲再生はユーザー実機で確認済み（左右正常、歪み・音切れなし）。
+  alpha.2のunity出力で音量比は改善したがFMがまだ小さく、一部に粒状音があるとの報告。
+  alpha.3のFM150%で音量比は近づき、左右正常・歪み/音切れなしを実機確認。
+  30～35秒の粒状音が残り、FM0%で消えるため、alpha.4に生FM信号と書込み時刻の診断記録を追加した。
+  粒状音の発生段階・原因は未確定。GPIOと楽曲イベントは変更しない。
+  alpha.4の約2秒の生FM記録・先頭13982件の時刻/順序・CRC付き保存を実機確認。
+  AMS-22のライン録音ではFMが約46ms遅れるモデルが最良で、FMのみ45ms蓄積する実装と整合。
+  alpha.5は公称4.5msへ短縮し、固定ゲインのPCMと楽曲イベントを維持した。
+  ユーザー実機で全体的に原曲に近い聴感とFM100%の適切なバランスを確認。
+  その後の全曲試験は約112秒、46,468/123,137イベントでfault=9により停止した。
+  alpha.6も46.8秒で指数0の受信データを検出して停止。ゲイン異常ではないことを確認。
+  alpha.7では低遅延を保ち、クロックの短い揺れを除外する2段階の確認を追加。
+  全123,137件・約4分58秒をユーザー実機で1回完走。FM100%で良好なバランス、歪み・音切れなし。
+  fault=0、終了時gates=0、DONE、クリップ0、書込み開始遅延最大4,353µsをログ確認。
+  除外フラグの観測5回。ローカル内蔵BINの全曲再生を受入完了とする。
+  先の短いFM比較音ではユーザーが違い・症状を感じなかったが、録音35秒は曲の約29.2秒で場所が異なる。
+  0.4.0-alpha.1で操作側MicroPythonからのI2C v2ストリーミングを実装。
+  100kHz・32イベント/要求・1024件リング・CRC/連番・1秒リース・STOPを備える。
+  alpha.1はI2C識別後のBEGINで音声fault3を検出して停止。alpha.2でDMAのTX FIFO先行充填と
+  音声準備エラーの通知を修正した。alpha.2のI2C全曲再生はHOST・Rev C双方のログで実機受入済み。
+  HOSTは123,137件・CRC一致・再送0、Rev Cは全件受信/実行・fault=0・終了時gates=0を確認。
+  Rev Cログには2回の完走があり、最大遅延4,475/4,480µs、クリップ0。FM100%で歪み・音切れなし。
+  [両側ログの実機受入記録](firmware-c/verification/c04-alpha2-hardware-acceptance.json)。停止/通信休止/復帰の総合確認もユーザー実機で合格。
+  現行MicroPython版の1書込み/11.25 ms、HOSTの40 ms ACK待ち、検証用10 kHz I2Cでは不足する。
+- 0.5.0-alpha.1でC版USB-MIDI＋CDCを追加。FM3声/SSG3声、ノート制御、全音停止、I2Cとの制御権切替を実装。
+  USB-MIDI認識、FM/SSG音階、6声同時発音、全音停止、左右正常、歪み/音切れなしをユーザー実機で確認済み。
+  通常Note Off後の余分な入力破棄により、300ms後の和音を落とす不具合をalpha.2で修正。
+  追加ログのaudio_ready=0/fault16に対応し、連鎖DMA停止とDREQ再初期化をalpha.3で修正。
+  alpha.3で6つの単独音と和音保持、audio_ready=1/fault=0、左右正常・歪み/音切れなしをユーザー実機で再確認。
+  [再確認記録](firmware-c/verification/c05-alpha3-restart-hardware-acceptance.json)はユーザー報告に基づく（CDC生ログ未提示）。
+  MIDI/I2C制御権切替も実機受入済み。HOST完了とI2C 191/191、fault=0/gates=0、MIDI owned=0を確認。
+  [切替受入記録](firmware-c/verification/c05-alpha3-handover-hardware-acceptance.json)。USB切断・復帰も実機受入済み。HOST v1.1でUSB切断中のI2C191件完了、終了後の無音とMIDI復帰を確認。
+  [USB受入記録](firmware-c/verification/c05-alpha3-usb-disconnect-hardware-acceptance.json)。
+  現行UF2と修正版HOSTの[常用手順](firmware-c/DAILY-USE-README.txt)を用意した。
+- 可聴遅延の実測、24時間実機運転、USB/GNDノイズの絶縁対策は別途未検証。
 
 詳細：
 [基板・組立と診断履歴](hardware/ym2203-single-board/README.md) ／
@@ -38,6 +71,7 @@ Rev Cの実YM2203Cで、音色・書込み順序・演奏時刻を保って演�
 | `hardware/ym2203-single-board/output/` | 接続を描いたSVG/HTMLなどの閲覧資料 |
 | `hardware/ym2203-single-board/diagnostics/` | 組立時からの手動診断、HOST/target、回帰テスト、実機手順 |
 | `hardware/ym2203-single-board/firmware/` | 0.2.0-alpha.1のソース、ホストライブラリ、USB-MIDI確認画面、プロトコル、受入記録、固定ランタイム依存 |
+| `firmware-c/` | 0.5.0-alpha.3 C SDK版：2コア・PIO/DMA・ローカルWYM1再生、UF2ビルド、USB-MIDI＋CDC操作画面、実機確認手順 |
 | `hardware/ym2203-single-board/rev-a/`, `rev-b/` | 1枚基板の設計履歴 |
 | `hardware/sound-module-platform/`, `hardware/sound-module-pcb/` | 共通ベース＋交換基板案の履歴と元になったCAD生成コード |
 | `hardware/ym2203-i2c-prototype/` | 初期I2C試作案と参照ドライバー接続の検証 |

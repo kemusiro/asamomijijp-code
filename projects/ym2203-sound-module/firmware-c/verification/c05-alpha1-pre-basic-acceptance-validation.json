@@ -1,0 +1,259 @@
+{
+  "version": "0.5.0-alpha.1",
+  "date": "2026-11-14",
+  "hardware_tested": false,
+  "scope": "USB-MIDI1.0 six-voice receiver plus CDC with C I2C v2 retained; first C MIDI physical acceptance pending",
+  "checks": {
+    "native_tests": {
+      "passed": true,
+      "tests": 88,
+      "evidence": "verification/c05-alpha1-native-tests.txt",
+      "scope": "Actual C MIDI planner and main.c loop with modelled USB/GPIO/I2C/time; original stream/PCM/RX regression tests"
+    },
+    "usb_descriptors": {
+      "passed": true,
+      "scope": "Actual usb.c and pinned TinyUSB descriptor macros; no OS enumeration",
+      "tinyusb_commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
+      "configuration_bytes": 175,
+      "interfaces": [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      "endpoints": [
+        129,
+        2,
+        130,
+        3,
+        131
+      ],
+      "IADs": [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "strings": [
+        "YM2203 Rev C C MIDI",
+        "Rev C control",
+        "YM2203 Rev C MIDI"
+      ],
+      "usb_midi_version": "1.0",
+      "CDC_retained": true
+    },
+    "console_UI": {
+      "passed": true,
+      "evidence": "verification/c05-alpha1-console-ui.txt",
+      "scope": "Playwright Chromium with Web Serial model, not real serial"
+    },
+    "MIDI_UI": {
+      "passed": true,
+      "evidence": "verification/c05-alpha1-midi-ui.txt",
+      "scope": "Playwright Chromium with MIDI output model, no physical MIDI sent"
+    },
+    "MicroPython_I2C": {
+      "passed": true,
+      "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+      "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+      "events": 123137,
+      "period_ms": 298218,
+      "crc32": 2925077129,
+      "max_late_us": 5510,
+      "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+      "register_value_order_exact": true,
+      "commands": 3869
+    },
+    "MicroPython_recovery": {
+      "passed": true,
+      "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+      "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+      "events": 191,
+      "period_ms": 13000,
+      "crc32": 3856599368,
+      "max_late_us": 5640,
+      "source_sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff",
+      "register_value_order_exact": true,
+      "mode": "STOP/lease/rebind/replay",
+      "sections": 4,
+      "completions": 2,
+      "interruptions": 2,
+      "register_writes": 752,
+      "host_pins_rebound": true
+    },
+    "Arm_mpy_cross": {
+      "passed": true,
+      "version": "1.29.0",
+      "architecture": "Armv6m",
+      "source": "host/midi_handover.py",
+      "scope": "Syntax/native bytecode compilation, not hardware execution"
+    },
+    "Arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.5.0-alpha.1"
+      },
+      "memory": {
+        "text_bytes": 60864,
+        "data_bytes": 0,
+        "bss_bytes": 463540
+      }
+    },
+    "package": {
+      "passed": true,
+      "package": "outputs/revc-c-0.5.0-alpha.1-usb-midi-i2c-20261114-r3.zip",
+      "ZIP_SHA256": "18cb1b0ddc50d59104cfc8b26054155ef49f1074c3ec26348c12e1fe96062243",
+      "UF2_SHA256": "8bbc3f8be6d6384a0e79425c73c0d24cc397f142e9ae8b5651c6dc8624a9f249",
+      "memory": {
+        "text_bytes": 60864,
+        "data_bytes": 0,
+        "bss_bytes": 463540
+      },
+      "member_hashes_verified": true,
+      "original_191_event_score_in_UF2": true,
+      "YsII_only_in_host": true,
+      "host_BIN_byte_exact": true,
+      "source_snapshot_verified": true
+    },
+    "pitch_tables": {
+      "passed": true,
+      "notes": 128,
+      "scope": "All FM/SSG entries match accepted MicroPython tables; generated C header reproduces at4MHz"
+    },
+    "GPIO_PCM_receiver_I2S_bus_sources_unchanged": true,
+    "I2C_v2_core_and_host_library_unchanged": true
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "952793328a46d801de0ce8a2fe02698c08e263208e791337fdeb212acdfa3322",
+    "I2C-YSII-README.txt": "4532b02bc59ef74793e9822a012b12cee4451800a04d4a5200073b4136f4ead6",
+    "LICENSE-PICO-I2C-SLAVE.txt": "8e54440f1be53b85151b0e10a9710449fa321fe9f10a8f78716d8db062b682d0",
+    "README.md": "a97d39ad449d5a961adbe6a9cbe43fb15fe6871821d1b3e35957f0c9735d8d41",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "host/lib/ym2203_revc_stream.py": "af49f7c0ee4c9137fd4ebfb7aa00252ada89400cc54c1d0d3f39914e347032ae",
+    "host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+    "host/midi_handover.py": "cbb28c593be55a7492fe81ba2f22129062aab15fc601b85a1bf84045b7697d28",
+    "host/recovery_check.py": "7eb774ece8cee0b6f4babc8ee63650a57b30c54423ba6d712a7144a0c3785f5b",
+    "pc/revc-console.html": "741bb53ce967561303319149d485cd57cbeb72a5df1d54252b5fed36a3c5aa90",
+    "pc/usb-midi-test.html": "2cb210d4f6a8f42923bd660ae1f5177aec1a3aa6c6baa885df7b7ff11974bb15",
+    "pio/fm_rx.pio": "7a9fd602b94e0b938d25b6112906f0a50063b97cc0d0a95889ed317989cf4cd3",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "protocol-v2.md": "2cccb0aa6a4eac2b5e6ecfdae38bb4e926256293ab174729a0eb8e0b5c4b92af",
+    "src/audio.c": "69615df39b9139fbc2b08e2676857b6982179cb8cff540d513079982d9e1eaa1",
+    "src/audio_start.c": "13e17b665ac370c9f741b1e7c68f6031633f669b17145edf63ef09bc892e327a",
+    "src/audio_start.h": "10c9ec46839be544ab5098e63a1b9ea2b1bf56b406cc5a5270c7ebbb74ea9383",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/i2c.c": "130063cc75f995a4945e4a050f583e234d010a352d009485c195cdf1dc9545ba",
+    "src/main.c": "06e717deba559964be966f05104aec2627a8701477dead991cc514da6534ce1c",
+    "src/midi.c": "076ab1bc64111344cf60c8d77aa31b01d9d4a37802a8c2bdfa1e6ad69c4cf8d0",
+    "src/midi.h": "7c78473b6f7fb77d79f200c08bccdff22c5c317f86a43c47764210c7709757d6",
+    "src/midi_pitch.h": "cc84f6ab223a5da847b446a62b9b1fa5d36fb75c072be12e350974d9ad47e07a",
+    "src/revc.h": "1abbebe885615083c434c2832a09827e0ab008d9be0246e8d2ad66288b7ba191",
+    "src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+    "src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+    "src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+    "src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+    "src/tusb_config.h": "1334a2bd979ea32d97512f5c4816171a2be3c85eae6006261df3963f2cca0814",
+    "src/usb.c": "4bfad8ee6c9ca40dc56fa225834fe6b1f08e1ee056680142df0f8566f76879b6",
+    "src/wym1.c": "e2d52eb3d9f05bfac94523daeb0d471b800354b7f75c1a6ac4b4b69bba15e5c2",
+    "src/wym1.h": "2d2bb3dce631ea069d6f3b4d202511214da2adb3ff75061f8bac2684302290da",
+    "tests/control_bridge.c": "307f97cdcb99e121c000c7022ae86b0810f8a0fc5af8c44629cda2b187d3366a",
+    "tests/midi_bridge.c": "7675651e5e11d0fe83da37a9e0f824ac4afef861f438cf98987f6b85dd5e2d27",
+    "tests/rx_model.py": "54ef1b1af9c6799cb4a4dc802ce086db62ec0e6ab6ac541a7bfbb4d154f9bd57",
+    "tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1",
+    "tests/test_audio_start.py": "00e8630a3d2d5a9bea38b25fb09ccdd94bc4ccb38eae8fcae9ca30a9a42b5158",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_control.py": "9844c97d333e4cd3e003fc89ab5790c00557b3e1a957649cd1a7c947a4f5d8b4",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_i2c_adapter.py": "93ce9094f6eb0aafc04f1d3dc2ba4e39518586657fa25283b120efa0f8a226cf",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_midi.py": "abbc5ea428d47251e47f479539e81092011bc6f6f0ca9f7483647bce7acbe41f",
+    "tests/test_recovery_host.py": "17c7e7a0db3535a02edd86d8bf342a959bd5bf4831066acf1f15092dcf421528",
+    "tests/test_rx_margin.py": "662b561e2b93a928c526d0811446de89e928f90309dcb90df95832ffa8afd789",
+    "tests/test_stream.py": "9985aadfc11ca8125cc372bc06c01500cc2f1b4114eb7dd884dfdab4637061ec",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "37d59810d8187a2c8e4ace8648796c7c6289607d7ffcdd5c9fc44be0fc724293",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "0fe6d3e6687650a3758dbf9fdc1df0e609b3a01e929d1c48131f6a88b4f8652a",
+    "tools/build_recovery_check.py": "930422e64440c02ee17f3395e970dad4725a786f5873b10d1be7927cd6f1d76c",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/generate_midi_pitches.py": "5c17ddd46dfe13cc09cb435cdbd5902e6956002406cb443e250ae427942ac5c5",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_host_micropython.py": "9a02268e29651136ab9832be62096e3ee0465bcd76c75fc40383054e02059288",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "tools/verify_usb_descriptors.py": "0ca2770bdc505e634a394bb84651638b51588dc2d0cc7243a906da907716621e",
+    "verify-console.mjs": "dfde47ffac9c016c84bb4e22409b6742950fc5e94056a83c8fb0e4f61c30d1c0",
+    "verify-midi-ui.mjs": "897fb8af60a7536e6bf8a90aa88ae334119fa12d17696563062670cf8fdf48da"
+  },
+  "source_sha256_scope": "Delivered r3 package snapshot; acceptance records updated separately; prior artifacts not rebuilt",
+  "previous_physical_acceptance": [
+    {
+      "version": "0.4.0-alpha.2",
+      "scope": "I2C Ys II full song",
+      "record": "verification/c04-alpha2-hardware-acceptance.json"
+    },
+    {
+      "version": "0.4.0-alpha.2",
+      "scope": "I2C STOP,lease/rebind and explicit replay",
+      "record": "verification/c04-alpha2-recovery-hardware-acceptance.json"
+    }
+  ],
+  "not_verified": [
+    "OS enumeration and physical USB-MIDI audio for new0.5 firmware",
+    "Physical USB unplug/SOF-loss mute with the new composite device",
+    "Physical MIDI/I2C handover and new0.5 full-song playback",
+    "Measured audible latency and long-term operation"
+  ],
+  "evidence_sha256": {
+    "c05-alpha1-native-tests.txt": "94cee6458d6d869468d9b34f29da28c2a3c3ddb036ffe55c2dbdd4d39ac2804e",
+    "c05-alpha1-usb-descriptors.json": "091deb3b3cd3de68a8247e72106adc5e88557add815b95f03e29594c0a327578",
+    "c05-alpha1-console-ui.txt": "41fbbfbae933a59d9416595d2dccff60c0f06c28d7f82daf2ed6fab009712d7f",
+    "c05-alpha1-midi-ui.txt": "4cf7cad1443c0b109bd6b0223c19f2278d4e2d36378ce95a4ba5d3832bd2eee2",
+    "c05-alpha1-micropython-i2c.json": "8ff27b72986cf8473ba48faffed6b52523eb5726fc16a4ced300353a3de5d197",
+    "c05-alpha1-micropython-recovery.json": "c368426b8acfa04d7515dfa49961e3d47cb8587e4064c0661230a072aeec7ebd"
+  }
+}

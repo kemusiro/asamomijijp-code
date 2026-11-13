@@ -1,0 +1,192 @@
+{
+  "version": "0.4.0-alpha.2",
+  "date": "2026-11-14",
+  "hardware_tested": false,
+  "scope": "Race-free I2S startup with bounded full-FIFO priming;correct BEGIN audio error classification;I2C v2 layout and music bytes unchanged",
+  "previous_hardware_failure": {
+    "date": "2026-11-14",
+    "version": "0.4.0-alpha.1",
+    "source": "User HOST traceback and Rev C status supplied in chat",
+    "host_error": "BEGIN rejected:code4 state4 error0",
+    "host_signature_passed": true,
+    "target": {
+      "audio_ready": 1,
+      "fault": 3,
+      "state": 3,
+      "events": 0,
+      "total": 123137,
+      "gates": 0,
+      "blocks": 2,
+      "peak": 0,
+      "max_convert_us": 81,
+      "queue_min": 8,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "reject_observations": 0,
+      "clipped_samples": 0,
+      "bus_writes": 0,
+      "max_bus_call_us": 1,
+      "i2c_state": 4,
+      "i2c_result": 4,
+      "i2c_error": 0,
+      "i2c_received": 0,
+      "i2c_executed": 0
+    },
+    "confirmed": "Audio output reported TXSTALL immediately after two-block startup,with no song records received/applied. Boolean prepare callback hid audio failure behind generic STATE result.",
+    "code_defect": "DMA was started asynchronously immediately before enabling the I2S state machine;no FIFO priming handshake.",
+    "limits": "User snapshots can include subsequent STOP/BEGIN attempts;the exact bus-cycle event was not captured electrically."
+  },
+  "checks": {
+    "native_tests": {
+      "passed": true,
+      "tests": 65,
+      "includes": [
+        "Real audio_start.c with asynchronous DMA,FIFO latency0..900us,no-priming timeout and uint32 clock wrap",
+        "Old startup ordering fails all3 startup regression cases",
+        "BEGIN AUDIO12 vs STATE4 and host diagnostics",
+        "Existing I2C full-song exact-register/CRC,lease/STOP/underflow/sequence tests",
+        "Existing audio decode,receiver qualification and RCD1 tests"
+      ]
+    },
+    "MicroPython_host": {
+      "passed": true,
+      "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+      "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+      "events": 123137,
+      "period_ms": 298218,
+      "crc32": 2925077129,
+      "max_late_us": 5510,
+      "commands": 3869,
+      "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+      "register_value_order_exact": true
+    },
+    "Arm_mpy_cross": {
+      "passed": true,
+      "version": "1.29.0",
+      "format": "mpy6.3 Armv6m",
+      "scope": "Updated host library compilation,not RP2 I2C execution"
+    },
+    "console": {
+      "passed": true,
+      "scope": "Modelled Web Serial;0.4 alpha2 identity,legacy compatibility,I2C ownership,safe controls"
+    },
+    "Arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.4.0-alpha.2"
+      },
+      "memory": {
+        "text_bytes": 55688,
+        "data_bytes": 0,
+        "bss_bytes": 463076
+      }
+    },
+    "package": {
+      "version": "0.4.0-alpha.2",
+      "ZIP_SHA256": "bb0b2a70e0135aa3e6b44c069582c7763f2d8680fb932ea8b26a433ddd791f40",
+      "UF2_SHA256": "44bfc20f40abef4daafe33239d464abb6e4e4543a816c7a6272c3fb736ee07ff",
+      "memory": {
+        "text_bytes": 55688,
+        "data_bytes": 0,
+        "bss_bytes": 463076
+      },
+      "host_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129
+      },
+      "hardware_tested": false
+    },
+    "BIN_in_host_byte_exact": true,
+    "no_YsII_in_target_UF2": true,
+    "PCM_decoder_receiver_I2S_bus_recorder_and_host_main_sources_unchanged": true
+  },
+  "startup": {
+    "initial_PCM_blocks": 2,
+    "nominal_buffer_us": 4500,
+    "TX_FIFO_words": 8,
+    "prime_timeout_us": 1000,
+    "timeout_fault": 16,
+    "runtime_TXSTALL_fault": 3,
+    "runtime_check_disabled": false
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "847a96cc2d635c6e373691f35e02d2b7693ae6a40c7e46720c6920c735c070b7",
+    "I2C-YSII-README.txt": "1a0655b5199e78a389b7a02edb2fcf2788789c3039b87f2c0cf689a8e0049ca7",
+    "LICENSE-PICO-I2C-SLAVE.txt": "8e54440f1be53b85151b0e10a9710449fa321fe9f10a8f78716d8db062b682d0",
+    "README.md": "d10aa91af340e4c9ea2eb02d675888f47737a226a257edc8f29647b31981d5e0",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "host/lib/ym2203_revc_stream.py": "af49f7c0ee4c9137fd4ebfb7aa00252ada89400cc54c1d0d3f39914e347032ae",
+    "host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+    "pc/revc-console.html": "5fe0098863d2a4815f927d5ca4c17dc15cef2fb318db37ee1d45f1d390f30a73",
+    "pio/fm_rx.pio": "7a9fd602b94e0b938d25b6112906f0a50063b97cc0d0a95889ed317989cf4cd3",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "protocol-v2.md": "2cccb0aa6a4eac2b5e6ecfdae38bb4e926256293ab174729a0eb8e0b5c4b92af",
+    "src/audio.c": "69615df39b9139fbc2b08e2676857b6982179cb8cff540d513079982d9e1eaa1",
+    "src/audio_start.c": "13e17b665ac370c9f741b1e7c68f6031633f669b17145edf63ef09bc892e327a",
+    "src/audio_start.h": "10c9ec46839be544ab5098e63a1b9ea2b1bf56b406cc5a5270c7ebbb74ea9383",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/i2c.c": "130063cc75f995a4945e4a050f583e234d010a352d009485c195cdf1dc9545ba",
+    "src/main.c": "85f85b8a6bda97f21ab8006c5ca3a52556c54c7bdb140b9acf02a06da314b70f",
+    "src/revc.h": "1abbebe885615083c434c2832a09827e0ab008d9be0246e8d2ad66288b7ba191",
+    "src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+    "src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+    "src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+    "src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "e2d52eb3d9f05bfac94523daeb0d471b800354b7f75c1a6ac4b4b69bba15e5c2",
+    "src/wym1.h": "2d2bb3dce631ea069d6f3b4d202511214da2adb3ff75061f8bac2684302290da",
+    "tests/rx_model.py": "54ef1b1af9c6799cb4a4dc802ce086db62ec0e6ab6ac541a7bfbb4d154f9bd57",
+    "tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1",
+    "tests/test_audio_start.py": "00e8630a3d2d5a9bea38b25fb09ccdd94bc4ccb38eae8fcae9ca30a9a42b5158",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_i2c_adapter.py": "93ce9094f6eb0aafc04f1d3dc2ba4e39518586657fa25283b120efa0f8a226cf",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_rx_margin.py": "662b561e2b93a928c526d0811446de89e928f90309dcb90df95832ffa8afd789",
+    "tests/test_stream.py": "9985aadfc11ca8125cc372bc06c01500cc2f1b4114eb7dd884dfdab4637061ec",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "843deddb864197bef59cb5fc73fb2a68274849772839c5fd1e7c9e6bd4813dc0",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "8723c47e73335f8e9c816e7052b9c0953be1886edb6f4d68d685aed7505a15b9",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_host_micropython.py": "5dbb10868df88bc0273e5c0a86e1fe94a1ab845cf9db9c973b550a96903e2a7e",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "cb668b481995095c41fec3f54d7ae0f06dca1a948403bfbd5edaeb1dfd5d8307"
+  },
+  "source_sha256_scope": "Packaged alpha2 snapshot;verification metadata is separate",
+  "not_verified": [
+    "Actual alpha2 I2S startup and concurrent I2C full-song hardware run",
+    "Physical cause of user TXSTALL beyond demonstrated software startup race",
+    "Physical new C I2C STOP/lease recovery",
+    "C USB-MIDI,400kHz and long-term reliability"
+  ]
+}

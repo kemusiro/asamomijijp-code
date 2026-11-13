@@ -16,3 +16,5 @@ outputs/
 *.kicad_prl
 *-backups/
 ~*.lck
+# SDK builds and private score assets stay outside source history.
+firmware-c/build*/

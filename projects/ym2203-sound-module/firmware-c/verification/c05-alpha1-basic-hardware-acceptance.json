@@ -1,0 +1,26 @@
+{
+  "version": "0.5.0-alpha.1",
+  "date": "2026-11-14",
+  "result": "pass_basic_USB_MIDI_user_reported_handover_pending",
+  "source": "User report in chat; no raw CDC log attached to this basic acceptance report",
+  "version_source": "Continuation after delivery of C0.5.0-alpha.1; no new raw version line supplied",
+  "user_reported": {
+    "USB_MIDI_recognized": true,
+    "FM_scale": true,
+    "SSG_scale": true,
+    "six_simultaneous_voices": true,
+    "all_sound_off": true,
+    "both_channels_normal": true,
+    "distortion": false,
+    "dropouts": false
+  },
+  "not_supplied": [
+    "OS and exact displayed port name",
+    "Raw CDC STATUS/AUDIO/MIDI counters"
+  ],
+  "next_check": "MIDI-I2C-HANDOVER-README.txt",
+  "limits": [
+    "C0.5 MIDI/I2C ownership handover not yet physically accepted",
+    "Physical USB disconnection mute, audible latency and long-term reliability not established"
+  ]
+}

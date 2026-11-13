@@ -1,0 +1,49 @@
+{
+  "version": "0.4.0-alpha.2",
+  "date": "2026-11-14",
+  "result": "pass_host_confirmed_target_log_pending",
+  "scope": "One user-reported physical100kHz I2C full-song run;HOST output reviewed;current Rev C raw log not supplied",
+  "version_source": "User report alpha2;HOST signature identifies I2C v2,not exact patch version",
+  "host_log_verified": {
+    "events_completed": 123137,
+    "events_total": 123137,
+    "period_ms": 298218,
+    "crc32": "ae592289",
+    "commands": 3868,
+    "status_reads": 15192,
+    "command_retries": 0,
+    "min_event_queue": 0,
+    "max_dispatch_late_us": 4475,
+    "HOST_PASS": true,
+    "DONE": true,
+    "HOST_SAFE": true
+  },
+  "derived_from_host_code": "play_file returns success only after target I2C stateDONE,all events executed,and final file CRC match",
+  "min_queue_interpretation": "Event queue can reach0 normally after all records have been received/executed while waiting for period end;no UNDERRUN failure reported",
+  "user_reported": {
+    "full_score_completed": true,
+    "FM_gain_percent": 100,
+    "balance": "good",
+    "distortion": false,
+    "dropouts": false,
+    "target_events_completed": 123137,
+    "target_events_total": 123137,
+    "target_fault": 0,
+    "target_gates": 0
+  },
+  "pasted_target_log": {
+    "version": "0.4.0-alpha.1",
+    "fault": 3,
+    "events_completed": 0,
+    "events_total": 123137,
+    "classification": "Prior failure/reset/disconnect log;not evidence for current successful alpha2 run"
+  },
+  "current_target_log_verified": false,
+  "host_log_artifact": "local-test-data/ym2203/ysii-i2c-alpha2-20261114/host-console.txt",
+  "host_log_sha256": "212d41c6091fc9e3e477759dc7ddb88174efc380f5290fc6365ee633e9a3de3c",
+  "limits": [
+    "Current alpha2 Rev C version/STATUS/AUDIO/TIMING raw log pending",
+    "No independent electrical trace of every YM register write",
+    "One successful run,not repeated-run or long-term reliability"
+  ]
+}

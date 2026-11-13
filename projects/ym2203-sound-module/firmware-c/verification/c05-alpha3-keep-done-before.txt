@@ -1,0 +1,23 @@
+...E.
+======================================================================
+ERROR: test_final_KEEP_rejected_in_DONE_still_completes_without_replaying (test_usb_disconnect_host.UsbDisconnectHostTests.test_final_KEEP_rejected_in_DONE_still_completes_without_replaying)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT>/firmware-c/tests/test_usb_disconnect_host.py", line 118, in test_final_KEEP_rejected_in_DONE_still_completes_without_replaying
+    result = self.run_script(finish_during_keep=True)
+  File "<PROJECT>/firmware-c/tests/test_usb_disconnect_host.py", line 91, in run_script
+    return self.runner.run_check(bind, release, str(path))
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<PROJECT>/firmware-c/host/usb_disconnect_check.py", line 32, in run_check
+    result = player.play_file(path)
+  File "<PROJECT>/firmware-c/host/lib/ym2203_revc_stream.py", line 147, in play_file
+    s = self.command(5)
+  File "<PROJECT>/firmware-c/host/lib/ym2203_revc_stream.py", line 71, in command
+    raise ProtocolError('%s rejected:code%d state%d error%d audio_ok=%d;save Rev C STATUS/AUDIO log' %
+                        (name, s['result'], s['state'], s['error'], bool(s['flags'] & 2)))
+ym2203_revc_stream.ProtocolError: KEEP rejected:code4 state3 error0 audio_ok=1;save Rev C STATUS/AUDIO log
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.813s
+
+FAILED (errors=1)

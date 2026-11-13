@@ -1,0 +1,56 @@
+test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) ...
+  test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=125) ... FAIL
+  test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=500) ... FAIL
+  test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=2200) ... FAIL
+  test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=4500) ... FAIL
+  test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=15000) ... FAIL
+
+======================================================================
+FAIL: test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=125)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_audio_core.py", line 56, in test_repeated_restart_renews_credits_and_disables_every_chain_before_abort
+    self.assertEqual(self.c.am_get(0), 0, 'audio fault after DMA restart')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 0 : audio fault after DMA restart
+
+======================================================================
+FAIL: test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=500)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_audio_core.py", line 56, in test_repeated_restart_renews_credits_and_disables_every_chain_before_abort
+    self.assertEqual(self.c.am_get(0), 0, 'audio fault after DMA restart')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 0 : audio fault after DMA restart
+
+======================================================================
+FAIL: test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=2200)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_audio_core.py", line 56, in test_repeated_restart_renews_credits_and_disables_every_chain_before_abort
+    self.assertEqual(self.c.am_get(0), 0, 'audio fault after DMA restart')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 0 : audio fault after DMA restart
+
+======================================================================
+FAIL: test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=4500)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_audio_core.py", line 56, in test_repeated_restart_renews_credits_and_disables_every_chain_before_abort
+    self.assertEqual(self.c.am_get(0), 0, 'audio fault after DMA restart')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 0 : audio fault after DMA restart
+
+======================================================================
+FAIL: test_repeated_restart_renews_credits_and_disables_every_chain_before_abort (test_audio_core.AudioCoreTests.test_repeated_restart_renews_credits_and_disables_every_chain_before_abort) (phase=15000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "PROJECT/firmware-c/tests/test_audio_core.py", line 56, in test_repeated_restart_renews_credits_and_disables_every_chain_before_abort
+    self.assertEqual(self.c.am_get(0), 0, 'audio fault after DMA restart')
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 16 != 0 : audio fault after DMA restart
+
+----------------------------------------------------------------------
+Ran 1 test in 0.507s
+
+FAILED (failures=5)

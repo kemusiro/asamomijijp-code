@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YM2203 C版 USB-MIDI 確認</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#e6edf5;background:#121924;color-scheme:dark}body{max-width:660px;margin:48px auto;padding:0 24px}h1{font-size:1.6rem}p{line-height:1.8;color:#bbc8d9}label{display:block;margin:20px 0 8px}button,select{font:inherit;padding:12px 16px;border:1px solid #566781;border-radius:8px}select{width:100%}button{cursor:pointer;background:#25354b}button:disabled{opacity:.45;cursor:default}.controls{display:flex;gap:12px;flex-wrap:wrap;margin:24px 0}#panic{background:#6b2930}output{display:block;padding:18px;background:#1c2737;border-radius:10px;min-height:28px}
+</style>
+<h1>YM2203 C版 USB-MIDI 確認</h1>
+<p>C=0.5.0-alpha.3のRev Cを起動して音量を低めにし、接続先を選んでください。音声はRev Cのライン出力から出ます。</p>
+<button id="connect">MIDI接続先を読み込む</button>
+<label for="port">送信先</label><select id="port" disabled><option value="">接続先を選択</option></select>
+<label for="channel">音源・チャンネル</label><select id="channel">
+<option value="0">FM CH1（MIDI 1）</option><option value="1">FM CH2（MIDI 2）</option><option value="2">FM CH3（MIDI 3）</option>
+<option value="3">SSG A（MIDI 4）</option><option value="4">SSG B（MIDI 5）</option><option value="5">SSG C（MIDI 6）</option>
+</select>
+<div class="controls"><button id="scale" disabled>ドレミファソファミレド</button><button id="hold" disabled>押している間ドを発音</button><button id="panic" disabled>MIDI全音停止</button></div>
+<div class="controls"><button id="six" disabled>1. 6声を順に確認して和音を保持</button><button id="probe" disabled>2. I2C中へFM・SSG音階を送信</button><button id="latch" disabled>3. 復帰確認用に6声を保持</button></div>
+<p id="mode" aria-live="polite">通常モード：別画面へ移ると停止します。</p>
+<output id="status" aria-live="polite">接続待ち</output>
+<p>チャンネルごとに1音です。最初の発音には無音の準備時間が入ります。通常モードは画面を離れると停止します。切替確認の保持モードは別画面へ移っても継続し、MIDI全音停止・ページ終了・送信先の変更・2分経過で解除します。</p>
+<script type="module">
+const el = id => document.getElementById(id);
+let access, output, generation = 0, held = null, backgroundHold = false;
+const status = message => { el('status').textContent = message; };
+const enabled = value => ['scale','hold','panic','six','probe','latch'].forEach(id => { el(id).disabled = !value; });
+function send(data) {
+  if (!output || output.state !== 'connected') throw new Error('MIDI接続先を確認してください');
+  output.send(data);
+}
+function stop(message = '停止しました') {
+  generation++;
+  held = null; backgroundHold = false;
+  el('mode').textContent = '通常モード：別画面へ移ると停止します。';
+  if (output && output.state === 'connected') {
+    try { output.send([0xB0,120,0]); } catch (_) { /* Port may disappear during cleanup. */ }
+  }
+  status(message);
+}
+async function selectPort() {
+  stop();
+  output = null; enabled(false);
+  const selected = access && access.outputs.get(el('port').value);
+  if (!selected) return;
+  const id = selected.id;
+  try {
+    await selected.open();
+    if (el('port').value !== id) return;
+    output = selected; enabled(output.state === 'connected');
+    status(`${selected.name || id} に接続しました`);
+  } catch (error) { status(error.message); }
+}
+function refresh() {
+  const selected = el('port').value;
+  el('port').replaceChildren(new Option('接続先を選択',''));
+  for (const port of access.outputs.values()) {
+    if (port.state === 'connected') el('port').add(new Option(port.name || port.id,port.id));
+  }
+  el('port').value = selected;
+  el('port').disabled = false;
+  if (output && output.state !== 'connected') { stop('MIDI機器の接続が切れました'); output = null; enabled(false); }
+}
+el('connect').onclick = async () => {
+  if (!navigator.requestMIDIAccess) { status('このブラウザーではWeb MIDIを利用できません'); return; }
+  try {
+    access = await navigator.requestMIDIAccess({sysex:false});
+    access.onstatechange = refresh; refresh();
+    status('送信先を選択してください');
+  } catch (error) { status(`MIDI接続を開始できませんでした: ${error.message}`); }
+};
+el('port').onchange = selectPort;
+el('channel').onchange = () => stop();
+el('panic').onclick = () => stop();
+const delay = ms => new Promise(resolve => setTimeout(resolve,ms));
+async function scale(channel,token,holdMs=700) {
+  for (const note of [60,62,64,65,67,65,64,62,60]) {
+    if (token !== generation) return false;
+    send([0x90|channel,note,100]); status(`演奏中: MIDI ${channel+1} / ノート ${note}`);
+    await delay(holdMs);
+    if (token !== generation) return false;
+    send([0x80|channel,note,0]);
+    await delay(60);
+  }
+  return token === generation;
+}
+el('scale').onclick = async () => {
+  stop('音階を準備しています');
+  const token = generation;
+  const channel = Number(el('channel').value);
+  try {
+    await delay(300);
+    if (await scale(channel,token)) stop('演奏が終了しました');
+  } catch (error) { stop(error.message); }
+};
+const chord = [60,64,67,48,52,55];
+async function latchChord(token) {
+  if (token !== generation) return;
+  backgroundHold = true;
+  el('mode').textContent = '切替確認の保持モード：別画面へ移っても継続。全音停止または2分で解除します。';
+  for (let channel=0;channel<6;channel++) send([0x90|channel,chord[channel],100]);
+  status('6声の発音要求を送信しました。HOSTのmidi_handover.pyを実行・確認してください。');
+  await delay(120000);
+  if (token === generation) stop('保持モードを2分で終了しました');
+}
+el('six').onclick = async () => {
+  stop('6声を準備しています');
+  const token = generation;
+  try {
+    await delay(300);
+    for (let channel=0;channel<6;channel++) {
+      if (token !== generation) return;
+      status(`${channel+1}/7: MIDI ${channel+1} の単独音を送信`);
+      send([0x90|channel,chord[channel],100]);
+      await delay(1000);
+      if (token !== generation) return;
+      send([0x80|channel,chord[channel],0]);
+      await delay(300);
+    }
+    await latchChord(token);
+  } catch (error) { stop(error.message); }
+};
+el('latch').onclick = async () => {
+  stop('復帰用の6声を準備しています');
+  const token = generation;
+  try { await delay(300); await latchChord(token); }
+  catch (error) { stop(error.message); }
+};
+el('probe').onclick = async () => {
+  stop('I2C演奏中のMIDI入力を準備しています');
+  const token = generation;
+  try {
+    await delay(300);
+    if (!await scale(0,token,200)) return;
+    if (!await scale(3,token,200)) return;
+    stop('FM・SSGの送信が終了しました。I2Cの和音が変化しなかったか確認してください。');
+  } catch (error) { stop(error.message); }
+};
+el('hold').onpointerdown = async event => {
+  if (held !== null) return;
+  stop('単音を準備しています');
+  held = Number(el('channel').value);
+  try {
+    el('hold').setPointerCapture(event.pointerId);
+    const token = generation; status('発音を準備しています');
+    await delay(300);
+    if (token !== generation || held === null) return;
+    send([0x90|held,60,100]); status('ドを発音中');
+  } catch (error) { stop(error.message); }
+};
+function release() {
+  if (held === null) return;
+  const channel = held; held = null;
+  try { send([0x80|channel,60,0]); status('キーを離しました'); }
+  catch (error) { stop(error.message); }
+}
+el('hold').onpointerup = release;
+el('hold').onpointercancel = () => stop();
+el('hold').onlostpointercapture = release;
+window.addEventListener('blur',() => { if (!backgroundHold) stop(); });
+window.addEventListener('pagehide',() => stop());
+document.addEventListener('visibilitychange',() => { if (document.hidden && !backgroundHold) stop(); });
+</script>
+</html>

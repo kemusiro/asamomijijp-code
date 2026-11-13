@@ -1,0 +1,31 @@
+{
+  "source": "User full-score run log in chat",
+  "fault": 9,
+  "events_completed": 46468,
+  "events_total": 123137,
+  "state": 3,
+  "gates": 0,
+  "FM_gain_percent": 100,
+  "blocks": 49932,
+  "approx_audio_elapsed_seconds": 112.347,
+  "peak": 16512,
+  "max_convert_us": 179,
+  "queue_min": 1,
+  "queue_max": 2,
+  "i2s_div256": 12500,
+  "log_drops": 0,
+  "clipped_samples": 0,
+  "bus_mode": "fast",
+  "bus_writes": 46468,
+  "busy_retries": 68697,
+  "max_bus_call_us": 34,
+  "max_dispatch_late_us": 4336,
+  "late_hist_lt1_5_10_20_100ms": [
+    46396,
+    72,
+    0,
+    0,
+    0
+  ],
+  "interpretation": "Fault9 is conversion/gain validation,not a duration cap or queue-underrun code. Gain8 is valid;forbidden exponent0 is a candidate. Missing failed raw frame and subreason prevent confirmation."
+}
