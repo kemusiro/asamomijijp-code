@@ -1,0 +1,123 @@
+{
+  "revision": "B",
+  "date": "2026-10-18",
+  "result": "pass",
+  "gpio_count": 25,
+  "reserved_gpio": [
+    27
+  ],
+  "board_size_mm": [
+    160,
+    120
+  ],
+  "physical_objects": 101,
+  "electrical_nets": 91,
+  "track_segments": 1705,
+  "vias": 104,
+  "erc_errors": 0,
+  "erc_warnings": 0,
+  "drc_errors": 0,
+  "drc_warnings": 0,
+  "unconnected": 0,
+  "schematic_parity_issues": 0,
+  "bypass_checks": [
+    {
+      "cap": "C3",
+      "supply": "U1.21",
+      "distance_mm": 3.83
+    },
+    {
+      "cap": "C5",
+      "supply": "U2.20",
+      "distance_mm": 4.08
+    },
+    {
+      "cap": "C6",
+      "supply": "U3.20",
+      "distance_mm": 4.08
+    },
+    {
+      "cap": "C7",
+      "supply": "U4.14",
+      "distance_mm": 6.04
+    },
+    {
+      "cap": "C8",
+      "supply": "U5.14",
+      "distance_mm": 6.04
+    },
+    {
+      "cap": "C9",
+      "supply": "U6.14",
+      "distance_mm": 3.38
+    },
+    {
+      "cap": "C10",
+      "supply": "U10.14",
+      "distance_mm": 3.38
+    },
+    {
+      "cap": "C11",
+      "supply": "X1.8",
+      "distance_mm": 5.38
+    },
+    {
+      "cap": "C12",
+      "supply": "U7.14",
+      "distance_mm": 5.38
+    },
+    {
+      "cap": "C16",
+      "supply": "A2.1",
+      "distance_mm": 7.0
+    },
+    {
+      "cap": "C17",
+      "supply": "A2.8",
+      "distance_mm": 7.0
+    },
+    {
+      "cap": "C18",
+      "supply": "A2.20",
+      "distance_mm": 4.86
+    },
+    {
+      "cap": "C23",
+      "supply": "U8.8",
+      "distance_mm": 4.38
+    },
+    {
+      "cap": "C30",
+      "supply": "U9.16",
+      "distance_mm": 4.38
+    }
+  ],
+  "checks": [
+    "Approved GPIO and Pico physical pin map",
+    "All schematic physical pin sets",
+    "All PCB pad nets",
+    "YM2203C native pins",
+    "AE-LLCNV module pin numbering",
+    "PCM5102A native pins",
+    "Power path and diode polarity",
+    "Hardware ARM gate pins and startup pulldowns",
+    "Mono mixer and independent L/R output resistors",
+    "MCP6022 count and absence of expander",
+    "SOT23 top-view chirality",
+    "RK097 mounting holes and CW pinout",
+    "ST-005-G contacts, duplicated TIP and locating holes",
+    "Courtyards nonoverlapping; explicit edge-mounted jack exception",
+    "Supply bypass placement",
+    "KiCad ERC and DRC with schematic parity"
+  ],
+  "hardware_tested": false,
+  "firmware_implemented": false,
+  "remaining": [
+    "Physical module, socket and capacitor fit",
+    "Loaded supply voltage and current",
+    "PIO FM capture and PCM sample-rate conversion",
+    "I2C slave and class-compliant USB-MIDI firmware",
+    "Real bus timing and buffer turnaround",
+    "FM/SSG balance, clipping, noise and startup pops"
+  ]
+}

@@ -1,0 +1,107 @@
+﻿reference,value,footprint,x_mm,y_mm,source,role
+A1,Raspberry Pi Pico 2,SOUNDPCB:A1,10.0,13.0,https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf,USB-MIDI uses the onboard USB connector; requires C/C++ firmware.
+JHOST,HOST 3.3V I2C,SOUNDPCB:JHOST,8.0,68.0,,1=GND 2=SDA 3=SCL 4=GND. Host supply not connected.
+JRUN,RESET SWITCH,SOUNDPCB:JRUN,4.0,75.0,,
+JPOWER,AE-USB2.0-TYPE-C / 5V POWER ONLY,SOUNDPCB:JPOWER,33.0,108.34,https://akizukidenshi.com/catalog/g/g113080/,Dedicated 5V input from USB AC adapter. Data pins NC. CC1/CC2 each have separate 5.1k Rd. Rear 7-pin header plus two 2-pin VBUS/GND support headers. Mouth toward bottom edge; no PD negotiation.
+F1,PTC 0.5A hold,SOUNDPCB:F1,36.0,102.0,,
+U11,TPS22918DBVR / soft-start,SOUNDPCB:U11,51.0,102.0,https://www.ti.com/lit/ds/symlink/tps22918.pdf,"Automatic startup: ON=VIN. CT=10nF/25V or higher, about 26.6ms typical 10-90% at 5V. QOD disabled. Slew control only; not a current limiter, reverse-current or overvoltage protector."
+D1,SS14 / A=+5V K=VSYS,SOUNDPCB:D1,46.0,111.0,,Blocks USB-to-main-supply backfeed through VSYS.
+C1,47u 10V,SOUNDPCB:C1,55.0,113.0,,
+C2,10u 10V,SOUNDPCB:C2,61.0,113.0,,
+R1,4.7k,SOUNDPCB:R1,19.0,69.0,,Omit if host provides the bus pullup.
+R2,4.7k,SOUNDPCB:R2,19.0,75.0,,Omit if host provides the bus pullup.
+U1,YM2203C / DIP40,SOUNDPCB:U1,110.0,13.0,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf,
+C3,100n,SOUNDPCB:C3,129.0,62.0,,Place immediately beside supply pin
+C4,10u 10V,SOUNDPCB:C4,136.0,65.0,,
+A3,AE-LLCNV-LVC8T245,SOUNDPCB:A3,42.0,14.0,https://akizukidenshi.com/catalog/g/g115778/,
+A4,AE-LLCNV-LVC8T245,SOUNDPCB:A4,67.0,14.0,https://akizukidenshi.com/catalog/g/g115778/,
+U2,74LCX245FT / 3.3V,SOUNDPCB:U2,94.0,19.0,https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf,
+C5,100n,SOUNDPCB:C5,101.0,19.0,,Place immediately beside supply pin
+U3,74LCX245FT / 3.3V,SOUNDPCB:U3,95.0,42.0,https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf,
+C6,100n,SOUNDPCB:C6,102.0,42.0,,Place immediately beside supply pin
+U4,TC74HC04AP / 3.3V,SOUNDPCB:U4,40.0,61.0,https://akizukidenshi.com/catalog/g/g114058/,
+U5,TC74HC00AP / 3.3V,SOUNDPCB:U5,57.0,61.0,https://akizukidenshi.com/catalog/g/g110856/,
+U6,TC74HC32AP / 3.3V,SOUNDPCB:U6,74.0,61.0,https://akizukidenshi.com/catalog/g/g112877/,
+U10,TC74HC08AP / 3.3V,SOUNDPCB:U10,60.0,90.0,https://akizukidenshi.com/catalog/g/g114059/,
+C7,100n,SOUNDPCB:C7,51.0,56.0,,Place immediately beside supply pin
+C8,100n,SOUNDPCB:C8,68.0,56.0,,Place immediately beside supply pin
+C9,100n,SOUNDPCB:C9,85.0,61.0,,Place immediately beside supply pin
+C10,100n,SOUNDPCB:C10,71.0,90.0,,Place immediately beside supply pin
+RN1,RKC8BD103J,SOUNDPCB:RN1,35.0,51.0,https://akizukidenshi.com/catalog/g/g111910/,
+RN2,RKC8BD103J,SOUNDPCB:RN2,37.0,46.0,https://akizukidenshi.com/catalog/g/g111910/,
+RN3,RKC4BD103J,SOUNDPCB:RN3,72.0,105.0,https://akizukidenshi.com/catalog/g/g111909/,
+RN4,RKC4BD103J,SOUNDPCB:RN4,136.0,30.0,https://akizukidenshi.com/catalog/g/g111909/,
+RN6,RKC8BD103J,SOUNDPCB:RN6,65.0,51.0,https://akizukidenshi.com/catalog/g/g111910/,
+R3,4.7k,SOUNDPCB:R3,130.0,36.0,,
+R4,10k,SOUNDPCB:R4,100.0,51.0,,
+R5,10k,SOUNDPCB:R5,58.0,56.0,,
+R6,10k,SOUNDPCB:R6,38.0,83.0,,
+X1,8MHz 5V oscillator,SOUNDPCB:X1,136.0,14.0,https://akizukidenshi.com/goodsaffix/osc.pdf,
+C11,100n,SOUNDPCB:C11,149.0,14.0,,Place immediately beside supply pin
+R7,47,SOUNDPCB:R7,136.0,35.0,,
+U7,TC74HC74AP / 5V,SOUNDPCB:U7,135.0,41.0,https://akizukidenshi.com/goodsaffix/TC74HC74AP_datasheet_ja_20140301.pdf,
+C12,100n,SOUNDPCB:C12,148.0,41.0,,Place immediately beside supply pin
+R8,47,SOUNDPCB:R8,129.0,27.0,,
+A2,AE-PCM5102A / I2S 48kHz,SOUNDPCB:A2,10.0,81.0,https://akizukidenshi.com/catalog/g/g111836/,OUTL used; OUTR intentionally unconnected. Not AE-DAC5102.
+R9,47,SOUNDPCB:R9,30.0,96.0,,
+R10,47,SOUNDPCB:R10,30.0,102.0,,
+R11,47,SOUNDPCB:R11,36.0,98.0,,
+C13,2.2u X7R 10V,SOUNDPCB:C13,5.0,85.5,,
+C14,2.2u X7R 10V,SOUNDPCB:C14,3.0,93.0,,
+C15,1u X7R 10V,SOUNDPCB:C15,30.0,88.0,,
+C16,100n,SOUNDPCB:C16,3.0,82.0,,Place immediately beside supply pin
+C17,100n,SOUNDPCB:C17,3.0,100.0,,Place immediately beside supply pin
+C18,100n,SOUNDPCB:C18,30.0,81.0,,Place immediately beside supply pin
+C19,10u 10V,SOUNDPCB:C19,12.0,74.0,,
+C20,10u 10V,SOUNDPCB:C20,4.0,108.0,,
+C21,10u 10V,SOUNDPCB:C21,37.0,93.0,,
+R12,470,SOUNDPCB:R12,48.0,83.0,,
+C22,2.2n C0G,SOUNDPCB:C22,55.0,83.0,,
+U8,MCP6022-I/P / reference + mono mixer,SOUNDPCB:U8,104.0,86.0,https://akizukidenshi.com/goodsaffix/MCP6022.pdf,
+C23,100n,SOUNDPCB:C23,116.0,86.0,,Place immediately beside supply pin
+R13,10k 1%,SOUNDPCB:R13,91.0,94.0,,
+R14,10k 1%,SOUNDPCB:R14,91.0,100.0,,
+C24,10u 10V,SOUNDPCB:C24,104.0,101.0,,
+C25,4.7u BP 10V,SOUNDPCB:C25,86.0,74.0,,
+R15,100k 1%,SOUNDPCB:R15,80.0,81.0,,
+C26,4.7u BP 10V,SOUNDPCB:C26,97.0,74.0,,
+R16,100k 1%,SOUNDPCB:R16,97.0,80.0,,
+C27,4.7u BP 10V,SOUNDPCB:C27,114.0,74.0,,
+R17,100k 1%,SOUNDPCB:R17,114.0,80.0,,
+C28,4.7u BP 10V,SOUNDPCB:C28,131.0,74.0,,
+R18,100k 1%,SOUNDPCB:R18,131.0,80.0,,
+RN5,RKC8BD102J,SOUNDPCB:RN5,100.0,68.0,https://akizukidenshi.com/catalog/g/g113722/,
+R19,22k 1%,SOUNDPCB:R19,117.0,96.0,,
+C29,47p,SOUNDPCB:C29,123.0,96.0,,
+U9,CD74HC4053E / line mute,SOUNDPCB:U9,130.0,86.0,https://akizukidenshi.com/catalog/g/g113266/,
+C30,100n,SOUNDPCB:C30,142.0,86.0,,Place immediately beside supply pin
+Q1,MMBT3904 / B1 E2 C3,SOUNDPCB:Q1,148.0,76.0,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,
+R20,10k,SOUNDPCB:R20,148.0,67.0,,
+R21,100k,SOUNDPCB:R21,148.0,62.0,,
+R22,10k,SOUNDPCB:R22,148.0,81.0,,
+C31,4.7u BP 10V,SOUNDPCB:C31,145.0,101.0,,
+R23,100k,SOUNDPCB:R23,151.0,108.0,,
+RV1,RK0971220-F15-C0-A103 / dual A10k,SOUNDPCB:RV1,96.0,118.5,https://akizukidenshi.com/catalog/g/g103604/,On-board dual A10k. Pins 1/2/3=R1 CCW/wiper/CW; 4/5/6=R2. Shaft toward bottom edge. Same mono input to both gangs; wipers remain separate.
+R24,100,SOUNDPCB:R24,130.0,108.0,,
+R25,100,SOUNDPCB:R25,130.0,113.0,,
+JLINE,ST-005-G / 3.5mm TRS LINE OUT,SOUNDPCB:JLINE,145.0,120.0,https://akizukidenshi.com/catalog/g/g102460/,On-board TRS: maker terminal 2=RING 3=SLEEVE 4=TIP (two physical legs). No terminal 1: maker item 1 is the housing. Mouth toward bottom edge; line output only.
+R26,5.1k 1%,SOUNDPCB:R26,29.0,92.0,,USB-C sink Rd; CC1 and CC2 must not be joined.
+R27,5.1k 1%,SOUNDPCB:R27,18.0,108.0,,USB-C sink Rd; independent of CC1. No PD negotiation or source-current detection.
+C32,1u 10V X7R,SOUNDPCB:C32,47.0,98.0,,
+C33,10n 25V X7R,SOUNDPCB:C33,53.0,98.0,,TPS22918 controlled-rise CT. Use 25V or higher voltage rating.
+TP1,+5V,SOUNDPCB:TP1,46.0,107.0,,
+TP2,+3V3,SOUNDPCB:TP2,54.0,108.0,,
+TP3,GND,SOUNDPCB:TP3,67.0,113.0,,
+TP4,ARM,SOUNDPCB:TP4,70.0,83.0,,
+TP5,RESET_N,SOUNDPCB:TP5,84.0,85.0,,
+TP6,Y_SD,SOUNDPCB:TP6,129.0,46.0,,
+TP7,Y_CLK,SOUNDPCB:TP7,129.0,51.0,,
+TP8,Y_SH,SOUNDPCB:TP8,129.0,56.0,,
+TP9,CLK4,SOUNDPCB:TP9,129.0,20.0,,
+TP10,MIX_MONO,SOUNDPCB:TP10,116.0,102.0,,
+TP11,VREF,SOUNDPCB:TP11,116.0,108.0,,
+TP12,DAC_L,SOUNDPCB:TP12,43.0,94.0,,
+H1,M3 / 3.2mm NPTH,SOUNDPCB:H1,5.0,5.0,,
+H2,M3 / 3.2mm NPTH,SOUNDPCB:H2,155.0,5.0,,
+H3,M3 / 3.2mm NPTH,SOUNDPCB:H3,5.0,115.0,,
+H4,M3 / 3.2mm NPTH,SOUNDPCB:H4,155.0,115.0,,

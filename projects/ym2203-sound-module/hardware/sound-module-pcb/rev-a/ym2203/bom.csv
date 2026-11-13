@@ -1,0 +1,62 @@
+﻿reference,value,footprint,x_mm,y_mm,source,role
+JMOD,TSW-125-07-L-D / header,SOUNDPCB:JMOD,120.0,15.0,https://suddendocs.samtec.com/catalog_english/tsw_th.pdf,Bottom male; remove contact 50. 19mm face-to-face spacing gives 5.51mm insertion.
+U1,YM2203C / DIP40,SOUNDPCB:U1,78.0,15.0,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf,
+C1,100n,SOUNDPCB:C1,98.0,63.0,,Place immediately beside supply pin
+C2,10u 10V,SOUNDPCB:C2,99.0,69.0,,
+A1,AE-LLCNV-LVC8T245,SOUNDPCB:A1,12.0,13.0,https://akizukidenshi.com/catalog/g/g115778/,
+A2,AE-LLCNV-LVC8T245,SOUNDPCB:A2,12.0,50.0,https://akizukidenshi.com/catalog/g/g115778/,
+U2,74LCX245FT / 3.3V,SOUNDPCB:U2,48.0,18.0,https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf,
+C3,100n,SOUNDPCB:C3,55.0,17.0,,Place immediately beside supply pin
+U3,74LCX245FT / 3.3V,SOUNDPCB:U3,48.0,42.0,https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf,
+C4,100n,SOUNDPCB:C4,55.0,41.0,,Place immediately beside supply pin
+U4,TC74HC04AP / 3.3V,SOUNDPCB:U4,43.0,72.0,https://akizukidenshi.com/catalog/g/g114058/,
+U5,TC74HC00AP / 3.3V,SOUNDPCB:U5,60.0,72.0,https://akizukidenshi.com/catalog/g/g110856/,
+U6,TC74HC32AP / 3.3V,SOUNDPCB:U6,77.0,72.0,https://akizukidenshi.com/catalog/g/g112877/,
+C5,100n,SOUNDPCB:C5,55.0,67.0,,Place immediately beside supply pin
+C6,100n,SOUNDPCB:C6,71.0,67.0,,Place immediately beside supply pin
+C7,100n,SOUNDPCB:C7,89.0,72.0,,Place immediately beside supply pin
+RN1,RKC8BD103J,SOUNDPCB:RN1,38.0,57.0,https://akizukidenshi.com/catalog/g/g111910/,
+RN2,RKC4BD103J,SOUNDPCB:RN2,99.0,31.0,https://akizukidenshi.com/catalog/g/g111909/,
+R1,4.7k,SOUNDPCB:R1,97.0,40.0,,
+R2,10k,SOUNDPCB:R2,60.0,47.0,,
+R3,10k,SOUNDPCB:R3,61.0,62.0,,
+R4,10k,SOUNDPCB:R4,62.0,56.0,,
+X1,8MHz 5V oscillator,SOUNDPCB:X1,12.0,88.0,https://akizukidenshi.com/goodsaffix/osc.pdf,
+C8,100n,SOUNDPCB:C8,25.0,89.0,,Place immediately beside supply pin
+R5,47,SOUNDPCB:R5,12.0,103.0,,
+U7,TC74HC74AP / 5V,SOUNDPCB:U7,31.0,65.0,https://akizukidenshi.com/goodsaffix/TC74HC74AP_datasheet_ja_20140301.pdf,
+C9,100n,SOUNDPCB:C9,31.0,60.0,,Place immediately beside supply pin
+R6,47,SOUNDPCB:R6,67.0,9.0,,
+U8,MCP6022-I/P / SSG mixer,SOUNDPCB:U8,101.0,83.0,,
+C10,100n,SOUNDPCB:C10,114.0,83.0,,Place immediately beside supply pin
+R7,10k 1%,SOUNDPCB:R7,97.0,74.0,,
+R8,10k 1%,SOUNDPCB:R8,109.0,74.0,,
+C11,10u 10V,SOUNDPCB:C11,114.0,92.0,,
+C12,4.7u BP 10V,SOUNDPCB:C12,44.0,97.0,,
+R9,100k 1%,SOUNDPCB:R9,44.0,104.0,,
+C13,4.7u BP 10V,SOUNDPCB:C13,60.0,97.0,,
+R10,100k 1%,SOUNDPCB:R10,60.0,104.0,,
+C14,4.7u BP 10V,SOUNDPCB:C14,76.0,97.0,,
+R11,100k 1%,SOUNDPCB:R11,76.0,104.0,,
+RN3,RKC8BD102J,SOUNDPCB:RN3,38.0,112.0,https://akizukidenshi.com/catalog/g/g113722/,
+R12,100k 1%,SOUNDPCB:R12,97.0,99.0,,
+C15,47p,SOUNDPCB:C15,109.0,99.0,,
+C16,4.7u BP 10V,SOUNDPCB:C16,97.0,108.0,,
+R13,100k,SOUNDPCB:R13,97.0,115.0,,
+C17,4.7u BP 10V,SOUNDPCB:C17,110.0,108.0,,
+R14,100k,SOUNDPCB:R14,110.0,115.0,,
+TP1,+5V,SOUNDPCB:TP1,99.0,9.0,,
+TP2,+3V3,SOUNDPCB:TP2,60.0,9.0,,
+TP3,GND,SOUNDPCB:TP3,110.0,9.0,,
+TP4,CLK4,SOUNDPCB:TP4,74.0,9.0,,
+TP5,Y_SD,SOUNDPCB:TP5,98.0,48.0,,
+TP6,Y_CLK,SOUNDPCB:TP6,98.0,54.0,,
+TP7,Y_SH,SOUNDPCB:TP7,98.0,59.0,,
+TP8,Y_IRQ,SOUNDPCB:TP8,67.0,49.0,,
+TP9,OE_WRITE_N,SOUNDPCB:TP9,56.0,84.0,,
+TP10,OE_READ_N,SOUNDPCB:TP10,73.0,84.0,,
+TP11,SSG_MIX,SOUNDPCB:TP11,117.0,99.0,,
+H1,M3 / 3.2mm NPTH,SOUNDPCB:H1,5.0,5.0,,
+H2,M3 / 3.2mm NPTH,SOUNDPCB:H2,125.0,5.0,,
+H3,M3 / 3.2mm NPTH,SOUNDPCB:H3,5.0,115.0,,
+H4,M3 / 3.2mm NPTH,SOUNDPCB:H4,125.0,108.0,,

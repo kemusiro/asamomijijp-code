@@ -1,0 +1,17 @@
+pin,signal,direction,initialized_value
+GPA0,RESET_RELEASE,output,0
+GPA1,HP_ALLOW,output,0
+GPA2,SPK_ALLOW,output,0
+GPA3,DAC_ALLOW,output,0
+GPA4,AUX0,output,0
+GPA5,AUX1,output,0
+GPA6,RESERVED_OUT0,output,0
+GPA7,RESERVED_OUT1,output,0
+GPB0,ID0,input,external pullup
+GPB1,ID1,input,external pullup
+GPB2,ID2,input,external pullup
+GPB3,PRESENT_N,input,external pullup
+GPB4,RESERVED_IN0,input,external pullup
+GPB5,RESERVED_IN1,input,external pullup
+GPB6,RESERVED_IN2,input,external pullup
+GPB7,RESERVED_OUT2,output,0

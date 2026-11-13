@@ -1,0 +1,9 @@
+{
+  "name": "ym2203-sound-module-tools",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "packageManager": "pnpm@11.19.0",
+  "engines": { "node": "22.23.2", "pnpm": "11.19.0" },
+  "devDependencies": { "@playwright/test": "1.64.0" }
+}

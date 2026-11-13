@@ -1,0 +1,481 @@
+{
+  "revision": "C",
+  "source_design_sha256": "73ca82ff0398805a12a006705d6f5108e629d4441e94834d5cb57fad80c2f3be",
+  "source_netlist_sha256": "95a53ac1a549c6d05730fcf366122b3484f8d63c235dc986a24e83dbb4b07dd9",
+  "parts": 106,
+  "physical_pins": 499,
+  "nets": 95,
+  "all_physical_pins_present": true,
+  "pin_net_membership_matches_kicad": true,
+  "signal_nets_are_continuous_wire_trees": true,
+  "shared_supply_symbols": [
+    "+3V3",
+    "+5V",
+    "GND"
+  ],
+  "routing": {
+    "DIV4": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "D0": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 586
+    },
+    "D1": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 621
+    },
+    "D2": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 712
+    },
+    "D3": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 696
+    },
+    "D4": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 680
+    },
+    "D5": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 664
+    },
+    "D6": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 648
+    },
+    "D7": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 614
+    },
+    "Y_D0": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 698
+    },
+    "Y_D1": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 706
+    },
+    "Y_D2": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 714
+    },
+    "Y_D3": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 726
+    },
+    "Y_D4": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 762
+    },
+    "Y_D5": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 754
+    },
+    "Y_D6": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 746
+    },
+    "Y_D7": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 754
+    },
+    "CAPM": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "CAPP": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "CLK8": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "CLK_FB": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 106
+    },
+    "DAC_BCK": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "DAC_DIN": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "DAC_LRCK": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "FM_FILTER_AC": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "I2S_BCLK": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 584
+    },
+    "I2S_DATA": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 566
+    },
+    "I2S_LRCK": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 672
+    },
+    "LDOO": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 64
+    },
+    "LINE_L": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 106
+    },
+    "LINE_R": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 144
+    },
+    "LINE_RUN": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 682
+    },
+    "MUTED_MONO": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "NOT_RD_N": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 80
+    },
+    "OE_WRITE_N": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 252
+    },
+    "OSC8": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 16
+    },
+    "PICO_RUN": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 60
+    },
+    "SAFE_CS_N": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 60
+    },
+    "SAFE_RD_N": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 116
+    },
+    "SAFE_WR_N": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 88
+    },
+    "SSG_A_AC": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "SSG_B_AC": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "SSG_C_AC": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 36
+    },
+    "USB_CC1": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 26
+    },
+    "USB_CC2": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 92
+    },
+    "USB_CT": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 48
+    },
+    "USB_VBUS": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 32
+    },
+    "VNEG": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 42
+    },
+    "VOL_L": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 50
+    },
+    "VOL_R": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 78
+    },
+    "VSYS": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 38
+    },
+    "Y_A0": {
+      "terminals": 2,
+      "connected": true,
+      "edges": 254
+    },
+    "A0": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 446
+    },
+    "CLK4": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 708
+    },
+    "CS_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 722
+    },
+    "DAC_ALLOW": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 483
+    },
+    "DAC_L": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 64
+    },
+    "DAC_XSMT": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 540
+    },
+    "FM_CLK": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 846
+    },
+    "FM_FILTER": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 164
+    },
+    "FM_SD": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 821
+    },
+    "FM_SH": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 892
+    },
+    "HOST_SCL": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 108
+    },
+    "HOST_SDA": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 71
+    },
+    "IRQ_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 1148
+    },
+    "LINE_ALLOW": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 502
+    },
+    "MUTE_5V": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 228
+    },
+    "MUTE_BASE": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 96
+    },
+    "OE_READ_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 152
+    },
+    "RESET_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 208
+    },
+    "RESET_RELEASE": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 505
+    },
+    "SSG_A": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 446
+    },
+    "SSG_B": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 427
+    },
+    "SSG_C": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 419
+    },
+    "WR_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 703
+    },
+    "Y_CLK": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 92
+    },
+    "Y_CS_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 455
+    },
+    "Y_IRQ": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 210
+    },
+    "Y_RD_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 408
+    },
+    "Y_RESET_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 264
+    },
+    "Y_SD": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 90
+    },
+    "Y_SH": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 112
+    },
+    "Y_WR_N": {
+      "terminals": 3,
+      "connected": true,
+      "edges": 433
+    },
+    "NOT_ARM": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 258
+    },
+    "OUT_AC": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 142
+    },
+    "REF_RAW": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 146
+    },
+    "USB_FUSED": {
+      "terminals": 4,
+      "connected": true,
+      "edges": 80
+    },
+    "MIX_MONO": {
+      "terminals": 5,
+      "connected": true,
+      "edges": 467
+    },
+    "RD_N": {
+      "terminals": 5,
+      "connected": true,
+      "edges": 667
+    },
+    "VREF": {
+      "terminals": 5,
+      "connected": true,
+      "edges": 559
+    },
+    "SUM_MONO": {
+      "terminals": 7,
+      "connected": true,
+      "edges": 252
+    },
+    "ARM": {
+      "terminals": 9,
+      "connected": true,
+      "edges": 663
+    }
+  },
+  "unconnected_crossings_verified_perpendicular": 634,
+  "no_coincident_different_net_conductors": true,
+  "scope": "Reading drawing only; no PCB, circuit, GPIO or fabrication file changed."
+}

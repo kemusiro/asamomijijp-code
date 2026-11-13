@@ -1,0 +1,3016 @@
+{
+  "parts": [
+    {
+      "ref": "M1",
+      "value": "ESP32-S3-DevKitC-1-N8R8",
+      "pins": [
+        [
+          "J1.21",
+          "5V",
+          "+5V",
+          "power_in"
+        ],
+        [
+          "J1.1",
+          "3V3",
+          "+3V3",
+          "power_out"
+        ],
+        [
+          "J1.22",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "J3.1",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "J1.4",
+          "GPIO4",
+          "MCU_D0",
+          "bidirectional"
+        ],
+        [
+          "J1.5",
+          "GPIO5",
+          "MCU_D1",
+          "bidirectional"
+        ],
+        [
+          "J1.6",
+          "GPIO6",
+          "MCU_D2",
+          "bidirectional"
+        ],
+        [
+          "J1.7",
+          "GPIO7",
+          "MCU_D3",
+          "bidirectional"
+        ],
+        [
+          "J1.8",
+          "GPIO15",
+          "MCU_D4",
+          "bidirectional"
+        ],
+        [
+          "J1.9",
+          "GPIO16",
+          "MCU_D5",
+          "bidirectional"
+        ],
+        [
+          "J1.10",
+          "GPIO17",
+          "MCU_D6",
+          "bidirectional"
+        ],
+        [
+          "J1.11",
+          "GPIO18",
+          "MCU_D7",
+          "bidirectional"
+        ],
+        [
+          "J1.12",
+          "GPIO8",
+          "I2C_SDA",
+          "bidirectional"
+        ],
+        [
+          "J1.15",
+          "GPIO9",
+          "I2C_SCL",
+          "bidirectional"
+        ],
+        [
+          "J1.16",
+          "GPIO10",
+          "A0_3V3",
+          "bidirectional"
+        ],
+        [
+          "J1.17",
+          "GPIO11",
+          "WR_3V3_N",
+          "bidirectional"
+        ],
+        [
+          "J1.18",
+          "GPIO12",
+          "CS_3V3_N",
+          "bidirectional"
+        ],
+        [
+          "J1.19",
+          "GPIO13",
+          "RD_3V3_N",
+          "bidirectional"
+        ],
+        [
+          "J1.20",
+          "GPIO14",
+          "WRITE_OE_N",
+          "bidirectional"
+        ],
+        [
+          "J3.17",
+          "GPIO47",
+          "RESET_3V3_N",
+          "bidirectional"
+        ],
+        [
+          "J3.9",
+          "GPIO39",
+          "POT_SCK_3V3",
+          "bidirectional"
+        ],
+        [
+          "J3.8",
+          "GPIO40",
+          "POT_MOSI_3V3",
+          "bidirectional"
+        ],
+        [
+          "J3.7",
+          "GPIO41",
+          "POT_CS_3V3_N",
+          "bidirectional"
+        ],
+        [
+          "J3.18",
+          "GPIO21",
+          "READ_OE_N",
+          "bidirectional"
+        ],
+        [
+          "J3.6",
+          "GPIO42",
+          "HP_ENABLE",
+          "bidirectional"
+        ],
+        [
+          "J3.5",
+          "GPIO2",
+          "SPK_ENABLE",
+          "bidirectional"
+        ]
+      ],
+      "group": 1,
+      "kind": "ic",
+      "note": "v1.0 header numbering; 8 MiB PSRAM; unlisted board pins left open; no USB attached while externally powered"
+    },
+    {
+      "ref": "J1",
+      "value": "USB 5V input (breakout/cable)",
+      "pins": [
+        [
+          "1",
+          "VBUS",
+          "USB_5V",
+          "passive"
+        ],
+        [
+          "2",
+          "GND",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "connector",
+      "note": "Regulated USB 5 V / 2 A supply; no data connection; not a PC USB load specification"
+    },
+    {
+      "ref": "F1",
+      "value": "1.5A hold PTC",
+      "pins": [
+        [
+          "1",
+          "1",
+          "USB_5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+5V",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "r",
+      "note": "Select low resistance; confirm >=4.75 V at YM2203 under load"
+    },
+    {
+      "ref": "J2",
+      "value": "I2C host 3.3V",
+      "pins": [
+        [
+          "1",
+          "GND",
+          "GND",
+          "passive"
+        ],
+        [
+          "2",
+          "SDA",
+          "I2C_SDA",
+          "passive"
+        ],
+        [
+          "3",
+          "SCL",
+          "I2C_SCL",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "connector",
+      "note": ""
+    },
+    {
+      "ref": "R1",
+      "value": "2.2k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "I2C_SDA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R2",
+      "value": "2.2k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "I2C_SCL",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C1",
+      "value": "470u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C2",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "FB1",
+      "value": "220R@100MHz / >=1A",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+5VA",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "r",
+      "note": "Example BLM21PG221SN1L; verify DCR and current rating"
+    },
+    {
+      "ref": "C3",
+      "value": "47u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C4",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 1,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "PF1",
+      "value": "SUPPLY FLAG",
+      "pins": [
+        [
+          "1",
+          "SUPPLY",
+          "USB_5V",
+          "power_out"
+        ]
+      ],
+      "group": 1,
+      "kind": "flag",
+      "note": "Electrical supply assertion, not a physical part"
+    },
+    {
+      "ref": "PF2",
+      "value": "SUPPLY FLAG",
+      "pins": [
+        [
+          "1",
+          "SUPPLY",
+          "+5V",
+          "power_out"
+        ]
+      ],
+      "group": 1,
+      "kind": "flag",
+      "note": "Electrical supply assertion, not a physical part"
+    },
+    {
+      "ref": "PF3",
+      "value": "SUPPLY FLAG",
+      "pins": [
+        [
+          "1",
+          "SUPPLY",
+          "+5VA",
+          "power_out"
+        ]
+      ],
+      "group": 1,
+      "kind": "flag",
+      "note": "Electrical supply assertion, not a physical part"
+    },
+    {
+      "ref": "PF4",
+      "value": "SUPPLY FLAG",
+      "pins": [
+        [
+          "1",
+          "SUPPLY",
+          "GND",
+          "power_out"
+        ]
+      ],
+      "group": 1,
+      "kind": "flag",
+      "note": "Electrical supply assertion, not a physical part"
+    },
+    {
+      "ref": "U2",
+      "value": "SN74AHCT541N",
+      "pins": [
+        [
+          "1",
+          "OE1_N",
+          "WRITE_OE_N",
+          "input"
+        ],
+        [
+          "19",
+          "OE2_N",
+          "GND",
+          "input"
+        ],
+        [
+          "20",
+          "VCC",
+          "+5V",
+          "power_in"
+        ],
+        [
+          "10",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "2",
+          "A1",
+          "MCU_D0",
+          "input"
+        ],
+        [
+          "18",
+          "Y1",
+          "YM_D0",
+          "tri_state"
+        ],
+        [
+          "3",
+          "A2",
+          "MCU_D1",
+          "input"
+        ],
+        [
+          "17",
+          "Y2",
+          "YM_D1",
+          "tri_state"
+        ],
+        [
+          "4",
+          "A3",
+          "MCU_D2",
+          "input"
+        ],
+        [
+          "16",
+          "Y3",
+          "YM_D2",
+          "tri_state"
+        ],
+        [
+          "5",
+          "A4",
+          "MCU_D3",
+          "input"
+        ],
+        [
+          "15",
+          "Y4",
+          "YM_D3",
+          "tri_state"
+        ],
+        [
+          "6",
+          "A5",
+          "MCU_D4",
+          "input"
+        ],
+        [
+          "14",
+          "Y5",
+          "YM_D4",
+          "tri_state"
+        ],
+        [
+          "7",
+          "A6",
+          "MCU_D5",
+          "input"
+        ],
+        [
+          "13",
+          "Y6",
+          "YM_D5",
+          "tri_state"
+        ],
+        [
+          "8",
+          "A7",
+          "MCU_D6",
+          "input"
+        ],
+        [
+          "12",
+          "Y7",
+          "YM_D6",
+          "tri_state"
+        ],
+        [
+          "9",
+          "A8",
+          "MCU_D7",
+          "input"
+        ],
+        [
+          "11",
+          "Y8",
+          "YM_D7",
+          "tri_state"
+        ]
+      ],
+      "group": 2,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "U3",
+      "value": "SN74LVC245AN",
+      "pins": [
+        [
+          "1",
+          "DIR=AtoB",
+          "+3V3",
+          "input"
+        ],
+        [
+          "19",
+          "OE_N",
+          "READ_OE_N",
+          "input"
+        ],
+        [
+          "20",
+          "VCC",
+          "+3V3",
+          "power_in"
+        ],
+        [
+          "10",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "2",
+          "A1",
+          "YM_D0",
+          "bidirectional"
+        ],
+        [
+          "18",
+          "B1",
+          "MCU_D0",
+          "bidirectional"
+        ],
+        [
+          "3",
+          "A2",
+          "YM_D1",
+          "bidirectional"
+        ],
+        [
+          "17",
+          "B2",
+          "MCU_D1",
+          "bidirectional"
+        ],
+        [
+          "4",
+          "A3",
+          "YM_D2",
+          "bidirectional"
+        ],
+        [
+          "16",
+          "B3",
+          "MCU_D2",
+          "bidirectional"
+        ],
+        [
+          "5",
+          "A4",
+          "YM_D3",
+          "bidirectional"
+        ],
+        [
+          "15",
+          "B4",
+          "MCU_D3",
+          "bidirectional"
+        ],
+        [
+          "6",
+          "A5",
+          "YM_D4",
+          "bidirectional"
+        ],
+        [
+          "14",
+          "B5",
+          "MCU_D4",
+          "bidirectional"
+        ],
+        [
+          "7",
+          "A6",
+          "YM_D5",
+          "bidirectional"
+        ],
+        [
+          "13",
+          "B6",
+          "MCU_D5",
+          "bidirectional"
+        ],
+        [
+          "8",
+          "A7",
+          "YM_D6",
+          "bidirectional"
+        ],
+        [
+          "12",
+          "B7",
+          "MCU_D6",
+          "bidirectional"
+        ],
+        [
+          "9",
+          "A8",
+          "YM_D7",
+          "bidirectional"
+        ],
+        [
+          "11",
+          "B8",
+          "MCU_D7",
+          "bidirectional"
+        ]
+      ],
+      "group": 2,
+      "kind": "ic",
+      "note": "3.3 V supply; inputs 5.5 V tolerant; do not substitute HC245"
+    },
+    {
+      "ref": "U4",
+      "value": "SN74AHCT541N",
+      "pins": [
+        [
+          "1",
+          "OE1_N",
+          "GND",
+          "input"
+        ],
+        [
+          "19",
+          "OE2_N",
+          "GND",
+          "input"
+        ],
+        [
+          "20",
+          "VCC",
+          "+5V",
+          "power_in"
+        ],
+        [
+          "10",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "2",
+          "A1",
+          "A0_3V3",
+          "input"
+        ],
+        [
+          "18",
+          "Y1",
+          "YM_A0",
+          "output"
+        ],
+        [
+          "3",
+          "A2",
+          "WR_3V3_N",
+          "input"
+        ],
+        [
+          "17",
+          "Y2",
+          "YM_WR_N",
+          "output"
+        ],
+        [
+          "4",
+          "A3",
+          "CS_3V3_N",
+          "input"
+        ],
+        [
+          "16",
+          "Y3",
+          "YM_CS_N",
+          "output"
+        ],
+        [
+          "5",
+          "A4",
+          "RD_3V3_N",
+          "input"
+        ],
+        [
+          "15",
+          "Y4",
+          "YM_RD_N",
+          "output"
+        ],
+        [
+          "6",
+          "A5",
+          "RESET_3V3_N",
+          "input"
+        ],
+        [
+          "14",
+          "Y5",
+          "YM_RESET_N",
+          "output"
+        ],
+        [
+          "7",
+          "A6",
+          "POT_SCK_3V3",
+          "input"
+        ],
+        [
+          "13",
+          "Y6",
+          "POT_SCK",
+          "output"
+        ],
+        [
+          "8",
+          "A7",
+          "POT_MOSI_3V3",
+          "input"
+        ],
+        [
+          "12",
+          "Y7",
+          "POT_MOSI",
+          "output"
+        ],
+        [
+          "9",
+          "A8",
+          "POT_CS_3V3_N",
+          "input"
+        ],
+        [
+          "11",
+          "Y8",
+          "POT_CS_N",
+          "output"
+        ]
+      ],
+      "group": 2,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "R3",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "WRITE_OE_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R4",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "READ_OE_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R5",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "A0_3V3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R6",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "WR_3V3_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R7",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "CS_3V3_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R8",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "RD_3V3_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R9",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "RESET_3V3_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "POT_SCK_3V3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R11",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "POT_MOSI_3V3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R12",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "POT_CS_3V3_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+3V3",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R13",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D0",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R14",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D1",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R15",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D2",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R16",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R17",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D4",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R18",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D5",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R19",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D6",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R20",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MCU_D7",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C5",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C6",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+3V3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C7",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 2,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "U1",
+      "value": "YM2203C DIP-40",
+      "pins": [
+        [
+          "1",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "17",
+          "AGND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "21",
+          "VDD",
+          "+5V",
+          "power_in"
+        ],
+        [
+          "38",
+          "PHI_M",
+          "YM_CLK",
+          "input"
+        ],
+        [
+          "39",
+          "PHI_S",
+          "DAC_CLK",
+          "output"
+        ],
+        [
+          "22",
+          "SH",
+          "DAC_LOAD",
+          "output"
+        ],
+        [
+          "23",
+          "OP_O",
+          "DAC_SD",
+          "output"
+        ],
+        [
+          "37",
+          "A0",
+          "YM_A0",
+          "input"
+        ],
+        [
+          "36",
+          "RD_N",
+          "YM_RD_N",
+          "input"
+        ],
+        [
+          "35",
+          "WR_N",
+          "YM_WR_N",
+          "input"
+        ],
+        [
+          "34",
+          "CS_N",
+          "YM_CS_N",
+          "input"
+        ],
+        [
+          "24",
+          "IC_N",
+          "YM_RESET_N",
+          "input"
+        ],
+        [
+          "25",
+          "IRQ_N",
+          null,
+          "open_collector"
+        ],
+        [
+          "20",
+          "SSG_A",
+          "SSG_A",
+          "output"
+        ],
+        [
+          "19",
+          "SSG_B",
+          "SSG_B",
+          "output"
+        ],
+        [
+          "18",
+          "SSG_C",
+          "SSG_C",
+          "output"
+        ],
+        [
+          "40",
+          "D0",
+          "YM_D0",
+          "bidirectional"
+        ],
+        [
+          "2",
+          "D1",
+          "YM_D1",
+          "bidirectional"
+        ],
+        [
+          "3",
+          "D2",
+          "YM_D2",
+          "bidirectional"
+        ],
+        [
+          "4",
+          "D3",
+          "YM_D3",
+          "bidirectional"
+        ],
+        [
+          "5",
+          "D4",
+          "YM_D4",
+          "bidirectional"
+        ],
+        [
+          "6",
+          "D5",
+          "YM_D5",
+          "bidirectional"
+        ],
+        [
+          "7",
+          "D6",
+          "YM_D6",
+          "bidirectional"
+        ],
+        [
+          "8",
+          "D7",
+          "YM_D7",
+          "bidirectional"
+        ],
+        [
+          "16",
+          "IOA0",
+          null,
+          "bidirectional"
+        ],
+        [
+          "26",
+          "IOB0",
+          null,
+          "bidirectional"
+        ],
+        [
+          "15",
+          "IOA1",
+          null,
+          "bidirectional"
+        ],
+        [
+          "27",
+          "IOB1",
+          null,
+          "bidirectional"
+        ],
+        [
+          "14",
+          "IOA2",
+          null,
+          "bidirectional"
+        ],
+        [
+          "28",
+          "IOB2",
+          null,
+          "bidirectional"
+        ],
+        [
+          "13",
+          "IOA3",
+          null,
+          "bidirectional"
+        ],
+        [
+          "29",
+          "IOB3",
+          null,
+          "bidirectional"
+        ],
+        [
+          "12",
+          "IOA4",
+          null,
+          "bidirectional"
+        ],
+        [
+          "30",
+          "IOB4",
+          null,
+          "bidirectional"
+        ],
+        [
+          "11",
+          "IOA5",
+          null,
+          "bidirectional"
+        ],
+        [
+          "31",
+          "IOB5",
+          null,
+          "bidirectional"
+        ],
+        [
+          "10",
+          "IOA6",
+          null,
+          "bidirectional"
+        ],
+        [
+          "32",
+          "IOB6",
+          null,
+          "bidirectional"
+        ],
+        [
+          "9",
+          "IOA7",
+          null,
+          "bidirectional"
+        ],
+        [
+          "33",
+          "IOB7",
+          null,
+          "bidirectional"
+        ]
+      ],
+      "group": 3,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "U5",
+      "value": "YM3014B-F SOP-16",
+      "pins": [
+        [
+          "1",
+          "VDD",
+          "+5VA",
+          "power_in"
+        ],
+        [
+          "2",
+          "TO_BUFF",
+          "DAC_RAW",
+          "output"
+        ],
+        [
+          "4",
+          "LOAD",
+          "DAC_LOAD",
+          "input"
+        ],
+        [
+          "7",
+          "SD",
+          "DAC_SD",
+          "input"
+        ],
+        [
+          "10",
+          "CLOCK",
+          "DAC_CLK",
+          "input"
+        ],
+        [
+          "12",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "14",
+          "RB",
+          "DAC_RB",
+          "passive"
+        ],
+        [
+          "16",
+          "MP",
+          "VREF",
+          "passive"
+        ],
+        [
+          "3",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "5",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "6",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "8",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "9",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "11",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "13",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "15",
+          "NC",
+          null,
+          "no_connect"
+        ]
+      ],
+      "group": 3,
+      "kind": "ic",
+      "note": "Use SOP-16 pin numbers, not DIP-8 pin numbers"
+    },
+    {
+      "ref": "X1",
+      "value": "ECS-2100AX-040 4MHz/5V",
+      "pins": [
+        [
+          "1",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "4",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "5",
+          "OUT",
+          "CLK_RAW",
+          "output"
+        ],
+        [
+          "8",
+          "VDD",
+          "+5V",
+          "power_in"
+        ]
+      ],
+      "group": 3,
+      "kind": "ic",
+      "note": "Half-size DIP oscillator; pin1 NC per ECS-2100 series drawing"
+    },
+    {
+      "ref": "R21",
+      "value": "33R",
+      "pins": [
+        [
+          "1",
+          "1",
+          "CLK_RAW",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "YM_CLK",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C8",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C9",
+      "value": "10u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C10",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C11",
+      "value": "10u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C12",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C13",
+      "value": "10u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "DAC_RB",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 3,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "U6",
+      "value": "OPA4192ID SOIC-14",
+      "pins": [
+        [
+          "1",
+          "OUT_A",
+          "VREF",
+          "output"
+        ],
+        [
+          "2",
+          "IN_A-",
+          "VREF",
+          "input"
+        ],
+        [
+          "3",
+          "IN_A+",
+          "DAC_RB",
+          "input"
+        ],
+        [
+          "4",
+          "V+",
+          "+5VA",
+          "power_in"
+        ],
+        [
+          "5",
+          "IN_B+",
+          "DAC_RAW",
+          "input"
+        ],
+        [
+          "6",
+          "IN_B-",
+          "FM_BUF",
+          "input"
+        ],
+        [
+          "7",
+          "OUT_B",
+          "FM_BUF",
+          "output"
+        ],
+        [
+          "8",
+          "OUT_C",
+          "MIX_OUT",
+          "output"
+        ],
+        [
+          "9",
+          "IN_C-",
+          "MIX_SUM",
+          "input"
+        ],
+        [
+          "10",
+          "IN_C+",
+          "VREF",
+          "input"
+        ],
+        [
+          "11",
+          "V-",
+          "GND",
+          "power_in"
+        ],
+        [
+          "12",
+          "IN_D+",
+          "POT_WIPER",
+          "input"
+        ],
+        [
+          "13",
+          "IN_D-",
+          "AUDIO_VOL",
+          "input"
+        ],
+        [
+          "14",
+          "OUT_D",
+          "AUDIO_VOL",
+          "output"
+        ]
+      ],
+      "group": 4,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "C14",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "FM_BUF",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_AC0",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R22",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_AC0",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_SUM",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C15",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SSG_A",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_AC1",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R23",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_AC1",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_SUM",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C16",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SSG_B",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_AC2",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R24",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_AC2",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_SUM",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C17",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SSG_C",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_AC3",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R25",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_AC3",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_SUM",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R26",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_SUM",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_OUT",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C18",
+      "value": "330p C0G",
+      "pins": [
+        [
+          "1",
+          "1",
+          "MIX_SUM",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "MIX_OUT",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "U7",
+      "value": "MCP41010-I/P DIP-8",
+      "pins": [
+        [
+          "1",
+          "CS_N",
+          "POT_CS_N",
+          "input"
+        ],
+        [
+          "2",
+          "SCK",
+          "POT_SCK",
+          "input"
+        ],
+        [
+          "3",
+          "SI",
+          "POT_MOSI",
+          "input"
+        ],
+        [
+          "4",
+          "VSS",
+          "GND",
+          "power_in"
+        ],
+        [
+          "5",
+          "PA0",
+          "MIX_OUT",
+          "passive"
+        ],
+        [
+          "6",
+          "PW0",
+          "POT_WIPER",
+          "passive"
+        ],
+        [
+          "7",
+          "PB0",
+          "VREF",
+          "passive"
+        ],
+        [
+          "8",
+          "VDD",
+          "+5VA",
+          "power_in"
+        ]
+      ],
+      "group": 4,
+      "kind": "ic",
+      "note": "SPI 0x11 + wiper code; power-up midscale, so keep amplifiers muted until initialized"
+    },
+    {
+      "ref": "C19",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C20",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 4,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "U8",
+      "value": "TPA6110A2DGN",
+      "pins": [
+        [
+          "1",
+          "BYPASS",
+          "HP_BYPASS",
+          "passive"
+        ],
+        [
+          "2",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "3",
+          "SHUTDOWN",
+          "HP_SHUTDOWN",
+          "input"
+        ],
+        [
+          "4",
+          "IN2-",
+          "HP_IN_R",
+          "input"
+        ],
+        [
+          "5",
+          "VO2",
+          "HP_OUT_R",
+          "output"
+        ],
+        [
+          "6",
+          "VDD",
+          "+5VA",
+          "power_in"
+        ],
+        [
+          "7",
+          "VO1",
+          "HP_OUT_L",
+          "output"
+        ],
+        [
+          "8",
+          "IN1-",
+          "HP_IN_L",
+          "input"
+        ],
+        [
+          "9",
+          "PAD",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "ic",
+      "note": "PowerPAD must be soldered to grounded copper; output capacitors required"
+    },
+    {
+      "ref": "C21",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "AUDIO_VOL",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_AC_L",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R27",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_AC_L",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_IN_L",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R29",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_IN_L",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_OUT_L",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C23",
+      "value": "470u/10V (+ at amp)",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_OUT_L",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_COUPLED_L",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R31",
+      "value": "22R",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_COUPLED_L",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "JACK_L",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R33",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "JACK_L",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C22",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "AUDIO_VOL",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_AC_R",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R28",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_AC_R",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_IN_R",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R30",
+      "value": "22k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_IN_R",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_OUT_R",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C24",
+      "value": "470u/10V (+ at amp)",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_OUT_R",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_COUPLED_R",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R32",
+      "value": "22R",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_COUPLED_R",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "JACK_R",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R34",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "JACK_R",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C25",
+      "value": "1u",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_BYPASS",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C26",
+      "value": "100n",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C27",
+      "value": "10u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5VA",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R35",
+      "value": "10k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_SHUTDOWN",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "+5VA",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "Q1",
+      "value": "2N7002 SOT-23",
+      "pins": [
+        [
+          "1",
+          "G",
+          "HP_GATE",
+          "input"
+        ],
+        [
+          "2",
+          "S",
+          "GND",
+          "passive"
+        ],
+        [
+          "3",
+          "D",
+          "HP_SHUTDOWN",
+          "open_collector"
+        ]
+      ],
+      "group": 5,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "R36",
+      "value": "1k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_ENABLE",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "HP_GATE",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R37",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "HP_GATE",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "J3",
+      "value": "3.5mm TRS headphone",
+      "pins": [
+        [
+          "1",
+          "TIP=L",
+          "JACK_L",
+          "passive"
+        ],
+        [
+          "2",
+          "RING=R",
+          "JACK_R",
+          "passive"
+        ],
+        [
+          "3",
+          "SLEEVE",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 5,
+      "kind": "connector",
+      "note": "Functional connector numbering; actual jack footprint/pins must be mapped before PCB layout; 32 ohm nominal"
+    },
+    {
+      "ref": "U9",
+      "value": "PAM8302AAS SO-8",
+      "pins": [
+        [
+          "1",
+          "SD_N",
+          "SPK_SD",
+          "input"
+        ],
+        [
+          "2",
+          "NC",
+          null,
+          "no_connect"
+        ],
+        [
+          "3",
+          "IN+",
+          "SPK_IN_P",
+          "input"
+        ],
+        [
+          "4",
+          "IN-",
+          "SPK_IN_N",
+          "input"
+        ],
+        [
+          "5",
+          "OUT+",
+          "SPK_P",
+          "output"
+        ],
+        [
+          "6",
+          "VDD",
+          "+5V",
+          "power_in"
+        ],
+        [
+          "7",
+          "GND",
+          "GND",
+          "power_in"
+        ],
+        [
+          "8",
+          "OUT-",
+          "SPK_N",
+          "output"
+        ]
+      ],
+      "group": 6,
+      "kind": "ic",
+      "note": ""
+    },
+    {
+      "ref": "C28",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "AUDIO_VOL",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "SPK_AC_P",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R38",
+      "value": "82k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SPK_AC_P",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "SPK_IN_P",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C29",
+      "value": "1u film",
+      "pins": [
+        [
+          "1",
+          "1",
+          "GND",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "SPK_AC_N",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "R39",
+      "value": "82k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SPK_AC_N",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "SPK_IN_N",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "C30",
+      "value": "1u",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C31",
+      "value": "10u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "C32",
+      "value": "220u/10V",
+      "pins": [
+        [
+          "1",
+          "1",
+          "+5V",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "c",
+      "note": ""
+    },
+    {
+      "ref": "S1",
+      "value": "Speaker enable (ON connects)",
+      "pins": [
+        [
+          "1",
+          "MCU",
+          "SPK_ENABLE",
+          "passive"
+        ],
+        [
+          "2",
+          "AMP",
+          "SPK_SD",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "switch",
+      "note": ""
+    },
+    {
+      "ref": "R40",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SPK_SD",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "R41",
+      "value": "100k",
+      "pins": [
+        [
+          "1",
+          "1",
+          "SPK_ENABLE",
+          "passive"
+        ],
+        [
+          "2",
+          "2",
+          "GND",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "r",
+      "note": ""
+    },
+    {
+      "ref": "J4",
+      "value": "8 ohm / >=1W speaker",
+      "pins": [
+        [
+          "1",
+          "SPK+",
+          "SPK_P",
+          "passive"
+        ],
+        [
+          "2",
+          "SPK-",
+          "SPK_N",
+          "passive"
+        ]
+      ],
+      "group": 6,
+      "kind": "connector",
+      "note": "BTL output: neither terminal is ground; do not connect headphones or grounded instruments here"
+    }
+  ],
+  "mcu_gpio": {
+    "4": "MCU_D0",
+    "5": "MCU_D1",
+    "6": "MCU_D2",
+    "7": "MCU_D3",
+    "15": "MCU_D4",
+    "16": "MCU_D5",
+    "17": "MCU_D6",
+    "18": "MCU_D7",
+    "8": "I2C_SDA",
+    "9": "I2C_SCL",
+    "10": "A0_3V3",
+    "11": "WR_3V3_N",
+    "12": "CS_3V3_N",
+    "13": "RD_3V3_N",
+    "14": "WRITE_OE_N",
+    "47": "RESET_3V3_N",
+    "39": "POT_SCK_3V3",
+    "40": "POT_MOSI_3V3",
+    "41": "POT_CS_3V3_N",
+    "21": "READ_OE_N",
+    "42": "HP_ENABLE",
+    "2": "SPK_ENABLE"
+  }
+}

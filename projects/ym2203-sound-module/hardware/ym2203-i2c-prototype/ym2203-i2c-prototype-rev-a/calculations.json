@@ -1,0 +1,15 @@
+{
+  "event_storage_bytes_packed": 786426,
+  "event_storage_bytes_8_byte_struct": 1048568,
+  "mixer_fm_gain": -1,
+  "mixer_each_ssg_gain": -0.22,
+  "mixer_feedback_pole_hz": 21922.168469958036,
+  "fm_input_highpass_hz": 7.234315595086153,
+  "ssg_input_highpass_hz": 1.5915494309189537,
+  "headphone_input_highpass_hz": 7.234315595086153,
+  "headphone_output_highpass_32ohm_hz": 6.270880342470266,
+  "headphone_load_attenuation_32ohm": 0.5925925925925926,
+  "speaker_gain_nominal": 1.6304347826086956,
+  "i2c_rise_100pf_ns": 186.40600000000003,
+  "validation_scope": "Pin completeness, named-net connectivity, voltage-domain intent and nominal calculations only; no SPICE or hardware validation."
+}

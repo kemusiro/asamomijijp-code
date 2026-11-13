@@ -1,0 +1,1 @@
+PASS: browser selection/scale/hold/panic,six solo+chord,background handover,2min timeout,two-family probe,normal-mode cancellation and page-exit cleanup;MIDI output modelled

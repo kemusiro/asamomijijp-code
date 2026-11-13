@@ -1,0 +1,3 @@
+3.4.0; MicroPython v1.29.0 on 2026-11-12
+MIDI HEAP:100 note pairs across all6 voices,7000 USB/core/planner ticks;bytes: 0
+PASS: actual MIDI/USB Python hot paths bounded;physical callbacks/GPIO/USB interrupt latency unmeasured

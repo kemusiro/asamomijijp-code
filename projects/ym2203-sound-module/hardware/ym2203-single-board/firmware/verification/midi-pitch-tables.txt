@@ -1,0 +1,1 @@
+PASS: all128 MIDI table entries reproduce at4MHz
