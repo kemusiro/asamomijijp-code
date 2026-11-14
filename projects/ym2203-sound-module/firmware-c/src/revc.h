@@ -38,6 +38,12 @@ typedef struct {
     atomic_uint valid;
 } revc_tx_start_fault_state;
 extern revc_tx_start_fault_state revc_tx_start_fault;
+typedef struct {
+    uint32_t reason,produced,consumed,pending,channel,fifo,rx_age_us,divider;
+    uint32_t ctrl[2],remaining[2];
+    atomic_uint valid;
+} revc_tx_run_fault_state;
+extern revc_tx_run_fault_state revc_tx_run_fault;
 void revc_safe_gpio(void);
 void revc_emergency(unsigned code);
 bool revc_bus_start(void);

@@ -61,15 +61,47 @@ final=recovery.run_check(bind,release,sys.argv[1])
 if final['state']!=4 or final['error'] or final['queued']:raise Exception('wrong USB check final state')
 print('PASS',final['executed'],final['period_ms'],final['crc32'],final['max_late_us'],0)
 '''
+PLAYER_CHILD=CHILD[:CHILD.index('player=host.RevCStream(Bus())')]+r'''
+import ym2203_revc_player as playlist
+playlist.time=clock
+player=host.RevCStream(Bus())
+choices=iter(['2','r 1','a','l','q'])
+completed=0;interrupt_at=0;pending_interrupt=False
+original_sleep=clock.sleep_ms
+def player_sleep(ms):
+    global pending_interrupt
+    if pending_interrupt:
+        pending_interrupt=False
+        raise KeyboardInterrupt()
+    original_sleep(ms)
+clock.sleep_ms=player_sleep
+def choose(prompt):
+    global interrupt_at
+    choice=next(choices)
+    interrupt_at=completed+2 if choice=='r 1' else completed+3 if choice=='l' else 0
+    return choice
+def report(text):
+    global completed,pending_interrupt
+    print('LOG',text)
+    if text.startswith('DONE /'):
+        completed+=1
+        if interrupt_at and completed==interrupt_at:pending_interrupt=True
+playlist.run_console(player,sys.argv[1].rsplit('/',1)[0],read_line=choose,write=report)
+if completed!=8:raise Exception('wrong playlist total')
+final=player.status()
+if final['state']!=4 or final['error'] or final['queued']:raise Exception('wrong player final state')
+print('PASS',final['executed'],final['period_ms'],final['crc32'],final['max_late_us'],player.commands)
+'''
 def main():
     ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--micropython',type=Path,required=True)
     mode=ap.add_mutually_exclusive_group(required=True)
     mode.add_argument('--song',type=Path);mode.add_argument('--recovery',action='store_true',help='Run physical recovery HOST script against modelled I2C/time')
     mode.add_argument('--usb-disconnect',action='store_true',help='Run USB-disconnect HOST script; USB itself is not emulated by this stream-core test')
+    mode.add_argument('--player',action='store_true',help='Run catalogue/menu and a two-track playlist against the C stream core')
     ap.add_argument('--keep-done-race',action='store_true',help='With --usb-disconnect, finish the target between its last RUNNING status and a final KEEP')
     a=ap.parse_args()
     if a.keep_done_race and not a.usb_disconnect:ap.error('--keep-done-race requires --usb-disconnect')
-    if a.recovery or a.usb_disconnect:
+    if a.recovery or a.usb_disconnect or a.player:
         from embed_song import demo
         data=demo()
     else:data=a.song.read_bytes()
@@ -78,8 +110,9 @@ def main():
         folder=Path(folder);lib=folder/'bridge.so'
         subprocess.run([shutil.which('cc'),'-std=c11','-O2','-Wall','-Wextra','-Werror','-fPIC','-shared','-I'+str(ROOT/'src'),str(ROOT/'src/wym1.c'),str(ROOT/'src/stream.c'),str(ROOT/'src/transport.c'),str(ROOT/'tests/stream_bridge.c'),'-o',str(lib)],check=True)
         c=C.CDLL(str(lib));c.model_init(50);c.model_advance.argtypes=[C.c_uint64];c.model_command.argtypes=[C.c_void_p,C.c_uint];c.model_status.argtypes=[C.c_void_p];c.model_trace.restype=C.c_void_p;c.model_now.restype=C.c_uint64
-        child=folder/'host.py';child.write_text(USB_CHILD if a.usb_disconnect else RECOVERY_CHILD if a.recovery else CHILD)
+        child=folder/'host.py';child.write_text(PLAYER_CHILD if a.player else USB_CHILD if a.usb_disconnect else RECOVERY_CHILD if a.recovery else CHILD)
         score=folder/'score.bin';score.write_bytes(data)
+        if a.player:(folder/'second.bin').write_bytes(data)
         env=os.environ.copy();env['MICROPYPATH']=str(ROOT/'host/lib')+':'+str(ROOT/'host')
         p=subprocess.Popen([str(a.micropython),str(child),str(score)],stdin=subprocess.PIPE,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True,env=env,bufsize=1)
         passed=None
@@ -116,6 +149,7 @@ def main():
             if p.poll() is None:p.kill();p.wait()
         actual=C.string_at(c.model_trace(),2*c.model_trace_count());expected=b''.join(data[i+4:i+6] for i in range(16,len(data),6))
         if a.recovery:expected=expected[:185*2]+expected+expected[:185*2]+expected
+        elif a.player:expected=expected*8
         assert actual==expected and passed[0]==total and passed[2]==binascii.crc32(data)&0xffffffff
         version=subprocess.check_output([str(a.micropython),'-c','import sys;print(sys.version)'],text=True).strip()
         report={'passed':True,'runtime':version,'scope':'Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware','events':passed[0],'period_ms':passed[1],'crc32':passed[2],'max_late_us':passed[3],'source_sha256':hashlib.sha256(data).hexdigest(),'register_value_order_exact':True}
@@ -131,6 +165,12 @@ def main():
             if a.keep_done_race:
                 assert raced
                 report['KEEP_rejected_after_DONE_race_exercised']=True
+        elif a.player:
+            assert sum(line.startswith('LOG DONE /') for line in logs)==8
+            assert sum(line.startswith('LOG STOP /') for line in logs)==2
+            assert any('PLAYLIST DONE / tracks=2 cycles=1' in line for line in logs)
+            report.update(mode='Catalogue/menu with scripted2,r1,a,l,q choices; injected Ctrl+C exceptions stop repeats',
+                          tracks_completed=8,repeat_interruptions=2,register_writes=c.model_trace_count(),final_state=4,commands=passed[4])
         else:report['commands']=passed[4]
         print(json.dumps(report,indent=2))
 if __name__=='__main__':main()

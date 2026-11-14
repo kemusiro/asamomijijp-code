@@ -19,7 +19,7 @@ Rev Cの実YM2203Cで、音色・書込み順序・演奏時刻を保って演�
 - 0.2.0-alpha.1のUSB-MIDI認識、FM/SSG音階、全音停止、Thonny接続は実機確認済み。
 - 6声・I2C/MIDI制御権切替もユーザーが確認済み。最後の報告は簡潔な確認であり、
   HOST全ログ・OS名・deadline missesの数値は提示されていない。
-- [C SDK版0.5.0-alpha.3](firmware-c/README.md)でローカルWYM1再生とUF2生成を実装した。
+- [C SDK版0.5.0-alpha.4](firmware-c/README.md)でローカルWYM1再生とUF2生成を実装した。
   alpha.1の音声経路・Ys II全曲再生はユーザー実機で確認済み（左右正常、歪み・音切れなし）。
   alpha.2のunity出力で音量比は改善したがFMがまだ小さく、一部に粒状音があるとの報告。
   alpha.3のFM150%で音量比は近づき、左右正常・歪み/音切れなしを実機確認。
@@ -56,7 +56,20 @@ Rev Cの実YM2203Cで、音色・書込み順序・演奏時刻を保って演�
   現行UF2と修正版HOSTの[常用手順](firmware-c/DAILY-USE-README.txt)を用意した。
   **0.5.0-alpha.3でも操作側PicoからYs II全曲を実機受入済み（ユーザー報告）。**
   123,137/123,137件・HOST PASS/DONE・fault=0/gates=0、FM100%で良好なバランス、左右正常・歪み/音切れなし。
-  [現行版の全曲受入記録](firmware-c/verification/c05-alpha3-fullscore-hardware-acceptance.json)。今回の生ログ・詳細時刻集計は未提示。
+  [alpha.3の全曲受入記録](firmware-c/verification/c05-alpha3-fullscore-hardware-acceptance.json)。今回の生ログ・詳細時刻集計は未提示。
+- 操作側Pico用の[HOSTプレーヤー](firmware-c/PLAYER-README.txt)を追加。番号選曲・単曲リピート・全曲1周/一覧リピート・Ctrl+C停止に対応する。
+  既存のI2Cストリーム処理とRev C UF2は変更せず、112件の自動テストとMicroPythonモデルで検証。alpha.4で選曲再生・リピート・Ctrl+C消音/メニュー復帰もユーザー実機で確認。
+- alpha.3の全曲完走後、待機中の音声fault5により次のHOST再生のBEGINが拒否された追加報告あり。
+  alpha.4でI2S分周余りの繰越を実装。旧版の長期キューずれを実際のaudio.cモデルで再現し、修正版の10分×6条件と全115件を検証。
+  [更新手順](firmware-c/I2S-CLOCK-FIX-README.txt)。**alpha.4も10分待機後の再生とYs II全曲を実機受入済み。**
+  123,137件・fault=0/gates=0・クリップ0、最大書込み開始遅延5,301µs、全件10ms未満。
+  [alpha.4受入記録](firmware-c/verification/c05-alpha4-hardware-acceptance.json)。旧版の成功・後続異常の記録も維持する。
+- イースI「First Step Towards Wars」の1曲全長も、同じalpha.4/HOSTプレーヤーで実機受入済み。
+  FM100%で良好なバランス、左右正常・歪み/音切れなし、DONE、期待する5,024件・CRC32=`be705192`の一致、fault=0/gates=0をユーザーが確認した。
+  [イースI受入記録](firmware-c/verification/c05-alpha4-ys1-first-step-hardware-acceptance.json)。今回の生ログ・詳細集計は未提示。
+- イースIII「The Boy’s Got Wings（翼を持った少年）」の1曲全長も、同じalpha.4/HOSTプレーヤーで実機受入済み。
+  FM100%で良好なバランス、左右正常・歪み/音切れなし、DONE、期待する43,172件・CRC32=`568fcf61`の一致、fault=0/gates=0をユーザーが確認した。
+  [イースIII受入記録](firmware-c/verification/c05-alpha4-ys3-boys-got-wings-hardware-acceptance.json)。今回の生ログ・詳細集計は未提示。
 - 可聴遅延の実測、24時間実機運転、USB/GNDノイズの絶縁対策は別途未検証。
 
 詳細：

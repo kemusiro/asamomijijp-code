@@ -40,7 +40,7 @@ static void log_line(const char *format,...) {
 static void status(void) {
     unsigned state=midi.owned?1:external_mode?(stream.state==STREAM_RUNNING?1:stream.state==STREAM_DONE?2:stream.state>=STREAM_STOPPED?3:0):player.state;
     const uint32_t *hist=external_mode?stream.late_hist:player.late_hist;
-    log_line("STATUS C=0.5.0-alpha.3 audio_ready=%u fault=%u state=%u events=%lu/%lu gates=%u fm_gain_eighths=%u",
+    log_line("STATUS C=0.5.0-alpha.4 audio_ready=%u fault=%u state=%u events=%lu/%lu gates=%u fm_gain_eighths=%u",
       atomic_load(&revc_audio.ready),atomic_load(&revc_audio.fault),state,(unsigned long)(external_mode?stream.executed:player.index),
       (unsigned long)(external_mode?stream.total:player.file?player.file->count:0),gates,atomic_load(&revc_audio.fm_gain_eighths));
     log_line("AUDIO blocks=%u peak=%u max_convert_us=%u queue_min=%u queue_max=%u i2s_div256=%u log_drops=%u",
@@ -50,6 +50,16 @@ static void status(void) {
       REVC_STREAM_INPUT_FRAMES,REVC_STREAM_OUTPUT_FRAMES,REVC_PRIME_BLOCKS,REVC_NOMINAL_DELAY_US);
     log_line("RX qualify_ticks=2 pio_hz=32000000 reject_observations=%u;sticky observations,not pulse count",
       atomic_load(&revc_audio.rx_reject_observations));
+    if(atomic_load_explicit(&revc_tx_run_fault.valid,memory_order_acquire)){
+        log_line("TXFAULT reason=%lu produced=%lu consumed=%lu pending=%lu channel=%lu fifo=%lu rx_age_us=%lu div256=%lu",
+          (unsigned long)revc_tx_run_fault.reason,(unsigned long)revc_tx_run_fault.produced,
+          (unsigned long)revc_tx_run_fault.consumed,(unsigned long)revc_tx_run_fault.pending,
+          (unsigned long)revc_tx_run_fault.channel,(unsigned long)revc_tx_run_fault.fifo,
+          (unsigned long)revc_tx_run_fault.rx_age_us,(unsigned long)revc_tx_run_fault.divider);
+        log_line("TXFAULT_DMA ctrl=%08lx,%08lx remaining=%lu,%lu",
+          (unsigned long)revc_tx_run_fault.ctrl[0],(unsigned long)revc_tx_run_fault.ctrl[1],
+          (unsigned long)revc_tx_run_fault.remaining[0],(unsigned long)revc_tx_run_fault.remaining[1]);
+    }
     if(atomic_load_explicit(&revc_tx_start_fault.valid,memory_order_acquire)){
         log_line("TXSTART fifo=%lu fstat=%08lx fdebug=%08lx abort=%08lx ctrl_rx=%08lx,%08lx ctrl_tx=%08lx,%08lx",
           (unsigned long)revc_tx_start_fault.fifo,(unsigned long)revc_tx_start_fault.fstat,

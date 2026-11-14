@@ -31,6 +31,7 @@ class CoreTests(unittest.TestCase):
         cls.lib.wym1_open.argtypes=[C.POINTER(File),C.c_void_p,C.c_size_t]
         cls.lib.revc_valid_register.argtypes=[C.c_uint8,C.c_uint8];cls.lib.revc_valid_register.restype=C.c_bool
         cls.lib.revc_i2s_div256.argtypes=[C.c_uint32,C.c_uint32];cls.lib.revc_i2s_div256.restype=C.c_uint32
+        cls.lib.revc_i2s_div256_carry.argtypes=[C.c_uint32,C.c_uint32,C.POINTER(C.c_uint64)];cls.lib.revc_i2s_div256_carry.restype=C.c_uint32
         cls.lib.revc_crc32.argtypes=[C.c_void_p,C.c_size_t];cls.lib.revc_crc32.restype=C.c_uint32
         cls.lib.revc_convert.argtypes=[C.POINTER(C.c_uint32),C.POINTER(C.c_uint32),C.POINTER(C.c_uint32)]
         cls.lib.revc_convert_gain.argtypes=cls.lib.revc_convert.argtypes+[C.c_uint,C.c_uint]
@@ -43,6 +44,19 @@ class CoreTests(unittest.TestCase):
     def tearDownClass(cls):cls.temp.cleanup()
     def open(self,data):
         buffer=C.create_string_buffer(data);f=File();result=self.lib.wym1_open(C.byref(f),buffer,len(data));return result,f,buffer
+    def test_clock_carry_preserves_fraction_below_one_divider_LSB(self):
+        denominator=108*640*64*1000000
+        for hz in [125000000,150000000]:
+            for elapsed in [1439957,1440000,1440043,1440144]:
+                remainder=C.c_uint64();total=0
+                for i in range(10000):
+                    divider=self.lib.revc_i2s_div256_carry(hz,elapsed,C.byref(remainder))
+                    self.assertNotEqual(divider,0);total+=divider
+                    self.assertEqual(total*denominator+remainder.value,hz*256*elapsed*(i+1))
+                    self.assertLess(remainder.value,denominator)
+        remainder=C.c_uint64(123)
+        self.assertEqual(self.lib.revc_i2s_div256_carry(150000000,0,C.byref(remainder)),0)
+        self.assertEqual(remainder.value,123)
     def test_valid_register_policy_matches_accepted_MicroPython_for_all_65536_pairs(self):
         for r in range(256):
             for v in range(256):self.assertEqual(self.lib.revc_valid_register(r,v),policy.valid_register(r,v),(r,v))

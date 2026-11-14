@@ -1,0 +1,66 @@
+{
+  "host_player_version": 1,
+  "date": "2026-11-14",
+  "target_version": "0.5.0-alpha.3",
+  "hardware_tested": false,
+  "status": "implemented_model_verified_physical_menu_check_pending",
+  "features": [
+    "Bounded64-file WYM1 catalogue",
+    "Number selection",
+    "Single-track repeat",
+    "Play all once",
+    "Loop all",
+    "Rescan",
+    "Ctrl+C stops playback and returns to menu",
+    "No auto-play or global STOP from idle menu",
+    "No auto-skip/retry after playback errors"
+  ],
+  "stream_library_changed": false,
+  "target_firmware_changed": false,
+  "stream_sha256": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+  "acceptance_results_commit_pushed": "f8b38b6dc8cdd65c60f704565d2742b50dc74054",
+  "checks": {
+    "native_tests": {
+      "passed": true,
+      "tests": 112,
+      "new_player_tests": 13,
+      "scope": "Actual C stream core plus real playlist code; includes full private Ys II followed by a next track,repeat/interrupt/failure/idle-owner cleanup"
+    },
+    "micropython": {
+      "passed": true,
+      "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+      "completed_tracks": 8,
+      "repeat_interruptions": 2,
+      "register_writes": 1528,
+      "exact_order": true,
+      "final_state": 4,
+      "scope": "Actual MicroPython,OS catalogue and C core; scripted menu inputs and injected KeyboardInterrupt; not physical Thonny/I2C/audio"
+    },
+    "package": {
+      "passed": true,
+      "same_bytes_on_repack": true,
+      "member_hashes_verified": true,
+      "UF2_included": false,
+      "YsII_included": false
+    }
+  },
+  "source_sha256": {
+    "host/player.py": "1c35513ed6cc49d8e1d858ac5647b627e7a9cc865d6ec57b7cecd8358475082a",
+    "host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f",
+    "tests/test_player.py": "8f1d4382ff3bedc453d52eb509509e98c8a416010dc588100689077f45bbb1a3",
+    "tools/verify_host_micropython.py": "bb6443ce1c1ef0d9093734c70dbb6f3d85fc570fc58e8466ae1192dee6fae494",
+    "tools/build_host_player.py": "4a1232446f15e829669b831239cea71678876b86ee0bd8df97378b64df680873",
+    "PLAYER-README.txt": "92f50d10e7330ba8a7daf6d67ab9e46e934f90b9e25835ddf637e2b35fe8b365"
+  },
+  "evidence": {
+    "native": "verification/host-player-v1-native-tests.txt",
+    "MicroPython": "verification/host-player-v1-micropython.json"
+  },
+  "package": "outputs/revc-host-player-v1-20261114-r2.zip",
+  "package_sha256": "5c537d20ca55d92af755f79d2d5c6161825dd1a5e85a6f545fef76cc17372e1c",
+  "not_verified": [
+    "New interactive menu and Ctrl+C behavior on controller Pico/Thonny with physical I2C/audio",
+    "Long-running continuous repeat and storage capacity for user song collection"
+  ],
+  "existing_firmware_acceptance": "verification/c05-alpha3-fullscore-hardware-acceptance.json"
+}

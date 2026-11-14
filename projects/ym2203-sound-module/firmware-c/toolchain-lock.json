@@ -18,5 +18,5 @@
     "python": "3.14.6"
   },
   "board": "pico2",
-  "version": "0.5.0-alpha.3"
+  "version": "0.5.0-alpha.4"
 }

@@ -37,5 +37,5 @@ target_link_libraries(revc_c pico_stdlib pico_multicore pico_unique_id hardware_
 pico_enable_stdio_uart(revc_c 0)
 pico_enable_stdio_usb(revc_c 0)
 pico_set_program_name(revc_c "YM2203 Rev C local WYM1")
-pico_set_program_version(revc_c "0.5.0-alpha.3")
+pico_set_program_version(revc_c "0.5.0-alpha.4")
 pico_add_extra_outputs(revc_c)

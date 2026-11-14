@@ -44,6 +44,7 @@ static inline pio_sm_config NAME_program_get_default_config(unsigned offset){(vo
         subprocess.run(args, check=True)
         cls.c = C.CDLL(str(lib))
         cls.c.am_run.argtypes = [C.c_uint, C.c_uint, C.c_uint]
+        cls.c.am_drift.argtypes = [C.c_int, C.c_uint]
 
     @classmethod
     def tearDownClass(cls):
@@ -70,3 +71,20 @@ static inline pio_sm_config NAME_program_get_default_config(unsigned offset){(vo
         self.assertEqual(self.c.am_get(6), 1)
         self.assertEqual(self.c.am_get(7), 0)
         self.assertEqual(self.c.am_get(8), 0)
+
+    def test_fractional_clock_drift_does_not_exhaust_the_short_pipeline(self):
+        for ppm in [-500, -30, -5, 5, 30, 500]:
+            with self.subTest(ppm=ppm):
+                self.c.am_drift(ppm, 600)
+                self.assertEqual(self.c.am_get(0), 0,
+                                 'fault%d at%dms for%dppm' % (self.c.am_get(0), self.c.am_get(10), ppm))
+                self.assertGreaterEqual(self.c.am_get(10), 600000)
+                self.assertEqual(self.c.am_get(1), 1)
+
+    def test_genuine_TX_chain_failure_still_mutes_and_snapshots_fault5(self):
+        self.c.am_run(0, 1000, 2)
+        self.assertEqual(self.c.am_get(0), 5)
+        self.assertEqual(self.c.am_get(1), 0)
+        self.assertEqual(self.c.am_get(8), 0)
+        self.assertEqual(self.c.am_get(13), 1)
+        self.assertEqual(self.c.am_get(14), 2)

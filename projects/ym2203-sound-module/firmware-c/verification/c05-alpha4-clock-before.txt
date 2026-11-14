@@ -1,0 +1,38 @@
+FFF..
+======================================================================
+FAIL: test_fractional_clock_drift_does_not_exhaust_the_short_pipeline (test_audio_core.AudioCoreTests.test_fractional_clock_drift_does_not_exhaust_the_short_pipeline) (ppm=-30)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT>/firmware-c/tests/test_audio_core.py", line 79, in test_fractional_clock_drift_does_not_exhaust_the_short_pipeline
+    self.assertEqual(self.c.am_get(0), 0,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     'fault%d at%dms for%dppm' % (self.c.am_get(0), self.c.am_get(10), ppm))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 8 != 0 : fault8 at432020ms for-30ppm
+
+======================================================================
+FAIL: test_fractional_clock_drift_does_not_exhaust_the_short_pipeline (test_audio_core.AudioCoreTests.test_fractional_clock_drift_does_not_exhaust_the_short_pipeline) (ppm=30)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT>/firmware-c/tests/test_audio_core.py", line 79, in test_fractional_clock_drift_does_not_exhaust_the_short_pipeline
+    self.assertEqual(self.c.am_get(0), 0,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     'fault%d at%dms for%dppm' % (self.c.am_get(0), self.c.am_get(10), ppm))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 0 : fault5 at74544ms for30ppm
+
+======================================================================
+FAIL: test_fractional_clock_drift_does_not_exhaust_the_short_pipeline (test_audio_core.AudioCoreTests.test_fractional_clock_drift_does_not_exhaust_the_short_pipeline) (ppm=500)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<PROJECT>/firmware-c/tests/test_audio_core.py", line 79, in test_fractional_clock_drift_does_not_exhaust_the_short_pipeline
+    self.assertEqual(self.c.am_get(0), 0,
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+                     'fault%d at%dms for%dppm' % (self.c.am_get(0), self.c.am_get(10), ppm))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 5 != 0 : fault5 at72632ms for500ppm
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.223s
+
+FAILED (failures=3)

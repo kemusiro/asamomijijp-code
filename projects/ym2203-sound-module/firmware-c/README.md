@@ -1,4 +1,14 @@
-# Rev C C SDK版 0.5.0-alpha.3 — USB-MIDI＋I2C WYM1
+# Rev C C SDK版 0.5.0-alpha.4 — USB-MIDI＋I2C WYM1
+
+alpha.4は、Ys II完走後の待機中に残った`fault=5`で、次のHOST選曲のBEGINが拒否された問題への修正版。
+I2S分周値の丸め余りを次回へ繰り越し、外部FM時計との微差が短い音声キューへ蓄積する経路を修正した。
+実際のaudio.cで独立時計をモデル化し、旧版のfault5/8と修正版の10分×6条件完走を確認した。
+TXFAULT診断と致命停止時ready=0も追加する。音量、PCM、GPIO、I2C形式、HOSTプレーヤー処理は維持する。
+旧実機の正確なDMA停止直前状態は未確定。**alpha.4は10分待機後の再生とYs II全曲、
+HOSTプレーヤーのリピート・Ctrl+C消音/メニュー復帰をユーザー実機で受入済み。**
+完了ログは123,137件受信/実行、fault=0・gates=0、クリップ0。書込み開始遅延最大5,301µs、全件10ms未満。
+左右とも歪み・音切れなしとの報告。[実機受入記録](verification/c05-alpha4-hardware-acceptance.json)。
+[更新・待機後の再確認](I2S-CLOCK-FIX-README.txt) ／ [修正記録](verification/c05-alpha4-clock-fix.json)。
 
 alpha.3は、ユーザーのalpha.1ログで確認した`audio_ready=0 fault=16`に対応する修正版。
 MIDI発音準備で繰り返す音声再起動に対し、RP2350-E5に従って全連鎖DMAを無効化してからabortする。
@@ -34,7 +44,7 @@ I2C診断191件完走・CRC一致・fault=0・gates=0・クリップ0を確認�
 再接続後の無音とMIDIへの明示復帰はユーザーの音声確認。提示されたSTATUSはMIDI復帰前のI2C完了時点。
 [実機受入記録](verification/c05-alpha3-usb-disconnect-hardware-acceptance.json)。
 正常終了直後のKEEP競合はHOST修正済み。現行UF2と修正版HOSTを[常用セット](DAILY-USE-README.txt)へまとめた。
-**現行0.5.0-alpha.3でも、操作側PicoからのYs II全曲再生を実機受入済み（ユーザー報告）。**
+**0.5.0-alpha.3でも、操作側PicoからのYs II全曲再生を実機受入済み（ユーザー報告）。**
 `events=123137/123137`、HOST PASS・DONE、`fault=0 gates=0`をユーザーが確認した。
 FM100%で良好な音量バランス、左右正常・歪み/音切れなし。今回のHOST/Rev C生ログは未提示のため、
 詳細な遅延・キュー・CRC・クリップの数値を新たに照合したとは扱わない。
@@ -43,7 +53,30 @@ FM100%で良好な音量バランス、左右正常・歪み/音切れなし。�
 [修正と検証記録](verification/c05-alpha3-usb-disconnect-keep-done-fix.json)。
 MIDI1～3=FM、MIDI4～6=SSG、各チャンネル1音・固定音色/固定音量。
 音色編集、Program Change、Pitch Bend、SysEx、MIDI送信、MicroPython REPLは含めない。
-物理USB切断と実際の可聴遅延はモデル試験から保証しない。
+実際の可聴遅延や長時間安定性はモデル試験から保証しない。
+
+## HOSTプレーヤー v1
+
+[導入と操作](PLAYER-README.txt)。操作側Picoの`host/player.py`から、`/music`内のWYM1 BINを
+番号選曲・単曲リピート・一覧順の1周/リピートで演奏できる。再生中のCtrl+CでSTOPしてメニューへ戻る。
+新規ライブラリは`host/lib/ym2203_revc_player.py`。受入済みの`RevCStream.play_file()`とRev C UF2は変更しない。
+メニューだけでは再生/STOPを送らず、曲選択待ちでMIDIの制御権を奪わない。異常時は次曲へ進まない。
+112件の自動テストと実際のMicroPythonで番号選曲・両リピート・連続再生・中断を検証済み。
+[プレーヤーのモデル検証記録](verification/host-player-v1-validation.json)。alpha.4で選曲再生・リピート・
+Ctrl+C消音/メニュー復帰も[実機確認済み](verification/c05-alpha4-hardware-acceptance.json)。
+リピートのモード/回数、a/l各コマンドの個別実施までは報告されていない。
+
+**イースI「First Step Towards Wars」も、alpha.4と同じHOSTプレーヤーで1曲の全長を実機受入済み。**
+FM100%で良好なバランス、左右正常・歪み/音切れなし、DONE、期待する5,024件・CRC32=`be705192`の一致、
+`fault=0 gates=0`をユーザーが確認した。元の5,018件に消音用6件を追加した65,025msのWYM1を使用。
+今回の生ログ・遅延集計は未提示。ゲーム内全楽曲の実機受入を意味しない。
+[イースIの受入記録](verification/c05-alpha4-ys1-first-step-hardware-acceptance.json)。曲データと曲入りZIPはGit管理外へ保持する。
+
+**イースIII「The Boy’s Got Wings（翼を持った少年）」の1曲全長も、同じalpha.4/HOSTプレーヤーで実機受入済み。**
+FM100%で良好なバランス、左右正常・歪み/音切れなし、DONE、期待する43,172件・CRC32=`568fcf61`の一致、
+`fault=0 gates=0`をユーザーが確認した。元の43,166件に消音用6件を追加した121,905msのWYM1を使用。
+今回の生ログ・遅延集計は未提示。ゲーム内全楽曲や、この曲での繰返し/中断試験の受入を意味しない。
+[イースIIIの受入記録](verification/c05-alpha4-ys3-boys-got-wings-hardware-acceptance.json)。配布済みの曲入りZIPと変換記録は作成時点のまま保持する。
 
 ## 受入済み0.4.0-alpha.2のI2C全曲再生
 
@@ -330,6 +363,7 @@ C版で実機の音声経路・Ys II全曲処理が成立したら、100/400 kHz
 現行C0.5 alpha3での全曲実機受入もユーザーの数値報告で完了。旧C0.4 alpha2の生ログ照合とは
 根拠の種類を区別し、現行版の未提示ログ・未実測項目はvalidation.jsonへ残す。
 追加機能や長時間試験はこの受入のために増やさず、別の目的・仕様として扱う。
+今回の追加HOSTプレーヤーは[操作手順](PLAYER-README.txt)の短い確認を別途行う。
 
 ## ライセンスと一次資料
 

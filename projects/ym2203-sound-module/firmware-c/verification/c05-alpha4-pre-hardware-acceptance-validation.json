@@ -1,0 +1,181 @@
+{
+  "version": "0.5.0-alpha.4",
+  "date": "2026-11-14",
+  "hardware_tested": false,
+  "scope": "I2S fractional divider remainder carry and TX fault snapshot; physical recheck pending",
+  "checks": {
+    "native_tests": {
+      "passed": true,
+      "tests": 115,
+      "evidence": "verification/c05-alpha4-native-tests.txt"
+    },
+    "independent_clock_model": {
+      "native_tests": 115,
+      "actual_audio_loop_model": true,
+      "independent_clock_ppm": [
+        -500,
+        -30,
+        -5,
+        5,
+        30,
+        500
+      ],
+      "seconds_per_case": 600,
+      "old_code_failures": {
+        "minus30ppm": "fault8 at432020ms",
+        "plus30ppm": "fault5 at74544ms",
+        "plus500ppm": "fault5 at72632ms"
+      },
+      "fixed_clock_cases": "All six600s cases completed without audio fault",
+      "true_DMA_fault5_still_stops": true,
+      "fault16_startup_guard_retained": true,
+      "repeat_restart_cycles": 160,
+      "MicroPython_player_tracks": 8
+    },
+    "host_player_MicroPython": {
+      "passed": true,
+      "evidence": "verification/c05-alpha4-micropython-player.json"
+    },
+    "usb_descriptors": {
+      "passed": true,
+      "evidence": "verification/c05-alpha4-usb-descriptors.json"
+    },
+    "Arm_build": {
+      "passed": true,
+      "memory": {
+        "text_bytes": 60344,
+        "data_bytes": 0,
+        "bss_bytes": 463660
+      },
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.5.0-alpha.4"
+      }
+    },
+    "package": {
+      "passed": true,
+      "record": "verification/c05-alpha4-package-check.json"
+    }
+  },
+  "evidence_sha256": {
+    "c05-alpha4-clock-before.txt": "7681c45d8caf346d9900025eef7b51c59451cd81e75d1616a47bf696f5d774cf",
+    "c05-alpha4-native-tests.txt": "4bd4cf5e6fcba3cf66bd053a3ef8d2136cd7ad9801d04ec4f3081f105cad3155",
+    "c05-alpha4-micropython-player.json": "01500184fb03622c1ec09738207bd4216b250ee29bc2bbaf491f7accc5a07637",
+    "c05-alpha4-usb-descriptors.json": "091deb3b3cd3de68a8247e72106adc5e88557add815b95f03e29594c0a327578"
+  },
+  "regression_fix_record": "verification/c05-alpha4-clock-fix.json",
+  "package_check_record": "verification/c05-alpha4-package-check.json",
+  "host_player_validation_record": "verification/host-player-v1-validation.json",
+  "previous_physical_acceptance": [
+    {
+      "version": "0.5.0-alpha.3",
+      "record": "verification/c05-alpha3-fullscore-hardware-acceptance.json",
+      "scope": "User-reported full I2C Ys II completion; later idle fault5 reported separately"
+    },
+    {
+      "version": "0.5.0-alpha.3",
+      "record": "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json"
+    }
+  ],
+  "not_verified": [
+    "Models do not establish exact DMA timing or measured source frequency in the user failure",
+    "New alpha4 has not been physically accepted; main-menu wait and subsequent playback need confirmation",
+    "New HOST player console on controller Pico/Thonny",
+    "Measured audible latency and24h stability"
+  ],
+  "source_sha256": {
+    "CMakeLists.txt": "63e58780761d51b56a7835333c4c5a96dd0d41742cc1302d279c06bcbad0593b",
+    "I2C-YSII-README.txt": "3d62d6b7f0a4b40474e4bcb30cee4791c94c06e8e28e16be1b9ebed2160a530b",
+    "LICENSE-PICO-I2C-SLAVE.txt": "8e54440f1be53b85151b0e10a9710449fa321fe9f10a8f78716d8db062b682d0",
+    "README.md": "40f1429e5b54f226b8ee79190a5b3bb8b075666c934a70fdabfc02be543896a1",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f",
+    "host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+    "host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+    "host/midi_handover.py": "cbb28c593be55a7492fe81ba2f22129062aab15fc601b85a1bf84045b7697d28",
+    "host/player.py": "1c35513ed6cc49d8e1d858ac5647b627e7a9cc865d6ec57b7cecd8358475082a",
+    "host/recovery_check.py": "7eb774ece8cee0b6f4babc8ee63650a57b30c54423ba6d712a7144a0c3785f5b",
+    "host/usb_disconnect_check.py": "130c395848260de3ca8f7c6af20765a9aa3eb8cfc6eacfa302de537f44fc868b",
+    "pc/revc-console.html": "741bb53ce967561303319149d485cd57cbeb72a5df1d54252b5fed36a3c5aa90",
+    "pc/usb-midi-test.html": "1b801e3ceb47a1191f34c0fc4716fe98ba7c4ab39353ce0893bbf6fa19b03fd1",
+    "pio/fm_rx.pio": "7a9fd602b94e0b938d25b6112906f0a50063b97cc0d0a95889ed317989cf4cd3",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "protocol-v2.md": "2cccb0aa6a4eac2b5e6ecfdae38bb4e926256293ab174729a0eb8e0b5c4b92af",
+    "src/audio.c": "6ca53f0a03f29a0edb7273d252c73d927203d4227519ac4bf4b11f720efe80f0",
+    "src/audio_dma.c": "4e0abcbe5184606a403b378a4186d6ad1ad3f9a7b07e725ad79cb74ee7d7968c",
+    "src/audio_dma.h": "cb8b170e9bceb3c1e28ebc72e18b13c230778af5d51b5f60e807343fd89b296d",
+    "src/audio_start.c": "13e17b665ac370c9f741b1e7c68f6031633f669b17145edf63ef09bc892e327a",
+    "src/audio_start.h": "10c9ec46839be544ab5098e63a1b9ea2b1bf56b406cc5a5270c7ebbb74ea9383",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/i2c.c": "130063cc75f995a4945e4a050f583e234d010a352d009485c195cdf1dc9545ba",
+    "src/main.c": "df0040c9956a3d541f42bf64bb8d917d9256cfe2ac77d6913c3e6669199053e5",
+    "src/midi.c": "076ab1bc64111344cf60c8d77aa31b01d9d4a37802a8c2bdfa1e6ad69c4cf8d0",
+    "src/midi.h": "7c78473b6f7fb77d79f200c08bccdff22c5c317f86a43c47764210c7709757d6",
+    "src/midi_pitch.h": "cc84f6ab223a5da847b446a62b9b1fa5d36fb75c072be12e350974d9ad47e07a",
+    "src/revc.h": "0ea9af2f3ba5b4560198c8298940d9f8e287d992da46468f378677c02f7c1604",
+    "src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+    "src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+    "src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+    "src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+    "src/tusb_config.h": "1334a2bd979ea32d97512f5c4816171a2be3c85eae6006261df3963f2cca0814",
+    "src/usb.c": "4bfad8ee6c9ca40dc56fa225834fe6b1f08e1ee056680142df0f8566f76879b6",
+    "src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+    "src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+    "tests/audio_core_bridge.c": "2af7d2d111578b536cc0f9cd108ba7198f247c6fb1b1e3586b5a37e15aaa5946",
+    "tests/audio_core_stub.h": "b074c73999d9b6a5773dec8976e7725fb22848117f153003e6e8cafeed6e519c",
+    "tests/control_bridge.c": "91575b997e5732376b6a44f7279f6972a85f271fcf24c6a90f3e039c66e0a59f",
+    "tests/midi_bridge.c": "7675651e5e11d0fe83da37a9e0f824ac4afef861f438cf98987f6b85dd5e2d27",
+    "tests/rx_model.py": "54ef1b1af9c6799cb4a4dc802ce086db62ec0e6ab6ac541a7bfbb4d154f9bd57",
+    "tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1",
+    "tests/test_audio_core.py": "ca3fa50c4f13b8405f63fc863dbdbb783a77b3a6b1362894d540701f12848051",
+    "tests/test_audio_start.py": "00e8630a3d2d5a9bea38b25fb09ccdd94bc4ccb38eae8fcae9ca30a9a42b5158",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_control.py": "2af6998dfe48be15770ea6347fac9737fc8df462bcd4ce3027ab7a2c3b319594",
+    "tests/test_core.py": "b97779275c710c7a86ef2c80695a59dd8ec605ff6e33e4cdaf7beb994fa5f0c8",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_i2c_adapter.py": "93ce9094f6eb0aafc04f1d3dc2ba4e39518586657fa25283b120efa0f8a226cf",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_midi.py": "abbc5ea428d47251e47f479539e81092011bc6f6f0ca9f7483647bce7acbe41f",
+    "tests/test_player.py": "8f1d4382ff3bedc453d52eb509509e98c8a416010dc588100689077f45bbb1a3",
+    "tests/test_recovery_host.py": "17c7e7a0db3535a02edd86d8bf342a959bd5bf4831066acf1f15092dcf421528",
+    "tests/test_rx_margin.py": "662b561e2b93a928c526d0811446de89e928f90309dcb90df95832ffa8afd789",
+    "tests/test_stream.py": "b11b1c457a958c7e5daad0320d4af31ade6f4fff2736738481d7d210337052bc",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "tests/test_usb_disconnect_host.py": "bb381ee1b86000744346f3a0610d76b81de5abfcdfa4b863079bec67744c6a51",
+    "toolchain-lock.json": "c0f81c10cd8f08353c98ccfc80a328e89cb4ef5c57ba5729120a282f40e03fc2",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "8741a458d75f8089f53e2a1f566f696012a559cb0af20fb547b854564889fcce",
+    "tools/build_host_player.py": "4a1232446f15e829669b831239cea71678876b86ee0bd8df97378b64df680873",
+    "tools/build_recovery_check.py": "930422e64440c02ee17f3395e970dad4725a786f5873b10d1be7927cd6f1d76c",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/generate_midi_pitches.py": "5c17ddd46dfe13cc09cb435cdbd5902e6956002406cb443e250ae427942ac5c5",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_host_micropython.py": "bb6443ce1c1ef0d9093734c70dbb6f3d85fc570fc58e8466ae1192dee6fae494",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "tools/verify_usb_descriptors.py": "0ca2770bdc505e634a394bb84651638b51588dc2d0cc7243a906da907716621e",
+    "verify-console.mjs": "dfde47ffac9c016c84bb4e22409b6742950fc5e94056a83c8fb0e4f61c30d1c0",
+    "verify-midi-ui.mjs": "897fb8af60a7536e6bf8a90aa88ae334119fa12d17696563062670cf8fdf48da"
+  },
+  "source_sha256_scope": "Delivered alpha4 build snapshot; versioned verification and acceptance records managed separately"
+}

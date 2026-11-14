@@ -9,6 +9,7 @@
 revc_audio_state revc_audio;
 revc_rx_fault_state revc_rx_fault;
 revc_tx_start_fault_state revc_tx_start_fault;
+revc_tx_run_fault_state revc_tx_run_fault;
 revc_bus_stats revc_bus;
 bool revc_bus_fast=true;
 usb_model_regs model_usb_regs;
@@ -61,6 +62,7 @@ void cm_run(uint64_t until){
     midi_read=midi_write=i2c_size=cdc_read_pos=cdc_write_pos=log_used=snapshot_count=all_off_count=0;
     memset(&revc_audio,0,sizeof(revc_audio));memset(&revc_rx_fault,0,sizeof(revc_rx_fault));
     memset(&revc_tx_start_fault,0,sizeof(revc_tx_start_fault));
+    memset(&revc_tx_run_fault,0,sizeof(revc_tx_run_fault));
     memset(&player,0,sizeof(player));external_mode=gates=usb_stop=midi_usb_reset=false;
     midi_discard_until=0;dropped_logs=0;revc_diag_reset();
     atomic_store(&revc_audio.fm_gain_eighths,8);

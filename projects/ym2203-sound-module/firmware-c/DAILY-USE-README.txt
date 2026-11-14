@@ -1,13 +1,25 @@
-YM2203 Rev C / 常用セット 0.5.0-alpha.3 + 修正版I2C HOST
+YM2203 Rev C / 常用案内 0.5.0-alpha.4 + HOSTプレーヤー v1
 2026-11-14
 
-現在の実機をそのまま使用できます
+追加の待機中異常と修正版
+  alpha.3の全曲完走後に音声fault5が残り、次のBEGINが拒否された追加報告があります。
+  alpha.4は10分待機後の診断曲・Ys II全曲、リピートとCtrl+C消音/メニュー復帰まで実機受入済みです。
+  全曲ログは123137件・fault=0/gates=0・クリップ0。現行alpha.4とHOSTファイルをそのまま使用できます。
+  今回の更新はI2S-CLOCK-FIX-README.txtを参照してください。下記はalpha.3の受入時点の常用案内です。
+
+alpha.3受入時点の実機構成
   Rev CはC0.5.0-alpha.3、操作側PicoはKEEP/DONE修正版ライブラリです。
   このセットのUF2は、既に実機確認したalpha.3とバイト単位で同一です。再書き込み不要です。
   HOST v1.1も確認済みなら、ライブラリの再転送と追加の受入試験は不要です。
   ファームウェア番号を変更せず、分かれていたUF2・HOST・画面・手順をまとめたセットです。
   package-manifest.jsonに各ファイルと元UF2のSHA-256を記録します。
   firmware-build-manifest.jsonは元のUF2ビルド時点の記録で、更新後HOSTの一覧ではありません。
+
+曲選択・リピート・連続再生を使う
+  新しいHOSTプレーヤーはPLAYER-README.txtを参照し、/lib/ym2203_revc_player.pyを追加して
+  PCのhost/player.pyを操作側Picoで実行します。番号で単曲、r 番号で単曲リピート、
+  aで一覧を1周、lで一覧をリピートします。再生中のCtrl+CでSTOPしてメニューへ戻ります。
+  I2Cストリーム処理は維持し、Rev Cは時計補正済みalpha.4を使います。選曲再生・リピート・Ctrl+Cは実機確認済みです。
 
 Ys IIをI2Cで演奏する
   1. 従来の配線・外部5V・LINE→AMS-22を維持し、両方の音量を低めにします。

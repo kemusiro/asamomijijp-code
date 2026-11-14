@@ -826,7 +826,7 @@
   "c05_alpha3": {
     "version": "0.5.0-alpha.3",
     "date": "2026-11-14",
-    "status": "I2C_full_YsII_user_reported_accepted_with_MIDI_handover_and_USB_recovery",
+    "status": "fullsong_MIDI_handover_USB_accepted_subsequent_idle_audio_fault5_reported",
     "hardware_tested": true,
     "native_tests": 93,
     "audio_restart_fix_record": "verification/c05-alpha3-audio-restart-fix.json",
@@ -849,6 +849,61 @@
       "left_and_right": "normal",
       "distortion": false,
       "dropouts": false
-    }
+    },
+    "followup_idle_fault_record": "verification/c05-alpha3-followup-idle-fault5.json"
+  },
+  "host_player_v1": {
+    "target_version": "0.5.0-alpha.4",
+    "hardware_tested": true,
+    "status": "selection_repeat_CtrlC_and_menu_return_physically_confirmed",
+    "validation_record": "verification/host-player-v1-validation.json",
+    "scope": "Recovery/full song,repeat and Ctrl+C mute/menu recovery on physical controller; all-once/all-loop commands and exact repeat mode/count not independently reported",
+    "hardware_acceptance_record": "verification/c05-alpha4-hardware-acceptance.json",
+    "additional_score_acceptance_records": [
+      "verification/c05-alpha4-ys1-first-step-hardware-acceptance.json",
+      "verification/c05-alpha4-ys3-boys-got-wings-hardware-acceptance.json"
+    ]
+  },
+  "c05_alpha4": {
+    "version": "0.5.0-alpha.4",
+    "date": "2026-11-14",
+    "status": "physical_ten_minute_idle_fullsong_repeat_and_menu_recovery_accepted",
+    "hardware_tested": true,
+    "native_tests": 115,
+    "fix_record": "verification/c05-alpha4-clock-fix.json",
+    "hardware_acceptance_record": "verification/c05-alpha4-hardware-acceptance.json",
+    "hardware_test_scope": "Current target log verifies123137/123137,DONE,fault0,gates0,clipping0; ten-minute wait,recovery track,repeat and Ctrl+C mute/menu return accepted from user report; exact repeat mode/count not specified",
+    "additional_score_acceptance_records": [
+      "verification/c05-alpha4-ys1-first-step-hardware-acceptance.json",
+      "verification/c05-alpha4-ys3-boys-got-wings-hardware-acceptance.json"
+    ]
+  },
+  "c05_alpha4_ys1_first_step": {
+    "version": "0.5.0-alpha.4",
+    "date": "2026-11-14",
+    "hardware_tested": true,
+    "status": "one_full_track_accepted_from_user_report",
+    "hardware_acceptance_record": "verification/c05-alpha4-ys1-first-step-hardware-acceptance.json",
+    "title": "First Step Towards Wars",
+    "events": 5024,
+    "crc32_hex": "be705192",
+    "FM_gain_percent": 100,
+    "fault": 0,
+    "gates": 0,
+    "scope": "Complete track via HOST player; expected count/CRC,DONE,good balance,L/R,no distortion/dropouts confirmed by user; no raw logs supplied"
+  },
+  "c05_alpha4_ys3_boys_got_wings": {
+    "version": "0.5.0-alpha.4",
+    "date": "2026-11-14",
+    "hardware_tested": true,
+    "status": "one_full_track_accepted_from_user_report",
+    "hardware_acceptance_record": "verification/c05-alpha4-ys3-boys-got-wings-hardware-acceptance.json",
+    "title": "The Boy's Got Wings",
+    "events": 43172,
+    "crc32_hex": "568fcf61",
+    "FM_gain_percent": 100,
+    "fault": 0,
+    "gates": 0,
+    "scope": "Complete track via HOST player; expected count/CRC,DONE,good balance,L/R,no distortion/dropouts confirmed by user; no raw logs supplied"
   }
 }

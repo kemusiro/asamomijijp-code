@@ -15,6 +15,7 @@
 revc_audio_state revc_audio={.fm_gain_eighths=ATOMIC_VAR_INIT(8)};
 revc_rx_fault_state revc_rx_fault;
 revc_tx_start_fault_state revc_tx_start_fault;
+revc_tx_run_fault_state revc_tx_run_fault;
 static uint32_t raw[2][1024] __attribute__((aligned(4096)));
 static uint32_t pcm[8][REVC_STREAM_OUTPUT_FRAMES];
 static int rx[2],tx[2];
@@ -22,8 +23,21 @@ static PIO const input=pio0,output=pio1;
 static const unsigned sm=0;
 static bool dma_error(int channel){return (dma_hw->ch[channel].ctrl_trig>>29)!=0;}
 static void shutdown(unsigned code) {
-    revc_emergency(code);pio_sm_set_enabled(input,sm,false);pio_sm_set_enabled(output,sm,false);
+    revc_emergency(code);atomic_store_explicit(&revc_audio.ready,0,memory_order_release);
+    pio_sm_set_enabled(input,sm,false);pio_sm_set_enabled(output,sm,false);
     revc_audio_dma_stop(rx,tx);
+}
+static void snapshot_tx_run(unsigned reason,uint32_t produced,const revc_tx_cursor *cursor,unsigned channel,uint32_t last_rx){
+    revc_tx_run_fault.reason=reason;revc_tx_run_fault.produced=produced;
+    revc_tx_run_fault.consumed=cursor->consumed;revc_tx_run_fault.pending=cursor->pending;
+    revc_tx_run_fault.channel=channel;revc_tx_run_fault.fifo=pio_sm_get_tx_fifo_level(output,sm);
+    revc_tx_run_fault.rx_age_us=time_us_32()-last_rx;
+    revc_tx_run_fault.divider=atomic_load(&revc_audio.i2s_div256);
+    for(unsigned i=0;i<2;i++){
+        revc_tx_run_fault.ctrl[i]=dma_hw->ch[tx[i]].ctrl_trig;
+        revc_tx_run_fault.remaining[i]=dma_hw->ch[tx[i]].transfer_count;
+    }
+    atomic_store_explicit(&revc_tx_run_fault.valid,1,memory_order_release);
 }
 static void snapshot_tx_start(void){
     const int channels[]={rx[0],rx[1],tx[0],tx[1]};
@@ -104,7 +118,10 @@ restart:
     uint32_t produced=0;revc_tx_cursor cursor={0};unsigned ri=0,ti=0;bool sending=false;
     uint32_t last_rx=time_us_32(),measure_start=last_rx;unsigned measure_blocks=0;
     atomic_store(&revc_audio.queue_min,8);
-    atomic_store(&revc_audio.i2s_div256,(clock_get_hz(clk_sys)*256ull+1536000u)/3072000u);
+    uint32_t initial_divider=(uint32_t)((clock_get_hz(clk_sys)*256ull+1536000u)/3072000u);
+    pio_sm_set_clkdiv_int_frac8(output,sm,initial_divider>>8,(uint8_t)initial_divider);
+    atomic_store(&revc_audio.i2s_div256,initial_divider);
+    uint64_t divider_remainder=0;
     for(;;) {
         if(atomic_load_explicit(&revc_audio.pause,memory_order_acquire)) {
             pio_sm_set_enabled(input,sm,false);pio_sm_set_enabled(output,sm,false);
@@ -121,12 +138,12 @@ restart:
         if(input->fdebug&(1u<<sm)) {shutdown(2);return;}
         if(sending&&(output->fdebug&(1u<<(24+sm)))) {shutdown(3);return;}
         if((uint32_t)(time_us_32()-last_rx)>50000u) {shutdown(4);return;}
-        if(sending&&cursor.pending&&dma_channel_is_busy(tx[ti])){shutdown(5);return;}
+        if(sending&&cursor.pending&&dma_channel_is_busy(tx[ti])){snapshot_tx_run(1,produced,&cursor,ti,last_rx);shutdown(5);return;}
         // A completed channel may wait briefly for RX conversion before being
         // rearmed. Its partner is already transmitting a published block.
         // Do not count consumption again while waiting for the same channel.
         if(sending&&!dma_channel_is_busy(tx[ti])) {
-            if(!dma_channel_is_busy(tx[1-ti])) {shutdown(5);return;}
+            if(!dma_channel_is_busy(tx[1-ti])) {snapshot_tx_run(2,produced,&cursor,ti,last_rx);shutdown(5);return;}
             uint32_t before=cursor.consumed;
             int slot=revc_tx_slot(&cursor,produced);
             if(before!=cursor.consumed){
@@ -161,10 +178,11 @@ restart:
             atomic_store(&revc_audio.blocks,produced);atomic_store(&revc_audio.heartbeat_us,last_rx);
             if(++measure_blocks==REVC_CLOCK_BLOCKS) {
                 measure_blocks=0;
-                uint32_t divider=revc_i2s_div256(clock_get_hz(clk_sys),last_rx-measure_start);
+                uint32_t divider=revc_i2s_div256_carry(clock_get_hz(clk_sys),last_rx-measure_start,&divider_remainder);
                 if(!divider){shutdown(15);return;}
                 // Track the external YM oscillator,not an indefinitely assumed
-                // exact4MHz. Divider resolution is about80ppm at150MHz.
+                // exact4MHz. Carry the below-LSB remainder instead of building
+                // up a fixed rounding bias in the short2-block audio queue.
                 pio_sm_set_clkdiv_int_frac8(output,sm,divider>>8,(uint8_t)divider);
                 atomic_store(&revc_audio.i2s_div256,divider);measure_start=last_rx;
             }

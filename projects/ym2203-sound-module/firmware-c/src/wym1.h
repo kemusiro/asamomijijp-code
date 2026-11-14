@@ -58,6 +58,8 @@ void revc_player_start(revc_player *p, const wym1_file *f, uint64_t origin_us);
 void revc_player_stop(revc_player *p);
 void revc_player_tick(revc_player *p, uint64_t now_us, revc_writer write, void *ctx);
 uint32_t revc_i2s_div256(uint32_t system_hz,uint32_t elapsed_us);
+// Carry sub-divider rounding across measurement windows; remainder starts at0.
+uint32_t revc_i2s_div256_carry(uint32_t system_hz,uint32_t elapsed_us,uint64_t *remainder);
 typedef struct { uint64_t last_progress_us; uint16_t sof; bool valid; } revc_usb_guard;
 bool revc_usb_alive(revc_usb_guard *g,uint64_t now_us,uint16_t sof,bool connected);
 #endif

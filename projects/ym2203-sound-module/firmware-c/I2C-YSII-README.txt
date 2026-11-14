@@ -1,9 +1,9 @@
-Rev C C SDK 0.5.0-alpha.3 / 操作側MicroPythonからYs IIをI2C再生
+Rev C C SDK 0.5.0-alpha.4 / 操作側MicroPythonからYs IIをI2C再生
 
 受入済み0.4.0-alpha.2と同じI2C v2へUSB-MIDIを追加したC版です。
 操作側/lib/ym2203_revc_stream.pyはKEEP/DONE競合修正版を使います。host/main.pyと既存Ys II BINは維持します。
-現行alpha.3でも全123137件・HOST PASS/DONE・fault=0/gates=0、FM100%のバランスと左右正常を
-ユーザー実機で確認済みです。今回の数値は報告に基づき、生ログ照合による遅延等の集計は未実施です。
+alpha.3の全曲成功に続き、現行alpha.4でも10分待機後の診断/全曲再生、リピートとCtrl+Cを実機受入済みです。
+alpha.4完了ログは123137件・fault=0/gates=0・クリップ0、書込み開始遅延最大5301us、全件10ms未満です。
 音声受信・変換・I2S・100%出力と、alpha.2のTX FIFO起動修正を維持します。
 USB-MIDIの初期確認は同梱USB-MIDI-README.txtを先に読んでください。
 新しいI2C v2は旧MicroPython版v1と非互換。host/lib/ym2203_revc_stream.pyを使います。
@@ -19,7 +19,7 @@ USB-MIDIの初期確認は同梱USB-MIDI-README.txtを先に読んでくださ�
 
 2. Rev CをBOOTSELで起動し、外部5Vを供給してrevc-c.uf2をコピーします。
    既存alpha.7へ戻すZIPは保持してください。配線・GPIOの再割当はありません。
-   操作画面を再読み込みしてC=0.5.0-alpha.3、audio_ready=1 fault=0を確認します。
+   操作画面を再読み込みしてC=0.5.0-alpha.4、audio_ready=1 fault=0を確認します。
    必要なら「音声経路テスト（13秒）」で確認。FM100%、「バス短縮（標準）」を使います。
    このC版はMicroPythonではなく、ThonnyのREPLにはつながりません。
 

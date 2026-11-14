@@ -1,0 +1,57 @@
+{
+  "version": "0.5.0-alpha.4",
+  "date": "2026-11-14",
+  "hardware_tested": false,
+  "reported_failure": "verification/c05-alpha3-followup-idle-fault5.json",
+  "status": "fractional_clock_carry_corrected_model_verified_physical_pending",
+  "confirmed_code_issue": "Per-window rounding loses below-LSB divider error; independent RX/TX clocks exhaust short queue in actual audio.c model",
+  "hardware_cause_confirmed": false,
+  "changes": [
+    "Carry rational divider remainder across640-block windows",
+    "Reset actual PIO divider on restart",
+    "Snapshot fault5 TX queue/DMA state before shutdown",
+    "Clear ready after fatal audio shutdown"
+  ],
+  "unchanged": [
+    "GPIO",
+    "FM gain",
+    "PCM conversion",
+    "125-to108 conversion and2-block4.5ms pipeline",
+    "I2C v2 protocol",
+    "MicroPython host stream library and playlist logic",
+    "USB descriptors"
+  ],
+  "verification": {
+    "native_tests": 115,
+    "actual_audio_loop_model": true,
+    "independent_clock_ppm": [
+      -500,
+      -30,
+      -5,
+      5,
+      30,
+      500
+    ],
+    "seconds_per_case": 600,
+    "old_code_failures": {
+      "minus30ppm": "fault8 at432020ms",
+      "plus30ppm": "fault5 at74544ms",
+      "plus500ppm": "fault5 at72632ms"
+    },
+    "fixed_clock_cases": "All six600s cases completed without audio fault",
+    "true_DMA_fault5_still_stops": true,
+    "fault16_startup_guard_retained": true,
+    "repeat_restart_cycles": 160,
+    "MicroPython_player_tracks": 8
+  },
+  "evidence_sha256": {
+    "c05-alpha4-clock-before.txt": "7681c45d8caf346d9900025eef7b51c59451cd81e75d1616a47bf696f5d774cf",
+    "c05-alpha4-native-tests.txt": "4bd4cf5e6fcba3cf66bd053a3ef8d2136cd7ad9801d04ec4f3081f105cad3155",
+    "c05-alpha4-micropython-player.json": "01500184fb03622c1ec09738207bd4216b250ee29bc2bbaf491f7accc5a07637",
+    "c05-alpha4-usb-descriptors.json": "091deb3b3cd3de68a8247e72106adc5e88557add815b95f03e29594c0a327578"
+  },
+  "limits": [
+    "Models do not establish exact DMA timing or measured source frequency in the user failure",
+    "New alpha4 has not been physically accepted; main-menu wait and subsequent playback need confirmation"
+  ]
+}

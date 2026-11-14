@@ -149,6 +149,17 @@ uint32_t revc_i2s_div256(uint32_t system_hz,uint32_t elapsed_us) {
     return divider;
 }
 
+uint32_t revc_i2s_div256_carry(uint32_t system_hz,uint32_t elapsed_us,uint64_t *remainder){
+    const uint64_t denominator=(uint64_t)REVC_STREAM_OUTPUT_FRAMES*REVC_CLOCK_BLOCKS*64u*1000000u;
+    if(!remainder||*remainder>=denominator||!revc_i2s_div256(system_hz,elapsed_us))return 0;
+    uint64_t numerator=(uint64_t)system_hz*256u*elapsed_us+*remainder;
+    uint32_t divider=(uint32_t)(numerator/denominator);
+    uint32_t nominal=(uint32_t)(((uint64_t)system_hz*256u+1536000u)/3072000u);
+    if(divider<nominal-nominal/200u||divider>nominal+nominal/200u)return 0;
+    *remainder=numerator%denominator;
+    return divider;
+}
+
 bool revc_parse_fm_gain(const char *command,unsigned *gain) {
     size_t n=strlen(command);
     if(n<4||n>5||strncmp(command,"fm ",3)||command[3]<'0'||command[3]>'9')return false;

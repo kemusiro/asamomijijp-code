@@ -1,0 +1,53 @@
+{
+  "version": "0.5.0-alpha.4",
+  "host_player_version": 1,
+  "date": "2026-11-14",
+  "status": "physical_full_track_playback_accepted_from_user_report",
+  "hardware_tested": true,
+  "scope": "One complete Ys III The Boy's Got Wings track through the existing I2C HOST player; not the entire game soundtrack",
+  "source": "User listening/completion report in chat; no raw HOST or target log pasted for this run",
+  "version_context": "Existing alpha.4 and HOST player v1 specified by the delivered test procedure; no fresh version log pasted",
+  "user_report_original": "イースIIIも全曲再生が完了しました。FM100%で音量バランスも良く、左右とも歪みや音切れはありません。DONEと期待値どおりの件数・CRC、fault=0・gates=0も確認できました。",
+  "user_reported": {
+    "full_track_completed": true,
+    "FM_gain_percent": 100,
+    "balance": "good",
+    "left_and_right": "normal",
+    "distortion": false,
+    "dropouts": false,
+    "DONE": true,
+    "event_count_matches_expected": true,
+    "CRC_matches_expected": true,
+    "fault": 0,
+    "gates": 0
+  },
+  "expected_asset_confirmed_by_user": {
+    "game": "Ys III: Wanderers from Ys",
+    "title": "The Boy's Got Wings",
+    "filename": "ys3_the_boys_got_wings.bin",
+    "clock_hz": 4000000,
+    "events": 43172,
+    "period_ms": 121905,
+    "bytes": 259048,
+    "crc32_hex": "568fcf61",
+    "sha256": "b92aa48879a64d684f1a933f30da86eb7d3082888f9623b6d6e55eb615b0b829",
+    "source_events": 43166,
+    "added_cleanup_events": 6,
+    "meaning": "These exact values come from the delivered asset; user explicitly confirmed expected count/CRC, rather than pasting the numerical log"
+  },
+  "delivered_package": {
+    "filename": "revc-ys3-boys-got-wings-wym1-v1-20261114.zip",
+    "sha256": "71753afa1650460a7e567046e0405ee4398e944a9ba6d0c46faf360d28a18afd"
+  },
+  "local_conversion_record": "local-test-data/ym2203/ys3-boys-got-wings-20261114/package/conversion.json",
+  "previous_acceptance_records": [
+    "verification/c05-alpha4-hardware-acceptance.json",
+    "verification/c05-alpha4-ys1-first-step-hardware-acceptance.json"
+  ],
+  "not_supplied_or_not_verified": [
+    "Raw HOST/STATUS/AUDIO/TIMING/I2C log; no newly measured latency, retries, queue minimum, clipping or RX rejection counts",
+    "Independent timing measurement of the121.905s period",
+    "Ys III-specific repeats, Ctrl+C interruption or full game soundtrack playback"
+  ],
+  "history": "Original Ys III conversion/package and earlier alpha.4/Ys I acceptance records remain unchanged; this record supplies later physical evidence"
+}
