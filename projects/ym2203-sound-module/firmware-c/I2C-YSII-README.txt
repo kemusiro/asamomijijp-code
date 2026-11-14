@@ -1,7 +1,9 @@
 Rev C C SDK 0.5.0-alpha.3 / 操作側MicroPythonからYs IIをI2C再生
 
 受入済み0.4.0-alpha.2と同じI2C v2へUSB-MIDIを追加したC版です。
-操作側/lib/ym2203_revc_stream.py、host/main.py、Ys II BINは変更していません。
+操作側/lib/ym2203_revc_stream.pyはKEEP/DONE競合修正版を使います。host/main.pyと既存Ys II BINは維持します。
+現行alpha.3でも全123137件・HOST PASS/DONE・fault=0/gates=0、FM100%のバランスと左右正常を
+ユーザー実機で確認済みです。今回の数値は報告に基づき、生ログ照合による遅延等の集計は未実施です。
 音声受信・変換・I2S・100%出力と、alpha.2のTX FIFO起動修正を維持します。
 USB-MIDIの初期確認は同梱USB-MIDI-README.txtを先に読んでください。
 新しいI2C v2は旧MicroPython版v1と非互換。host/lib/ym2203_revc_stream.pyを使います。

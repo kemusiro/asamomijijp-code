@@ -1,0 +1,48 @@
+{
+  "version": "0.5.0-alpha.3",
+  "date": "2026-11-14",
+  "result": "pass_user_reported_full_score",
+  "hardware_tested": true,
+  "scope": "Physical Ys II full-song playback from controller Pico over I2C on current C0.5 alpha3; numerical summary and audible outcome reported by user",
+  "evidence_level": "User report; raw HOST and Rev C logs not pasted in this message",
+  "version_source": "User explicitly identifies alpha3 in this run",
+  "user_reported": {
+    "full_score_completed": true,
+    "HOST_PASS": true,
+    "DONE": true,
+    "target_events_completed": 123137,
+    "target_events_total": 123137,
+    "target_fault": 0,
+    "target_gates": 0,
+    "FM_gain_percent": 100,
+    "FM_SSG_balance": "good",
+    "left_and_right": "normal",
+    "distortion": false,
+    "dropouts": false
+  },
+  "expected_score_from_existing_asset": {
+    "title": "Ys II / TO MAKE THE END OF BATTLE",
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "crc32": "ae592289",
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "scope": "Established input metadata,not a new CRC or timing value transcribed from this run"
+  },
+  "raw_HOST_log_supplied": false,
+  "raw_target_log_supplied": false,
+  "host_context": "Existing I2C v2 host after KEEP/DONE fix; exact host file revision not independently identified in a pasted run log",
+  "derived_from_host_implementation": "play_file reports success only after matching sealed DONE,event counts,period and file CRC with healthy audio; this is an implementation property,not independent raw-log verification for this run",
+  "acceptance_conclusion": "Current C0.5 alpha3 reaches the stated goal of full Ys II playback from controller MicroPython with good FM100percent balance and final silence",
+  "limits": [
+    "No raw logs reviewed for this run; no newly verified CRC,elapsed time,retry count,queue extrema,dispatch histogram,clipping or RX rejection count",
+    "One reported full-song completion,not24h or repeated-run reliability",
+    "No independent electrical trace of every YM register write or measured audible latency"
+  ],
+  "prior_acceptance_records": [
+    "verification/c04-alpha2-hardware-acceptance.json",
+    "verification/c05-alpha3-handover-hardware-acceptance.json",
+    "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json"
+  ]
+}

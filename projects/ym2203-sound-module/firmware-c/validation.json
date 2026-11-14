@@ -279,9 +279,9 @@
   ],
   "not_verified": [
     "Measured audible latency and long-term24h operation",
-    "Physical full Ys II run on C0.5 alpha3; full-song physical acceptance remains C0.4 alpha2",
     "Complete18-note handover probe transmission; earlier run recorded7 rejections",
-    "Exact internal DMA timing of historical alpha1 fault16"
+    "Exact internal DMA timing of historical alpha1 fault16",
+    "Raw HOST/Rev C logs and detailed timing,queue,CRC/clipping metrics for the reported alpha3 full-song run were not supplied"
   ],
   "evidence_sha256": {
     "c05-alpha3-native-tests.txt": "bfe4276113760eb52c6a166dd49886f1a459fee76b7aa45938f74b47ef010cf1",
@@ -293,10 +293,10 @@
     "c05-alpha3-keep-done-micropython.json": "08698ee15eb00cde33d258670285681985ce2e76eefc291fa5c73254855c1377",
     "c05-alpha3-accepted-set-native-tests.txt": "e1118980e866663502aa916393366f41cbbc67d4c01298765aa4895f7e1fe647"
   },
-  "hardware_test_scope": "C0.5 alpha3 MIDI basics,ownership handover and physical USB disconnect/reconnect; HOST v1.1 and target snapshot verify191-event I2C completion across USB removal,fault0,gates0; later MIDI recovery user-reported",
+  "hardware_test_scope": "C0.5 alpha3 MIDI basics,ownership handover and physical USB disconnect/reconnect previously accepted with HOST/target evidence; current full Ys II playback accepted from user numerical report:123137/123137,HOST PASS,DONE,fault0,gates0,FM100percent balance good,L/R normal,no distortion/dropouts; no raw full-song logs supplied",
   "regression_fix_record": "verification/c05-alpha3-audio-restart-fix.json",
   "unchanged_component_evidence_scope": "Prior USB/UI/host model reports retained; descriptor and MIDI logic unchanged, audio DMA lifecycle now tested with actual audio.c",
-  "hardware_acceptance_record": "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json",
+  "hardware_acceptance_record": "verification/c05-alpha3-fullscore-hardware-acceptance.json",
   "post_delivery_host_check_source_sha256": {
     "host/usb_disconnect_check.py": "130c395848260de3ca8f7c6af20765a9aa3eb8cfc6eacfa302de537f44fc868b",
     "tests/test_usb_disconnect_host.py": "bb381ee1b86000744346f3a0610d76b81de5abfcdfa4b863079bec67744c6a51",
@@ -306,5 +306,6 @@
   },
   "USB_disconnect_progress_record": "verification/c05-alpha3-usb-disconnect-keep-done-fix.json",
   "USB_disconnect_acceptance_record": "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json",
-  "initial_functional_acceptance": "Complete for the recorded per-version scopes; no new MIDI features or long-duration certification implied"
+  "initial_functional_acceptance": "Complete through user-reported C0.5 alpha3 I2C full Ys II playback,with earlier MIDI,handover and USB recovery evidence retained; no long-duration certification implied",
+  "full_score_hardware_acceptance_record": "verification/c05-alpha3-fullscore-hardware-acceptance.json"
 }

@@ -54,6 +54,9 @@ Rev Cの実YM2203Cで、音色・書込み順序・演奏時刻を保って演�
   [切替受入記録](firmware-c/verification/c05-alpha3-handover-hardware-acceptance.json)。USB切断・復帰も実機受入済み。HOST v1.1でUSB切断中のI2C191件完了、終了後の無音とMIDI復帰を確認。
   [USB受入記録](firmware-c/verification/c05-alpha3-usb-disconnect-hardware-acceptance.json)。
   現行UF2と修正版HOSTの[常用手順](firmware-c/DAILY-USE-README.txt)を用意した。
+  **0.5.0-alpha.3でも操作側PicoからYs II全曲を実機受入済み（ユーザー報告）。**
+  123,137/123,137件・HOST PASS/DONE・fault=0/gates=0、FM100%で良好なバランス、左右正常・歪み/音切れなし。
+  [現行版の全曲受入記録](firmware-c/verification/c05-alpha3-fullscore-hardware-acceptance.json)。今回の生ログ・詳細時刻集計は未提示。
 - 可聴遅延の実測、24時間実機運転、USB/GNDノイズの絶縁対策は別途未検証。
 
 詳細：

@@ -48,7 +48,10 @@ USB-MIDIで演奏する
   C0.5.0-alpha.3: MIDI単独6声/和音、MIDI/I2C切替、MIDIのUSB喪失時停止、
     USBを抜いたままのI2C191件/13秒完走、再接続後の無音と明示的MIDI復帰を受入済み。
     今回のI2C診断は最大書込み開始遅延4751us、fault=0、クリップ0でした。
-  C0.5.0-alpha.3のYs II全曲はモデル検証済みですが、同版での5分間の物理完走ログは未提示です。
+  C0.5.0-alpha.3のYs II全曲も操作側Picoから実機受入済み（ユーザーの数値・音声確認報告）。
+    123137/123137件、HOST PASS/DONE、fault=0/gates=0、FM100%で良好なバランス、左右正常・歪み/音切れなし。
+    今回の生ログは未提示のため、遅延・キュー・CRC等を今回新たにログ照合したとは扱いません。
+    既存ZIPは作成時点の記録です。最新の受入結果はverification/c05-alpha3-fullscore-hardware-acceptance.jsonを参照します。
   このセットを再度書き込む試験は行っていません。実機確認した同一UF2と同一HOSTを再梱包しています。
   可聴遅延の実測、24時間運転、400kHz I2C、USB/GNDノイズ絶縁の評価は今回の受入に含めません。
   音色編集、Program Change、Pitch Bend、ペダル、SysEx、USBオーディオ、MicroPython REPLは未実装です。

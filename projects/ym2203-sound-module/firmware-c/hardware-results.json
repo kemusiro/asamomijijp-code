@@ -826,14 +826,29 @@
   "c05_alpha3": {
     "version": "0.5.0-alpha.3",
     "date": "2026-11-14",
-    "status": "MIDI_I2C_handover_and_physical_USB_recovery_accepted",
+    "status": "I2C_full_YsII_user_reported_accepted_with_MIDI_handover_and_USB_recovery",
     "hardware_tested": true,
     "native_tests": 93,
     "audio_restart_fix_record": "verification/c05-alpha3-audio-restart-fix.json",
-    "hardware_test_scope": "C0.5 alpha3 MIDI basics,ownership handover and physical USB disconnect/reconnect; HOST v1.1 and target snapshot verify191-event I2C completion across USB removal,fault0,gates0; later MIDI recovery user-reported",
+    "hardware_test_scope": "C0.5 alpha3 MIDI basics,ownership handover and physical USB disconnect/reconnect previously accepted with HOST/target evidence; current full Ys II playback accepted from user numerical report:123137/123137,HOST PASS,DONE,fault0,gates0,FM100percent balance good,L/R normal,no distortion/dropouts; no raw full-song logs supplied",
     "hardware_acceptance_record": "verification/c05-alpha3-restart-hardware-acceptance.json",
     "handover_hardware_acceptance_record": "verification/c05-alpha3-handover-hardware-acceptance.json",
     "USB_disconnect_record": "verification/c05-alpha3-usb-disconnect-keep-done-fix.json",
-    "USB_disconnect_acceptance_record": "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json"
+    "USB_disconnect_acceptance_record": "verification/c05-alpha3-usb-disconnect-hardware-acceptance.json",
+    "full_score_hardware_acceptance_record": "verification/c05-alpha3-fullscore-hardware-acceptance.json",
+    "full_score_hardware_acceptance": {
+      "source": "User report; no raw logs pasted",
+      "HOST_PASS": true,
+      "DONE": true,
+      "events_completed": 123137,
+      "events_total": 123137,
+      "fault": 0,
+      "gates": 0,
+      "FM_gain_percent": 100,
+      "balance": "good",
+      "left_and_right": "normal",
+      "distortion": false,
+      "dropouts": false
+    }
   }
 }

@@ -34,8 +34,12 @@ I2C診断191件完走・CRC一致・fault=0・gates=0・クリップ0を確認�
 再接続後の無音とMIDIへの明示復帰はユーザーの音声確認。提示されたSTATUSはMIDI復帰前のI2C完了時点。
 [実機受入記録](verification/c05-alpha3-usb-disconnect-hardware-acceptance.json)。
 正常終了直後のKEEP競合はHOST修正済み。現行UF2と修正版HOSTを[常用セット](DAILY-USE-README.txt)へまとめた。
-既に使用中のUF2とライブラリの再転送は不要。C0.5 alpha3でのYs II全曲物理完走は未再確認で、
-全曲の実機受入はC0.4 alpha2、現行版の全曲モデル試験と区別する。
+**現行0.5.0-alpha.3でも、操作側PicoからのYs II全曲再生を実機受入済み（ユーザー報告）。**
+`events=123137/123137`、HOST PASS・DONE、`fault=0 gates=0`をユーザーが確認した。
+FM100%で良好な音量バランス、左右正常・歪み/音切れなし。今回のHOST/Rev C生ログは未提示のため、
+詳細な遅延・キュー・CRC・クリップの数値を新たに照合したとは扱わない。
+[現行版の全曲受入記録](verification/c05-alpha3-fullscore-hardware-acceptance.json)。
+既に使用中のUF2とライブラリの再転送は不要。過去の配布ZIPと受入記録は作成時点のまま保持する。
 [修正と検証記録](verification/c05-alpha3-usb-disconnect-keep-done-fix.json)。
 MIDI1～3=FM、MIDI4～6=SSG、各チャンネル1音・固定音色/固定音量。
 音色編集、Program Change、Pitch Bend、SysEx、MIDI送信、MicroPython REPLは含めない。
@@ -103,7 +107,8 @@ USB STOPは全体停止。I2C演奏中のUSB切断はI2Cセッションを停止
 `BUS writes=123143`は楽曲123,137件と完了後の消音6件を含む。
 `reject_observations=5`は除外フラグの観測回数で、クロックのパルス数や物理的なノイズ原因の確定ではない。
 これにより「Rev Cで同じYs IIを全曲再生する」ローカル再生の受入を完了した。
-I2C経由の全曲転送も上記alpha.2で実機受入済み。USB-MIDIの基本動作は0.5版で実機確認済み。制御権切替と長時間連続運転は別途未検証。
+I2C経由の全曲転送はC0.4 alpha.2に加え現行C0.5 alpha.3でも実機受入済み。
+USB-MIDIの基本動作・制御権切替・USB切断復帰も0.5版で実機受入済み。長時間連続運転は別途未検証。
 [実機受入の数値記録](verification/alpha7-hardware-acceptance.json)。
 
 **以前のalpha.6では46.8秒・19,470/123,137イベントでfault=9、受信コードの指数0で消音停止した。**
@@ -322,7 +327,8 @@ C版で実機の音声経路・Ys II全曲処理が成立したら、100/400 kHz
 0.5.0-alpha.3のMIDI/I2C切替、MIDIのUSB喪失時停止、USB切断をまたぐI2C診断、
 再接続後の無音と明示的MIDI復帰までの初期受入を完了した。
 次は[常用手順](DAILY-USE-README.txt)のセットを使用できる。UF2は確認済みと同一バイトで再ビルドしない。
-全曲実機受入（C0.4 alpha2）と現行版の短い診断・モデル試験は区別し、未実測項目はvalidation.jsonへ残す。
+現行C0.5 alpha3での全曲実機受入もユーザーの数値報告で完了。旧C0.4 alpha2の生ログ照合とは
+根拠の種類を区別し、現行版の未提示ログ・未実測項目はvalidation.jsonへ残す。
 追加機能や長時間試験はこの受入のために増やさず、別の目的・仕様として扱う。
 
 ## ライセンスと一次資料
