@@ -5,8 +5,9 @@ YM2203CとRaspberry Pi Pico 2を使う実音源モジュールの基板・診断
 `asamomijijp-code`へ取り込んだ。以後、実基板とファームウェアはこちらで管理する。
 WebLabの仮想デバイス、ブラウザー実行基盤、汎用BINプレイヤーはWebLab側に残す。
 
-専用記事は未公開。関連する使い方ガイドは
-[MicroPython WebLab使い方ガイド](https://asamomiji.jp/articles/micropython-web-lab-guide/)。
+Rev Cの回路とファームウェアの解説記事：
+[YM2203をPico 2で鳴らす――Rev C音源基板の回路とファームウェア](https://asamomiji.jp/articles/ym2203-revc-sound-module/)。
+関連する使い方ガイドは[MicroPython WebLab使い方ガイド](https://asamomiji.jp/articles/micropython-web-lab-guide/)。
 記事の公開・サイトのビルドはこのプロジェクトの取り込みと独立している。
 
 ## 現在地と最終目標
