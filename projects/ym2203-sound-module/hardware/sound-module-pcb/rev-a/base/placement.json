@@ -1,0 +1,1566 @@
+[
+  {
+    "ref": "A1",
+    "value": "Raspberry Pi Pico 2",
+    "x_mm": 10,
+    "y_mm": 14,
+    "preferred_xy_mm": [
+      10,
+      14
+    ],
+    "courtyard": [
+      7.890000000000001,
+      12.129999999999999,
+      29.89,
+      64.13
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JMOD",
+    "value": "ESQ-125-58-L-D / socket",
+    "x_mm": 170,
+    "y_mm": 15,
+    "preferred_xy_mm": [
+      170,
+      15
+    ],
+    "courtyard": [
+      168.0,
+      13.0,
+      174.54,
+      77.96000000000001
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H1",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 55,
+    "y_mm": 5,
+    "preferred_xy_mm": [
+      55,
+      5
+    ],
+    "courtyard": [
+      51.4,
+      1.4,
+      58.6,
+      8.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H2",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 175,
+    "y_mm": 5,
+    "preferred_xy_mm": [
+      175,
+      5
+    ],
+    "courtyard": [
+      171.4,
+      1.4,
+      178.6,
+      8.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H3",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 55,
+    "y_mm": 115,
+    "preferred_xy_mm": [
+      55,
+      115
+    ],
+    "courtyard": [
+      51.4,
+      111.4,
+      58.6,
+      118.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H4",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 175,
+    "y_mm": 108,
+    "preferred_xy_mm": [
+      175,
+      108
+    ],
+    "courtyard": [
+      171.4,
+      104.4,
+      178.6,
+      111.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H5",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 5,
+    "y_mm": 5,
+    "preferred_xy_mm": [
+      5,
+      5
+    ],
+    "courtyard": [
+      1.4,
+      1.4,
+      8.6,
+      8.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H6",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 5,
+    "y_mm": 155,
+    "preferred_xy_mm": [
+      5,
+      155
+    ],
+    "courtyard": [
+      1.4,
+      151.4,
+      8.6,
+      158.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "H7",
+    "value": "M3 / 3.2mm NPTH",
+    "x_mm": 175,
+    "y_mm": 155,
+    "preferred_xy_mm": [
+      175,
+      155
+    ],
+    "courtyard": [
+      171.4,
+      151.4,
+      178.6,
+      158.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JHOST",
+    "value": "HOST 3.3V I2C",
+    "x_mm": 8,
+    "y_mm": 82,
+    "preferred_xy_mm": [
+      8,
+      82
+    ],
+    "courtyard": [
+      6.0,
+      80.0,
+      10.0,
+      91.62
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JPOWER",
+    "value": "MAIN INPUT / REGULATED DC 5V",
+    "x_mm": 8,
+    "y_mm": 146,
+    "preferred_xy_mm": [
+      8,
+      148
+    ],
+    "courtyard": [
+      6.0,
+      144.0,
+      10.0,
+      150.54
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JRUN",
+    "value": "RESET SWITCH",
+    "x_mm": 8,
+    "y_mm": 75,
+    "preferred_xy_mm": [
+      8,
+      75
+    ],
+    "courtyard": [
+      6.0,
+      73.0,
+      10.0,
+      79.54
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "U1",
+    "value": "MCP23017-E/SP / 0x20",
+    "x_mm": 43,
+    "y_mm": 15,
+    "preferred_xy_mm": [
+      43,
+      15
+    ],
+    "courtyard": [
+      41.2,
+      12.5,
+      52.42,
+      50.52
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "U2",
+    "value": "TC74HC08AP / 3.3V",
+    "x_mm": 72,
+    "y_mm": 15,
+    "preferred_xy_mm": [
+      72,
+      15
+    ],
+    "courtyard": [
+      70.2,
+      12.5,
+      81.42,
+      32.739999999999995
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "A2",
+    "value": "AE-PCM5102A / I2S 48kHz",
+    "x_mm": 12,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      12,
+      106
+    ],
+    "courtyard": [
+      10.370000000000001,
+      104.18,
+      28.87,
+      130.68
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "U3",
+    "value": "MCP6022-I/P / reference",
+    "x_mm": 72,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      72,
+      106
+    ],
+    "courtyard": [
+      70.2,
+      103.5,
+      81.42,
+      116.12
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "U4",
+    "value": "MCP6022-I/P / stereo mixer",
+    "x_mm": 101,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      101,
+      106
+    ],
+    "courtyard": [
+      99.2,
+      103.5,
+      110.42,
+      116.12
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "U5",
+    "value": "CD74HC4053E / line mute",
+    "x_mm": 133,
+    "y_mm": 105,
+    "preferred_xy_mm": [
+      133,
+      105
+    ],
+    "courtyard": [
+      131.2,
+      102.5,
+      142.42,
+      125.28
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JVOL",
+    "value": "EXTERNAL DUAL 10k A POT",
+    "x_mm": 99,
+    "y_mm": 150,
+    "preferred_xy_mm": [
+      99,
+      150
+    ],
+    "courtyard": [
+      97.0,
+      148.0,
+      103.54,
+      157.08
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "JLINE",
+    "value": "TRS JACK / AMS-22 LINE IN",
+    "x_mm": 162,
+    "y_mm": 151,
+    "preferred_xy_mm": [
+      162,
+      151
+    ],
+    "courtyard": [
+      160.0,
+      149.0,
+      164.0,
+      158.08
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "F1",
+    "value": "PTC 0.5A hold",
+    "x_mm": 8,
+    "y_mm": 137,
+    "preferred_xy_mm": [
+      8,
+      137
+    ],
+    "courtyard": [
+      6.5,
+      134.7,
+      17.119999999999997,
+      139.3
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "D1",
+    "value": "SS14 / A=+5V K=VSYS",
+    "x_mm": 32,
+    "y_mm": 143,
+    "preferred_xy_mm": [
+      32,
+      143
+    ],
+    "courtyard": [
+      30.1,
+      140.9,
+      38.3,
+      145.1
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C1",
+    "value": "47u 10V",
+    "x_mm": 37,
+    "y_mm": 151,
+    "preferred_xy_mm": [
+      37,
+      151
+    ],
+    "courtyard": [
+      35.0,
+      148.0,
+      41.0,
+      154.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C2",
+    "value": "10u 10V",
+    "x_mm": 44,
+    "y_mm": 151,
+    "preferred_xy_mm": [
+      44,
+      151
+    ],
+    "courtyard": [
+      42.0,
+      148.0,
+      48.0,
+      154.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R1",
+    "value": "4.7k",
+    "x_mm": 8,
+    "y_mm": 94,
+    "preferred_xy_mm": [
+      8,
+      91
+    ],
+    "courtyard": [
+      6.7,
+      92.4,
+      12.5,
+      95.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R2",
+    "value": "4.7k",
+    "x_mm": 8,
+    "y_mm": 98,
+    "preferred_xy_mm": [
+      8,
+      97
+    ],
+    "courtyard": [
+      6.7,
+      96.4,
+      12.5,
+      99.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R3",
+    "value": "4.7k",
+    "x_mm": 45,
+    "y_mm": 55,
+    "preferred_xy_mm": [
+      45,
+      55
+    ],
+    "courtyard": [
+      43.7,
+      53.4,
+      49.5,
+      56.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R4",
+    "value": "4.7k",
+    "x_mm": 45,
+    "y_mm": 61,
+    "preferred_xy_mm": [
+      45,
+      61
+    ],
+    "courtyard": [
+      43.7,
+      59.4,
+      49.5,
+      62.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C3",
+    "value": "100n",
+    "x_mm": 55,
+    "y_mm": 16,
+    "preferred_xy_mm": [
+      55,
+      16
+    ],
+    "courtyard": [
+      53.7,
+      14.4,
+      59.5,
+      17.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C4",
+    "value": "100n",
+    "x_mm": 84,
+    "y_mm": 15,
+    "preferred_xy_mm": [
+      84,
+      15
+    ],
+    "courtyard": [
+      82.7,
+      13.4,
+      88.5,
+      16.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "RN1",
+    "value": "RKC8BD103J",
+    "x_mm": 8,
+    "y_mm": 68,
+    "preferred_xy_mm": [
+      8,
+      68
+    ],
+    "courtyard": [
+      5.8,
+      66.0,
+      30.52,
+      70.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "RN2",
+    "value": "RKC8BD103J",
+    "x_mm": 43,
+    "y_mm": 68,
+    "preferred_xy_mm": [
+      43,
+      68
+    ],
+    "courtyard": [
+      40.8,
+      66.0,
+      65.52,
+      70.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "RN3",
+    "value": "RKC4BD103J",
+    "x_mm": 91,
+    "y_mm": 18,
+    "preferred_xy_mm": [
+      91,
+      18
+    ],
+    "courtyard": [
+      88.8,
+      16.0,
+      103.36,
+      20.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "RN4",
+    "value": "RKC4BD103J",
+    "x_mm": 91,
+    "y_mm": 26,
+    "preferred_xy_mm": [
+      91,
+      26
+    ],
+    "courtyard": [
+      88.8,
+      24.0,
+      103.36,
+      28.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "RN5",
+    "value": "RKC4BD103J",
+    "x_mm": 125,
+    "y_mm": 60,
+    "preferred_xy_mm": [
+      125,
+      60
+    ],
+    "courtyard": [
+      122.8,
+      58.0,
+      137.36,
+      62.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R5",
+    "value": "10k",
+    "x_mm": 72,
+    "y_mm": 40,
+    "preferred_xy_mm": [
+      72,
+      40
+    ],
+    "courtyard": [
+      70.7,
+      38.4,
+      76.5,
+      41.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R6",
+    "value": "47",
+    "x_mm": 36,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      36,
+      106
+    ],
+    "courtyard": [
+      34.7,
+      104.4,
+      40.5,
+      107.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R7",
+    "value": "47",
+    "x_mm": 36,
+    "y_mm": 112,
+    "preferred_xy_mm": [
+      36,
+      112
+    ],
+    "courtyard": [
+      34.7,
+      110.4,
+      40.5,
+      113.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R8",
+    "value": "47",
+    "x_mm": 36,
+    "y_mm": 118,
+    "preferred_xy_mm": [
+      36,
+      118
+    ],
+    "courtyard": [
+      34.7,
+      116.4,
+      40.5,
+      119.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C5",
+    "value": "2.2u X7R 10V",
+    "x_mm": 8,
+    "y_mm": 109,
+    "preferred_xy_mm": [
+      8,
+      109
+    ],
+    "courtyard": [
+      6.4,
+      107.7,
+      9.6,
+      113.5
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C6",
+    "value": "2.2u X7R 10V",
+    "x_mm": 5,
+    "y_mm": 117,
+    "preferred_xy_mm": [
+      7,
+      117
+    ],
+    "courtyard": [
+      3.7,
+      115.4,
+      9.5,
+      118.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C7",
+    "value": "1u X7R 10V",
+    "x_mm": 42,
+    "y_mm": 112,
+    "preferred_xy_mm": [
+      32,
+      112
+    ],
+    "courtyard": [
+      40.7,
+      110.4,
+      46.5,
+      113.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C8",
+    "value": "100n",
+    "x_mm": 5,
+    "y_mm": 105,
+    "preferred_xy_mm": [
+      7,
+      105
+    ],
+    "courtyard": [
+      3.7,
+      103.4,
+      9.5,
+      106.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C9",
+    "value": "100n",
+    "x_mm": 5,
+    "y_mm": 124,
+    "preferred_xy_mm": [
+      7,
+      124
+    ],
+    "courtyard": [
+      3.7,
+      122.4,
+      9.5,
+      125.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C10",
+    "value": "100n",
+    "x_mm": 32,
+    "y_mm": 102,
+    "preferred_xy_mm": [
+      32,
+      105
+    ],
+    "courtyard": [
+      30.7,
+      100.4,
+      36.5,
+      103.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C11",
+    "value": "10u 10V",
+    "x_mm": 15,
+    "y_mm": 99,
+    "preferred_xy_mm": [
+      7,
+      99
+    ],
+    "courtyard": [
+      13.0,
+      96.0,
+      19.0,
+      102.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C12",
+    "value": "10u 10V",
+    "x_mm": 6,
+    "y_mm": 130,
+    "preferred_xy_mm": [
+      7,
+      130
+    ],
+    "courtyard": [
+      4.0,
+      127.0,
+      10.0,
+      133.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C13",
+    "value": "10u 10V",
+    "x_mm": 32,
+    "y_mm": 123,
+    "preferred_xy_mm": [
+      32,
+      120
+    ],
+    "courtyard": [
+      30.0,
+      120.0,
+      36.0,
+      126.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R9",
+    "value": "470",
+    "x_mm": 48,
+    "y_mm": 100,
+    "preferred_xy_mm": [
+      48,
+      100
+    ],
+    "courtyard": [
+      46.7,
+      98.4,
+      52.5,
+      101.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C14",
+    "value": "2.2n C0G",
+    "x_mm": 59,
+    "y_mm": 100,
+    "preferred_xy_mm": [
+      59,
+      100
+    ],
+    "courtyard": [
+      57.7,
+      98.4,
+      63.5,
+      101.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R10",
+    "value": "470",
+    "x_mm": 46,
+    "y_mm": 116,
+    "preferred_xy_mm": [
+      48,
+      115
+    ],
+    "courtyard": [
+      44.7,
+      114.4,
+      50.5,
+      117.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C15",
+    "value": "2.2n C0G",
+    "x_mm": 60,
+    "y_mm": 115,
+    "preferred_xy_mm": [
+      59,
+      115
+    ],
+    "courtyard": [
+      58.7,
+      113.4,
+      64.5,
+      116.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R11",
+    "value": "10k 1%",
+    "x_mm": 66,
+    "y_mm": 98,
+    "preferred_xy_mm": [
+      66,
+      98
+    ],
+    "courtyard": [
+      64.7,
+      96.4,
+      70.5,
+      99.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R12",
+    "value": "10k 1%",
+    "x_mm": 66,
+    "y_mm": 93,
+    "preferred_xy_mm": [
+      66,
+      93
+    ],
+    "courtyard": [
+      64.7,
+      91.4,
+      70.5,
+      94.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C16",
+    "value": "10u 10V",
+    "x_mm": 84,
+    "y_mm": 99,
+    "preferred_xy_mm": [
+      84,
+      99
+    ],
+    "courtyard": [
+      82.0,
+      96.0,
+      88.0,
+      102.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C17",
+    "value": "100n",
+    "x_mm": 84,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      84,
+      106
+    ],
+    "courtyard": [
+      82.7,
+      104.4,
+      88.5,
+      107.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C18",
+    "value": "100n",
+    "x_mm": 113,
+    "y_mm": 106,
+    "preferred_xy_mm": [
+      113,
+      106
+    ],
+    "courtyard": [
+      111.7,
+      104.4,
+      117.5,
+      107.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C19",
+    "value": "4.7u BP 10V",
+    "x_mm": 67,
+    "y_mm": 88,
+    "preferred_xy_mm": [
+      67,
+      88
+    ],
+    "courtyard": [
+      65.0,
+      85.0,
+      71.0,
+      91.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C20",
+    "value": "4.7u BP 10V",
+    "x_mm": 82,
+    "y_mm": 88,
+    "preferred_xy_mm": [
+      82,
+      88
+    ],
+    "courtyard": [
+      80.0,
+      85.0,
+      86.0,
+      91.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R13",
+    "value": "100k 1%",
+    "x_mm": 98,
+    "y_mm": 88,
+    "preferred_xy_mm": [
+      98,
+      88
+    ],
+    "courtyard": [
+      96.7,
+      86.4,
+      102.5,
+      89.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R14",
+    "value": "100k 1%",
+    "x_mm": 113,
+    "y_mm": 88,
+    "preferred_xy_mm": [
+      113,
+      88
+    ],
+    "courtyard": [
+      111.7,
+      86.4,
+      117.5,
+      89.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R15",
+    "value": "22k 1%",
+    "x_mm": 98,
+    "y_mm": 94,
+    "preferred_xy_mm": [
+      98,
+      94
+    ],
+    "courtyard": [
+      96.7,
+      92.4,
+      102.5,
+      95.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C21",
+    "value": "47p",
+    "x_mm": 113,
+    "y_mm": 94,
+    "preferred_xy_mm": [
+      113,
+      94
+    ],
+    "courtyard": [
+      111.7,
+      92.4,
+      117.5,
+      95.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C22",
+    "value": "4.7u BP 10V",
+    "x_mm": 67,
+    "y_mm": 124,
+    "preferred_xy_mm": [
+      67,
+      124
+    ],
+    "courtyard": [
+      65.0,
+      121.0,
+      71.0,
+      127.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C23",
+    "value": "4.7u BP 10V",
+    "x_mm": 82,
+    "y_mm": 124,
+    "preferred_xy_mm": [
+      82,
+      124
+    ],
+    "courtyard": [
+      80.0,
+      121.0,
+      86.0,
+      127.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R16",
+    "value": "100k 1%",
+    "x_mm": 98,
+    "y_mm": 124,
+    "preferred_xy_mm": [
+      98,
+      124
+    ],
+    "courtyard": [
+      96.7,
+      122.4,
+      102.5,
+      125.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R17",
+    "value": "100k 1%",
+    "x_mm": 113,
+    "y_mm": 124,
+    "preferred_xy_mm": [
+      113,
+      124
+    ],
+    "courtyard": [
+      111.7,
+      122.4,
+      117.5,
+      125.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R18",
+    "value": "22k 1%",
+    "x_mm": 98,
+    "y_mm": 130,
+    "preferred_xy_mm": [
+      98,
+      130
+    ],
+    "courtyard": [
+      96.7,
+      128.4,
+      102.5,
+      131.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C24",
+    "value": "47p",
+    "x_mm": 113,
+    "y_mm": 130,
+    "preferred_xy_mm": [
+      113,
+      130
+    ],
+    "courtyard": [
+      111.7,
+      128.4,
+      117.5,
+      131.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C25",
+    "value": "100n",
+    "x_mm": 145,
+    "y_mm": 105,
+    "preferred_xy_mm": [
+      145,
+      105
+    ],
+    "courtyard": [
+      143.7,
+      103.4,
+      149.5,
+      106.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "Q1",
+    "value": "MMBT3904 / B1 E2 C3",
+    "x_mm": 126,
+    "y_mm": 90,
+    "preferred_xy_mm": [
+      126,
+      90
+    ],
+    "courtyard": [
+      123.7,
+      88.0,
+      128.3,
+      92.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R19",
+    "value": "10k",
+    "x_mm": 121,
+    "y_mm": 81,
+    "preferred_xy_mm": [
+      121,
+      81
+    ],
+    "courtyard": [
+      119.7,
+      79.4,
+      125.5,
+      82.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R20",
+    "value": "100k",
+    "x_mm": 121,
+    "y_mm": 76,
+    "preferred_xy_mm": [
+      121,
+      76
+    ],
+    "courtyard": [
+      119.7,
+      74.4,
+      125.5,
+      77.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R21",
+    "value": "10k",
+    "x_mm": 139,
+    "y_mm": 81,
+    "preferred_xy_mm": [
+      139,
+      81
+    ],
+    "courtyard": [
+      137.7,
+      79.4,
+      143.5,
+      82.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C26",
+    "value": "4.7u BP 10V",
+    "x_mm": 128,
+    "y_mm": 133,
+    "preferred_xy_mm": [
+      128,
+      133
+    ],
+    "courtyard": [
+      126.0,
+      130.0,
+      132.0,
+      136.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R22",
+    "value": "100k",
+    "x_mm": 128,
+    "y_mm": 139,
+    "preferred_xy_mm": [
+      128,
+      139
+    ],
+    "courtyard": [
+      126.7,
+      137.4,
+      132.5,
+      140.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R23",
+    "value": "100",
+    "x_mm": 128,
+    "y_mm": 151,
+    "preferred_xy_mm": [
+      128,
+      151
+    ],
+    "courtyard": [
+      126.7,
+      149.4,
+      132.5,
+      152.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "C27",
+    "value": "4.7u BP 10V",
+    "x_mm": 146,
+    "y_mm": 133,
+    "preferred_xy_mm": [
+      146,
+      133
+    ],
+    "courtyard": [
+      144.0,
+      130.0,
+      150.0,
+      136.0
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R24",
+    "value": "100k",
+    "x_mm": 146,
+    "y_mm": 139,
+    "preferred_xy_mm": [
+      146,
+      139
+    ],
+    "courtyard": [
+      144.7,
+      137.4,
+      150.5,
+      140.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "R25",
+    "value": "100",
+    "x_mm": 146,
+    "y_mm": 151,
+    "preferred_xy_mm": [
+      146,
+      151
+    ],
+    "courtyard": [
+      144.7,
+      149.4,
+      150.5,
+      152.6
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP1",
+    "value": "+5V",
+    "x_mm": 40,
+    "y_mm": 145,
+    "preferred_xy_mm": [
+      38,
+      145
+    ],
+    "courtyard": [
+      38.3,
+      143.3,
+      41.7,
+      146.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP2",
+    "value": "+3V3",
+    "x_mm": 48,
+    "y_mm": 145,
+    "preferred_xy_mm": [
+      48,
+      145
+    ],
+    "courtyard": [
+      46.3,
+      143.3,
+      49.7,
+      146.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP3",
+    "value": "GND",
+    "x_mm": 58,
+    "y_mm": 145,
+    "preferred_xy_mm": [
+      58,
+      145
+    ],
+    "courtyard": [
+      56.3,
+      143.3,
+      59.7,
+      146.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP4",
+    "value": "ARM",
+    "x_mm": 86,
+    "y_mm": 40,
+    "preferred_xy_mm": [
+      86,
+      40
+    ],
+    "courtyard": [
+      84.3,
+      38.3,
+      87.7,
+      41.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP5",
+    "value": "RESET_N",
+    "x_mm": 94,
+    "y_mm": 40,
+    "preferred_xy_mm": [
+      94,
+      40
+    ],
+    "courtyard": [
+      92.3,
+      38.3,
+      95.7,
+      41.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP6",
+    "value": "AUX_SDA",
+    "x_mm": 55,
+    "y_mm": 55,
+    "preferred_xy_mm": [
+      55,
+      55
+    ],
+    "courtyard": [
+      53.3,
+      53.3,
+      56.7,
+      56.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP7",
+    "value": "AUX_SCL",
+    "x_mm": 55,
+    "y_mm": 61,
+    "preferred_xy_mm": [
+      55,
+      61
+    ],
+    "courtyard": [
+      53.3,
+      59.3,
+      56.7,
+      62.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP8",
+    "value": "DAC_L",
+    "x_mm": 40,
+    "y_mm": 130,
+    "preferred_xy_mm": [
+      40,
+      130
+    ],
+    "courtyard": [
+      38.3,
+      128.3,
+      41.7,
+      131.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP9",
+    "value": "DAC_R",
+    "x_mm": 50,
+    "y_mm": 130,
+    "preferred_xy_mm": [
+      50,
+      130
+    ],
+    "courtyard": [
+      48.3,
+      128.3,
+      51.7,
+      131.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP10",
+    "value": "VREF",
+    "x_mm": 87,
+    "y_mm": 115,
+    "preferred_xy_mm": [
+      87,
+      115
+    ],
+    "courtyard": [
+      85.3,
+      113.3,
+      88.7,
+      116.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP11",
+    "value": "MIX_L",
+    "x_mm": 121,
+    "y_mm": 116,
+    "preferred_xy_mm": [
+      121,
+      116
+    ],
+    "courtyard": [
+      119.3,
+      114.3,
+      122.7,
+      117.7
+    ],
+    "side": "top"
+  },
+  {
+    "ref": "TP12",
+    "value": "MIX_R",
+    "x_mm": 121,
+    "y_mm": 121,
+    "preferred_xy_mm": [
+      121,
+      121
+    ],
+    "courtyard": [
+      119.3,
+      119.3,
+      122.7,
+      122.7
+    ],
+    "side": "top"
+  }
+]

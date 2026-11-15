@@ -1,0 +1,19 @@
+PASS firmware/src/boot.py
+PASS firmware/src/main.py
+PASS firmware/src/ym2203_audio.py
+PASS firmware/src/ym2203_fw.py
+PASS firmware/src/ym2203_hw.py
+PASS firmware/src/ym2203_midi.py
+PASS firmware/src/ym2203_pitch.py
+PASS firmware/src/ym2203_usb.py
+PASS firmware/host/endurance.py
+PASS firmware/host/example.py
+PASS firmware/host/midi_handover.py
+PASS firmware/host/recovery.py
+PASS firmware/host/ym2203_revc.py
+PASS diagnostics/rev_c_bus_check.py
+PASS diagnostics/rev_c_fm_capture.py
+PASS diagnostics/rev_c_dac_check.py
+PASS diagnostics/rev_c_fm_live.py
+PASS diagnostics/rev_c_i2c_target_check.py
+PASS: official mpy-cross1.29.0 armv7m compilation;18 distributed Python sources;no on-device execution

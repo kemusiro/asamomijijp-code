@@ -1,0 +1,10 @@
+{
+  "description": "Unmodified commissioning runtime helpers; copy only these five into target/lib",
+  "sha256": {
+    "rev_c_bus_check.py": "45b293c442336f56dce48c9bc146a9e5802b9cd71aaa6fb9b809ba4487581351",
+    "rev_c_fm_capture.py": "6fe940a7b946b12751b0fa55f6058ccf49a0a00eee403a3f048974c884557f2d",
+    "rev_c_dac_check.py": "8bdc1a50a3d2f57005ad22a63a7326f46e6dfa82af594bca0a51be53c7a8fded",
+    "rev_c_fm_live.py": "13f63d8ad752c385d0040f247c2ed5a8c3c7cbd82f9b6d09676328bc40983bdb",
+    "rev_c_i2c_target_check.py": "b21e99138b685bd08d0169ad423b4d9029c3ad2849865f86beacdb4956808305"
+  }
+}

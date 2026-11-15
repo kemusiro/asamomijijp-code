@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-13",
+  "scope": "Rev C assembly/I2C feasibility commissioning; historical diagnostic firmware",
+  "source": "User supplied full HOST/Rev C logs and listening report",
+  "passed": true,
+  "remaining_commissioning_tests": 0,
+  "audio": {
+    "left_right": "normal",
+    "distortion": false,
+    "unplanned_dropouts": false,
+    "clicks": "not explicitly reported for final test"
+  },
+  "observations": [
+    "STOP at first FM rest then 4 seconds quiet",
+    "same stored score replayed from beginning",
+    "SSG rest traffic pause triggered all-voice lease mute; 4 seconds quiet",
+    "HOST PASS / SAFE / DONE"
+  ],
+  "target": {
+    "blocks": 2526,
+    "peak": 2976,
+    "max_conversion_us": 1118,
+    "deadline_misses": 0,
+    "max_poll_us": 5063,
+    "max_idle_poll_us": 951,
+    "ack": 88,
+    "lease_expirations": 1,
+    "received": 390,
+    "sent": 898,
+    "stale_flushes": 0
+  },
+  "queue": {
+    "runs": 3,
+    "completed": 1,
+    "aborted": 2,
+    "events": 17,
+    "pitch_writes": 22,
+    "partial_cancels": 0,
+    "max_late_ms": 52,
+    "max_write_us": 4040
+  },
+  "six": {
+    "jobs": 6,
+    "writes": 32,
+    "pending": -1,
+    "applied": 0
+  },
+  "rest": {
+    "tones": 11,
+    "rests": 6,
+    "rest_key_offs": 6,
+    "resume_key_ons": 4,
+    "pair_step": 0
+  },
+  "host": {
+    "reads": 436,
+    "read_bytes": 3646,
+    "writes": 560,
+    "write_bytes": 1428
+  },
+  "transport_reconciliation": {
+    "received": "1428 - 1038 = 390",
+    "sent": "3646 - 2748 = 898"
+  },
+  "new_firmware_physical_validation": false
+}

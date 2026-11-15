@@ -1,0 +1,164 @@
+{
+  "version": "0.4.0-alpha.1",
+  "date": "2026-11-13",
+  "hardware_tested": false,
+  "scope": "I2C v2 WYM1 streaming from other Pico MicroPython,CRC/sequence/1024-event queue/target scheduling/lease/STOP;new hardware acceptance pending",
+  "accepted_audio_baseline": "0.3.0-alpha.7:one hardware full song atFM100percent passed,stored separately",
+  "checks": {
+    "native_tests": {
+      "passed": true,
+      "tests": 60,
+      "includes": [
+        "Actual C stream and actual Python host,full123137 events at100kHz model,exact values/order/CRC",
+        "Malformed packet/CRC/sequence,atomic batches,FULL,min prefill,SEAL integrity",
+        "STOP,lease,underflow,late write,duplicate PUSH/PLAY,ACK retry,sequence wrap",
+        "64-byte snapshot pinning,request overflow,real C SDK adapter with mock FIFO/FINISH-before-RX_FULL",
+        "Existing audio decode,qualification,PIO/DMA ownership and RCD1 regressions"
+      ]
+    },
+    "actual_MicroPython_host": {
+      "passed": true,
+      "result": {
+        "passed": true,
+        "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+        "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+        "events": 123137,
+        "period_ms": 298218,
+        "crc32": 2925077129,
+        "max_late_us": 5510,
+        "commands": 3869,
+        "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "register_value_order_exact": true
+      },
+      "runtime_profile": {
+        "runtime": "MicroPython v1.29.0",
+        "source_archive_sha256": "8072f6ad42c0e3bbfca88ed09bf8f1106ce207a39129af920f70081b8f2fe286",
+        "host": "macOS arm64 Unix",
+        "profile": "minimal variant with ROM level EXTRA_FEATURES;MICROPY_PY_THREAD=1;MICROPY_PY_BUILTINS_INPUT=0;MICROPY_DEBUG_PRINTERS=1",
+        "scope": "Validation-only native runtime;not the official RP2 binary or physical I2C/audio",
+        "host_scripts_mpy_cross": "v1.29.0,mpy6.3,Armv6m,compile passed"
+      }
+    },
+    "console": {
+      "passed": true,
+      "scope": "Modelled Web Serial,oldalpha1..7 plus0.4 identification,I2C ownership gating,explicit playback,CRC-checked bounded download"
+    },
+    "Arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.4.0-alpha.1"
+      },
+      "memory": {
+        "text_bytes": 55304,
+        "data_bytes": 0,
+        "bss_bytes": 463076
+      }
+    },
+    "package": {
+      "version": "0.4.0-alpha.1",
+      "ZIP_SHA256": "1f6e78c4f3ee4db4c5f658a64764dfae6a28b7af0d65022f6a258decef76f3dc",
+      "UF2_SHA256": "3db368d89422e38e3a42aae4da03825e11b1e37e9a104d063df911e4a2ab21ee",
+      "memory": {
+        "text_bytes": 55304,
+        "data_bytes": 0,
+        "bss_bytes": 463076
+      },
+      "embedded_asset": {
+        "events": 191,
+        "period_ms": 13000,
+        "clock_hz": 4000000,
+        "bytes": 1162,
+        "sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff",
+        "crc32": 3856599368,
+        "kind": "original synthetic FM/SSG scales and chord",
+        "event_bytes_preserved": true
+      },
+      "host_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129
+      },
+      "hardware_tested": false
+    },
+    "host_BIN_byte_exact": true,
+    "no_YsII_in_target_UF2": true,
+    "accepted_audio_PIO_DMA_I2S_bus_and_recorder_sources_preserved": true
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "3565d65542544b7291b8933e512bb6c8cb76afe0907dfc80480b774083ff34ad",
+    "I2C-YSII-README.txt": "71fecefb4eb755d19bbba596f557c08cf6415a4ecca2d910c95819aceb20d1c1",
+    "LICENSE-PICO-I2C-SLAVE.txt": "8e54440f1be53b85151b0e10a9710449fa321fe9f10a8f78716d8db062b682d0",
+    "README.md": "f2aa8561a0da9ce9625598bf31a1d699e843e3ae3efb8ccc6c131bd647587f5e",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "host/lib/ym2203_revc_stream.py": "62f852262756e9805305441ef564cfbbc8277eebb441b0df4c2ac22d080178f4",
+    "host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+    "pc/revc-console.html": "5fe0098863d2a4815f927d5ca4c17dc15cef2fb318db37ee1d45f1d390f30a73",
+    "pio/fm_rx.pio": "7a9fd602b94e0b938d25b6112906f0a50063b97cc0d0a95889ed317989cf4cd3",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "protocol-v2.md": "7ebfcc704f1b5dd5f1405eaf78b50901831e3586ce059a33687bac0dd3eb0cb8",
+    "src/audio.c": "2b33d9d8cc78d14b29c048b29d892e46ceb51f665fc9947d52180c39f4e7f3a3",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/i2c.c": "130063cc75f995a4945e4a050f583e234d010a352d009485c195cdf1dc9545ba",
+    "src/main.c": "67430363b13b30281b96c6208480ac4081df5a5b57d74027a5776469e323357f",
+    "src/revc.h": "1abbebe885615083c434c2832a09827e0ab008d9be0246e8d2ad66288b7ba191",
+    "src/stream.c": "47dcf00c74da1ef5ad6d8cc433dd47c10b447c4c477c40300e44f6ac2d844d7f",
+    "src/stream.h": "f7f7dcf8f70adbdcca277f0bad5a2138523fd631e8322785c805b8576de7a823",
+    "src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+    "src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "e2d52eb3d9f05bfac94523daeb0d471b800354b7f75c1a6ac4b4b69bba15e5c2",
+    "src/wym1.h": "2d2bb3dce631ea069d6f3b4d202511214da2adb3ff75061f8bac2684302290da",
+    "tests/rx_model.py": "54ef1b1af9c6799cb4a4dc802ce086db62ec0e6ab6ac541a7bfbb4d154f9bd57",
+    "tests/stream_bridge.c": "adc05e66828a0c59da770838cf13d634155e6673f5a584118431a9f4328adca9",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_i2c_adapter.py": "93ce9094f6eb0aafc04f1d3dc2ba4e39518586657fa25283b120efa0f8a226cf",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_rx_margin.py": "662b561e2b93a928c526d0811446de89e928f90309dcb90df95832ffa8afd789",
+    "tests/test_stream.py": "08be632049362674984445d029fe4b3f54ba584a8ee706ea6696decb6d401da5",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "902887fb83f28c66c38bca05b5e2fadf1f4695943a2adc549cce1bca426d1174",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "8723c47e73335f8e9c816e7052b9c0953be1886edb6f4d68d685aed7505a15b9",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_host_micropython.py": "5dbb10868df88bc0273e5c0a86e1fe94a1ab845cf9db9c973b550a96903e2a7e",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "cef314db5744faba0553a5049cd78d081ba7e38efacc3196e6d84902f9cfaec7"
+  },
+  "source_sha256_scope": "Packaged0.4 alpha1 snapshot;verification metadata is separate",
+  "not_verified": [
+    "Electrical I2C100kHz and actual Pico MicroPython throughput",
+    "I2C and audio concurrent full-song hardware run",
+    "Physical STOP/lease recovery in new C I2C transport",
+    "USB-MIDI C implementation",
+    "400kHz,multiple controllers,repeated-start API and long-term reliability"
+  ]
+}

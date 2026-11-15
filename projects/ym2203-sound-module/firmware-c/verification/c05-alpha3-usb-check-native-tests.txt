@@ -1,0 +1,10 @@
+................................................................................................
+----------------------------------------------------------------------
+Ran 96 tests in 7.447s
+
+OK
+FULL SCORE simulated service_us=20 events=123137 max_late_us=1980 period_us=298218020
+FULL SCORE simulated service_us=250 events=123137 max_late_us=24750 period_us=298218250
+FULL SCORE simulated service_us=400 events=123137 max_late_us=39600 period_us=298218400
+CAPTURE synthetic timing/raw model:prefix events=13982,frames=111250;real WYM1 order and standalone export verified
+I2C FULL SCORE MODEL:100kHz service50us events=123137 commands=3869 max_late_us=5510 period_ms=298218 CRC32=ae592289;not electrical hardware

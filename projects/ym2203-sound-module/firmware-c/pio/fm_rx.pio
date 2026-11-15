@@ -1,0 +1,26 @@
+; SPDX-License-Identifier: MIT
+; Qualify both CLK levels before accepting an edge;JMP pin is GP17.
+; WAIT[1] plus the later JMP samples the level at separate points2ticks apart.
+; Reject brief excursions instead of allowing an extra bit into the24-bit word.
+; IRQ0 is a polled,sticky rejection indication,not a CPU interrupt or pulse count.
+; Same SH framing,24 data bits,32MHz and right-shift/autopush format.
+.program fm_rx
+.wrap_target
+    wait 1 gpio 18
+    wait 0 gpio 18
+    set x, 23
+bits:
+    wait 0 gpio 17 [1]
+    jmp pin low_rejected
+high:
+    wait 1 gpio 17 [1]
+    jmp pin sample
+    irq 0
+    jmp high
+low_rejected:
+    irq 0
+    jmp bits
+sample:
+    in pins, 1
+    jmp x-- bits
+.wrap

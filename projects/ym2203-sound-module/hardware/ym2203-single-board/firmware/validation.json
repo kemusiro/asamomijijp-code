@@ -1,0 +1,281 @@
+{
+  "version": "0.2.0-alpha.1",
+  "date": "2026-11-13",
+  "new_firmware_hardware_tested": true,
+  "usb_midi_implemented": true,
+  "checks": {
+    "cpython": {
+      "tests": 55,
+      "passed": true,
+      "includes": [
+        "CRC and sequence errors/duplicates",
+        "atomic validation/full128-event ring",
+        "lease and late KEEP",
+        "STOP/write preemption",
+        "seal/refill/drain",
+        "real host/engine CRC integration,300 streamed events and ACK wrap",
+        "source register order",
+        "application interrupt/OOM cleanup",
+        "PCM range/invalid exponent",
+        "7,680,000 real deadline/release calls representing24h virtual audio",
+        "independent oscillator drift model",
+        "I2C status burst ordering and bounded RX",
+        "full demo with5/10/20/30ms simulated I2C stretching and4.4ms YM write work;exact register order",
+        "committed queue progress during external I2C with one-write budget",
+        "STOP/lease/genuine LATE still stop during active external I2C",
+        "180000ms/726-event source with144 melody rests and held chord",
+        "actual endurance.main with5/30ms I2C stretch;30s progress,ACK wrap,normal end and STOP",
+        "HOST interruption/transfer failure stops without replay or success banner",
+        "actual recovery.main with5/30ms I2C stretch;STOP/read-only4s/replay/1800ms no-traffic lease/rebind/read-only4s/recovery",
+        "corrupt reattached identity/expiry/sequence cannot replay",
+        "HOST interruption while pins released rebinds and stops",
+        "CDC prefix preservation,MIDI IAD/jacks/endpoint descriptor lengths",
+        "six MIDI channels,velocity0,stale note offs,CC120/123,USB reset/SOF timeout",
+        "single64-byte receive buffer,one event and shared one-YM-write budget per poll",
+        "I2C prefill/session vs MIDI ownership,I2C STOP preemption",
+        "BUSY replacement timeout cannot be reset by new MIDI notes",
+        "MIDI across ticks_ms wrap;long held notes across SOF wraps",
+        "actual boot/main ordering,disable-file recovery and application MIDI cleanup",
+        "actual MIDI handover HOST at5/30ms I2C stretch;initial attachment without STOP,BUSY rejection,read-only quiet,I2C six-voice chord,explicit MIDI recovery",
+        "missing recovery times out without replay/success;wrong identity sends no commands;missing initial MIDI fails closed"
+      ]
+    },
+    "legacy_diagnostics": {
+      "tests": 298,
+      "passed": true,
+      "note": "Unchanged diagnostic sources;298-test evidence retained from alpha.1 verification"
+    },
+    "micropython_wasm": {
+      "version": "1.28.0",
+      "passed": true,
+      "hardware_time_and_viper": "modelled/scalar",
+      "stream_events": 300,
+      "heap_probe_bytes": 768000,
+      "note": "Nonzero allocations in this WASM runtime;not an RP2350 allocation measurement",
+      "includes_stretched_demo_regression": true,
+      "endurance_main": {
+        "events": 726,
+        "score_ms": 180000,
+        "status": "passed",
+        "hardware_and_time": "simulated"
+      },
+      "recovery_main": {
+        "status": "passed",
+        "scope": "all4 stages and final stopped state,including exactly1 lease expiry",
+        "hardware_and_time": "simulated"
+      },
+      "midi_usb": {
+        "status": "passed",
+        "scope": "actual modules with six-voice packet,long held notes,SOF loss/resume and I2C STOP",
+        "hardware_USB_GPIO_time": "simulated;USBDevice physical enumeration not exercised"
+      },
+      "midi_handover_main": {
+        "status": "passed",
+        "scope": "actual host with shared I2C/MIDI engine,USB input model,30-second I2C chord and explicit recovery",
+        "hardware_USB_GPIO_time": "simulated;separate combined physical procedure subsequently accepted by user"
+      }
+    },
+    "micropython_unix": {
+      "version": "1.29.0",
+      "probe": "minimal Unix build with array/gc enabled;time and board are models",
+      "accepted_frames": 1000,
+      "allocated_bytes": 0,
+      "passed": true,
+      "scope": "CRC,Engine.accept,queue,register callback,status publication;Window/physical GPIO/PIO/USB not measured",
+      "note": "Unchanged alpha.2 target sources;zero-allocation evidence retained from alpha.2 verification"
+    },
+    "arm_compile": {
+      "compiler": "official mpy-cross1.29.0 emitting mpy6.3",
+      "target": "armv7m",
+      "distributed_python_sources": 18,
+      "passed": true,
+      "note": "Viper is compiled;no on-device execution"
+    },
+    "micropython_unix_midi": {
+      "version": "1.29.0",
+      "status": "passed",
+      "note_pairs": 100,
+      "voices": 6,
+      "polls": 7000,
+      "allocated_bytes": 0,
+      "scope": "unmodified MIDI/USB Python modules;device/register/time models;C USB stack/IRQ timing not measured"
+    },
+    "browser_midi_tool": {
+      "status": "passed",
+      "runtime": "Chromium headless through127.0.0.1:8765",
+      "scope": "output selection,scale/hold/panic,six solo/chord,background hold,2-minute expiry,two-family probe,normal-mode cancellation and page-exit cleanup",
+      "MIDI_output": "simulated;no physical MIDI device/permission test"
+    },
+    "midi_pitch_generation": {
+      "status": "passed",
+      "clock_hz": 4000000,
+      "entries": 128
+    }
+  },
+  "physical_limits": [
+    "I2C alpha.2 acceptance completed;0.2 USB-MIDI basic recognition,FM/SSG scales,all-sound-off,L/R and Thonny confirmed by user",
+    "USB-MIDI six-voice and I2C handover accepted by user;full HOST log not supplied;OS not specified;physical USB disconnect,latency and worst-case USB IRQ/audio timing unmeasured",
+    "HOST metadata cannot prove PC probe was sent/received;user must confirm browser transmission and unchanged audible I2C chord",
+    "No24-hour physical endurance or USB ground-loop isolation validation",
+    "Fixed-level monophonic MIDI channels;no GM/velocity dynamics/program/bend/SysEx or MIDI TX",
+    "Initial priming and one-register budget introduce latency;not a low-latency guarantee"
+  ],
+  "source_sha256": {
+    "build.py": "7022285a05fa268b1777d3d03053195f621c6ed950234e1f9204fe1031f40ae6",
+    "generate-midi-pitches.py": "18f9d2ae3a3f17db60d0d79a0794d8426d91d4c81a51e0593bc08d162939f5d8",
+    "host/endurance.py": "9ac01c606bc0cf3659697bafbd0afa4b4ece16901cea6cf954b2fa2c3b1e3248",
+    "host/example.py": "f690038d8e0c221353d00af579a496e54003b5fcb0b06cf6bd561902fbc9ed72",
+    "host/midi_handover.py": "f84fab011e91194c638c5d629764d36598254634129a31e79b10e1125f1c356c",
+    "host/recovery.py": "dac1040e44785f3db9462ac221b182059787ce002d5ffb6b307835ab80b0bb6e",
+    "host/ym2203_revc.py": "fc367da9d4a1916ce8f451116b51a18e6283bc7f852e304f8a646984a9cb05a7",
+    "pc/usb-midi-test.html": "5f43c0ef691af24f979b75f04cbacaa465f0945fba898e60cb1dfc14a7f0385d",
+    "src/boot.py": "9d01bbd7ca6f4f574fdca4193ab1aabcd6e04ed820dcd1f1caa843322a7a4b18",
+    "src/main.py": "fc5eecd08f6089b767ab07be19414b108baf2cd3bf302b4cb499d8ba9e13d5db",
+    "src/ym2203_audio.py": "ea5b8ce3354dea62e552c995f9bf60134355ac5f4e7f2e3b4893ff11bb6881bd",
+    "src/ym2203_fw.py": "397ec8fc3a22e53eca50a448802d7e7dc301c97c0885a245141a9c5166921315",
+    "src/ym2203_hw.py": "a0fa1a7d7237dd4ac099dd64aed9f9f18fd65c690ccad1e99d6516737dc5ec91",
+    "src/ym2203_midi.py": "bcf25a1e99184e788a8d3eb708b98aebe6704b8fc027376478e3b3c2acc4047d",
+    "src/ym2203_pitch.py": "d713e216198203fb7e065e235ad3d94989aa565bb27f8756c734fe45b6364b4e",
+    "src/ym2203_usb.py": "1b1ea15b04001365bc098e51423d5e085e6aebaa34041386a96677a23bffd1b4",
+    "tests/micro_fixture.py": "6852a56762de560cc95d3a0d198d48889e35be03331e0be4cb64fae8824a88fc",
+    "tests/test_audio_hardware.py": "1799bb463e5003e7a600b97e46c2aa7b6ede26b8bb27a8a5e67fff7dd24631da",
+    "tests/test_endurance.py": "aabc9fdb263924e6d3f574e6293fb25c433cc8095faad0a93eca157d45de2fd3",
+    "tests/test_firmware.py": "141f739d94abb4a0a247954d7969221d490612f6dcc7ffefd964ace18d750ac0",
+    "tests/test_midi.py": "c86cee079e8dec34fe8d06c0511aadb167a1f42ffa239c7f0bbef680efe05b0f",
+    "tests/test_midi_handover.py": "b6509994fc1b099254b4717d47536d6d39f6bd13fb249a7c0c4b229f2bad32b3",
+    "tests/test_recovery.py": "0bebb6ee30289f3071b775f20dff2f82b129be2bf1cd1b302f04106980b6c850",
+    "verify-heap.py": "2ff19b2e09aa7d98c2e3e7ce088f799e868bd7edc77d1e50e481a55cd3f6f9d0",
+    "verify-micropython.mjs": "d4cdb7a92585fc441ec1ec16c616d2093e1b596f6eb25e85852639575511eb07",
+    "verify-midi-heap.py": "47e58b51b6f5cfbc7f72d40b7d8d512ed6c48869dcc3d98048203bb3623d6ecd",
+    "verify-midi-ui.mjs": "897fb8af60a7536e6bf8a90aa88ae334119fa12d17696563062670cf8fdf48da"
+  },
+  "evidence_sha256": {
+    "arm-compile.txt": "696be14472f9758c36513926a44af73f5f87d54a39c0f513e0be60ffef5d9b28",
+    "diagnostic-regression.txt": "f846427437698d7b230a122064e83bfd08f1e70f18b61336d10599da1252d530",
+    "micropython-unix-heap.txt": "32985a9eabca9ed63464f9895f6ba3123bdc8a2015536eae5a5947c37122cb06",
+    "micropython-wasm.txt": "b71ca00c9c3b3dbc1fb2c9953bf4c176a4c60e79b4391be68e8e1f0210babd92",
+    "midi-browser-ui.txt": "4cf7cad1443c0b109bd6b0223c19f2278d4e2d36378ce95a4ba5d3832bd2eee2",
+    "midi-pitch-tables.txt": "c0ce6fd6ae0be75ac00dc8ca6d6daad8063cb7af76fce8639dc5d851248a001f",
+    "midi-unix-heap.txt": "0514fd5065fbdec1df723a371ded94923c9d4a4d33daf4b19da04b775b118139",
+    "regression-before.txt": "d27c3af72595c10e394a8268c5577988ee17afebaeba6038ef0cdecc0bc7d2c0",
+    "unit-tests.txt": "6dd12494a1c34befae1c98b8c4210a090055802e01a413111291760c9a80b0f8"
+  },
+  "bugfix": {
+    "reported_version": "0.1.0-alpha.1",
+    "host_error": "Firmware rejected request:code7",
+    "target_report": "continued running until Ctrl+C;SAFE then KeyboardInterrupt",
+    "cause": "Engine.poll returned while external I2C was active,starving already committed YM events",
+    "reproduced_before_fix": true,
+    "old_source": "exact alpha.1 ZIP payload",
+    "before": "code7 reproduced in4 latency profiles;busy-bus queue did not progress",
+    "after": "same full host demo completes with exact event order in all4 profiles",
+    "runtime_changes": [
+      "target/lib/ym2203_fw.py"
+    ],
+    "unchanged": [
+      "I2C wire format and host driver",
+      "GPIO/PIO/DMA/I2S/FM conversion",
+      "100ms lateness bound and1s lease",
+      "one nonblocking YM register write per poll"
+    ],
+    "fixed_version_hardware_confirmed": true,
+    "hardware_confirmation_scope": "User-reported alpha.2 basic example,3-minute endurance and final STOP/reconnect acceptance completed"
+  },
+  "hardware_validation": {
+    "date": "2026-11-13",
+    "version": "0.1.0-alpha.2",
+    "source": "User report in chat;full runtime counters/logs not supplied for this run",
+    "basic_demo": {
+      "status": "passed",
+      "repetitions": 2,
+      "host_errors": false,
+      "melody_rests": "confirmed",
+      "ssg_accompaniment": "confirmed",
+      "silence_after_end": "confirmed",
+      "left_and_right": "normal",
+      "distortion": false,
+      "unplanned_dropouts": false,
+      "deadline_misses": "not reported;not inferred from listening"
+    },
+    "stream_3min": {
+      "status": "passed",
+      "program": "host/endurance.py",
+      "score_duration_ms": 180000,
+      "events": 726,
+      "queue_capacity": 128,
+      "source": "User report in chat;full runtime counters/logs not supplied",
+      "melody_rests": "confirmed",
+      "ssg_accompaniment": "confirmed",
+      "silence_after_end": "confirmed",
+      "left_and_right": "normal",
+      "distortion": false,
+      "unplanned_dropouts": false,
+      "host_pass": true,
+      "done": true,
+      "deadline_misses": "not reported;not inferred from listening"
+    },
+    "remaining_acceptance_runs": 0,
+    "usb_midi": {
+      "version": "0.2.0-alpha.1",
+      "status": "basic recognition/playback/CDC and six-voice/I2C handover accepted on user hardware",
+      "scope": "CDC+USB-MIDI1.0,six monophonic channels,I2C/MIDI ownership",
+      "basic_validation": {
+        "status": "passed",
+        "date": "2026-11-13",
+        "source": "User report in chat;full runtime counters/logs not supplied",
+        "platform": "not specified in report",
+        "recognized_as_USB_MIDI": true,
+        "FM_scale": "confirmed",
+        "SSG_scale": "confirmed",
+        "all_sounds_off": "confirmed",
+        "left_and_right": "normal",
+        "distortion": false,
+        "unplanned_dropouts": false,
+        "Thonny_connection": "confirmed"
+      },
+      "six_voice_i2c_handover": {
+        "status": "passed",
+        "host_program": "host/midi_handover.py",
+        "browser_tool": "pc/usb-midi-test.html",
+        "scope": "six solos/chord,MIDI-owned I2C BUSY,I2C STOP,I2C-owned MIDI input,explicit MIDI recovery",
+        "automatic_scope_limit": "HOST cannot observe whether browser probe messages arrived;user must confirm GUI transmission and unchanged sound",
+        "date": "2026-11-13",
+        "source": "User replied confirmation after the combined acceptance procedure;full HOST log and per-item measurements not supplied",
+        "confirmation": "User confirmed the instructed combined check",
+        "deadline_misses": "not reported;not inferred from confirmation",
+        "platform": "not specified in report"
+      },
+      "remaining_initial_acceptance_runs": 0,
+      "remaining_unvalidated_scope": [
+        "physical USB disconnect/reconnect and cold power-up",
+        "measured audible latency and worst-case USB/IRQ timing",
+        "platform-specific macOS/Windows coverage",
+        "24-hour physical endurance"
+      ]
+    },
+    "stop_reconnect_acceptance": {
+      "status": "passed",
+      "program": "host/recovery.py",
+      "scope": [
+        "partial STOP and4s read-only quiet",
+        "full replay from first C",
+        "HOST GP0/GP1 release1800ms and lease mute",
+        "same-target rebind and4s read-only quiet",
+        "explicit STOP/reupload/PLAY recovery"
+      ],
+      "source": "User report in chat;full runtime logs/counters not supplied",
+      "partial_stop_and_4s_quiet": "confirmed",
+      "lease_mute": "confirmed",
+      "quiet_after_reattach_4s": "confirmed",
+      "full_replays_from_first_C": "confirmed",
+      "left_and_right": "normal",
+      "distortion": false,
+      "unplanned_dropouts": false,
+      "host_pass": true,
+      "done": true
+    },
+    "autostart_on_power_up": "not separately user-validated;not part of HOST-only acceptance script"
+  },
+  "new_firmware_hardware_tested_scope": "USB-MIDI basic recognition,FM/SSG scales,all-sound-off,L/R,Thonny and user acceptance of combined six-voice/I2C handover procedure;full HOST log not supplied",
+  "migration": "Verification runtime import changed to explicit pinned external loader;physical Python unchanged;see project migration-verification.json. Prior verification evidence retained."
+}

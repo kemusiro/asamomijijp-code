@@ -1,0 +1,24 @@
+{
+  "version": "0.5.0-alpha.3",
+  "date": "2026-11-14",
+  "status": "user_reported_six_solos_and_held_chord_passed",
+  "source": "User report after installing alpha3; no raw CDC log supplied in this message",
+  "hardware_tested": true,
+  "user_reported": {
+    "solo_voices": 6,
+    "chord_sustained": true,
+    "audio_ready": 1,
+    "fault": 0,
+    "left_right_normal": true,
+    "distortion": false,
+    "dropouts": false
+  },
+  "scope": "Basic MIDI solos followed by held chord after alpha3 audio restart fix",
+  "not_verified": [
+    "Raw target log and DMA register state",
+    "Integrated MIDI/I2C ownership handover",
+    "Physical USB disconnect, measured latency and long-term operation"
+  ],
+  "fix_record": "verification/c05-alpha3-audio-restart-fix.json",
+  "next_procedure": "MIDI-I2C-HANDOVER-README.txt"
+}

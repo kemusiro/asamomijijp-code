@@ -1,0 +1,21 @@
+{
+  "scope": "Synthetic receiver-clock fixture,not actual electrical capture",
+  "PIO_hz": 32000000,
+  "qualify_separation_ticks": 2,
+  "qualify_separation_ns": 62.5,
+  "source_word_synthetic": "87eb0000",
+  "glitch": {
+    "kind": "one2tick extra high excursion before first real rising clock",
+    "ticks": [
+      32,
+      34
+    ],
+    "duration_ns": 62.5
+  },
+  "alpha6_result": "0fd60000",
+  "matches_user_bad_word": true,
+  "alpha7_result": "87eb0000",
+  "normal_word_preserved": true,
+  "physical_cause_confirmed": false,
+  "limits": "Does not establish actual source word or CLK pulse on the board;SH glitches,longer excursions and analog edge characteristics are not modelled"
+}

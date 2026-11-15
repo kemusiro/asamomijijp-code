@@ -1,0 +1,51 @@
+{
+  "date": "2026-11-13",
+  "input_sha256": "9b60afa73d6d53ce26a3d076fc13e13b197c5f2ef8e82715fb4209011fe8d61b",
+  "format": {
+    "container": "AIFF-C",
+    "codec": "signed24bit big endian PCM",
+    "sample_rate": 44100,
+    "channels": 2,
+    "duration_seconds": 44.17596371882086
+  },
+  "user_report": "Onsets sound abrupt rather than smooth;heard during recording near file35s",
+  "signal": {
+    "peak_left": 0.42082202434539795,
+    "peak_right": 0.42053914070129395,
+    "peak_dbFS": -7.518031120300293,
+    "LR_correlation": 0.9999995394465077,
+    "full_scale_samples": 0
+  },
+  "timing_fit": {
+    "reference": "WebLab unchanged ymfm wrapper,pinned81aec25ccbb98f4873a255f7551ac4dadac59b4a,raw separatedFM/SSG planes at48kHz",
+    "method": "Physical mono mean resampled44100->48000;both references and actual bandpass80..8000Hz,20ms power average at1kHz;nonnegative independent FM/SSG power fit plus constant,source1..35s",
+    "grid_resolution_ms": 2,
+    "FM_recording_offset_seconds": 5.815999999999992,
+    "SSG_recording_offset_seconds": 5.769999999999992,
+    "estimated_FM_relative_lag_ms": 46.0,
+    "best_power_MSE": 3.408949452925497e-07,
+    "forced_zero_lag_best_MSE": 3.7791814115861297e-07,
+    "recording35s_approx_source_seconds": 29.230000000000008,
+    "limits": "Envelope/mix-model estimate,not a direct GPIO/edge measurement;does not prove the sole cause or malformed AR/DR/RR. Earlier raw FM snapshot31..33s was not exactly this recording35s excerpt."
+  },
+  "code_analysis": {
+    "alpha4_input_frames": 625,
+    "alpha4_prime_blocks": 4,
+    "nominal_FM_buffering_ms": 45,
+    "SSG_path": "direct analog mixer",
+    "alpha5_input_frames": 125,
+    "alpha5_output_frames": 108,
+    "alpha5_prime_blocks": 2,
+    "alpha5_nominal_FM_buffering_ms": 4.5,
+    "alpha5_hardware_verified": false,
+    "fixed_gain_PCM_preserved": true,
+    "register_values_timestamps_order": "unchanged"
+  },
+  "tools": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "recording_artifact": "local-test-data/ym2203/ysii-line-capture-20261113/recording.aifc"
+}

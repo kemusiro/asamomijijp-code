@@ -1,0 +1,30 @@
+{
+  "revision": "A-proposal",
+  "result": "pass",
+  "gpio_used": 26,
+  "gpio_available": 26,
+  "connector_contacts": 50,
+  "expander_io": 16,
+  "profiles_checked": 6,
+  "checks": [
+    "unique exposed GPIO and physical pins",
+    "I2C0/I2C1 pin functions",
+    "consecutive I2S clock pins",
+    "six profile signal coverage",
+    "connector digital voltage contract",
+    "expander port-7 direction",
+    "CSV/JSON agreement",
+    "PIO/DMA resource budget"
+  ],
+  "not_verified": [
+    "schematic/ERC",
+    "PCB signal integrity",
+    "reset transient timing",
+    "native IC package pin-to-pin wiring",
+    "memory bridge and loader",
+    "PIO assembled code and instruction-memory fit",
+    "real-time simultaneous throughput",
+    "sound output and long-duration playback",
+    "actual stock at ordering time"
+  ]
+}

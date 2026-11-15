@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "0.5.0-alpha.2",
+  "package": "outputs/revc-c-0.5.0-alpha.2-midi-release-fix-20261114.zip",
+  "ZIP_SHA256": "adbb08a8f11848e5d86e55dd1912119da4a2e1dfdb94dba884203314e69970ad",
+  "UF2_SHA256": "50f4eadac00958f9d02d6cc7bc2af05394c4d3bed9891b29202e3b7425ee391f",
+  "memory": {
+    "text_bytes": 60864,
+    "data_bytes": 0,
+    "bss_bytes": 463540
+  },
+  "member_hashes_verified": true,
+  "source_snapshot_verified": true,
+  "original_diagnostic_in_UF2": true,
+  "YsII_included": false
+}

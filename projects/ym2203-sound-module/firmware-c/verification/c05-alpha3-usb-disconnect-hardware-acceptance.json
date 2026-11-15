@@ -1,0 +1,106 @@
+{
+  "version": "0.5.0-alpha.3",
+  "host_check_version": "1.1",
+  "date": "2026-11-14",
+  "status": "USB_disconnect_reconnect_initial_acceptance_complete",
+  "source": "User audible observations, complete HOST v1.1 log and target I2C-completion snapshot followed by three explicit STOP messages",
+  "hardware_tested": true,
+  "user_confirmed": {
+    "I2C_playback_continues_with_RevC_USB_removed": true,
+    "quiet_after_completion": true,
+    "quiet_after_USB_reconnection": true,
+    "explicit_MIDI_recovery": true,
+    "left_right_normal": true,
+    "distortion": false,
+    "dropouts": false
+  },
+  "HOST": {
+    "pass": true,
+    "done": true,
+    "safe_pins_inputs": true,
+    "events": 191,
+    "crc32": "e5df0948",
+    "quiet_readback_ms": 4000
+  },
+  "target_I2C_completion_snapshot": {
+    "audio_ready": 1,
+    "fault": 0,
+    "state": 2,
+    "events": "191/191",
+    "gates": 0,
+    "fm_gain_eighths": 8,
+    "AUDIO": {
+      "blocks": 5975,
+      "peak": 24512,
+      "max_convert_us": 115,
+      "queue_min": 1,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "log_drops": 0
+    },
+    "RX": {
+      "qualify_ticks": 2,
+      "pio_hz": 32000000,
+      "reject_observations": 0
+    },
+    "LEVEL": {
+      "clipped_samples": 0
+    },
+    "BUS": {
+      "mode": "fast",
+      "writes": 197,
+      "busy_retries": 176,
+      "max_call_us": 43
+    },
+    "TIMING": {
+      "max_dispatch_late_us": 4751,
+      "bins_lt1_5_10_20_100ms": [
+        116,
+        75,
+        0,
+        0,
+        0
+      ]
+    },
+    "I2C": {
+      "protocol": 2,
+      "address": "0x42",
+      "state": 3,
+      "result": 0,
+      "error": 0,
+      "received": 191,
+      "executed": 191,
+      "total": 191,
+      "queued": 0,
+      "min_queue": 0,
+      "sealed": 1
+    },
+    "MIDI": {
+      "protocol": 1,
+      "owned": 0,
+      "state": 0,
+      "mask": 0,
+      "gate": 0,
+      "received": 13,
+      "applied": 0,
+      "rejected": 0,
+      "invalid": 0,
+      "ignored": 12,
+      "panics": 0
+    }
+  },
+  "interpretation": [
+    "All191 dispatches in this diagnostic were under5ms late; this is not measured audible MIDI latency",
+    "Target snapshot is DONE before subsequent STOPs and MIDI recovery; MIDI applied=0 does not log later recovery",
+    "MIDI recovery is accepted from user audible report,not invented as a numeric target log",
+    "Device-lost CDC ending accompanies the physical USB workflow; supplied logs show no audio fault",
+    "Prior MIDI USB-disconnect step1 accepted from user report in the previous checkpoint"
+  ],
+  "prior_progress_record": "verification/c05-alpha3-usb-disconnect-keep-done-fix.json",
+  "not_verified": [
+    "Measured audible latency and long-term24h operation",
+    "Physical full Ys II run on C0.5 alpha3; full-song physical acceptance remains C0.4 alpha2",
+    "Complete18-note handover probe transmission; earlier run recorded7 rejections",
+    "Exact internal DMA timing of historical alpha1 fault16"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "version": "0.5.0-alpha.4",
+  "hardware_tested": false,
+  "package": "outputs/revc-c-0.5.0-alpha.4-i2s-clock-fix-20261114-r2.zip",
+  "ZIP_SHA256": "5d50b7fdfffd1e0e9c26a9360f8e104d7d3c7405c596f104e8020e48e64ace12",
+  "UF2_SHA256": "5d197332a2c940ea36ecbb0b2d5b3327593c2c86a7255676a577bde2b1a72acd",
+  "memory": {
+    "text_bytes": 60344,
+    "data_bytes": 0,
+    "bss_bytes": 463660
+  },
+  "member_hashes_verified": true,
+  "source_snapshot_verified": true,
+  "original_diagnostic_in_UF2": true,
+  "YsII_included": false,
+  "host_runtime_unchanged": true
+}

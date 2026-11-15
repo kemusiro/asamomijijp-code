@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+  "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+  "events": 191,
+  "period_ms": 13000,
+  "crc32": 3856599368,
+  "max_late_us": 5650,
+  "source_sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff",
+  "register_value_order_exact": true,
+  "mode": "USB-disconnect HOST completion/quiet check; physical USB removal not observed",
+  "register_writes": 191,
+  "final_state": 4,
+  "KEEP_rejected_after_DONE_race_exercised": true
+}

@@ -1,0 +1,19 @@
+{
+  "version": "0.4.0-alpha.2",
+  "ZIP_SHA256": "bb0b2a70e0135aa3e6b44c069582c7763f2d8680fb932ea8b26a433ddd791f40",
+  "UF2_SHA256": "44bfc20f40abef4daafe33239d464abb6e4e4543a816c7a6272c3fb736ee07ff",
+  "memory": {
+    "text_bytes": 55688,
+    "data_bytes": 0,
+    "bss_bytes": 463076
+  },
+  "host_asset": {
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "crc32": 2925077129
+  },
+  "hardware_tested": false
+}

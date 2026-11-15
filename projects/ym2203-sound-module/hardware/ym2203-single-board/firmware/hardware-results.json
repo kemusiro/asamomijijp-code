@@ -1,0 +1,95 @@
+{
+  "date": "2026-11-13",
+  "version": "0.1.0-alpha.2",
+  "source": "User report in chat;full runtime counters/logs not supplied for this run",
+  "basic_demo": {
+    "status": "passed",
+    "repetitions": 2,
+    "host_errors": false,
+    "melody_rests": "confirmed",
+    "ssg_accompaniment": "confirmed",
+    "silence_after_end": "confirmed",
+    "left_and_right": "normal",
+    "distortion": false,
+    "unplanned_dropouts": false,
+    "deadline_misses": "not reported;not inferred from listening"
+  },
+  "stream_3min": {
+    "status": "passed",
+    "program": "host/endurance.py",
+    "score_duration_ms": 180000,
+    "events": 726,
+    "queue_capacity": 128,
+    "source": "User report in chat;full runtime counters/logs not supplied",
+    "melody_rests": "confirmed",
+    "ssg_accompaniment": "confirmed",
+    "silence_after_end": "confirmed",
+    "left_and_right": "normal",
+    "distortion": false,
+    "unplanned_dropouts": false,
+    "host_pass": true,
+    "done": true,
+    "deadline_misses": "not reported;not inferred from listening"
+  },
+  "remaining_acceptance_runs": 0,
+  "usb_midi": {
+    "version": "0.2.0-alpha.1",
+    "status": "basic recognition/playback/CDC and six-voice/I2C handover accepted on user hardware",
+    "scope": "CDC+USB-MIDI1.0,six monophonic channels,I2C/MIDI ownership",
+    "basic_validation": {
+      "status": "passed",
+      "date": "2026-11-13",
+      "source": "User report in chat;full runtime counters/logs not supplied",
+      "platform": "not specified in report",
+      "recognized_as_USB_MIDI": true,
+      "FM_scale": "confirmed",
+      "SSG_scale": "confirmed",
+      "all_sounds_off": "confirmed",
+      "left_and_right": "normal",
+      "distortion": false,
+      "unplanned_dropouts": false,
+      "Thonny_connection": "confirmed"
+    },
+    "six_voice_i2c_handover": {
+      "status": "passed",
+      "host_program": "host/midi_handover.py",
+      "browser_tool": "pc/usb-midi-test.html",
+      "scope": "six solos/chord,MIDI-owned I2C BUSY,I2C STOP,I2C-owned MIDI input,explicit MIDI recovery",
+      "automatic_scope_limit": "HOST cannot observe whether browser probe messages arrived;user must confirm GUI transmission and unchanged sound",
+      "date": "2026-11-13",
+      "source": "User replied confirmation after the combined acceptance procedure;full HOST log and per-item measurements not supplied",
+      "confirmation": "User confirmed the instructed combined check",
+      "deadline_misses": "not reported;not inferred from confirmation",
+      "platform": "not specified in report"
+    },
+    "remaining_initial_acceptance_runs": 0,
+    "remaining_unvalidated_scope": [
+      "physical USB disconnect/reconnect and cold power-up",
+      "measured audible latency and worst-case USB/IRQ timing",
+      "platform-specific macOS/Windows coverage",
+      "24-hour physical endurance"
+    ]
+  },
+  "stop_reconnect_acceptance": {
+    "status": "passed",
+    "program": "host/recovery.py",
+    "scope": [
+      "partial STOP and4s read-only quiet",
+      "full replay from first C",
+      "HOST GP0/GP1 release1800ms and lease mute",
+      "same-target rebind and4s read-only quiet",
+      "explicit STOP/reupload/PLAY recovery"
+    ],
+    "source": "User report in chat;full runtime logs/counters not supplied",
+    "partial_stop_and_4s_quiet": "confirmed",
+    "lease_mute": "confirmed",
+    "quiet_after_reattach_4s": "confirmed",
+    "full_replays_from_first_C": "confirmed",
+    "left_and_right": "normal",
+    "distortion": false,
+    "unplanned_dropouts": false,
+    "host_pass": true,
+    "done": true
+  },
+  "autostart_on_power_up": "not separately user-validated;not part of HOST-only acceptance script"
+}

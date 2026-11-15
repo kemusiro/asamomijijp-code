@@ -1,0 +1,236 @@
+{
+  "version": "0.3.0-alpha.7",
+  "date": "2026-11-13",
+  "hardware_tested": true,
+  "scope": "CLK level qualification;one full embedded WYM1 hardware run accepted atFM100percent;physical signal origin and external transports unverified",
+  "previous_alpha6_failure": {
+    "source": "User alpha6 full-score log in chat",
+    "version": "0.3.0-alpha.6",
+    "events_completed": 19470,
+    "events_total": 123137,
+    "last_event_ms": 46831,
+    "fault": 9,
+    "reason": 1,
+    "flags": 1,
+    "block": 20927,
+    "index": 51,
+    "raw_word": "0fd60000",
+    "before": "87ba0000",
+    "after": "61ee0000",
+    "code13": "01fa",
+    "exponent": 0,
+    "mantissa": 506,
+    "gain_q10": [
+      1024,
+      1024
+    ],
+    "FM_gain_percent": 100,
+    "blocks": 20926,
+    "peak": 17124,
+    "max_convert_us": 149,
+    "queue_min": 1,
+    "queue_max": 2,
+    "i2s_div256": 12500,
+    "log_drops": 0,
+    "clipped_samples": 0,
+    "gates": 0,
+    "bus_writes": 19470,
+    "busy_retries": 28880,
+    "max_bus_call_us": 34,
+    "max_dispatch_late_us": 4341,
+    "late_hist_lt1_5_10_20_100ms": [
+      19398,
+      72,
+      0,
+      0,
+      0
+    ],
+    "confirmed": "Forbidden exponent0 reached conversion at valid unity gain;alpha6 extra SD settling did not resolve it",
+    "not_confirmed": "Where corruption originated,or whether a CLK glitch occurred on the board"
+  },
+  "clock_fixture": {
+    "scope": "Synthetic receiver-clock fixture,not actual electrical capture",
+    "PIO_hz": 32000000,
+    "qualify_separation_ticks": 2,
+    "qualify_separation_ns": 62.5,
+    "source_word_synthetic": "87eb0000",
+    "glitch": {
+      "kind": "one2tick extra high excursion before first real rising clock",
+      "ticks": [
+        32,
+        34
+      ],
+      "duration_ns": 62.5
+    },
+    "alpha6_result": "0fd60000",
+    "matches_user_bad_word": true,
+    "alpha7_result": "87eb0000",
+    "normal_word_preserved": true,
+    "physical_cause_confirmed": false,
+    "limits": "Does not establish actual source word or CLK pulse on the board;SH glitches,longer excursions and analog edge characteristics are not modelled"
+  },
+  "changes": {
+    "PIO_hz": 32000000,
+    "CLK_level_check_separation_ticks": 2,
+    "CLK_level_check_separation_ns": 62.5,
+    "nominal_buffer_us": 4500,
+    "default_FM_percent": 100,
+    "GPIO_changed": false,
+    "invalid_data_check_disabled": false,
+    "rejection_counter_scope": "sticky-flag observations,not pulse count"
+  },
+  "checks": {
+    "native_C_tests": {
+      "passed": true,
+      "tests": 42,
+      "scope": "Existing conversion/bus/WYM1/RCD1 tests;first/middle/last fault snapshot;normal receiver24phase x4SDskew;two-frame1151positions x2pulsewidth clock fixture;exact user-word regression;unfiltered persistent invalid source remains invalid"
+    },
+    "console": {
+      "passed": true,
+      "scope": "Modelled Web Serial,alpha1..6 compatibility,no auto-play,bounded download,fault gating"
+    },
+    "arm_build": {
+      "passed": true,
+      "toolchain": {
+        "pico_sdk": {
+          "version": "2.2.0",
+          "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+          "repository": "https://github.com/raspberrypi/pico-sdk.git"
+        },
+        "tinyusb": {
+          "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+        },
+        "picotool": {
+          "version": "2.2.0",
+          "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+          "repository": "https://github.com/raspberrypi/picotool.git"
+        },
+        "arm_gcc": "10.3.1 20210824",
+        "tested_host_tools": {
+          "cmake": "4.4.2",
+          "python": "3.14.6"
+        },
+        "board": "pico2",
+        "version": "0.3.0-alpha.7"
+      },
+      "memory": {
+        "text_bytes": 788032,
+        "data_bytes": 0,
+        "bss_bytes": 452992
+      }
+    },
+    "package": {
+      "ZIP_SHA256": "b5527ec729bf030cc854cc2cce30cd11afa43dcb53289d0934e1644c91245847",
+      "UF2_SHA256": "0e89c297ddaaac3302fb0d87d7b44dc6b013f7b8def38c6f3b245c29d539bdc3",
+      "all_source_hashes": true,
+      "all_payload_hashes": true,
+      "source_asset": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "bytes": 738838,
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "crc32": 2925077129,
+        "kind": "local user-provided song;not for redistribution",
+        "event_bytes_preserved": true
+      }
+    },
+    "original_WYM1_unchanged_and_once_in_flash": true,
+    "converter_I2S_bus_and_recorder_sources_unchanged_from_alpha6": true
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "c677023543bc3e6d519bff9f917dbf536f397c1fd887abb923b651d8b3568d67",
+    "README.md": "62a819e07db4eed913fb6951215ca526e243df57ae72206f4b108731a0b301da",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "diagnostic-format.md": "4fa64bdc5817f5a6ca37026de05483c7fe2285c8dec22faba8ad4addf714bc65",
+    "pc/revc-console.html": "675ef6965e32b0e875dad6cca05c7a9c67348364b1ba00b8bec971a8ee83ee8f",
+    "pio/fm_rx.pio": "7a9fd602b94e0b938d25b6112906f0a50063b97cc0d0a95889ed317989cf4cd3",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "2b33d9d8cc78d14b29c048b29d892e46ceb51f665fc9947d52180c39f4e7f3a3",
+    "src/board.c": "d818723c184bbb0dccccda9cc2e28dd49ca7776fb603f65f0aa90a7749f0e132",
+    "src/diagnostic.c": "288e4074a3bbf4d9e3889ee91c70964e26a2183065c6fd1736d57b97020d74c1",
+    "src/diagnostic.h": "60c17e065f4bf475a431c60e3b002152f2084b57b036c5fd7d6f6cd2f89a5f9d",
+    "src/main.c": "0278e9fad62816720b27d893ff622d860f085cbb9f39278d200b082ceaa2df2c",
+    "src/revc.h": "39219afb6bda7617ffbd0d7c5ad0b3f61a22bb5898dba2f139014ba2d8dffeb4",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "5a0e5147adc80633cf473a6535df8124b0b49aeabd2c95d6c01ecd1b9b6a81ad",
+    "src/wym1.c": "d2a49a873f97fb6c7a726e27bcc59a238768d4332b14b42b014491260abae4d0",
+    "src/wym1.h": "d601807a10ac054192d5e0566078a577b7385437e6506c5283d687437597642c",
+    "tests/rx_model.py": "54ef1b1af9c6799cb4a4dc802ce086db62ec0e6ab6ac541a7bfbb4d154f9bd57",
+    "tests/test_bus.py": "262b93b9b6d5a07d0b55fcfd9022d6c45caceaa123d2c589a90f3b278be410a9",
+    "tests/test_core.py": "0c81f39e87f23b7d138f38b740fb7f3dec71b4a10003d537033c2deb22bd58b5",
+    "tests/test_diagnostic.py": "9d1a0cf84017b3a293eaf17d2ef2568d534da5b2f0f0d4e88130310346d2baf1",
+    "tests/test_low_latency.py": "56f66425bbdbd735e5acd6ea1d8ef9aa068c35b03b0346b0dfebd4ff128f7d9a",
+    "tests/test_rx_margin.py": "662b561e2b93a928c526d0811446de89e928f90309dcb90df95832ffa8afd789",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "a16c2325b420fa3cc286b9afb9020ada138dc86bf29b133f6f9d1954226bc1d0",
+    "tools/analyze_capture.py": "7f6d2547f8b14629d88b2738d93499ab058b39bb4496e911336a510b693898a7",
+    "tools/build.py": "0b22340f0550f23f6e3f2a6eea03e558f7dc1c5506cb60b4ba6738f90a644ba4",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "f5f9f04b1bf3761cdc9ed17b0883df2b026a1d0f4bd5d05fb069db49af897111"
+  },
+  "source_sha256_scope": "Packaged alpha7 build snapshot;post-build documentation and hardware acceptance metadata are separate;UF2 and ZIP unchanged",
+  "not_verified": [
+    "Actual CLK disturbance waveform or original value on the board",
+    "Long-term or repeated-run reliability beyond one accepted full-song run",
+    "Actual SH/CLK/SD electrical timing,SH glitches and longer disturbances",
+    "I2C/MIDI C implementation"
+  ],
+  "hardware_acceptance": {
+    "version": "0.3.0-alpha.7",
+    "date": "2026-11-13",
+    "source": "User supplied complete console log and subjective listening report in chat",
+    "scope": "One full embedded WYM1 run on RevC hardware;USB CDC control;not external I2C/MIDI streaming",
+    "result": "pass",
+    "events_completed": 123137,
+    "events_total": 123137,
+    "period_ms": 298218,
+    "source_crc32": "ae592289",
+    "FM_gain_percent": 100,
+    "audio_ready": 1,
+    "fault": 0,
+    "state": 2,
+    "gates": 0,
+    "DONE": true,
+    "blocks": 132653,
+    "peak_pcm": 17348,
+    "max_convert_us": 213,
+    "queue_min": 1,
+    "queue_max": 3,
+    "i2s_div256": 12500,
+    "log_drops": 0,
+    "clipped_samples": 0,
+    "max_dispatch_late_us": 4353,
+    "late_hist_lt1_5_10_20_100ms": [
+      123065,
+      72,
+      0,
+      0,
+      0
+    ],
+    "bus_mode": "fast",
+    "bus_writes": 123143,
+    "busy_retries": 180979,
+    "max_bus_call_us": 33,
+    "bus_extra_writes": 6,
+    "bus_extra_writes_explanation": "revc_all_off() after PLAYER_DONE writes key-off and SSG volume0 for each of three channels",
+    "reject_observations": 5,
+    "reject_observations_scope": "Sticky rejection flag observed5times;not pulse count or proof of physical noise origin",
+    "user_audio_feedback": {
+      "full_score_completed": true,
+      "FM100_balance": "good",
+      "distortion": false,
+      "dropouts": false
+    },
+    "log_artifact": "local-test-data/ym2203/ysii-acceptance-alpha7-20261113/console.txt",
+    "log_sha256": "67a2a8677ed57a4fd685ad5d147bea7c63259c2665c744abc5d21d4312c0c99d",
+    "limits": [
+      "One successful run;does not establish long-term reliability",
+      "No electrical SH/CLK/SD waveform measurement or pulse-count measurement",
+      "Logged event execution count,not an independent trace of every physical YM write",
+      "C I2C and USB-MIDI not implemented"
+    ]
+  }
+}

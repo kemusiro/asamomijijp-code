@@ -1,0 +1,54 @@
+{
+  "passed": true,
+  "scope": "Actual usb.c and pinned TinyUSB descriptor macros; no OS enumeration",
+  "tinyusb_commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47",
+  "configuration_bytes": 175,
+  "interfaces": [
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      1,
+      10,
+      0
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      1,
+      3
+    ]
+  ],
+  "endpoints": [
+    129,
+    2,
+    130,
+    3,
+    131
+  ],
+  "IADs": [
+    [
+      0,
+      2,
+      2
+    ],
+    [
+      2,
+      2,
+      1
+    ]
+  ],
+  "strings": [
+    "YM2203 Rev C C MIDI",
+    "Rev C control",
+    "YM2203 Rev C MIDI"
+  ],
+  "usb_midi_version": "1.0",
+  "CDC_retained": true
+}

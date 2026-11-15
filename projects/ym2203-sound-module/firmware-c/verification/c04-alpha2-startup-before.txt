@@ -1,0 +1,35 @@
+test_DMA_is_primed_before_PIO_runs_at_all_modelled_start_latencies (test_audio_start.AudioStartTests.test_DMA_is_primed_before_PIO_runs_at_all_modelled_start_latencies) ... FAIL
+test_failed_DMA_prime_does_not_enable_clocks (test_audio_start.AudioStartTests.test_failed_DMA_prime_does_not_enable_clocks) ... FAIL
+test_prime_deadline_crosses_uint32_clock_wrap (test_audio_start.AudioStartTests.test_prime_deadline_crosses_uint32_clock_wrap) ... FAIL
+
+======================================================================
+FAIL: test_DMA_is_primed_before_PIO_runs_at_all_modelled_start_latencies (test_audio_start.AudioStartTests.test_DMA_is_primed_before_PIO_runs_at_all_modelled_start_latencies)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/firmware-c/tests/test_audio_start.py", line 52, in test_DMA_is_primed_before_PIO_runs_at_all_modelled_start_latencies
+    self.assertEqual(self.c.model_level(),8,latency);self.assertEqual(self.c.model_stall(),0,latency)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 8 : 1
+
+======================================================================
+FAIL: test_failed_DMA_prime_does_not_enable_clocks (test_audio_start.AudioStartTests.test_failed_DMA_prime_does_not_enable_clocks)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/firmware-c/tests/test_audio_start.py", line 56, in test_failed_DMA_prime_does_not_enable_clocks
+    self.c.model_reset(100,0xffffffff);self.assertEqual(self.c.model_start(),0)
+                                       ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 1 != 0
+
+======================================================================
+FAIL: test_prime_deadline_crosses_uint32_clock_wrap (test_audio_start.AudioStartTests.test_prime_deadline_crosses_uint32_clock_wrap)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "<project>/firmware-c/tests/test_audio_start.py", line 61, in test_prime_deadline_crosses_uint32_clock_wrap
+    self.assertEqual(self.c.model_level(),8);self.assertEqual(self.c.model_stall(),0)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: 0 != 8
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.342s
+
+FAILED (failures=3)

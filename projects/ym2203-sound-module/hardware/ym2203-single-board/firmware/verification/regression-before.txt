@@ -1,0 +1,95 @@
+test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) ... 
+  test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=5000) ... ERROR
+  test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=10000) ... ERROR
+  test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=20000) ... ERROR
+  test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=30000) ... ERROR
+test_committed_queue_progresses_during_external_I2C_without_extra_write_budget (test_firmware.FirmwareTests.test_committed_queue_progresses_during_external_I2C_without_extra_write_budget) ... FAIL
+
+======================================================================
+ERROR: test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=5000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hardware/ym2203-single-board/firmware/tests/test_firmware.py", line 236, in test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events
+    client.stream(iter(expected))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 145, in stream
+    if batch: self.enqueue(batch)
+              ~~~~~~~~~~~~^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 106, in enqueue
+    self._command(PUSH,payload)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 67, in _command
+    raise ProtocolError("Firmware rejected request:code%d" % status[1])
+firmware_host.ProtocolError: Firmware rejected request:code7
+
+======================================================================
+ERROR: test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=10000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hardware/ym2203-single-board/firmware/tests/test_firmware.py", line 236, in test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events
+    client.stream(iter(expected))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 145, in stream
+    if batch: self.enqueue(batch)
+              ~~~~~~~~~~~~^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 106, in enqueue
+    self._command(PUSH,payload)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 67, in _command
+    raise ProtocolError("Firmware rejected request:code%d" % status[1])
+firmware_host.ProtocolError: Firmware rejected request:code7
+
+======================================================================
+ERROR: test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=20000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hardware/ym2203-single-board/firmware/tests/test_firmware.py", line 236, in test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events
+    client.stream(iter(expected))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 145, in stream
+    if batch: self.enqueue(batch)
+              ~~~~~~~~~~~~^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 106, in enqueue
+    self._command(PUSH,payload)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 67, in _command
+    raise ProtocolError("Firmware rejected request:code%d" % status[1])
+firmware_host.ProtocolError: Firmware rejected request:code7
+
+======================================================================
+ERROR: test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events (test_firmware.FirmwareTests.test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events) (stretch_us=30000)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hardware/ym2203-single-board/firmware/tests/test_firmware.py", line 236, in test_demo_with_I2C_stretch_and_YM_write_cost_preserves_due_events
+    client.stream(iter(expected))
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 145, in stream
+    if batch: self.enqueue(batch)
+              ~~~~~~~~~~~~^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 106, in enqueue
+    self._command(PUSH,payload)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "hardware/ym2203-single-board/firmware/host/ym2203_revc.py", line 67, in _command
+    raise ProtocolError("Firmware rejected request:code%d" % status[1])
+firmware_host.ProtocolError: Firmware rejected request:code7
+
+======================================================================
+FAIL: test_committed_queue_progresses_during_external_I2C_without_extra_write_budget (test_firmware.FirmwareTests.test_committed_queue_progresses_during_external_I2C_without_extra_write_budget)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "hardware/ym2203-single-board/firmware/tests/test_firmware.py", line 259, in test_committed_queue_progresses_during_external_I2C_without_extra_write_budget
+    self.assertEqual([v for t,r,v in board.calls[offset:]],list(range(offset,6)))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != [2, 3, 4, 5]
+
+Second list contains 4 additional elements.
+First extra element 0:
+2
+
+- []
++ [2, 3, 4, 5]
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.008s
+
+FAILED (failures=1, errors=4)

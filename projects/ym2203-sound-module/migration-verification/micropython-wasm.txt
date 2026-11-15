@@ -1,0 +1,56 @@
+3.4.0; MicroPython v1.28.0 on 2026-04-06
+PASS: actual v0.1 host,CRC frames,initialization,streamed melody/rests,seal/drain and STOP in MicroPython;hardware/time simulated
+PASS: actual MicroPython host/core plays exact demo under5/30ms I2C stretching and4.4ms YM write model;no LATE suppression
+PASS:300 streamed register events exceed128-entry ring;sequence/replenishment stay operational
+YM2203 alpha.2 / three-minute streaming HOST / OTHER Pico only
+FM C E REST G REST E D REST C REST + held SSG chord;36 cycles
+Score180000ms /726 events / ring128; progress every30s;volumes low
+STREAM 1/6 elapsed_ms=30029 queued=124 seq=82
+STREAM 2/6 elapsed_ms=60069 queued=124 seq=137
+STREAM 3/6 elapsed_ms=90010 queued=124 seq=191
+STREAM 4/6 elapsed_ms=120029 queued=124 seq=246
+STREAM 5/6 elapsed_ms=150069 queued=120 seq=45
+STREAM 6/6 elapsed_ms=180012 queued=0 seq=99
+STREAM COMPLETE events=726 score_ms=180000 host_elapsed_ms=182164
+FINAL STATE seq=103 result=0 flags=1 queued=0
+HOST PASS: three-minute replenished score,normal end and explicit STOP
+DONE: report L/R,melody rests,held chord,unplanned gaps/distortion and final silence
+PASS: actual endurance.main726-event/180000ms source,progress,normal end and STOP;hardware/time simulated
+YM2203 alpha.2 / final STOP-reconnect HOST / OTHER Pico only
+FM C D E F G F E D C + held SSG chord;start volumes low
+1/4 PARTIAL PLAY then STOP;expect all voices off and4s quiet
+1/4 PASS STOP / result=0 flags=1 queued=0 /4s read-only quiet
+2/4 EXPLICIT REPLAY / upload same score,all9 notes from C
+2/4 PASS complete score and normal end
+3/4 PARTIAL PLAY then HOST pins released;auto-mute in about1s
+HOST RELEASE / no I2C for1800ms;no KEEP,STOP or reads
+REBIND / seq=120 result=5 flags=33 queued=0 / expect4s quiet
+3/4 PASS lease cleanup,same target sequence,read-only reattachment stayed muted
+4/4 RECOVERY / explicit STOP clears lease,upload+PLAY all9 notes from C
+4/4 PASS full recovery score and normal end
+FINAL STATE seq=187 result=0 flags=1 queued=0
+HOST PASS: STOP,4s quiet,replay,HOST release,lease mute,quiet rebind and explicit recovery
+DONE: report both full scales,partial stops,auto-mute,L/R,distortion and final silence
+PASS: actual recovery.main STOP/4s quiet/replay/lease/read-only rebind/explicit recovery;hardware/time simulated
+PASS: actual MIDI/USB modules,six-voice note plan,long notes,SOF loss/resume and I2C STOP;one-register budget;USB/GPIO/time simulated
+YM2203 USB-MIDI six-voice/I2C handover HOST / OTHER Pico only
+Browser must already have sent/latching all six MIDI voices
+PASS: MIDI six voices retain ownership;I2C WRITE rejected BUSY
+PASS: I2C STOP muted MIDI;4s read-only quiet,no spontaneous replay
+I2C PLAY /30 seconds of fixed six-voice chord
+NOW: browser button2 sends FM+SSG scales for about15s;chord must stay unchanged
+I2C HOLD elapsed_ms=5044 /MIDI owner=0 mask=0
+I2C HOLD elapsed_ms=10238 /MIDI owner=0 mask=0
+I2C HOLD elapsed_ms=15173 /MIDI owner=0 mask=0
+I2C HOLD elapsed_ms=20107 /MIDI owner=0 mask=0
+I2C HOLD elapsed_ms=25041 /MIDI owner=0 mask=0
+PASS: I2C chord,stable ownership and4s quiet after STOP
+WAIT FINAL MIDI / browser button3 sends six voices;within90s
+PASS: explicit six-voice MIDI recovery after I2C release
+FINAL STATE result=0 flags=1 queued=0 midi_owner=0 mask=0 usb=1
+HOST PASS: MIDI six voices,BUSY rejection,I2C STOP/hold/release and explicit MIDI recovery
+DONE: report six solos/chord,unchanged I2C chord during MIDI send,L/R,distortion and final silence
+PASS: actual midi_handover.main attaches without STOP,verifies BUSY,I2C chord,quiet and explicit MIDI recovery;USB/user actions/GPIO/time simulated
+PASS: full-range floating-point FM scaling keeps PCM cap4096 and right digital channel zero
+ENGINE HEAP:1000 queued register opportunities,bytes=768000
+PASS: MicroPython firmware compatibility;WASM allocation observed,not an RP2350 heap guarantee

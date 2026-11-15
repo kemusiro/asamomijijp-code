@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "package": "outputs/revc-c-0.5.0-alpha.1-usb-midi-i2c-20261114-r3.zip",
+  "ZIP_SHA256": "18cb1b0ddc50d59104cfc8b26054155ef49f1074c3ec26348c12e1fe96062243",
+  "UF2_SHA256": "8bbc3f8be6d6384a0e79425c73c0d24cc397f142e9ae8b5651c6dc8624a9f249",
+  "memory": {
+    "text_bytes": 60864,
+    "data_bytes": 0,
+    "bss_bytes": 463540
+  },
+  "member_hashes_verified": true,
+  "original_191_event_score_in_UF2": true,
+  "YsII_only_in_host": true,
+  "host_BIN_byte_exact": true,
+  "source_snapshot_verified": true
+}

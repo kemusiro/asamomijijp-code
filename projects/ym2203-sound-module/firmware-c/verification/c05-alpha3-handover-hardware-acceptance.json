@@ -1,0 +1,104 @@
+{
+  "version": "0.5.0-alpha.3",
+  "date": "2026-11-14",
+  "status": "MIDI_I2C_ownership_handover_accepted",
+  "hardware_tested": true,
+  "source": "User audible observations, complete HOST log and final target STATUS/AUDIO/I2C/MIDI snapshot",
+  "user_confirmed": {
+    "BEGIN_rejected_while_MIDI_sustains": true,
+    "I2C_STOP_mutes_MIDI": true,
+    "quiet_after_STOP": true,
+    "MIDI_inaudible_during_I2C": true,
+    "quiet_after_I2C_completion": true,
+    "explicit_MIDI_restart": true,
+    "left_right_normal": true,
+    "distortion": false,
+    "dropouts": false
+  },
+  "HOST": {
+    "pass": true,
+    "done": true,
+    "safe_pins_inputs": true,
+    "diagnostic_events": 191,
+    "diagnostic_crc32": "e5df0948"
+  },
+  "target_final": {
+    "audio_ready": 1,
+    "fault": 0,
+    "state": 0,
+    "events": "0/0",
+    "gates": 0,
+    "fm_gain_eighths": 8,
+    "AUDIO": {
+      "blocks": 15272,
+      "peak": 24512,
+      "max_convert_us": 105,
+      "queue_min": 1,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "log_drops": 0
+    },
+    "RX": {
+      "qualify_ticks": 2,
+      "pio_hz": 32000000,
+      "reject_observations": 0
+    },
+    "LEVEL": {
+      "clipped_samples": 0
+    },
+    "BUS": {
+      "mode": "fast",
+      "writes": 118,
+      "busy_retries": 212,
+      "max_call_us": 28
+    },
+    "TIMING": {
+      "max_dispatch_late_us": 0,
+      "bins": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "I2C": {
+      "protocol": 2,
+      "address": "0x42",
+      "state": 4,
+      "result": 0,
+      "error": 0,
+      "received": 191,
+      "executed": 191,
+      "total": 191,
+      "queued": 0,
+      "min_queue": 0,
+      "sealed": 0
+    },
+    "MIDI": {
+      "protocol": 1,
+      "owned": 0,
+      "state": 0,
+      "mask": 0,
+      "gate": 0,
+      "received": 78,
+      "applied": 1296,
+      "rejected": 7,
+      "invalid": 0,
+      "ignored": 12,
+      "panics": 3
+    }
+  },
+  "interpretation": [
+    "Final I2C state4 is expected after final MIDI panic invokes global STOP",
+    "Final player/bus/timing counters were reset for MIDI preparation; zero timing is not an I2C dispatch measurement",
+    "Seven blocked Note Ons observed; complete transmission/rejection of all18 probe notes is not established",
+    "The MIDI probe stops when its page loses focus; this can shorten a probe but the cause of this run is not proven"
+  ],
+  "not_verified": [
+    "Physical USB removal/reconnection",
+    "Measured audible latency and long-term operation",
+    "Exact internal DMA timing behind the historical alpha1 fault16"
+  ],
+  "next_procedure": "USB-DISCONNECT-README.txt"
+}

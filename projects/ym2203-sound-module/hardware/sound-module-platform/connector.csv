@@ -1,0 +1,51 @@
+pin,row,signal,direction,voltage,source
+1,odd,+5V,base-to-module,+5V,regulated supply
+2,even,GND,reference,0V,common ground
+3,odd,+5V,base-to-module,+5V,regulated supply
+4,even,GND,reference,0V,common ground
+5,odd,+3V3_AUX,base-to-module,+3V3_AUX,regulated supply
+6,even,GND,reference,0V,common ground
+7,odd,D0,bidirectional,3.3V,GP0
+8,even,D1,bidirectional,3.3V,GP1
+9,odd,D2,bidirectional,3.3V,GP2
+10,even,D3,bidirectional,3.3V,GP3
+11,odd,D4,bidirectional,3.3V,GP4
+12,even,D5,bidirectional,3.3V,GP5
+13,odd,D6,bidirectional,3.3V,GP6
+14,even,D7,bidirectional,3.3V,GP7
+15,odd,A0,base-to-module,3.3V,GP8
+16,even,GND,reference,0V,common ground
+17,odd,A1,base-to-module,3.3V,GP9
+18,even,GND,reference,0V,common ground
+19,odd,CS_N,base-to-module,3.3V,GP13
+20,even,WR_N,base-to-module,3.3V,GP14
+21,odd,RD_N,base-to-module,3.3V,GP15
+22,even,GND,reference,0V,common ground
+23,odd,RESET_N,base-to-module,3.3V,ARM AND MCP23017.GPA0
+24,even,ARM,base-to-module,3.3V,GP22
+25,odd,STATUS,module-to-base,3.3V,GP28
+26,even,GND,reference,0V,common ground
+27,odd,FM_SD,module-to-base,3.3V,GP16
+28,even,FM_CLK,module-to-base,3.3V,GP17
+29,odd,FM_SH1,module-to-base,3.3V,GP18
+30,even,FM_SH2,module-to-base,3.3V,GP19
+31,odd,GND,reference,0V,common ground
+32,even,AUX_SDA,open-drain,3.3V,GP26
+33,odd,AUX_SCL,open-drain,3.3V,GP27
+34,even,GND,reference,0V,common ground
+35,odd,ID0,module-to-base,3.3V,MCP23017.GPB0
+36,even,ID1,module-to-base,3.3V,MCP23017.GPB1
+37,odd,ID2,module-to-base,3.3V,MCP23017.GPB2
+38,even,PRESENT_N,module-to-base,3.3V,MCP23017.GPB3
+39,odd,AUX0,base-to-module,3.3V,MCP23017.GPA4
+40,even,AUX1,base-to-module,3.3V,MCP23017.GPA5
+41,odd,AGND,reference,0V,common ground
+42,even,ANALOG_L,module-to-base,AC line level,module analog conditioner
+43,odd,AGND,reference,0V,common ground
+44,even,ANALOG_R,module-to-base,AC line level,module analog conditioner
+45,odd,AGND,reference,0V,common ground
+46,even,NC_ANALOG_RESERVED,unconnected,NC,none
+47,odd,NC_RESERVED,unconnected,NC,none
+48,even,GND,reference,0V,common ground
+49,odd,GND,reference,0V,common ground
+50,even,KEY_NC,unconnected,NC,none

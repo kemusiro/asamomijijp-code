@@ -1,0 +1,107 @@
+{
+  "target_version": "0.4.0-alpha.2",
+  "check_version": 1,
+  "date": "2026-11-14",
+  "status": "prepared_model_verified_awaiting_physical_user_report",
+  "hardware_tested": false,
+  "scope": "HOST-only four-section STOP/lease/rebind/replay integration check; no target firmware change",
+  "native_tests": {
+    "passed": true,
+    "count": 70,
+    "new_cases": 5,
+    "includes": [
+      "Exact real-C register trace across two interruptions and two complete scores",
+      "No I2C during 1800ms unbind",
+      "UNDERRUN cannot pass as LEASE",
+      "Bad audio aborts and releases host",
+      "Bad diagnostic CRC rejected before binding",
+      "Host tick wrap"
+    ]
+  },
+  "MicroPython_recovery_model": {
+    "passed": true,
+    "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+    "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+    "events": 191,
+    "period_ms": 13000,
+    "crc32": 3856599368,
+    "max_late_us": 5640,
+    "source_sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff",
+    "register_value_order_exact": true,
+    "mode": "STOP/lease/rebind/replay",
+    "sections": 4,
+    "completions": 2,
+    "interruptions": 2,
+    "register_writes": 752,
+    "host_pins_rebound": true
+  },
+  "MicroPython_YsII_regression_model": {
+    "passed": true,
+    "runtime": "3.4.0; MicroPython v1.29.0 on 2026-11-13",
+    "scope": "Actual MicroPython host and actual C core,modelled100kHz wire/time,YM service50us;not electrical hardware",
+    "events": 123137,
+    "period_ms": 298218,
+    "crc32": 2925077129,
+    "max_late_us": 5510,
+    "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "register_value_order_exact": true,
+    "commands": 3869
+  },
+  "target_C_PIO_GPIO_and_accepted_host_library_unchanged": true,
+  "physical_acceptance_pending": [
+    "STOP cancels six-voice chord and four-second audible silence",
+    "Full replay from first FM note without target reboot",
+    "One-second lease mute while HOST pins released; reattachment does not restart audio",
+    "STOP/BEGIN/upload/PLAY after lease; full score and final mute",
+    "Both channels, no distortion or unexpected dropouts; Rev C audio fault remains 0"
+  ],
+  "expected_host": {
+    "sections": 4,
+    "completed": 2,
+    "explicit_interruptions": 1,
+    "lease_interruptions": 1,
+    "stop_executed": 185,
+    "lease_executed": 185,
+    "total": 191,
+    "final_state": 4,
+    "final_error": 0,
+    "final_queued": 0,
+    "final_flags": 3
+  },
+  "expected_target_session_lease_fault": {
+    "state": 5,
+    "error": 8,
+    "audio_fault": 0,
+    "interpretation": "Intentional lease stop, not an audio engine failure"
+  },
+  "score": {
+    "kind": "Original synthetic 13s FM/SSG scales and six-voice chord",
+    "events": 191,
+    "period_ms": 13000,
+    "crc32": "e5df0948",
+    "sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff"
+  },
+  "package": {
+    "path": "outputs/revc-c-0.4.0-alpha.2-i2c-recovery-v1-20261114.zip",
+    "sha256": "9b3e9f807fbce6302edb6d877a84b2896b31d725d2831034becfb08ee5dd9ad7",
+    "target_UF2_included": false,
+    "YsII_included": false
+  },
+  "accepted_firmware_package": {
+    "path": "outputs/revc-c-0.4.0-alpha.2-i2c-ysii-20261114.zip",
+    "sha256": "bb0b2a70e0135aa3e6b44c069582c7763f2d8680fb932ea8b26a433ddd791f40",
+    "unchanged": true
+  },
+  "source_sha256": {
+    "host/recovery_check.py": "3cfb1a13972cbff55d987190385fa160fb9c28c4ecabe940b6d48257dfd6977a",
+    "tests/test_recovery_host.py": "17c7e7a0db3535a02edd86d8bf342a959bd5bf4831066acf1f15092dcf421528",
+    "tools/verify_host_micropython.py": "9a02268e29651136ab9832be62096e3ee0465bcd76c75fc40383054e02059288",
+    "tools/build_recovery_check.py": "930422e64440c02ee17f3395e970dad4725a786f5873b10d1be7927cd6f1d76c",
+    "I2C-RECOVERY-README.txt": "7e7fcff510ff31a3714cd99048caca5cbeb719353426ef0c51644ad1ffd6f0bb"
+  },
+  "limits": [
+    "Model time and I2C do not verify RP2 electrical signals or physical audio output",
+    "Software release/rebind, not physical cable disconnection or a line stuck low",
+    "Original diagnostic exercises STOP/lease, not another full-song endurance run"
+  ]
+}

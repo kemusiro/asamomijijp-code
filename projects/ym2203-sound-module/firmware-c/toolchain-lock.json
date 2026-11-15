@@ -1,0 +1,22 @@
+{
+  "pico_sdk": {
+    "version": "2.2.0",
+    "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+    "repository": "https://github.com/raspberrypi/pico-sdk.git"
+  },
+  "tinyusb": {
+    "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+  },
+  "picotool": {
+    "version": "2.2.0",
+    "commit": "a7eb3988f0645239185fadb4e25d8279478c2dbb",
+    "repository": "https://github.com/raspberrypi/picotool.git"
+  },
+  "arm_gcc": "10.3.1 20210824",
+  "tested_host_tools": {
+    "cmake": "4.4.2",
+    "python": "3.14.6"
+  },
+  "board": "pico2",
+  "version": "0.5.0-alpha.4"
+}

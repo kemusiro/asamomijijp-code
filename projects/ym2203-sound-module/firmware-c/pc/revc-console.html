@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rev C C版 再生確認</title>
+<style>
+:root{font-family:system-ui,sans-serif;color-scheme:dark;background:#131c2a;color:#e8eef7}body{max-width:880px;margin:40px auto;padding:0 22px}p{line-height:1.8;color:#c7d2e3}button{padding:12px 16px;margin:5px;border:1px solid #667892;border-radius:8px;background:#253a55;color:inherit;font:inherit;cursor:pointer}select{font:inherit;padding:10px;margin:8px;background:#253a55;color:inherit}button:disabled{opacity:.4;cursor:default}#stop{background:#792f3b}output{display:block;margin:24px 0;font-weight:600}pre{padding:20px;background:#0b121d;border-radius:10px;white-space:pre-wrap;overflow-wrap:anywhere;max-height:55vh;overflow:auto}h1{font-size:1.6rem}
+</style>
+<h1>YM2203 Rev C — C版 再生確認</h1>
+<p><a href="usb-midi-test.html" target="_blank" rel="noopener">USB-MIDI確認画面を開く</a></p>
+<p>音量を低くし、Rev Cの電源とライン出力を接続してください。I2C演奏やMIDI演奏を行う場合は、それぞれの手順書に従ってください。C版のUSBシリアルへ接続してから、音声経路テスト、組み込みBIN再生の順に確認します。</p>
+<button id="connect">Rev Cへ接続</button><button id="disconnect" disabled>接続を閉じる</button>
+<div><button id="test" disabled>音声経路テスト（13秒）</button><button id="play" disabled>組み込みBINを1回再生</button><button id="stop" disabled>全音停止</button><button id="status" disabled>状態を取得</button><button id="save">ログを保存</button></div>
+<div><button id="reboot" disabled>Rev Cを再起動</button><button id="bootsel" disabled>BOOTSELへ移る（書き換え）</button></div>
+<label for="fm">FM出力レベル</label><select id="fm" disabled>
+<option value="16">200%</option><option value="15">187.5%</option><option value="14">175%</option><option value="13">162.5%</option><option value="12">150%</option><option value="11">137.5%</option><option value="10">125%</option><option value="9">112.5%</option><option value="8" selected>100%（標準）</option><option value="7">87.5%</option><option value="6">75%</option><option value="5">62.5%</option><option value="4">50%</option><option value="3">37.5%</option><option value="2">25%</option><option value="1">12.5%（旧版）</option><option value="0">0%（FMミュート）</option></select>
+<div><label for="bus">バスの待ち時間</label><select id="bus" disabled><option value="fast" selected>短縮（標準）</option><option value="slow">旧版と同じ</option></select><span> 演奏停止中に切り替えます。</span></div>
+<p>FMのみ調整します。SSGと曲データは変わりません。100%を超える設定では飽和が起こる場合があります。LEVELのclipped_samplesで確認します。設定変更だけで演奏は始まりません。再起動すると100%へ戻ります。</p>
+<div><label for="capture-second">FM記録の開始</label><select id="capture-second"><option value="30">30秒</option><option value="31" selected>31秒</option><option value="32">32秒</option><option value="33">33秒</option></select><button id="capture" disabled>FM診断を録る</button><button id="dump" disabled>診断データを保存</button></div>
+<p>曲の先頭から演奏し、指定箇所のFMシリアル信号を約2秒記録して自動停止します。FMレベルは記録開始前に設定してください。記録後に診断データを保存します。</p>
+<output id="state" aria-live="polite">接続待ち</output><pre id="log" aria-label="デバイスログ"></pre>
+<p>起動・接続だけでは演奏しません。組み込みBINは書き込んだUF2で決まります。元のテストUF2は音階、Ys II用UF2は全曲を再生します。C版はMicroPython REPLではありません。通常の画面切り替え中は演奏を継続します。I2Cからの演奏中は、操作側Picoが再生を管理します。</p>
+<script type="module">
+const el=id=>document.getElementById(id);
+let port,reader,writer,reading,known=false,ready=false,fmSupported=false,extended=false,running=false,closing=false,pending='';
+const encoder=new TextEncoder();
+let i2cOwned=false,midiOwned=false;
+let diagSupported=false,diagReady=false,capturing=false,transferring=false,diagnostic=null,transferTimer;
+function controls(){el('capture').disabled=!known||!ready||!diagSupported||running||(i2cOwned||midiOwned)||transferring;el('dump').disabled=!known||!diagReady||running||(i2cOwned||midiOwned)||transferring;el('capture-second').disabled=running||transferring;el('bus').disabled=!known||!ready||!extended||running||(i2cOwned||midiOwned)||transferring;for(const option of el('fm').options)option.disabled=Number(option.value)>8&&!extended;el('fm').disabled=!known||!ready||!fmSupported||capturing||transferring;el('connect').disabled=!!port;el('disconnect').disabled=!port;el('status').disabled=!writer||transferring;el('stop').disabled=!known;el('reboot').disabled=!known||transferring;el('bootsel').disabled=!known||transferring;for(const id of ['test','play'])el(id).disabled=!known||!ready||(i2cOwned||midiOwned)||transferring;}
+function append(text){const log=el('log');log.textContent=(log.textContent+text).slice(-50000);log.scrollTop=log.scrollHeight;}
+function download(bytes,name,type){const url=URL.createObjectURL(new Blob([bytes],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+function crc32(bytes){let crc=0xffffffff;for(const value of bytes){crc^=value;for(let b=0;b<8;b++)crc=(crc>>>1)^((crc&1)?0xedb88320:0);}return (crc^0xffffffff)>>>0;}
+function transferTimeout(){clearTimeout(transferTimer);transferTimer=setTimeout(()=>{diagnostic=null;transferring=false;controls();el('state').textContent='受信が完了しませんでした。診断データの保存を再試行できます';},15000);}
+function diagnosticLine(text){
+  if(!/^DIAG(BEGIN|DATA|END|ABORT)/.test(text))return false;
+  try{
+    if(text.startsWith('DIAGBEGIN ')){
+      if(!transferring)return true;
+      transferTimeout();
+      const match=/^DIAGBEGIN (432150) ([0-9a-fA-F]{8})$/.exec(text);
+      if(!match)throw new Error('診断サイズが不正です');
+      diagnostic={bytes:new Uint8Array(Number(match[1])),used:0,crc:parseInt(match[2],16)};
+      transferring=true;controls();el('state').textContent='診断データを受信しています';
+    }else if(text.startsWith('DIAGDATA ')){
+      if(!diagnostic)return true;
+      const hex=text.slice(9);if(!/^(?:[0-9a-fA-F]{2}){1,128}$/.test(hex)||diagnostic.used+hex.length/2>diagnostic.bytes.length)throw new Error('診断データが不正です');
+      for(let i=0;i<hex.length;i+=2)diagnostic.bytes[diagnostic.used++]=parseInt(hex.slice(i,i+2),16);
+    }else if(text==='DIAGEND'){
+      if(!diagnostic)return true;
+      const d=diagnostic;
+      if(d.used!==d.bytes.length||crc32(d.bytes)!==d.crc||String.fromCharCode(...d.bytes.slice(0,4))!=='RCD1')throw new Error('診断データの検査に失敗しました');
+      clearTimeout(transferTimer);download(d.bytes,'revc-fm-diagnostic.rcd','application/octet-stream');diagnostic=null;transferring=false;controls();append('診断データのCRC32検査と保存が完了しました。\n');el('state').textContent='診断データを保存しました';
+    }else if(text.startsWith('DIAGABORT'))throw new Error('診断データの転送を中止しました。保存は再試行できます');
+  }catch(error){clearTimeout(transferTimer);diagnostic=null;transferring=false;controls();append(error.message+'\n');el('state').textContent=error.message;}
+  return true;
+}
+function line(text){
+  if(diagnosticLine(text))return;
+  append(text+'\n');
+  const version=/^STATUS C=0\.([345])\.0-alpha\.([1-7]) /.exec(text);
+  if(version){
+    const level=version[1]!=='3'?7:Number(version[2]);fmSupported=level!==1;extended=level>=3;diagSupported=level>=4;
+    const gain=/\bfm_gain_eighths=(1[0-6]|[0-9])\b/.exec(text);if(gain)el('fm').value=gain[1];else if(!fmSupported)el('fm').value='1';
+    known=true;ready=/audio_ready=1\b/.test(text)&&/fault=0\b/.test(text);running=/state=1\b/.test(text);const done=/state=2\b/.test(text);el('state').textContent=!ready?'Rev Cの音声状態を確認してください':running?'再生中':done?'演奏が完了し、消音しました':'Rev C C版に接続しました';controls();
+  }
+  if(text.startsWith('I2C protocol=2 ')){i2cOwned=/\bstate=[12]\b/.test(text);controls();}
+  if(text.startsWith('MIDI protocol=1 ')){midiOwned=/\bowned=1\b/.test(text);controls();}
+  if(text.startsWith('DIAG ')){capturing=/state=[12]\b/.test(text);diagReady=/ready=1\b/.test(text);controls();}
+  if(text.startsWith('BUS ')){const mode=/mode=(fast|slow)\b/.exec(text);if(mode)el('bus').value=mode[1];}
+  if(text.startsWith('PLAY ')){running=true;diagReady=false;capturing=text.startsWith('PLAY capture ');controls();el('state').textContent='再生要求を受理しました';}
+  if(text.startsWith('DONE ')){running=false;capturing=false;if(text.startsWith('DONE diagnostic'))diagReady=true;controls();el('state').textContent=diagReady?'FM記録が完了しました。診断データを保存してください':'演奏が完了し、消音しました';}
+  if(text.startsWith('STOP ')){running=false;capturing=false;controls();}
+  if(text.startsWith('FAIL ')){ready=false;el('state').textContent='デバイスが異常停止しました。ログを保存してください';controls();}
+}
+async function send(command){if(!writer)throw new Error('接続を確認してください');await writer.write(encoder.encode(command+'\n'));}
+async function readLoop(){
+  const decoder=new TextDecoder();
+  try{while(true){const {value,done}=await reader.read();if(done)break;pending+=decoder.decode(value,{stream:true});const lines=pending.split(/\r?\n/);pending=lines.pop().slice(-2048);for(const text of lines)line(text);}}
+  catch(error){if(!closing)append('読み取り終了: '+error.message+'\n');}
+  finally{reader.releaseLock();reader=null;known=false;ready=false;clearTimeout(transferTimer);diagnostic=null;transferring=false;controls();}
+}
+el('connect').onclick=async()=>{
+  if(!navigator.serial){el('state').textContent='このブラウザーではWeb Serialを利用できません。対応ブラウザーを使用してください';return;}
+  el('connect').disabled=true;
+  try{
+    port=await navigator.serial.requestPort();await port.open({baudRate:115200});await port.setSignals({dataTerminalReady:true});
+    writer=port.writable.getWriter();reader=port.readable.getReader();closing=false;pending='';known=false;ready=false;i2cOwned=false;midiOwned=false;diagReady=false;capturing=false;diagnostic=null;transferring=false;reading=readLoop();controls();
+    el('state').textContent='接続先のC版ファームウェアを確認しています';await send('help');
+  }catch(error){el('state').textContent=error.message;if(port&&!reader){try{await port.close();}catch{}port=null;}controls();}
+};
+el('disconnect').onclick=async()=>{
+  closing=true;
+  try{if(known)await send('stop');if(writer){writer.releaseLock();writer=null;}if(reader)await reader.cancel();if(reading)await reading;if(port)await port.close();}
+  catch(error){append('切断: '+error.message+'\n');}
+  finally{port=null;known=false;ready=false;controls();el('state').textContent='切断しました';}
+};
+for(const id of ['test','play','stop','status','reboot','bootsel'])el(id).onclick=async()=>{try{await send(id==='status'?'help':id);}catch(error){el('state').textContent=error.message;}};
+el('bus').onchange=async()=>{try{await send('bus '+el('bus').value);}catch(error){el('state').textContent=error.message;}};
+el('fm').onchange=async()=>{try{await send('fm '+el('fm').value);}catch(error){el('state').textContent=error.message;}};
+el('capture').onclick=async()=>{try{diagReady=false;capturing=true;running=true;controls();await send('capture '+el('capture-second').value);}catch(error){capturing=false;running=false;controls();el('state').textContent=error.message;}};
+el('dump').onclick=async()=>{try{transferring=true;transferTimeout();controls();await send('dump');}catch(error){clearTimeout(transferTimer);transferring=false;controls();el('state').textContent=error.message;}};
+el('save').onclick=()=>{const url=URL.createObjectURL(new Blob([el('log').textContent],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='revc-c-log.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
+window.addEventListener('pagehide',()=>{if(known&&writer)writer.write(encoder.encode('stop\n')).catch(()=>{});});
+controls();
+</script></html>

@@ -1,0 +1,139 @@
+{
+  "date": "2026-11-13",
+  "capture_sha256": "ebf46031d999166b20cf697d7d0a0313391e7ae4fb8bdba9ef351ac21c113a42",
+  "capture": {
+    "format": "RCD1",
+    "scope": "Captured digital FM only;no analog line signal orSSG recording",
+    "capture_first_frame_estimate_us": 31002396,
+    "capture_last_dma_done_us": 33004906,
+    "raw_frames": 111250,
+    "trace_events": 13982,
+    "clock_hz": 4000000,
+    "sample_clock_divisor": 72,
+    "gain_eighths": 8,
+    "bus_fast": true,
+    "peak_raw": 13888,
+    "peak_pcm": 13148,
+    "clipped_output_samples": 0,
+    "exponents": {
+      "1": 16359,
+      "2": 16453,
+      "3": 31413,
+      "4": 35453,
+      "5": 11131,
+      "6": 441
+    },
+    "unused11_bit_values": {
+      "512": 9136,
+      "1024": 9131,
+      "0": 9123,
+      "1536": 9038,
+      "3": 8283,
+      "4": 8076,
+      "1": 8044,
+      "1025": 8007,
+      "1792": 5193,
+      "256": 5152,
+      "768": 5111,
+      "1280": 5003,
+      "1026": 4174,
+      "2": 4095,
+      "1537": 3958,
+      "513": 3816
+    },
+    "noncanonical_codes": 0,
+    "max_adjacent_raw_step": 10384,
+    "notes": [
+      "Noncanonical codes/large adjacent steps alone do not prove a fault",
+      "Raw WAV uses55556Hz integer approximation of4000000/72",
+      "PCM WAV matches block-local125:108 interpolation and the fixed gain recorded in header",
+      "DMA timestamps mark software observation,not exact wire-edge timing"
+    ],
+    "source_prefix_register_order_preserved": true,
+    "max_write_return_late_us": 4390,
+    "write_return_late_30_35s_us": {
+      "max": 759
+    }
+  },
+  "firmware_log": {
+    "version": "0.3.0-alpha.4",
+    "fm_gain_eighths": 8,
+    "fault": 0,
+    "snapshot_ready": true,
+    "bytes": 432150,
+    "events": 13982,
+    "total_score_events": 123137,
+    "pcm_clipped_samples": 0,
+    "max_convert_us": 457,
+    "queue_min": 4,
+    "queue_max": 5,
+    "max_dispatch_late_us": 4364,
+    "late_bins_lt1_5_10_20_100ms": [
+      13910,
+      72,
+      0,
+      0,
+      0
+    ],
+    "bus_fast": true,
+    "bus_max_call_us": 33,
+    "log_drops": 0
+  },
+  "reference": {
+    "engine": "ymfm",
+    "commit": "81aec25ccbb98f4873a255f7551ac4dadac59b4a",
+    "adapter": "WebLab runtime/ymfm/wrapper.cpp compiled natively,unchanged",
+    "scheduling": "Original WYM1 ms times applied at48kHz frame boundaries",
+    "postprocessing": "same5Hz DC blocker as YmRenderer;FM solo;no SSG,no common mixed-output limiter",
+    "not_a_browser_recording": true
+  },
+  "waveform_comparison": {
+    "scope": "Actual-timing native55.555kHz reference vs captured wire,constant lag search\u00b12000samples;not a bit-exact claim",
+    "native_correlation_4_segments": [
+      0.947833,
+      0.947965,
+      0.953686,
+      0.921469
+    ],
+    "native_best_lag_samples": [
+      -4,
+      -4,
+      -4,
+      -4
+    ],
+    "captured_rms": 2591.717,
+    "reference_rms": 2591.472,
+    "wire_invalid_exponents": 0,
+    "noncanonical_codes": 0,
+    "metric": "uncentered normalized cross correlation with integer lag;not sample identity or a hardware pass/fail threshold"
+  },
+  "audio_comparison": {
+    "order": [
+      "WebLab-engine FM reference with5Hz DC cutoff",
+      "captured FM through current C interpolation",
+      "same captured PCM with5Hz DC cutoff"
+    ],
+    "common_gain": 1.5,
+    "sample_rate": 48000,
+    "trimmed_first_capture_seconds": 0.25,
+    "excerpt_start_seconds": 31.252396,
+    "per_segment_seconds": 1.7525,
+    "gap_seconds": 0.5,
+    "edge_fade_seconds": 0.005,
+    "clipped_samples": 0
+  },
+  "conclusion": "Short offline clips did not reproduce the reported symptom for the user. No instruction-model serialization defect found. Actual I2S/DAC/analog/monitor path and full-mix or excerpt-context effects remain unverified;next evidence is a real line recording,not an assumed filter fix.",
+  "follow_up_user_feedback": {
+    "source": "User reply in chat",
+    "listening_result": "No audible difference among all three short FM comparison segments;no reported popping in any segment",
+    "limits": "FM-only excerpts about1.75s each;does not prove absence elsewhere in30..35s or in the full FM+SSG analog mix",
+    "DC5_audible_benefit": "not demonstrated",
+    "next_step": "Record the real RevC line signal throughAMS22 USB,normal embedded-song play atFM150percent,first40seconds,LOOPBACK off;also report whether the original popping was heard during that recording"
+  },
+  "i2s_instruction_review": {
+    "passed": true,
+    "scope": "Actual i2s_tx.pio instructions modelled with48 changing signed PCM16 words,including0,32767,-32768,-1 and alternating bit patterns;left word/zero right/one-bit WS delay preserved",
+    "electrical_capture": false,
+    "source_sha256": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6"
+  }
+}

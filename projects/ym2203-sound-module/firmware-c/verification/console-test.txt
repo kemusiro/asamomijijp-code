@@ -1,0 +1,1 @@
+PASS: no auto-play,firmware identification,test/play/stop commands,fault gating and disconnect;Web Serial is modelled

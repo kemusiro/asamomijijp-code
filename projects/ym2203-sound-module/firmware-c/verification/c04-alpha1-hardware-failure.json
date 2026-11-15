@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-14",
+  "version": "0.4.0-alpha.1",
+  "source": "User HOST traceback and Rev C status supplied in chat",
+  "host_error": "BEGIN rejected:code4 state4 error0",
+  "host_signature_passed": true,
+  "target": {
+    "audio_ready": 1,
+    "fault": 3,
+    "state": 3,
+    "events": 0,
+    "total": 123137,
+    "gates": 0,
+    "blocks": 2,
+    "peak": 0,
+    "max_convert_us": 81,
+    "queue_min": 8,
+    "queue_max": 2,
+    "i2s_div256": 12500,
+    "reject_observations": 0,
+    "clipped_samples": 0,
+    "bus_writes": 0,
+    "max_bus_call_us": 1,
+    "i2c_state": 4,
+    "i2c_result": 4,
+    "i2c_error": 0,
+    "i2c_received": 0,
+    "i2c_executed": 0
+  },
+  "confirmed": "Audio output reported TXSTALL immediately after two-block startup,with no song records received/applied. Boolean prepare callback hid audio failure behind generic STATE result.",
+  "code_defect": "DMA was started asynchronously immediately before enabling the I2S state machine;no FIFO priming handshake.",
+  "limits": "User snapshots can include subsequent STOP/BEGIN attempts;the exact bus-cycle event was not captured electrically."
+}

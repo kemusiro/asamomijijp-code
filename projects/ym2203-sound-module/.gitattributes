@@ -1,0 +1,10 @@
+# Fixed hashes describe exact imported bytes, including original line endings.
+* -text
+# KiCad plot output uses trailing spaces; Python csv.writer uses CRLF.
+hardware/**/*.svg -whitespace
+hardware/**/*.csv whitespace=cr-at-eol
+# Preserve these existing snapshots byte-for-byte rather than editing evidence.
+hardware/ym2203-single-board/cad.py whitespace=-blank-at-eof
+hardware/ym2203-single-board/firmware/src/ym2203_fw.py whitespace=-blank-at-eof
+hardware/ym2203-single-board/firmware/tests/micro_fixture.py whitespace=-blank-at-eof
+hardware/ym2203-single-board/firmware/verification/regression-before.txt whitespace=-blank-at-eol

@@ -1,0 +1,21 @@
+test_I2S_rate_tracks_external_clock_drift_and_rejects_wrong_clock (test_core.CoreTests.test_I2S_rate_tracks_external_clock_drift_and_rejects_wrong_clock) ... ok
+test_USB_SOF_wrap_close_and_timeout_require_fresh_progress (test_core.CoreTests.test_USB_SOF_wrap_close_and_timeout_require_fresh_progress) ... ok
+test_actual_C_scheduler_preserves_every_demo_event_same_timestamp_order_and_period (test_core.CoreTests.test_actual_C_scheduler_preserves_every_demo_event_same_timestamp_order_and_period) ... ok
+test_conversion_matches_Python_floor_rounding_and_silent_right_channel (test_core.CoreTests.test_conversion_matches_Python_floor_rounding_and_silent_right_channel) ... ok
+test_crc32_matches_independent_standard_library (test_core.CoreTests.test_crc32_matches_independent_standard_library) ... ok
+test_genuine_deadline_and_hardware_errors_fail_without_advancing (test_core.CoreTests.test_genuine_deadline_and_hardware_errors_fail_without_advancing) ... ok
+test_parser_rejects_shape_clock_time_and_unsupported_registers_without_changing_output (test_core.CoreTests.test_parser_rejects_shape_clock_time_and_unsupported_registers_without_changing_output) ... ok
+test_private_full_score_executes_every_original_register_in_order (test_core.CoreTests.test_private_full_score_executes_every_original_register_in_order) ... ok
+test_stop_and_replay_require_explicit_start_and_keep_score (test_core.CoreTests.test_stop_and_replay_require_explicit_start_and_keep_score) ... ok
+test_valid_register_policy_matches_accepted_MicroPython_for_all_65536_pairs (test_core.CoreTests.test_valid_register_policy_matches_accepted_MicroPython_for_all_65536_pairs) ... ok
+test_PIO_MSB_left_and_zero_right_with_one_bit_I2S_delay (test_core.SerializerTests.test_PIO_MSB_left_and_zero_right_with_one_bit_I2S_delay) ... ok
+test_bad_family_prefix_order_bounds_and_truncation_are_rejected (test_uf2.UF2Tests.test_bad_family_prefix_order_bounds_and_truncation_are_rejected) ... ok
+test_official_E10_prefix_is_not_an_out_of_bounds_program_write (test_uf2.UF2Tests.test_official_E10_prefix_is_not_an_out_of_bounds_program_write) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.889s
+
+OK
+FULL SCORE simulated service_us=20 events=123137 max_late_us=1980 period_us=298218020
+FULL SCORE simulated service_us=250 events=123137 max_late_us=24750 period_us=298218250
+FULL SCORE simulated service_us=400 events=123137 max_late_us=39600 period_us=298218400

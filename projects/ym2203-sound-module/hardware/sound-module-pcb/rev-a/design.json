@@ -1,0 +1,7410 @@
+{
+  "revision": "A",
+  "date": "2026-10-18",
+  "gpio_approved": true,
+  "power_source": "external_regulated_5v",
+  "gpio": [
+    {
+      "gpio": 0,
+      "pico_pin": 1,
+      "signal": "D0"
+    },
+    {
+      "gpio": 1,
+      "pico_pin": 2,
+      "signal": "D1"
+    },
+    {
+      "gpio": 2,
+      "pico_pin": 4,
+      "signal": "D2"
+    },
+    {
+      "gpio": 3,
+      "pico_pin": 5,
+      "signal": "D3"
+    },
+    {
+      "gpio": 4,
+      "pico_pin": 6,
+      "signal": "D4"
+    },
+    {
+      "gpio": 5,
+      "pico_pin": 7,
+      "signal": "D5"
+    },
+    {
+      "gpio": 6,
+      "pico_pin": 9,
+      "signal": "D6"
+    },
+    {
+      "gpio": 7,
+      "pico_pin": 10,
+      "signal": "D7"
+    },
+    {
+      "gpio": 8,
+      "pico_pin": 11,
+      "signal": "A0"
+    },
+    {
+      "gpio": 9,
+      "pico_pin": 12,
+      "signal": "A1"
+    },
+    {
+      "gpio": 10,
+      "pico_pin": 14,
+      "signal": "I2S_DATA"
+    },
+    {
+      "gpio": 11,
+      "pico_pin": 15,
+      "signal": "I2S_BCLK"
+    },
+    {
+      "gpio": 12,
+      "pico_pin": 16,
+      "signal": "I2S_LRCK"
+    },
+    {
+      "gpio": 13,
+      "pico_pin": 17,
+      "signal": "CS_N"
+    },
+    {
+      "gpio": 14,
+      "pico_pin": 19,
+      "signal": "WR_N"
+    },
+    {
+      "gpio": 15,
+      "pico_pin": 20,
+      "signal": "RD_N"
+    },
+    {
+      "gpio": 16,
+      "pico_pin": 21,
+      "signal": "FM_SD"
+    },
+    {
+      "gpio": 17,
+      "pico_pin": 22,
+      "signal": "FM_CLK"
+    },
+    {
+      "gpio": 18,
+      "pico_pin": 24,
+      "signal": "FM_SH1"
+    },
+    {
+      "gpio": 19,
+      "pico_pin": 25,
+      "signal": "FM_SH2"
+    },
+    {
+      "gpio": 20,
+      "pico_pin": 26,
+      "signal": "HOST_SDA"
+    },
+    {
+      "gpio": 21,
+      "pico_pin": 27,
+      "signal": "HOST_SCL"
+    },
+    {
+      "gpio": 22,
+      "pico_pin": 29,
+      "signal": "ARM"
+    },
+    {
+      "gpio": 26,
+      "pico_pin": 31,
+      "signal": "AUX_SDA"
+    },
+    {
+      "gpio": 27,
+      "pico_pin": 32,
+      "signal": "AUX_SCL"
+    },
+    {
+      "gpio": 28,
+      "pico_pin": 34,
+      "signal": "STATUS"
+    }
+  ],
+  "connector": [
+    {
+      "pin": 1,
+      "signal": "+5V"
+    },
+    {
+      "pin": 2,
+      "signal": "GND"
+    },
+    {
+      "pin": 3,
+      "signal": "+5V"
+    },
+    {
+      "pin": 4,
+      "signal": "GND"
+    },
+    {
+      "pin": 5,
+      "signal": "+3V3"
+    },
+    {
+      "pin": 6,
+      "signal": "GND"
+    },
+    {
+      "pin": 7,
+      "signal": "D0"
+    },
+    {
+      "pin": 8,
+      "signal": "D1"
+    },
+    {
+      "pin": 9,
+      "signal": "D2"
+    },
+    {
+      "pin": 10,
+      "signal": "D3"
+    },
+    {
+      "pin": 11,
+      "signal": "D4"
+    },
+    {
+      "pin": 12,
+      "signal": "D5"
+    },
+    {
+      "pin": 13,
+      "signal": "D6"
+    },
+    {
+      "pin": 14,
+      "signal": "D7"
+    },
+    {
+      "pin": 15,
+      "signal": "A0"
+    },
+    {
+      "pin": 16,
+      "signal": "GND"
+    },
+    {
+      "pin": 17,
+      "signal": "A1"
+    },
+    {
+      "pin": 18,
+      "signal": "GND"
+    },
+    {
+      "pin": 19,
+      "signal": "CS_N"
+    },
+    {
+      "pin": 20,
+      "signal": "WR_N"
+    },
+    {
+      "pin": 21,
+      "signal": "RD_N"
+    },
+    {
+      "pin": 22,
+      "signal": "GND"
+    },
+    {
+      "pin": 23,
+      "signal": "RESET_N"
+    },
+    {
+      "pin": 24,
+      "signal": "ARM"
+    },
+    {
+      "pin": 25,
+      "signal": "STATUS"
+    },
+    {
+      "pin": 26,
+      "signal": "GND"
+    },
+    {
+      "pin": 27,
+      "signal": "FM_SD"
+    },
+    {
+      "pin": 28,
+      "signal": "FM_CLK"
+    },
+    {
+      "pin": 29,
+      "signal": "FM_SH1"
+    },
+    {
+      "pin": 30,
+      "signal": "FM_SH2"
+    },
+    {
+      "pin": 31,
+      "signal": "GND"
+    },
+    {
+      "pin": 32,
+      "signal": "AUX_SDA"
+    },
+    {
+      "pin": 33,
+      "signal": "AUX_SCL"
+    },
+    {
+      "pin": 34,
+      "signal": "GND"
+    },
+    {
+      "pin": 35,
+      "signal": "ID0"
+    },
+    {
+      "pin": 36,
+      "signal": "ID1"
+    },
+    {
+      "pin": 37,
+      "signal": "ID2"
+    },
+    {
+      "pin": 38,
+      "signal": "PRESENT_N"
+    },
+    {
+      "pin": 39,
+      "signal": "AUX0"
+    },
+    {
+      "pin": 40,
+      "signal": "AUX1"
+    },
+    {
+      "pin": 41,
+      "signal": "GND"
+    },
+    {
+      "pin": 42,
+      "signal": "ANALOG_L"
+    },
+    {
+      "pin": 43,
+      "signal": "GND"
+    },
+    {
+      "pin": 44,
+      "signal": "ANALOG_R"
+    },
+    {
+      "pin": 45,
+      "signal": "GND"
+    },
+    {
+      "pin": 46,
+      "signal": null
+    },
+    {
+      "pin": 47,
+      "signal": null
+    },
+    {
+      "pin": 48,
+      "signal": "GND"
+    },
+    {
+      "pin": 49,
+      "signal": "GND"
+    },
+    {
+      "pin": 50,
+      "signal": null
+    }
+  ],
+  "boards": {
+    "base": {
+      "size_mm": [
+        180,
+        160
+      ],
+      "parts": [
+        {
+          "ref": "A1",
+          "value": "Raspberry Pi Pico 2",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GP0 / D0",
+              "net": "D0",
+              "type": "bidirectional"
+            },
+            {
+              "num": "2",
+              "name": "GP1 / D1",
+              "net": "D1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "4",
+              "name": "GP2 / D2",
+              "net": "D2",
+              "type": "bidirectional"
+            },
+            {
+              "num": "5",
+              "name": "GP3 / D3",
+              "net": "D3",
+              "type": "bidirectional"
+            },
+            {
+              "num": "6",
+              "name": "GP4 / D4",
+              "net": "D4",
+              "type": "bidirectional"
+            },
+            {
+              "num": "7",
+              "name": "GP5 / D5",
+              "net": "D5",
+              "type": "bidirectional"
+            },
+            {
+              "num": "9",
+              "name": "GP6 / D6",
+              "net": "D6",
+              "type": "bidirectional"
+            },
+            {
+              "num": "10",
+              "name": "GP7 / D7",
+              "net": "D7",
+              "type": "bidirectional"
+            },
+            {
+              "num": "11",
+              "name": "GP8 / A0",
+              "net": "A0",
+              "type": "bidirectional"
+            },
+            {
+              "num": "12",
+              "name": "GP9 / A1",
+              "net": "A1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "14",
+              "name": "GP10 / I2S_DATA",
+              "net": "I2S_DATA",
+              "type": "bidirectional"
+            },
+            {
+              "num": "15",
+              "name": "GP11 / I2S_BCLK",
+              "net": "I2S_BCLK",
+              "type": "bidirectional"
+            },
+            {
+              "num": "16",
+              "name": "GP12 / I2S_LRCK",
+              "net": "I2S_LRCK",
+              "type": "bidirectional"
+            },
+            {
+              "num": "17",
+              "name": "GP13 / CS_N",
+              "net": "CS_N",
+              "type": "bidirectional"
+            },
+            {
+              "num": "19",
+              "name": "GP14 / WR_N",
+              "net": "WR_N",
+              "type": "bidirectional"
+            },
+            {
+              "num": "20",
+              "name": "GP15 / RD_N",
+              "net": "RD_N",
+              "type": "bidirectional"
+            },
+            {
+              "num": "21",
+              "name": "GP16 / FM_SD",
+              "net": "FM_SD",
+              "type": "bidirectional"
+            },
+            {
+              "num": "22",
+              "name": "GP17 / FM_CLK",
+              "net": "FM_CLK",
+              "type": "bidirectional"
+            },
+            {
+              "num": "24",
+              "name": "GP18 / FM_SH1",
+              "net": "FM_SH1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "25",
+              "name": "GP19 / FM_SH2",
+              "net": "FM_SH2",
+              "type": "bidirectional"
+            },
+            {
+              "num": "26",
+              "name": "GP20 / HOST_SDA",
+              "net": "HOST_SDA",
+              "type": "bidirectional"
+            },
+            {
+              "num": "27",
+              "name": "GP21 / HOST_SCL",
+              "net": "HOST_SCL",
+              "type": "bidirectional"
+            },
+            {
+              "num": "29",
+              "name": "GP22 / ARM",
+              "net": "ARM",
+              "type": "bidirectional"
+            },
+            {
+              "num": "31",
+              "name": "GP26 / AUX_SDA",
+              "net": "AUX_SDA",
+              "type": "bidirectional"
+            },
+            {
+              "num": "32",
+              "name": "GP27 / AUX_SCL",
+              "net": "AUX_SCL",
+              "type": "bidirectional"
+            },
+            {
+              "num": "34",
+              "name": "GP28 / STATUS",
+              "net": "STATUS",
+              "type": "bidirectional"
+            },
+            {
+              "num": "3",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "13",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "18",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "23",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "28",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "33",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "38",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "30",
+              "name": "RUN",
+              "net": "PICO_RUN",
+              "type": "input"
+            },
+            {
+              "num": "35",
+              "name": "ADC_VREF",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "36",
+              "name": "3V3 OUT",
+              "net": "+3V3",
+              "type": "power_out"
+            },
+            {
+              "num": "37",
+              "name": "3V3_EN",
+              "net": null,
+              "type": "input"
+            },
+            {
+              "num": "39",
+              "name": "VSYS",
+              "net": "VSYS",
+              "type": "power_in"
+            },
+            {
+              "num": "40",
+              "name": "USB VBUS",
+              "net": null,
+              "type": "power_out"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 40,
+            "width": 17.78
+          },
+          "xy": [
+            10,
+            14
+          ],
+          "group": "controller",
+          "source": "https://datasheets.raspberrypi.com/pico/pico-2-datasheet.pdf",
+          "body_extra": [
+            21,
+            51
+          ]
+        },
+        {
+          "ref": "JMOD",
+          "value": "ESQ-125-58-L-D / socket",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "+3V3",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "D0",
+              "net": "D0",
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "D1",
+              "net": "D1",
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "D2",
+              "net": "D2",
+              "type": "passive"
+            },
+            {
+              "num": "10",
+              "name": "D3",
+              "net": "D3",
+              "type": "passive"
+            },
+            {
+              "num": "11",
+              "name": "D4",
+              "net": "D4",
+              "type": "passive"
+            },
+            {
+              "num": "12",
+              "name": "D5",
+              "net": "D5",
+              "type": "passive"
+            },
+            {
+              "num": "13",
+              "name": "D6",
+              "net": "D6",
+              "type": "passive"
+            },
+            {
+              "num": "14",
+              "name": "D7",
+              "net": "D7",
+              "type": "passive"
+            },
+            {
+              "num": "15",
+              "name": "A0",
+              "net": "A0",
+              "type": "passive"
+            },
+            {
+              "num": "16",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "17",
+              "name": "A1",
+              "net": "A1",
+              "type": "passive"
+            },
+            {
+              "num": "18",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "19",
+              "name": "CS_N",
+              "net": "CS_N",
+              "type": "passive"
+            },
+            {
+              "num": "20",
+              "name": "WR_N",
+              "net": "WR_N",
+              "type": "passive"
+            },
+            {
+              "num": "21",
+              "name": "RD_N",
+              "net": "RD_N",
+              "type": "passive"
+            },
+            {
+              "num": "22",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "23",
+              "name": "RESET_N",
+              "net": "RESET_N",
+              "type": "passive"
+            },
+            {
+              "num": "24",
+              "name": "ARM",
+              "net": "ARM",
+              "type": "passive"
+            },
+            {
+              "num": "25",
+              "name": "STATUS",
+              "net": "STATUS",
+              "type": "passive"
+            },
+            {
+              "num": "26",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "27",
+              "name": "FM_SD",
+              "net": "FM_SD",
+              "type": "passive"
+            },
+            {
+              "num": "28",
+              "name": "FM_CLK",
+              "net": "FM_CLK",
+              "type": "passive"
+            },
+            {
+              "num": "29",
+              "name": "FM_SH1",
+              "net": "FM_SH1",
+              "type": "passive"
+            },
+            {
+              "num": "30",
+              "name": "FM_SH2",
+              "net": "FM_SH2",
+              "type": "passive"
+            },
+            {
+              "num": "31",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "32",
+              "name": "AUX_SDA",
+              "net": "AUX_SDA",
+              "type": "passive"
+            },
+            {
+              "num": "33",
+              "name": "AUX_SCL",
+              "net": "AUX_SCL",
+              "type": "passive"
+            },
+            {
+              "num": "34",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "35",
+              "name": "ID0",
+              "net": "ID0",
+              "type": "passive"
+            },
+            {
+              "num": "36",
+              "name": "ID1",
+              "net": "ID1",
+              "type": "passive"
+            },
+            {
+              "num": "37",
+              "name": "ID2",
+              "net": "ID2",
+              "type": "passive"
+            },
+            {
+              "num": "38",
+              "name": "PRESENT_N",
+              "net": "PRESENT_N",
+              "type": "passive"
+            },
+            {
+              "num": "39",
+              "name": "AUX0",
+              "net": "AUX0",
+              "type": "passive"
+            },
+            {
+              "num": "40",
+              "name": "AUX1",
+              "net": "AUX1",
+              "type": "passive"
+            },
+            {
+              "num": "41",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "42",
+              "name": "ANALOG_L",
+              "net": "ANALOG_L",
+              "type": "passive"
+            },
+            {
+              "num": "43",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "44",
+              "name": "ANALOG_R",
+              "net": "ANALOG_R",
+              "type": "passive"
+            },
+            {
+              "num": "45",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "46",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "47",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "48",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "49",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "50",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 50,
+            "rows": 2,
+            "pitch": 2.54
+          },
+          "xy": [
+            170,
+            15
+          ],
+          "group": "module",
+          "source": "https://suddendocs.samtec.com/catalog_english/esq_th.pdf",
+          "role": "Top-side 16.13mm female. Block contact 50 with an insulating key."
+        },
+        {
+          "ref": "JHOST",
+          "value": "HOST 3.3V I2C",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "HOST_SDA",
+              "net": "HOST_SDA",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "HOST_SCL",
+              "net": "HOST_SCL",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 4,
+            "rows": 1,
+            "pitch": 2.54
+          },
+          "xy": [
+            8,
+            82
+          ],
+          "group": "io",
+          "source": ""
+        },
+        {
+          "ref": "JPOWER",
+          "value": "MAIN INPUT / REGULATED DC 5V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "EXT_5V",
+              "net": "EXT_5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 2,
+            "rows": 1,
+            "pitch": 2.54
+          },
+          "xy": [
+            8,
+            148
+          ],
+          "group": "power",
+          "source": "",
+          "role": "Required main supply: pin 1 = regulated +5V, pin 2 = GND. No reverse-polarity or overvoltage protection."
+        },
+        {
+          "ref": "F1",
+          "value": "PTC 0.5A hold",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "EXT_5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+5V",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "axial",
+            "pitch": 7.62,
+            "body": [
+              6,
+              3
+            ]
+          },
+          "xy": [
+            8,
+            137
+          ],
+          "group": "power",
+          "source": ""
+        },
+        {
+          "ref": "D1",
+          "value": "SS14 / A=+5V K=VSYS",
+          "pins": [
+            {
+              "num": "1",
+              "name": "K",
+              "net": "VSYS",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "A",
+              "net": "+5V",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sma"
+          },
+          "xy": [
+            32,
+            143
+          ],
+          "group": "power",
+          "source": "",
+          "role": "Prevents Pico USB from feeding the external supply through VSYS"
+        },
+        {
+          "ref": "C1",
+          "value": "47u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            37,
+            151
+          ],
+          "group": "power",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "C2",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            44,
+            151
+          ],
+          "group": "power",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "JRUN",
+          "value": "RESET SWITCH",
+          "pins": [
+            {
+              "num": "1",
+              "name": "PICO_RUN",
+              "net": "PICO_RUN",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 2,
+            "rows": 1,
+            "pitch": 2.54
+          },
+          "xy": [
+            8,
+            75
+          ],
+          "group": "controller",
+          "source": ""
+        },
+        {
+          "ref": "R1",
+          "value": "4.7k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "HOST_SDA",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            8,
+            91
+          ],
+          "group": "pulls",
+          "source": "",
+          "role": "Host pullups removable if already supplied externally"
+        },
+        {
+          "ref": "R2",
+          "value": "4.7k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "HOST_SCL",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            8,
+            97
+          ],
+          "group": "pulls",
+          "source": "",
+          "role": "Host pullups removable if already supplied externally"
+        },
+        {
+          "ref": "R3",
+          "value": "4.7k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "AUX_SDA",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            45,
+            55
+          ],
+          "group": "pulls",
+          "source": "",
+          "role": "Host pullups removable if already supplied externally"
+        },
+        {
+          "ref": "R4",
+          "value": "4.7k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "AUX_SCL",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            45,
+            61
+          ],
+          "group": "pulls",
+          "source": "",
+          "role": "Host pullups removable if already supplied externally"
+        },
+        {
+          "ref": "U1",
+          "value": "MCP23017-E/SP / 0x20",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GPB0",
+              "net": "ID0",
+              "type": "bidirectional"
+            },
+            {
+              "num": "2",
+              "name": "GPB1",
+              "net": "ID1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "3",
+              "name": "GPB2",
+              "net": "ID2",
+              "type": "bidirectional"
+            },
+            {
+              "num": "4",
+              "name": "GPB3",
+              "net": "PRESENT_N",
+              "type": "bidirectional"
+            },
+            {
+              "num": "5",
+              "name": "GPB4",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "GPB5",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "7",
+              "name": "GPB6",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "8",
+              "name": "GPB7",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "VDD",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "10",
+              "name": "VSS",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "11",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "12",
+              "name": "SCL",
+              "net": "AUX_SCL",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "SDA",
+              "net": "AUX_SDA",
+              "type": "bidirectional"
+            },
+            {
+              "num": "14",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "15",
+              "name": "A0",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "A1",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "A2",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "RESET_N",
+              "net": "PICO_RUN",
+              "type": "input"
+            },
+            {
+              "num": "19",
+              "name": "INTB",
+              "net": null,
+              "type": "open_collector"
+            },
+            {
+              "num": "20",
+              "name": "INTA",
+              "net": null,
+              "type": "open_collector"
+            },
+            {
+              "num": "21",
+              "name": "GPA0",
+              "net": "RESET_RELEASE",
+              "type": "bidirectional"
+            },
+            {
+              "num": "22",
+              "name": "GPA1",
+              "net": "LINE_ALLOW",
+              "type": "bidirectional"
+            },
+            {
+              "num": "23",
+              "name": "GPA2",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "24",
+              "name": "GPA3",
+              "net": "DAC_ALLOW",
+              "type": "bidirectional"
+            },
+            {
+              "num": "25",
+              "name": "GPA4",
+              "net": "AUX0",
+              "type": "bidirectional"
+            },
+            {
+              "num": "26",
+              "name": "GPA5",
+              "net": "AUX1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "27",
+              "name": "GPA6",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "28",
+              "name": "GPA7",
+              "net": null,
+              "type": "output"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 28,
+            "width": 7.62
+          },
+          "xy": [
+            43,
+            15
+          ],
+          "group": "controller",
+          "source": "https://akizukidenshi.com/catalog/g/g109486/"
+        },
+        {
+          "ref": "C3",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            55,
+            16
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "U2",
+          "value": "TC74HC08AP / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "1B",
+              "net": "RESET_RELEASE",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "1Y",
+              "net": "RESET_N",
+              "type": "output"
+            },
+            {
+              "num": "4",
+              "name": "2A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "5",
+              "name": "2B",
+              "net": "DAC_ALLOW",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "2Y",
+              "net": "DAC_XSMT",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "3Y",
+              "net": "LINE_RUN",
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "3A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "3B",
+              "net": "LINE_ALLOW",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "4Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "12",
+              "name": "4A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "4B",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 14,
+            "width": 7.62
+          },
+          "xy": [
+            72,
+            15
+          ],
+          "group": "safety",
+          "source": "https://akizukidenshi.com/catalog/g/g114059/"
+        },
+        {
+          "ref": "C4",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            84,
+            15
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "RN1",
+          "value": "RKC8BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "D0",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "D1",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "D2",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "D3",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "R5",
+              "net": "D4",
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "R6",
+              "net": "D5",
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "R7",
+              "net": "D6",
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "R8",
+              "net": "D7",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 9,
+            "pitch": 2.54
+          },
+          "xy": [
+            8,
+            68
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111910/"
+        },
+        {
+          "ref": "RN2",
+          "value": "RKC8BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "ARM",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "A0",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "A1",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "RESET_RELEASE",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "R5",
+              "net": "DAC_ALLOW",
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "R6",
+              "net": "LINE_ALLOW",
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "R7",
+              "net": "AUX0",
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "R8",
+              "net": "AUX1",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 9,
+            "pitch": 2.54
+          },
+          "xy": [
+            43,
+            68
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111910/"
+        },
+        {
+          "ref": "RN3",
+          "value": "RKC4BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "ID0",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "ID1",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "ID2",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "PRESENT_N",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 5,
+            "pitch": 2.54
+          },
+          "xy": [
+            91,
+            18
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111909/"
+        },
+        {
+          "ref": "RN4",
+          "value": "RKC4BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "CS_N",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "WR_N",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "RD_N",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "STATUS",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 5,
+            "pitch": 2.54
+          },
+          "xy": [
+            91,
+            26
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111909/"
+        },
+        {
+          "ref": "RN5",
+          "value": "RKC4BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "FM_SD",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "FM_CLK",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "FM_SH1",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "FM_SH2",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 5,
+            "pitch": 2.54
+          },
+          "xy": [
+            125,
+            60
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111909/"
+        },
+        {
+          "ref": "R5",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "DAC_XSMT",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            72,
+            40
+          ],
+          "group": "safety",
+          "source": ""
+        },
+        {
+          "ref": "A2",
+          "value": "AE-PCM5102A / I2S 48kHz",
+          "pins": [
+            {
+              "num": "1",
+              "name": "CPVDD",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "CAPP",
+              "net": "CAPP",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "CPGND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "4",
+              "name": "CAPM",
+              "net": "CAPM",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "VNEG",
+              "net": "VNEG",
+              "type": "power_out"
+            },
+            {
+              "num": "6",
+              "name": "OUTL",
+              "net": "DAC_L",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "OUTR",
+              "net": "DAC_R",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "AVDD",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "9",
+              "name": "AGND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "10",
+              "name": "DEMP",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "FLT",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "SCK",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "BCK",
+              "net": "DAC_BCK",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "DIN",
+              "net": "DAC_DIN",
+              "type": "input"
+            },
+            {
+              "num": "15",
+              "name": "LRCK",
+              "net": "DAC_LRCK",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "FMT",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "XSMT",
+              "net": "DAC_XSMT",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "LDOO",
+              "net": "LDOO",
+              "type": "power_out"
+            },
+            {
+              "num": "19",
+              "name": "DGND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "20",
+              "name": "DVDD",
+              "net": "+3V3",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 20,
+            "width": 15.24
+          },
+          "xy": [
+            12,
+            106
+          ],
+          "group": "dac",
+          "source": "https://akizukidenshi.com/catalog/g/g111836/",
+          "body_extra": [
+            17.5,
+            25.5
+          ]
+        },
+        {
+          "ref": "R6",
+          "value": "47",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "I2S_DATA",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "DAC_DIN",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            36,
+            106
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "R7",
+          "value": "47",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "I2S_BCLK",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "DAC_BCK",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            36,
+            112
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "R8",
+          "value": "47",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "I2S_LRCK",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "DAC_LRCK",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            36,
+            118
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "C5",
+          "value": "2.2u X7R 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "CAPP",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "CAPM",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2v",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            8,
+            109
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "C6",
+          "value": "2.2u X7R 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "VNEG",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            7,
+            117
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "C7",
+          "value": "1u X7R 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "LDOO",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            32,
+            112
+          ],
+          "group": "dac",
+          "source": ""
+        },
+        {
+          "ref": "C8",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            7,
+            105
+          ],
+          "group": "dac",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": [
+            "A2",
+            1
+          ]
+        },
+        {
+          "ref": "C9",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            7,
+            124
+          ],
+          "group": "dac",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": [
+            "A2",
+            8
+          ]
+        },
+        {
+          "ref": "C10",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            32,
+            105
+          ],
+          "group": "dac",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": [
+            "A2",
+            20
+          ]
+        },
+        {
+          "ref": "C11",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            7,
+            99
+          ],
+          "group": "dac",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "C12",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            7,
+            130
+          ],
+          "group": "dac",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "C13",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            32,
+            120
+          ],
+          "group": "dac",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "R9",
+          "value": "470",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "DAC_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "FM_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            48,
+            100
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C14",
+          "value": "2.2n C0G",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            59,
+            100
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R10",
+          "value": "470",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "DAC_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "FM_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            48,
+            115
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C15",
+          "value": "2.2n C0G",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            59,
+            115
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "U3",
+          "value": "MCP6022-I/P / reference",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OUTA",
+              "net": "VREF",
+              "type": "output"
+            },
+            {
+              "num": "2",
+              "name": "INA-",
+              "net": "VREF",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "INA+",
+              "net": "REF_RAW",
+              "type": "input"
+            },
+            {
+              "num": "4",
+              "name": "VSS",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "5",
+              "name": "INB+",
+              "net": "VREF",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "INB-",
+              "net": "REF_SPARE",
+              "type": "input"
+            },
+            {
+              "num": "7",
+              "name": "OUTB",
+              "net": "REF_SPARE",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "VDD",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 8,
+            "width": 7.62
+          },
+          "xy": [
+            72,
+            106
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R11",
+          "value": "10k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "REF_RAW",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            66,
+            98
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R12",
+          "value": "10k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "REF_RAW",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            66,
+            93
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C16",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "REF_RAW",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            84,
+            99
+          ],
+          "group": "analog",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "C17",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            84,
+            106
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "U4",
+          "value": "MCP6022-I/P / stereo mixer",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OUTA",
+              "net": "MIX_L",
+              "type": "output"
+            },
+            {
+              "num": "2",
+              "name": "INA-",
+              "net": "SUM_L",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "INA+",
+              "net": "VREF",
+              "type": "input"
+            },
+            {
+              "num": "4",
+              "name": "VSS",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "5",
+              "name": "INB+",
+              "net": "VREF",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "INB-",
+              "net": "SUM_R",
+              "type": "input"
+            },
+            {
+              "num": "7",
+              "name": "OUTB",
+              "net": "MIX_R",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "VDD",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 8,
+            "width": 7.62
+          },
+          "xy": [
+            101,
+            106
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C18",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            113,
+            106
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "C19",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "FM_AC_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            67,
+            88
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C20",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "ANALOG_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "MOD_AC_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            82,
+            88
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R13",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_AC_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            98,
+            88
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R14",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MOD_AC_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            113,
+            88
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R15",
+          "value": "22k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MIX_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            98,
+            94
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C21",
+          "value": "47p",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MIX_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            113,
+            94
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C22",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "FM_AC_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            67,
+            124
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C23",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "ANALOG_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "MOD_AC_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            82,
+            124
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R16",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "FM_AC_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            98,
+            124
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R17",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MOD_AC_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            113,
+            124
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R18",
+          "value": "22k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MIX_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            98,
+            130
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C24",
+          "value": "47p",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MIX_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SUM_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            113,
+            130
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "U5",
+          "value": "CD74HC4053E / line mute",
+          "pins": [
+            {
+              "num": "1",
+              "name": "Y1",
+              "net": "VREF",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "Y0",
+              "net": "MIX_R",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "Z1",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "Z",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "Z0",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "INH",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "7",
+              "name": "VEE",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "9",
+              "name": "C",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "B",
+              "net": "MUTE_5V",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "A",
+              "net": "MUTE_5V",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "X0",
+              "net": "MIX_L",
+              "type": "passive"
+            },
+            {
+              "num": "13",
+              "name": "X1",
+              "net": "VREF",
+              "type": "passive"
+            },
+            {
+              "num": "14",
+              "name": "X",
+              "net": "MUTED_L",
+              "type": "passive"
+            },
+            {
+              "num": "15",
+              "name": "Y",
+              "net": "MUTED_R",
+              "type": "passive"
+            },
+            {
+              "num": "16",
+              "name": "VCC",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 16,
+            "width": 7.62
+          },
+          "xy": [
+            133,
+            105
+          ],
+          "group": "analog",
+          "source": "https://akizukidenshi.com/catalog/g/g113266/"
+        },
+        {
+          "ref": "C25",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            145,
+            105
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "Q1",
+          "value": "MMBT3904 / B1 E2 C3",
+          "pins": [
+            {
+              "num": "1",
+              "name": "B",
+              "net": "MUTE_BASE",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "E",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "C",
+              "net": "MUTE_5V",
+              "type": "open_collector"
+            }
+          ],
+          "footprint": {
+            "kind": "sot23"
+          },
+          "xy": [
+            126,
+            90
+          ],
+          "group": "safety",
+          "source": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf"
+        },
+        {
+          "ref": "R19",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "LINE_RUN",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "MUTE_BASE",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            121,
+            81
+          ],
+          "group": "safety",
+          "source": ""
+        },
+        {
+          "ref": "R20",
+          "value": "100k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MUTE_BASE",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            121,
+            76
+          ],
+          "group": "safety",
+          "source": ""
+        },
+        {
+          "ref": "R21",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "MUTE_5V",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            139,
+            81
+          ],
+          "group": "safety",
+          "source": ""
+        },
+        {
+          "ref": "C26",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MUTED_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "OUT_AC_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            128,
+            133
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R22",
+          "value": "100k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "OUT_AC_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            128,
+            139
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R23",
+          "value": "100",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "VOL_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "LINE_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            128,
+            151
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C27",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "MUTED_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "OUT_AC_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            146,
+            133
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R24",
+          "value": "100k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "OUT_AC_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            146,
+            139
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R25",
+          "value": "100",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "VOL_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "LINE_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            146,
+            151
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "JVOL",
+          "value": "EXTERNAL DUAL 10k A POT",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OUT_AC_L",
+              "net": "OUT_AC_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "VOL_L",
+              "net": "VOL_L",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "OUT_AC_R",
+              "net": "OUT_AC_R",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "VOL_R",
+              "net": "VOL_R",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 6,
+            "rows": 2,
+            "pitch": 2.54
+          },
+          "xy": [
+            99,
+            150
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "Stereo 10k A pot: each channel HIGH/WIPER/LOW. Separate from mute."
+        },
+        {
+          "ref": "JLINE",
+          "value": "TRS JACK / AMS-22 LINE IN",
+          "pins": [
+            {
+              "num": "1",
+              "name": "LINE_L",
+              "net": "LINE_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "LINE_R",
+              "net": "LINE_R",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 3,
+            "rows": 1,
+            "pitch": 2.54
+          },
+          "xy": [
+            162,
+            151
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "External 3.5mm jack module, L=tip R=ring GND=sleeve. Not headphone power output."
+        },
+        {
+          "ref": "TP1",
+          "value": "+5V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            38,
+            145
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP2",
+          "value": "+3V3",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+3V3",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            48,
+            145
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP3",
+          "value": "GND",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            58,
+            145
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP4",
+          "value": "ARM",
+          "pins": [
+            {
+              "num": "1",
+              "name": "ARM",
+              "net": "ARM",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            86,
+            40
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP5",
+          "value": "RESET_N",
+          "pins": [
+            {
+              "num": "1",
+              "name": "RESET_N",
+              "net": "RESET_N",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            94,
+            40
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP6",
+          "value": "AUX_SDA",
+          "pins": [
+            {
+              "num": "1",
+              "name": "AUX_SDA",
+              "net": "AUX_SDA",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            55,
+            55
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP7",
+          "value": "AUX_SCL",
+          "pins": [
+            {
+              "num": "1",
+              "name": "AUX_SCL",
+              "net": "AUX_SCL",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            55,
+            61
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP8",
+          "value": "DAC_L",
+          "pins": [
+            {
+              "num": "1",
+              "name": "DAC_L",
+              "net": "DAC_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            40,
+            130
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP9",
+          "value": "DAC_R",
+          "pins": [
+            {
+              "num": "1",
+              "name": "DAC_R",
+              "net": "DAC_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            50,
+            130
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP10",
+          "value": "VREF",
+          "pins": [
+            {
+              "num": "1",
+              "name": "VREF",
+              "net": "VREF",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            87,
+            115
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP11",
+          "value": "MIX_L",
+          "pins": [
+            {
+              "num": "1",
+              "name": "MIX_L",
+              "net": "MIX_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            121,
+            116
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP12",
+          "value": "MIX_R",
+          "pins": [
+            {
+              "num": "1",
+              "name": "MIX_R",
+              "net": "MIX_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            121,
+            121
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H1",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            55,
+            5
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H2",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            175,
+            5
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H3",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            55,
+            115
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H4",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            175,
+            108
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H5",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            5,
+            5
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H6",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            5,
+            155
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H7",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            175,
+            155
+          ],
+          "group": "test",
+          "source": ""
+        }
+      ]
+    },
+    "ym2203": {
+      "size_mm": [
+        130,
+        120
+      ],
+      "parts": [
+        {
+          "ref": "JMOD",
+          "value": "TSW-125-07-L-D / header",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "+3V3",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "D0",
+              "net": "D0",
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "D1",
+              "net": "D1",
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "D2",
+              "net": "D2",
+              "type": "passive"
+            },
+            {
+              "num": "10",
+              "name": "D3",
+              "net": "D3",
+              "type": "passive"
+            },
+            {
+              "num": "11",
+              "name": "D4",
+              "net": "D4",
+              "type": "passive"
+            },
+            {
+              "num": "12",
+              "name": "D5",
+              "net": "D5",
+              "type": "passive"
+            },
+            {
+              "num": "13",
+              "name": "D6",
+              "net": "D6",
+              "type": "passive"
+            },
+            {
+              "num": "14",
+              "name": "D7",
+              "net": "D7",
+              "type": "passive"
+            },
+            {
+              "num": "15",
+              "name": "A0",
+              "net": "A0",
+              "type": "passive"
+            },
+            {
+              "num": "16",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "17",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "18",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "19",
+              "name": "CS_N",
+              "net": "CS_N",
+              "type": "passive"
+            },
+            {
+              "num": "20",
+              "name": "WR_N",
+              "net": "WR_N",
+              "type": "passive"
+            },
+            {
+              "num": "21",
+              "name": "RD_N",
+              "net": "RD_N",
+              "type": "passive"
+            },
+            {
+              "num": "22",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "23",
+              "name": "RESET_N",
+              "net": "RESET_N",
+              "type": "passive"
+            },
+            {
+              "num": "24",
+              "name": "ARM",
+              "net": "ARM",
+              "type": "passive"
+            },
+            {
+              "num": "25",
+              "name": "STATUS",
+              "net": "STATUS",
+              "type": "passive"
+            },
+            {
+              "num": "26",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "27",
+              "name": "FM_SD",
+              "net": "FM_SD",
+              "type": "passive"
+            },
+            {
+              "num": "28",
+              "name": "FM_CLK",
+              "net": "FM_CLK",
+              "type": "passive"
+            },
+            {
+              "num": "29",
+              "name": "FM_SH1",
+              "net": "FM_SH1",
+              "type": "passive"
+            },
+            {
+              "num": "30",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "31",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "32",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "33",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "34",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "35",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "36",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "37",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "38",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "39",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "40",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "41",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "42",
+              "name": "ANALOG_L",
+              "net": "ANALOG_L",
+              "type": "passive"
+            },
+            {
+              "num": "43",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "44",
+              "name": "ANALOG_R",
+              "net": "ANALOG_R",
+              "type": "passive"
+            },
+            {
+              "num": "45",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "46",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "47",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "48",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "49",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "50",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "header",
+            "n": 50,
+            "rows": 2,
+            "pitch": 2.54
+          },
+          "xy": [
+            120,
+            15
+          ],
+          "group": "module",
+          "source": "https://suddendocs.samtec.com/catalog_english/tsw_th.pdf",
+          "underside": true,
+          "role": "Bottom male; remove contact 50. 19mm face-to-face spacing gives 5.51mm insertion."
+        },
+        {
+          "ref": "U1",
+          "value": "YM2203C / DIP40",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "D1",
+              "net": "Y_D1",
+              "type": "bidirectional"
+            },
+            {
+              "num": "3",
+              "name": "D2",
+              "net": "Y_D2",
+              "type": "bidirectional"
+            },
+            {
+              "num": "4",
+              "name": "D3",
+              "net": "Y_D3",
+              "type": "bidirectional"
+            },
+            {
+              "num": "5",
+              "name": "D4",
+              "net": "Y_D4",
+              "type": "bidirectional"
+            },
+            {
+              "num": "6",
+              "name": "D5",
+              "net": "Y_D5",
+              "type": "bidirectional"
+            },
+            {
+              "num": "7",
+              "name": "D6",
+              "net": "Y_D6",
+              "type": "bidirectional"
+            },
+            {
+              "num": "8",
+              "name": "D7",
+              "net": "Y_D7",
+              "type": "bidirectional"
+            },
+            {
+              "num": "9",
+              "name": "IOA7",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "10",
+              "name": "IOA6",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "11",
+              "name": "IOA5",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "12",
+              "name": "IOA4",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "13",
+              "name": "IOA3",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "14",
+              "name": "IOA2",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "15",
+              "name": "IOA1",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "16",
+              "name": "IOA0",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "17",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "18",
+              "name": "SSG_C",
+              "net": "SSG_C",
+              "type": "output"
+            },
+            {
+              "num": "19",
+              "name": "SSG_B",
+              "net": "SSG_B",
+              "type": "output"
+            },
+            {
+              "num": "20",
+              "name": "SSG_A",
+              "net": "SSG_A",
+              "type": "output"
+            },
+            {
+              "num": "21",
+              "name": "VDD",
+              "net": "+5V",
+              "type": "power_in"
+            },
+            {
+              "num": "22",
+              "name": "SH",
+              "net": "Y_SH",
+              "type": "output"
+            },
+            {
+              "num": "23",
+              "name": "SD",
+              "net": "Y_SD",
+              "type": "output"
+            },
+            {
+              "num": "24",
+              "name": "RESET_N",
+              "net": "Y_RESET_N",
+              "type": "input"
+            },
+            {
+              "num": "25",
+              "name": "IRQ_N",
+              "net": "Y_IRQ",
+              "type": "open_collector"
+            },
+            {
+              "num": "26",
+              "name": "IOB0",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "27",
+              "name": "IOB1",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "28",
+              "name": "IOB2",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "29",
+              "name": "IOB3",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "30",
+              "name": "IOB4",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "31",
+              "name": "IOB5",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "32",
+              "name": "IOB6",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "33",
+              "name": "IOB7",
+              "net": null,
+              "type": "bidirectional"
+            },
+            {
+              "num": "34",
+              "name": "CS_N",
+              "net": "Y_CS_N",
+              "type": "input"
+            },
+            {
+              "num": "35",
+              "name": "WR_N",
+              "net": "Y_WR_N",
+              "type": "input"
+            },
+            {
+              "num": "36",
+              "name": "RD_N",
+              "net": "Y_RD_N",
+              "type": "input"
+            },
+            {
+              "num": "37",
+              "name": "A0",
+              "net": "Y_A0",
+              "type": "input"
+            },
+            {
+              "num": "38",
+              "name": "PHI_M 4MHz",
+              "net": "CLK4",
+              "type": "input"
+            },
+            {
+              "num": "39",
+              "name": "CLK",
+              "net": "Y_CLK",
+              "type": "output"
+            },
+            {
+              "num": "40",
+              "name": "D0",
+              "net": "Y_D0",
+              "type": "bidirectional"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 40,
+            "width": 15.24
+          },
+          "xy": [
+            78,
+            15
+          ],
+          "group": "ym",
+          "source": "https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf"
+        },
+        {
+          "ref": "C1",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            98,
+            63
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": [
+            "U1",
+            21
+          ]
+        },
+        {
+          "ref": "C2",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            99,
+            69
+          ],
+          "group": "ym",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "A1",
+          "value": "AE-LLCNV-LVC8T245",
+          "pins": [
+            {
+              "num": "1",
+              "name": "VA",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "24",
+              "name": "VA",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "23",
+              "name": "VB",
+              "net": "+5V",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "OE_N",
+              "net": "OE_WRITE_N",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "DIR A>B",
+              "net": "+3V3",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "13",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "22",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "4",
+              "name": "A1",
+              "net": "D0",
+              "type": "input"
+            },
+            {
+              "num": "21",
+              "name": "B1",
+              "net": "Y_D0",
+              "type": "tri_state"
+            },
+            {
+              "num": "5",
+              "name": "A2",
+              "net": "D1",
+              "type": "input"
+            },
+            {
+              "num": "20",
+              "name": "B2",
+              "net": "Y_D1",
+              "type": "tri_state"
+            },
+            {
+              "num": "6",
+              "name": "A3",
+              "net": "D2",
+              "type": "input"
+            },
+            {
+              "num": "19",
+              "name": "B3",
+              "net": "Y_D2",
+              "type": "tri_state"
+            },
+            {
+              "num": "7",
+              "name": "A4",
+              "net": "D3",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "B4",
+              "net": "Y_D3",
+              "type": "tri_state"
+            },
+            {
+              "num": "8",
+              "name": "A5",
+              "net": "D4",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "B5",
+              "net": "Y_D4",
+              "type": "tri_state"
+            },
+            {
+              "num": "9",
+              "name": "A6",
+              "net": "D5",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "B6",
+              "net": "Y_D5",
+              "type": "tri_state"
+            },
+            {
+              "num": "10",
+              "name": "A7",
+              "net": "D6",
+              "type": "input"
+            },
+            {
+              "num": "15",
+              "name": "B7",
+              "net": "Y_D6",
+              "type": "tri_state"
+            },
+            {
+              "num": "11",
+              "name": "A8",
+              "net": "D7",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "B8",
+              "net": "Y_D7",
+              "type": "tri_state"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 24,
+            "width": 15.24
+          },
+          "xy": [
+            12,
+            13
+          ],
+          "group": "bus",
+          "source": "https://akizukidenshi.com/catalog/g/g115778/",
+          "body_extra": [
+            18,
+            31
+          ]
+        },
+        {
+          "ref": "A2",
+          "value": "AE-LLCNV-LVC8T245",
+          "pins": [
+            {
+              "num": "1",
+              "name": "VA",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "24",
+              "name": "VA",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "23",
+              "name": "VB",
+              "net": "+5V",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "OE_N",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "DIR A>B",
+              "net": "+3V3",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "13",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "22",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "4",
+              "name": "A1",
+              "net": "A0",
+              "type": "input"
+            },
+            {
+              "num": "21",
+              "name": "B1",
+              "net": "Y_A0",
+              "type": "tri_state"
+            },
+            {
+              "num": "5",
+              "name": "A2",
+              "net": "RESET_N",
+              "type": "input"
+            },
+            {
+              "num": "20",
+              "name": "B2",
+              "net": "Y_RESET_N",
+              "type": "tri_state"
+            },
+            {
+              "num": "6",
+              "name": "A3",
+              "net": "SAFE_CS_N",
+              "type": "input"
+            },
+            {
+              "num": "19",
+              "name": "B3",
+              "net": "Y_CS_N",
+              "type": "tri_state"
+            },
+            {
+              "num": "7",
+              "name": "A4",
+              "net": "SAFE_WR_N",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "B4",
+              "net": "Y_WR_N",
+              "type": "tri_state"
+            },
+            {
+              "num": "8",
+              "name": "A5",
+              "net": "SAFE_RD_N",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "B5",
+              "net": "Y_RD_N",
+              "type": "tri_state"
+            },
+            {
+              "num": "9",
+              "name": "A6",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "B6",
+              "net": null,
+              "type": "tri_state"
+            },
+            {
+              "num": "10",
+              "name": "A7",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "15",
+              "name": "B7",
+              "net": null,
+              "type": "tri_state"
+            },
+            {
+              "num": "11",
+              "name": "A8",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "B8",
+              "net": null,
+              "type": "tri_state"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 24,
+            "width": 15.24
+          },
+          "xy": [
+            12,
+            50
+          ],
+          "group": "bus",
+          "source": "https://akizukidenshi.com/catalog/g/g115778/",
+          "body_extra": [
+            18,
+            31
+          ]
+        },
+        {
+          "ref": "U2",
+          "value": "74LCX245FT / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "DIR A>B",
+              "net": "+3V3",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "19",
+              "name": "OE_N",
+              "net": "OE_READ_N",
+              "type": "input"
+            },
+            {
+              "num": "20",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "A1",
+              "net": "Y_D0",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "B1",
+              "net": "D0",
+              "type": "output"
+            },
+            {
+              "num": "3",
+              "name": "A2",
+              "net": "Y_D1",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "B2",
+              "net": "D1",
+              "type": "output"
+            },
+            {
+              "num": "4",
+              "name": "A3",
+              "net": "Y_D2",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "B3",
+              "net": "D2",
+              "type": "output"
+            },
+            {
+              "num": "5",
+              "name": "A4",
+              "net": "Y_D3",
+              "type": "input"
+            },
+            {
+              "num": "15",
+              "name": "B4",
+              "net": "D3",
+              "type": "output"
+            },
+            {
+              "num": "6",
+              "name": "A5",
+              "net": "Y_D4",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "B5",
+              "net": "D4",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "A6",
+              "net": "Y_D5",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "B6",
+              "net": "D5",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "A7",
+              "net": "Y_D6",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "B7",
+              "net": "D6",
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "A8",
+              "net": "Y_D7",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "B8",
+              "net": "D7",
+              "type": "output"
+            }
+          ],
+          "footprint": {
+            "kind": "tssop",
+            "n": 20,
+            "pitch": 0.65,
+            "width": 6.4
+          },
+          "xy": [
+            48,
+            18
+          ],
+          "group": "bus",
+          "source": "https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf"
+        },
+        {
+          "ref": "C3",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            55,
+            17
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "U3",
+          "value": "74LCX245FT / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "DIR A>B",
+              "net": "+3V3",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "19",
+              "name": "OE_N",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "20",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            },
+            {
+              "num": "2",
+              "name": "A1",
+              "net": "Y_SD",
+              "type": "input"
+            },
+            {
+              "num": "18",
+              "name": "B1",
+              "net": "FM_SD",
+              "type": "output"
+            },
+            {
+              "num": "3",
+              "name": "A2",
+              "net": "Y_CLK",
+              "type": "input"
+            },
+            {
+              "num": "17",
+              "name": "B2",
+              "net": "FM_CLK",
+              "type": "output"
+            },
+            {
+              "num": "4",
+              "name": "A3",
+              "net": "Y_SH",
+              "type": "input"
+            },
+            {
+              "num": "16",
+              "name": "B3",
+              "net": "FM_SH1",
+              "type": "output"
+            },
+            {
+              "num": "5",
+              "name": "A4",
+              "net": "Y_IRQ",
+              "type": "input"
+            },
+            {
+              "num": "15",
+              "name": "B4",
+              "net": "STATUS",
+              "type": "output"
+            },
+            {
+              "num": "6",
+              "name": "A5",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "B5",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "A6",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "B6",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "A7",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "B7",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "A8",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "B8",
+              "net": null,
+              "type": "output"
+            }
+          ],
+          "footprint": {
+            "kind": "tssop",
+            "n": 20,
+            "pitch": 0.65,
+            "width": 6.4
+          },
+          "xy": [
+            48,
+            42
+          ],
+          "group": "fm",
+          "source": "https://akizukidenshi.com/goodsaffix/74LCX245FT_datasheet_ja_20150130.pdf"
+        },
+        {
+          "ref": "C4",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            55,
+            41
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "U4",
+          "value": "TC74HC04AP / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "1Y",
+              "net": "NOT_ARM",
+              "type": "output"
+            },
+            {
+              "num": "3",
+              "name": "2A",
+              "net": "RD_N",
+              "type": "input"
+            },
+            {
+              "num": "4",
+              "name": "2Y",
+              "net": "NOT_RD_N",
+              "type": "output"
+            },
+            {
+              "num": "5",
+              "name": "3A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "3Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "4Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "4A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "5Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "11",
+              "name": "5A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "6Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "13",
+              "name": "6A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 14,
+            "width": 7.62
+          },
+          "xy": [
+            43,
+            72
+          ],
+          "group": "safety",
+          "source": "https://akizukidenshi.com/catalog/g/g114058/"
+        },
+        {
+          "ref": "U5",
+          "value": "TC74HC00AP / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "1B",
+              "net": "RD_N",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "1Y",
+              "net": "OE_WRITE_N",
+              "type": "output"
+            },
+            {
+              "num": "4",
+              "name": "2A",
+              "net": "ARM",
+              "type": "input"
+            },
+            {
+              "num": "5",
+              "name": "2B",
+              "net": "NOT_RD_N",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "2Y",
+              "net": "OE_READ_N",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "3Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "3A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "3B",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "4Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "12",
+              "name": "4A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "4B",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 14,
+            "width": 7.62
+          },
+          "xy": [
+            60,
+            72
+          ],
+          "group": "safety",
+          "source": "https://akizukidenshi.com/catalog/g/g110856/"
+        },
+        {
+          "ref": "U6",
+          "value": "TC74HC32AP / 3.3V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "CS_N",
+              "net": "CS_N",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "NOT_ARM",
+              "net": "NOT_ARM",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "SAFE_CS_N",
+              "net": "SAFE_CS_N",
+              "type": "output"
+            },
+            {
+              "num": "4",
+              "name": "WR_N",
+              "net": "WR_N",
+              "type": "input"
+            },
+            {
+              "num": "5",
+              "name": "NOT_ARM",
+              "net": "NOT_ARM",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "SAFE_WR_N",
+              "net": "SAFE_WR_N",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "SAFE_RD_N",
+              "net": "SAFE_RD_N",
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "RD_N",
+              "net": "RD_N",
+              "type": "input"
+            },
+            {
+              "num": "10",
+              "name": "NOT_ARM",
+              "net": "NOT_ARM",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "4Y",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "12",
+              "name": "4A",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "4B",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "VCC",
+              "net": "+3V3",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 14,
+            "width": 7.62
+          },
+          "xy": [
+            77,
+            72
+          ],
+          "group": "safety",
+          "source": "https://akizukidenshi.com/catalog/g/g112877/"
+        },
+        {
+          "ref": "C5",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            55,
+            72
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "C6",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            72,
+            72
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "C7",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+3V3",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            89,
+            72
+          ],
+          "group": "decoupling",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "RN1",
+          "value": "RKC8BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "Y_D0",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "Y_D1",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "Y_D2",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": "Y_D3",
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "R5",
+              "net": "Y_D4",
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "R6",
+              "net": "Y_D5",
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "R7",
+              "net": "Y_D6",
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "R8",
+              "net": "Y_D7",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 9,
+            "pitch": 2.54
+          },
+          "xy": [
+            38,
+            57
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111910/"
+        },
+        {
+          "ref": "RN2",
+          "value": "RKC4BD103J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "Y_CS_N",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "Y_WR_N",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "Y_RD_N",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": null,
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 5,
+            "pitch": 2.54
+          },
+          "xy": [
+            99,
+            31
+          ],
+          "group": "pulls",
+          "source": "https://akizukidenshi.com/catalog/g/g111909/"
+        },
+        {
+          "ref": "R1",
+          "value": "4.7k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "Y_RESET_N",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            96,
+            40
+          ],
+          "group": "pulls",
+          "source": ""
+        },
+        {
+          "ref": "R2",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "Y_IRQ",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            60,
+            47
+          ],
+          "group": "pulls",
+          "source": ""
+        },
+        {
+          "ref": "R3",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "ARM",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            61,
+            62
+          ],
+          "group": "pulls",
+          "source": ""
+        },
+        {
+          "ref": "R4",
+          "value": "10k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "OE_READ_N",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            61,
+            56
+          ],
+          "group": "pulls",
+          "source": ""
+        },
+        {
+          "ref": "X1",
+          "value": "8MHz 5V oscillator",
+          "pins": [
+            {
+              "num": "1",
+              "name": "NC",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "5",
+              "name": "OUT",
+              "net": "OSC8",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "VCC",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip8osc"
+          },
+          "xy": [
+            12,
+            88
+          ],
+          "group": "clock",
+          "source": "https://akizukidenshi.com/goodsaffix/osc.pdf"
+        },
+        {
+          "ref": "C8",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            25,
+            89
+          ],
+          "group": "clock",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "R5",
+          "value": "47",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "OSC8",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "CLK8",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            12,
+            103
+          ],
+          "group": "clock",
+          "source": ""
+        },
+        {
+          "ref": "U7",
+          "value": "TC74HC74AP / 5V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "CLR1_N",
+              "net": "+5V",
+              "type": "input"
+            },
+            {
+              "num": "2",
+              "name": "D1",
+              "net": "CLK_FB",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "CLK1",
+              "net": "CLK8",
+              "type": "input"
+            },
+            {
+              "num": "4",
+              "name": "PRE1_N",
+              "net": "+5V",
+              "type": "input"
+            },
+            {
+              "num": "5",
+              "name": "Q1",
+              "net": "DIV4",
+              "type": "output"
+            },
+            {
+              "num": "6",
+              "name": "Q1_N",
+              "net": "CLK_FB",
+              "type": "output"
+            },
+            {
+              "num": "7",
+              "name": "GND",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "8",
+              "name": "Q2_N",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "9",
+              "name": "Q2",
+              "net": null,
+              "type": "output"
+            },
+            {
+              "num": "10",
+              "name": "PRE2_N",
+              "net": "+5V",
+              "type": "input"
+            },
+            {
+              "num": "11",
+              "name": "CLK2",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "12",
+              "name": "D2",
+              "net": "GND",
+              "type": "input"
+            },
+            {
+              "num": "13",
+              "name": "CLR2_N",
+              "net": "+5V",
+              "type": "input"
+            },
+            {
+              "num": "14",
+              "name": "VCC",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 14,
+            "width": 7.62
+          },
+          "xy": [
+            12,
+            65
+          ],
+          "group": "clock",
+          "source": "https://akizukidenshi.com/goodsaffix/TC74HC74AP_datasheet_ja_20140301.pdf"
+        },
+        {
+          "ref": "C9",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            25,
+            65
+          ],
+          "group": "clock",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "R6",
+          "value": "47",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "DIV4",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "CLK4",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            67,
+            9
+          ],
+          "group": "clock",
+          "source": ""
+        },
+        {
+          "ref": "U8",
+          "value": "MCP6022-I/P / SSG mixer",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OUTA",
+              "net": "VREF_CARD",
+              "type": "output"
+            },
+            {
+              "num": "2",
+              "name": "INA-",
+              "net": "VREF_CARD",
+              "type": "input"
+            },
+            {
+              "num": "3",
+              "name": "INA+",
+              "net": "REF_CARD_RAW",
+              "type": "input"
+            },
+            {
+              "num": "4",
+              "name": "VSS",
+              "net": "GND",
+              "type": "power_in"
+            },
+            {
+              "num": "5",
+              "name": "INB+",
+              "net": "VREF_CARD",
+              "type": "input"
+            },
+            {
+              "num": "6",
+              "name": "INB-",
+              "net": "SSG_SUM",
+              "type": "input"
+            },
+            {
+              "num": "7",
+              "name": "OUTB",
+              "net": "SSG_MIX",
+              "type": "output"
+            },
+            {
+              "num": "8",
+              "name": "VDD",
+              "net": "+5V",
+              "type": "power_in"
+            }
+          ],
+          "footprint": {
+            "kind": "dip",
+            "n": 8,
+            "width": 7.62
+          },
+          "xy": [
+            101,
+            83
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C10",
+          "value": "100n",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            114,
+            83
+          ],
+          "group": "analog",
+          "source": "",
+          "role": "Place immediately beside supply pin",
+          "near": null
+        },
+        {
+          "ref": "R7",
+          "value": "10k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "+5V",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "REF_CARD_RAW",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            97,
+            74
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R8",
+          "value": "10k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "REF_CARD_RAW",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            109,
+            74
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C11",
+          "value": "10u 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "REF_CARD_RAW",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            114,
+            92
+          ],
+          "group": "analog",
+          "source": "",
+          "polar": true
+        },
+        {
+          "ref": "C12",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_A",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_A_AC",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            44,
+            97
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R9",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_A_AC",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_SUM",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            44,
+            104
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C13",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_B",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_B_AC",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            60,
+            97
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R10",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_B_AC",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_SUM",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            60,
+            104
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C14",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_C",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_C_AC",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            76,
+            97
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R11",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_C_AC",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_SUM",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            76,
+            104
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "RN3",
+          "value": "RKC8BD102J",
+          "pins": [
+            {
+              "num": "1",
+              "name": "COM",
+              "net": "GND",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "R1",
+              "net": "SSG_A",
+              "type": "passive"
+            },
+            {
+              "num": "3",
+              "name": "R2",
+              "net": "SSG_B",
+              "type": "passive"
+            },
+            {
+              "num": "4",
+              "name": "R3",
+              "net": "SSG_C",
+              "type": "passive"
+            },
+            {
+              "num": "5",
+              "name": "R4",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "6",
+              "name": "R5",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "7",
+              "name": "R6",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "8",
+              "name": "R7",
+              "net": null,
+              "type": "passive"
+            },
+            {
+              "num": "9",
+              "name": "R8",
+              "net": null,
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "sip",
+            "n": 9,
+            "pitch": 2.54
+          },
+          "xy": [
+            38,
+            112
+          ],
+          "group": "analog",
+          "source": "https://akizukidenshi.com/catalog/g/g113722/"
+        },
+        {
+          "ref": "R12",
+          "value": "100k 1%",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_SUM",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_MIX",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            97,
+            99
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C15",
+          "value": "47p",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_SUM",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "SSG_MIX",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            109,
+            99
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C16",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_MIX",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "ANALOG_L",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            97,
+            108
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R13",
+          "value": "100k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "ANALOG_L",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            97,
+            115
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "C17",
+          "value": "4.7u BP 10V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "SSG_MIX",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "ANALOG_R",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "radial",
+            "pitch": 2,
+            "body": [
+              5,
+              5
+            ]
+          },
+          "xy": [
+            110,
+            108
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "R14",
+          "value": "100k",
+          "pins": [
+            {
+              "num": "1",
+              "name": "1",
+              "net": "ANALOG_R",
+              "type": "passive"
+            },
+            {
+              "num": "2",
+              "name": "2",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "smd2",
+            "pitch": 3.2,
+            "body": [
+              3.2,
+              1.6
+            ]
+          },
+          "xy": [
+            110,
+            115
+          ],
+          "group": "analog",
+          "source": ""
+        },
+        {
+          "ref": "TP1",
+          "value": "+5V",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+5V",
+              "net": "+5V",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            99,
+            9
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP2",
+          "value": "+3V3",
+          "pins": [
+            {
+              "num": "1",
+              "name": "+3V3",
+              "net": "+3V3",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            60,
+            9
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP3",
+          "value": "GND",
+          "pins": [
+            {
+              "num": "1",
+              "name": "GND",
+              "net": "GND",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            110,
+            9
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP4",
+          "value": "CLK4",
+          "pins": [
+            {
+              "num": "1",
+              "name": "CLK4",
+              "net": "CLK4",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            73,
+            9
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP5",
+          "value": "Y_SD",
+          "pins": [
+            {
+              "num": "1",
+              "name": "Y_SD",
+              "net": "Y_SD",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            98,
+            48
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP6",
+          "value": "Y_CLK",
+          "pins": [
+            {
+              "num": "1",
+              "name": "Y_CLK",
+              "net": "Y_CLK",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            98,
+            54
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP7",
+          "value": "Y_SH",
+          "pins": [
+            {
+              "num": "1",
+              "name": "Y_SH",
+              "net": "Y_SH",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            98,
+            60
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP8",
+          "value": "Y_IRQ",
+          "pins": [
+            {
+              "num": "1",
+              "name": "Y_IRQ",
+              "net": "Y_IRQ",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            67,
+            49
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP9",
+          "value": "OE_WRITE_N",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OE_WRITE_N",
+              "net": "OE_WRITE_N",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            62,
+            84
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP10",
+          "value": "OE_READ_N",
+          "pins": [
+            {
+              "num": "1",
+              "name": "OE_READ_N",
+              "net": "OE_READ_N",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            73,
+            84
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "TP11",
+          "value": "SSG_MIX",
+          "pins": [
+            {
+              "num": "1",
+              "name": "SSG_MIX",
+              "net": "SSG_MIX",
+              "type": "passive"
+            }
+          ],
+          "footprint": {
+            "kind": "tp"
+          },
+          "xy": [
+            117,
+            99
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H1",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            5,
+            5
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H2",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            125,
+            5
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H3",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            5,
+            115
+          ],
+          "group": "test",
+          "source": ""
+        },
+        {
+          "ref": "H4",
+          "value": "M3 / 3.2mm NPTH",
+          "pins": [],
+          "footprint": {
+            "kind": "hole"
+          },
+          "xy": [
+            125,
+            108
+          ],
+          "group": "test",
+          "source": ""
+        }
+      ]
+    }
+  }
+}

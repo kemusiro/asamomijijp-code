@@ -1,0 +1,126 @@
+{
+  "version": "0.5.0-alpha.4",
+  "host_player_version": 1,
+  "date": "2026-11-14",
+  "status": "physical_idle_wait_fullsong_and_player_repeat_stop_accepted",
+  "hardware_tested": true,
+  "source": "User report of ten-minute wait,recovery/full Ys II,repeat and Ctrl+C menu recovery; pasted current target completion log",
+  "user_reported": {
+    "idle_wait_seconds": 600,
+    "after_idle_audio_ready": 1,
+    "after_idle_fault": 0,
+    "recovery_bin_completed": true,
+    "YsII_full_song_completed": true,
+    "repeat_worked": true,
+    "repeat_mode_and_count": "not specified",
+    "CtrlC_muted": true,
+    "CtrlC_returned_to_menu": true,
+    "left_right_audio_confirmed": true,
+    "distortion": false,
+    "dropouts": false
+  },
+  "target_completion_log_verified": {
+    "version": "0.5.0-alpha.4",
+    "audio_ready": 1,
+    "fault": 0,
+    "state": 2,
+    "events_completed": 123137,
+    "events_total": 123137,
+    "gates": 0,
+    "fm_gain_eighths": 8,
+    "AUDIO": {
+      "blocks": 132970,
+      "peak": 18240,
+      "max_convert_us": 152,
+      "queue_min": 1,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "log_drops": 0
+    },
+    "PIPELINE": {
+      "input": 125,
+      "output": 108,
+      "prime": 2,
+      "nominal_delay_us": 4500
+    },
+    "RX": {
+      "qualify_ticks": 2,
+      "pio_hz": 32000000,
+      "reject_observations": 5
+    },
+    "DIAG": {
+      "state": 0,
+      "ready": 0,
+      "bytes": 0
+    },
+    "LEVEL": {
+      "clipped_samples": 0
+    },
+    "BUS": {
+      "mode": "fast",
+      "writes": 123143,
+      "busy_retries": 89083,
+      "max_call_us": 32
+    },
+    "TIMING": {
+      "max_dispatch_late_us": 5301,
+      "bins_lt1_5_10_20_100ms": [
+        123062,
+        70,
+        5,
+        0,
+        0
+      ]
+    },
+    "I2C": {
+      "protocol": 2,
+      "address": "0x42",
+      "state": 3,
+      "result": 0,
+      "error": 0,
+      "received": 123137,
+      "executed": 123137,
+      "total": 123137,
+      "queued": 0,
+      "min_queue": 0,
+      "sealed": 1
+    },
+    "MIDI": {
+      "protocol": 1,
+      "owned": 0,
+      "state": 0,
+      "mask": 0,
+      "gate": 0,
+      "received": 0,
+      "applied": 0,
+      "rejected": 0,
+      "invalid": 0,
+      "ignored": 12,
+      "panics": 0
+    },
+    "following_STOP_message": true
+  },
+  "checks": {
+    "timing_histogram_total": 123137,
+    "all_dispatches_under10ms": true,
+    "full_event_receipt_execution_match": true,
+    "normal_muted_completion": true
+  },
+  "interpretation": [
+    "Ten-minute wait and repeat/Ctrl+C/menu behavior are user observations; separate idle/HOST raw logs were not pasted",
+    "The pasted target snapshot verifies all123137 events,DONE,fault0,gates0 and clipping0 for the full song",
+    "AUDIO block count resets at BEGIN; final132970 blocks do not independently measure the preceding ten-minute wait",
+    "Queue min0 includes the normal empty event queue after completion,not a reported underrun",
+    "RX reject_observations5 is sticky-flag observation count,not pulse count",
+    "No numeric CRC was pasted for this run; expected song metadata is retained in prior full-song records",
+    "Success supports the fix under these observed conditions; exact historical fault5 DMA timing is still not established"
+  ],
+  "not_verified": [
+    "All-once a and all-loop l were not explicitly reported separately; repeat mode/count unspecified",
+    "Long-term24h/repeated-run reliability and measured audible latency",
+    "Alpha4-specific USB-MIDI/handover/physical-USB cycle not repeated in this report; prior alpha3 evidence retained"
+  ],
+  "fix_record": "verification/c05-alpha4-clock-fix.json",
+  "historical_failure_record": "verification/c05-alpha3-followup-idle-fault5.json",
+  "player_model_validation_record": "verification/host-player-v1-validation.json"
+}

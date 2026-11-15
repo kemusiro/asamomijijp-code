@@ -1,0 +1,103 @@
+{
+  "version": "0.3.0-alpha.1",
+  "date": "2026-11-13",
+  "hardware_tested": false,
+  "scope": "First C SDK local-flash playback prototype;I2C,MIDI and MicroPython REPL are not implemented",
+  "checks": {
+    "native_C_core": {
+      "tests": 13,
+      "passed": true,
+      "scope": "Actual C parser,65536 register/value pairs,PCM exact floor rounding,CRC,all-score scheduler,STOP/restart,deadline,BUSY,USB SOF wrap/timeout,I2S drift calculation,PIO bit/left-right alignment and UF2 bounds;clock estimate tests use simulated input periods,not physical drift measurement"
+    },
+    "full_score": {
+      "events": 123137,
+      "period_ms": 298218,
+      "source_sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+      "service_model_us": [
+        20,
+        250,
+        400
+      ],
+      "max_dispatch_late_us": [
+        1980,
+        24750,
+        39600
+      ],
+      "hardware_time": "simulated,not RP2350 measurement"
+    },
+    "arm_build": {
+      "passed": true,
+      "sdk": {
+        "version": "2.2.0",
+        "commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+        "repository": "https://github.com/raspberrypi/pico-sdk.git"
+      },
+      "tinyusb": {
+        "commit": "86ad6e56c1700e85f1c5678607a762cfe3aa2f47"
+      },
+      "compiler": "GNU Arm10.3.1 20210824",
+      "board": "pico2",
+      "image": "RP2350 Arm Secure",
+      "memory": {
+        "text_bytes": 783084,
+        "data_bytes": 0,
+        "bss_bytes": 34624
+      }
+    },
+    "USB_console": {
+      "passed": true,
+      "scope": "Headless Chromium with modelled Web Serial;no real device/permission exercised"
+    },
+    "localhost_console": {
+      "served_current_source": true
+    },
+    "private_UF2": {
+      "source_WYM1_embedded_byte_identical_once": true,
+      "uf2_sha256": "3ce371a299caacbd3baca84c41774cb1c4cb6b2394b38d220854e8675435f1ea",
+      "package_sha256": "a1a59fbb8f7cd4fe122184d49607b70655229ee73de2db691e0203ce20be9212",
+      "ZIP_CRC_and_payload_hashes": "passed"
+    },
+    "independent_rebuild": {
+      "passed": true,
+      "scope": "Clean second CMake build;final UF2 byte-identical",
+      "uf2_sha256": "3ce371a299caacbd3baca84c41774cb1c4cb6b2394b38d220854e8675435f1ea"
+    },
+    "whitespace": {
+      "passed": true,
+      "scope": "Tracked diffs plus no-index check of all new prototype files"
+    }
+  },
+  "source_sha256": {
+    "CMakeLists.txt": "eabbbf2e15b739f937c740d4edee3eced97fe4d2e99e7cb327aeabac9f80c045",
+    "README.md": "ca46d107acf97748f0e599bb7e50094549587f4f46e79e7c996abd598cc0b39e",
+    "THIRD_PARTY_LICENSES.txt": "3d7f9c687bb29c5e53830af0cc8b0ef4fdf934b00c2d7b4607a46baa947eceb8",
+    "pc/revc-console.html": "90ff2ce584f151d625e77d0196db56cef7a5bce14e649a6faf14fd6aff70b293",
+    "pio/fm_rx.pio": "6c722f9e46eb7fb521fe8d28be65b079138137326f25141b8c420d74b5d5e64a",
+    "pio/i2s_tx.pio": "f59128e7e7ebf72e069b52d4015de7610619a59f9ebceb00ff5848459d2557e6",
+    "src/audio.c": "0bafeb70077f854b61693e385f65e4dc464b65f91984d1261fb8ad0ab977c210",
+    "src/board.c": "8a2f5584b718eb989dd743196a8f22ff562bb08678dbc08feb7ebdcef5d4df36",
+    "src/main.c": "706cfeea668dc894fd874a658da867e463b75caeaca7284a79b47cb1f332d45b",
+    "src/revc.h": "6cc48dfb5db01397404c83bf360c5a8aff3bfdb9190ed5dcbe45d457c86fa419",
+    "src/tusb_config.h": "fa3b5628852d883e45d07832aab73dc4de37c1d2ee01288bbb1e4d768b11e0ef",
+    "src/usb.c": "fd8783122158644bf0e39a0405708459b6cadae7aa8907d5bea158a6ce733617",
+    "src/wym1.c": "627cdef5a3fbfbbf67ebe235436bfea709a4820ba7397f0bbaf91c6dadbd214d",
+    "src/wym1.h": "d9143633c92af1657a2ecbc3703599a311d04145fbc1a035fd8ad8598f77f3d0",
+    "tests/test_core.py": "ec903864fe84f65838746fa6b434fa74e9b4a085a32d5784327826ee75c0f305",
+    "tests/test_uf2.py": "21278da56bc9979d64a078114cbed5a70a435710e901cc947fb002a1f1cb4ea8",
+    "toolchain-lock.json": "a05741c5e441b63dd896c2d6e9584874fe283a1737b72ac648f795a3306e9694",
+    "tools/build.py": "d75d472e77c7f2ca43dd35f0dd9d202c56e293c359cf7bd9ddd7666ed2b2322f",
+    "tools/embed_song.py": "fa28057790d708f6a5231c1903b17576e9a13729e89b2fa12f2408c0fb3bba39",
+    "tools/setup_sdk.py": "ca1d07c93de9bc5b8aa2c50112cd8e02ebc8f1926969232d6b21e33a78e9164d",
+    "tools/verify_uf2.py": "6a014b82c2372e0dd8c8c5701aaf825d22cf218fd37115b7ca72e132a69ef97f",
+    "verify-console.mjs": "ecda8761680c96c6986963557ec5c0e56103812e427d75c89527e3867db30fe3"
+  },
+  "not_verified": [
+    "physical sound and USB enumeration",
+    "physical STOP/USB unplug timing",
+    "actual bus throughput and latency distribution",
+    "oscillator drift tracking and I2S analog output",
+    "complete298s hardware playback",
+    "24-hour endurance",
+    "I2C/MIDI C implementation"
+  ]
+}

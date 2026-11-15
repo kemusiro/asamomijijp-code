@@ -1,0 +1,81 @@
+{
+  "version": "0.5.0-alpha.3",
+  "date": "2026-11-14",
+  "result": "full_score_completed_then_audio_fault5_retained_new_BEGIN_rejected",
+  "source": "User full HOST player traceback and follow-up current Rev C STATUS/AUDIO/I2C/MIDI",
+  "host": {
+    "menu_rescan_succeeded": true,
+    "selected": "song.bin",
+    "BEGIN_result": 12,
+    "I2C_state": 5,
+    "I2C_error": 12,
+    "audio_ok": false,
+    "safe_HOST_pins": true
+  },
+  "target": {
+    "audio_ready": 1,
+    "fault": 5,
+    "state": 3,
+    "events_completed": 123137,
+    "events_total": 123137,
+    "gates": 0,
+    "fm_gain_eighths": 8,
+    "AUDIO": {
+      "blocks": 212480,
+      "peak": 18071,
+      "max_convert_us": 125,
+      "queue_min": 1,
+      "queue_max": 2,
+      "i2s_div256": 12500,
+      "log_drops": 0
+    },
+    "RX_reject_observations": 3,
+    "clipped_samples": 0,
+    "BUS": {
+      "writes": 123143,
+      "busy_retries": 89535,
+      "max_call_us": 29
+    },
+    "TIMING": {
+      "max_dispatch_late_us": 4647,
+      "bins": [
+        123065,
+        72,
+        0,
+        0,
+        0
+      ]
+    },
+    "I2C": {
+      "state": 4,
+      "result": 0,
+      "error": 0,
+      "received": 123137,
+      "executed": 123137,
+      "queued": 0,
+      "min_queue": 0,
+      "sealed": 0
+    },
+    "MIDI": {
+      "owned": 0,
+      "state": 0,
+      "mask": 0,
+      "gate": 0,
+      "received": 25,
+      "applied": 112,
+      "rejected": 0,
+      "invalid": 0,
+      "ignored": 24,
+      "panics": 1
+    }
+  },
+  "interpretation": [
+    "Menu listing and selection worked; BEGIN used existing play_file and was rejected for audio fault",
+    "Target retained previous123137 completed events; new song did not begin",
+    "Fault5 is TX DMA starvation/ownership invariant; exact hardware subreason was not snapshotted by alpha3",
+    "Final I2C STOP clears stream error,not audio fault; audio_ready1 is stale availability after fatal core shutdown",
+    "Preserve earlier full-song acceptance; this is a subsequent stability failure"
+  ],
+  "fix_version": "0.5.0-alpha.4",
+  "fix_record": "verification/c05-alpha4-clock-fix.json"
+}

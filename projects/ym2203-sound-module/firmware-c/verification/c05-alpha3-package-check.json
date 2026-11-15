@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "version": "0.5.0-alpha.3",
+  "package": "outputs/revc-c-0.5.0-alpha.3-audio-restart-fix-20261114-r2.zip",
+  "ZIP_SHA256": "ee7f707859fc2e5648620e6dc1de7d13e1f7a313763fd6d63b35c9fbb913a5e7",
+  "UF2_SHA256": "f7e960cbe14bae7da8d5e1c3e809d5e745b6b697a8cf0e145eab8a7ad8a8919a",
+  "memory": {
+    "text_bytes": 59752,
+    "data_bytes": 0,
+    "bss_bytes": 463608
+  },
+  "member_hashes_verified": true,
+  "source_snapshot_verified": true,
+  "original_diagnostic_in_UF2": true,
+  "YsII_included": false
+}

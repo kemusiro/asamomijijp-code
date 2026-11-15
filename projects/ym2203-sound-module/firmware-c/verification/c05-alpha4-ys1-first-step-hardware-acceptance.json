@@ -1,0 +1,51 @@
+{
+  "version": "0.5.0-alpha.4",
+  "host_player_version": 1,
+  "date": "2026-11-14",
+  "status": "physical_full_track_playback_accepted_from_user_report",
+  "hardware_tested": true,
+  "scope": "One complete Ys I First Step Towards Wars track through the existing I2C HOST player; not the entire game soundtrack",
+  "source": "User listening/completion report in chat; no raw HOST or target log pasted for this run",
+  "version_context": "Existing alpha.4 and HOST player v1 specified by the delivered test procedure; no fresh version log pasted",
+  "user_report_original": "イースIの全曲再生が完了しました。FM100%で音量バランスも良く、左右とも歪みや音切れはありません。DONEと期待値どおりの件数・CRC、fault=0・gates=0も確認できました。",
+  "user_reported": {
+    "full_track_completed": true,
+    "FM_gain_percent": 100,
+    "balance": "good",
+    "left_and_right": "normal",
+    "distortion": false,
+    "dropouts": false,
+    "DONE": true,
+    "event_count_matches_expected": true,
+    "CRC_matches_expected": true,
+    "fault": 0,
+    "gates": 0
+  },
+  "expected_asset_confirmed_by_user": {
+    "game": "Ys: Ancient Ys Vanished Omen",
+    "title": "First Step Towards Wars",
+    "filename": "ys1_first_step_towards_wars.bin",
+    "clock_hz": 4000000,
+    "events": 5024,
+    "period_ms": 65025,
+    "bytes": 30160,
+    "crc32_hex": "be705192",
+    "sha256": "a972ab20e1fd5875b3226b87a2d03b8a4d23d7d686a44f41abe6d2d135522ddf",
+    "source_events": 5018,
+    "added_cleanup_events": 6,
+    "meaning": "These exact values come from the delivered asset; user explicitly confirmed expected count/CRC, rather than pasting the numerical log"
+  },
+  "delivered_package": {
+    "filename": "revc-ys1-first-step-wym1-v1-20261114.zip",
+    "sha256": "80cfb8435004f662801c405fdf1e558770cb8d9996382cfaf872cf97d92dd3c4"
+  },
+  "local_conversion_record": "local-test-data/ym2203/ys1-first-step-20261114/package/conversion.json",
+  "previous_acceptance_record": "verification/c05-alpha4-hardware-acceptance.json",
+  "not_supplied_or_not_verified": [
+    "Raw HOST/STATUS/AUDIO/TIMING/I2C log; no newly measured latency, retries, queue minimum, clipping or RX rejection counts",
+    "Independent timing measurement of the65.025s period",
+    "Ys I-specific repeats, Ctrl+C interruption or full game soundtrack playback",
+    "Ys III The Boy's Got Wings hardware playback; next preparation is separate"
+  ],
+  "history": "Original Ys I conversion/package and earlier alpha.4 acceptance records remain unchanged; this record supplies later physical evidence"
+}

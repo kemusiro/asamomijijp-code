@@ -1,0 +1,9 @@
+{
+  "version": "MicroPython1.28.0 WebLab restricted WASM build",
+  "source_commit": "d504cb2bdc1ab29a6cee63115e9e87c962184ed3",
+  "repository": "https://github.com/kemusiro/micropython-web-lab",
+  "sha256": {
+    "micropython.mjs": "d615e853616530b9d3ee59acbdceca52e1ccd73226b6935825ecc8f44152a3bd",
+    "micropython.wasm": "13b61d24c3a7b7ae48f3791d2b41e30ecf07037f80261bed7750649ed355473f"
+  }
+}

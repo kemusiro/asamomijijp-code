@@ -1,0 +1,29 @@
+{
+  "version": "0.4.0-alpha.1",
+  "ZIP_SHA256": "1f6e78c4f3ee4db4c5f658a64764dfae6a28b7af0d65022f6a258decef76f3dc",
+  "UF2_SHA256": "3db368d89422e38e3a42aae4da03825e11b1e37e9a104d063df911e4a2ab21ee",
+  "memory": {
+    "text_bytes": 55304,
+    "data_bytes": 0,
+    "bss_bytes": 463076
+  },
+  "embedded_asset": {
+    "events": 191,
+    "period_ms": 13000,
+    "clock_hz": 4000000,
+    "bytes": 1162,
+    "sha256": "bb2e58f5725feb8c446ebb319e2f0936047aedabfc93be1a9e9ec771d92824ff",
+    "crc32": 3856599368,
+    "kind": "original synthetic FM/SSG scales and chord",
+    "event_bytes_preserved": true
+  },
+  "host_asset": {
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "crc32": 2925077129
+  },
+  "hardware_tested": false
+}

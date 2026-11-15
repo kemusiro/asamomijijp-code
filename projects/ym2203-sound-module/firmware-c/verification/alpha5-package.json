@@ -1,0 +1,21 @@
+{
+  "version": "0.3.0-alpha.5",
+  "ZIP_SHA256": "a03aa5bbec357af184973a89eae6ccfb15d3c3bc09874f8972b873d56be559a2",
+  "UF2_SHA256": "706799fe19dabfb2eb3f9b164b15785c22f2bbdf29401bdd32773a134bf119db",
+  "memory": {
+    "text_bytes": 787452,
+    "data_bytes": 0,
+    "bss_bytes": 452952
+  },
+  "asset": {
+    "events": 123137,
+    "period_ms": 298218,
+    "clock_hz": 4000000,
+    "bytes": 738838,
+    "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+    "crc32": 2925077129,
+    "kind": "local user-provided song;not for redistribution",
+    "event_bytes_preserved": true
+  },
+  "hardware_tested": false
+}
