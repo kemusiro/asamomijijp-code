@@ -1,0 +1,46 @@
+{
+  "checked_on": "2026-11-18",
+  "primary_product_pages": [
+    "https://akizukidenshi.com/catalog/g/g131019/",
+    "https://akizukidenshi.com/catalog/g/g114827/",
+    "https://akizukidenshi.com/catalog/g/g114936/",
+    "https://akizukidenshi.com/catalog/g/g103568/",
+    "https://akizukidenshi.com/catalog/g/g117166/",
+    "https://akizukidenshi.com/catalog/g/g116278/",
+    "https://akizukidenshi.com/catalog/g/g100167/",
+    "https://akizukidenshi.com/catalog/g/g115868/",
+    "https://akizukidenshi.com/catalog/g/g116102/",
+    "https://akizukidenshi.com/catalog/g/g116272/",
+    "https://akizukidenshi.com/catalog/g/g116472/",
+    "https://akizukidenshi.com/catalog/g/g116103/",
+    "https://akizukidenshi.com/catalog/g/g108517/",
+    "https://akizukidenshi.com/catalog/g/g107549/",
+    "https://akizukidenshi.com/catalog/g/g117591/",
+    "https://akizukidenshi.com/catalog/g/g113582/",
+    "https://akizukidenshi.com/catalog/g/g108138/"
+  ],
+  "datasheets": [
+    {
+      "url": "https://akizukidenshi.com/goodsaffix/re111f-4s1-152s4-15p-a.pdf",
+      "sha256": "74dbd9e667a7ccdaf3927a17d742b3b8b14c4bb0cf21c67bac9ddef4f25fb7ca"
+    },
+    {
+      "url": "https://akizukidenshi.com/goodsaffix/M154-240240-RGB-8_20261020.pdf",
+      "sha256": "af454c5f66c999981183fc9070110b52ca56e05b4a73ae51fbbdfd4c7f84c49c"
+    },
+    {
+      "url": "https://akizukidenshi.com/goodsaffix/rk09.pdf",
+      "sha256": "8ba1fbc739f94bcc9d7ff504843904bc42e2159f57a518addbf018141f1a18d8"
+    },
+    {
+      "url": "https://akizukidenshi.com/goodsaffix/24fc256-IP.pdf",
+      "read_online": true
+    }
+  ],
+  "licensing": "Manufacturer PDFs/product images are references only, not redistributed. Original code/geometry: MIT. Existing KiCad standard library references retained.",
+  "electrical_notes": [
+    "LCD supply/order use 20261020 revision, not superseded sample PDF",
+    "EEPROM64byte pages,5ms max programming,1M cycles",
+    "Encoder footprint and installed fit remain pending physical verification"
+  ]
+}

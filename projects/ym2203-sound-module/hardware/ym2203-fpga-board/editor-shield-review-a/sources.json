@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-18",
+  "assets_redistributed": false,
+  "original_project_license": "MIT",
+  "references": [
+    {
+      "url": "https://www.waveshare.com/1.3inch-LCD-Module.htm",
+      "purpose": "Waveshare15867: ST7789,240x240, SPI, VCC/GND/DIN/CLK/CS/DC/RST/BL; module mechanical/current verification pending"
+    },
+    {
+      "url": "https://www.waveshare.com/wiki/1.3inch_LCD_Module",
+      "purpose": "PH2.0 8-contact interface and SPI; wiki prose contains inconsistent panel dimensions; selected SKU page governs240x240"
+    },
+    {
+      "url": "https://www.ramxeed.com/zh-tw/cms/wp-content/uploads/2025/05/MB85RC256V-DS11v2-E.pdf",
+      "purpose": "FRAM32KiB,0x50 address,pin1..8,2.7..5.5V and no EEPROM write delay"
+    },
+    {
+      "url": "https://www.bourns.com/docs/product-datasheets/PTV09.pdf",
+      "purpose": "10k linear pot candidate and variant drawing; final pin/shaft fit pending"
+    },
+    {
+      "url": "https://tech.alpsalpine.com/e/products/detail/EC11E15244G1/",
+      "purpose": "push encoder30 detents/15 pulses; hand solder reference350C/3s/once; compare exact footprint before ordering"
+    },
+    {
+      "url": "https://github.com/aaronsgiles/ymfm/blob/main/src/ymfm_opn.cpp",
+      "purpose": "OPN non-linear operator ordering sanity reference only; no source copied"
+    },
+    {
+      "url": "../clean-sheet-schematic-review-h/README.md",
+      "purpose": "existing electrical/power/stop contracts"
+    },
+    {
+      "url": "../clean-sheet-pcb-review-i/README.md",
+      "purpose": "base positions, rails, header geometry and clearances"
+    }
+  ]
+}

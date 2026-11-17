@@ -1,0 +1,18 @@
+Rev C refs,Rev C values,Disposition,Existing role,P2 approach,Counting caveat
+U4,TC74HC04AP,remove,反転 / NOT_ARM・NOT_RD_N,GPIO・PIOの極性と初期状態へ移す,ICを1個削減。新しい起動時pullと電源順序は別途設計
+U5,TC74HC00AP,remove,OE_WRITE_N・OE_READ_N生成,双方向データ変換器のDIR/OEをMCUで直接制御,ICを1個削減。無効→方向変更→有効の順序を検証
+U6,TC74HC32AP,remove,ARMによるCS/WR/RD強制禁止,制御変換器OEとGPIO初期化へ,ICを1個削減。ARM固着時の独立強制停止保証は継承しない
+U10,TC74HC08AP,remove,ARMとRESET_RELEASE・DAC_ALLOW・LINE_ALLOWのAND,MCUからreset/muteを直接制御,ICを1個削減。default reset/muteの抵抗・transistorは残す
+U7,TC74HC74AP,replace_function,8MHzを2分周して4MHzを生成,Si5351A内蔵分周と5V clock変換,汎用ロジックICを1個削減するがSi5351・水晶・clock変換を追加
+X1,8MHz 5V oscillator,replace_function,YM固定clock基準,Si5351A用25MHz水晶,旧発振器をなくすが新clock系へ置換。単純な総部品削減には数えない
+C7 C8 C9 C10 C12,100n,old_network_removed,削除するHCロジック5個のdecoupling,新ICごとに必要なdecouplingを再配置,旧5個は不要。新Si5351・変換器用容量を引かずに純減5とは報告しない
+R7 R8 C11,47 / 47 / 100n,recalculate,旧OSC8・DIV4と発振器電源,Si5351・YM clock経路で再設計,終端・decouplingの役割は残る。旧refを丸ごと純減計上しない
+U2,74LCX245FT,merge,YMデータ読出し専用5V耐性buffer,A3相当を双方向SN74LVC8T245へまとめる,読出し専用ICを1個削減候補。受入済みRev C回路の部品抜きでは実現しない
+A3 A4,AE-LLCNV-LVC8T245 modules,direct_mount,data出力・control出力の5V変換,裸SN74LVC8T245各1個をTSSOPで直接実装,機能とIC2個は残る。モジュール・そのソケット削減とIC削減を分ける
+U3,74LCX245FT,replace_package,FM SD/CLK/SHと任意IRQの5V受信,SN74LVC125A 1個を保守的候補,8bit品から4chへ。機能維持でありIC個数削減ではない
+A1,Raspberry Pi Pico 2,replace_module,MCU・USB・音声処理,PGA2350 1個をソケット実装,MCUモジュール数は1個のまま。内蔵部品数は別集計
+A2,AE-PCM5102A,direct_mount,FM I2S DAC,PCM5102Aと必要周辺回路を直接実装,DAC ICと周辺部品は残る。DIP化モジュールだけを削除
+U8 U9 Q1,MCP6022 / CD74HC4053 / MMBT3904,retain_function,FM/SSG合成・VREF・line mute,同等回路をSMDで実装,音声経路と5V側mute極性変換を維持
+RN1 RN2 RN3 RN4 RN6 R3 R5 R6,pull networks,recalculate,data/control初期状態、read OE、reset、DAC mute,DIR/OE・YM reset・DAC/LINE各defaultへ組み直す,抵抗は機能単位で再計算。ゲート削除と一緒に全削除しない
+U11 F1 D1 C32 C33,TPS22918 / PTC / SS14 / soft-start caps,review_power,soft-start・給電保護・Pico VSYS逆流防止,PGA2350 VBと外部5V・USB VBUS分離へ適合,VSYSを持つPico向けD1配線を流用しない。試作でも逆給電対策と突入対策の要否を確認
+JPOWER R26 R27,power-only USB-C / Rd,review_connector,外部5V入力USB-C,電源用口とPCデータ用USB-Cを区別,Pico内蔵USB口がなくなるためPC用connectorをキャリアへ追加。電源口は共用と決めない

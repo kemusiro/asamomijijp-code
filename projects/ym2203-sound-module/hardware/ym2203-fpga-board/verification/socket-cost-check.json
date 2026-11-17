@@ -1,0 +1,418 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "status": "paired_assumption_comparison_not_supplier_quote",
+  "inputs_sha256": "0e9c148571e004bbd9113d0508d5fb54d02f027d2994a128f6176fe260fcb838",
+  "baseline_inputs_sha256": "1f08ad2bfd390eabb099f965de3a4e3247d8cdc4b2759a459e26606ef09651e2",
+  "baseline_calculator_sha256": "eec305932b7f3b2a22b6ff9ee4ee4b900109fe8915cf04af7f015221f447cabe",
+  "comparison_tool_sha256": "4487b801199b0f692915fac21c1d319bda5c42114390118e569aaa043ea7dfee",
+  "assembled_quantity": 5,
+  "manual_joints_per_board_assumed_before_after": [
+    140,
+    60
+  ],
+  "owner_socket_joints_per_board": 80,
+  "additional_Pico_male_header_savings_counted": false,
+  "owner_socket_joints_all_boards": 400,
+  "common_fx_tax_contingency_multiplier_jpy_per_model_usd": 211.2,
+  "standard_setup_stencil_saving_jpy_before_rounding": 7132.224,
+  "socket_assembly_saving_jpy_before_rounding": 1385.472,
+  "cases": [
+    {
+      "name": "U_previous_double_side_full_outsource",
+      "conditional_service_acceptance": false,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          87.99,
+          87.99
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          11.48,
+          11.48
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ]
+      },
+      "component_split_usd_included_in_total": {
+        "supplier": [
+          225.0,
+          350.0
+        ],
+        "owner": [
+          0.0,
+          0.0
+        ]
+      },
+      "subtotal_usd": [
+        540.22,
+        965.82
+      ],
+      "planning_total_jpy_rounded_up_1000": [
+        115000,
+        204000
+      ],
+      "planning_per_board_jpy_rounded_up_1000": [
+        23000,
+        41000
+      ],
+      "paired_saving_jpy_before_rounding": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "S_single_side_Standard_owner_sockets_common_logistics",
+      "conditional_service_acceptance": false,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          54.22,
+          54.22
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          4.92,
+          4.92
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ]
+      },
+      "component_split_usd_included_in_total": {
+        "supplier": [
+          190.0,
+          300.0
+        ],
+        "owner": [
+          35.0,
+          50.0
+        ]
+      },
+      "subtotal_usd": [
+        499.89,
+        925.49
+      ],
+      "planning_total_jpy_rounded_up_1000": [
+        106000,
+        196000
+      ],
+      "planning_per_board_jpy_rounded_up_1000": [
+        22000,
+        40000
+      ],
+      "paired_saving_jpy_before_rounding": [
+        8517.696,
+        8517.696
+      ]
+    },
+    {
+      "name": "S_plus_owner_additional_shipping_allowance",
+      "conditional_service_acceptance": false,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          54.22,
+          54.22
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          4.92,
+          4.92
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ],
+        "owner_additional_shipping_allowance": [
+          0.0,
+          10.0
+        ]
+      },
+      "component_split_usd_included_in_total": {
+        "supplier": [
+          190.0,
+          300.0
+        ],
+        "owner": [
+          35.0,
+          50.0
+        ]
+      },
+      "subtotal_usd": [
+        499.89,
+        935.49
+      ],
+      "planning_total_jpy_rounded_up_1000": [
+        106000,
+        198000
+      ],
+      "planning_per_board_jpy_rounded_up_1000": [
+        22000,
+        40000
+      ],
+      "paired_saving_jpy_before_rounding": [
+        8517.696,
+        6405.696
+      ]
+    },
+    {
+      "name": "E_conditional_Economic_15_to_25_charged_types_plus_local_shipping",
+      "conditional_service_acceptance": true,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          13.74,
+          13.74
+        ],
+        "feeder_loading_model": [
+          46.05,
+          76.75
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          4.92,
+          4.92
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ],
+        "owner_additional_shipping_allowance": [
+          0.0,
+          10.0
+        ]
+      },
+      "component_split_usd_included_in_total": {
+        "supplier": [
+          190.0,
+          300.0
+        ],
+        "owner": [
+          35.0,
+          50.0
+        ]
+      },
+      "subtotal_usd": [
+        451.91,
+        887.61
+      ],
+      "planning_total_jpy_rounded_up_1000": [
+        96000,
+        188000
+      ],
+      "planning_per_board_jpy_rounded_up_1000": [
+        20000,
+        38000
+      ],
+      "paired_saving_jpy_before_rounding": [
+        18651.072,
+        16517.952
+      ]
+    },
+    {
+      "name": "E_all_types_charged_sensitivity_plus_local_shipping",
+      "conditional_service_acceptance": true,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          13.74,
+          13.74
+        ],
+        "feeder_loading_model": [
+          107.45,
+          168.85
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          4.92,
+          4.92
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ],
+        "owner_additional_shipping_allowance": [
+          0.0,
+          10.0
+        ]
+      },
+      "component_split_usd_included_in_total": {
+        "supplier": [
+          190.0,
+          300.0
+        ],
+        "owner": [
+          35.0,
+          50.0
+        ]
+      },
+      "subtotal_usd": [
+        513.31,
+        979.71
+      ],
+      "planning_total_jpy_rounded_up_1000": [
+        109000,
+        207000
+      ],
+      "planning_per_board_jpy_rounded_up_1000": [
+        22000,
+        42000
+      ],
+      "paired_saving_jpy_before_rounding": [
+        5683.392,
+        -2933.568
+      ]
+    }
+  ],
+  "owner_labor_priced": false,
+  "quote_received": false,
+  "complete_BOM_or_service_acceptance_confirmed": false,
+  "identical_supplier_function_test_scope_confirmed": false
+}

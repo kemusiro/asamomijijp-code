@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "variant": "P2",
+  "revision": "2.1",
+  "review": "A",
+  "date": "2026-11-15",
+  "status": "static_checks_passed_not_hardware_acceptance",
+  "tests": 12,
+  "components": 158,
+  "nets": 136,
+  "footprint_parts_checked": 158,
+  "erc_violations": 0,
+  "kicad_version": "10.0.5",
+  "native_gpio_used": 47,
+  "gp47_reserved": true,
+  "uno_contacts": 38,
+  "unrouted_placement": {
+    "board_outline_mm": [
+      160,
+      120
+    ],
+    "status": "unrouted fixture, 7 functional footprints +4 mounting holes; remaining circuitry is reserved zones only",
+    "uno_anchor_mm": [
+      10,
+      10
+    ],
+    "pga_a1_mm": [
+      95,
+      20
+    ],
+    "ym_pin1_mm": [
+      95,
+      65
+    ],
+    "uno_standoffs_mm": [
+      [
+        76.04,
+        27.78
+      ],
+      [
+        76.04,
+        55.72
+      ],
+      [
+        25.240000000000002,
+        12.54
+      ],
+      [
+        23.97,
+        60.8
+      ]
+    ],
+    "shield_envelope_mm": [
+      10,
+      10,
+      78.58,
+      63.34
+    ],
+    "pga_zone_mm": [
+      92,
+      17,
+      123.4,
+      48.4
+    ],
+    "header_module_clearance_x_mm": 13.42,
+    "tracks": 0,
+    "fabrication_ready": false,
+    "full_board_drc_pass_claimed": false
+  },
+  "firmware_implemented": false,
+  "existing_host_wire_changed": false,
+  "hardware_accepted": false,
+  "sdk_mux_static_compile": {
+    "passed": true,
+    "compiler": "Apple clang21.0.0 (clang-2100.4.1.1)",
+    "mode": "C11 -fsyntax-only against SDK2.2.0; no firmware executable produced"
+  },
+  "host_regression": {
+    "player": {
+      "run": 13,
+      "passed": 12,
+      "skipped": 1
+    },
+    "stop_lease_recovery": {
+      "run": 5,
+      "passed": 5
+    },
+    "usb_disconnect": {
+      "run": 5,
+      "passed": 5
+    },
+    "scope": "existing Rev C C stream core/model; NOT a P2 hardware regression"
+  },
+  "existing_assets_preserved": {
+    "files": 832,
+    "method": "SHA-256 equality before/after installation",
+    "scope": "all existing Rev C firmware+HOST+board files, F1 carrier and prior verification records"
+  }
+}

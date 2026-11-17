@@ -1,0 +1,66 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T02:04:40",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da",
+            "violations": []
+        },
+        {
+            "path": "/01-host-power/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/5fd8c4f1-4bdb-5f56-86ba-45776df0246f",
+            "violations": []
+        },
+        {
+            "path": "/02-eeprom/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/a73802ed-c9f2-5734-9988-066bb278e8f8",
+            "violations": []
+        },
+        {
+            "path": "/03-pots/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/33e81607-43ed-57e0-966f-590751815c2d",
+            "violations": []
+        },
+        {
+            "path": "/04-encoder/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/eaa338c8-c459-5f00-bfd2-673be6d63095",
+            "violations": []
+        },
+        {
+            "path": "/05-buttons/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/a09c0cae-ef7f-571f-96b9-28fb51d133ab",
+            "violations": []
+        },
+        {
+            "path": "/06-lcd/",
+            "uuid_path": "/94df598e-f2a1-5d81-ab9b-db34b4f214da/5d5c0b0f-16ed-5cc4-aa06-77f64dbdf545",
+            "violations": []
+        }
+    ],
+    "source": "p2-editor-b.kicad_sch"
+}

@@ -1,0 +1,98 @@
+{
+  "accessed": "2026-11-16",
+  "source_assets_redistributed": false,
+  "sources": [
+    {
+      "name": "PGA2350",
+      "url": "https://shop.pimoroni.com/en-us/products/pga2350",
+      "basis": "48GPIO,520KiB,16MBflash,8MBPSRAM,300mALDO; own USB connector required"
+    },
+    {
+      "name": "Core2350B0 product",
+      "url": "https://www.waveshare.com/product/core2350b.htm",
+      "basis": "RP2350B,48GPIO,16MBflash,12PIOstate machines,ME6217C33M5G800mAboardrating"
+    },
+    {
+      "name": "Core2350B schematic",
+      "url": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "basis": "manufacturerPDF downloaded and rendered; P1..P4 pinidentitytranscribed; GP39LED,GP47PSRAM; noPGA pincompatibility"
+    },
+    {
+      "name": "RP2350",
+      "url": "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008373-DS-2-rp2350-datasheet.pdf",
+      "basis": "PIO/DMA/FT conditionalI/O; localSDK2.2.0 mux also checked"
+    },
+    {
+      "name": "PCM1863",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm1863.pdf",
+      "basis": "SLAS831D table2 analogmix;9.3.9.4.4 BCKPLL;13.3.6select reservedbits;7.1analoginputlimits"
+    },
+    {
+      "name": "PCM1808 alternative",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm1808.pdf",
+      "basis": "twochannels;5Vanalog; synchronousSCKI required"
+    },
+    {
+      "name": "TLV755P",
+      "url": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+      "basis": "500mA;effective1uFminimum;SOT23thermal notlowerThetaDYDpart"
+    },
+    {
+      "name": "PCM5102A",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf",
+      "basis": "ground-centered2.1Vrms;BCKPLL;hardwaremuteallmixedaudio"
+    },
+    {
+      "name": "Ioff buffer",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "basis": "explicit Ioff partial-power-down support; 50MHz3V3; use this rather than assuming Ioff on oldLVC125A"
+    },
+    {
+      "name": "ALERT buffer",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf",
+      "basis": "open drain andIoff;SOT23"
+    },
+    {
+      "name": "PTC",
+      "url": "https://bourns.com/docs/product-datasheets/mf-msmf.pdf",
+      "basis": "MF-MSMF150/16X;R1max.12;temperaturederatingtable"
+    },
+    {
+      "name": "module header",
+      "url": "https://www.samtec.com/products/tsw-116-07-g-d",
+      "basis": "32contacts;physicalfitnotverified"
+    },
+    {
+      "name": "module socket",
+      "url": "https://www.samtec.com/products/ssw-116-02-g-d",
+      "basis": "candidate;endpointfetchfailed thisreview;do notclaimdrawingverified"
+    },
+    {
+      "name": "TMUX1511",
+      "url": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "basis": "SCDS390B; TSSOP14pinmap;0..3.6Vpoweredoffprotection;2uAoffleakbound"
+    },
+    {
+      "name": "BAT54S",
+      "url": "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf?215=",
+      "basis": "2022-07-01pin1A1pin2K2pin3seriesjunction;clampVf/leaktemperature mustmeasure"
+    },
+    {
+      "name": "RUN_AND",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "basis": "SOT23 A1 B2 GND3 Y4 VCC5;Ioff"
+    },
+    {
+      "name": "ADC_DOUT_Ioff",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf",
+      "basis": "input2 output4 VCC5 OE1 GND3"
+    }
+  ],
+  "yamaha": "Original1989YM2203 datasheet text cached in earlier review; endpoint403 previously; no new successfulfetch claimed",
+  "scope": "manufacturer pins,power,protection; no source assets redistributed",
+  "downloaded_pdf_hashes": {
+    "pcm1863.pdf": "c42b9dfac5d8a4f684edc45edc8a3b2b82d3e26ea352f1e019044ed8aad4ab50",
+    "tmux1511.pdf": "04291b41a68347fedbbb0776aa44f500eaca65f2ca3af0e022ee60d41c7b1e9f",
+    "lv1g08.pdf": "f30261db71823981aa9057ced4846f1dee467d4ce67998e5a3366872a79f688d"
+  }
+}

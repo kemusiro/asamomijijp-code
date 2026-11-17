@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "../digital-module-review-c/pins.json",
+      "sha256": "91b5e31138657157d450de14bfa3f4c36e1e5c0cbf266088dbffe5ef806eff84"
+    },
+    {
+      "path": "../digital-module-review-c/connector.json",
+      "sha256": "1ebba1009ee0f00f48fdfe2b0cc55d87be98dabc3b568fa1f1d430d24e3b6b9e"
+    },
+    {
+      "path": "../digital-module-pcb-review-d/verification.json",
+      "sha256": "70829dde97456f9a2c5e609516f5e45dd3b22b020d04e41ac61f178545883d33"
+    },
+    {
+      "path": "../analog-module-interface-review-e/connector.json",
+      "sha256": "6267537177f38710723309b23e9a79505f50a7982adb8dcc66a1e16e07ef361d"
+    },
+    {
+      "path": "../analog-module-interface-review-e/architecture.json",
+      "sha256": "43d43b53f843b5afb33c85e5ba2c0e9d96a0d8d75f6d5b2ce81edeb10f40ba6b"
+    },
+    {
+      "path": "../analog-module-interface-review-e/gpio-proposal.json",
+      "sha256": "5b95f399d3c329bd514f9bfa61f84e61755762c9f6e7773877eccbc0f97e5ea2"
+    }
+  ]
+}

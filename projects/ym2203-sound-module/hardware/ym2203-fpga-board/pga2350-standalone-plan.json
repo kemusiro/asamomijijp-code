@@ -1,0 +1,569 @@
+{
+  "schema_version": 1,
+  "variant": "P2",
+  "date": "2026-11-16",
+  "status": "pin_level_schematic_review_a_not_firmware_implemented",
+  "architecture": {
+    "mcu": "Pimoroni PGA2350 / RP2350B",
+    "mcu_count": 1,
+    "fpga_retained": false,
+    "fpga_module": null,
+    "interprocessor_spi": false,
+    "real_ym2203": true,
+    "ym_socket": true,
+    "mcu_socket": true,
+    "clock_generator": "Si5351A-B-GT",
+    "dac": "PCM5102A",
+    "fine_pitch_hand_soldering_allowed": true,
+    "quality_target": "supervised prototype"
+  },
+  "division": {
+    "core0": [
+      "USB CDC",
+      "USB MIDI 1.0 device",
+      "HOST I2C v2",
+      "event FIFO and timed execution",
+      "owner arbitration",
+      "YM bus and BUSY",
+      "RX LED",
+      "Si5351 configuration",
+      "watchdog coordination",
+      "USB WYM1 streaming owner",
+      "executed-register voice indicator shadow",
+      "bounded I2C panel polling"
+    ],
+    "core1": [
+      "FM receive DMA management",
+      "PCM decode and gain",
+      "variable SRC extension",
+      "I2S transmit DMA management"
+    ],
+    "pio": [
+      {
+        "role": "FM SD/CLK/SH receiver",
+        "state_machines": 1
+      },
+      {
+        "role": "I2S transmitter",
+        "state_machines": 1
+      }
+    ],
+    "dma_channels_baseline": 4,
+    "fpga_functions": []
+  },
+  "external_api": {
+    "address": 66,
+    "i2c_hz": 100000,
+    "signature": "YM22S002",
+    "host_change_required": false,
+    "compatibility_status": "required_not_yet_regressed_for_P2",
+    "default_ym_hz": 4000000,
+    "external_lease_ms": 1000,
+    "request_opcode3": "PUSH",
+    "status_bytes": 64,
+    "event_capacity_baseline": 1024,
+    "max_events_per_request": 32,
+    "crc_and_sequence_unchanged": true,
+    "wym1_unchanged": true
+  },
+  "usb": {
+    "connector": "USB-C USB2 device",
+    "role": "device",
+    "classes": [
+      "CDC",
+      "MIDI 1.0"
+    ],
+    "external_midi_interface_required": false,
+    "host_port": false,
+    "din5": false,
+    "usb_audio": false,
+    "cc_rd_ohms_each": 5100,
+    "external_5v_connected_to_usb_vbus": false,
+    "vbus_sense": true,
+    "power_mode": "self_powered",
+    "vid_pid": "usage review pending; no new allocation claimed",
+    "midi_channels": {
+      "FM": [
+        1,
+        2,
+        3
+      ],
+      "SSG": [
+        4,
+        5,
+        6
+      ]
+    },
+    "midi_initial_scope": [
+      "Note On",
+      "Note Off",
+      "Note On velocity zero as Off",
+      "CC120 panic",
+      "CC123 all notes off per channel",
+      "System Reset panic"
+    ],
+    "velocity_gain": false,
+    "program_change": false,
+    "pitch_bend": false,
+    "sysex": false,
+    "native_rp2350_usb": true,
+    "wym1_playback": {
+      "planned": true,
+      "implemented": false,
+      "transport": "CDC dedicated binary stream mode; framing to specify before implementation",
+      "reuse_same_usb_connector": true,
+      "whole_file_in_ram": false,
+      "bounded_fifo": 1024,
+      "timestamps_and_register_order_preserved": true,
+      "crc_sequence_ack_backpressure_required": true,
+      "console_text_interleaved_with_binary": false,
+      "stop_button_works_in_binary_mode": true,
+      "lease_ms": 1000,
+      "file_clock_must_match_dip": true,
+      "i2c_wire_changed": false
+    }
+  },
+  "rx_led": {
+    "count": 1,
+    "colour": "green",
+    "hold_ms": 50,
+    "extend_on_receive": true,
+    "resistor_candidate_ohms": 1000,
+    "gpio": null,
+    "events": [
+      "newly accepted I2C PUSH events",
+      "newly accepted USB WYM1 events",
+      "accepted MIDI Note On/Off or CC123 state change"
+    ],
+    "excluded": [
+      "KEEP",
+      "status read",
+      "USB SOF",
+      "rejected request",
+      "duplicate request",
+      "unrelated MIDI realtime"
+    ],
+    "off_priority": [
+      "global STOP",
+      "MIDI panic when MIDI owns",
+      "fault",
+      "reset",
+      "owner disconnect"
+    ],
+    "audio_level_indicator": false,
+    "may_be_off_while_buffered_audio_plays": true,
+    "driver": "MCP23017 GPA7 active-low sink",
+    "direct_mcu_gpio_required": false
+  },
+  "simplification": {
+    "external_power_supervisors": "omit in initial prototype",
+    "external_watchdog": "omit; RP2350 internal watchdog",
+    "external_arm_gate_logic": "omit; direct MCU requests with default reset/mute/bus-disable wiring",
+    "standalone_inverter": "absorb polarity in GPIO/PIO",
+    "F1_extra_12mhz_xo_buffer": "omit; no FPGA or FPGA USB reference",
+    "ym_clock_level_translation": "retain",
+    "data_and_control_translators": "retain; bidirectional data DIR/OE added",
+    "fm_input_buffer": "retain conservatively; no 5V-direct-input baseline",
+    "default_reset_mute_and_bus_disable": "retain",
+    "analog_mix_and_line_mute": "retain",
+    "independent_stop_under_controller_clock_failure_guaranteed": false
+  },
+  "clock": {
+    "mcu_reference": "PGA2350 onboard crystal",
+    "mcu_nominal_hz": 150000000,
+    "ym_default_hz": 4000000,
+    "si_clk0": "YM variable clock via 3.3V-to-5V translator",
+    "si_clk1": "unused initially",
+    "si_clk2": "unused initially",
+    "external_audio_49152000_required": false,
+    "i2s_nominal_hz": 48000,
+    "four_mhz_src_baseline": "125 input to 108 output; existing drift tracking",
+    "variable_src_implemented_for_P2": false,
+    "variable_profiles": "stopped-only extension; nominal 1.5..4MHz first target, not arbitrary-frequency acceptance",
+    "non_4mhz_v2_begin": "reject; no silent playback at different pitch/rate",
+    "F1_timing_applies": false
+  },
+  "logical_io_budget": {
+    "groups": [
+      {
+        "name": "YM data",
+        "count": 8
+      },
+      {
+        "name": "YM A0/CS/WR/RD/RESET",
+        "count": 5
+      },
+      {
+        "name": "data translator DIR/OE",
+        "count": 2
+      },
+      {
+        "name": "control translator OE",
+        "count": 1
+      },
+      {
+        "name": "FM SD/CLK/SH",
+        "count": 3
+      },
+      {
+        "name": "I2S DIN/BCK/LRCK",
+        "count": 3
+      },
+      {
+        "name": "HOST I2C",
+        "count": 2
+      },
+      {
+        "name": "peripheral I2C shared by Si5351/panel/Arduino SDA/SCL",
+        "count": 2
+      },
+      {
+        "name": "DAC/LINE allow",
+        "count": 2
+      },
+      {
+        "name": "USB VBUS sense",
+        "count": 1
+      }
+    ],
+    "subtotal": 29,
+    "optional": [],
+    "gpio_total": 48,
+    "gp47_reserved_for_psram": 1,
+    "remaining_before_optional": 0,
+    "physical_assignment": "carrier-p2/pins.json",
+    "dedicated_pins_not_in_subtotal": [
+      "USB D+/D-",
+      "RUN",
+      "BOOTSEL",
+      "SWD"
+    ],
+    "pio_base_window_review_required": false,
+    "arduino_unique_signals": 20,
+    "arduino_shared_existing_signals": 2,
+    "arduino_additional_gpio": 18,
+    "total_with_expansion": 47,
+    "deferred_optional": [
+      "5V ADC observation would require sacrificing or switching an extension ADC",
+      "YM IRQ may use expander spare input with 3.3V buffer"
+    ],
+    "pio_base_window_review": "PIO0 and PIO1 BASE0; all audio pins GP16..28; SDK2.2.0 static validation"
+  },
+  "memory": {
+    "psram_required": false,
+    "critical_buffers": "internal SRAM",
+    "event_capacity_baseline": 1024,
+    "whole_song_in_ram_required": false
+  },
+  "compatibility_and_stop": {
+    "host_sources_modified": false,
+    "lease_ms": 1000,
+    "internal_spi_lease_required": false,
+    "usb_detach_mutes_midi_owner": true,
+    "usb_detach_keeps_i2c_owner_playing": true,
+    "stop_clears_queue": true,
+    "auto_replay_after_reset_or_reconnect": false,
+    "watchdog_target_ms": 1000,
+    "audio_progress_required_for_watchdog_feed": true
+  },
+  "revc_comparison": {
+    "csv": "pga2350-standalone-revc-changes.csv",
+    "generic_logic_removed_refs": [
+      "U4",
+      "U5",
+      "U6",
+      "U10",
+      "U7"
+    ],
+    "generic_logic_removed_count": 5,
+    "related_decoupling_old_refs": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12"
+    ],
+    "dip14_sockets_removed": 5,
+    "data_read_buffer_removed_ref": "U2",
+    "data_read_buffer_reason": "merge into a direction-controlled dual-rail data transceiver; not direct 5V connection",
+    "new_fixed_ic_count_claimed": false,
+    "net_total_part_delta": null,
+    "comparison_counts_exclude_module_internals": true,
+    "new_panel_io_expander_count": 1
+  },
+  "verification": {
+    "scope": "native routed PCB DRC/parity plus electrical netlist/ERC, physical pin/UNO geometry and calculated power/socket envelopes; not firmware or hardware acceptance",
+    "report": "carrier-p2/pcb-review-b/schematic/verification.json",
+    "firmware_implemented": false,
+    "gpio_assigned": true,
+    "schematic_created": true,
+    "bom_finalized": false,
+    "pcb_created": true,
+    "variable_clock_audio_verified": false,
+    "hardware_accepted": false,
+    "panel_implemented": false,
+    "usb_wym1_implemented": false,
+    "extension_electrical_validated": false,
+    "clock_profile_arithmetic": "eight nominal frequencies evaluated with existing F1 generator; not P2 firmware ROM or hardware proof",
+    "placement_fixture_created": true,
+    "extension_static_connections_checked": true,
+    "previous_reports": [
+      "verification/pga2350-standalone-20261115.json",
+      "verification/pga2350-extensions-20261115.json",
+      "verification/p2-carrier-review-a-20261115.json"
+    ],
+    "manufacturing_released": false
+  },
+  "revision": "2.1",
+  "extension_header": {
+    "form_factor": "Arduino UNO R3",
+    "user_confirmed_io_voltage": 3.3,
+    "ioref_v": 3.3,
+    "five_v_shields_fully_compatible": false,
+    "arduino_sketch_api_compatible": false,
+    "native_signal_count": 20,
+    "main_contact_count": 32,
+    "icsp_spi_contacts": 6,
+    "signal_csv": "pga2350-arduino-header.csv",
+    "physical_gpio_assigned": true,
+    "uart_labels": [
+      "D0 RX",
+      "D1 TX"
+    ],
+    "spi_aliases": [
+      "D10 CS",
+      "D11 COPI",
+      "D12 CIPO",
+      "D13 SCK"
+    ],
+    "i2c_aliases": {
+      "A4": "SDA",
+      "A5": "SCL"
+    },
+    "shared_peripheral_i2c": true,
+    "host_i2c_shared": false,
+    "vin": "NC",
+    "aref": "NC; no external reference input",
+    "icsp_vcc": 3.3,
+    "shield_5v_jumper_default": "OPEN",
+    "adc_a4_a5_requires_i2c_isolation_links": true,
+    "pwm_labels_target": [
+      3,
+      5,
+      6,
+      9,
+      10,
+      11
+    ],
+    "peripheral_driver_and_mux_validation_pending": false,
+    "peripheral_mux_static_checked": true,
+    "peripheral_firmware_driver_implemented": false,
+    "geometry": "carrier-p2/header-geometry.json",
+    "placement_fixture": "carrier-p2/schematic/p2-header-placement.kicad_pcb"
+  },
+  "panel": {
+    "expander": "MCP23017-E/SO candidate",
+    "expander_count": 1,
+    "supply_v": 3.3,
+    "address": 32,
+    "bus": "Si5351/extension peripheral I2C controller; separate from HOST target",
+    "gpio_csv": "pga2350-expander.csv",
+    "used_bits": 13,
+    "capacity": 16,
+    "poll_ms": 10,
+    "led_refresh_ms": 20,
+    "transaction_timeout_target_us": 2000,
+    "interrupt_pin_used": false,
+    "pins_gpa7_gpb7_inputs": false,
+    "led_sink_current_target_max_ma": 2,
+    "power_on_leds": "off; set OLAT high before output direction",
+    "reset": "external reset pin tied to 3.3V RUN reset node in schematic review",
+    "hard_stop_independent_of_mcu": false
+  },
+  "buttons": {
+    "hard_reset": {
+      "count": 1,
+      "connection": "RUN_N directly to GND; no expander/firmware dependency",
+      "usb_reenumerates": true,
+      "dip_relatched": true,
+      "auto_replay": false
+    },
+    "stop": {
+      "count": 1,
+      "via": "MCP23017 GPA4",
+      "global_stop": true,
+      "works_for": [
+        "I2C WYM1",
+        "USB WYM1",
+        "MIDI",
+        "TEST"
+      ],
+      "preempts_test": true
+    },
+    "test": {
+      "count": 1,
+      "via": "MCP23017 GPA5",
+      "allowed_only_no_owner": true,
+      "audio": "original short diagnostic: FM3 solos,SSG3 solos,six-voice chord,then mute",
+      "repeat_on_hold": false
+    },
+    "debounce_ms": 20,
+    "stop_is_software_polled": true
+  },
+  "clock_switch": {
+    "bits": 4,
+    "active_low": true,
+    "normalized_on_is_one": true,
+    "sw1_lsb": true,
+    "latch": "power-on or hardware/watchdog reset only",
+    "default_all_off_profile": 0,
+    "changes_during_playback": "pending only, no retune",
+    "reserved_profile_action": "keep muted and report error",
+    "unsupported_profile_action": "keep muted and report error; no silent 4MHz fallback",
+    "profiles_csv": "pga2350-clock-switches.csv",
+    "profiles": [
+      {
+        "id": 0,
+        "switches_sw4_to_sw1_on_is_1": "0000",
+        "hz": 4000000,
+        "example": "Rev C / existing WYM1 default; Shanghai example",
+        "scope": "single YM2203 in Shanghai model",
+        "source_url": "https://github.com/mamedev/mame/blob/master/src/mame/sunelectronics/shanghai.cpp",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 1,
+        "switches_sw4_to_sw1_on_is_1": "0001",
+        "hz": 3579545,
+        "example": "Black Tiger clock example",
+        "scope": "two YM2203 on source board; clock reference only",
+        "source_url": "https://github.com/mamedev/mame/blob/master/src/mame/capcom/blktiger.cpp",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 2,
+        "switches_sw4_to_sw1_on_is_1": "0010",
+        "hz": 3993600,
+        "example": "evaluation profile",
+        "scope": "specific source board not established; not advertised as a verified board preset",
+        "source_url": "",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 3,
+        "switches_sw4_to_sw1_on_is_1": "0011",
+        "hz": 3000000,
+        "example": "Combat School clock example",
+        "scope": "YM2203 plus uPD7759; clock reference only",
+        "source_url": "https://github.com/mamedev/mame/blob/master/src/mame/konami/combatsc.cpp",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 4,
+        "switches_sw4_to_sw1_on_is_1": "0100",
+        "hz": 2000000,
+        "example": "MZ-2500 audio clock example",
+        "scope": "YM2203 plus separate beep; clock reference only",
+        "source_url": "https://github.com/mamedev/mame/blob/master/src/mame/sharp/mz2500.cpp",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 5,
+        "switches_sw4_to_sw1_on_is_1": "0101",
+        "hz": 1500000,
+        "example": "Ghosts n Goblins clock example",
+        "scope": "two YM2203 on source board; clock reference only",
+        "source_url": "https://github.com/mamedev/mame/blob/master/src/mame/capcom/gng.cpp",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 6,
+        "switches_sw4_to_sw1_on_is_1": "0110",
+        "hz": 2500000,
+        "example": "evaluation profile",
+        "scope": "no specific board compatibility claim",
+        "source_url": "",
+        "P2_hardware_verified": false
+      },
+      {
+        "id": 7,
+        "switches_sw4_to_sw1_on_is_1": "0111",
+        "hz": 3500000,
+        "example": "evaluation profile",
+        "scope": "no specific board compatibility claim",
+        "source_url": "",
+        "P2_hardware_verified": false
+      }
+    ],
+    "board_clock_example_does_not_imply_full_board_emulation": true,
+    "i2c_v2_requires_4mhz": true,
+    "usb_non_4mhz_requires_variable_src_validation": true
+  },
+  "voice_leds": {
+    "count": 6,
+    "labels": [
+      "FM1",
+      "FM2",
+      "FM3",
+      "SSGA",
+      "SSGB",
+      "SSGC"
+    ],
+    "driver": "MCP23017 GPB0..5",
+    "source": "executed YM register shadow; not queued events",
+    "fm_rule": "per-channel 0x28 operator key mask nonzero AND DAC/LINE allowed",
+    "ssg_rule": "tone or noise enabled in 0x07 AND volume0x08..0x0A nonzero or envelope selected AND LINE allowed",
+    "minimum_on_target_ms": 30,
+    "led_refresh_ms": 20,
+    "stop_reset_fault_clears": true,
+    "energy_or_vu_meter": false,
+    "release_tail_or_envelope_zero_not_measured": true
+  },
+  "carrier": {
+    "review": "B",
+    "document": "carrier-p2/pcb-review-b/README.md",
+    "schematic": "carrier-p2/pcb-review-b/schematic/p2-carrier-b.kicad_sch",
+    "bom": "carrier-p2/pcb-review-b/schematic/bom.csv",
+    "native_gpio": 47,
+    "schematic_components": 164,
+    "kicad_erc_violations": 0,
+    "manufacturing_ready": false,
+    "routed_pcb": "carrier-p2/pcb-review-b/schematic/p2-carrier-b.kicad_pcb"
+  },
+  "pcb_review_b": {
+    "document": "carrier-p2/pcb-review-b/README.md",
+    "schematic": "carrier-p2/pcb-review-b/schematic/p2-carrier-b.kicad_sch",
+    "pcb": "carrier-p2/pcb-review-b/schematic/p2-carrier-b.kicad_pcb",
+    "verification": "carrier-p2/pcb-review-b/schematic/verification.json",
+    "outline_mm": [
+      164,
+      124
+    ],
+    "copper_layers": 4,
+    "ground_plane": "In1.Cu",
+    "power_rails": {
+      "V3V3_module_budget_ma": 259.4,
+      "V3_AUX_budget_ma": 150,
+      "aux_ldo": "TLV75533PDBVR",
+      "shield_3v3_limit_ma": 100,
+      "shield_5v_limit_ma": 100
+    },
+    "module_socket": "64 x individual Mill-Max0300-2-15-15-47-27-10-0; fitted sample pending",
+    "gpio_changed": false,
+    "host_changed": false,
+    "firmware_ported": false,
+    "hardware_accepted": false,
+    "fabrication_released": false,
+    "minimum_via_drill_mm": 0.2
+  },
+  "carrier_review_a": {
+    "review": "A",
+    "document": "carrier-p2/README.md",
+    "schematic": "carrier-p2/schematic/p2-carrier.kicad_sch",
+    "bom": "carrier-p2/schematic/bom.csv",
+    "native_gpio": 47,
+    "schematic_components": 158,
+    "kicad_erc_violations": 0,
+    "manufacturing_ready": false
+  }
+}

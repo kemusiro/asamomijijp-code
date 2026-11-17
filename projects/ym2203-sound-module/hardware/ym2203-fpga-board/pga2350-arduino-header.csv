@@ -1,0 +1,39 @@
+Header group,Signal label,Logical net,Role,Voltage,PGA2350 GPIO,Notes,Module pad
+DIGITAL_0_7,D0,EXT_D0,UART RX,3.3V,GP13,dedicated extension GPIO; not YM internal bus,H2
+DIGITAL_0_7,D1,EXT_D1,UART TX,3.3V,GP12,dedicated extension GPIO; not YM internal bus,G1
+DIGITAL_0_7,D2,EXT_D2,digital,3.3V,GP19,dedicated extension GPIO; not YM internal bus,I3
+DIGITAL_0_7,D3,EXT_D3,digital / PWM,3.3V,GP14,dedicated extension GPIO; not YM internal bus,H1
+DIGITAL_0_7,D4,EXT_D4,digital,3.3V,GP24,dedicated extension GPIO; not YM internal bus,J6
+DIGITAL_0_7,D5,EXT_D5,digital / PWM,3.3V,GP15,dedicated extension GPIO; not YM internal bus,I2
+DIGITAL_0_7,D6,EXT_D6,digital / PWM,3.3V,GP22,dedicated extension GPIO; not YM internal bus,J5
+DIGITAL_0_7,D7,EXT_D7,digital,3.3V,GP25,dedicated extension GPIO; not YM internal bus,I6
+DIGITAL_8_13,D8,EXT_D8,digital,3.3V,GP29,SPI aliases repeated on ICSP/SPI header,I8
+DIGITAL_8_13,D9,EXT_D9,digital / PWM,3.3V,GP23,SPI aliases repeated on ICSP/SPI header,I5
+DIGITAL_8_13,D10,EXT_D10,SPI CS,3.3V,GP9,SPI aliases repeated on ICSP/SPI header,F2
+DIGITAL_8_13,D11,EXT_D11,SPI COPI,3.3V,GP11,SPI aliases repeated on ICSP/SPI header,G2
+DIGITAL_8_13,D12,EXT_D12,SPI CIPO,3.3V,GP8,SPI aliases repeated on ICSP/SPI header,E1
+DIGITAL_8_13,D13,EXT_D13,SPI SCK,3.3V,GP10,SPI aliases repeated on ICSP/SPI header,F1
+DIGITAL_8_13,GND,GND,ground,0V,not GPIO,,
+DIGITAL_8_13,AREF,NC,external analog reference unsupported,NC,not connected,do not connect to PGA2350 ADC supply,
+DIGITAL_8_13,SDA,EXT_A4,I2C controller shared with Si5351/MCP23017,3.3V,GP42,same net as A4; not HOST I2C,D10
+DIGITAL_8_13,SCL,EXT_A5,I2C controller shared with Si5351/MCP23017,3.3V,GP43,same net as A5; not HOST I2C,C9
+ANALOG,A0,EXT_A0,ADC / digital,3.3V,GP40,A4/A5 ADC use requires opening I2C branch links,E10
+ANALOG,A1,EXT_A1,ADC / digital,3.3V,GP41,A4/A5 ADC use requires opening I2C branch links,D9
+ANALOG,A2,EXT_A2,ADC / digital,3.3V,GP44,A4/A5 ADC use requires opening I2C branch links,C10
+ANALOG,A3,EXT_A3,ADC / digital,3.3V,GP45,A4/A5 ADC use requires opening I2C branch links,B10
+ANALOG,A4,EXT_A4,ADC / digital / I2C SDA,3.3V,GP42,A4/A5 ADC use requires opening I2C branch links,D10
+ANALOG,A5,EXT_A5,ADC / digital / I2C SCL,3.3V,GP43,A4/A5 ADC use requires opening I2C branch links,C9
+POWER,NC,NC,UNO R3 reserved,NC,not connected,,
+POWER,IOREF,V3V3,logic reference,3.3V,not GPIO,not 5V I/O,B4
+POWER,RESET,RUN_N,MCU RUN reset,3.3V,dedicated RUN,never drive 5V,A5
+POWER,3V3,V3V3,limited output supply,3.3V,not GPIO,current budget pending,B4
+POWER,5V,SHIELD_5V,optional output supply,5V,not GPIO,jumper initially OPEN; do not back-power,
+POWER,GND1,GND,ground,0V,not GPIO,,
+POWER,GND2,GND,ground,0V,not GPIO,,
+POWER,VIN,NC,external high-voltage input unsupported,NC,not connected,not a 7..12V power input,
+ICSP_SPI,CIPO,EXT_D12,SPI input,3.3V,GP8,2x3 SPI aliases; not AVR programming; VCC=3.3V,E1
+ICSP_SPI,VCC,V3V3,SPI logic supply,3.3V,not GPIO,2x3 SPI aliases; not AVR programming; VCC=3.3V,B4
+ICSP_SPI,SCK,EXT_D13,SPI clock,3.3V,GP10,2x3 SPI aliases; not AVR programming; VCC=3.3V,F1
+ICSP_SPI,COPI,EXT_D11,SPI output,3.3V,GP11,2x3 SPI aliases; not AVR programming; VCC=3.3V,G2
+ICSP_SPI,RESET,RUN_N,MCU reset,3.3V,not GPIO,2x3 SPI aliases; not AVR programming; VCC=3.3V,A5
+ICSP_SPI,GND,GND,ground,0V,not GPIO,2x3 SPI aliases; not AVR programming; VCC=3.3V,

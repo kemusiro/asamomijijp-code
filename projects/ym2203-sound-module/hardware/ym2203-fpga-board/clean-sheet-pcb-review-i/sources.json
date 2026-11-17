@@ -1,0 +1,40 @@
+{
+  "date": "2026-11-18",
+  "vendor_assets_redistributed": false,
+  "original_project_license": "MIT",
+  "references": [
+    {
+      "url": "../clean-sheet-schematic-review-h/sources.json",
+      "purpose": "electrical source parts and datasheets"
+    },
+    {
+      "url": "https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf",
+      "purpose": "SSW120 female nominal height/pitch"
+    },
+    {
+      "url": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf",
+      "purpose": "TSW120-07 male mating post/insulator"
+    },
+    {
+      "url": "https://www.mill-max.com/sites/default/files/external/catalog/2020-03/153-201_0.pdf",
+      "purpose": "socket candidate reference; direct access failed; dimensions/fit must be rechecked before order"
+    },
+    {
+      "url": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "purpose": "Core header electrical identities"
+    },
+    {
+      "url": "../digital-module-pcb-review-d/core-pad-coordinates.json",
+      "purpose": "original project transcription of Core top-view mechanical coordinates"
+    },
+    {
+      "url": "../carrier-p2/header-geometry.json",
+      "purpose": "original UNO R3 geometry transcription"
+    }
+  ],
+  "reused_original_project_assets": [
+    "H symbols, electrical circuit and ten P2H footprints",
+    "D USB D+/D- route geometry as initial seed, then native validation"
+  ],
+  "scope": "dimension models conditional; no supplier PDF/photo, JAR, wheels or private music redistributed"
+}

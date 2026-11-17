@@ -1,0 +1,218 @@
+[
+  {
+    "header": "J1",
+    "pin": "1",
+    "label": "D0",
+    "shield_net": "STOP_N",
+    "base_net": "EXT_D0",
+    "gpio": 29
+  },
+  {
+    "header": "J1",
+    "pin": "2",
+    "label": "D1",
+    "shield_net": "LCD_RST_N",
+    "base_net": "EXT_D1",
+    "gpio": 28
+  },
+  {
+    "header": "J1",
+    "pin": "3",
+    "label": "D2",
+    "shield_net": "ENC_A",
+    "base_net": "EXT_D2",
+    "gpio": 19
+  },
+  {
+    "header": "J1",
+    "pin": "4",
+    "label": "D3",
+    "shield_net": "ENC_B",
+    "base_net": "EXT_D3",
+    "gpio": 22
+  },
+  {
+    "header": "J1",
+    "pin": "5",
+    "label": "D4",
+    "shield_net": "ENC_SW_N",
+    "base_net": "EXT_D4",
+    "gpio": 23
+  },
+  {
+    "header": "J1",
+    "pin": "6",
+    "label": "D5",
+    "shield_net": "OP1_N",
+    "base_net": "EXT_D5",
+    "gpio": 30
+  },
+  {
+    "header": "J1",
+    "pin": "7",
+    "label": "D6",
+    "shield_net": "OP2_N",
+    "base_net": "EXT_D6",
+    "gpio": 31
+  },
+  {
+    "header": "J1",
+    "pin": "8",
+    "label": "D7",
+    "shield_net": "OP3_N",
+    "base_net": "EXT_D7",
+    "gpio": 32
+  },
+  {
+    "header": "J2",
+    "pin": "1",
+    "label": "D8",
+    "shield_net": "OP4_N",
+    "base_net": "EXT_D8",
+    "gpio": 33
+  },
+  {
+    "header": "J2",
+    "pin": "2",
+    "label": "D9",
+    "shield_net": "NOTE_N",
+    "base_net": "EXT_D9",
+    "gpio": 34
+  },
+  {
+    "header": "J2",
+    "pin": "3",
+    "label": "D10",
+    "shield_net": "LCD_CS_N",
+    "base_net": "EXT_D10",
+    "gpio": 25
+  },
+  {
+    "header": "J2",
+    "pin": "4",
+    "label": "D11",
+    "shield_net": "LCD_MOSI",
+    "base_net": "EXT_D11",
+    "gpio": 27
+  },
+  {
+    "header": "J2",
+    "pin": "5",
+    "label": "D12",
+    "shield_net": "LCD_DC",
+    "base_net": "EXT_D12",
+    "gpio": 24
+  },
+  {
+    "header": "J2",
+    "pin": "6",
+    "label": "D13",
+    "shield_net": "LCD_SCK",
+    "base_net": "EXT_D13",
+    "gpio": 26
+  },
+  {
+    "header": "J2",
+    "pin": "7",
+    "label": "GND",
+    "shield_net": "GND",
+    "base_net": "GND",
+    "gpio": null
+  },
+  {
+    "header": "J2",
+    "pin": "9",
+    "label": "SDA",
+    "shield_net": "SDA",
+    "base_net": "EXT_A4",
+    "gpio": null
+  },
+  {
+    "header": "J2",
+    "pin": "10",
+    "label": "SCL",
+    "shield_net": "SCL",
+    "base_net": "EXT_A5",
+    "gpio": null
+  },
+  {
+    "header": "J3",
+    "pin": "1",
+    "label": "A0",
+    "shield_net": "KNOB1_ADC",
+    "base_net": "EXT_A0",
+    "gpio": 40
+  },
+  {
+    "header": "J3",
+    "pin": "2",
+    "label": "A1",
+    "shield_net": "KNOB2_ADC",
+    "base_net": "EXT_A1",
+    "gpio": 41
+  },
+  {
+    "header": "J3",
+    "pin": "3",
+    "label": "A2",
+    "shield_net": "KNOB3_ADC",
+    "base_net": "EXT_A2",
+    "gpio": 44
+  },
+  {
+    "header": "J3",
+    "pin": "4",
+    "label": "A3",
+    "shield_net": "KNOB4_ADC",
+    "base_net": "EXT_A3",
+    "gpio": 45
+  },
+  {
+    "header": "J3",
+    "pin": "5",
+    "label": "A4",
+    "shield_net": "SDA",
+    "base_net": "EXT_A4",
+    "gpio": 42
+  },
+  {
+    "header": "J3",
+    "pin": "6",
+    "label": "A5",
+    "shield_net": "SCL",
+    "base_net": "EXT_A5",
+    "gpio": 43
+  },
+  {
+    "header": "J4",
+    "pin": "2",
+    "label": "IOREF",
+    "shield_net": "IOREF_3V3",
+    "base_net": "V3V3",
+    "gpio": null
+  },
+  {
+    "header": "J4",
+    "pin": "4",
+    "label": "3V3",
+    "shield_net": "AUX_3V3",
+    "base_net": "V3_AUX",
+    "gpio": null
+  },
+  {
+    "header": "J4",
+    "pin": "6",
+    "label": "GND1",
+    "shield_net": "GND",
+    "base_net": "GND",
+    "gpio": null
+  },
+  {
+    "header": "J4",
+    "pin": "7",
+    "label": "GND2",
+    "shield_net": "GND",
+    "base_net": "GND",
+    "gpio": null
+  }
+]

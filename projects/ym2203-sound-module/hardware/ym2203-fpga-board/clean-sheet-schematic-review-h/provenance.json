@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "license": "MIT, inherited project license and original renderer/geometry",
+  "symbols": "original numeric-pin review symbols, datasheets referenced but not redistributed",
+  "footprints": "10 original project D geometries copied to P2H namespace; dimensions unchanged; new stack/mechanics not verified",
+  "inputs_sha256": {
+    "digital-module-review-c/generate.py": "d7890d1018869979bb57446790343d16a9b9b6bb90b56d343d5f2dff3d05ca58",
+    "digital-module-review-c/base/circuit.json": "b1bb84c16758653bc6f268edd331cc3a0ac2880849d610a86ca67d8a4619d6ac",
+    "digital-module-review-c/module/circuit.json": "ab655a0f88eb2ae84aabfe3b4809adcb3100443e04069d70b74c6d2489792355",
+    "digital-module-review-c/module-header.json": "10cb51f84743d2cd24b15c938ae4a240c602eaf2e10de40bf4c6bf1bea2871c3",
+    "clean-sheet-interface-review-g/gpio-proposal.json": "cd5042e79ff930cc8c64d9ae6469e2fa3296b04d67c9dc5240e5f4da469840cc",
+    "clean-sheet-interface-review-g/connector.json": "da228c535f88eff85117a6982dc9edee25f1bcfc386db13cbbd063882969dfae",
+    "digital-module-pcb-review-d/P2D.pretty/Core2350B0_P1_IndividualSockets.kicad_mod": "cdec5d3b4495590fb0622608891794ed8a9ca773f396148f845c08ed01ee44cf",
+    "digital-module-pcb-review-d/P2D.pretty/Core2350B0_P2_IndividualSockets.kicad_mod": "c64c9ed08f8590c2304333da71a1f7c904f5028756859583973592452bdcccca",
+    "digital-module-pcb-review-d/P2D.pretty/Core2350B0_P3_IndividualSockets.kicad_mod": "14337eceab7e50ba442697c41966ecbc17473658a444b6f9daa6cf2d7ef1b23a",
+    "digital-module-pcb-review-d/P2D.pretty/Core2350B0_P4_IndividualSockets.kicad_mod": "6197c65a261b3e5edd7ea0c16be22922f16c4ba7dc204186bc63d52c5b17250a",
+    "digital-module-pcb-review-d/P2D.pretty/JUNO_A.kicad_mod": "cc17a3aebf13f121f3ab5f9767073d1383115a2b4d9f337db08b64a44945a063",
+    "digital-module-pcb-review-d/P2D.pretty/JUNO_D0.kicad_mod": "c0ca4e2e1ed8810382b4ffde8745b00ca0ef1a307decec354290fc3f99564422",
+    "digital-module-pcb-review-d/P2D.pretty/JUNO_D8.kicad_mod": "4d700a8de6c93ef206e7af32fde8782fb5c2af2ab3a2b73db17a9a27c421f34a",
+    "digital-module-pcb-review-d/P2D.pretty/JUNO_PWR.kicad_mod": "fc34c09fcb27a0d2d2296f4fa437d5624aaec43e54adf8d023835bafb86affca",
+    "digital-module-pcb-review-d/P2D.pretty/JUNO_SPI.kicad_mod": "b8e233e4eaec497651829b8d55bc7f64f6a2a2b5998db34f58c8df67b22be9e4",
+    "digital-module-pcb-review-d/P2D.pretty/PGA2350_Socket_64.kicad_mod": "bac7789473f296e3df7deed41c720d00b55b093331421fa9aefa962e718117f8"
+  },
+  "generated_sources_managed": [
+    "*.kicad_sch",
+    "*.kicad_sym",
+    "*.kicad_pro",
+    "circuit.json",
+    "netlist.xml",
+    "erc.json",
+    "bom.csv",
+    "*-lib-table"
+  ],
+  "native_toolchain": "KiCad10.0.5; installed stock footprints pin sets checked, not redistributed",
+  "old_history_rewritten": false
+}

@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-18",
+  "base_revision": "3.6-pcb-review-i",
+  "header_contacts": 32,
+  "connected_contacts": 27,
+  "parts": 46,
+  "base_gpio_changed": false,
+  "host_source_changed": false,
+  "firmware_implemented": false,
+  "pcb_routed": false,
+  "hardware_accepted": false,
+  "power": {
+    "io_ref_admission_ma": 11,
+    "pga_existing_ma": 265,
+    "pga_limit_ma": 300,
+    "display_aux_admission_ma": 80,
+    "shield_aux_limit_ma": 100,
+    "additional_5v_ma": 0
+  },
+  "mechanical": {
+    "outline_local_mm": [
+      -3,
+      -3,
+      73,
+      97
+    ],
+    "origin_on_base_mm": [
+      10,
+      10
+    ],
+    "source_origin_x_mm": 90,
+    "source_gap_mm": 7,
+    "display_envelope_mm": [
+      -1,
+      6,
+      43,
+      39
+    ],
+    "icsp_underside_keepout_mm": [
+      61,
+      20,
+      69,
+      31
+    ],
+    "clock_access_window_candidate_mm": [
+      50,
+      62,
+      67,
+      77
+    ],
+    "underside_limit_mm": 3,
+    "minimum_stack_face_gap_mm": 10.5,
+    "base_tall_under_shield_limit_mm": 5,
+    "minimum_vertical_gap_mm": null,
+    "base_stop_covered": true,
+    "base_test_access_pending": true,
+    "routed": false,
+    "physical_fit_accepted": false,
+    "layout_redesign_required": true
+  }
+}

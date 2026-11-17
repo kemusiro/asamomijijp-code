@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "pages": 29,
+  "rendered_pages": 29,
+  "visually_reviewed": "all-page contact sheet plus full ADC/power protection pages",
+  "pdf_sha256": "8b0dc1a74179725822421c657767418ec351d735db46a8c3e635aa1e6d2417f8",
+  "source_circuit_sha256": {
+    "base": "b1bb84c16758653bc6f268edd331cc3a0ac2880849d610a86ca67d8a4619d6ac",
+    "module": "ab655a0f88eb2ae84aabfe3b4809adcb3100443e04069d70b74c6d2489792355"
+  },
+  "tooling": "KiCad10.0.5 / librsvg / Poppler / Ghostscript10.07.1",
+  "output": "outputs/p2/p2-digital-module-review-c.pdf",
+  "scope": "visual/readability only; no electrical/PCB/bench proof"
+}

@@ -1,0 +1,41 @@
+pin,row,column,signal,kind,direction,voltage_v,base_gpio,aliases,note
+1,1,A,V5_MODULE,power,base_to_module,5,,,
+2,1,B,GND,ground,none,0,,,
+3,2,A,V5_MODULE,power,base_to_module,5,,,
+4,2,B,GND,ground,none,0,,,
+5,3,A,V3V3_MODULE_AUX,power,base_to_module,3.3,,,optional100mA auxiliary LDO only; no regulator-output tie
+6,3,B,KEY,key,none,,,,blocked base hole / removed module pin; replaces all older key positions
+7,4,A,MOD_ENABLE,digital,base_to_module,3.3,12,,active high permission; default low
+8,4,B,MOD_ALERT_N,digital,module_to_base,3.3,13,,optional open-drain fault notification
+9,5,A,BUS_D0,digital,profile_defined,3.3,0,SPI=MISO,8bit parallel; SPI shared exclusively
+10,5,B,BUS_D1,digital,profile_defined,3.3,1,SPI=CS0_N,8bit parallel; SPI shared exclusively
+11,6,A,BUS_D2,digital,profile_defined,3.3,2,SPI=SCK,8bit parallel; SPI shared exclusively
+12,6,B,BUS_D3,digital,profile_defined,3.3,3,SPI=MOSI,8bit parallel; SPI shared exclusively
+13,7,A,GND,ground,none,0,,,
+14,7,B,GND,ground,none,0,,,
+15,8,A,BUS_D4,digital,profile_defined,3.3,4,SPI=aux_optional,8bit parallel; SPI shared exclusively
+16,8,B,BUS_D5,digital,profile_defined,3.3,5,SPI=aux_optional,8bit parallel; SPI shared exclusively
+17,9,A,BUS_D6,digital,profile_defined,3.3,6,SPI=aux_optional,8bit parallel; SPI shared exclusively
+18,9,B,BUS_D7,digital,profile_defined,3.3,7,SPI=aux_optional,8bit parallel; SPI shared exclusively
+19,10,A,MOD_CTL0,digital,profile_defined,3.3,8,generic_parallel=A0;SPI=CS2_N,direction/idle level follows selected profile
+20,10,B,MOD_CTL1,digital,profile_defined,3.3,9,generic_parallel=CS_N;SPI=CS1_N,direction/idle level follows selected profile
+21,11,A,MOD_CTL2,digital,profile_defined,3.3,10,generic_parallel=WR_N;SPI=aux,direction/idle level follows selected profile
+22,11,B,MOD_CTL3,digital,profile_defined,3.3,11,generic_parallel=RD_N;SPI=aux,direction/idle level follows selected profile
+23,12,A,MOD_I2C_SDA,digital,bidirectional,3.3,42,,internal service I2C1 open drain; distinct from HOST
+24,12,B,MOD_I2C_SCL,digital,bidirectional,3.3,43,,base master; bounded stretching
+25,13,A,SOUND_CLK0,digital,base_to_module,3.3,,,Si5351A; unused outputs disabled
+26,13,B,GND,ground,none,0,,,
+27,14,A,SOUND_CLK1,digital,base_to_module,3.3,,,Si5351A; unused outputs disabled
+28,14,B,GND,ground,none,0,,,
+29,15,A,SOUND_CLK2,digital,base_to_module,3.3,,,Si5351A; unused outputs disabled
+30,15,B,GND,ground,none,0,,,
+31,16,A,MOD_I2S_BCK,digital,base_to_module,3.3,15,,
+32,16,B,GND,ground,none,0,,,
+33,17,A,MOD_I2S_LRCK,digital,base_to_module,3.3,16,,
+34,17,B,MOD_I2S_DATA,digital,module_to_base,3.3,18,,optional48kHz slave PCM
+35,18,A,GND,ground,none,0,,,
+36,18,B,GND,ground,none,0,,,
+37,19,A,AUDIO_L,analog,module_to_base,,,,mono uses L only; base copies to both outputs
+38,19,B,GND,ground,none,0,,,
+39,20,A,AUDIO_R,analog,module_to_base,,,,
+40,20,B,GND,ground,none,0,,,

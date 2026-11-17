@@ -1,0 +1,13 @@
+{
+  "result": "PASS",
+  "revision": "P2 3.1-pcb-review-d",
+  "purchase_rows": 80,
+  "implementation_refs": 292,
+  "base_refs": 147,
+  "module_refs": 145,
+  "no_buy_refs": 8,
+  "akizuki_rows": 15,
+  "electrical_boms_unchanged": true,
+  "bench_acceptance": false,
+  "package_quantities_unverified": 62
+}

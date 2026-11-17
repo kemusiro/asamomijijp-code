@@ -1,0 +1,210 @@
+{
+  "checked": "2026-11-16",
+  "policy": "一次情報・販売店ページ。検索URLの行は個別在庫未検証。",
+  "sources": [
+    {
+      "name": "PGA2350",
+      "url": "https://shop.pimoroni.com/products/pga2350",
+      "facts": "PIM722。64接点のオスピンは別途。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Core2350B0",
+      "url": "https://www.waveshare.com/Core2350B.htm",
+      "facts": "0MB PSRAMのB0。KitはRP-Tiny-Adapter-BとFFC6pinを含む。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Core pinout",
+      "url": "https://www.waveshare.com/wiki/Core2350B0",
+      "facts": "64ピン、2.54mm。PGAとは配列が異なる。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Mill-Max receptacle drawing",
+      "url": "https://www.mill-max.com/sites/default/files/external/catalog/2019-10/153M-201M_0.pdf",
+      "facts": "0300-2系のテール4.75mm、レセプタクル肩高5.33mm。実際の嵌合高さは要現物確認。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Samtec socket drawing",
+      "url": "https://suddendocs.samtec.com/prints/ssw-1xx-xx-xxx-x-xx-xxx-xx-mkt.pdf",
+      "facts": "review Dの8.51mmソケット選定に使用。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Samtec terminal drawing",
+      "url": "https://suddendocs.samtec.com/prints/tsw-xxx-xx-xxx-x-xx-xxx-mkt.pdf",
+      "facts": "review DのTSW116-07-G-D選定を維持。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "SKHHALA010",
+      "url": "https://tech.alpsalpine.com/j/products/detail/SKHHALA010/",
+      "facts": "6mm角、高さ4.3mm。SKHHARA010は高さ5mmなので混同しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "SKHHALA010 distributor",
+      "url": "https://www.digikey.jp/ja/products/detail/alps-alpine/SKHHALA010/19529104",
+      "facts": "バルク小口1個からの販売表示を確認。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "CTS 209-4LPST distributor",
+      "url": "https://eleshop.jp/shop/g/g3778093/",
+      "facts": "注文単位10個。Farnell取寄品。取付寸法は最終照合対象。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "NP 4.7µF",
+      "url": "https://akizukidenshi.com/catalog/g/g130140/",
+      "facts": "50NXA4R7MEFC5X11、D5/H11/P2mm、無極性。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "discontinued 1µF",
+      "url": "https://akizukidenshi.com/catalog/g/g115331/",
+      "facts": "販売終了。現行候補107549を使用。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "discontinued 100nF",
+      "url": "https://akizukidenshi.com/catalog/g/g117576/",
+      "facts": "販売終了。指定0805/X7Rを他店で検索。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "0Ω alternate",
+      "url": "https://www.marutsu.co.jp/pc/i/1559080/",
+      "facts": "RK73Z2ATTD。MOQ10/SPQ10の表示を確認。秋月111622は販売終了。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "PCM5102A bare IC",
+      "url": "https://eleshop.jp/shop/g/gEAO411/",
+      "facts": "PCM5102APWR単体の購入候補。秋月112332はモジュールのため不可。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "Si5351A bare IC",
+      "url": "https://www.digikey.jp/ja/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+      "facts": "MSOP10のSI5351A-B-GT。秋月110679はモジュールのため不可。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "PCM1863 bare IC",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/PCM1863DBT/4895616",
+      "facts": "PCM1863DBT、指定TSSOP30。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "LV4T125",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LV4T125PWR/4806529",
+      "facts": "TSSOP14、カットテープ小口表示を確認。リールを注文しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "22µF specification",
+      "url": "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BZ71A226ME15-01A.pdf",
+      "facts": "0805、22µF、10V、X7R候補。流通仕様を購入時に確認。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "1µF specification",
+      "url": "https://akizukidenshi.com/goodsaffix/CL21B105KPFNNNE.pdf",
+      "facts": "0805/2012、X7R、1µF、10V、±10%。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "J01 / 2227-40-06",
+      "url": "https://akizukidenshi.com/catalog/g/g100015/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "J03 / PH-1x40SG",
+      "url": "https://akizukidenshi.com/catalog/g/g100167/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "LED01 / OSG8HA3Z74A",
+      "url": "https://akizukidenshi.com/catalog/g/g111637/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "R01 / RG2012-N-103-B-T5",
+      "url": "https://akizukidenshi.com/catalog/g/g111797/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "R02 / RG2012N-104-B-T5",
+      "url": "https://akizukidenshi.com/catalog/g/g111798/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "R03 / RG2012N-102-B-T5",
+      "url": "https://akizukidenshi.com/catalog/g/g111796/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "R11 / RG2012N-101-B-T5",
+      "url": "https://akizukidenshi.com/catalog/g/g111795/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C02 / GRM21BR71A106KE51",
+      "url": "https://akizukidenshi.com/catalog/g/g117593/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C03 / GRM21BR71E225KE11",
+      "url": "https://akizukidenshi.com/catalog/g/g114788/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C04 / CL21B105KPFNNNE",
+      "url": "https://akizukidenshi.com/catalog/g/g107549/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C05 / GRM21BR71C475KE51",
+      "url": "https://akizukidenshi.com/catalog/g/g131147/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C12 / 16MH5100MEFC6.3X5",
+      "url": "https://akizukidenshi.com/catalog/g/g105002/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "C13 / 50NXA4R7MEFC5X11",
+      "url": "https://akizukidenshi.com/catalog/g/g130140/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "E01 / JH16T2A103L20KC",
+      "url": "https://akizukidenshi.com/catalog/g/g116478/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    },
+    {
+      "name": "E02 / MJ-073H",
+      "url": "https://akizukidenshi.com/catalog/g/g106257/",
+      "facts": "販売ページで型番・サイズ・販売包装を確認。在庫数量と価格は固定しない。",
+      "checked": "2026-11-16"
+    }
+  ]
+}

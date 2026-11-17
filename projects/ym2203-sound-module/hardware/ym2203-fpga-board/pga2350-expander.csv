@@ -1,0 +1,17 @@
+Logical port bit,Function,Direction,Notes
+GPA0,DIP1,input,profile bit0 / ON=GND
+GPA1,DIP2,input,profile bit1
+GPA2,DIP3,input,profile bit2
+GPA3,DIP4,input,profile bit3
+GPA4,STOP,input,active-low button
+GPA5,TEST,input,active-low button
+GPA6,RESERVED_INPUT,reserved,optional YM IRQ via 3.3V buffer; not required
+GPA7,RX_LED,output,active-low sink; output-only pin limitation respected
+GPB0,FM1_LED,output,active-low sink
+GPB1,FM2_LED,output,active-low sink
+GPB2,FM3_LED,output,active-low sink
+GPB3,SSGA_LED,output,active-low sink
+GPB4,SSGB_LED,output,active-low sink
+GPB5,SSGC_LED,output,active-low sink
+GPB6,RESERVED_IO,reserved,unused
+GPB7,RESERVED_OUTPUT,reserved,output-only pin; no input use

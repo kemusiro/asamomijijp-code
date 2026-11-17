@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "scope": "existing tracked/untracked nonignored source files outside the eight edited current-entry documents",
+  "baseline_files": 1857,
+  "protected_files": 1849,
+  "entry_documents_changed": 8,
+  "native_gpio_changed": false,
+  "existing_host_or_firmware_changed": false,
+  "historical_review_a_b_changed": false,
+  "groups": {
+    "firmware-c/": {
+      "files": 187,
+      "aggregate_sha256": "30b7d599d36e70abec094a45dc6eb8e0e6e795078f929e0d711f0d5e2f1a162c"
+    },
+    "firmware/": {
+      "files": 0,
+      "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "diagnostics/": {
+      "files": 0,
+      "aggregate_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "hardware/ym2203-single-board/": {
+      "files": 593,
+      "aggregate_sha256": "37321a09d5fb5d62b0b0e91e95853a190f2dc97185a9c83dd9676249ecba8d4f"
+    },
+    "hardware/ym2203-fpga-board/carrier-p2/": {
+      "files": 110,
+      "aggregate_sha256": "59d873262b70d0971ae95a165f0303bc80228505aa74a8d0f8ad6b055af1ecb2"
+    }
+  }
+}

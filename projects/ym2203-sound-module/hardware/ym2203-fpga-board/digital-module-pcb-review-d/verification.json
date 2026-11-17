@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "tool": "KiCad/pcbnew10.0.5",
+  "scope": "static PCB/net/fit constraints, not P2 firmware or bench acceptance",
+  "boards": {
+    "base": {
+      "electrical_components": 147,
+      "footprints": 159,
+      "physical_pad_pin_checks": 567,
+      "segments": 1519,
+      "vias": 205,
+      "layers": 4,
+      "drc_violations": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "erc": 0,
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "pcb_sha256": "bf7faeb83c8bad8883fc7dc3eaf10a51836b86fd1d121986f686913dafa7d19a",
+      "schematic_sha256": "e017579bbd5107518dabce046409c2839914c15cfe436302aef8897a65561553"
+    },
+    "module": {
+      "electrical_components": 145,
+      "footprints": 149,
+      "physical_pad_pin_checks": 588,
+      "segments": 1657,
+      "vias": 263,
+      "layers": 4,
+      "drc_violations": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "erc": 0,
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "pcb_sha256": "9553894373a7635e583c2167e7804bb72610ccaa9ebd46608d26560d69776c1a",
+      "schematic_sha256": "dd3ef8881f68410fd54e00b50ed6e88af40e305738659daf46f1c1790d995dc1"
+    }
+  },
+  "contract": {
+    "connector_error_mm": 1.4210854715202004e-14,
+    "mount_error_mm": 0.0,
+    "uno_error_mm": 1.4210854715202004e-14,
+    "core_error_mm": 3.552713678800501e-15,
+    "electrical_mismatches": 0,
+    "ground_signal_segments": 0,
+    "tall_base_parts_under_source": [],
+    "wrong_socket_geometry": 0,
+    "native_drc_failures": 0,
+    "native_erc_failures": 0,
+    "drc_exclusions": 0
+  },
+  "positive_contract_checks": 11,
+  "negative_regression_mutations": 11,
+  "uno_contacts": 38,
+  "core_contacts": 64,
+  "mating_contacts": 32,
+  "assembly_via_sites": 5,
+  "hardware_accepted": false
+}

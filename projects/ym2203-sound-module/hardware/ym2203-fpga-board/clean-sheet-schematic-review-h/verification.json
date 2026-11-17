@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "python": "3.15.2",
+  "contract_tests_passed": 18,
+  "physical_pad_sets_checked": 228,
+  "native_nets": {
+    "base": 138,
+    "module": 73
+  },
+  "native": {
+    "schema_version": 1,
+    "date": "2026-11-18",
+    "kicad_version": "10.0.5",
+    "boards": {
+      "base": {
+        "components": 152,
+        "pages": 14,
+        "erc_violations": 0,
+        "nets": 138
+      },
+      "module": {
+        "components": 76,
+        "pages": 9,
+        "erc_violations": 0,
+        "nets": 73
+      }
+    },
+    "scope": "native ERC and pin/net connectivity only; not PCB, firmware or hardware acceptance"
+  },
+  "bounds": {
+    "scope": "conditional engineering budget/passive RC only; no SPICE or bench guarantee",
+    "pga_3v3_budget_ma": 265,
+    "aux_3v3_budget_ma": 350,
+    "input_admission_ma": 1240,
+    "aux_dissipation_w": 0.7174999999999999,
+    "aux_junction_c_jedec_reference": 85.13074999999999,
+    "module_passive_z_upper_ohm": 3814.433333333333,
+    "divider_max_unloaded": 0.599694808780482,
+    "adc_conservative_clamp_current_ma": 3.236914600550964,
+    "adc_typical20k_input_rc_gain_1khz": 0.35525504706323185,
+    "adc_rc_relative_1khz_db": {
+      "20": -0.0025835947970653736,
+      "100": 0.0009356904324514129,
+      "10000": -0.10679662427485792,
+      "20000": -0.4152616949749604
+    },
+    "assumed_adc_input_resistance_ohm": [
+      10000,
+      40000
+    ],
+    "assumed_effective_cap_uf": [
+      4.7,
+      15
+    ],
+    "startup_5tau_ms": 3571.224697505778,
+    "mute_150samples_plus200us_ms": 3.325,
+    "startup_guard_ms": 4000,
+    "planned_clock_halt_guard_ms": 4
+  },
+  "legacy_software_regression": {
+    "total": 115,
+    "passed": 111,
+    "skipped": 4,
+    "reason": "private REVC_TEST_SONG not supplied",
+    "scope": "unchanged C firmware/HOST host-native tests, not H firmware"
+  },
+  "new_pcb": false,
+  "new_firmware": false,
+  "hardware_accepted": false
+}

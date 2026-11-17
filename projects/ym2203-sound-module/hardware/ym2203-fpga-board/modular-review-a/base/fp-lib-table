@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "P2C") (type "KiCad") (uri "${KIPRJMOD}/../../carrier-p2/pcb-review-b/schematic/P2C.pretty") (options "") (descr "Preserved reviewB module/UNO footprints")))

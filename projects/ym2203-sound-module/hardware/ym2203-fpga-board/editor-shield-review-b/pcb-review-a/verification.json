@@ -1,0 +1,84 @@
+{
+  "smt_pad_via_hole_intersections": 0,
+  "date": "2026-11-18",
+  "kicad": "10.0.5",
+  "electrical_references": 46,
+  "mounts": 7,
+  "electrical_physical_pads": 159,
+  "total_physical_pads": 166,
+  "uno_mates": 32,
+  "max_mate_error_mm": 1.4210854715202004e-14,
+  "copper_layers": 2,
+  "segments": 692,
+  "vias": 28,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "drc_exclusions": 0,
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "track_min_mm": 0.25,
+  "mechanical": {
+    "conditional": true,
+    "knob_axes_local_mm": [
+      [
+        6.0,
+        87.0
+      ],
+      [
+        25.0,
+        87.0
+      ],
+      [
+        44.0,
+        87.0
+      ],
+      [
+        63.0,
+        87.0
+      ]
+    ],
+    "knob_min_gap_after_allowance_mm": 2.0,
+    "lcd_low_parts": [
+      "R10",
+      "R11",
+      "R12",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R7"
+    ],
+    "lcd_min_z_gap_mm": 4.5,
+    "base_smt_min_z_gap_mm": 4.5,
+    "source_xy_gap_mm": 7,
+    "icsp_tht_intrusions": [],
+    "physical_fit_accepted": false
+  },
+  "firmware_changed": false,
+  "host_changed": false,
+  "hardware_accepted": false
+}

@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "variant": "F1",
+  "date": "2026-11-15",
+  "status": "active_development_ulx3s_carrier_schematic_and_diamond_preparation",
+  "constraints": {
+    "real_ym2203": true,
+    "ym_socket": true,
+    "external_mcu_for_runtime_control": false,
+    "soft_cpu_initially": false,
+    "fpga_device_fixed": false,
+    "fpga_mount": "preassembled_module_or_evaluation_board",
+    "fine_pitch_hand_soldering_allowed": true,
+    "clock_generator": "Si5351A",
+    "dac_baseline": "PCM5102A",
+    "fpga_dac_selected": false
+  },
+  "selection": {
+    "preferred_family": "ECP5",
+    "first_evaluation_candidate": "ULX3S 85F",
+    "final_module": null,
+    "purchased": false,
+    "evaluation_board_aux_mcu_used_for_sound_control": false,
+    "module_signal_slot_target": 40,
+    "physical_pin_assignment": "../../fpga-standalone/boards/ulx3s/pins.json",
+    "usb_core_candidate": "avakar/usbcorev 8f799bb9f188f0266ff7926fdc93fad0fc754eae; immutable vendor plus build-time F1 patch",
+    "usb_runtime_via_programmer_bridge": false,
+    "selected_evaluation_module": "ULX3S 85F PCB v3.0.8 / LFE5U-85F-6BG381C",
+    "physical_pad_count": 49,
+    "carrier_signal_count": 33,
+    "carrier_pin_map_document": "../../fpga-standalone/boards/ulx3s/PINOUT.md",
+    "carrier_schematic": "carrier-f1/schematic/f1-carrier.kicad_sch",
+    "carrier_review_document": "carrier-f1/README.md"
+  },
+  "logical_pin_groups": [
+    {
+      "name": "YM bus data/control",
+      "count": 13
+    },
+    {
+      "name": "data transceiver DIR/OE",
+      "count": 2
+    },
+    {
+      "name": "FM SD/CLK/SH",
+      "count": 3
+    },
+    {
+      "name": "I2S",
+      "count": 3
+    },
+    {
+      "name": "HOST I2C",
+      "count": 2
+    },
+    {
+      "name": "Si5351 I2C",
+      "count": 2
+    },
+    {
+      "name": "USB D+/D-/pullup",
+      "count": 3
+    },
+    {
+      "name": "independent control and audio clocks",
+      "count": 2
+    },
+    {
+      "name": "power-good and external heartbeat",
+      "count": 2
+    },
+    {
+      "name": "DAC/LINE permission",
+      "count": 2
+    },
+    {
+      "name": "YM IRQ",
+      "count": 1
+    }
+  ],
+  "logical_pin_subtotal": 35,
+  "not_in_pin_subtotal": [
+    "VBUS detection",
+    "external reset",
+    "programming/debug",
+    "module reservations"
+  ],
+  "clock": {
+    "bootstrap": "Independent carrier 12MHz CMOS oscillator -> ECP5 PLL 48MHz; onboard ULX3S 25MHz unused",
+    "usb_clock_hz": 48000000,
+    "audio_hz": 49152000,
+    "ym_clock_source": "Si5351A",
+    "v2_compatibility_ym_hz": 4000000,
+    "variable_clock_extension": "later version, no silent change to v2",
+    "clock_register_rom_generated": true,
+    "carrier_reference_hz": 12000000
+  },
+  "api": {
+    "compatibility_document": "../../fpga-standalone/API-COMPATIBILITY.md",
+    "initial_wire": "Rev C C I2C v2 YM22S002",
+    "address": 66,
+    "common_python_api": "design draft; backend adapters not implemented",
+    "wym1_preserved": true,
+    "weblab_wire_currently_compatible": false,
+    "revc_wire_modified": false
+  },
+  "milestones": {
+    "F0": "documented",
+    "F1a": "frame validator RTL tested",
+    "F1b_i2c_session": "RTL simulated: I2C target, request queue, v2 session, event FIFO, STOP/lease; unchanged HOST/player; no hardware acceptance",
+    "F1c_external_ym_audio": "RTL/model tested: real YM bus/BUSY, serial RX, C-compatible PCM and I2S; no hardware acceptance",
+    "F1d_usb_cdc_midi": "RTL/ideal USB bitstream/C MIDI oracle/integrated models tested: CDC subset, six voices, I2C ownership and USB reset/suspend/detach safety; no OS or electrical acceptance",
+    "F1e_full_place_route": "Previous OOC internal timing retained; concrete board pad/PLL/global evaluation added separately in fpga-standalone/BOARD.md",
+    "F1f_hardware": "not run",
+    "F2_common_api_adapters": "not implemented",
+    "F1c_clock": "RTL/model tested: Si5351 dedicated master, readback/PLL monitoring, eight stopped-only profiles and variable SRC; v2 remains 4MHz",
+    "F1e_board_route": "ULX3S 85F v3.0.8 concrete 49-pad adapter/LPF, dedicated 12MHz PLL input, two global routes and normal P&R; clock distribution delay is zero in nextpnr model, physical skew/electrical/hardware signoff pending",
+    "F1e_carrier": "Pin-level KiCad review A:165 components/110 nets/11 sheets;ERC0;7 external safety/static tests;no PCB or electrical signoff",
+    "F1e_diamond": "Portable source-only bundle, Synplify/Translate and PARTrace Tcl, clocks/pads/IO/CDC review checklist prepared;mock/preparation tests only;vendor execution not performed"
+  },
+  "verification": {
+    "frame_report": "../../fpga-standalone/verification/frame-20261114.json",
+    "full_top_synthesized": true,
+    "timing_measured": false,
+    "hardware_accepted": false,
+    "old_jt03_results_apply": false,
+    "i2c_control_top_mapped": true,
+    "i2c_session_report": "../../fpga-standalone/verification/session-20261114.json",
+    "full_top_scope": "Yosys ECP5 mapping/check of revc_usb_ym_top with simulation-only nonzero USB IDs; not P&R or timing",
+    "audio_report": "../../fpga-standalone/verification/audio-20261115.json",
+    "clock_report": "../../fpga-standalone/verification/clocks-20261115.json",
+    "usb_report": "../../fpga-standalone/verification/usb-20261115.json",
+    "os_enumeration_tested": false,
+    "usb_electrical_compliance_tested": false,
+    "internal_ooc_place_route": true,
+    "internal_setup_targets_met": true,
+    "timing_analyzed": true,
+    "full_board_timing_signoff": false,
+    "physical_pin_assignment": true,
+    "pnr_report": "../../fpga-standalone/verification/pnr-20261115.json",
+    "board_pnr_report": "../../fpga-standalone/verification/ulx3s-board-20261115.json",
+    "carrier_report": "carrier-f1/verification/carrier-20261115.json",
+    "diamond_preparation_report": "../../fpga-standalone/verification/diamond-preparation-20261115.json",
+    "diamond_executed": false,
+    "pcb_layout_done": false
+  }
+}

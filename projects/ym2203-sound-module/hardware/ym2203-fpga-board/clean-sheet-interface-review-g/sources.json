@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "inherited_chip_sources": "../parallel-module-interface-review-f/sources.json",
+  "sources": [
+    {
+      "url": "https://www.raspberrypi.com/documentation/pico-sdk/hardware.html",
+      "publisher": "Raspberry Pi",
+      "sections": [
+        "hardware_pio",
+        "hardware_gpio",
+        "ADC"
+      ],
+      "facts": [
+        "PIO window0..31 or16..47 on RP2350B",
+        "contiguous OUT/SET pin ranges",
+        "ADC channels on40..47 for RP2350B"
+      ]
+    },
+    {
+      "url": "https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/io_bank0.h",
+      "publisher": "Raspberry Pi",
+      "sdk_commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+      "stored_sha256": "a17c776050d23fc42edcccb828dc88b5ab2461495cbc26ecb1efeb7513cadc57",
+      "stored_evidence": "../carrier-p2/pins.json:sdk_mux_evidence",
+      "facts": [
+        "SPI0 GPIO0..3, SPI1 GPIO24..27, UART0 GPIO28/29 and I2C0 GPIO20/21 / I2C1 GPIO42/43 muxes"
+      ]
+    },
+    {
+      "url": "https://shop.pimoroni.com/products/pga2350",
+      "publisher": "Pimoroni",
+      "facts": [
+        "PGA2350 pinout and fixed power/USB/SWD pins",
+        "GP47 onboard PSRAM CS retained"
+      ]
+    },
+    {
+      "url": "https://cdn.shopify.com/s/files/1/0174/1800/files/pga2350_pinout_diagram.pdf?v=1723124465",
+      "publisher": "Pimoroni",
+      "facts": [
+        "manufacturer physical pinout reference"
+      ],
+      "pad_identity_reference": "../digital-module-review-c/base/circuit.json:MPGA pins only, no old nets"
+    },
+    {
+      "url": "https://www.samtec.com/products/ssw-120-02-g-d",
+      "publisher": "Samtec",
+      "scope": "40position socket candidate, key modification/stack fit not verified"
+    },
+    {
+      "url": "https://www.samtec.com/products/tsw-120-07-g-d",
+      "publisher": "Samtec",
+      "scope": "40position header candidate, key modification/stack fit not verified"
+    }
+  ],
+  "design_judgments": [
+    "12 common GND positions with guards around analog",
+    "no split AGND ground domain",
+    "GPIO/connector optimized for prototype simplicity, not a measured globally optimal PCB"
+  ]
+}

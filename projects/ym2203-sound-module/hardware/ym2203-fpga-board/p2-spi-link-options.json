@@ -1,0 +1,268 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "status": "comparison_proposal_only_not_selected_or_implemented",
+  "current_review": "modular-review-a/README.md",
+  "existing_gpio_changed": false,
+  "existing_schematic_changed": false,
+  "existing_host_changed": false,
+  "comparison": {
+    "current_contacts": 60,
+    "current_ground_contacts": 17,
+    "current_reserved_unwired": 9,
+    "current_key_contacts": 1,
+    "old_parallel_control_signals": 16,
+    "new_spi_control_signals": 6,
+    "control_only_savings": 10
+  },
+  "candidate": {
+    "contacts": 40,
+    "pitch_mm": 2.54,
+    "rows": 20,
+    "contact_grid_length_mm": 48.26,
+    "groups": {
+      "spi": 4,
+      "raw_digital_audio": 6,
+      "clock_outputs": 3,
+      "analog_ssg": 3,
+      "analog_aux": 2,
+      "power": 4,
+      "ground": 13,
+      "reserved": 2,
+      "key": 1,
+      "reset_and_alert": 2
+    },
+    "id_transport": "SPI capability command; no separate module I2C wires in this candidate",
+    "audio_transport": "raw digital audio dedicated wires; base PGA2350 keeps PCM/SRC/I2S; analog SSG/AUX stay separate",
+    "pins": [
+      {
+        "pin": 1,
+        "signal": "5V",
+        "gpio": null
+      },
+      {
+        "pin": 2,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 3,
+        "signal": "5V",
+        "gpio": null
+      },
+      {
+        "pin": 4,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 5,
+        "signal": "3V3_IO",
+        "gpio": null
+      },
+      {
+        "pin": 6,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 7,
+        "signal": "3V3_IO",
+        "gpio": null
+      },
+      {
+        "pin": 8,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 9,
+        "signal": "SPI_SCK",
+        "gpio": null
+      },
+      {
+        "pin": 10,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 11,
+        "signal": "SPI_MOSI",
+        "gpio": null
+      },
+      {
+        "pin": 12,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 13,
+        "signal": "SPI_MISO",
+        "gpio": null
+      },
+      {
+        "pin": 14,
+        "signal": "SPI_CS_N",
+        "gpio": null
+      },
+      {
+        "pin": 15,
+        "signal": "MODULE_RESET_N",
+        "gpio": null
+      },
+      {
+        "pin": 16,
+        "signal": "MODULE_ALERT_N",
+        "gpio": null
+      },
+      {
+        "pin": 17,
+        "signal": "AUDIO0",
+        "gpio": null
+      },
+      {
+        "pin": 18,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 19,
+        "signal": "AUDIO1",
+        "gpio": null
+      },
+      {
+        "pin": 20,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 21,
+        "signal": "AUDIO2",
+        "gpio": null
+      },
+      {
+        "pin": 22,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 23,
+        "signal": "AUDIO3",
+        "gpio": null
+      },
+      {
+        "pin": 24,
+        "signal": "AUDIO4",
+        "gpio": null
+      },
+      {
+        "pin": 25,
+        "signal": "AUDIO5",
+        "gpio": null
+      },
+      {
+        "pin": 26,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 27,
+        "signal": "CLK0",
+        "gpio": null
+      },
+      {
+        "pin": 28,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 29,
+        "signal": "CLK1",
+        "gpio": null
+      },
+      {
+        "pin": 30,
+        "signal": "CLK2",
+        "gpio": null
+      },
+      {
+        "pin": 31,
+        "signal": "SSG_A",
+        "gpio": null
+      },
+      {
+        "pin": 32,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 33,
+        "signal": "SSG_B",
+        "gpio": null
+      },
+      {
+        "pin": 34,
+        "signal": "SSG_C",
+        "gpio": null
+      },
+      {
+        "pin": 35,
+        "signal": "AUX_L",
+        "gpio": null
+      },
+      {
+        "pin": 36,
+        "signal": "AUX_R",
+        "gpio": null
+      },
+      {
+        "pin": 37,
+        "signal": "RES0",
+        "gpio": null
+      },
+      {
+        "pin": 38,
+        "signal": "RES1",
+        "gpio": null
+      },
+      {
+        "pin": 39,
+        "signal": "GND",
+        "gpio": null
+      },
+      {
+        "pin": 40,
+        "signal": "KEY",
+        "gpio": null
+      }
+    ]
+  },
+  "smaller_variant": {
+    "contacts": "32-class estimate only",
+    "tradeoff": "fewer independent audio/clock/reserve/ground contacts; exact mapping and SI not designed",
+    "supports_all_requested_module_variants": false
+  },
+  "bridge_options": [
+    "SPI GPIO expander / shift registers",
+    "small module MCU, such as RP2040 class",
+    "CPLD/FPGA peripheral state machine"
+  ],
+  "recommendation": "compare module MCU against simple shift-register implementation;40contact budget is the starting point",
+  "safety": [
+    "base final DAC/LINE gates remain local",
+    "independent3.3V reset/inhibit wire must directly clamp YM reset/drive permission, not merely request SPI stop",
+    "STOP/lease invalidates module queue and in-flight operations; no replay on reconnection",
+    "executed count advances on completed YM bus write, not SPI receipt"
+  ],
+  "limits": [
+    "no bridge circuit, P2 firmware, timing/SI or hardware acceptance yet",
+    "no concrete GPIO reassignment is applied",
+    "module MCU power, local3V3 and voltage translation need revised BOM/budget",
+    "ALERT is notification only; distinguish boot, busy, fault and completion in SPI replies"
+  ],
+  "sources": [
+    "https://www.microchip.com/en-us/product/mcp23s17",
+    "https://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf",
+    "https://pip-assets.raspberrypi.com/categories/1214-rp2350/documents/RP-008373-DS-2-rp2350-datasheet.pdf"
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "pcm1863",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm1863.pdf",
+      "publisher": "Texas Instruments",
+      "checked": "2026-11-17",
+      "sections": [
+        "features",
+        "electrical characteristics",
+        "9.3.8 clocking",
+        "9.5.1.4 I2C"
+      ],
+      "facts": [
+        "2 ADC channels",
+        "3.3V, I2C, BCK PLL slave supported",
+        "single-ended full-scale 2.1Vrms; 20kohm typical input",
+        "7bit address 100101AD: AD=0 gives 0x4A"
+      ],
+      "design_choices_not_datasheet_guarantees": [
+        "1Vrms nominal/2Vrms design ceiling",
+        "base placement",
+        "STOP keeps ADC running"
+      ]
+    },
+    {
+      "id": "atp3012",
+      "url": "https://www.a-quest.com/archive/manual/atp3012_datasheet.pdf",
+      "publisher": "AQUEST",
+      "checked": "2026-11-17",
+      "sections": [
+        "5 basic circuit",
+        "9.2 I2C",
+        "9.3 SPI"
+      ],
+      "facts": [
+        "I2C default7bit0x2E; polling interval at least10ms",
+        "SPI alternative",
+        "phonetic command input and PWM audio"
+      ]
+    },
+    {
+      "id": "si4732",
+      "url": "https://www.skyworksinc.com/-/media/Skyworks/SL/documents/public/data-shorts/Si4732-A10-short.pdf",
+      "publisher": "Skyworks",
+      "checked": "2026-11-17",
+      "sections": [
+        "block diagram",
+        "features",
+        "ordering guide"
+      ],
+      "facts": [
+        "2/3-wire control",
+        "LOUT/ROUT analog return candidate",
+        "Si4732-A10-GS SOIC candidate"
+      ],
+      "not_confirmed": [
+        "final address and reset wiring",
+        "selected SKU register initialization"
+      ]
+    },
+    {
+      "id": "sn76477",
+      "url": "https://sandsoftwaresound.net/wp-content/uploads/2021/03/SN76477_datasheet.pdf",
+      "publisher": "Texas Instruments original; third-party archive",
+      "checked": "2026-11-17",
+      "existing_analysis": "../P2-SN76477-CANDIDATE.md",
+      "facts": [
+        "analog sound generator needs external R/C",
+        "INHIBIT and external VCO control need local adaptation"
+      ]
+    },
+    {
+      "id": "ay_psg",
+      "url": "https://amigan.yatho.com/AY-3-8910.pdf",
+      "publisher": "General Instrument original; archive",
+      "checked": "2026-11-17",
+      "facts": [
+        "parallel control and three analog voices; local analog mixing required"
+      ]
+    },
+    {
+      "id": "sn_psg",
+      "url": "https://computers.baffa.tec.br/pages/datasheet/76489.pdf",
+      "publisher": "Texas Instruments original; archive",
+      "checked": "2026-11-17",
+      "facts": [
+        "parallel control and READY timing; do not assume reset input"
+      ]
+    }
+  ],
+  "note": "Links/facts only; no third-party datasheets copied into repository."
+}

@@ -1,0 +1,574 @@
+{
+  "schema_version": 1,
+  "status": "architecture_proposal_not_schematic_or_hardware_acceptance",
+  "date": "2026-11-14",
+  "name": "YM2203 next board / iCE40UP5K / Rev D proposal",
+  "baseline_commit": "f94356c7df7281e6a237b79000840a4c2bdaaa7a",
+  "baseline_design": "hardware/ym2203-single-board/rev-c/design.json",
+  "fpga": {
+    "candidate": "iCE40UP5K-SG48",
+    "logic_cells": 5280,
+    "ebr_blocks": 30,
+    "ebr_bits_per_block": 4096,
+    "spram_blocks": 4,
+    "spram_bits_per_block": 262144,
+    "dsp_blocks": 8,
+    "total_user_io": 39,
+    "open_drain_only_io": 3,
+    "dedicated_configuration_pins": 2,
+    "physical_pin_assignment": "not_assigned_not_approved"
+  },
+  "clocks": {
+    "reference_hz": 25000000,
+    "system_hz": 49152000,
+    "sample_hz": 48000,
+    "i2s_slot_bits": 32,
+    "i2s_slots": 2,
+    "default_fm_frame_divisor": 72,
+    "ym_request_min_hz": 700000,
+    "ym_request_max_hz": 4200000,
+    "ym_test_profiles_hz": [
+      1500000,
+      2000000,
+      3000000,
+      3579545,
+      3993600,
+      4000000
+    ],
+    "boundary_model_profiles_hz": [
+      700000,
+      4200000
+    ],
+    "generator": "Si5351A-B / 10-MSOP candidate",
+    "plla_vco_hz": 786432000,
+    "plla_system_divider": 16,
+    "pllb_target_vco_hz": 800000000,
+    "vco_min_hz": 600000000,
+    "vco_max_hz": 900000000,
+    "feedback_min": 15,
+    "feedback_max": 90,
+    "max_fraction_denominator": 1048575,
+    "output_divider_min": 8,
+    "output_divider_max": 900,
+    "ym_output_multiplier": 2,
+    "fpga_ym_divider": 2,
+    "synthesis_error_limit_ppm": 1,
+    "master_clock_qualification": "all_frequencies_are_proposed_only",
+    "prescaler_policy": "default_only_reject_0x2d_through_0x2f_in_first_version"
+  },
+  "pins": [
+    {
+      "name": "YM data",
+      "count": 8,
+      "type": "bidirectional_push_pull"
+    },
+    {
+      "name": "YM A0 CS WR RD RESET",
+      "count": 5,
+      "type": "push_pull"
+    },
+    {
+      "name": "Data transceiver DIR OE",
+      "count": 2,
+      "type": "push_pull"
+    },
+    {
+      "name": "FM SD CLK SH and IRQ",
+      "count": 4,
+      "type": "input"
+    },
+    {
+      "name": "DAC I2S",
+      "count": 3,
+      "type": "push_pull"
+    },
+    {
+      "name": "Pico SPI shared configuration/runtime",
+      "count": 4,
+      "type": "mixed_push_pull"
+    },
+    {
+      "name": "Pico ARM permission",
+      "count": 1,
+      "type": "input"
+    },
+    {
+      "name": "FPGA fault notification",
+      "count": 1,
+      "type": "push_pull"
+    },
+    {
+      "name": "System reference",
+      "count": 1,
+      "type": "global_clock_input"
+    },
+    {
+      "name": "YM twice-frequency reference",
+      "count": 1,
+      "type": "global_clock_input"
+    },
+    {
+      "name": "YM divided clock",
+      "count": 1,
+      "type": "push_pull"
+    },
+    {
+      "name": "DAC permission",
+      "count": 1,
+      "type": "push_pull"
+    },
+    {
+      "name": "LINE permission",
+      "count": 1,
+      "type": "push_pull"
+    },
+    {
+      "name": "Power good observation",
+      "count": 1,
+      "type": "input"
+    }
+  ],
+  "pico_signal_groups": [
+    {
+      "name": "External HOST I2C",
+      "count": 2
+    },
+    {
+      "name": "Private clock-control I2C",
+      "count": 2
+    },
+    {
+      "name": "FPGA SPI",
+      "count": 4
+    },
+    {
+      "name": "FPGA CRESET CDONE",
+      "count": 2
+    },
+    {
+      "name": "ARM and FPGA fault",
+      "count": 2
+    },
+    {
+      "name": "Power good",
+      "count": 1
+    }
+  ],
+  "memory_allocations": [
+    {
+      "name": "1024 timestamped events",
+      "memory": "EBR",
+      "depth": 1024,
+      "width_bits": 64,
+      "layout": "1024x4"
+    },
+    {
+      "name": "Raw FM FIFO",
+      "memory": "EBR",
+      "depth": 256,
+      "width_bits": 16,
+      "layout": "256x16"
+    },
+    {
+      "name": "PCM FIFO",
+      "memory": "EBR",
+      "depth": 256,
+      "width_bits": 16,
+      "layout": "256x16"
+    },
+    {
+      "name": "SPI RX and status scratch",
+      "memory": "EBR",
+      "depth": 256,
+      "width_bits": 32,
+      "layout": "256x16"
+    },
+    {
+      "name": "Diagnostic raw FM trace",
+      "memory": "SPRAM",
+      "depth": 8192,
+      "width_bits": 16,
+      "layout": "16384x16"
+    }
+  ],
+  "dsp_allocations": [
+    {
+      "name": "Linear interpolation",
+      "blocks": 2
+    },
+    {
+      "name": "Gain and saturation",
+      "blocks": 1
+    }
+  ],
+  "capacity_targets": {
+    "lut_budget_fraction": 0.7,
+    "event_capacity": 1024,
+    "stream_prefill": 768,
+    "spi_hz": 8000000,
+    "spi_batch_records": 32,
+    "spi_header_crc_bytes": 16,
+    "fpga_event_bytes": 8,
+    "deadline_fault_us": 100000,
+    "lease_ms": 1000,
+    "audio_mute_on_missing_frames_ms": 5,
+    "initial_audio_fifo_frames": 16
+  },
+  "components": [
+    {
+      "function": "Controller",
+      "baseline_refs": [
+        "A1"
+      ],
+      "candidate": "Pico 2",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Physical sound source",
+      "baseline_refs": [
+        "U1"
+      ],
+      "candidate": "YM2203C",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "DAC",
+      "baseline_refs": [
+        "A2"
+      ],
+      "candidate": "bare PCM5102A / TSSOP20; no DIP adapter",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Bidirectional YM data",
+      "baseline_refs": [
+        "A3",
+        "U2"
+      ],
+      "candidate": "bare SN74LVC4245A / TSSOP24 candidate; SOIC24 on hand-assembly board variant",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "YM control and clock level conversion",
+      "baseline_refs": [
+        "A4"
+      ],
+      "candidate": "SN74LVC8T245PWR / TSSOP24; A-to-B control only; isolation review pending",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "FM and IRQ input level conversion",
+      "baseline_refs": [
+        "U3"
+      ],
+      "candidate": "SN74LVC125APWR / TSSOP14; 3.3V supply and 5V tolerant inputs",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Glue logic",
+      "baseline_refs": [
+        "U4",
+        "U5",
+        "U6"
+      ],
+      "candidate": "FPGA fabric",
+      "min": 0,
+      "max": 0
+    },
+    {
+      "function": "Divide by two",
+      "baseline_refs": [
+        "U7"
+      ],
+      "candidate": "FPGA flip-flop",
+      "min": 0,
+      "max": 0
+    },
+    {
+      "function": "Independent output/reset inhibit",
+      "baseline_refs": [
+        "U10"
+      ],
+      "candidate": "74HC11D-Q100J / SO14 external inhibit",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Analog mixer and line mute",
+      "baseline_refs": [
+        "U8",
+        "U9"
+      ],
+      "candidate": "bare MCP6022 / SOIC8 and CD74HC4053 / SOIC16 candidates",
+      "min": 2,
+      "max": 2
+    },
+    {
+      "function": "Main 5V soft-start",
+      "baseline_refs": [
+        "U11"
+      ],
+      "candidate": "existing TPS22918",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Logic and audio engine",
+      "baseline_refs": [],
+      "candidate": "bare iCE40UP5K-SG48 / QFN48; exposed-pad assembly required",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "Programmable clock",
+      "baseline_refs": [],
+      "candidate": "bare Si5351A-B / 10-MSOP plus crystal",
+      "min": 1,
+      "max": 1
+    },
+    {
+      "function": "FPGA core and I/O power sequencing",
+      "baseline_refs": [],
+      "candidate": "TLV75533PDBVR + TLV75512PDBVR + TPS22918DBVR; thermal and startup review pending",
+      "min": 3,
+      "max": 3
+    },
+    {
+      "function": "5V/power supervision",
+      "baseline_refs": [],
+      "candidate": "2 x TPS3808G01DBVR; core and5V SENSE/PG review pending",
+      "min": 2,
+      "max": 2
+    }
+  ],
+  "passive_count_status": "economic_candidate_BOM_v0.1_has_provisional_counts; not extracted_from_complete_schematic",
+  "initial_scope": "one_YM2203_default_prescaler_mono_FM_plus_analog_SSG",
+  "physical_tested": false,
+  "rtl_implemented": false,
+  "synthesized": false,
+  "placed_and_routed": false,
+  "assembly": {
+    "policy": "retain_Pico_2_only_as_controller_module; other_ICs_direct_on_main_PCB",
+    "default": "five_boards_top_side_Economic_candidate; owner_Pico_YM_sockets_and_accessible_THT_min2mm; Basic0603_and_fine_pitch_ICs_supplier",
+    "controller": "Pico 2 retained; socketed first prototype; no bare RP2350 redesign",
+    "sound_source": "existing YM2203C DIP40 in socket; not an SMT replacement",
+    "passive_default": "Basic0603 supplier SMT; accessible TH parts >=2mm owner; no classification from SMD body size",
+    "dac": "bare PCM5102A TSSOP20 with required external circuit",
+    "power_connector": "bare USB-C receptacle plus separate CC1/CC2 Rd; no breakout module",
+    "quote_quantities": [
+      5
+    ],
+    "quote_variants": [
+      "S_five_boards_owner_sockets_single_side",
+      "U_full_outsource_small_batch",
+      "all_SMT_PCBA",
+      "selective_FPGA_core_PCBA",
+      "self_reflow_equipment_required"
+    ],
+    "quote_received": false,
+    "approved_cost_limit": null,
+    "price_or_stock_guaranteed": false,
+    "layer_comparison": [
+      2,
+      4
+    ],
+    "module_fallback": "FPGA_module_only_if_direct_assembly_proves_impractical; separate_PCB_redesign_and_BOM",
+    "first_quote_variant": "E5_catalog_candidate_BOM_v0.1; final inventory,schematic,CPL,thermal and order acceptance pending",
+    "upper_cost_inputs": "upper-cost-inputs.json",
+    "hand_assembly_constraint_in_first_quote": false,
+    "socket_cost_inputs": "socket-cost-inputs.json",
+    "owner_assembly_scope": "Pico/YM sockets and accessible >=2mm lead-pitch parts including headers,pot,jack,radial audio/bulk caps,SSG network,fuse,diode,precision divider; exact owner MPNs pending",
+    "economic_bom_plan": "economic-bom-plan.json",
+    "economic_library_display": "selected 29 supplier SKUs list Economic and Standard; not stock or order acceptance"
+  },
+  "layout_study": {
+    "status": "functional_area_reservations_only_not_footprints_or_routed_PCB",
+    "units": "mm",
+    "baseline_board": "ym2203-single",
+    "compact_target_mm": [
+      100,
+      100
+    ],
+    "roomy_comparison_mm": [
+      120,
+      100
+    ],
+    "roomy_shift_from_x_mm": 60,
+    "roomy_shift_mm": 20,
+    "blocks": [
+      {
+        "id": "pico",
+        "label": "Pico 2",
+        "xy": [
+          4,
+          4
+        ],
+        "size": [
+          25,
+          55
+        ],
+        "kind": "retained"
+      },
+      {
+        "id": "ym",
+        "label": "YM socket",
+        "xy": [
+          35,
+          4
+        ],
+        "size": [
+          22,
+          55
+        ],
+        "kind": "retained"
+      },
+      {
+        "id": "usb_power",
+        "label": "USB-C 5V",
+        "xy": [
+          77,
+          4
+        ],
+        "size": [
+          19,
+          12
+        ],
+        "kind": "power"
+      },
+      {
+        "id": "power",
+        "label": "Power / PG",
+        "xy": [
+          63,
+          20
+        ],
+        "size": [
+          33,
+          16
+        ],
+        "kind": "power"
+      },
+      {
+        "id": "level",
+        "label": "Level x3",
+        "xy": [
+          63,
+          41
+        ],
+        "size": [
+          33,
+          18
+        ],
+        "kind": "digital"
+      },
+      {
+        "id": "clock",
+        "label": "Si5351 / XTAL",
+        "xy": [
+          4,
+          64
+        ],
+        "size": [
+          25,
+          14
+        ],
+        "kind": "digital"
+      },
+      {
+        "id": "fpga",
+        "label": "UP5K / caps",
+        "xy": [
+          35,
+          64
+        ],
+        "size": [
+          22,
+          22
+        ],
+        "kind": "digital"
+      },
+      {
+        "id": "audio",
+        "label": "DAC / mixer",
+        "xy": [
+          63,
+          64
+        ],
+        "size": [
+          33,
+          20
+        ],
+        "kind": "analog"
+      },
+      {
+        "id": "host",
+        "label": "HOST / test",
+        "xy": [
+          4,
+          85
+        ],
+        "size": [
+          25,
+          10
+        ],
+        "kind": "retained"
+      },
+      {
+        "id": "safety",
+        "label": "Inhibit / test",
+        "xy": [
+          35,
+          89
+        ],
+        "size": [
+          22,
+          9
+        ],
+        "kind": "digital"
+      },
+      {
+        "id": "volume",
+        "label": "Volume",
+        "xy": [
+          64,
+          87
+        ],
+        "size": [
+          14,
+          12
+        ],
+        "kind": "analog"
+      },
+      {
+        "id": "line",
+        "label": "LINE",
+        "xy": [
+          83,
+          85
+        ],
+        "size": [
+          13,
+          14
+        ],
+        "kind": "analog"
+      }
+    ],
+    "not_modelled": [
+      "actual_pad_courtyards",
+      "routing",
+      "mounting_holes",
+      "cable_and_shaft_external_clearance",
+      "height",
+      "EMI_and_thermal",
+      "complete_passive_BOM"
+    ],
+    "area_reduction_proven": false
+  },
+  "economic_bom_design_reference": "ECONOMIC-BOM.md"
+}

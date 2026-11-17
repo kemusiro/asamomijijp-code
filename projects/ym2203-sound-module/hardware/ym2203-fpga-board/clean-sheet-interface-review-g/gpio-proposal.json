@@ -1,0 +1,634 @@
+{
+  "schema_version": 1,
+  "revision": "3.4-interface-review-g",
+  "date": "2026-11-17",
+  "status": "clean_sheet_40contact_contiguous_gpio_design_not_cad_or_firmware",
+  "design_authority": {
+    "clean_sheet_base_and_module_authorized": true,
+    "old_connector_or_gpio_preservation_required": false,
+    "exact_pin_numbers_hardware_accepted": false,
+    "scope": "user authorized clean-sheet pin design; no CAD/firmware adoption in this review"
+  },
+  "schematic_applied": false,
+  "firmware_applied": false,
+  "base": [
+    {
+      "gpio": 0,
+      "module_pad": "B3",
+      "net": "BUS_D0",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "MISO"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 1,
+      "module_pad": "A2",
+      "net": "BUS_D1",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "CS0_N"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 2,
+      "module_pad": "B1",
+      "net": "BUS_D2",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "SCK"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 3,
+      "module_pad": "C2",
+      "net": "BUS_D3",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "MOSI"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 4,
+      "module_pad": "C1",
+      "net": "BUS_D4",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "optional_aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 5,
+      "module_pad": "D2",
+      "net": "BUS_D5",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "optional_aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 6,
+      "module_pad": "D1",
+      "net": "BUS_D6",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "optional_aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 7,
+      "module_pad": "E2",
+      "net": "BUS_D7",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "group": "module_bus",
+      "aliases": {
+        "spi": "optional_aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 8,
+      "module_pad": "E1",
+      "net": "MOD_CTL0",
+      "function": "pio0_control_or_SIO",
+      "group": "module_bus",
+      "aliases": {
+        "generic_parallel": "A0",
+        "spi": "CS2_N"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 9,
+      "module_pad": "F2",
+      "net": "MOD_CTL1",
+      "function": "pio0_control_or_SIO",
+      "group": "module_bus",
+      "aliases": {
+        "generic_parallel": "CS_N",
+        "spi": "CS1_N"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 10,
+      "module_pad": "F1",
+      "net": "MOD_CTL2",
+      "function": "pio0_control_or_SIO",
+      "group": "module_bus",
+      "aliases": {
+        "generic_parallel": "WR_N",
+        "spi": "aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 11,
+      "module_pad": "G2",
+      "net": "MOD_CTL3",
+      "function": "pio0_control_or_SIO",
+      "group": "module_bus",
+      "aliases": {
+        "generic_parallel": "RD_N",
+        "spi": "aux"
+      },
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 12,
+      "module_pad": "G1",
+      "net": "MOD_ENABLE",
+      "function": "sio_output_default_low",
+      "group": "module_control",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 13,
+      "module_pad": "H2",
+      "net": "MOD_ALERT_N",
+      "function": "sio_input_open_drain",
+      "group": "module_control",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 14,
+      "module_pad": "H1",
+      "net": "DAC_I2S_DATA",
+      "function": "pio1_tx_data",
+      "group": "audio",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 15,
+      "module_pad": "I2",
+      "net": "AUDIO_BCK",
+      "function": "pio1_clock",
+      "group": "audio",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 16,
+      "module_pad": "I1",
+      "net": "AUDIO_LRCK",
+      "function": "pio1_clock",
+      "group": "audio",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 17,
+      "module_pad": "J2",
+      "net": "BASE_ADC_DOUT",
+      "function": "pio1_rx_data",
+      "group": "audio",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 18,
+      "module_pad": "J3",
+      "net": "MOD_I2S_DATA",
+      "function": "pio1_rx_data",
+      "group": "audio",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 19,
+      "module_pad": "I3",
+      "net": "EXT_D2",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 20,
+      "module_pad": "J4",
+      "net": "HOST_SDA",
+      "function": "i2c0_sda",
+      "group": "host",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 21,
+      "module_pad": "I4",
+      "net": "HOST_SCL",
+      "function": "i2c0_scl",
+      "group": "host",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 22,
+      "module_pad": "J5",
+      "net": "EXT_D3",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 23,
+      "module_pad": "I5",
+      "net": "EXT_D4",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 24,
+      "module_pad": "J6",
+      "net": "EXT_D12",
+      "function": "spi1_rx",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 25,
+      "module_pad": "I6",
+      "net": "EXT_D10",
+      "function": "spi1_ss_n",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 26,
+      "module_pad": "J7",
+      "net": "EXT_D13",
+      "function": "spi1_sclk",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 27,
+      "module_pad": "I7",
+      "net": "EXT_D11",
+      "function": "spi1_tx",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 28,
+      "module_pad": "J8",
+      "net": "EXT_D1",
+      "function": "uart0_tx",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 29,
+      "module_pad": "I8",
+      "net": "EXT_D0",
+      "function": "uart0_rx",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 30,
+      "module_pad": "J9",
+      "net": "EXT_D5",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 31,
+      "module_pad": "I9",
+      "net": "EXT_D6",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 32,
+      "module_pad": "I10",
+      "net": "EXT_D7",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 33,
+      "module_pad": "H9",
+      "net": "EXT_D8",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 34,
+      "module_pad": "H10",
+      "net": "EXT_D9",
+      "function": "sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 38,
+      "module_pad": "F10",
+      "net": "M_DAC_ALLOW",
+      "function": "sio_output_default_low",
+      "group": "safety",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 39,
+      "module_pad": "E9",
+      "net": "M_LINE_ALLOW",
+      "function": "sio_output_default_low",
+      "group": "safety",
+      "aliases": {},
+      "adc_channel": null,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 40,
+      "module_pad": "E10",
+      "net": "EXT_A0",
+      "function": "adc_or_sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": 0,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 41,
+      "module_pad": "D9",
+      "net": "EXT_A1",
+      "function": "adc_or_sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": 1,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 42,
+      "module_pad": "D10",
+      "net": "EXT_A4",
+      "function": "i2c1_sda",
+      "group": "uno",
+      "aliases": {
+        "shared_internal": "service SDA/SCL"
+      },
+      "adc_channel": 2,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 43,
+      "module_pad": "C9",
+      "net": "EXT_A5",
+      "function": "i2c1_scl",
+      "group": "uno",
+      "aliases": {
+        "shared_internal": "service SDA/SCL"
+      },
+      "adc_channel": 3,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 44,
+      "module_pad": "C10",
+      "net": "EXT_A2",
+      "function": "adc_or_sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": 4,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 45,
+      "module_pad": "B10",
+      "net": "EXT_A3",
+      "function": "adc_or_sio",
+      "group": "uno",
+      "aliases": {},
+      "adc_channel": 5,
+      "hardware_applied": false
+    },
+    {
+      "gpio": 46,
+      "module_pad": "A9",
+      "net": "M_VBUS_SENSE",
+      "function": "sio_input_with_voltage_divider",
+      "group": "usb",
+      "aliases": {},
+      "adc_channel": 6,
+      "hardware_applied": false
+    }
+  ],
+  "base_assigned": 44,
+  "base_usable": 47,
+  "base_free_gpio": [
+    35,
+    36,
+    37
+  ],
+  "reserved_gpio": [
+    47
+  ],
+  "reserved_reason": "PGA2350 onboard PSRAM CS; do not cut trace in normal build",
+  "data_gpio_lsb_first": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "control_gpio": {
+    "CTL0": 8,
+    "CTL1": 9,
+    "CTL2": 10,
+    "CTL3": 11
+  },
+  "enable_gpio": 12,
+  "alert_gpio": 13,
+  "host_i2c": {
+    "controller": 0,
+    "sda": 20,
+    "scl": 21,
+    "address": 66,
+    "hz": 100000
+  },
+  "service_i2c": {
+    "controller": 1,
+    "sda": 42,
+    "scl": 43,
+    "hz": 100000
+  },
+  "uno": {
+    "io_ref_v": 3.3,
+    "shape": "UNO R3",
+    "gpio": {
+      "D0": 29,
+      "D1": 28,
+      "D2": 19,
+      "D3": 22,
+      "D4": 23,
+      "D5": 30,
+      "D6": 31,
+      "D7": 32,
+      "D8": 33,
+      "D9": 34,
+      "D10": 25,
+      "D11": 27,
+      "D12": 24,
+      "D13": 26,
+      "A0": 40,
+      "A1": 41,
+      "A2": 44,
+      "A3": 45,
+      "A4": 42,
+      "A5": 43
+    },
+    "spi_controller": 1,
+    "uart_controller": 0,
+    "pwm_pins": [
+      "D3",
+      "D5",
+      "D6",
+      "D9",
+      "D10",
+      "D11"
+    ],
+    "pwm_channels": {
+      "D3": "pwm_a_3",
+      "D5": "pwm_a_7",
+      "D6": "pwm_b_7",
+      "D9": "pwm_a_9",
+      "D10": "pwm_b_4",
+      "D11": "pwm_b_5"
+    },
+    "internal_service_shared_with_A4_A5": true
+  },
+  "audio": {
+    "dac_tx": 14,
+    "bck": 15,
+    "lrck": 16,
+    "adc_rx": 17,
+    "module_rx": 18
+  },
+  "pio_budget": {
+    "parallel": {
+      "instance": 0,
+      "gpio_base": 0,
+      "data_base": 0,
+      "data_count": 8,
+      "set_base": 8,
+      "set_count": 4,
+      "candidate_sms": 1
+    },
+    "audio": {
+      "instance": 1,
+      "gpio_base": 0,
+      "tx_data_base": 14,
+      "clock_sideset_base": 15,
+      "clock_sideset_count": 2,
+      "rx_data": [
+        17,
+        18
+      ],
+      "candidate_sms": 3
+    },
+    "pio2_reserved_for_future": true,
+    "program_assembled": false,
+    "hardware_timing_verified": false
+  },
+  "sdk_mux_evidence": {
+    "source": "https://github.com/raspberrypi/pico-sdk/blob/2.2.0/src/rp2350/hardware_regs/include/hardware/regs/io_bank0.h",
+    "sdk_version": "2.2.0",
+    "sdk_commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+    "sha256": "a17c776050d23fc42edcccb828dc88b5ab2461495cbc26ecb1efeb7513cadc57",
+    "stored_evidence": "../carrier-p2/pins.json:sdk_mux_evidence",
+    "use": "peripheral mux identity only; historical board nets not inherited"
+  },
+  "fixed_module_pins": {
+    "A3": "V5_CARRIER",
+    "B4": "V3V3",
+    "A4": null,
+    "A5": "RUN_N",
+    "A6": "USB_DP",
+    "A7": "USB_DM",
+    "A8": "BOOTSEL_N",
+    "B5": null,
+    "B6": "SWCLK",
+    "B7": "SWDIO",
+    "A1": "GND",
+    "A10": "GND",
+    "B2": "GND",
+    "B9": "GND",
+    "J1": "GND",
+    "J10": "GND"
+  }
+}

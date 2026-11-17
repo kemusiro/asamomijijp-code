@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "kind": "Pin-level schematic/netlist/ERC plus ideal external stop logic review; no manufactured board",
+  "all_passed": true,
+  "tests": 7,
+  "erc_violations": 0,
+  "net_count": 110,
+  "static": {
+    "parts": 165,
+    "module_signal_pins_checked": 33,
+    "watchdog_timeout_ms": [
+      10,
+      30
+    ],
+    "watchdog_pulse_ms": [
+      100,
+      300
+    ],
+    "heartbeat_edge_interval_ms": 0.5,
+    "electrical_signoff": false
+  },
+  "arithmetic": {
+    "supervisor_dividers": [
+      {
+        "rail_nominal_v": 5,
+        "trip_nominal_v": 4.86,
+        "trip_min_v": 4.791208791208792,
+        "trip_max_v": 4.929029029029029
+      },
+      {
+        "rail_nominal_v": 3.3,
+        "trip_nominal_v": 3.09825,
+        "trip_min_v": 3.0546853146853152,
+        "trip_max_v": 3.1419584584584577
+      }
+    ],
+    "reference_band_v": [
+      0.4,
+      0.41
+    ],
+    "vbus_divider_v": [
+      2.5996121030796933,
+      3.1068848297267455
+    ],
+    "i2c_150pf_rise_ns": 279.60900000000004,
+    "mix_each_gain": 0.22,
+    "fm_filter_hz": 153921.60840608834,
+    "limits": "Ideal resistor/reference bounds; actual threshold/hysteresis, transistor switching, RC and power ramps require measurement"
+  },
+  "sources_sha256": {
+    "design.py": "96b61cdd548007753be635dda7959e4f1e4451078b9c1f6d21c32d8e7380768a",
+    "generate.py": "0ca5b235ad3cecbe5a210d1f94416a81fd852b88aa334678199a8b5742c417f3",
+    "check.py": "43eecc2950464525bd6b70f83497ff7caed522b64f12996597d7a746f59fdf33",
+    "schematic/01-connectors-1.kicad_sch": "f15908606af7aac01c652fa6abd67beaf19869ce2597c61eba2e027f424c00db",
+    "schematic/02-power-1.kicad_sch": "f969846671f5721766ec47e2ecef53571f39983c19accac4bfd28828fa95bc31",
+    "schematic/03-safety-1.kicad_sch": "60cca48e773455d2a261088dd82b2237b94c9e6508f0db7748a01059002c2e0d",
+    "schematic/03-safety-2.kicad_sch": "d0f227dd62c1bec498636ec8137686d7e70af87cf4c079214200c027cd6ea08e",
+    "schematic/04-ym-bus-1.kicad_sch": "d09d2ba38ccd45c9494d345317b01e9102401897ae218572b3377f0f695833ab",
+    "schematic/04-ym-bus-2.kicad_sch": "dd995b8b498ad64911138501ec19c6d8fa5100418371531ec75f241bb3a434df",
+    "schematic/05-clock-ym-1.kicad_sch": "8cc5336069779e8419095ebb727a45e0337384f4af1fc09b1605a29112a15493",
+    "schematic/06-dac-1.kicad_sch": "05018fc7972f029bb97362452d41abe94af8199ef753a10235b01967828b421f",
+    "schematic/07-analog-1.kicad_sch": "95e5600c46b10fc5ae59ba80e5281c867d4c2af2f4babaad8b7ea95688f1185c",
+    "schematic/07-analog-2.kicad_sch": "f96d290a0c6088fc9d0c6257fb4336cc88672cf42b6e769f5e3efeb8c974635e",
+    "schematic/f1-carrier.kicad_sch": "bd2caa0b614dab2291a871c0cd5a333fc2564a2c305722514aa097c5c15f6d65",
+    "schematic/F1C.kicad_sym": "56ddd1115caf9d806ebdebbc1250dd5f6cbc11e5c8034c18dce3d2176299bfa3",
+    "schematic/netlist.xml": "c0e7f04e5a118c0e36a00fb0d19a78295f74894c88a5ebed3b5f4eac861fdeda",
+    "schematic/bom.csv": "1aa64643aa69104a26c30c0e28a7d3e5e099235a81f392a9fa6b75b3c4671dda",
+    "schematic/assembly-extras.csv": "2e01436603b40687a1cee167ea8c0da5c1de9962fd591ea0bc0eb4d8a44d59a5"
+  },
+  "pcb_layout_done": false,
+  "spice_done": false,
+  "physical_acceptance": false,
+  "host_changed": false,
+  "pin_manifest_sha256": "44c06b4eff9d05a8f0ae596f2e31ee8dc72b8a527dbd2c3b13d82a3ab8c5eefe"
+}

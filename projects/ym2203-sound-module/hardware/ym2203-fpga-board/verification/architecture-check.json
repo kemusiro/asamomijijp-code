@@ -1,0 +1,263 @@
+{
+  "schema_version": 1,
+  "status": "static_architecture_budget_and_clock_arithmetic_only",
+  "date": "2026-11-14",
+  "architecture_sha256": "8283d8e7644603037ebfdb7b3c1d855e5ac36e7bc2c7bbbe2ca2027127cb5471",
+  "analysis_tool_sha256": "91a2d7496b6a36d41d0e1fe426c1d30721d5e6f6b29ea7733f6b2f1c9cf57348",
+  "rev_c_design_sha256": "73ca82ff0398805a12a006705d6f5108e629d4441e94834d5cb57fad80c2f3be",
+  "baseline_definition_count": 106,
+  "baseline_mountable_definitions_excluding_TP_and_H": 90,
+  "component_comparison": {
+    "counting_unit": "A/U main-PCB IC or module placements; not module internals or total BOM",
+    "rev_c": 15,
+    "proposal_min": 17,
+    "proposal_max": 17,
+    "oscillator_change": "X1 is replaced by a crystal; Si5351 is counted as a new IC",
+    "total_placement_reduction_proven": false
+  },
+  "pin_budget": {
+    "planned_regular_io": 34,
+    "regular_io_conservative_capacity": 36,
+    "regular_io_unassigned": 2,
+    "open_drain_only_unused": 3,
+    "dedicated_configuration_pins_separate": 2,
+    "pico_gpio_budget": 13,
+    "bank_global_pin_configuration_placement_verified": false
+  },
+  "resource_budget": {
+    "allocations": [
+      {
+        "name": "1024 timestamped events",
+        "memory": "EBR",
+        "depth": 1024,
+        "width_bits": 64,
+        "layout": "1024x4",
+        "blocks": 16,
+        "payload_bits": 65536
+      },
+      {
+        "name": "Raw FM FIFO",
+        "memory": "EBR",
+        "depth": 256,
+        "width_bits": 16,
+        "layout": "256x16",
+        "blocks": 1,
+        "payload_bits": 4096
+      },
+      {
+        "name": "PCM FIFO",
+        "memory": "EBR",
+        "depth": 256,
+        "width_bits": 16,
+        "layout": "256x16",
+        "blocks": 1,
+        "payload_bits": 4096
+      },
+      {
+        "name": "SPI RX and status scratch",
+        "memory": "EBR",
+        "depth": 256,
+        "width_bits": 32,
+        "layout": "256x16",
+        "blocks": 2,
+        "payload_bits": 8192
+      },
+      {
+        "name": "Diagnostic raw FM trace",
+        "memory": "SPRAM",
+        "depth": 8192,
+        "width_bits": 16,
+        "layout": "16384x16",
+        "blocks": 1,
+        "payload_bits": 131072
+      }
+    ],
+    "ebr_blocks": [
+      20,
+      30
+    ],
+    "spram_blocks": [
+      1,
+      4
+    ],
+    "dsp_blocks": [
+      3,
+      8
+    ],
+    "lut_design_budget": 3696,
+    "lut_usage_measured": null
+  },
+  "clock_plan": {
+    "system_hz": 49152000,
+    "plla_vco_hz": 786432000,
+    "i2s_lrck_hz": 48000,
+    "i2s_bclk_hz": 3072000,
+    "system_cycles_per_i2s_frame": 1024,
+    "system_cycles_per_i2s_bit": 16,
+    "profiles": [
+      {
+        "requested_ym_hz": 1500000,
+        "clk0_hz": 3000000,
+        "pllb_vco_hz": 798000000,
+        "pllb_feedback_a_b_c": [
+          31,
+          23,
+          25
+        ],
+        "output_multisynth_even_divider": 266,
+        "actual_synthesis_hz": 1500000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 20833.333333333332,
+        "resampler_input_step_numerator": 125,
+        "resampler_input_step_denominator": 288,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 2000000,
+        "clk0_hz": 4000000,
+        "pllb_vco_hz": 800000000,
+        "pllb_feedback_a_b_c": [
+          32,
+          0,
+          1
+        ],
+        "output_multisynth_even_divider": 200,
+        "actual_synthesis_hz": 2000000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 27777.777777777777,
+        "resampler_input_step_numerator": 125,
+        "resampler_input_step_denominator": 216,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 3000000,
+        "clk0_hz": 6000000,
+        "pllb_vco_hz": 804000000,
+        "pllb_feedback_a_b_c": [
+          32,
+          4,
+          25
+        ],
+        "output_multisynth_even_divider": 134,
+        "actual_synthesis_hz": 3000000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 41666.666666666664,
+        "resampler_input_step_numerator": 125,
+        "resampler_input_step_denominator": 144,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 3579545,
+        "clk0_hz": 7159090,
+        "pllb_vco_hz": 801818080,
+        "pllb_feedback_a_b_c": [
+          32,
+          11363,
+          156250
+        ],
+        "output_multisynth_even_divider": 112,
+        "actual_synthesis_hz": 3579545,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 49715.90277777778,
+        "resampler_input_step_numerator": 715909,
+        "resampler_input_step_denominator": 691200,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 3993600,
+        "clk0_hz": 7987200,
+        "pllb_vco_hz": 798720000,
+        "pllb_feedback_a_b_c": [
+          31,
+          593,
+          625
+        ],
+        "output_multisynth_even_divider": 100,
+        "actual_synthesis_hz": 3993600,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 55466.666666666664,
+        "resampler_input_step_numerator": 52,
+        "resampler_input_step_denominator": 45,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 4000000,
+        "clk0_hz": 8000000,
+        "pllb_vco_hz": 800000000,
+        "pllb_feedback_a_b_c": [
+          32,
+          0,
+          1
+        ],
+        "output_multisynth_even_divider": 100,
+        "actual_synthesis_hz": 4000000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 55555.555555555555,
+        "resampler_input_step_numerator": 125,
+        "resampler_input_step_denominator": 108,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 700000,
+        "clk0_hz": 1400000,
+        "pllb_vco_hz": 800800000,
+        "pllb_feedback_a_b_c": [
+          32,
+          4,
+          125
+        ],
+        "output_multisynth_even_divider": 572,
+        "actual_synthesis_hz": 700000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 9722.222222222223,
+        "resampler_input_step_numerator": 175,
+        "resampler_input_step_denominator": 864,
+        "physical_frequency_or_jitter_measured": false
+      },
+      {
+        "requested_ym_hz": 4200000,
+        "clk0_hz": 8400000,
+        "pllb_vco_hz": 806400000,
+        "pllb_feedback_a_b_c": [
+          32,
+          32,
+          125
+        ],
+        "output_multisynth_even_divider": 96,
+        "actual_synthesis_hz": 4200000,
+        "mathematical_error_ppm": 0,
+        "fm_frame_hz": 58333.333333333336,
+        "resampler_input_step_numerator": 175,
+        "resampler_input_step_denominator": 144,
+        "physical_frequency_or_jitter_measured": false
+      }
+    ],
+    "intermediate_sweep_cases": 351,
+    "clock_register_generation_and_hardware_tested": false
+  },
+  "throughput_budget": {
+    "spi_batch_bytes": 272,
+    "ideal_batch_wire_us": 272.0,
+    "ideal_events_per_second_excludes_status_cpu_and_crc": 117647.05882352941,
+    "existing_YsII_max_1s_events": 569,
+    "hardware_measured": false
+  },
+  "audio_budget": {
+    "startup_fifo_samples": 16,
+    "startup_fifo_ms_at_48k": 0.3333333333333333,
+    "full_path_audible_latency_measured": false,
+    "anti_alias_filter_implemented": false
+  },
+  "not_verified": [
+    "RTL",
+    "synthesis",
+    "place_and_route",
+    "timing_closure",
+    "complete_pin_map",
+    "power_sequence",
+    "complete_BOM",
+    "schematic_ERC",
+    "PCB_DRC",
+    "physical_hardware"
+  ]
+}

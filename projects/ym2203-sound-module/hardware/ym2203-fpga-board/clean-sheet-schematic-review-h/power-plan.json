@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "revision": "3.5-schematic-review-h",
+  "scope": "engineering admission budgets, not measured or guaranteed consumption maxima",
+  "pga_3v3_loads": [
+    {
+      "name": "PGA MCU/onboard reserve",
+      "budget_ma": 175
+    },
+    {
+      "name": "Si5351A three outputs initial<=8MHz",
+      "budget_ma": 40
+    },
+    {
+      "name": "MCP23017 + seven LEDs + pulls",
+      "budget_ma": 15
+    },
+    {
+      "name": "ADC IOVDD/core",
+      "budget_ma": 15
+    },
+    {
+      "name": "DAC DVDD/core",
+      "budget_ma": 15
+    },
+    {
+      "name": "receivers/mute/VBUS",
+      "budget_ma": 5
+    }
+  ],
+  "aux_3v3_loads": [
+    {
+      "name": "ADC AVDD/DVDD",
+      "budget_ma": 50
+    },
+    {
+      "name": "DAC AVDD/CPVDD",
+      "budget_ma": 50
+    },
+    {
+      "name": "UNO 3V3 accessory admission",
+      "budget_ma": 150
+    },
+    {
+      "name": "module AUX admission",
+      "budget_ma": 100
+    }
+  ],
+  "pga_rating_ma": 300,
+  "aux_part": "TLV1117LV33DCYR",
+  "aux_ic_rating_ma": 1000,
+  "aux_design_limit_ma": 500,
+  "module_5v_limit_ma": 500,
+  "ym_module_example_ma": {
+    "core_mcu": 250,
+    "ym_and_translation": 100
+  },
+  "shield_5v_limit_ma": 100,
+  "misc_5v_margin_ma": 25,
+  "supply_candidate": "regulated 5.1V/2A; verify load/cable tolerance; never exceed5.25V at YM",
+  "input_target_v": [
+    4.75,
+    5.25
+  ],
+  "ambient_assumption_c": 40,
+  "ptc": "MF-MSMF200/16X-2",
+  "ptc_hold_ma_at40c": 1750,
+  "ptc_source": "https://www.bourns.com/data/global/pdfs/MF-MSMF.pdf",
+  "thermal_reference_rtheta_ja_c_w": 62.9,
+  "thermal_note": "JEDEC reference only; actual copper, header/cable drop, inrush and hot-board tests pending",
+  "same_rail_source": "common5V/GND; PGA and Core regulators never tied to each other/AUX; YM card AUX pin5 NC",
+  "usb_vbus": "sense only; USB_VBUS_RAW never powers5V rail; remove source-moduleUSB power",
+  "hardware_supervisor": false,
+  "independent_watchdog": false,
+  "hotplug": false
+}

@@ -1,0 +1,1482 @@
+{
+  "schema_version": 1,
+  "revision": "editor-B",
+  "date": "2026-11-18",
+  "status": "connected_schematic_and_panel_design_not_routed_or_firmware",
+  "parts": [
+    {
+      "ref": "J1",
+      "value": "JUNO_D0 P2 ONLY 3V3",
+      "footprint": "ED2:JUNO_D0",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "D0",
+          "net": "STOP_N",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "D1",
+          "net": "LCD_RST_N",
+          "type": "output"
+        },
+        {
+          "num": "3",
+          "name": "D2",
+          "net": "ENC_A",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "D3",
+          "net": "ENC_B",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "D4",
+          "net": "ENC_SW_N",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "D5",
+          "net": "OP1_N",
+          "type": "input"
+        },
+        {
+          "num": "7",
+          "name": "D6",
+          "net": "OP2_N",
+          "type": "input"
+        },
+        {
+          "num": "8",
+          "name": "D7",
+          "net": "OP3_N",
+          "type": "input"
+        }
+      ],
+      "source": "",
+      "note": "32 male contacts; same top-view coordinates as review I; ICSP not populated",
+      "design_id": "JUNO_D0",
+      "supplier_code": "100167",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g100167/"
+    },
+    {
+      "ref": "J2",
+      "value": "JUNO_D8 P2 ONLY 3V3",
+      "footprint": "ED2:JUNO_D8",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "D8",
+          "net": "OP4_N",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "D9",
+          "net": "NOTE_N",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "D10",
+          "net": "LCD_CS_N",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "D11",
+          "net": "LCD_MOSI",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "D12",
+          "net": "LCD_DC",
+          "type": "output"
+        },
+        {
+          "num": "6",
+          "name": "D13",
+          "net": "LCD_SCK",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "8",
+          "name": "AREF",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "9",
+          "name": "SDA",
+          "net": "SDA",
+          "type": "passive"
+        },
+        {
+          "num": "10",
+          "name": "SCL",
+          "net": "SCL",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "32 male contacts; same top-view coordinates as review I; ICSP not populated",
+      "design_id": "JUNO_D8",
+      "supplier_code": "100167",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g100167/"
+    },
+    {
+      "ref": "J3",
+      "value": "JUNO_A P2 ONLY 3V3",
+      "footprint": "ED2:JUNO_A",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A0",
+          "net": "KNOB1_ADC",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "A1",
+          "net": "KNOB2_ADC",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "A2",
+          "net": "KNOB3_ADC",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "A3",
+          "net": "KNOB4_ADC",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "A4",
+          "net": "SDA",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "A5",
+          "net": "SCL",
+          "type": "output"
+        }
+      ],
+      "source": "",
+      "note": "32 male contacts; same top-view coordinates as review I; ICSP not populated",
+      "design_id": "JUNO_A",
+      "supplier_code": "100167",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g100167/"
+    },
+    {
+      "ref": "J4",
+      "value": "JUNO_PWR P2 ONLY 3V3",
+      "footprint": "ED2:JUNO_PWR",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NC",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "IOREF",
+          "net": "IOREF_3V3",
+          "type": "power_out"
+        },
+        {
+          "num": "3",
+          "name": "RESET",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "4",
+          "name": "3V3",
+          "net": "AUX_3V3",
+          "type": "power_out"
+        },
+        {
+          "num": "5",
+          "name": "5V",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "6",
+          "name": "GND1",
+          "net": "GND",
+          "type": "power_out"
+        },
+        {
+          "num": "7",
+          "name": "GND2",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "8",
+          "name": "VIN",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "32 male contacts; same top-view coordinates as review I; ICSP not populated",
+      "design_id": "JUNO_PWR",
+      "supplier_code": "100167",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g100167/"
+    },
+    {
+      "ref": "C1",
+      "value": "1uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CIO",
+      "supplier_code": "107549",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g107549/"
+    },
+    {
+      "ref": "C2",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "02-eeprom",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CFR",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "C3",
+      "value": "10uF",
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "AUX_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CLCD",
+      "supplier_code": "117591",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117591/"
+    },
+    {
+      "ref": "C4",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "01-host-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "AUX_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CLCDHF",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "U1",
+      "value": "24FC256-I/P",
+      "footprint": "Package_DIP:DIP-8_W7.62mm",
+      "sheet": "02-eeprom",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A0",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "A1",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "A2",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "VSS",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "5",
+          "name": "SDA",
+          "net": "SDA",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "SCL",
+          "net": "SCL",
+          "type": "input"
+        },
+        {
+          "num": "7",
+          "name": "WP",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "8",
+          "name": "VDD",
+          "net": "IOREF_3V3",
+          "type": "power_in"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g103568/",
+      "note": "32KiB EEPROM,0x50;64byte pages; ACK polling <=10ms; explicit SAVE only; no extra pulls",
+      "design_id": "UMEM",
+      "supplier_code": "103568",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g103568/"
+    },
+    {
+      "ref": "RV1",
+      "value": "B10K RK09D117000B",
+      "footprint": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "CCW",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "WIPER",
+          "net": "KNOB1_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "CW",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "MP",
+          "name": "MOUNT",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g114827/",
+      "note": "center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending",
+      "design_id": "RV1",
+      "supplier_code": "114827",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g114827/"
+    },
+    {
+      "ref": "R1",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB1_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "KNOB1_ADC",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RK1",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C5",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB1_ADC",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CK1",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "RV2",
+      "value": "B10K RK09D117000B",
+      "footprint": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "CCW",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "WIPER",
+          "net": "KNOB2_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "CW",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "MP",
+          "name": "MOUNT",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g114827/",
+      "note": "center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending",
+      "design_id": "RV2",
+      "supplier_code": "114827",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g114827/"
+    },
+    {
+      "ref": "R2",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB2_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "KNOB2_ADC",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RK2",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C6",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB2_ADC",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CK2",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "RV3",
+      "value": "B10K RK09D117000B",
+      "footprint": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "CCW",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "WIPER",
+          "net": "KNOB3_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "CW",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "MP",
+          "name": "MOUNT",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g114827/",
+      "note": "center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending",
+      "design_id": "RV3",
+      "supplier_code": "114827",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g114827/"
+    },
+    {
+      "ref": "R3",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB3_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "KNOB3_ADC",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RK3",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C7",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB3_ADC",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CK3",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "RV4",
+      "value": "B10K RK09D117000B",
+      "footprint": "Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "CCW",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "WIPER",
+          "net": "KNOB4_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "CW",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "MP",
+          "name": "MOUNT",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g114827/",
+      "note": "center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending",
+      "design_id": "RV4",
+      "supplier_code": "114827",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g114827/"
+    },
+    {
+      "ref": "R4",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB4_RAW",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "KNOB4_ADC",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RK4",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C8",
+      "value": "100nF",
+      "footprint": "ED2:C_RDE_100n_P2_5",
+      "sheet": "03-pots",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "KNOB4_ADC",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CK4",
+      "supplier_code": "113582",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g113582/"
+    },
+    {
+      "ref": "ENC1",
+      "value": "ALPHA RE111F-4S1-152S4-15P-A",
+      "footprint": "ED2:RE111F_4S1_ReviewB",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "A",
+          "name": "A",
+          "net": "ENC_A_CONTACT",
+          "type": "passive"
+        },
+        {
+          "num": "C",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "B",
+          "name": "B",
+          "net": "ENC_B_CONTACT",
+          "type": "passive"
+        },
+        {
+          "num": "S1",
+          "name": "SW",
+          "net": "ENC_SW_N",
+          "type": "passive"
+        },
+        {
+          "num": "S2",
+          "name": "SW_COM",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "MP",
+          "name": "MOUNT",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g114936/",
+      "note": "30detents/15pulses;SMD;use supplied black shaft; ABC mapping/locator fit provisional; no 6mm knob",
+      "design_id": "ENC1",
+      "supplier_code": "114936",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g114936/"
+    },
+    {
+      "ref": "R5",
+      "value": "2.7k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ENC_A_CONTACT",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "REAP",
+      "supplier_code": "116272",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116272/"
+    },
+    {
+      "ref": "R6",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ENC_A_CONTACT",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ENC_A",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "REAS",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C9",
+      "value": "10nF",
+      "footprint": "ED2:C_RDE_10n_P5",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ENC_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CEA",
+      "supplier_code": "108138",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g108138/"
+    },
+    {
+      "ref": "R7",
+      "value": "2.7k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ENC_B_CONTACT",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "REBP",
+      "supplier_code": "116272",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116272/"
+    },
+    {
+      "ref": "R8",
+      "value": "1k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ENC_B_CONTACT",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ENC_B",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "REBS",
+      "supplier_code": "116102",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116102/"
+    },
+    {
+      "ref": "C10",
+      "value": "10nF",
+      "footprint": "ED2:C_RDE_10n_P5",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ENC_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "CEB",
+      "supplier_code": "108138",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g108138/"
+    },
+    {
+      "ref": "R9",
+      "value": "4.7k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "04-encoder",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ENC_SW_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RENSW",
+      "supplier_code": "116472",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116472/"
+    },
+    {
+      "ref": "SW1",
+      "value": "OP1 TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "OP1_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWOP1",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R10",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "OP1_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "ROP1P",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "SW2",
+      "value": "OP2 TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "OP2_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWOP2",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R11",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "OP2_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "ROP2P",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "SW3",
+      "value": "OP3 TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "OP3_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWOP3",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R12",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "OP3_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "ROP3P",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "SW4",
+      "value": "OP4 TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "OP4_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWOP4",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R13",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "OP4_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "ROP4P",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "SW5",
+      "value": "NOTE TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "NOTE_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWNOTE",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R14",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "NOTE_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RNOTEP",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "SW6",
+      "value": "STOP TVDP01-095BB1",
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H9.5mm",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NO",
+          "net": "STOP_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "COM",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending",
+      "design_id": "SWSTOP",
+      "supplier_code": "117166",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g117166/"
+    },
+    {
+      "ref": "R15",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "05-buttons",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "STOP_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RSTOPP",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "R16",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "06-lcd",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "LCD_CS_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RLCDCS_N",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "R17",
+      "value": "10k",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "06-lcd",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "IOREF_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "LCD_RST_N",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RLCDRST_N",
+      "supplier_code": "116103",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g116103/"
+    },
+    {
+      "ref": "R18",
+      "value": "33",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "06-lcd",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "LCD_SCK",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "LCD_CLK_OUT",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RLCDCLK",
+      "supplier_code": "108517",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g108517/"
+    },
+    {
+      "ref": "R19",
+      "value": "33",
+      "footprint": "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal",
+      "sheet": "06-lcd",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "LCD_MOSI",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "LCD_DIN_OUT",
+          "type": "passive"
+        }
+      ],
+      "source": "",
+      "note": "",
+      "design_id": "RLCDDATA",
+      "supplier_code": "108517",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g108517/"
+    },
+    {
+      "ref": "J5",
+      "value": "M154-240240-RGB 20261020 cable",
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical",
+      "sheet": "06-lcd",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "VCC",
+          "net": "AUX_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "SCL_SPI",
+          "net": "LCD_CLK_OUT",
+          "type": "passive"
+        },
+        {
+          "num": "4",
+          "name": "SDA_SPI",
+          "net": "LCD_DIN_OUT",
+          "type": "passive"
+        },
+        {
+          "num": "5",
+          "name": "RES",
+          "net": "LCD_RST_N",
+          "type": "passive"
+        },
+        {
+          "num": "6",
+          "name": "DC",
+          "net": "LCD_DC",
+          "type": "passive"
+        },
+        {
+          "num": "7",
+          "name": "CS",
+          "net": "LCD_CS_N",
+          "type": "passive"
+        },
+        {
+          "num": "8",
+          "name": "BLK",
+          "net": "AUX_3V3",
+          "type": "passive"
+        }
+      ],
+      "source": "https://akizukidenshi.com/catalog/g/g131019/",
+      "note": "8pin order fixed by20261020 datasheet;3.3V AUX;BLK logic high;not Waveshare PH cable;2.54mm short harness",
+      "design_id": "JLCD",
+      "supplier_code": "100167",
+      "supplier_url": "https://akizukidenshi.com/catalog/g/g100167/"
+    }
+  ],
+  "roles": {
+    "D0": "STOP_N",
+    "D1": "LCD_RST_N",
+    "D2": "ENC_A",
+    "D3": "ENC_B",
+    "D4": "ENC_SW_N",
+    "D5": "OP1_N",
+    "D6": "OP2_N",
+    "D7": "OP3_N",
+    "D8": "OP4_N",
+    "D9": "NOTE_N",
+    "D10": "LCD_CS_N",
+    "D11": "LCD_MOSI",
+    "D12": "LCD_DC",
+    "D13": "LCD_SCK",
+    "A0": "KNOB1_ADC",
+    "A1": "KNOB2_ADC",
+    "A2": "KNOB3_ADC",
+    "A3": "KNOB4_ADC",
+    "A4": "SDA",
+    "A5": "SCL",
+    "SDA": "SDA",
+    "SCL": "SCL",
+    "GND": "GND",
+    "GND1": "GND",
+    "GND2": "GND",
+    "IOREF": "IOREF_3V3",
+    "3V3": "AUX_3V3",
+    "5V": null,
+    "RESET": null,
+    "VIN": null,
+    "AREF": null,
+    "NC": null
+  },
+  "firmware_implemented": false,
+  "hardware_accepted": false
+}

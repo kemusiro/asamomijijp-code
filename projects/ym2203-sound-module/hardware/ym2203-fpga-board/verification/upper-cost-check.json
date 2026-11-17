@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-14",
+  "status": "conservative_planning_scenario_not_supplier_quote_or_price_ceiling",
+  "inputs_sha256": "1f08ad2bfd390eabb099f965de3a4e3247d8cdc4b2759a459e26606ef09651e2",
+  "analysis_tool_sha256": "eec305932b7f3b2a22b6ff9ee4ee4b900109fe8915cf04af7f015221f447cabe",
+  "price_reference_four_part_subtotal_usd_excludes_remaining_bom": 24.07,
+  "published_fixed_fee_model_usd_excludes_feeders": 87.99,
+  "cases": [
+    {
+      "assembled_quantity": 2,
+      "bare_board_quantity_assumption": 5,
+      "line_items_usd": {
+        "components": [
+          90.0,
+          140.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          87.99,
+          87.99
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          1.6,
+          1.6
+        ],
+        "manual_joint_model": [
+          4.592,
+          4.592
+        ],
+        "xray_model": [
+          3.28,
+          3.28
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ]
+      },
+      "subtotal_usd": [
+        391.012,
+        741.612
+      ],
+      "jpy_total_with_tax_reserve_and_contingency_rounded_up_1000": [
+        83000,
+        157000
+      ],
+      "jpy_per_assembly_rounded_up_1000": [
+        42000,
+        79000
+      ]
+    },
+    {
+      "assembled_quantity": 5,
+      "bare_board_quantity_assumption": 5,
+      "line_items_usd": {
+        "components": [
+          225.0,
+          350.0
+        ],
+        "bare_pcbs": [
+          50.0,
+          100.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          87.99,
+          87.99
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          4.0,
+          4.0
+        ],
+        "manual_joint_model": [
+          11.48,
+          11.48
+        ],
+        "xray_model": [
+          8.2,
+          8.2
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ]
+      },
+      "subtotal_usd": [
+        540.22,
+        965.82
+      ],
+      "jpy_total_with_tax_reserve_and_contingency_rounded_up_1000": [
+        115000,
+        204000
+      ],
+      "jpy_per_assembly_rounded_up_1000": [
+        23000,
+        41000
+      ]
+    },
+    {
+      "assembled_quantity": 10,
+      "bare_board_quantity_assumption": 10,
+      "line_items_usd": {
+        "components": [
+          450.0,
+          700.0
+        ],
+        "bare_pcbs": [
+          80.0,
+          160.0
+        ],
+        "published_fixed_assembly_fee_model": [
+          87.99,
+          87.99
+        ],
+        "feeder_loading_model": [
+          53.55,
+          84.15
+        ],
+        "smt_joint_model": [
+          8.0,
+          8.0
+        ],
+        "manual_joint_model": [
+          22.96,
+          22.96
+        ],
+        "xray_model": [
+          16.4,
+          16.4
+        ],
+        "program_and_basic_test_allowance": [
+          50.0,
+          150.0
+        ],
+        "procurement_moq_and_spares_allowance": [
+          10.0,
+          50.0
+        ],
+        "handling_and_packaging_allowance": [
+          0.0,
+          30.0
+        ],
+        "shipping_allowance": [
+          40.0,
+          90.0
+        ]
+      },
+      "subtotal_usd": [
+        818.9,
+        1399.5
+      ],
+      "jpy_total_with_tax_reserve_and_contingency_rounded_up_1000": [
+        173000,
+        296000
+      ],
+      "jpy_per_assembly_rounded_up_1000": [
+        18000,
+        30000
+      ]
+    }
+  ],
+  "quote_received": false,
+  "is_guaranteed_upper_bound": false,
+  "counts_or_complete_BOM_verified": false
+}

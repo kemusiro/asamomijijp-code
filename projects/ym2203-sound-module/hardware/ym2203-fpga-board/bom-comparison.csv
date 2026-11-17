@@ -1,0 +1,16 @@
+function,rev_c_refs,rev_c_devices,candidate,proposed_min,proposed_max
+Controller,A1,1,Pico 2,1,1
+Physical sound source,U1,1,YM2203C,1,1
+DAC,A2,1,bare PCM5102A / TSSOP20; no DIP adapter,1,1
+Bidirectional YM data,A3+U2,2,bare SN74LVC4245A / TSSOP24 candidate; SOIC24 on hand-assembly board variant,1,1
+YM control and clock level conversion,A4,1,SN74LVC8T245PWR / TSSOP24; A-to-B control only; isolation review pending,1,1
+FM and IRQ input level conversion,U3,1,SN74LVC125APWR / TSSOP14; 3.3V supply and 5V tolerant inputs,1,1
+Glue logic,U4+U5+U6,3,FPGA fabric,0,0
+Divide by two,U7,1,FPGA flip-flop,0,0
+Independent output/reset inhibit,U10,1,74HC11D-Q100J / SO14 external inhibit,1,1
+Analog mixer and line mute,U8+U9,2,bare MCP6022 / SOIC8 and CD74HC4053 / SOIC16 candidates,2,2
+Main 5V soft-start,U11,1,existing TPS22918,1,1
+Logic and audio engine,,0,bare iCE40UP5K-SG48 / QFN48; exposed-pad assembly required,1,1
+Programmable clock,,0,bare Si5351A-B / 10-MSOP plus crystal,1,1
+FPGA core and I/O power sequencing,,0,TLV75533PDBVR + TLV75512PDBVR + TPS22918DBVR; thermal and startup review pending,3,3
+5V/power supervision,,0,2 x TPS3808G01DBVR; core and5V SENSE/PG review pending,2,2

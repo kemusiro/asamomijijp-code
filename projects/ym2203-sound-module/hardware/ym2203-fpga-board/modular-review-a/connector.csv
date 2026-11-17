@@ -1,0 +1,61 @@
+pin,row,column,signal,direction,voltage,base_net,module_net,status,gpio
+1,1,A,V5_CARRIER,base_to_module_power,5V +/-5% at YM VDD,V5_CARRIER,V5_CARRIER,opn1_connected,
+2,1,B,GND,ground,0V,GND,GND,opn1_connected,
+3,2,A,V5_CARRIER,base_to_module_power,5V +/-5% at YM VDD,V5_CARRIER,V5_CARRIER,opn1_connected,
+4,2,B,GND,ground,0V,GND,GND,opn1_connected,
+5,3,A,V3V3,base_to_module_power,3.3V IO only; module budget20mA,V3V3,V3V3,opn1_connected,
+6,3,B,GND,ground,0V,GND,GND,opn1_connected,
+7,4,A,V3V3,base_to_module_power,3.3V IO only; module budget20mA,V3V3,V3V3,opn1_connected,
+8,4,B,GND,ground,0V,GND,GND,opn1_connected,
+9,5,A,M_D0,bidirectional,3.3V logic,M_D0,M_D0,opn1_connected,0
+10,5,B,M_D1,bidirectional,3.3V logic,M_D1,M_D1,opn1_connected,1
+11,6,A,M_D2,bidirectional,3.3V logic,M_D2,M_D2,opn1_connected,2
+12,6,B,M_D3,bidirectional,3.3V logic,M_D3,M_D3,opn1_connected,3
+13,7,A,M_D4,bidirectional,3.3V logic,M_D4,M_D4,opn1_connected,4
+14,7,B,M_D5,bidirectional,3.3V logic,M_D5,M_D5,opn1_connected,5
+15,8,A,M_D6,bidirectional,3.3V logic,M_D6,M_D6,opn1_connected,6
+16,8,B,M_D7,bidirectional,3.3V logic,M_D7,M_D7,opn1_connected,7
+17,9,A,GND,ground,0V,GND,GND,opn1_connected,
+18,9,B,M_YM_A0,base_to_module,3.3V logic,M_YM_A0,M_YM_A0,opn1_connected,30
+19,10,A,M_YM_CS_N,base_to_module,3.3V logic,M_YM_CS_N,M_YM_CS_N,opn1_connected,31
+20,10,B,M_YM_WR_N,base_to_module,3.3V logic,M_YM_WR_N,M_YM_WR_N,opn1_connected,32
+21,11,A,M_YM_RD_N,base_to_module,3.3V logic,M_YM_RD_N,M_YM_RD_N,opn1_connected,33
+22,11,B,M_DATA_DIR,base_to_module,3.3V logic,M_DATA_DIR,M_DATA_DIR,opn1_connected,35
+23,12,A,M_DATA_OE_N,base_to_module,3.3V logic,M_DATA_OE_N,M_DATA_OE_N,opn1_connected,36
+24,12,B,M_CTRL_OE_N,base_to_module,3.3V logic,M_CTRL_OE_N,M_CTRL_OE_N,opn1_connected,37
+25,13,A,M_RESET_RELEASE,base_to_module,3.3V logic,M_RESET_RELEASE,M_RESET_RELEASE,opn1_connected,34
+26,13,B,GND,ground,0V,GND,GND,opn1_connected,
+27,14,A,M_FM_SD,module_to_base,3.3V logic; never5V,M_FM_SD,M_FM_SD,opn1_connected,16
+28,14,B,GND,ground,0V,GND,GND,opn1_connected,
+29,15,A,M_FM_CLK,module_to_base,3.3V logic; never5V,M_FM_CLK,M_FM_CLK,opn1_connected,17
+30,15,B,GND,ground,0V,GND,GND,opn1_connected,
+31,16,A,M_FM_SH,module_to_base,3.3V logic; never5V,M_FM_SH,M_FM_SH,opn1_connected,18
+32,16,B,GND,ground,0V,GND,GND,opn1_connected,
+33,17,A,RES_FM0_SH1,reserved,no connection in this profile,,,reserved_unwired,
+34,17,B,GND,ground,0V,GND,GND,opn1_connected,
+35,18,A,MOD_CLK0,base_to_module,3.3V logic,MOD_CLK0,MOD_CLK0,opn1_connected,
+36,18,B,GND,ground,0V,GND,GND,opn1_connected,
+37,19,A,MOD_CLK1,base_to_module,3.3V logic,MOD_CLK1,,clock_available_not_used_by_opn1,
+38,19,B,GND,ground,0V,GND,GND,opn1_connected,
+39,20,A,MOD_CLK2,base_to_module,3.3V logic,MOD_CLK2,,clock_available_not_used_by_opn1,
+40,20,B,GND,ground,0V,GND,GND,opn1_connected,
+41,21,A,PANEL_SDA,bidirectional,3.3V logic,PANEL_SDA,PANEL_SDA,opn1_connected,42
+42,21,B,PANEL_SCL,bidirectional,3.3V logic,PANEL_SCL,PANEL_SCL,opn1_connected,43
+43,22,A,SSG_A,module_to_base,0..5V analog with DC bias; NOT digital IO,SSG_A,SSG_A,opn1_connected,
+44,22,B,GND,ground,0V,GND,GND,opn1_connected,
+45,23,A,SSG_B,module_to_base,0..5V analog with DC bias; NOT digital IO,SSG_B,SSG_B,opn1_connected,
+46,23,B,GND,ground,0V,GND,GND,opn1_connected,
+47,24,A,SSG_C,module_to_base,0..5V analog with DC bias; NOT digital IO,SSG_C,SSG_C,opn1_connected,
+48,24,B,GND,ground,0V,GND,GND,opn1_connected,
+49,25,A,AUX_ANALOG_L,module_to_base,"analog, base AC-coupled; up to2Vrms candidate; validate full mix headroom",AUX_ANALOG_L,,analog_aux_available_not_used_by_opn1,
+50,25,B,AUX_ANALOG_R,module_to_base,"analog, base AC-coupled; up to2Vrms candidate; validate full mix headroom",AUX_ANALOG_R,,analog_aux_available_not_used_by_opn1,
+51,26,A,RES_A1,reserved,no connection in this profile,,,reserved_unwired,
+52,26,B,RES_CS1_N,reserved,no connection in this profile,,,reserved_unwired,
+53,27,A,RES_FM1_SD,reserved,no connection in this profile,,,reserved_unwired,
+54,27,B,RES_FM1_CLK,reserved,no connection in this profile,,,reserved_unwired,
+55,28,A,RES_FM1_SH,reserved,no connection in this profile,,,reserved_unwired,
+56,28,B,RES_IRQ_N,reserved,no connection in this profile,,,reserved_unwired,
+57,29,A,RES_FAULT_N,reserved,no connection in this profile,,,reserved_unwired,
+58,29,B,GND,ground,0V,GND,GND,opn1_connected,
+59,30,A,RES_DETECT_N,reserved,no connection in this profile,,,reserved_unwired,
+60,30,B,KEY_NO_CONTACT,reserved,no connection in this profile,,,mechanical_key,

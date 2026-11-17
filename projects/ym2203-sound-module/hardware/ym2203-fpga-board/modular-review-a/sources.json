@@ -1,0 +1,47 @@
+{
+  "date": "2026-11-16",
+  "source_assets_redistributed": false,
+  "sources": [
+    {
+      "name": "YM2203 cached transcription",
+      "url": "https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf",
+      "scope": "Cached original Yamaha terminal table/description; endpoint403 at this review"
+    },
+    {
+      "name": "SN74LVC8T245",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf",
+      "scope": "VCCA/VCCB, OE/DIR, physical pins"
+    },
+    {
+      "name": "SN74LVC125A",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf",
+      "scope": "5.5V tolerant inputs,3.3V supply, physical pins"
+    },
+    {
+      "name": "SN74LVC1T45",
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+      "scope": "Dual rail, DIR, physical pins"
+    },
+    {
+      "name": "24LC02B",
+      "url": "https://ww1.microchip.com/downloads/aemDocuments/documents/MPD/ProductDocuments/DataSheets/24AA02-24LC02B-24FC02-2Kbit-I2C-Serial-EEPROM-DS20001709.pdf",
+      "scope": "3.3V operation, WP, NC A0..2 and address aliases"
+    },
+    {
+      "name": "MCP6022",
+      "url": "https://ww1.microchip.com/downloads/en/DeviceDoc/20001685E.pdf",
+      "scope": "Dual opamp physical pinout and supply/load conditions"
+    },
+    {
+      "name": "SSW-130",
+      "url": "https://www.samtec.com/products/ssw-130-02-g-d",
+      "scope": "60contact2x30 pitch2.54 candidate; final fit not checked"
+    },
+    {
+      "name": "TSW-130",
+      "url": "https://www.samtec.com/products/tsw-130-07-g-d",
+      "scope": "60contact2x30 pitch2.54 candidate; final fit not checked"
+    }
+  ],
+  "cached_ym2203_text_sha256": "78517cfa822f7d318ded8f12ccd75165d6968627eb1069676492dda0d23ab4f9"
+}

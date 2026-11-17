@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "python": "3.15.2",
+  "native_kicad": "10.0.5",
+  "contract_tests_passed": 18,
+  "physical_pad_sets_checked": 195,
+  "native_gpio_used": 47,
+  "native_gpio_changed": false,
+  "firmware_implemented": false,
+  "pcb_created": false,
+  "hardware_accepted": false,
+  "source_sha256": {
+    "carrier-p2/pcb-review-b/schematic/circuit.json": "94a78ff347510662131517f944ad44e948a1cbe117d1c066de30ad9c0e1328ab",
+    "carrier-p2/pins.json": "1465d9f94d974e01b7c744aa954776557607eda9905782313ec612ce8546e359"
+  },
+  "budgets": {
+    "scope": "design allocations and linear bound; NOT measurements or guaranteed whole-system limits",
+    "module_5v_allocation_ma": 180,
+    "module_3v3_io_allocation_ma": 20,
+    "pga_3v3_conservative_ma": 279.4,
+    "pga_regulator_rating_ma": 300,
+    "aux_3v3_ma": 150,
+    "aux_regulator_rating_ma": 500,
+    "external5v_conservative_ma": 728.4,
+    "supply_target_ma": 1500,
+    "ptc_hold_nominal_ma": 1100,
+    "headroom": {
+      "ssg_bound_each_peak_v": 5.25,
+      "ssg_bound_includes_dc_steps": true,
+      "dac_assumed_max_rms_v": 2.2,
+      "aux_limit_rms_v": 2.0,
+      "feedback_ohms": 8200,
+      "input_ohms": 100000,
+      "tolerance_fraction": 0.01,
+      "gain_max": 0.08366,
+      "sum_output_peak_bound_v": 1.814,
+      "available_peak_v": 2.051,
+      "remaining_peak_margin_v": 0.237,
+      "qualifications": "No SPICE or analog measurements; verify output loading, startup, rail drop, distortion, AUX DC and real chip output. Overall gain is lower than reviewB; FM/SSG ratio retained."
+    }
+  },
+  "scope": "ERC/netlist/pad/contract checks and design budgets only; no firmware runtime, PCB DRC or bench acceptance"
+}

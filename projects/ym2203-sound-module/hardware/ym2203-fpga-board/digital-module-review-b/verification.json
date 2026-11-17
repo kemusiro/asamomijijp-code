@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "python": "3.15.2",
+  "tests_passed": 34,
+  "scope": "design-manifest contracts and negative tests; NOT executable firmware simulation or electrical verification",
+  "budget": {
+    "scope": "arithmetic allocations only, not runtime or bench",
+    "rail_totals_ma": {
+      "BASE_MCU_3V3": 272.4,
+      "BASE_AUX_3V3": 150,
+      "MODULE_MCU_3V3": 198,
+      "MODULE_ADC_3V3": 50,
+      "MODULE_5V": 150,
+      "BASE_5V": 115
+    },
+    "module_5v_total_ma": 398,
+    "whole_5v_ma": 935.4,
+    "with_module_admission_limit_ma": 1037.4,
+    "ptc_drop_v_at_admitted_limit": 0.124488,
+    "ldo_stress_w": {
+      "BASE_MCU_3V3": 0.55842,
+      "BASE_AUX_3V3": 0.3075,
+      "MODULE_MCU_3V3": 0.4059,
+      "MODULE_ADC_3V3": 0.1025
+    },
+    "ssg_load_ohm": 998.745,
+    "ssg_divider_ratio": 0.249377,
+    "ssg_single_rail_step_bound_v": 1.309227,
+    "output_peak_bound_v": 1.491838,
+    "output_available_peak_v": 2.05125,
+    "spi_batch_wire_us": 1088.0,
+    "pga2350_count": 1
+  },
+  "gpio_applied": false,
+  "firmware_modified": false,
+  "new_schematic": false,
+  "erc_run": false,
+  "pcb_created": false,
+  "hardware_accepted": false,
+  "board_source": "Core2350B manufacturer schematic; module-header.json identity checked by transcription and unique GPIO rules"
+}

@@ -9,6 +9,30 @@ WebLabの仮想デバイス、ブラウザー実行基盤、汎用BINプレイ�
 [MicroPython WebLab使い方ガイド](https://asamomiji.jp/articles/micropython-web-lab-guide/)。
 記事の公開・サイトのビルドはこのプロジェクトの取り込みと独立している。
 
+## 次期基板：P2ベース＋交換式音源基板
+
+[review J：220mm幅ベース・右側操作部](hardware/ym2203-fpga-board/clean-sheet-pcb-review-j/README.md)を主案にする。
+base220×142mm/source100×100mm、4層。DIP・STOP・TESTを右側へ移動し、開口なしシールドと音源の位置は維持。
+Hの228参照とGPIO/40接点/電気接続を維持し、
+両基板ERC/DRC/未配線/回路図差分0、947pad・40嵌合位置・38UNO接点・64Core接点を照合した。
+既存HOST opn1・4MHz、USB-MIDI/所有権、STOP/lease、UNO R3機能を維持する要件。
+
+ソケット高さとシールド干渉は条件付きCADモデル。6か所のビアは実装前の先埋め・平坦化が必要。
+新firmware、電源/USB/音声/熱の測定、実物嵌合と実機回帰は未完。製造リリースではない。
+G/Hを含む旧設計とRev C実機受入は保存する。
+
+音色編集用の[UNOシールド review B](hardware/ym2203-fpga-board/editor-shield-review-b/README.md)も設計した。
+秋月調達優先の4ノブ・encoder・1.54インチLCD・64音色EEPROM保存・USB CDC JSON取得の仕様と接続済み回路図。
+ERC0、32接点/159pad照合、保存等13モデル試験。購入小計3,160円（基板等別）。
+回路図review A/Bと開口付きPCBは保存。review Bの[開口なし2層PCB](hardware/ym2203-fpga-board/editor-shield-review-b/pcb-review-b/README.md)へ更新し、
+ERC/DRC/未配線/回路図差分0、166padと32嵌合座標を照合。LCD・シールド外形とUNO座標は維持。JではDIP・STOP・TESTを右側へ移し、音源基板との間隔は最小11.225mm。
+シールド下面の余裕は寸法モデル。現物嵌合・P2 firmware・実機受入は未完。
+
+[一体型revision 2.1](hardware/ym2203-fpga-board/PGA2350-STANDALONE.md)と
+[配線済みレビューB](hardware/ym2203-fpga-board/carrier-p2/pcb-review-b/README.md)は旧設計として保存する。
+そのERC/DRCや電源・機構検討の結果は交換式設計へ転用しない。
+[P1 PGA2350＋FPGA案](hardware/ym2203-fpga-board/PGA2350-PROTOTYPE.md)も比較資料として保持する。
+
 ## 現在地と最終目標
 
 **WebLabで再生できたYs II「TO MAKE THE END OF BATTLE」の全曲データを、
