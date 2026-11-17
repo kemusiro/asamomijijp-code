@@ -1,0 +1,196 @@
+{
+  "date": "2026-11-14",
+  "kind": "PC RTL functional simulation, not FPGA/hardware acceptance",
+  "tests": {
+    "runner": "Python unittest",
+    "passed": 8,
+    "skipped": 0,
+    "coverage": [
+      "FM tone pitch and key-off",
+      "SSG tone pitch and mute",
+      "FM sample clock = master /72",
+      "BUSY wait and repeated same-time register order",
+      "Event at exact period without extra PCM",
+      "WYM1 invalid clock/time/length/prescaler rejection",
+      "Trace early/reordered write rejection",
+      "Common-gain FM+SSG stem reconstruction and stereo duplication",
+      "Legacy recording SHA identity"
+    ]
+  },
+  "result": {
+    "schema_version": 1,
+    "source": {
+      "events": 123137,
+      "period_ms": 298218,
+      "clock_hz": 4000000,
+      "bytes": 738838,
+      "crc32": "ae592289",
+      "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853"
+    },
+    "simulation": {
+      "clock_hz": 4000000,
+      "pcm_rate_hz": 1000000,
+      "duration_ms": 298218,
+      "executed_events": 123137,
+      "source_events": 123137,
+      "frames": 298218000,
+      "max_address_start_late_cycles": 19870,
+      "busy_wait_cycles": 16481510,
+      "fm_sample_edges": 16567667,
+      "fm_sample_period_min_cycles": 72,
+      "fm_sample_period_max_cycles": 72,
+      "fm_peak_native": 18140,
+      "psg_sum_peak_native": 204
+    },
+    "trace": {
+      "verified_writes": 123137,
+      "same_time_order_preserved": true,
+      "no_early_writes": true,
+      "sha256": "175f8055f6fae1fd8aeae275b480cd80b57165e20cb98d258b04cfd3c46fef10"
+    },
+    "full_score": true,
+    "output_frames_48000hz": 14314464,
+    "wall_seconds": 199.61432012496516,
+    "build": {
+      "verilator": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+      "upstream_commit": "eebba1d862304015acc736451eb34a8860a42a6a",
+      "jt49_commit": "947e2e1a5f2d7b21c3f29847f08b49f30dc5153a",
+      "jt49_div": 3,
+      "compiler": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "project_sources_sha256": {
+        "simulator.cpp": "e50acdd6eec210941ce8388bb73abcdaee8f11828d50c5a8e9df5e1dc1de0d2f",
+        "revc_jt03.v": "de3c143e0605da8aad64525500d8356bf140545a417ab1cdd1b379a52df73219",
+        "core-lock.json": "b979c6d33ff5fc4dd76a28c08362251bf42c456acb792185d73ed0e6e2b0eda9"
+      }
+    },
+    "resampler": "aresample=48000:resampler=swr:filter_size=128:cutoff=0.95:exact_rational=1",
+    "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+    "stems": {
+      "channel_0": "FM signed16 / 32768",
+      "channel_1": "(SSG A+B+C) / 255; DC retained; NOT stereo listening audio"
+    },
+    "stems_sha256": "7e4399fd88bf3bb255331375bb78d9d512f3e5afd0f05613fd8ccdaf81e018bc"
+  },
+  "listening_audio": {
+    "rate_hz": 48000,
+    "filter": "one-pole causal 5 Hz highpass on each stem",
+    "mix": "FM/32768 + ssg_weight*(SSG_A+SSG_B+SSG_C)/255",
+    "ssg_weight": 0.2490234375,
+    "common_gain": 1.1535097378091517,
+    "headroom_db": 3,
+    "independent_stem_normalization": false,
+    "notes": "Digital mono duplicated to L/R. Does not model Rev C analog mixer/pot/ADC.",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "files": {
+      "ysii-jt03-full.wav": {
+        "sha256": "a018d9e5bae5f7cbcff5a7ce7dfef87705c406f488609a3ec9ba98cfef2f4777",
+        "frames": 14314464,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.0,
+        "full_scale_samples": 0
+      },
+      "ysii-jt03-fm.wav": {
+        "sha256": "6fc111dd11f6c88c5fae2456b700ed1756c9176db966b98392ed91c78bbf0500",
+        "frames": 14314464,
+        "sample_rate": 48000,
+        "channels": 1,
+        "peak_dbfs": -3.4841690260017626,
+        "full_scale_samples": 0
+      },
+      "ysii-jt03-ssg.wav": {
+        "sha256": "d7e8d8550f3b011500ed0b46361c716e449408306feaa3f3ee15aac241d3db26",
+        "frames": 14314464,
+        "sample_rate": 48000,
+        "channels": 1,
+        "peak_dbfs": -12.763444165231617,
+        "full_scale_samples": 0
+      },
+      "ysii-jt03-25-35s.wav": {
+        "sha256": "2808071c2217e65f0e268ba795e8cf17efd859f74e616a472baf365f034e3307",
+        "frames": 480000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -4.240180965142524,
+        "full_scale_samples": 0
+      }
+    }
+  },
+  "historical_comparison": {
+    "recording_sha256": "9b60afa73d6d53ce26a3d076fc13e13b197c5f2ef8e82715fb4209011fe8d61b",
+    "recording_firmware": "C 0.3.0-alpha.4 (historical)",
+    "recording_offset_seconds": 5.77,
+    "extra_fm_delay_seconds": 0.046,
+    "offset_source": "firmware-c/verification/alpha4-line-latency-analysis.json",
+    "fit_train_song_seconds": [
+      1,
+      24
+    ],
+    "held_out_song_seconds": [
+      25,
+      35
+    ],
+    "fit_method": "NNLS 20 ms band-limited power envelopes; constant FM/SSG gains + noise floor",
+    "fm_gain": 1.0984607855507071,
+    "ssg_gain": 0.25619769337817067,
+    "fitted_ssg_weight_relative_to_fm": 0.23323335411534732,
+    "global_B_rms_match": 1.0056490765494681,
+    "common_AB_gain": 1.4170657761867735,
+    "held_out_power_correlation": 0.9708923980478575,
+    "AB_order": "A: historical real Rev C 10 s; silence 1 s; B: calibrated JT03 10 s",
+    "limits": [
+      "Gains and FM delay in B are calibrated to OLD alpha.4, not current accepted firmware.",
+      "Power-envelope correlation is not sample/phase identity or an audio compatibility pass.",
+      "Uncalibrated full mix and separated stems are retained independently.",
+      "No event edits, pitch shifts, dynamic compression or envelope smoothing."
+    ],
+    "files": {
+      "compare-A-revc-alpha4-25-35s.wav": {
+        "sha256": "3da0b7916044da3cc4f4a974a63eb162494c9c96b83ad4c162926c755f1e6b95",
+        "frames": 480000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.2678877961304686,
+        "full_scale_samples": 0
+      },
+      "compare-B-jt03-legacy-matched-25-35s.wav": {
+        "sha256": "16fdc129c11d0098957c2c414aeb89b6c0a5fa437ff98629cc3b91e802898b02",
+        "frames": 480000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.0,
+        "full_scale_samples": 0
+      },
+      "compare-AB-revc-then-jt03.wav": {
+        "sha256": "6e35ccc7756d34ffb564775cbfec99e2daf42f5405e9537db2f3bb070b92f73f",
+        "frames": 1008000,
+        "sample_rate": 48000,
+        "channels": 2,
+        "peak_dbfs": -3.0,
+        "full_scale_samples": 0
+      }
+    }
+  },
+  "listening_tail_last_100ms_rms": 0.0,
+  "source_files_sha256": {
+    "build.py": "86493c4d06b7fd6c85a82a0fe646fa93180aa5fa743701655a6199c1510c1523",
+    "simulator.cpp": "e50acdd6eec210941ce8388bb73abcdaee8f11828d50c5a8e9df5e1dc1de0d2f",
+    "render.py": "4c14607fdab5d9e42179567fe3e5e148219059447179fd779d8650ae169e02b8",
+    "audio.py": "7bfc5512c63ff3b09a548afb18eca03960da55a8e422f7a53ec71fb815e5cdfa",
+    "revc_jt03.v": "de3c143e0605da8aad64525500d8356bf140545a417ab1cdd1b379a52df73219"
+  },
+  "limits": [
+    "Human listening comparison pending; no claim of indistinguishable sound.",
+    "Historical line recording is C0.3.0-alpha.4, not accepted C0.5.0-alpha.4.",
+    "No FPGA synthesis, resource fit, timing closure, board modifications or GPIO changes.",
+    "Software source only is eligible for Git; song, audio, binary and trace stay local."
+  ],
+  "canonical_rebuild": {
+    "integration_tests_passed": 8,
+    "integration_tests_skipped": 0,
+    "float_pcm_first_900ms_bit_equal": true,
+    "listening_wav_hashes_rechecked": 7,
+    "full_song_last_100ms_silent": true
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "purpose": "Reproducible ECP5 internal out-of-context P&R evaluation; no programming tool invocation",
+  "distribution": "OSS CAD Suite",
+  "release": "2026-11-14",
+  "platform": "darwin-arm64",
+  "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-11-14/oss-cad-suite-darwin-arm64-20261114.tgz",
+  "archive_sha256": "e8f4edd46387bc75dc7449e0b4834bf5a7bd8465e2d7c83239120a14ef22b3ca",
+  "nextpnr_commit": "5e2718b6364e189e414c35b8eef3db4d5e3c0773",
+  "nextpnr_version": "nextpnr-0.11.1-92-g5e2718b6",
+  "nextpnr_relative_executable": "libexec/nextpnr-ecp5",
+  "note": "Invoke libexec directly: the distribution's bin wrapper changes user-level XDG directories. This project does not change HOME or global tools. Other platforms require their own verified distribution and report."
+}

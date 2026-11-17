@@ -1,0 +1,5304 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T18:12:15.933748+00:00",
+  "kind": "Physical ULX3S 85F v3.0.8 normal P&R with IO/PLL/global routes; not hardware signoff",
+  "all_passed": true,
+  "configuration": {
+    "schema_version": 1,
+    "board": "ULX3S 85F PCB v3.0.8",
+    "device": "LFE5U-85F-6BG381C",
+    "package": "CABGA381",
+    "speed": 6,
+    "pins": [
+      {
+        "port": "ref12",
+        "ball": "P3",
+        "connector": "OLED1.3 OLED_CLK (no display installed)",
+        "direction": "input",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 6,
+        "function": "LLC_GPLL0T_IN",
+        "group": "clock"
+      },
+      {
+        "port": "audio49",
+        "ball": "A10",
+        "connector": "J1.7 GP1",
+        "direction": "input",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "PCLKT0_1",
+        "group": "clock"
+      },
+      {
+        "port": "permit",
+        "ball": "C11",
+        "connector": "J1.6 GN0",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "PCLKC0_0",
+        "group": "safety"
+      },
+      {
+        "port": "reset_button",
+        "ball": "R1",
+        "connector": "BTN0",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 8,
+        "function": "D7/IO7",
+        "group": "safety"
+      },
+      {
+        "port": "stop_button",
+        "ball": "T1",
+        "connector": "BTN1",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 8,
+        "function": "D6/IO6",
+        "group": "safety"
+      },
+      {
+        "port": "config_button",
+        "ball": "R18",
+        "connector": "BTN2",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "config"
+      },
+      {
+        "port": "profile_switch[0]",
+        "ball": "E8",
+        "connector": "SW1",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "config"
+      },
+      {
+        "port": "profile_switch[1]",
+        "ball": "D8",
+        "connector": "SW2",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "config"
+      },
+      {
+        "port": "profile_switch[2]",
+        "ball": "D7",
+        "connector": "SW3",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "config"
+      },
+      {
+        "port": "usb_dp_rx",
+        "ball": "E16",
+        "connector": "US2 D+ input tap",
+        "direction": "input",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "usb"
+      },
+      {
+        "port": "usb_dn_rx",
+        "ball": "F16",
+        "connector": "US2 D- input tap",
+        "direction": "input",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "usb"
+      },
+      {
+        "port": "usb_dp_tx",
+        "ball": "D15",
+        "connector": "US2 D+ via R53",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 1,
+        "function": "GPIO",
+        "group": "usb"
+      },
+      {
+        "port": "usb_dn_tx",
+        "ball": "E15",
+        "connector": "US2 D- via R52",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 1,
+        "function": "GPIO",
+        "group": "usb"
+      },
+      {
+        "port": "usb_dp_bias",
+        "ball": "B12",
+        "connector": "US2 D+ bias via D24/R40",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 1,
+        "function": "PCLKT1_0",
+        "group": "usb"
+      },
+      {
+        "port": "usb_dn_bias",
+        "ball": "C12",
+        "connector": "US2 D- bias (always high-Z)",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 1,
+        "function": "PCLKC1_0",
+        "group": "usb"
+      },
+      {
+        "port": "ym_a0",
+        "ball": "A6",
+        "connector": "J1.23 GP7",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "ULC_GPLL1T_IN",
+        "group": "ym"
+      },
+      {
+        "port": "ym_cs_n",
+        "ball": "B6",
+        "connector": "J1.24 GN7",
+        "direction": "output",
+        "pull": "UP",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "ULC_GPLL1C_IN",
+        "group": "ym"
+      },
+      {
+        "port": "ym_wr_n",
+        "ball": "A4",
+        "connector": "J1.25 GP8",
+        "direction": "output",
+        "pull": "UP",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "ULC_GPLL0T_IN",
+        "group": "ym"
+      },
+      {
+        "port": "ym_rd_n",
+        "ball": "A5",
+        "connector": "J1.26 GN8",
+        "direction": "output",
+        "pull": "UP",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "ULC_GPLL0C_IN",
+        "group": "ym"
+      },
+      {
+        "port": "ym_reset_n",
+        "ball": "A2",
+        "connector": "J1.27 GP9",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "translator_dir",
+        "ball": "B1",
+        "connector": "J1.28 GN9",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "translator_oe_n",
+        "ball": "C4",
+        "connector": "J1.29 GP10",
+        "direction": "output",
+        "pull": "UP",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "arm_request",
+        "ball": "B4",
+        "connector": "J1.30 GN10",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "fm_sd",
+        "ball": "U18",
+        "connector": "J2.3 GP14",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "fm"
+      },
+      {
+        "port": "fm_clk",
+        "ball": "U17",
+        "connector": "J2.4 GN14",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "fm"
+      },
+      {
+        "port": "fm_sh",
+        "ball": "N17",
+        "connector": "J2.5 GP15",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "fm"
+      },
+      {
+        "port": "i2s_bclk",
+        "ball": "P16",
+        "connector": "J2.6 GN15",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "VREF1_3",
+        "group": "i2s"
+      },
+      {
+        "port": "i2s_lrck",
+        "ball": "N16",
+        "connector": "J2.7 GP16",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "i2s"
+      },
+      {
+        "port": "i2s_data",
+        "ball": "M17",
+        "connector": "J2.8 GN16",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "i2s"
+      },
+      {
+        "port": "host_scl",
+        "ball": "L16",
+        "connector": "J2.9 GP17",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GR_PCLK3_0",
+        "group": "i2c"
+      },
+      {
+        "port": "host_sda",
+        "ball": "L17",
+        "connector": "J2.10 GN17",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 3,
+        "function": "GPIO",
+        "group": "i2c"
+      },
+      {
+        "port": "si_scl",
+        "ball": "H18",
+        "connector": "J2.11 GP18",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "si"
+      },
+      {
+        "port": "si_sda",
+        "ball": "H17",
+        "connector": "J2.12 GN18",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "si"
+      },
+      {
+        "port": "dac_allow",
+        "ball": "F17",
+        "connector": "J2.13 GP19",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "line_allow",
+        "ball": "G18",
+        "connector": "J2.14 GN19",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "vbus_sense",
+        "ball": "D18",
+        "connector": "J2.15 GP20",
+        "direction": "input",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "usb"
+      },
+      {
+        "port": "heartbeat",
+        "ball": "E17",
+        "connector": "J2.16 GN20",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 2,
+        "function": "GPIO",
+        "group": "safety"
+      },
+      {
+        "port": "esp_en",
+        "ball": "F1",
+        "connector": "ESP32 EN (held low)",
+        "direction": "output",
+        "pull": "DOWN",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 6,
+        "function": "PCLKC6_1",
+        "group": "reserved"
+      },
+      {
+        "port": "led[0]",
+        "ball": "B2",
+        "connector": "LED0 PLL lock",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "VREF1_7",
+        "group": "status"
+      },
+      {
+        "port": "led[1]",
+        "ball": "C2",
+        "connector": "LED1 audio OK",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "status"
+      },
+      {
+        "port": "led[2]",
+        "ball": "C1",
+        "connector": "LED2 audio fault",
+        "direction": "output",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 7,
+        "function": "GPIO",
+        "group": "status"
+      },
+      {
+        "port": "ym_data[0]",
+        "ball": "B9",
+        "connector": "J1.11 GP3",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[1]",
+        "ball": "C10",
+        "connector": "J1.12 GN3",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[2]",
+        "ball": "A7",
+        "connector": "J1.13 GP4",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[3]",
+        "ball": "A8",
+        "connector": "J1.14 GN4",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[4]",
+        "ball": "C8",
+        "connector": "J1.15 GP5",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[5]",
+        "ball": "B8",
+        "connector": "J1.16 GN5",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[6]",
+        "ball": "C6",
+        "connector": "J1.17 GP6",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      },
+      {
+        "port": "ym_data[7]",
+        "ball": "C7",
+        "connector": "J1.18 GN6",
+        "direction": "inout",
+        "pull": "NONE",
+        "io_type": "LVCMOS33",
+        "drive_ma": 4,
+        "bank": 0,
+        "function": "GPIO",
+        "group": "ym"
+      }
+    ],
+    "bank_vccio_volts": {
+      "0": 3.3,
+      "1": 3.3,
+      "2": 3.3,
+      "3": 3.3,
+      "6": 3.3,
+      "7": 3.3,
+      "8": 3.3
+    },
+    "requirement": "2V5_3V3 must be strapped/configured to 3V3; verify on physical module before wiring",
+    "upstream": {
+      "repo": "emard/ulx3s",
+      "commit": "6a92cec6b177191c5b0f80e260013a1f8ec147dd",
+      "sources": {
+        "lpf": "625b462ca41465881dbe0c0f9914ec664a2ac6fea8d3e781e9e6e1bbbdacb6fd",
+        "manual": "4e33a823a41090e3f00e1e662f3c1a603449747a7662f36b7cc62639e3ac719a",
+        "usb_sch": "023e16f40ab93ff4f6a403062964d874624dc1f188a15bbda18b1df87e278ecd",
+        "gpio_sch": "4db31464e5b906a4d1c2782ac8de468c181e7f1520efb1d01b7d845a037de1f9",
+        "power_sch": "0a7ea4d8aa82dd30be2c21654e6e38d335413440c477129f8a6e45eb70c23b43",
+        "ram_sch": "87fe9b80d00b4e7b1431d1c5e844431e3f1515cae06a08fea0057321a1b82fd5"
+      },
+      "schematic_v308_sha256": "790f01d78f53ca63ae5fefbc11b248891f31bfae04311b9ab60fd67ed48806ec"
+    },
+    "reserved": [
+      "J1 GP/GN11..13 shared with ESP32",
+      "SDRAM",
+      "SD card",
+      "SPI flash",
+      "US1 FTDI/JTAG",
+      "JTAG pins",
+      "G2 onboard 25MHz (not connected to design)",
+      "OLED connector reserved for 12MHz reference; no OLED display"
+    ],
+    "clock_plan": {
+      "ref12_hz": 12000000,
+      "control_hz": 48000000,
+      "audio_hz": 49152000,
+      "pll": {
+        "input_div": 1,
+        "feedback_div": 4,
+        "output_div": 12,
+        "pfd_hz": 12000000,
+        "vco_hz": 576000000
+      },
+      "i2s_bclk_hz": 3072000,
+      "sample_hz": 48000
+    },
+    "electrical_status": "carrier schematic and hardware not built; no bitstream or USB electrical certification"
+  },
+  "sources_sha256": {
+    "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+    "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+    "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+    "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+    "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+    "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+    "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+    "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+    "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+    "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+    "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+    "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+    "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+    "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+    "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+    "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+    "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+    "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+    "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+    "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+    "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+    "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+    "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+    "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+    "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+    "rtl/revc_v2_session.v": "c91c4ea6cfdc4771ae3648907946ec488722cea6f423531b30b146c22d29a122",
+    "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+    "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+    "boards/ulx3s/top.v": "758e39614f58cdb7e1e50324c84f582e950288ca4ca664beeae82c9a2c15d3f0",
+    "boards/ulx3s/UPSTREAM-LICENSE.md": "d60e70ec6e2bf2b3153f74015cb9ee0f84773ed32d46d8a252e0aadef1d702f9",
+    "boards/ulx3s/board.lpf": "a5de0110c16496653f1bc892bf75bab4699a3b4400376a3fe65b333cde873243",
+    "boards/ulx3s/clock_routes.py": "e2b72e6022e1253500fcd65d78fec08323267159bc277b60cfc096ccc1e9bd2d",
+    "boards/ulx3s/PINOUT.md": "d1a48e6884dc5d1e64a8a55fb6b530d038a4e1d3cd8114b2f76f7e750597af25",
+    "boards/ulx3s/board.sdc": "9805e0fff9cbde698a35aae264f4bd5b72cd6c30b4d5be2df954385c5224caa0",
+    "boards/ulx3s/clocking.v": "e6a37a69939c07124c77c34885af041f27867dad229e0c62ef753c1364b6a52f",
+    "boards/ulx3s/pins.json": "44c06b4eff9d05a8f0ae596f2e31ee8dc72b8a527dbd2c3b13d82a3ab8c5eefe",
+    "check_board.py": "c0b973e49b169e024d87f1b63dc6105e03bbf94aa9ef2e13b3154b13998e43fa",
+    "tools/board_checks.py": "9c82b092458c3063d2f07a1eb78a5391e19dfff9d3ee448c4f09a470775ae9fd",
+    "tests/test_board_checks.py": "d98aaccf86a053e5410a786cc07ae5f959e15f0323502d80a6e44a14b9644320",
+    "tests/ulx3s_adapter_test.cpp": "26901d3a0d8066a6e58dcf32afda5934f41536706559245bf9f6bd2477072dc2",
+    "tests/ulx3s_stubs.v": "8400eb9ddd28d192d1bb85711f61a3300c782ba3d2711a2cf72bdd7ed9738150"
+  },
+  "tools": {
+    "yosys": {
+      "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+    },
+    "nextpnr": {
+      "version": "\"nextpnr-ecp5\" -- Next Generation Place and Route (Version nextpnr-0.11.1-92-g5e2718b6)",
+      "sha256": "cc2debf20d058c969a939083469180afb501de9dc2f003787d67ec6c1824693c"
+    },
+    "verilator": {
+      "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+      "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+    }
+  },
+  "toolchain_distribution": {
+    "schema_version": 1,
+    "purpose": "Reproducible ECP5 internal out-of-context P&R evaluation; no programming tool invocation",
+    "distribution": "OSS CAD Suite",
+    "release": "2026-11-14",
+    "platform": "darwin-arm64",
+    "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-11-14/oss-cad-suite-darwin-arm64-20261114.tgz",
+    "archive_sha256": "e8f4edd46387bc75dc7449e0b4834bf5a7bd8465e2d7c83239120a14ef22b3ca",
+    "nextpnr_commit": "5e2718b6364e189e414c35b8eef3db4d5e3c0773",
+    "nextpnr_version": "nextpnr-0.11.1-92-g5e2718b6",
+    "nextpnr_relative_executable": "libexec/nextpnr-ecp5",
+    "note": "Invoke libexec directly: the distribution's bin wrapper changes user-level XDG directories. This project does not change HOME or global tools. Other platforms require their own verified distribution and report."
+  },
+  "functional_regression": {
+    "report_sha256": "2281ba02ebcc893fbe8f1c6bac4e81f393af1e9504bf1d065980c6c901744f50",
+    "reuse_scope": "Every recorded source/HOST/C oracle hash checked; unchanged core functional evidence reused",
+    "report": {
+      "all_passed": true,
+      "source_report_sha256": "c6e965fb6d60578f31dd5ac5734805b6be5ab6640f5d96b1a706f1d7030c62e9",
+      "source_report": {
+        "schema_version": 1,
+        "kind": "Targeted current-RTL functional regression after timing refactor; no physical acceptance",
+        "all_passed": true,
+        "sources_sha256": {
+          "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+          "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+          "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+          "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+          "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+          "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+          "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+          "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+          "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+          "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+          "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+          "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+          "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+          "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+          "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+          "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+          "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+          "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+          "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+          "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+          "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+          "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+          "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+          "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+          "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+          "rtl/revc_v2_session.v": "c91c4ea6cfdc4771ae3648907946ec488722cea6f423531b30b146c22d29a122",
+          "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+          "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+          "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+          "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+          "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+          "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+          "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+          "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+          "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+          "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+          "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+          "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+          "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+          "tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+          "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+          "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+          "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+          "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+          "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+          "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+          "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+          "tests/test_pnr_checks.py": "6a44ed1c3e8a0c810a2a4e132b3ba4bef7e1afeb50866e703ab2ec31299be405",
+          "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+          "tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+          "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+          "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+          "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+          "tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+          "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+          "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+          "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+          "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+          "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+          "check_clocks.py": "87c8d74f4284816a034bac3a5fb3fa9cc8b43110c158f98e9ff84e9535f1b098",
+          "check_pnr.py": "6515195578940e206d9e2b2b2cb508bc7afb464af8362651946c99fd357eb118",
+          "check_pnr_cdc.py": "f7860d73ec7c9de9cf0eade216ba79c16a69e37c842c8c3ba9290b9f8b844ab4",
+          "check_real_cdc.py": "556c7fb3d1d00a4caf5cfce9b24945379d2e2bdd0a08ca8f7080dd45a054709d",
+          "check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+          "check_usb.py": "58d0fc1cdb20a85673ca5385284cedd170839187cebd4ec15ccef399910b96c9"
+        },
+        "tools": {
+          "verilator": {
+            "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+            "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+          },
+          "yosys": {
+            "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+            "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+          },
+          "cc": {
+            "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+            "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+          },
+          "c++": {
+            "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+            "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+          }
+        },
+        "c_oracle_sha256": {
+          "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+          "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+          "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+          "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+          "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+          "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+          "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1",
+          "firmware-c/src/midi.c": "076ab1bc64111344cf60c8d77aa31b01d9d4a37802a8c2bdfa1e6ad69c4cf8d0",
+          "firmware-c/src/midi_pitch.h": "cc84f6ab223a5da847b446a62b9b1fa5d36fb75c072be12e350974d9ad47e07a",
+          "firmware-c/tests/midi_bridge.c": "7675651e5e11d0fe83da37a9e0f824ac4afef861f438cf98987f6b85dd5e2d27"
+        },
+        "unchanged_host_sha256": {
+          "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f",
+          "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+          "firmware-c/host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+          "firmware-c/host/midi_handover.py": "cbb28c593be55a7492fe81ba2f22129062aab15fc601b85a1bf84045b7697d28",
+          "firmware-c/host/player.py": "1c35513ed6cc49d8e1d858ac5647b627e7a9cc865d6ec57b7cecd8358475082a",
+          "firmware-c/host/recovery_check.py": "7eb774ece8cee0b6f4babc8ee63650a57b30c54423ba6d712a7144a0c3785f5b",
+          "firmware-c/host/usb_disconnect_check.py": "130c395848260de3ca8f7c6af20765a9aa3eb8cfc6eacfa302de537f44fc868b"
+        },
+        "session": {
+          "schema_version": 1,
+          "date_utc": "2026-11-14T17:19:05.320660+00:00",
+          "kind": "F1 I2C v2 RTL simulation and ECP5 technology mapping; not hardware/audio acceptance",
+          "tools": {
+            "verilator": {
+              "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+              "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+            },
+            "yosys": {
+              "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+              "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+            },
+            "cc": {
+              "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+              "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+            },
+            "c++": {
+              "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+              "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+            }
+          },
+          "python_version": "3.15.2",
+          "sources_sha256": {
+            "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+            "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+            "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+            "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+            "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+            "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+            "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+            "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+            "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+            "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+            "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+            "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+            "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+            "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+            "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+            "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+            "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+            "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+            "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+            "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+            "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+            "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+            "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+            "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+            "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+            "rtl/revc_v2_session.v": "0593019e66d470a2f2f21d0754458e7aa409aab7b7da2ae4e9680785ba29a5ba",
+            "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+            "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+            "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+            "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+            "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+            "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+            "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+            "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+            "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+            "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+            "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+            "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+            "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+            "tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+            "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+            "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+            "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+            "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+            "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+            "tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+            "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+            "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+            "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+            "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+            "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+            "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+            "tests/test_pnr_checks.py": "5ef11e5dea11f9810c087c9700b083ed0c33b6b95ec2df48ecaba53a112f3a28",
+            "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+            "tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+            "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+            "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+            "check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+            "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+          },
+          "c_oracle_sha256": {
+            "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+            "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+            "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+            "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+            "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+            "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+            "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1"
+          },
+          "unchanged_host_sha256": {
+            "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+            "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f"
+          },
+          "frame": {
+            "schema_version": 1,
+            "date_utc": "2026-11-14T17:18:32.294911+00:00",
+            "scope": "F1 v2 frame validator only; not a board or complete protocol implementation",
+            "tools": {
+              "verilator": {
+                "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+                "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+              },
+              "yosys": {
+                "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+                "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+              },
+              "cc": {
+                "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+                "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+              }
+            },
+            "rtl_vectors": 576,
+            "c_parser_comparisons": 380,
+            "result": "PASS 576 framing vectors; hold/readback/reset checks",
+            "synthesis": {
+              "num_wires": 732,
+              "num_wire_bits": 1277,
+              "num_pub_wires": 732,
+              "num_pub_wire_bits": 1277,
+              "num_ports": 17,
+              "num_port_bits": 102,
+              "num_memories": 0,
+              "num_memory_bits": 0,
+              "num_processes": 0,
+              "num_cells": 632,
+              "num_submodules": 0,
+              "num_cells_by_type": {
+                "CCU2C": 23,
+                "L6MUX21": 12,
+                "LUT4": 314,
+                "PFUMX": 41,
+                "TRELLIS_DPR16X4": 104,
+                "TRELLIS_FF": 138
+              }
+            },
+            "source_sha256": {
+              "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+              "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+              "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+            },
+            "c_oracle_sha256": {
+              "stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+              "stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+              "wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+              "wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799"
+            },
+            "place_route": "not run",
+            "timing": "not measured",
+            "physical_pinout": "not assigned",
+            "limits": [
+              "No physical I2C or USB receiver, session state/sequence/lease engine, MIDI, clock setup or audio.",
+              "Ready/valid backpressure requires upstream buffering; physical overflow must fail safe.",
+              "Mapped cells describe this slice only; no full-system resource or timing conclusion."
+            ]
+          },
+          "tests": {
+            "session": {
+              "tests": 25,
+              "skipped": 0,
+              "passed": 25,
+              "log_sha256": "5221ab42cb5f48fcb7590fb71c1ede7093dbd82fe4e5b592acc7685e790734f5"
+            },
+            "i2c_wire": {
+              "tests": 8,
+              "skipped": 0,
+              "passed": 8,
+              "log_sha256": "1356a7bcd75b48a62eb0c2967abe9b858300eeb3d1a6ec4833319147c748f0db"
+            }
+          },
+          "private_score": {
+            "events": 123137,
+            "period_ms": 298218,
+            "clock_hz": 4000000,
+            "crc32": "ae592289",
+            "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+            "kind": "private-data control simulation; no audio output or data included"
+          },
+          "synthesis": {
+            "num_wires": 6440,
+            "num_wire_bits": 12731,
+            "num_pub_wires": 6440,
+            "num_pub_wire_bits": 12731,
+            "num_ports": 30,
+            "num_port_bits": 189,
+            "num_memories": 0,
+            "num_memory_bits": 0,
+            "num_processes": 0,
+            "num_cells": 7566,
+            "num_submodules": 0,
+            "num_cells_by_type": {
+              "$scopeinfo": 7,
+              "CCU2C": 812,
+              "DP16KD": 4,
+              "L6MUX21": 109,
+              "LUT4": 3721,
+              "PFUMX": 402,
+              "TRELLIS_DPR16X4": 171,
+              "TRELLIS_FF": 2340
+            }
+          },
+          "configuration": {
+            "queue_capacity": 1024,
+            "event_bits": 48,
+            "packet_slots": 4,
+            "packet_max_bytes": 208,
+            "address": "0x42",
+            "i2c_model_nominal_hz": 100000,
+            "wire_model_clock_hz": 16000000,
+            "control_wrapper_clock_hz": 48000000,
+            "lease_us": 1000000,
+            "play_delay_us": 250000,
+            "late_limit_us": 100000,
+            "prepare_cleanup_timeout_us": 100000
+          },
+          "place_route": "not run",
+          "timing_measured": false,
+          "physical_pins_assigned": false,
+          "limits": [
+            "YM writer, prepare, silence and audio_ok are explicit simulated adapters, not audio RTL.",
+            "Wire tests model open-drain SDA/SCL, finite clock stretching and input glitch rejection; not electrical compliance.",
+            "Model time can advance without simulating every oscillator cycle; no real-time performance or Fmax claim.",
+            "No USB/MIDI core, Si5351 startup manager, external YM bus/FM RX/audio or final external inhibit implementation.",
+            "Mapping includes timebase, I2C, request queue, session, event FIFO and status; excludes remaining full-board functions."
+          ],
+          "wall_seconds": 37.044
+        },
+        "clocked_ym": {
+          "tests": 10,
+          "all_passed": true,
+          "log_sha256": "b7ae029446496ec0c023155b2c2425a8844e94d84e8f0e93533e4d2bfe4d6ec1"
+        },
+        "usb_ym": {
+          "tests": 5,
+          "all_passed": true,
+          "log_sha256": "be30054d111089d82bee2742ecab61172c5fa67d684b56761590594ef3480c79"
+        },
+        "metadata": {
+          "tests": 3,
+          "all_passed": true,
+          "log_sha256": "5269388055ea088cacca2a77d32e43af4066472f7503cb67185ce9fa712ecb20"
+        },
+        "components": {
+          "midi": {
+            "result": "PASS MIDI planner: 768 C pitch/setup/note comparisons (702 valid); immutable BUSY, stale off, CC120/123, cable/channel filters, ownership blocking/tagging, release hold, timeout, disconnect/quarantine",
+            "log_sha256": "52f8fd41ea81eb0bd3324a024aa8da4f09a35749fcd2c558eefe9711943f7c0f"
+          },
+          "phy": {
+            "result": "PASS USB PHY validation: unACKed IN retry, delayed address, CRC/stuff/EOP/oversize rejection, aligned/staged MIDI backpressure/flush, CDC line coding/notification/bulk/ZLP, HALT/CLEAR, STALL recovery, SOF wrap/suspend/resume, VBUS; smoke: descriptors, address, configuration, CDC class, CDC bytes, MIDI packet and duplicate",
+            "log_sha256": "84d3d37b423eef0235787a8363bbd7c2a71c1a0b2b09ab9914c8635d1a461f95"
+          }
+        },
+        "boundary_regression": {
+          "before": "Intermediate relative-time pipeline accepts one late event; original unpipelined baseline is not implicated",
+          "before_expected_failure_log_sha256": "f0c54976a88f2f443a1577dda2266f4e098d467d1237478ca29d5cf9d0ffc720",
+          "after": "Current-time absolute deadline guard passes the added regression in the 25-test session suite"
+        },
+        "coverage": [
+          "Unchanged HOST/player, CRC/order, local full YsII control model, STOP/lease/replay and exact late boundary.",
+          "Si5351 startup/eight profiles, real-YM bus/serial/PCM/I2S synthetic fixture, audio/control clock loss and permit/fault safety.",
+          "USB ownership rejection, I2C STOP, blocked MIDI discard, detach/reset/suspend, explicit restart, I2C continuity, CDC backpressure STOP.",
+          "MIDI 768 pitch/setup/note C comparisons; USB CRC/stuff/EOP/retry/halt, staged-word backpressure/flush."
+        ],
+        "limits": [
+          "Behavioral peripherals and ideal USB host; not OS enumeration or physical sound acceptance.",
+          "Low-level PCM/RX/I2S/bus RTL did not change; prior 136 PCM cases, 54 RX cases and bus/I2S component runs are not repeated here."
+        ]
+      },
+      "reuse_scope": "All recorded sources, HOST and C oracle hashes checked; five USB integrated tests rerun using the matching previously compiled model",
+      "model_sha256": "821b283c1d24f89101b3b018f91a26f5473e6c30bbff9fd7b6036262230e4f58",
+      "rerun_log_sha256": "3b71b38f37046db84c7062f4b78a03acea78e5c7e788084bd7d057d6a9ed3b84"
+    }
+  },
+  "adapter_test": "PASS adapter: asynchronous inhibit, VBUS/I2C scope, synchronized STOP and 1kHz heartbeat (ideal clock/core stubs)",
+  "mapped_audit": {
+    "direct_pairs": {
+      "synchronizer_bits": 46,
+      "constant_synchronizer_bits": 5,
+      "registered_control_bits": 24,
+      "reset_release_bits": 12
+    },
+    "ff_cones": {
+      "ff_bits_checked": 6783,
+      "cross_domain_input_bits": 25,
+      "consumers": [
+        {
+          "cell": "core.board.gates_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "audio_clk",
+          "to": "clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "audio_clk",
+          "to": "clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "audio_clk",
+          "to": "clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "audio_clk",
+          "to": "clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "stable bundled configuration; captured only during stream reset"
+        },
+        {
+          "cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+          "port": "LSR",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "asynchronous assert into synchronous-release reset chain"
+        },
+        {
+          "cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+          "port": "LSR",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "asynchronous assert into synchronous-release reset chain"
+        },
+        {
+          "cell": "core.board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "clk",
+          "to": "audio_clk",
+          "reason": "two-flop input"
+        },
+        {
+          "cell": "core.gates_meta_TRELLIS_FF_Q",
+          "port": "DI",
+          "from": "audio_clk",
+          "to": "clk",
+          "reason": "two-flop input"
+        }
+      ],
+      "scope": "All mapped FF D/CE/LSR cones for listed cell types; primary async inputs and physical timing are outside this census",
+      "unclassified_crossings": 0,
+      "physical_cdc_signoff": false
+    },
+    "pll_pfd_hz": 12000000,
+    "pll_vco_hz": 576000000,
+    "pll_output_hz": 48000000
+  },
+  "synthesis": {
+    "num_wires": 17260,
+    "num_wire_bits": 35847,
+    "num_pub_wires": 17260,
+    "num_pub_wire_bits": 35847,
+    "num_ports": 38,
+    "num_port_bits": 49,
+    "num_memories": 0,
+    "num_memory_bits": 0,
+    "num_processes": 0,
+    "num_cells": 22422,
+    "num_submodules": 0,
+    "num_cells_by_type": {
+      "$_TBUF_": 15,
+      "$scopeinfo": 51,
+      "CCU2C": 2019,
+      "DP16KD": 5,
+      "EHXPLLL": 1,
+      "L6MUX21": 196,
+      "LUT4": 11558,
+      "MULT18X18D": 4,
+      "PFUMX": 1578,
+      "TRELLIS_DPR16X4": 211,
+      "TRELLIS_FF": 6783,
+      "TRELLIS_IO": 1
+    }
+  },
+  "routes": [
+    {
+      "clocks": {
+        "$glbnet$clk": {
+          "nominal_mhz": 48.0,
+          "required_mhz": 50.0,
+          "fmax_mhz": 50.771732330322266,
+          "nominal_margin_ns": 1.137334120740526,
+          "engineering_reserve_ns": 0.65,
+          "remaining_margin_ns": 0.48733412074052607
+        },
+        "$glbnet$audio49$TRELLIS_IO_IN": {
+          "nominal_mhz": 49.152,
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 88.23788452148438,
+          "nominal_margin_ns": 9.012051463214005,
+          "engineering_reserve_ns": 0.25,
+          "remaining_margin_ns": 8.762051463214005
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 2
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 1
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 17779
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 6783
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 49
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "synchronizer_routes": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.134000062942505,
+        "scope": "Listed synchronizer net routing with placed clocks; no MTBF, global clock skew or reset recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0479999780654907,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2569999694824219,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.8170000314712524,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7979999780654907,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.134000062942505,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7760000228881836,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3179999589920044,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2580000162124634,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2580000162124634,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2580000162124634,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.1990000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2580000162124634,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.13100004196167,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2580000162124634,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.527999997138977,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.5169999599456787,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2039999961853027,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.527999997138977,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4620000123977661,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4780000448226929,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7389999628067017,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5399999618530273,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5399999618530273,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7760000228881836,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5820000171661377,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "carrier_interstage_checks": 6,
+      "carrier_max_interstage_route_ns": 3.6679999828338623,
+      "pad_route_nets": [
+        {
+          "driver": "fm_sh$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.236999988555908,
+          "max_route_ns": 3.236999988555908
+        },
+        {
+          "driver": "fm_clk$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 5.39300012588501,
+          "max_route_ns": 5.39300012588501
+        },
+        {
+          "driver": "fm_sd$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 5.192999839782715,
+          "max_route_ns": 5.192999839782715
+        },
+        {
+          "driver": "config_button$tr_io",
+          "sink": "config_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.379000186920166,
+          "max_route_ns": 4.379000186920166
+        },
+        {
+          "driver": "si_scl$tr_io",
+          "sink": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.8940000534057617,
+          "max_route_ns": 1.8940000534057617
+        },
+        {
+          "driver": "si_sda$tr_io",
+          "sink": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.178999900817871,
+          "max_route_ns": 2.178999900817871
+        },
+        {
+          "driver": "ym_data[4]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 0.9649999737739563,
+          "max_route_ns": 0.9649999737739563
+        },
+        {
+          "driver": "ym_data[7]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.2430000305175781,
+          "max_route_ns": 1.2430000305175781
+        },
+        {
+          "driver": "ym_data[3]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 0.9779999852180481,
+          "max_route_ns": 0.9779999852180481
+        },
+        {
+          "driver": "ym_data[5]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+          "port": "M",
+          "min_route_ns": 0.9950000047683716,
+          "max_route_ns": 0.9950000047683716
+        },
+        {
+          "driver": "ym_data[6]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+          "port": "M",
+          "min_route_ns": 1.0579999685287476,
+          "max_route_ns": 1.0579999685287476
+        },
+        {
+          "driver": "ym_data[2]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+          "port": "M",
+          "min_route_ns": 1.319000005722046,
+          "max_route_ns": 1.319000005722046
+        },
+        {
+          "driver": "ym_data[1]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+          "port": "M",
+          "min_route_ns": 0.9779999852180481,
+          "max_route_ns": 0.9779999852180481
+        },
+        {
+          "driver": "ym_data[0]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+          "port": "M",
+          "min_route_ns": 0.9649999737739563,
+          "max_route_ns": 0.9649999737739563
+        },
+        {
+          "driver": "host_scl$tr_io",
+          "sink": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.6519999504089355,
+          "max_route_ns": 1.6519999504089355
+        },
+        {
+          "driver": "host_sda$tr_io",
+          "sink": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.313999891281128,
+          "max_route_ns": 2.313999891281128
+        },
+        {
+          "driver": "usb_dn_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.0209999084472656,
+          "max_route_ns": 2.0209999084472656
+        },
+        {
+          "driver": "usb_dp_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 2.184000015258789,
+          "max_route_ns": 2.184000015258789
+        },
+        {
+          "driver": "vbus_sense$tr_io",
+          "sink": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.569999933242798,
+          "max_route_ns": 3.569999933242798
+        },
+        {
+          "driver": "profile_switch[1]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.6160000562667847,
+          "max_route_ns": 1.6160000562667847
+        },
+        {
+          "driver": "profile_switch[0]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.8309999704360962,
+          "max_route_ns": 1.8309999704360962
+        },
+        {
+          "driver": "profile_switch[2]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 1.8680000305175781,
+          "max_route_ns": 1.8680000305175781
+        },
+        {
+          "driver": "stop_button$tr_io",
+          "sink": "stop_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 5.556000232696533,
+          "max_route_ns": 5.556000232696533
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_5",
+          "sink": "ym_data[7]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.9759999513626099,
+          "max_route_ns": 2.071000099182129
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.947000026702881,
+          "max_route_ns": 10.977999687194824
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.076000213623047,
+          "max_route_ns": 23.913000106811523
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_1",
+          "sink": "ym_data[6]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.7039999961853027,
+          "max_route_ns": 1.7990000247955322
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.6080000400543213,
+          "max_route_ns": 10.638999938964844
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 14.737000465393066,
+          "max_route_ns": 23.573999404907227
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_6",
+          "sink": "ym_data[5]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.7719999551773071,
+          "max_route_ns": 1.8669999837875366
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.9059998989105225,
+          "max_route_ns": 10.937000274658203
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.03499984741211,
+          "max_route_ns": 23.871999740600586
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_7",
+          "sink": "ym_data[4]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.934999942779541,
+          "max_route_ns": 2.0299999713897705
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.9570000171661377,
+          "max_route_ns": 10.98799991607666
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.086000442504883,
+          "max_route_ns": 23.92300033569336
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_2",
+          "sink": "ym_data[3]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.9859999418258667,
+          "max_route_ns": 2.0810000896453857
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 4.388999938964844,
+          "max_route_ns": 11.420000076293945
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.517999649047852,
+          "max_route_ns": 24.354999542236328
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_3",
+          "sink": "ym_data[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.9880000352859497,
+          "max_route_ns": 2.0829999446868896
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 4.375999927520752,
+          "max_route_ns": 11.406999588012695
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.505000114440918,
+          "max_route_ns": 24.341999053955078
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_4",
+          "sink": "ym_data[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 4.015999794006348,
+          "max_route_ns": 4.111000061035156
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 6.2230000495910645,
+          "max_route_ns": 13.253999710083008
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 17.351999282836914,
+          "max_route_ns": 26.18899917602539
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q",
+          "sink": "ym_data[0]$tr_io",
+          "port": "I",
+          "min_route_ns": 4.014999866485596,
+          "max_route_ns": 4.110000133514404
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 6.160999774932861,
+          "max_route_ns": 13.192000389099121
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 17.290000915527344,
+          "max_route_ns": 26.12700080871582
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 4.484000205993652,
+          "max_route_ns": 7.421999931335449
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 13.41100025177002,
+          "max_route_ns": 13.519000053405762
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 4.604000091552734,
+          "max_route_ns": 7.486999988555908
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 14.04699993133545,
+          "max_route_ns": 14.154999732971191
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 7.659999847412109,
+          "max_route_ns": 8.418999671936035
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 12.845999717712402,
+          "max_route_ns": 21.683000564575195
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 6.732999801635742,
+          "max_route_ns": 7.372000217437744
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 11.798999786376953,
+          "max_route_ns": 20.63599967956543
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.0840001106262207,
+          "max_route_ns": 8.182999610900879
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 12.315999984741211,
+          "max_route_ns": 21.117000579833984
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 4.951000213623047,
+          "max_route_ns": 10.569000244140625
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 7.085999965667725,
+          "max_route_ns": 8.052000045776367
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 14.996000289916992,
+          "max_route_ns": 23.83300018310547
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.1410000324249268,
+          "max_route_ns": 8.65999984741211
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 13.022000312805176,
+          "max_route_ns": 21.822999954223633
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.8450000286102295,
+          "max_route_ns": 9.253999710083008
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 12.996000289916992,
+          "max_route_ns": 21.797000885009766
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 2.5299999713897705,
+          "max_route_ns": 8.45199966430664
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 12.914999961853027,
+          "max_route_ns": 21.715999603271484
+        },
+        {
+          "driver": "usb_dp_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 2.8440001010894775,
+          "max_route_ns": 6.145999908447266
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.761000156402588,
+          "max_route_ns": 21.68600082397461
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.742000102996826,
+          "max_route_ns": 8.42199993133545
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 3.556999921798706,
+          "max_route_ns": 6.935999870300293
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 5.577000141143799,
+          "max_route_ns": 20.200000762939453
+        },
+        {
+          "driver": "usb_dn_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 2.8540000915527344,
+          "max_route_ns": 6.156000137329102
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.564000129699707,
+          "max_route_ns": 21.48900032043457
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.545000076293945,
+          "max_route_ns": 8.225000381469727
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.319000005722046,
+          "max_route_ns": 8.581000328063965
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 13.043999671936035,
+          "max_route_ns": 21.844999313354492
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 3.6449999809265137,
+          "max_route_ns": 6.927000045776367
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 11.390000343322754,
+          "max_route_ns": 20.19099998474121
+        },
+        {
+          "driver": "led_LUT4_Z",
+          "sink": "led[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 6.039000034332275,
+          "max_route_ns": 6.968999862670898
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 5.6539998054504395,
+          "max_route_ns": 7.992000102996826
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 8.451000213623047,
+          "max_route_ns": 14.843000411987305
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.lrck_TRELLIS_FF_Q",
+          "sink": "i2s_lrck$tr_io",
+          "port": "I",
+          "min_route_ns": 4.052000045776367,
+          "max_route_ns": 4.146999835968018
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.data_TRELLIS_FF_Q",
+          "sink": "i2s_data$tr_io",
+          "port": "I",
+          "min_route_ns": 4.056000232696533,
+          "max_route_ns": 4.151000022888184
+        },
+        {
+          "driver": "i2s_bclk_TRELLIS_FF_Q",
+          "sink": "i2s_bclk$tr_io",
+          "port": "I",
+          "min_route_ns": 3.8980000019073486,
+          "max_route_ns": 3.993000030517578
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 2.2209999561309814,
+          "max_route_ns": 2.3519999980926514
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 13.329999923706055,
+          "max_route_ns": 13.402000427246094
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 7.284999847412109,
+          "max_route_ns": 21.908000946044922
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.803000450134277,
+          "max_route_ns": 24.85700035095215
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 8.842000007629395,
+          "max_route_ns": 9.880000114440918
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 7.284999847412109,
+          "max_route_ns": 21.908000946044922
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.803000450134277,
+          "max_route_ns": 24.85700035095215
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 8.842000007629395,
+          "max_route_ns": 9.880000114440918
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 3.559999942779541,
+          "max_route_ns": 8.192999839782715
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 12.656000137329102,
+          "max_route_ns": 21.457000732421875
+        }
+      ],
+      "max_pad_net_route_ns": 26.18899917602539,
+      "i2s_budget": {
+        "bclk_hz": 3072000,
+        "half_period_ns": 162.76041666666666,
+        "route_spread_ns": 0.25300002098083496,
+        "external_allowance_ns": 16.25,
+        "setup_and_hold_design_margin_ns": 146.25741664568582,
+        "physical_signoff": false
+      },
+      "clock_tree": {
+        "clock_cells": [
+          {
+            "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+            "type": "DCCA",
+            "bel": "X67/Y0/TDCC0",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$audio49$TRELLIS_IO_IN",
+                "sink_count": 717,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "audio49$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "$gbuf$clk",
+            "type": "DCCA",
+            "bel": "X3/Y46/LDCC3",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$clk",
+                "sink_count": 6919,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "clocks.pll",
+            "type": "EHXPLLL",
+            "bel": "X2/Y94/EHXPLL_LL",
+            "ports": [
+              {
+                "port": "CLKOP",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKINTFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKI",
+                "net": "ref12$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              },
+              {
+                "port": "CLKFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "limit": "ECP5 nextpnr global distribution delay is zero in this model. Routed clock resources are checked; silicon clock skew/insertion, jitter and analog PLL lock are not signed off."
+      },
+      "seed": 1,
+      "files_sha256": {
+        "report.json": "df491d4cd35080e4dd96c3b1211ffc7ace2d657a1221c5c70b5cbd26b0ddc6d3",
+        "routed.json": "516a1598e2b166920db564d2a0baa3a0db16ff305fc2fdec777fe151f2911f21",
+        "run.log": "b1d24b9efe8481c16b0391b0632dc8da45f8de7ad0b2b3e720aa229e45db3b9d",
+        "clock-routes.json": "21aaada851eb748b407e8316905a75763e4bf721b7b226472c35069b012aac34"
+      }
+    },
+    {
+      "clocks": {
+        "$glbnet$clk": {
+          "nominal_mhz": 48.0,
+          "required_mhz": 50.0,
+          "fmax_mhz": 55.420082092285156,
+          "nominal_margin_ns": 2.789332634546806,
+          "engineering_reserve_ns": 0.65,
+          "remaining_margin_ns": 2.1393326345468062
+        },
+        "$glbnet$audio49$TRELLIS_IO_IN": {
+          "nominal_mhz": 49.152,
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 87.78860473632812,
+          "nominal_margin_ns": 8.954052044051624,
+          "engineering_reserve_ns": 0.25,
+          "remaining_margin_ns": 8.704052044051624
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 2
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 1
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 17779
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 6783
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 49
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "synchronizer_routes": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.4000000953674316,
+        "scope": "Listed synchronizer net routing with placed clocks; no MTBF, global clock skew or reset recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0479999780654907,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4390000104904175,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.7719999551773071,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3380000591278076,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.4000000953674316,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.2990000247955322,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4880000352859497,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4930000305175781,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0479999780654907,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4759999513626099,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5509999990463257,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.284999966621399,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.284999966621399,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.2990000247955322,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.906000018119812,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "carrier_interstage_checks": 6,
+      "carrier_max_interstage_route_ns": 3.3410000801086426,
+      "pad_route_nets": [
+        {
+          "driver": "fm_sh$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.368000030517578,
+          "max_route_ns": 3.368000030517578
+        },
+        {
+          "driver": "fm_clk$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 5.73199987411499,
+          "max_route_ns": 5.73199987411499
+        },
+        {
+          "driver": "fm_sd$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 5.396999835968018,
+          "max_route_ns": 5.396999835968018
+        },
+        {
+          "driver": "config_button$tr_io",
+          "sink": "config_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.002999782562256,
+          "max_route_ns": 4.002999782562256
+        },
+        {
+          "driver": "si_scl$tr_io",
+          "sink": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.7339999675750732,
+          "max_route_ns": 2.7339999675750732
+        },
+        {
+          "driver": "si_sda$tr_io",
+          "sink": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.4119999408721924,
+          "max_route_ns": 2.4119999408721924
+        },
+        {
+          "driver": "ym_data[4]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 0.9649999737739563,
+          "max_route_ns": 0.9649999737739563
+        },
+        {
+          "driver": "ym_data[7]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.253999948501587,
+          "max_route_ns": 1.253999948501587
+        },
+        {
+          "driver": "ym_data[3]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 0.9779999852180481,
+          "max_route_ns": 0.9779999852180481
+        },
+        {
+          "driver": "ym_data[5]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+          "port": "M",
+          "min_route_ns": 0.9950000047683716,
+          "max_route_ns": 0.9950000047683716
+        },
+        {
+          "driver": "ym_data[6]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+          "port": "M",
+          "min_route_ns": 1.25600004196167,
+          "max_route_ns": 1.25600004196167
+        },
+        {
+          "driver": "ym_data[2]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+          "port": "M",
+          "min_route_ns": 0.9649999737739563,
+          "max_route_ns": 0.9649999737739563
+        },
+        {
+          "driver": "ym_data[1]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+          "port": "M",
+          "min_route_ns": 0.9829999804496765,
+          "max_route_ns": 0.9829999804496765
+        },
+        {
+          "driver": "ym_data[0]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+          "port": "M",
+          "min_route_ns": 1.0579999685287476,
+          "max_route_ns": 1.0579999685287476
+        },
+        {
+          "driver": "host_scl$tr_io",
+          "sink": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.6770000457763672,
+          "max_route_ns": 1.6770000457763672
+        },
+        {
+          "driver": "host_sda$tr_io",
+          "sink": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.0179998874664307,
+          "max_route_ns": 2.0179998874664307
+        },
+        {
+          "driver": "usb_dn_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.2019999027252197,
+          "max_route_ns": 3.2019999027252197
+        },
+        {
+          "driver": "usb_dp_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 2.181999921798706,
+          "max_route_ns": 2.181999921798706
+        },
+        {
+          "driver": "vbus_sense$tr_io",
+          "sink": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.248000144958496,
+          "max_route_ns": 4.248000144958496
+        },
+        {
+          "driver": "profile_switch[1]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.48799991607666,
+          "max_route_ns": 2.48799991607666
+        },
+        {
+          "driver": "profile_switch[0]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.8240000009536743,
+          "max_route_ns": 1.8240000009536743
+        },
+        {
+          "driver": "profile_switch[2]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 2.2170000076293945,
+          "max_route_ns": 2.2170000076293945
+        },
+        {
+          "driver": "stop_button$tr_io",
+          "sink": "stop_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.664000034332275,
+          "max_route_ns": 4.664000034332275
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_5",
+          "sink": "ym_data[7]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.6979999542236328,
+          "max_route_ns": 1.7929999828338623
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.7260000705718994,
+          "max_route_ns": 10.074000358581543
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.576000213623047,
+          "max_route_ns": 20.920000076293945
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_1",
+          "sink": "ym_data[6]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.562999963760376,
+          "max_route_ns": 1.6579999923706055
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.63100004196167,
+          "max_route_ns": 9.979000091552734
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.480999946594238,
+          "max_route_ns": 20.825000762939453
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_6",
+          "sink": "ym_data[5]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.722000002861023,
+          "max_route_ns": 1.8170000314712524
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 4.23799991607666,
+          "max_route_ns": 10.586000442504883
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 14.088000297546387,
+          "max_route_ns": 21.43199920654297
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_7",
+          "sink": "ym_data[4]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.722000002861023,
+          "max_route_ns": 1.8170000314712524
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.99399995803833,
+          "max_route_ns": 10.342000007629395
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.843999862670898,
+          "max_route_ns": 21.187999725341797
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_2",
+          "sink": "ym_data[3]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.9880000352859497,
+          "max_route_ns": 2.0829999446868896
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 4.002999782562256,
+          "max_route_ns": 10.35099983215332
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.852999687194824,
+          "max_route_ns": 21.19700050354004
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_3",
+          "sink": "ym_data[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 2.009999990463257,
+          "max_route_ns": 2.1050000190734863
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 4.053999900817871,
+          "max_route_ns": 10.402000427246094
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.904000282287598,
+          "max_route_ns": 21.24799919128418
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_4",
+          "sink": "ym_data[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 3.677999973297119,
+          "max_route_ns": 3.7730000019073486
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 5.901000022888184,
+          "max_route_ns": 12.24899959564209
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.75100040435791,
+          "max_route_ns": 23.094999313354492
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q",
+          "sink": "ym_data[0]$tr_io",
+          "port": "I",
+          "min_route_ns": 3.634000062942505,
+          "max_route_ns": 3.7290000915527344
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 5.8979997634887695,
+          "max_route_ns": 12.246000289916992
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 15.748000144958496,
+          "max_route_ns": 23.091999053955078
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 5.590000152587891,
+          "max_route_ns": 6.896999835968018
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 13.684000015258789,
+          "max_route_ns": 13.791999816894531
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 5.836999893188477,
+          "max_route_ns": 7.406000137329102
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 14.192999839782715,
+          "max_route_ns": 14.300999641418457
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 8.093999862670898,
+          "max_route_ns": 8.359000205993652
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 11.798999786376953,
+          "max_route_ns": 19.14299964904785
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 7.440000057220459,
+          "max_route_ns": 12.092000007629395
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 15.593999862670898,
+          "max_route_ns": 22.937999725341797
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 3.1489999294281006,
+          "max_route_ns": 9.574000358581543
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 13.112000465393066,
+          "max_route_ns": 20.420000076293945
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 4.959000110626221,
+          "max_route_ns": 11.119000434875488
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 7.586999893188477,
+          "max_route_ns": 8.673999786376953
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 14.621000289916992,
+          "max_route_ns": 21.96500015258789
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 3.4690001010894775,
+          "max_route_ns": 9.66100025177002
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 13.199000358581543,
+          "max_route_ns": 20.506999969482422
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.325000047683716,
+          "max_route_ns": 8.911999702453613
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 12.449999809265137,
+          "max_route_ns": 19.757999420166016
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 2.503999948501587,
+          "max_route_ns": 8.272000312805176
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 11.8100004196167,
+          "max_route_ns": 19.118000030517578
+        },
+        {
+          "driver": "usb_dp_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 3.7709999084472656,
+          "max_route_ns": 7.005000114440918
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 6.581999778747559,
+          "max_route_ns": 16.631999969482422
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.583000183105469,
+          "max_route_ns": 6.591000080108643
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 2.8299999237060547,
+          "max_route_ns": 5.803999900817871
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 5.540999889373779,
+          "max_route_ns": 16.649999618530273
+        },
+        {
+          "driver": "usb_dn_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 3.749000072479248,
+          "max_route_ns": 7.388000011444092
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 6.531000137329102,
+          "max_route_ns": 16.58099937438965
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.5320000648498535,
+          "max_route_ns": 6.539999961853027
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 3.0980000495910645,
+          "max_route_ns": 9.564000129699707
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 13.10200023651123,
+          "max_route_ns": 20.40999984741211
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 4.4710001945495605,
+          "max_route_ns": 10.045000076293945
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 13.583000183105469,
+          "max_route_ns": 20.891000747680664
+        },
+        {
+          "driver": "led_LUT4_Z",
+          "sink": "led[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 5.480000019073486,
+          "max_route_ns": 6.531000137329102
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 6.2820000648498535,
+          "max_route_ns": 7.833000183105469
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 7.468999862670898,
+          "max_route_ns": 13.564000129699707
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.lrck_TRELLIS_FF_Q",
+          "sink": "i2s_lrck$tr_io",
+          "port": "I",
+          "min_route_ns": 4.381999969482422,
+          "max_route_ns": 4.4770002365112305
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.data_TRELLIS_FF_Q",
+          "sink": "i2s_data$tr_io",
+          "port": "I",
+          "min_route_ns": 4.013999938964844,
+          "max_route_ns": 4.109000205993652
+        },
+        {
+          "driver": "i2s_bclk_TRELLIS_FF_Q",
+          "sink": "i2s_bclk$tr_io",
+          "port": "I",
+          "min_route_ns": 4.039999961853027,
+          "max_route_ns": 4.135000228881836
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 2.0139999389648438,
+          "max_route_ns": 2.1449999809265137
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 13.001999855041504,
+          "max_route_ns": 13.074000358581543
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 9.864999771118164,
+          "max_route_ns": 22.55699920654297
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 12.151000022888184,
+          "max_route_ns": 26.468000411987305
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.57800006866455,
+          "max_route_ns": 11.737000465393066
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 9.864999771118164,
+          "max_route_ns": 22.55699920654297
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 12.151000022888184,
+          "max_route_ns": 26.468000411987305
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.57800006866455,
+          "max_route_ns": 11.737000465393066
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 3.634000062942505,
+          "max_route_ns": 8.491000175476074
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 12.029000282287598,
+          "max_route_ns": 19.336999893188477
+        }
+      ],
+      "max_pad_net_route_ns": 26.468000411987305,
+      "i2s_budget": {
+        "bclk_hz": 3072000,
+        "half_period_ns": 162.76041666666666,
+        "route_spread_ns": 0.4630002975463867,
+        "external_allowance_ns": 16.25,
+        "setup_and_hold_design_margin_ns": 146.04741636912027,
+        "physical_signoff": false
+      },
+      "clock_tree": {
+        "clock_cells": [
+          {
+            "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+            "type": "DCCA",
+            "bel": "X67/Y0/TDCC0",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$audio49$TRELLIS_IO_IN",
+                "sink_count": 717,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "audio49$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "$gbuf$clk",
+            "type": "DCCA",
+            "bel": "X3/Y46/LDCC3",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$clk",
+                "sink_count": 6919,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "clocks.pll",
+            "type": "EHXPLLL",
+            "bel": "X2/Y94/EHXPLL_LL",
+            "ports": [
+              {
+                "port": "CLKOP",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKINTFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKI",
+                "net": "ref12$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              },
+              {
+                "port": "CLKFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "limit": "ECP5 nextpnr global distribution delay is zero in this model. Routed clock resources are checked; silicon clock skew/insertion, jitter and analog PLL lock are not signed off."
+      },
+      "seed": 2,
+      "files_sha256": {
+        "report.json": "5371665f1c3770110e47452e8b1cbfc4de8a8e57f4d8f1e91edd7e1c2d025802",
+        "routed.json": "a45cfaecfeda37d46f137eaa25df2ff12bd68d4fdae921904781e08867f24f8f",
+        "run.log": "ffac99aa4dba1fab4e296d8237a6601bde99aff2c530b7a76294b5104aa78be3",
+        "clock-routes.json": "21aaada851eb748b407e8316905a75763e4bf721b7b226472c35069b012aac34"
+      }
+    },
+    {
+      "clocks": {
+        "$glbnet$clk": {
+          "nominal_mhz": 48.0,
+          "required_mhz": 50.0,
+          "fmax_mhz": 54.054054260253906,
+          "nominal_margin_ns": 2.3333334039052325,
+          "engineering_reserve_ns": 0.65,
+          "remaining_margin_ns": 1.6833334039052326
+        },
+        "$glbnet$audio49$TRELLIS_IO_IN": {
+          "nominal_mhz": 49.152,
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 86.1623306274414,
+          "nominal_margin_ns": 8.739052190829089,
+          "engineering_reserve_ns": 0.25,
+          "remaining_margin_ns": 8.489052190829089
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 2
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 1
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 17779
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 6783
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 49
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "synchronizer_routes": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.4079999923706055,
+        "scope": "Listed synchronizer net routing with placed clocks; no MTBF, global clock skew or reset recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4789999723434448,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.74399995803833,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.753000020980835,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.6030000448226929,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5180000066757202,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.4079999923706055,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4780000448226929,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.1990000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.1990000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.1990000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4759999513626099,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0160000324249268,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2139999866485596,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2039999961853027,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2139999866485596,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2039999961853027,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0160000324249268,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "core.board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5509999990463257,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5579999685287476,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "core.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5579999685287476,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "core.board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5180000066757202,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8680000305175781,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7799999713897705,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "core.usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "core.board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "carrier_interstage_checks": 6,
+      "carrier_max_interstage_route_ns": 3.4040000438690186,
+      "pad_route_nets": [
+        {
+          "driver": "fm_sh$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.7880001068115234,
+          "max_route_ns": 3.7880001068115234
+        },
+        {
+          "driver": "fm_clk$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 5.71999979019165,
+          "max_route_ns": 5.71999979019165
+        },
+        {
+          "driver": "fm_sd$tr_io",
+          "sink": "core.board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 5.1570000648498535,
+          "max_route_ns": 5.1570000648498535
+        },
+        {
+          "driver": "config_button$tr_io",
+          "sink": "config_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.331999778747559,
+          "max_route_ns": 4.331999778747559
+        },
+        {
+          "driver": "si_scl$tr_io",
+          "sink": "core.board.clocks.master.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.687999963760376,
+          "max_route_ns": 1.687999963760376
+        },
+        {
+          "driver": "si_sda$tr_io",
+          "sink": "core.board.clocks.master.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.6110000610351562,
+          "max_route_ns": 2.6110000610351562
+        },
+        {
+          "driver": "ym_data[4]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.2410000562667847,
+          "max_route_ns": 1.2410000562667847
+        },
+        {
+          "driver": "ym_data[7]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.0329999923706055,
+          "max_route_ns": 1.0329999923706055
+        },
+        {
+          "driver": "ym_data[3]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 0.9779999852180481,
+          "max_route_ns": 0.9779999852180481
+        },
+        {
+          "driver": "ym_data[5]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+          "port": "M",
+          "min_route_ns": 0.9950000047683716,
+          "max_route_ns": 0.9950000047683716
+        },
+        {
+          "driver": "ym_data[6]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+          "port": "M",
+          "min_route_ns": 1.2130000591278076,
+          "max_route_ns": 1.2130000591278076
+        },
+        {
+          "driver": "ym_data[2]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+          "port": "M",
+          "min_route_ns": 1.2480000257492065,
+          "max_route_ns": 1.2480000257492065
+        },
+        {
+          "driver": "ym_data[1]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+          "port": "M",
+          "min_route_ns": 1.0579999685287476,
+          "max_route_ns": 1.0579999685287476
+        },
+        {
+          "driver": "ym_data[0]$tr_io",
+          "sink": "core.board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+          "port": "M",
+          "min_route_ns": 1.065000057220459,
+          "max_route_ns": 1.065000057220459
+        },
+        {
+          "driver": "host_scl$tr_io",
+          "sink": "core.board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.006999969482422,
+          "max_route_ns": 2.006999969482422
+        },
+        {
+          "driver": "host_sda$tr_io",
+          "sink": "core.board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.125,
+          "max_route_ns": 2.125
+        },
+        {
+          "driver": "usb_dn_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 2.2839999198913574,
+          "max_route_ns": 2.2839999198913574
+        },
+        {
+          "driver": "usb_dp_rx$tr_io",
+          "sink": "core.usb_device.rx_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 1.9500000476837158,
+          "max_route_ns": 1.9500000476837158
+        },
+        {
+          "driver": "vbus_sense$tr_io",
+          "sink": "core.usb_device.vbus_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 3.693000078201294,
+          "max_route_ns": 3.693000078201294
+        },
+        {
+          "driver": "profile_switch[1]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 1.7489999532699585,
+          "max_route_ns": 1.7489999532699585
+        },
+        {
+          "driver": "profile_switch[0]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_1",
+          "port": "M",
+          "min_route_ns": 2.678999900817871,
+          "max_route_ns": 2.678999900817871
+        },
+        {
+          "driver": "profile_switch[2]$tr_io",
+          "sink": "profile_meta_TRELLIS_FF_Q_2",
+          "port": "M",
+          "min_route_ns": 1.8020000457763672,
+          "max_route_ns": 1.8020000457763672
+        },
+        {
+          "driver": "stop_button$tr_io",
+          "sink": "stop_meta_TRELLIS_FF_Q",
+          "port": "M",
+          "min_route_ns": 4.745999813079834,
+          "max_route_ns": 4.745999813079834
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_5",
+          "sink": "ym_data[7]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.6239999532699585,
+          "max_route_ns": 1.718999981880188
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.88700008392334,
+          "max_route_ns": 9.241000175476074
+        },
+        {
+          "driver": "ym_data[7]$tr_io$invert_T",
+          "sink": "ym_data[7]$tr_io",
+          "port": "T",
+          "min_route_ns": 11.357000350952148,
+          "max_route_ns": 19.400999069213867
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_1",
+          "sink": "ym_data[6]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.3910000324249268,
+          "max_route_ns": 1.4859999418258667
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.937999963760376,
+          "max_route_ns": 9.291999816894531
+        },
+        {
+          "driver": "ym_data[6]$tr_io$invert_T",
+          "sink": "ym_data[6]$tr_io",
+          "port": "T",
+          "min_route_ns": 11.407999992370605,
+          "max_route_ns": 19.45199966430664
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_6",
+          "sink": "ym_data[5]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.722000002861023,
+          "max_route_ns": 1.8170000314712524
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.5460000038146973,
+          "max_route_ns": 8.899999618530273
+        },
+        {
+          "driver": "ym_data[5]$tr_io$invert_T",
+          "sink": "ym_data[5]$tr_io",
+          "port": "T",
+          "min_route_ns": 11.015999794006348,
+          "max_route_ns": 19.059999465942383
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_7",
+          "sink": "ym_data[4]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.6640000343322754,
+          "max_route_ns": 1.7589999437332153
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.171999931335449,
+          "max_route_ns": 8.526000022888184
+        },
+        {
+          "driver": "ym_data[4]$tr_io$invert_T",
+          "sink": "ym_data[4]$tr_io",
+          "port": "T",
+          "min_route_ns": 10.642000198364258,
+          "max_route_ns": 18.68600082397461
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_2",
+          "sink": "ym_data[3]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.4780000448226929,
+          "max_route_ns": 1.5729999542236328
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.7119998931884766,
+          "max_route_ns": 9.065999984741211
+        },
+        {
+          "driver": "ym_data[3]$tr_io$invert_T",
+          "sink": "ym_data[3]$tr_io",
+          "port": "T",
+          "min_route_ns": 11.182000160217285,
+          "max_route_ns": 19.22599983215332
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_3",
+          "sink": "ym_data[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 1.5570000410079956,
+          "max_route_ns": 1.6519999504089355
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 3.621000051498413,
+          "max_route_ns": 8.975000381469727
+        },
+        {
+          "driver": "ym_data[2]$tr_io$invert_T",
+          "sink": "ym_data[2]$tr_io",
+          "port": "T",
+          "min_route_ns": 11.090999603271484,
+          "max_route_ns": 19.135000228881836
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q_4",
+          "sink": "ym_data[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 3.2309999465942383,
+          "max_route_ns": 3.3259999752044678
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 5.497000217437744,
+          "max_route_ns": 10.85099983215332
+        },
+        {
+          "driver": "ym_data[1]$tr_io$invert_T",
+          "sink": "ym_data[1]$tr_io",
+          "port": "T",
+          "min_route_ns": 12.967000007629395,
+          "max_route_ns": 21.01099967956543
+        },
+        {
+          "driver": "core.board.real_ym.ym_data_out_TRELLIS_FF_Q",
+          "sink": "ym_data[0]$tr_io",
+          "port": "I",
+          "min_route_ns": 3.11899995803833,
+          "max_route_ns": 3.2139999866485596
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 5.570000171661377,
+          "max_route_ns": 10.923999786376953
+        },
+        {
+          "driver": "ym_data[0]$tr_io$invert_T",
+          "sink": "ym_data[0]$tr_io",
+          "port": "T",
+          "min_route_ns": 13.039999961853027,
+          "max_route_ns": 21.083999633789062
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 5.171000003814697,
+          "max_route_ns": 6.543000221252441
+        },
+        {
+          "driver": "si_sda$tr_io$invert_T",
+          "sink": "si_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 14.121999740600586,
+          "max_route_ns": 14.229999542236328
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 5.510000228881836,
+          "max_route_ns": 6.807000160217285
+        },
+        {
+          "driver": "si_scl$tr_io$invert_T",
+          "sink": "si_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 13.99899959564209,
+          "max_route_ns": 14.107000350952148
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 8.21500015258789,
+          "max_route_ns": 9.086000442504883
+        },
+        {
+          "driver": "host_sda$tr_io$invert_T",
+          "sink": "host_sda$tr_io",
+          "port": "T",
+          "min_route_ns": 11.776000022888184,
+          "max_route_ns": 19.81999969482422
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 7.943999767303467,
+          "max_route_ns": 12.019000053405762
+        },
+        {
+          "driver": "host_scl$tr_io$invert_T",
+          "sink": "host_scl$tr_io",
+          "port": "T",
+          "min_route_ns": 14.708999633789062,
+          "max_route_ns": 22.753000259399414
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.8499999046325684,
+          "max_route_ns": 7.377999782562256
+        },
+        {
+          "driver": "ym_wr_n_LUT4_Z",
+          "sink": "ym_wr_n$tr_io",
+          "port": "I",
+          "min_route_ns": 10.104000091552734,
+          "max_route_ns": 18.11199951171875
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 4.914000034332275,
+          "max_route_ns": 10.251999855041504
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 7.533999919891357,
+          "max_route_ns": 8.710000038146973
+        },
+        {
+          "driver": "ym_reset_n_LUT4_Z",
+          "sink": "ym_reset_n$tr_io",
+          "port": "I",
+          "min_route_ns": 12.942000389099121,
+          "max_route_ns": 20.986000061035156
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.884000062942505,
+          "max_route_ns": 7.414000034332275
+        },
+        {
+          "driver": "ym_rd_n_LUT4_Z",
+          "sink": "ym_rd_n$tr_io",
+          "port": "I",
+          "min_route_ns": 10.140000343322754,
+          "max_route_ns": 18.148000717163086
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.1489999294281006,
+          "max_route_ns": 7.103000164031982
+        },
+        {
+          "driver": "ym_cs_n_LUT4_Z",
+          "sink": "ym_cs_n$tr_io",
+          "port": "I",
+          "min_route_ns": 9.824000358581543,
+          "max_route_ns": 17.832000732421875
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 2.119999885559082,
+          "max_route_ns": 6.729000091552734
+        },
+        {
+          "driver": "ym_a0_LUT4_Z",
+          "sink": "ym_a0$tr_io",
+          "port": "I",
+          "min_route_ns": 9.454999923706055,
+          "max_route_ns": 17.46299934387207
+        },
+        {
+          "driver": "usb_dp_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 3.5,
+          "max_route_ns": 7.2210001945495605
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 6.1570000648498535,
+          "max_route_ns": 16.660999298095703
+        },
+        {
+          "driver": "usb_dp_tx$tr_io$invert_T",
+          "sink": "usb_dp_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.723999977111816,
+          "max_route_ns": 6.270999908447266
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 3.365000009536743,
+          "max_route_ns": 3.7769999504089355
+        },
+        {
+          "driver": "usb_dp_bias$tr_io$invert_T",
+          "sink": "usb_dp_bias$tr_io",
+          "port": "T",
+          "min_route_ns": 5.5879998207092285,
+          "max_route_ns": 14.51099967956543
+        },
+        {
+          "driver": "usb_dn_tx_$_TBUF__Y_A_LUT4_Z",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "I",
+          "min_route_ns": 3.6040000915527344,
+          "max_route_ns": 7.324999809265137
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 6.105999946594238,
+          "max_route_ns": 16.610000610351562
+        },
+        {
+          "driver": "usb_dn_tx$tr_io$invert_T",
+          "sink": "usb_dn_tx$tr_io",
+          "port": "T",
+          "min_route_ns": 5.672999858856201,
+          "max_route_ns": 6.21999979019165
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 2.8440001010894775,
+          "max_route_ns": 7.75
+        },
+        {
+          "driver": "translator_oe_n_LUT4_Z",
+          "sink": "translator_oe_n$tr_io",
+          "port": "I",
+          "min_route_ns": 10.454999923706055,
+          "max_route_ns": 18.46299934387207
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 4.414999961853027,
+          "max_route_ns": 9.343999862670898
+        },
+        {
+          "driver": "translator_dir_LUT4_Z",
+          "sink": "translator_dir$tr_io",
+          "port": "I",
+          "min_route_ns": 12.069999694824219,
+          "max_route_ns": 20.077999114990234
+        },
+        {
+          "driver": "led_LUT4_Z",
+          "sink": "led[2]$tr_io",
+          "port": "I",
+          "min_route_ns": 5.565999984741211,
+          "max_route_ns": 6.705999851226807
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 6.241000175476074,
+          "max_route_ns": 8.404999732971191
+        },
+        {
+          "driver": "led_PFUMX_Z_BLUT_LUT4_Z",
+          "sink": "led[1]$tr_io",
+          "port": "I",
+          "min_route_ns": 8.300999641418457,
+          "max_route_ns": 13.895000457763672
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.lrck_TRELLIS_FF_Q",
+          "sink": "i2s_lrck$tr_io",
+          "port": "I",
+          "min_route_ns": 4.290999889373779,
+          "max_route_ns": 4.386000156402588
+        },
+        {
+          "driver": "core.board.real_ym.backend.audio.tx.data_TRELLIS_FF_Q",
+          "sink": "i2s_data$tr_io",
+          "port": "I",
+          "min_route_ns": 4.039999961853027,
+          "max_route_ns": 4.135000228881836
+        },
+        {
+          "driver": "i2s_bclk_TRELLIS_FF_Q",
+          "sink": "i2s_bclk$tr_io",
+          "port": "I",
+          "min_route_ns": 4.553999900817871,
+          "max_route_ns": 4.64900016784668
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 1.8009999990463257,
+          "max_route_ns": 1.9320000410079956
+        },
+        {
+          "driver": "heartbeat_LUT4_Z",
+          "sink": "heartbeat$tr_io",
+          "port": "I",
+          "min_route_ns": 14.335000038146973,
+          "max_route_ns": 14.406999588012695
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 7.689000129699707,
+          "max_route_ns": 20.790000915527344
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.777000427246094,
+          "max_route_ns": 23.895999908447266
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "dac_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 8.960000038146973,
+          "max_route_ns": 10.208000183105469
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 7.689000129699707,
+          "max_route_ns": 20.790000915527344
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 10.777000427246094,
+          "max_route_ns": 23.895999908447266
+        },
+        {
+          "driver": "dac_allow_LUT4_Z",
+          "sink": "line_allow$tr_io",
+          "port": "I",
+          "min_route_ns": 8.960000038146973,
+          "max_route_ns": 10.208000183105469
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 3.2269999980926514,
+          "max_route_ns": 7.8480000495910645
+        },
+        {
+          "driver": "arm_request_LUT4_Z",
+          "sink": "arm_request$tr_io",
+          "port": "I",
+          "min_route_ns": 10.574000358581543,
+          "max_route_ns": 18.582000732421875
+        }
+      ],
+      "max_pad_net_route_ns": 23.895999908447266,
+      "i2s_budget": {
+        "bclk_hz": 3072000,
+        "half_period_ns": 162.76041666666666,
+        "route_spread_ns": 0.6090002059936523,
+        "external_allowance_ns": 16.25,
+        "setup_and_hold_design_margin_ns": 145.901416460673,
+        "physical_signoff": false
+      },
+      "clock_tree": {
+        "clock_cells": [
+          {
+            "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+            "type": "DCCA",
+            "bel": "X67/Y0/TDCC0",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$audio49$TRELLIS_IO_IN",
+                "sink_count": 717,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "audio49$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$audio49$TRELLIS_IO_IN",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "$gbuf$clk",
+            "type": "DCCA",
+            "bel": "X3/Y46/LDCC3",
+            "ports": [
+              {
+                "port": "CLKO",
+                "net": "$glbnet$clk",
+                "sink_count": 6919,
+                "model_min_ns": 0.0,
+                "model_max_ns": 0.0,
+                "sinks": []
+              },
+              {
+                "port": "CLKI",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "cell": "clocks.pll",
+            "type": "EHXPLLL",
+            "bel": "X2/Y94/EHXPLL_LL",
+            "ports": [
+              {
+                "port": "CLKOP",
+                "net": "clk",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "$gbuf$clk",
+                    "port": "CLKI",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKINTFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              },
+              {
+                "port": "CLKI",
+                "net": "ref12$TRELLIS_IO_IN",
+                "sink_count": 1,
+                "model_min_ns": 0.25,
+                "model_max_ns": 0.25,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKI",
+                    "model_route_ns": 0.25
+                  }
+                ]
+              },
+              {
+                "port": "CLKFB",
+                "net": "clocks.feedback",
+                "sink_count": 1,
+                "model_min_ns": 0.15000000596046448,
+                "model_max_ns": 0.15000000596046448,
+                "sinks": [
+                  {
+                    "cell": "clocks.pll",
+                    "port": "CLKFB",
+                    "model_route_ns": 0.15000000596046448
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "limit": "ECP5 nextpnr global distribution delay is zero in this model. Routed clock resources are checked; silicon clock skew/insertion, jitter and analog PLL lock are not signed off."
+      },
+      "seed": 3,
+      "files_sha256": {
+        "report.json": "f5b8971454db3995d2b209ef97504e07a0591df2678ce0050423ec4ba9611792",
+        "routed.json": "d1c0a4b6a2af92f42fcdedca57fcf68d2e17d5015e3b26bb5daaf697c5081c22",
+        "run.log": "fa8a0680d921b1c1fbecc02d3896af96c632ae58bc60226ab0d59b6191ea3553",
+        "clock-routes.json": "21aaada851eb748b407e8316905a75763e4bf721b7b226472c35069b012aac34"
+      }
+    }
+  ],
+  "physical_io_allocated": true,
+  "global_clocks_routed": true,
+  "bitstream_generated": false,
+  "hardware_programmed": false,
+  "hardware_tested": false,
+  "usb_electrical_compliance": false,
+  "limits": [
+    "Global distribution is physically routed but its delay is zero in the pinned nextpnr ECP5 model: no silicon clock insertion/skew proof.",
+    "Pad-net route bounds and I2S setup/hold design budget include explicit external allowances, not characterized pad/translator/PCB/DAC/USB timing.",
+    "PLL ratio/PFD/VCO checked statically; lock, jitter, frequency accuracy and reset recovery/removal require physical/vendor validation.",
+    "No blanket false paths, asynchronous-group cut, OOC, timing-allow-fail or ignored timing loop option.",
+    "USB IDs cafe:4001 are model-only; defaults remain detached. US2 VBUS isolation/sense, hardware supervisor and external mute/translator circuits are required.",
+    "Existing HOST/wire format unchanged. STOP/lease/ownership/detach evidence is digital-model verification; F1 hardware acceptance remains pending."
+  ],
+  "wall_seconds": 241.902
+}

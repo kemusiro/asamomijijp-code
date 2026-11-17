@@ -27,6 +27,59 @@
 - C版USB-MIDI1.0のクラス処理と記述子マクロは、固定コミットのTinyUSB（MIT）を利用する。
   上流を変更せずリンクし、UF2配布ZIPに既存のLICENSE-TINYUSB.txtを同梱する。
 
+- `simulation-jt03/`はPC上の機能検証用。JT12/JT03とJT49（Jose Tejada Gomez）は
+  GPL-3.0-or-later。上流は`core-lock.json`の固定版を別途取得し、Gitへベンダー化しない。
+  独自ラッパー`revc_jt03.v`とC++ハーネス`simulator.cpp`、RTLをリンクした
+  シミュレーターもGPL-3.0-or-laterとして扱う。全文は同ディレクトリの
+  `LICENSE-GPL-3.0.txt`。独立したPythonツールはMIT。楽曲・生成音声には適用しない。
+  Verilator・FFmpeg・NumPy・SciPyは別途導入する検証ツールで、バイナリやライブラリを同梱しない。
+
+- `synthesis-jt03/jt03_fit_probe.v`もGPL-3.0-or-laterのJT03用ラッパー。
+  合成・配置配線スクリプトと判定テストはMIT。GPL全文は
+  `simulation-jt03/LICENSE-GPL-3.0.txt`を参照する。
+  Yosys・nextpnr・IceStormは別途導入し、固定した版とSHAを検証記録へ残す。
+
+- `fpga-jt03-minimal/`のRTLとVerilator用C++テストはGPL-3.0-or-later。
+  `simulation-jt03`と同じ固定版JT03/JT49を利用する。GPL全文は
+  `simulation-jt03/LICENSE-GPL-3.0.txt`。独自Pythonツール／テストはMIT。
+  同期FIFO・Grayポインター・SPI・I2S・安全停止は独自の試作RTLであり、
+  楽曲データや第三者のサンプル音声をRTL／検証コードへ埋め込まない。
+
+- `fpga-standalone/`の独自I2C／frame／session／FIFO RTL、C++試験、Python検証はMIT。
+  既存C版のMITプロトコル実装を照合元として使い、GPLのJT03ラッパーを取り込まない。
+  LUNA（BSD-3-Clause）はUSB実装の候補資料への参照のみで、現時点では依存の追加・
+  ソース／生成物の取り込みはしていない。導入時に上流版と表示義務を記録する。
+
+- F1 USB PHY/SIEはavakar/usbcorevのcommit
+  `8f799bb9f188f0266ff7926fdc93fad0fc754eae`を固定する。
+  元のLICENSE（No-notice MIT License）全文と無改変ソース、ファイルSHAを
+  `fpga-standalone/vendor/usbcorev/`に保持する。このvendor部分を本プロジェクトのMITへ置換しない。
+  `tools/prepare_usbcore.py`がSHA照合後、build出力コピーへだけ
+  `patches/f1-validation.patch`を適用する。変更内容・検証・上流参照は
+  `fpga-standalone/USB.md`。独自class／MIDI／console RTL・試験・ツールはMIT。
+  upstream READMEにある第三者開発ボードの文言は来歴であり、F1の対応board保証ではない。
+  USB VID/PIDの使用権や電気規格への適合を、ソースのライセンスから導かない。
+
+- `fpga-standalone/check_pnr.py`は外部のnextpnr-ecp5／Project Trellisのdevice遅延モデルを
+  使用する。評価に用いたOSS CAD Suite配布物は`toolchain-pnr-lock.json`で版・archive SHAを
+  固定し、別途取得する。binary／chip databaseはGitへ取り込まない。
+  nextpnrはISC、Project TrellisのlibtrellisはISC、databaseはCC0の各上流表示に従う。
+  配布物のライセンスをそのまま保持し、独自のRTL／Python検証は従来どおりMITとする。
+
+- F1のULX3S 85F端子事実はemard/ulx3s commit
+  `6a92cec6b177191c5b0f80e260013a1f8ec147dd`のv3.0.8回路図・LPF・manualを参照する。
+  上流Copyright (c) 2016-2018 EMARDと、基板ロゴ保持条項を含む元の許諾文を
+  `fpga-standalone/boards/ulx3s/UPSTREAM-LICENSE.md`に保持する。
+  回路図PDF／基板CAD一式は取り込まない。独自boardラッパー・検証はMIT。
+
+- `hardware/ym2203-fpga-board/carrier-f1/`の回路・KiCad symbol・生成器・検査は独自MIT。
+  ICのdatasheet、ULX3Sの固定版回路図は部品のpin／電気条件の参照資料で、PDFや図版を取り込まない。
+  KiCad本体・公式footprintは外部インストールを参照し、公式library素材を同梱しない。
+  Diamond準備用Tclは公式User GuideのAPIを参照した独自script。
+  Lattice Diamond／Synplifyのbinary、device library、文書を同梱しない。利用時は各社のlicenseに従う。
+  解析bundleにもプロジェクトMIT・USB上流・ULX3S来歴の許諾表示を保持する。
+
+
 ## P2 revision 2.1 carrier review A (2026-11-15)
 
 - Pimoroni PGA2350公式回路図・pinout・寸法図とArduino UNO Rev3e CADは、

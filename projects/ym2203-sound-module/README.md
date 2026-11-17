@@ -25,13 +25,67 @@ G/Hを含む旧設計とRev C実機受入は保存する。
 秋月調達優先の4ノブ・encoder・1.54インチLCD・64音色EEPROM保存・USB CDC JSON取得の仕様と接続済み回路図。
 ERC0、32接点/159pad照合、保存等13モデル試験。購入小計3,160円（基板等別）。
 回路図review A/Bと開口付きPCBは保存。review Bの[開口なし2層PCB](hardware/ym2203-fpga-board/editor-shield-review-b/pcb-review-b/README.md)へ更新し、
-ERC/DRC/未配線/回路図差分0、166padと32嵌合座標を照合。LCD・シールド外形とUNO座標は維持。JではDIP・STOP・TESTを右側へ移し、音源基板との間隔は最小11.225mm。
+ERC/DRC/未配線/回路図差分0、166padと32嵌合座標を照合。LCD・シールド外形とUNO座標は維持。
+JではDIP・STOP・TESTを右側へ移し、音源基板との間隔は最小11.225mm。
 シールド下面の余裕は寸法モデル。現物嵌合・P2 firmware・実機受入は未完。
 
 [一体型revision 2.1](hardware/ym2203-fpga-board/PGA2350-STANDALONE.md)と
 [配線済みレビューB](hardware/ym2203-fpga-board/carrier-p2/pcb-review-b/README.md)は旧設計として保存する。
 そのERC/DRCや電源・機構検討の結果は交換式設計へ転用しない。
 [P1 PGA2350＋FPGA案](hardware/ym2203-fpga-board/PGA2350-PROTOTYPE.md)も比較資料として保持する。
+
+以下は旧[F1：FPGA単独制御](hardware/ym2203-fpga-board/FPGA-STANDALONE.md)での実装・検証記録。
+比較・再利用資産として保持し、MCUへ移すP2の合格とは扱わない。
+
+[最初のRTL](fpga-standalone/README.md)としてRev C v2の要求フレーム検査を実装し、
+576入力試験、既存Cパーサーとの380件照合、ECP5向けmappingを確認した。
+[I2C制御RTL](fpga-standalone/SESSION.md)では、4要求buffer・v2 session・1024件FIFO・
+STOP／リースを追加し、セッション23試験とSDA/SCL線モデル8試験が合格した。
+既存HOST／playerは無変更で、ローカルYs II全123137イベントも制御モデル上で順序・CRCを確認した。
+[実YMバス・音声RTL](fpga-standalone/AUDIO.md)をI2C制御へ接続した。
+固定4MHzのFM受信・C互換PCM変換・I2S、reset／prime・全声停止とclock監視を追加し、
+PCM 136ケース・73,440サンプル照合、RX 54ケース、結合7試験とECP5 mappingを検証した。
+[Si5351A起動・可変clock RTL](fpga-standalone/CLOCKS.md)も接続した。
+設定値生成、専用I2C・readback・PLL監視、停止中の8profile切替と可変SRCを追加した。
+既存HOST／v2の4MHz互換を保ち、非4MHz時の誤再生を拒否する。可変選択の公開APIは未追加。
+[USB CDC・USB-MIDI RTL](fpga-standalone/USB.md)を接続した。
+理想USB bit列・C版MIDI照合・MIDI／I2C排他・USB切断時消音をモデル検証する。
+既存HOST／playerは無変更。VID/PIDは未割当てで既定USB detached、OS列挙／実機はこれから。
+[USB統合ECP5内部配置配線](fpga-standalone/TIMING.md)を追加した。
+LFE5U-85F／grade6の3 seed OOCで48MHz control／USB・49.152MHz音声の内部setupを評価する。
+時刻判定・MIDI取出しを段階化し、HOST／制御権／切断時停止を回帰する。
+このOOC記録に続き、[ULX3S 85F v3.0.8の物理実装](fpga-standalone/BOARD.md)を具体化した。
+49 padのLPF、専用PLL入力、48MHz USB/controlと49.152MHz音声のglobal配線を追加する。
+12MHz基準発振器をキャリアに追加し、USB VBUSの給電分離・検出を接続条件にした。
+通常P&Rの推定setupとIO配線予算を検証し、USB電気適合・実clock skew・F1実機は別工程。
+[ULX3Sキャリア回路図レビューA](hardware/ym2203-fpga-board/carrier-f1/README.md)へ、
+US2 VBUSの分離・検出、電源監視と独立watchdog・最終mute、YM／DAC／clock回路を具体化した。
+[Diamond追加STAの準備](fpga-standalone/boards/ulx3s/diamond/README.md)に持ち運び用ソースと制約確認手順を追加。
+KiCad ERC0とモデル／準備検査を確認し、WindowsでのDiamond実行とF1実機は未実施。
+[API互換計画](fpga-standalone/API-COMPATIBILITY.md)はWebLab・Rev C・F1で共通ホストAPIを目指す。
+現在のwireの差分を明示し、まずF1とRev CのI2C v2／既存HOST player互換から進める。
+[主案の入口](hardware/ym2203-fpga-board/README.md)でPico維持M1等の比較資料を保持する。
+Rev Cの既存資産と受入記録を維持する。F1評価用の物理pinを割り当て、キャリア回路図はレビューAまで具体化し、購入・PCB・実機受入は未完。
+
+## JT03によるPC上の音源シミュレーション（比較・再利用資産）
+
+現在のP2も実YM2203を使う。以下のJT03試験は別案の比較・再利用資産として保持する。
+
+[JT03シミュレーター](simulation-jt03/README.md)で、既存の4 MHz WYM1をVerilator上の
+YM2203互換RTLへ入力し、全曲WAV・FM/SSG分離音・旧Rev C録音とのA/Bを生成できる。
+固定版JT03/JT49のRTLは変更せず、ラッパーでSSG分周を明示する。
+楽曲・音声・上流キャッシュはGit管理外。RTL機能試験と次期FPGAの合成・実機受入は区別する。
+GPL-3.0-or-laterのシミュレーターは本プロジェクトのMIT既定からの例外。
+
+[JT03のUP5K向け合成・配置配線](synthesis-jt03/README.md)も確認した。
+音源＋観測回路は3,062/5,280 LC、EBR3、DSP1。16 MHzは3配置で合格し、
+内部Fmax推定は23.736～23.954 MHz。24 MHz／49.152 MHzは未達。
+通信・FIFO・I2S・CDC・安全停止を含む最終システムの収容と実機動作は次段階。
+
+[2クロック・SPI/FIFO/I2Sの最小RTL](fpga-jt03-minimal/README.md)を追加した。
+4,850/5,280 LC、EBR7、DSP2で収まり、16 MHz／49.152 MHzの両制約を3配置で確認。
+CRC付きSPI、イベント時刻実行、音声CDC、I2S、STOP／リース／異常時消音をRTL試験した。
+固定4 MHz／48 kHzの試作であり、Pico向けSPIファームウェア・ローダー・物理ピンと実機受入は次段階。
 
 ## 現在地と最終目標
 
@@ -195,3 +249,9 @@ FM＋SSGのモノラルを左右のライン出力へ複製する。AMS-22でPC�
 Ys II等のBIN/VGM/VGZ、曲入りUF2、曲入りZIPはローカル再生テスト専用。
 このリポジトリには含めない。今後の実機テストデータも`local-test-data/`へ置く。
 WYM1仕様の参照コピーと曲の性能統計は、楽曲イベントそのものの公開とは区別する。
+
+## P2 revision 2.1 配線候補レビューB
+
+[電源・ソケット・PCBの検討](hardware/ym2203-fpga-board/carrier-p2/pcb-review-b/README.md)を追加。
+164部品・164×124mm・4層の配線済み候補をKiCadで検査する。UNOヘッダー座標、47 GPIO、既存HOSTは維持。
+電流と温度の実測、ソケットの実物嵌合、製造条件確定、P2ファームウェア移植と実機受入は未完。

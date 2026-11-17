@@ -28,8 +28,14 @@ JではDIP・ベースSTOP/TESTを音源基板の右へ移し、音源から最�
 シールド下面のSMT空間4.5mm等は条件付きモデル。現物嵌合・P2 firmware・実機受入は未完。
 旧[review I](clean-sheet-pcb-review-i/README.md)と、その上に載るシールドBの過去の検査記録も保存する。
 
-F1/JT03等の比較資料も保存するが、RTL・PCシミュレーターは今回のP2設計一式に含めない。
-現行のCAD検証はreview Jと開口なしシールドBの手順を使用する。
+## F1の実装・検証資産（保持）
+
+[F1 FPGA単独案](FPGA-STANDALONE.md)と[RTL](../../fpga-standalone/README.md)は
+再利用・比較資産として保持する。FPGAを使わないP2へ検証結果を流用しない。
+F1のI2C／音声／可変clock／USB RTL、ULX3S 85Fの49padと3 seed通常P&R、
+[165部品のキャリア回路図レビューA](carrier-f1/README.md)、
+[Diamond準備](../../fpga-standalone/boards/ulx3s/diamond/README.md)の記録を残す。
+F1のDiamond実行・PCB・実機受入も未完。
 
 ## 比較資料と過去の検討
 
@@ -43,12 +49,13 @@ M1のJSON内statusは検討時点の記録であり、現在の主案P2はactive
 | [実装・小型化案](ASSEMBLY-AND-SIZE.md) | 直接実装と片面SMT・部分委託の比較 |
 | [Economic BOM](ECONOMIC-BOM.md) | 5枚、業者SMT、2 mm以上の自前実装 |
 | [H1](HAND-SOLDERED.md) | 1.27 mm以上、Si5351・DACもモジュール |
-| JT03音源内蔵RTL（別変更） | 実YMをFPGA内音源へ置換、固定4 MHz相当 |
+| [JT03音源内蔵RTL](../../fpga-jt03-minimal/README.md) | 実YMをFPGA内音源へ置換、固定4 MHz相当 |
 | [旧算術検証一覧](verification/README.md) | 旧条件の入力・算術・資料整合性 |
 
 Rev Cの承認済みGPIO・UF2・受入結果は維持する。
 P2の回路図、製造用BOM、PCB、部品購入はまだ確定していない。
 
+I2C制御部分の[実装・検証結果](../../fpga-standalone/SESSION.md)を追加した。
 
 ## P2 revision 2.1 回路図レビューA（保存履歴）
 
