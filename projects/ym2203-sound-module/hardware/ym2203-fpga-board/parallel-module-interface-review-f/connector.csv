@@ -1,0 +1,41 @@
+pin,row,column,signal,parallel_alias,kind,direction,parallel_direction,voltage_v,base_gpio_proposed,default,note
+1,1,A,V5_MODULE,,power,base_to_module,,5,,,
+2,1,B,GND,,ground,none,,0,,,
+3,2,A,V5_MODULE,,power,base_to_module,,5,,,
+4,2,B,GND,,ground,none,,0,,,
+5,3,A,MOD_SPI_SCK,BUS_D2,digital,base_to_module,bidirectional_capable_profile_may_be_write_only,3.3,2,,"SPI role preserved in SPI mode; parallel alias exclusive, not two independent wires"
+6,3,B,GND,,ground,none,,0,,,
+7,4,A,MOD_SPI_MOSI,BUS_D3,digital,base_to_module,bidirectional_capable_profile_may_be_write_only,3.3,3,,"SPI role preserved in SPI mode; parallel alias exclusive, not two independent wires"
+8,4,B,MOD_SPI_MISO,BUS_D0,digital,module_to_base,bidirectional_capable_profile_may_be_write_only,3.3,0,,"SPI role preserved in SPI mode; parallel alias exclusive, not two independent wires"
+9,5,A,MOD_SPI_CS_N,BUS_D1,digital,base_to_module,bidirectional_capable_profile_may_be_write_only,3.3,1,,"SPI role preserved in SPI mode; parallel alias exclusive, not two independent wires"
+10,5,B,GND,,ground,none,,0,,,
+11,6,A,MOD_ENABLE,,digital,base_to_module,,3.3,34,,
+12,6,B,MOD_ALERT_N,,digital,module_to_base,,3.3,4,,
+13,7,A,MOD_I2S_BCK,,digital,base_to_module,,3.3,27,,
+14,7,B,GND,,ground,none,,0,,,
+15,8,A,MOD_I2S_LRCK,,digital,base_to_module,,3.3,28,,
+16,8,B,GND,,ground,none,,0,,,
+17,9,A,MOD_I2S_DATA,,digital,module_to_base,,3.3,16,,
+18,9,B,GND,,ground,none,,0,,,
+19,10,A,SOUND_CLK0,,digital,base_to_module,,3.3,,,
+20,10,B,GND,,ground,none,,0,,,
+21,11,A,SOUND_CLK1,,digital,base_to_module,,3.3,,,
+22,11,B,GND,,ground,none,,0,,,
+23,12,A,SOUND_CLK2,,digital,base_to_module,,3.3,,,
+24,12,B,GND,,ground,none,,0,,,
+25,13,A,V3V3_MODULE_AUX,,power,base_to_module,,3.3,,,base auxiliary LDO only; 100mA design budget; never tie another regulator output
+26,13,B,GND,,ground,none,,0,,,
+27,14,A,AUDIO_L,,analog,module_to_base,,,,,mono uses L only; base AC coupling and common ADC
+28,14,B,AUDIO_R,,analog,module_to_base,,,,,NC for mono; never short two active outputs
+29,15,A,MOD_I2C_SDA,,digital,bidirectional,,3.3,42,,"open drain; board side of JP_SDA; shared internal I2C1, not external HOST"
+30,15,B,MOD_I2C_SCL,,digital,bidirectional,,3.3,43,,base master; open drain incl. bounded clock stretching; board side of JP_SCL
+31,16,A,GND,,ground,none,,0,,,
+32,16,B,KEY,,key,none,,,,,
+33,17,A,BUS_D4,BUS_D4,digital,profile_defined,bidirectional_capable_profile_may_be_write_only,3.3,30,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+34,17,B,BUS_D5,BUS_D5,digital,profile_defined,bidirectional_capable_profile_may_be_write_only,3.3,31,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+35,18,A,BUS_D6,BUS_D6,digital,profile_defined,bidirectional_capable_profile_may_be_write_only,3.3,32,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+36,18,B,BUS_D7,BUS_D7,digital,profile_defined,bidirectional_capable_profile_may_be_write_only,3.3,33,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+37,19,A,MOD_CTL0,,digital,profile_defined,,3.3,6,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+38,19,B,MOD_CTL1,,digital,profile_defined,,3.3,7,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+39,20,A,MOD_CTL2,,digital,profile_defined,,3.3,17,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias
+40,20,B,MOD_CTL3,,digital,profile_defined,,3.3,18,high_impedance_until_profile_initialized,parallel data/control or serial-mode auxiliary GPIO; module role-specific 3.3V bias

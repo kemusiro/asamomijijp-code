@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "revision": "3.6-pcb-review-i",
+  "board_mm": {
+    "base": [
+      194,
+      142,
+      1.6
+    ],
+    "module": [
+      100,
+      100,
+      1.6
+    ]
+  },
+  "module_origin_on_base_mm": [
+    90,
+    38
+  ],
+  "shield_reserved_xy_mm": [
+    7,
+    7,
+    83,
+    67
+  ],
+  "module_xy_mm": [
+    90,
+    38,
+    190,
+    138
+  ],
+  "xy_gap_mm": 7,
+  "connector": {
+    "positions": 40,
+    "key": 6,
+    "base_side": "F.Cu female",
+    "module_side": "B.Cu male",
+    "female": "SSW-120-02-G-D",
+    "male": "TSW-120-07-G-D",
+    "female_nominal_mm": 8.51,
+    "male_insulator_mm": 2.54,
+    "male_mating_post_mm": 5.84,
+    "nominal_face_gap_mm": 11.05,
+    "analysis_min_face_gap_mm": 10.5,
+    "base_body_max_mm": 3,
+    "module_underside_max_mm": 4,
+    "minimum_cavity_clearance_mm": 3.5,
+    "standoffs": "Four insulating M3 supports with washers matched to actual seated gap; do not force spacers"
+  },
+  "mcu": {
+    "pga_origin_mm": [
+      98,
+      8
+    ],
+    "core_origin_mm": [
+      18,
+      66
+    ],
+    "individual_receptacles": 128,
+    "candidate": "Mill-Max0300-2-15-15-47-27-10-0",
+    "model_flange_max_mm": 2.032,
+    "model_hole_mm": 1.2,
+    "pad_mm": 1.9,
+    "pitch_mm": 2.54,
+    "relative_location_allowance_mm": 0.1,
+    "flange_gap_mm": 0.408,
+    "carrier_to_mcu_underside_jig_mm": 9.5,
+    "underside_component_limit_mm": 3.6,
+    "under_mcu_clearance_mm": 5.9,
+    "mcu_top_envelope_mm": 13.1,
+    "source_socket_underside_allowance_mm": 4,
+    "engagement_target_mm": [
+      3.5,
+      4.5
+    ],
+    "confirmation": "candidate dimensions/fit must be checked on supplier drawing and sample before order; old catalog URLs unavailable; do not cut closed receptacle cans"
+  },
+  "uno": {
+    "socket_nominal_mm": 8.51,
+    "shield_underside_limit_mm": 5,
+    "cavity_mm": 3.51,
+    "hole_without_screw": "H11",
+    "external_overhang": "not guaranteed beyond declared envelope",
+    "icsp_height_fit": "sample pending"
+  },
+  "ym": {
+    "dip_width_mm": 15.24,
+    "socket_chip_height_limit_mm": 11,
+    "removal_space_mm": 30
+  },
+  "total_above_base_top_envelope_mm": 25.75,
+  "base_bottom_standoff_min_mm": 8,
+  "physical_acceptance": false,
+  "scope": "conditional CAD geometry and assembly envelopes; no measured socket, FPC, shield or case fit"
+}

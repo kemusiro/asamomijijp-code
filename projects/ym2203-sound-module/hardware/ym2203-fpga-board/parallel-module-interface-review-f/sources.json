@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-17",
+  "inherited_audio_sources": "../analog-module-interface-review-e/sources.json",
+  "sources": [
+    {
+      "url": "https://amigan.yatho.com/AY-3-8910.pdf",
+      "publisher": "General Instrument original, archive",
+      "sections": [
+        "bus control truth table",
+        "AY-3-8910/12 electrical timing"
+      ],
+      "facts": [
+        "BC1=0 gives address100 and write110 in BDIR/BC2/BC1 order",
+        "write pulse has a maximum as well as minimum",
+        "AY-3-8910/12 clock range1..2MHz"
+      ],
+      "scope": "not automatically AY-3-8913 or every YM2149 variant"
+    },
+    {
+      "url": "https://computers.baffa.tec.br/pages/datasheet/76489.pdf",
+      "publisher": "TI original, archive",
+      "sections": [
+        "operation7",
+        "pin assignment8",
+        "switching characteristics"
+      ],
+      "facts": [
+        "8bit input, CE/WE and open-collector READY",
+        "D0 is named MSB in this document",
+        "load about32clock cycles"
+      ],
+      "scope": "SN76489AN only; other derivatives need separate checks"
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf",
+      "publisher": "Texas Instruments",
+      "sections": [
+        "features",
+        "description",
+        "function table"
+      ],
+      "facts": [
+        "dual supply1.65..5.5V",
+        "DIR/OE select transfer and high-Z",
+        "controls referenced to VCCA"
+      ],
+      "scope": "candidate for future readback, not mandatory for write-only PSG"
+    },
+    {
+      "url": "https://www.raspberrypi.com/documentation/pico-sdk/hardware.html",
+      "publisher": "Raspberry Pi",
+      "sections": [
+        "hardware_gpio",
+        "hardware_pio"
+      ],
+      "facts": [
+        "RP2350B48GPIO; each PIO instance addresses a32pin window"
+      ],
+      "design_choice": "split data map uses SIO, not a claimed single PIO OUT8"
+    },
+    {
+      "url": "https://datasheets.raspberrypi.com/rp2350/rp2350-datasheet.pdf",
+      "publisher": "Raspberry Pi",
+      "sections": [
+        "SIO GPIO_OUT and GPIO_HI_OUT"
+      ],
+      "facts": [
+        "GPIO0..31 and GPIO32..47 use separate output registers"
+      ],
+      "design_choice": "update both banks only with strobes inactive; control pins all below32"
+    },
+    {
+      "url": "https://www.samtec.com/products/ssw-120-02-g-d",
+      "publisher": "Samtec",
+      "facts": [
+        "40 positions,2 rows,2.54mm socket candidate"
+      ],
+      "fit_verified": false
+    },
+    {
+      "url": "https://www.samtec.com/products/tsw-120-07-g-d",
+      "publisher": "Samtec",
+      "facts": [
+        "40 positions,2 rows,2.54mm header candidate"
+      ],
+      "fit_verified": false
+    }
+  ],
+  "note": "Datasheets are linked, not vendored. Timing margins and module topology are design choices."
+}

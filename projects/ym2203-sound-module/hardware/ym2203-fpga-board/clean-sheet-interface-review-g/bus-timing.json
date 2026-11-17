@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "revision": "3.4-interface-review-g",
+  "scope": "protocol trace requirements, not actual GPIO implementation",
+  "ay38910": {
+    "clock_hz_candidate": 2000000,
+    "datasheet_ns": {
+      "address_setup_min": 400,
+      "address_hold_min": 100,
+      "write_setup_min": 50,
+      "write_hold_min": 100,
+      "write_pulse_min": 500,
+      "write_pulse_max": 10000
+    },
+    "candidate_ns": {
+      "setup": 1000,
+      "hold": 1000,
+      "address_pulse": 2000,
+      "write_pulse": 2000
+    },
+    "bc1_fixed": 0,
+    "idle_bdir_bc2_bc1": [
+      0,
+      0,
+      0
+    ],
+    "address_bdir_bc2_bc1": [
+      1,
+      0,
+      0
+    ],
+    "write_bdir_bc2_bc1": [
+      1,
+      1,
+      0
+    ],
+    "sequence": "BC1 stays0; BDIR low while BC2 changes; data setup; BDIR pulse; data hold",
+    "interrupt_rule": "bounded critical section during active write; >10us is invalid, not merely slow"
+  },
+  "sn76489an": {
+    "clock_hz_candidate": 3579545,
+    "load_clocks": 32,
+    "candidate_setup_ns": 1000,
+    "candidate_hold_ns": 1000,
+    "guard_us": 2,
+    "ready_deadline_us": 100,
+    "earliest_complete_formula": "ceil(32*1000000/actual_clock_hz)+guard_us",
+    "ready_high_before_minimum_delay_sufficient": false,
+    "complete_only_after_ready_high": true,
+    "STOP_waits_for_READY": false
+  },
+  "generic_read": {
+    "implemented": false,
+    "base_must_release_before_translator_B_to_A": true,
+    "translator_disable_during_direction_change": true,
+    "data_translation_candidate": "SN74LVC8T245 A=3.3V B=5V",
+    "OE_N_candidate": "CS_N",
+    "DIR_candidate": "RD_N",
+    "required_conditions": "only CS inactive during DIR changes; check IC chip-enable/read timing before adoption"
+  },
+  "pio_candidate": {
+    "parallel_instance": 0,
+    "data_gpio": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "control_gpio": [
+      8,
+      9,
+      10,
+      11
+    ],
+    "frequency_hz_candidate": 10000000,
+    "cycle_ns": 100,
+    "AY_write_pulse_cycles_candidate": 20,
+    "instruction_program_assembled": false,
+    "FIFO_underflow_must_stall_only_while_inactive": true,
+    "READY_wait_must_be_bounded": true,
+    "STOP_must_disable_SM_and_reclaim_outputs": true
+  }
+}

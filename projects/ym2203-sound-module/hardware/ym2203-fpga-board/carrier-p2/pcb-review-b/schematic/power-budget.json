@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "scope": "datasheet and dimensional review; NO bench measurements",
+  "loads": [
+    {
+      "load": "PGA2350 module incl.RP2350B/flash/idle PSRAM",
+      "rail": "V3V3",
+      "budget_ma": 180,
+      "basis": "design allocation;150MHz firmware current must be measured"
+    },
+    {
+      "load": "Si5351A core + CLK0 only",
+      "rail": "V3V3",
+      "budget_ma": 42,
+      "basis": "35mA core(3 outputs enabled) +5.6mA/output;CLK1/2 disabled;rounded up"
+    },
+    {
+      "load": "MCP23017 logic",
+      "rail": "V3V3",
+      "budget_ma": 3,
+      "basis": "design allowance, not a measured maximum"
+    },
+    {
+      "load": "RX +6 voice LEDs",
+      "rail": "V3V3",
+      "budget_ma": 14,
+      "basis": "seven sinks <=2mA; all on together"
+    },
+    {
+      "load": "DIP +STOP/TEST pullups",
+      "rail": "V3V3",
+      "budget_ma": 2.2,
+      "basis": "six10k pullups simultaneously low including tolerance"
+    },
+    {
+      "load": "HOST +panel I2C pullups",
+      "rail": "V3V3",
+      "budget_ma": 6.2,
+      "basis": "four2.2k pullups simultaneously low including tolerance"
+    },
+    {
+      "load": "level shifters,FM buffer,GPIO pulls",
+      "rail": "V3V3",
+      "budget_ma": 12,
+      "basis": "switching and bias allowance, not per-pin drive maximum"
+    },
+    {
+      "load": "PCM5102A DVDD +AVDD/CPVDD",
+      "rail": "V3_AUX",
+      "budget_ma": 45,
+      "basis": "13+32mA datasheet limits at48kHz1kHz -1dBFS"
+    },
+    {
+      "load": "UNO3V3 shield load",
+      "rail": "V3_AUX",
+      "budget_ma": 100,
+      "basis": "USER LOAD LIMIT; excluded from PGA regulator"
+    },
+    {
+      "load": "AUX regulator IQ and reserve",
+      "rail": "V3_AUX",
+      "budget_ma": 5,
+      "basis": "includes regulator quiescent current and pulldown allowance"
+    },
+    {
+      "load": "YM2203C and5V-domain reserve",
+      "rail": "V5_CARRIER",
+      "budget_ma": 150,
+      "basis": "YM datasheet120mA max, rounded to150 for clock/bus reserve"
+    },
+    {
+      "load": "analog mixer,mute and reset bias",
+      "rail": "V5_CARRIER",
+      "budget_ma": 15,
+      "basis": "design allowance"
+    },
+    {
+      "load": "optional UNO5V shield",
+      "rail": "V5_CARRIER",
+      "budget_ma": 100,
+      "basis": "JP5V OPEN default; USER LOAD LIMIT when fitted"
+    }
+  ],
+  "totals_ma": {
+    "V3V3": 259.4,
+    "V3_AUX": 150,
+    "V5_CARRIER": 265
+  },
+  "input_5v_budget_ma": 674.4,
+  "adapter_target_ma": 1500,
+  "module_regulator_rating_ma": 300,
+  "module_spare_ma": 40.6,
+  "aux_regulator_rating_ma": 500,
+  "aux_spare_ma": 350,
+  "thermal": {
+    "ambient_design_c": 30,
+    "vin_stress_v": 5.25,
+    "vout_stress_v": 3.2,
+    "module_ldo": "AP7366EA-33SN-7 / U-DFN2020-6; confirm purchased module revision",
+    "module_dissipation_w": 0.5318,
+    "module_reference_theta_ja_c_per_w": 46.2,
+    "module_reference_tj_c": 54.6,
+    "module_sensitivity_theta_c_per_w": 139,
+    "module_sensitivity_tj_c": 103.9,
+    "aux_ldo": "TLV75533PDBVR / DBV SOT-23-5",
+    "aux_dissipation_w": 0.3075,
+    "aux_reference_theta_ja_c_per_w": 231.1,
+    "aux_reference_tj_c": 101.1,
+    "qualification": "JEDEC thermal values do not describe the25.4mm PGA2350 module or final PCB; sensitivity calculation is not a guaranteed bound"
+  },
+  "hardware_accepted": false
+}

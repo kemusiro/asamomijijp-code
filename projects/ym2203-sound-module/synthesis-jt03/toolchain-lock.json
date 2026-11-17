@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "verified_platform": "macOS arm64",
+  "tools": {
+    "yosys": {
+      "reported_version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "binary_sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa",
+      "homebrew_package_version": "0.71",
+      "source_url": "https://github.com/YosysHQ/yosys/releases/download/v0.71/yosys.tar.gz",
+      "source_archive_sha256": "2ec7c2ee63bb9b4065d6d5fff2786a1455e834f90ede8eb1d47791153ebef2a5"
+    },
+    "nextpnr-ice40": {
+      "reported_version": "\"nextpnr-ice40\" -- Next Generation Place and Route (Version )",
+      "binary_sha256": "26e1963d2242ae49cc859275aff91e2df05acbf1541c1da3c1e3df2d37b55ccd",
+      "homebrew_package_version": "0.11.1_2",
+      "source_url": "https://github.com/YosysHQ/nextpnr/archive/refs/tags/nextpnr-0.11.1.tar.gz",
+      "source_archive_sha256": "2af682d94abf3f3e116f2fad36dc7db314fa93bfbb185e63619f2ec4f5fe40dc"
+    }
+  },
+  "icestorm": {
+    "homebrew_package_version": "1.1_1",
+    "source_tag": "v1.1",
+    "source_archive_sha256": "928dd541d15540a796a3d320122794d8d76acff90783de8c5747f613e474652f"
+  }
+}

@@ -1,0 +1,9 @@
+Board,Reference,Physical item,Quantity,Note
+base,MPGA,PGA2350 PIM722,1,64individual contacts separately
+base,MPGA,Mill-Max0300-2-15-15-47-27-10-0,64,1.20mm finishedhole;1.90mm pad;solder underside
+module,JCORE1..4,Core2350B0 noPSRAM,1,Different pin identity/orientation fromPGA
+module,JCORE1..4,Mill-Max0300-2-15-15-47-27-10-0,64,Do not substitute four rectangular2x08 sockets
+module,U12,YM2203C +40pin15.24mm ICsocket,1set,Socket footprint already represented byU12
+base,JMOD,SSW-116-02-G-D,1,Already represented inbase circuit BOM; blockpin32
+module,JMOD,TSW-116-07-G-D,1,Already represented inmodule BOM;BOTTOM;omitpin32
+stack,H5..8/H1..4,M3 insulating supports + height-adjust washers,4sets,Match actual seated11.05mm nominalfacegap; noforcedfit

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-18",
+  "scope": "native mutation regression and coordinate contracts; not hardware",
+  "native_regression_tests": 6,
+  "native_regression_failures": 0,
+  "electrical_contract_rejection_mutations": 12,
+  "stack_contract_rejection_mutations": 18,
+  "command": "python3 test_stack.py",
+  "passed": true
+}

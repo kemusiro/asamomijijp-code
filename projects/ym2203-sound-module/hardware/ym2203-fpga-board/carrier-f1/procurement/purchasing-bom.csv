@@ -1,0 +1,175 @@
+reference,schematic_value,footprint,qty_one_board,qty_five_boards,supplier,akizuki_code,selection,status,url,note
+JULX1,ULX3S J1 MATE,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,1,5,秋月電子通商,118147,2x20 pin socket 2.54mm vertical,秋月購入候補・基板間高さ確認,https://akizukidenshi.com/catalog/g/g118147/,縦型オスheaderをmodule側に取り付ける前提
+JULX2,ULX3S J2 MATE,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,1,5,秋月電子通商,118147,2x20 pin socket 2.54mm vertical,秋月購入候補・基板間高さ確認,https://akizukidenshi.com/catalog/g/g118147/,縦型オスheaderをmodule側に取り付ける前提
+JOLED,JOLED,Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは7pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+JHOST,JHOST,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは4pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+JVBUS,JVBUS,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは2pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+JPOWER,JPOWER,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは2pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+F1,PTC 1.1A hold,Fuse:Fuse_1812_4532Metric,1,5,DigiKey/Mouser等（候補）,,PTC 1.1A hold,購入保留・PTC型番確定,,1812、Ihold1.1A候補。負荷時抵抗と監視閾値の余裕を確定
+C1,100u 10V,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,5,秋月電子通商,105002,100μF16V 16MH5100MEFC6.3X5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g105002/,16V >= 指定10V、径6.3mm/pitch2.5mm、高さ5mm
+C2,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,113388,10μF25V B 2012 GRM21BB31E106KA73,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g113388/,同一2012。25V定格。DC bias下の実効容量を確認
+R1,47k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,47k 0.1%,他店調達候補・価格在庫未照合,,
+R2,68k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,68k 0.1%,他店調達候補・価格在庫未照合,,
+C3,100p C0G,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100p C0G,他店調達候補・価格在庫未照合,,
+U1,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,1,5,DigiKey/Mouser等（候補）,,SN74LVC1G17DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf,
+C4,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R3,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U2,TPS3808G01DBVR,Package_TO_SOT_SMD:SOT-23-6,1,5,DigiKey/Mouser等（候補）,,TPS3808G01DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/tps3808.pdf,
+R4,110k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,110k 0.1%,他店調達候補・価格在庫未照合,,
+R5,10k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+C5,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+U3,TPS3808G01DBVR,Package_TO_SOT_SMD:SOT-23-6,1,5,DigiKey/Mouser等（候補）,,TPS3808G01DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/tps3808.pdf,
+R6,66.5k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,66.5k 0.1%,他店調達候補・価格在庫未照合,,
+R7,10k 0.1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+C6,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+U4,MAX6369KA+T,Package_TO_SOT_SMD:SOT-23-8,1,5,DigiKey/Mouser等（候補）,,MAX6369KA+T,他店調達候補・価格在庫未照合,https://www.analog.com/media/en/technical-documentation/data-sheets/max6369-max6374.pdf,
+C7,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R8,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+JESTOP,JESTOP,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは2pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+R9,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R10,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U5,SN74LVC74APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,SN74LVC74APWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc74a.pdf,
+C8,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+U6,SN74LVC08APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,SN74LVC08APWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc08a.pdf,
+C9,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R11,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R12,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R13,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R14,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R15,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R16,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R17,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R18,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U7,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,1,5,DigiKey/Mouser等（候補）,,SN74LVC1G08DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,
+C10,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+Q1,MMBT3904LT1G,Package_TO_SOT_SMD:SOT-23,1,5,DigiKey/Mouser等（候補）,,MMBT3904LT1G,他店調達候補・価格在庫未照合,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,MMBT3904LT1Gを他店で調達。秋月105969は商品詳細で販売終了確認
+R19,4.7k,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,4.7k,他店調達候補・価格在庫未照合,,
+Q2,MMBT3904LT1G,Package_TO_SOT_SMD:SOT-23,1,5,DigiKey/Mouser等（候補）,,MMBT3904LT1G,他店調達候補・価格在庫未照合,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,MMBT3904LT1Gを他店で調達。秋月105969は商品詳細で販売終了確認
+R20,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R21,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R22,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R23,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U8,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,SN74LVC8T245PWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,
+U9,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,SN74LVC8T245PWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,
+C11,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C12,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C13,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C14,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C15,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C16,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+U10,SN74LVC1G04DBVR,Package_TO_SOT_SMD:SOT-23-5,1,5,DigiKey/Mouser等（候補）,,SN74LVC1G04DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc1g04.pdf,
+U11,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,1,5,DigiKey/Mouser等（候補）,,SN74LVC1G08DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,
+C17,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C18,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+Q3,MMBT3904LT1G,Package_TO_SOT_SMD:SOT-23,1,5,DigiKey/Mouser等（候補）,,MMBT3904LT1G,他店調達候補・価格在庫未照合,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,MMBT3904LT1Gを他店で調達。秋月105969は商品詳細で販売終了確認
+R24,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R25,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R26,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+Q4,MMBT3904LT1G,Package_TO_SOT_SMD:SOT-23,1,5,DigiKey/Mouser等（候補）,,MMBT3904LT1G,他店調達候補・価格在庫未照合,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,MMBT3904LT1Gを他店で調達。秋月105969は商品詳細で販売終了確認
+R27,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R28,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R29,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R30,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R31,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD0,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA0,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD1,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA1,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD2,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA2,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD3,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA3,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD4,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA4,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD5,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA5,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD6,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA6,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RD7,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RA7,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R32,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R33,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R34,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R35,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U12,YM2203C SOCKET,Package_DIP:DIP-40_W15.24mm_Socket,1,5,DigiKey/Mouser等（候補）,,YM2203C SOCKET,手持ち予備品または別途調達,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf,YM2203C IC本体。DIP40 socketは追加部材として別計上
+C19,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C20,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,113388,10μF25V B 2012 GRM21BB31E106KA73,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g113388/,同一2012。25V定格。DC bias下の実効容量を確認
+U13,Si5351A-B-GT,Package_SO:MSOP-10_3x3mm_P0.5mm,1,5,DigiKey/Mouser等（候補）,,Si5351A-B-GT,他店調達候補・価格在庫未照合,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,裸MSOP10 blank品。秋月AE-Si5351A-Bモジュールは現footprintへ載らない
+Y1,25MHz CL10pF +/-20ppm,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,1,5,DigiKey/Mouser等（候補）,,25MHz CL10pF +/-20ppm,購入保留・水晶仕様確定,,25MHz CL10pF、ESR/drive/footprintを確認してMPN確定
+C21,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C22,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R36,33,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,33,他店調達候補・価格在庫未照合,,
+R37,2.2k,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,2.2k,他店調達候補・価格在庫未照合,,
+R38,2.2k,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,2.2k,他店調達候補・価格在庫未照合,,
+U14,SN74LVC1T45DBVR,Package_TO_SOT_SMD:SOT-23-6,1,5,DigiKey/Mouser等（候補）,,SN74LVC1T45DBVR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf,
+C23,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C24,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R39,33,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,33,他店調達候補・価格在庫未照合,,
+R40,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+X1,ASV-12.000MHZ-EJ-T,Oscillator:Oscillator_SMD_Abracon_ASV-4Pin_7.0x5.1mm_HandSoldering,1,5,DigiKey/Mouser等（候補）,,ASV-12.000MHZ-EJ-T,購入保留・clock電気条件確認,https://abracon.com/Oscillators/ASV.pdf,候補MPN。P3の10–90% edge <=1ns等の確認未完。bufferの20–80%仕様と同一視しない
+U15,CDCLVC1102PWR,Package_SO:TSSOP-8_3x3mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,CDCLVC1102PWR,購入保留・clock電気条件確認,https://www.ti.com/lit/ds/symlink/cdclvc1102.pdf,候補MPN。P3の10–90% edge <=1ns等の確認未完。bufferの20–80%仕様と同一視しない
+C25,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C26,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R41,22,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,22,他店調達候補・価格在庫未照合,,
+U16,SN74LVC125APWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,SN74LVC125APWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/sn74lvc125a.pdf,
+C27,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R42,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R43,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R44,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R45,2.2k,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,2.2k,他店調達候補・価格在庫未照合,,
+R46,2.2k,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,2.2k,他店調達候補・価格在庫未照合,,
+FB1,BLM21PG601SN1 / 600R@100MHz,Inductor_SMD:L_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,BLM21PG601SN1 / 600R@100MHz,他店調達候補・価格在庫未照合,,
+U17,PCM5102APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1,5,DigiKey/Mouser等（候補）,,PCM5102APWR,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/pcm5102a.pdf,
+C28,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,114788,2.2μF25V X7R 2012 GRM21BR71E225KE11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g114788/,
+C29,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,114788,2.2μF25V X7R 2012 GRM21BR71E225KE11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g114788/,
+C30,1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,107549,1μF10V X7R 2012 CL21B105KPFNNNE,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g107549/,
+C31,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C32,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C33,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+C34,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,113388,10μF25V B 2012 GRM21BB31E106KA73,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g113388/,同一2012。25V定格。DC bias下の実効容量を確認
+C35,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,113388,10μF25V B 2012 GRM21BB31E106KA73,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g113388/,同一2012。25V定格。DC bias下の実効容量を確認
+R47,33,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,33,他店調達候補・価格在庫未照合,,
+R48,33,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,33,他店調達候補・価格在庫未照合,,
+R49,33,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,33,他店調達候補・価格在庫未照合,,
+R50,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+U18,MCP6022-I/SN,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,1,5,DigiKey/Mouser等（候補）,,MCP6022-I/SN,他店調達候補・価格在庫未照合,https://ww1.microchip.com/downloads/en/DeviceDoc/20001685E.pdf,SOIC8 /SN。秋月MCP6022-I/P DIP8は現footprintへ載らない
+C36,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+R51,10k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R52,10k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+C37,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,5,秋月電子通商,113388,10μF25V B 2012 GRM21BB31E106KA73,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g113388/,同一2012。25V定格。DC bias下の実効容量を確認
+R53,470,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,470,他店調達候補・価格在庫未照合,,
+C38,2.2n C0G,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,2.2n C0G,他店調達候補・価格在庫未照合,,
+CA0,4.7u bipolar 10V,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm,1,5,秋月電子通商,130140,4.7μF50V bipolar 50NXA4R7MEFC5X11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g130140/,50V >= 指定10V、無極性、径5mm/高さ11mm/pitch2mm。極性付き品へ置換しない
+RM0,100k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RL0,1k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111796,1kΩ ±0.1% 2012 RG2012N-102-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111796/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+CA1,4.7u bipolar 10V,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm,1,5,秋月電子通商,130140,4.7μF50V bipolar 50NXA4R7MEFC5X11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g130140/,50V >= 指定10V、無極性、径5mm/高さ11mm/pitch2mm。極性付き品へ置換しない
+RM1,100k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RL1,1k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111796,1kΩ ±0.1% 2012 RG2012N-102-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111796/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+CA2,4.7u bipolar 10V,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm,1,5,秋月電子通商,130140,4.7μF50V bipolar 50NXA4R7MEFC5X11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g130140/,50V >= 指定10V、無極性、径5mm/高さ11mm/pitch2mm。極性付き品へ置換しない
+RM2,100k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+RL2,1k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111796,1kΩ ±0.1% 2012 RG2012N-102-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111796/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+CA3,4.7u bipolar 10V,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm,1,5,秋月電子通商,130140,4.7μF50V bipolar 50NXA4R7MEFC5X11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g130140/,50V >= 指定10V、無極性、径5mm/高さ11mm/pitch2mm。極性付き品へ置換しない
+RM3,100k 1%,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R54,22k 1%,Resistor_SMD:R_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,22k 1%,他店調達候補・価格在庫未照合,,
+C39,47p C0G,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,47p C0G,他店調達候補・価格在庫未照合,,
+U19,CD74HC4053M,Package_SO:SOIC-16_3.9x9.9mm_P1.27mm,1,5,DigiKey/Mouser等（候補）,,CD74HC4053M,他店調達候補・価格在庫未照合,https://www.ti.com/lit/ds/symlink/cd74hc4053.pdf,
+C40,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,5,DigiKey/Mouser等（候補）,,100n X7R 10V,他店調達候補・価格在庫未照合,,0805/2012 X7R >=10Vを他店調達。秋月117576は販売終了。1608/0603は現footprintと別サイズ
+Q5,MMBT3904LT1G,Package_TO_SOT_SMD:SOT-23,1,5,DigiKey/Mouser等（候補）,,MMBT3904LT1G,他店調達候補・価格在庫未照合,https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf,MMBT3904LT1Gを他店で調達。秋月105969は商品詳細で販売終了確認
+R55,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R56,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R57,10k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111797,10kΩ ±0.1% 2012 RG2012-N-103-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111797/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+C41,4.7u bipolar 10V,Capacitor_THT:C_Radial_D5.0mm_H11.0mm_P2.00mm,1,5,秋月電子通商,130140,4.7μF50V bipolar 50NXA4R7MEFC5X11,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g130140/,50V >= 指定10V、無極性、径5mm/高さ11mm/pitch2mm。極性付き品へ置換しない
+R58,100k,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111798,100kΩ ±0.1% 2012 RG2012N-104-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111798/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+JPOT,JPOT,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは6pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+R59,100,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111795,100Ω ±0.1% 2012 RG2012N-101-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111795/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+R60,100,Resistor_SMD:R_0805_2012Metric,1,5,秋月電子通商,111795,100Ω ±0.1% 2012 RG2012N-101-B-T5,秋月商品ページで購入候補確認,https://akizukidenshi.com/catalog/g/g111795/,同一2012サイズの±0.1%品へ統一する購入案。回路図の精度要求を満たす
+JLINE,JLINE,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,5,秋月電子通商,100167,1x40 pin header PH-1x40SG (cut into seven headers),秋月・1x40を切断して共用,https://akizukidenshi.com/catalog/g/g100167/,このheaderは3pin。7個のheader計26pinを1本から切断。注文数は別order CSV参照
+EXTRA-ULX3S,ULX3S 85F PCB v3.0.8,module,1,5,Crowd Supply,,LFE5U-85F-6BG381C搭載ULX3S 85F,購入前にPCB revisionと納期確認,https://www.crowdsupply.com/radiona/ulx3s,検索掲載$275+海外送料$18。実PCB revisionは販売ページだけでは確定せず。12F/25F/45Fと混同しない
+EXTRA-YM-SOCKET,DIP40 socket 600mil 2227MC-40-06,offboard/module,1,5,秋月電子通商,100034,DIP40 socket 600mil 2227MC-40-06,追加部材,https://akizukidenshi.com/catalog/g/g100034/,IC本体U12とは別
+EXTRA-VOLUME,Dual A10k volume JH16T2A103L20KC,offboard/module,1,5,秋月電子通商,116478,Dual A10k volume JH16T2A103L20KC,追加部材,https://akizukidenshi.com/catalog/g/g116478/,JPOTへ配線。6端子と回転方向確認
+EXTRA-MODULE-HEADERS,2x20 male header PH-2x20SG/RH; conditional module part,offboard/module,2,10,秋月電子通商,100080,2x20 male header PH-2x20SG/RH; conditional module part,条件付き追加部材,https://akizukidenshi.com/catalog/g/g100080/,縦型オス2x20がmoduleに未実装のときだけ追加
+EXTRA-D51,STPS2L30AF,offboard/module,1,5,秋月優先、適合品未確定,,STPS2L30AF,仕様・現物確認後手配,,module改造用。bridge切断とdiode向き・pad適合確認後に手配。D8は既実装状況確認、D9/D52は開放
+EXTRA-STOP,Normally-closed stop switch / fitted loop,offboard/module,1,5,秋月優先、適合品未確定,,Normally-closed stop switch / fitted loop,仕様・現物確認後手配,,JESTOPへ配線。接点開放で停止
+EXTRA-POWER,5V regulated supply >=1.5A,offboard/module,1,5,秋月優先、適合品未確定,,5V regulated supply >=1.5A,仕様・現物確認後手配,,型番保留。PTC後4.95..5.05Vとrippleの成立確認。JPOWERへ5Vを入れるだけでは保証しない
+EXTRA-CABLING,HOST/USB/VBUS/OLED/jumpers/standoffs/line-out,offboard/module,1,5,秋月優先、適合品未確定,,HOST/USB/VBUS/OLED/jumpers/standoffs/line-out,仕様・現物確認後手配,,手持ち品優先。ULX3S USB connector形状と基板間高さを現物確認。line-out jackを使う場合はJLINEから外付け配線
+EXTRA-PCB,Carrier PCB,offboard/module,1,5,秋月優先、適合品未確定,,Carrier PCB,仕様・現物確認後手配,,未レイアウト・未発注。現レビューAから製造しない

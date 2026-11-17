@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "variant": "P1",
+  "scope": "architecture documentation and JSON consistency only",
+  "checks_passed": [
+    "active P1 entry and local links",
+    "PGA2350+FPGA architecture and unassigned module/pins",
+    "Rev C v2 unchanged external contract",
+    "USB device CDC+MIDI and VBUS isolation design",
+    "RX LED triggers,50ms,and buffered-playback limitation",
+    "prototype monitoring simplification and independent-stop limitation",
+    "separate external/internal lease and priority STOP requirement",
+    "implementation/timing/hardware flags false",
+    "no trailing whitespace; final newline"
+  ],
+  "local_links_checked": 79,
+  "sources_sha256": {
+    "README.md": "56c30089e2f4182088bea246606598552c401da8d6f28985dc408f2d8b13381f",
+    "hardware/ym2203-fpga-board/README.md": "1502ea40c7a475395139ee7c1026bd9a9c481e1316b9601b2f300327e3729d54",
+    "hardware/ym2203-fpga-board/active-plan.json": "feb581965c70e5e1cdbcae251ad19f06d5ab48d1fc040003506324734e8db077",
+    "hardware/ym2203-fpga-board/FPGA-STANDALONE.md": "64275674b104c865d993d75ba393fcef1619f6a1c408f2aa9868dd5a5e8b46ac",
+    "fpga-standalone/README.md": "b1f23a01d643b9c1d1df3cc4c88cc3d6f176e63412ae097f4e1f1bd1c6655727",
+    "hardware/ym2203-fpga-board/PGA2350-PROTOTYPE.md": "98058a4b48ce8c5dd8f30c225b60b16510bbb730d5e5ad8bd01bc354f0307fe6",
+    "hardware/ym2203-fpga-board/pga2350-plan.json": "24d57784b1d882af63203ddfec23d937a6f18d0c9014bcb14d4fdad5e64a6726"
+  },
+  "not_run": [
+    "firmware build",
+    "RTL simulation",
+    "synthesis",
+    "place and route",
+    "schematic ERC",
+    "PCB DRC",
+    "hardware acceptance"
+  ],
+  "historical_reports_modified": false
+}

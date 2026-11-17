@@ -1,0 +1,10 @@
+{
+  "electrical_components": 164,
+  "footprints": 172,
+  "segments": 2250,
+  "vias": 160,
+  "layers": 4,
+  "reserved_ground_plane": "In1.Cu",
+  "native_pin_changes": false,
+  "hardware_accepted": false
+}

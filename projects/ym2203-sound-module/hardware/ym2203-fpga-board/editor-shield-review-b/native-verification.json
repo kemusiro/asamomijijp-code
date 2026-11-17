@@ -1,0 +1,10 @@
+{
+  "kicad": "10.0.5",
+  "components": 46,
+  "nets": 31,
+  "erc_violations": 0,
+  "netlist_matches": true,
+  "pcb_routed": false,
+  "firmware_implemented": false,
+  "hardware_accepted": false
+}

@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-18",
+  "unittest_tests": 9,
+  "passed": 9,
+  "power_cut_positions": 257,
+  "corruption_byte_positions": 256,
+  "slot_roundtrips": 64,
+  "scope": "PC byte-write/preset/register/pickup model only; no firmware/hardware tests"
+}

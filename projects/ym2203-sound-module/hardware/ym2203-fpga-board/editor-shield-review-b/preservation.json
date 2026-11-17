@@ -1,0 +1,8 @@
+{
+  "reference_files_sha256": {
+    "clean-sheet-pcb-review-i/base/circuit.json": "8d34fb9943358cb93d8bd179769aeb9078ec7b1d683e3c25725e40e6b6a9c37a",
+    "clean-sheet-pcb-review-i/base/p2-base-i.kicad_pcb": "8a0457e3ddfd739ae821c5f650c80131d524258e4efb845be47015d8f09f1eb6",
+    "clean-sheet-pcb-review-i/module/p2-ym2203-i.kicad_pcb": "6a62c316fc91d181308fe27c4a65a3173f74a021cb56a4a7039572ed5c152a99",
+    "clean-sheet-schematic-review-h/connector.json": "25767e95856369153eb10620191fb21a7758a166e8669af23da5f1d1c7df254f"
+  }
+}

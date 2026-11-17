@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 350 210"><rect width="350" height="210" fill="#fafbfc"/><style>text{font-family:sans-serif;fill:#152b3c} .small{font-size:3px} .title{font-size:5px;font-weight:bold} .part{fill:#fff;stroke:#52687a;stroke-width:.35}</style>
+<text x="14" y="12" font-size="5">P2 PCB review I / conditional fit model</text>
+<text x="14" y="18" font-size="3">Dimensions in mm. No measured socket, shield or enclosure acceptance.</text>
+<rect x="14" y="24" width="194" height="142" rx="1" fill="#e8f0ed" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="18" y="162" font-size="3">BASE 194 x 142 / 4 layers</text>
+<rect x="21" y="31" width="76" height="60" rx="1" fill="#b8d6f2" stroke="#3e72ac" stroke-width=".5" stroke-dasharray="1.4 1.4"/>
+<text x="30" y="55" font-size="3.8">UNO shield envelope</text>
+<text x="30" y="61" font-size="3">3.3 V IOREF / overhang limited</text>
+<rect x="104" y="62" width="100" height="100" rx="1" fill="#fbe4bd80" stroke="#ad6b1e" stroke-width=".5" stroke-dasharray="1.4 1.4"/>
+<text x="139" y="157" font-size="3">SOURCE 100 x 100</text>
+<rect x="110.73" y="30.73" width="25.4" height="25.4" rx="1" fill="#d6cdf5" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="114" y="41" font-size="3">PGA2350</text>
+<text x="114" y="46" font-size="3">on base</text>
+<rect x="120.73" y="126.73" width="25.4" height="25.4" rx="1" fill="#d6cdf5" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="123" y="136" font-size="3">Core2350B0</text>
+<text x="123" y="141" font-size="3">on source</text>
+<rect x="169.5" y="42" width="9" height="8" rx="1" fill="#f2c3c3" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="157" y="38" font-size="3">AUX LDO / copper spread</text>
+<rect x="79" y="132" width="15" height="10" rx="1" fill="#c8ebdf" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="52" y="147" font-size="3">ADC + analog input</text>
+<rect x="49" y="119" width="14" height="10" rx="1" fill="#c8ebdf" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="39" y="116" font-size="3">DAC + line output</text>
+<rect x="176" y="79" width="15.24" height="48.26" rx="1" fill="#ffe8c8" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="184" y="101" font-size="3">YM2203</text>
+<text x="184" y="106" font-size="3">+ socket</text>
+<rect x="108" y="71" width="6" height="51" rx="1" fill="#edf0f2" stroke="#52687a" stroke-width=".5" stroke-dasharray=""/>
+<text x="113" y="69" font-size="3">G40 / KEY6</text>
+<circle cx="111" cy="74.0" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="74.0" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="76.54" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="76.54" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="79.08" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="79.08" r=".65" fill="#d43e3e"/>
+<circle cx="111" cy="81.62" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="81.62" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="84.16" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="84.16" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="86.7" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="86.7" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="89.24" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="89.24" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="91.78" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="91.78" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="94.32" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="94.32" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="96.86" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="96.86" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="99.4" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="99.4" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="101.94" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="101.94" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="104.48" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="104.48" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="107.02000000000001" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="107.02000000000001" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="109.56" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="109.56" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="112.1" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="112.1" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="114.64" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="114.64" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="117.18" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="117.18" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="119.72" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="119.72" r=".65" fill="#576b7c"/>
+<circle cx="111" cy="122.25999999999999" r=".65" fill="#576b7c"/>
+<circle cx="113.54" cy="122.25999999999999" r=".65" fill="#576b7c"/>
+<circle cx="108" cy="66" r="1.6" fill="white" stroke="#333" stroke-width=".4"/>
+<circle cx="200" cy="66" r="1.6" fill="white" stroke="#333" stroke-width=".4"/>
+<circle cx="198" cy="156" r="1.6" fill="white" stroke="#333" stroke-width=".4"/>
+<circle cx="108" cy="158" r="1.6" fill="white" stroke="#333" stroke-width=".4"/>
+<text x="220" y="35" font-size="3.2">40 pad mating coordinates match</text>
+<text x="220" y="42" font-size="3.2">UNO 38 contacts preserved</text>
+<text x="220" y="49" font-size="3.2">7 mm shield/source XY gap</text>
+<text x="220" y="56" font-size="3.2">128 individual MCU receptacles</text>
+<text x="220" y="63" font-size="3.2">Min face gap model: 10.5 mm</text>
+<text x="220" y="70" font-size="3.2">Base body: &lt;=3 mm</text>
+<text x="220" y="77" font-size="3.2">Source underside: &lt;=4 mm</text>
+<text x="220" y="84" font-size="3.2">Remaining cavity: &gt;=3.5 mm</text>
+<text x="220" y="91" font-size="3.2">MCU underside jig: 9.5 mm</text>
+<text x="220" y="98" font-size="3.2">Top envelope above base:27.35 mm</text>
+<text x="220" y="105" font-size="3.2">No hotplug; no old-card mating</text>
+<text x="220" y="112" font-size="3.2">Fit actual connector before spacers</text>
+<text x="14" y="184" font-size="3">Native PCB sources and DRC reports are authoritative. This drawing shows the stacked layout, not copper routing.</text>
+</svg>

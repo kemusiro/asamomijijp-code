@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "scope": "design allocations, not component maxima or measurements",
+  "common_ground": true,
+  "galvanic_isolation": false,
+  "usb_vbus_power_connected": false,
+  "connector_power_rails": [
+    "V5_MODULE",
+    "GND"
+  ],
+  "module_3v3_exported": false,
+  "loads": [
+    {
+      "name": "base MCU incl.flash/idle PSRAM",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 180
+    },
+    {
+      "name": "Si5351A incl.three outputs reserve",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 55
+    },
+    {
+      "name": "panel logic",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 3
+    },
+    {
+      "name": "seven LEDs",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 14
+    },
+    {
+      "name": "DIP/buttons",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 2.2
+    },
+    {
+      "name": "HOST/service pullups",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 6.2
+    },
+    {
+      "name": "interface buffers and pulls",
+      "rail": "BASE_MCU_3V3",
+      "budget_ma": 12
+    },
+    {
+      "name": "DAC and UNO3V3 load limit/reserve",
+      "rail": "BASE_AUX_3V3",
+      "budget_ma": 150
+    },
+    {
+      "name": "Core2350B0 MCU incl.flash,noPSRAM",
+      "rail": "MODULE_MCU_3V3",
+      "budget_ma": 180
+    },
+    {
+      "name": "YM buffers and pulls",
+      "rail": "MODULE_MCU_3V3",
+      "budget_ma": 12
+    },
+    {
+      "name": "SPI/ADC input buffers and I2C",
+      "rail": "MODULE_MCU_3V3",
+      "budget_ma": 6
+    },
+    {
+      "name": "ADC all supplies and regulator reserve",
+      "rail": "MODULE_ADC_3V3",
+      "budget_ma": 50
+    },
+    {
+      "name": "YM2203C and5V interface reserve",
+      "rail": "MODULE_5V",
+      "budget_ma": 150
+    },
+    {
+      "name": "base analog stages and bias",
+      "rail": "BASE_5V",
+      "budget_ma": 15
+    },
+    {
+      "name": "optional UNO5V user load limit",
+      "rail": "BASE_5V",
+      "budget_ma": 100
+    }
+  ],
+  "regulators": [
+    {
+      "rail": "BASE_MCU_3V3",
+      "part": "PGA2350 onboard LDO",
+      "rating_ma": 300
+    },
+    {
+      "rail": "BASE_AUX_3V3",
+      "part": "TLV75533PDBVR",
+      "rating_ma": 500
+    },
+    {
+      "rail": "MODULE_MCU_3V3",
+      "part": "Core2350B onboard ME6217C33M5G",
+      "rating_ma": 800
+    },
+    {
+      "rail": "MODULE_ADC_3V3",
+      "part": "TLV75533PDBVR",
+      "rating_ma": 500
+    }
+  ],
+  "module_5v_admission_limit_ma": 500,
+  "supply_target_ma": 2000,
+  "ptc_candidate": "MF-MSMF150/16X-2",
+  "ptc_hold_23c_ma": 1500,
+  "ptc_hold_40c_ma": 1250,
+  "ptc_r1max_ohm": 0.12,
+  "maximum_board_ambient_c_initial": 40,
+  "input_voltage_target_v": 5.1,
+  "ym_vdd_acceptance_v": [
+    4.75,
+    5.25
+  ],
+  "input_voltage_note": "5.1V target, never above5.25V atYM; cable/PTC/contact drops measured under load; do not assume nominal5V is sufficient",
+  "regulator_stress_vin": 5.25,
+  "regulator_stress_vout": 3.2,
+  "bench_accepted": false,
+  "adc_ldo_enable": "module-powered MOD_ENABLE Schmitt output drives RUN and ADC TLV755 EN; 10kEN pulldown; STOP/clock fault powercycles ADC"
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "../digital-module-review-c/pins.json",
+      "sha256": "91b5e31138657157d450de14bfa3f4c36e1e5c0cbf266088dbffe5ef806eff84"
+    },
+    {
+      "path": "../digital-module-review-c/base/circuit.json",
+      "sha256": "b1bb84c16758653bc6f268edd331cc3a0ac2880849d610a86ca67d8a4619d6ac"
+    },
+    {
+      "path": "../carrier-p2/pins.json",
+      "sha256": "1465d9f94d974e01b7c744aa954776557607eda9905782313ec612ce8546e359"
+    },
+    {
+      "path": "../digital-module-pcb-review-d/verification.json",
+      "sha256": "70829dde97456f9a2c5e609516f5e45dd3b22b020d04e41ac61f178545883d33"
+    },
+    {
+      "path": "../parallel-module-interface-review-f/connector.json",
+      "sha256": "94ef546d8c5de4b4b72fb8eb1a2041c445694599e14504c9728232e2665f6a20"
+    },
+    {
+      "path": "../parallel-module-interface-review-f/gpio-proposal.json",
+      "sha256": "e5e28fbcfcb8b9f7d19c2e8fd62caf21ce9cf3c33ee94361532ffefa63ce6de7"
+    },
+    {
+      "path": "../parallel-module-interface-review-f/architecture.json",
+      "sha256": "ff57cdc9d8deb5e420967b793498a59cdb2ed9f953c7b40565d32bb7b59f611e"
+    }
+  ]
+}

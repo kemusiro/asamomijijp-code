@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "scope": "native CAD parity/DRC plus design-budget checks; NOT hardware acceptance",
+  "kicad_version": "10.0.5",
+  "electrical_components": 164,
+  "mounting_holes": 8,
+  "connected_pad_net_pairs": 588,
+  "native_netlist_exact": true,
+  "body_envelopes_checked": 172,
+  "pcb_component_placements_exact": true,
+  "gpio_assigned": 47,
+  "gpio_changes": false,
+  "uno_contacts_checked": 38,
+  "uno_origin_mm": [
+    10,
+    10
+  ],
+  "outline_mm": [
+    164,
+    124
+  ],
+  "copper_layers": 4,
+  "ground_plane": "In1.Cu; no routed signals",
+  "segments": 2250,
+  "vias": 160,
+  "erc_violations": 0,
+  "drc_violations": 0,
+  "drc_unconnected": 0,
+  "schematic_parity_violations": 0,
+  "ignored_drc_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "host_contract": "unchanged: I2C0 GP20/21,0x42,100kHz,YM22S002,32events/PUSH,1000ms lease",
+  "firmware_ported": false,
+  "hardware_accepted": false,
+  "fabrication_released": false,
+  "pending": [
+    "Socket fitted sample and pin engagement",
+    "Actual current, voltage, ripple and thermal measurements",
+    "Fabricator stackup, USB impedance and final fabrication review",
+    "P2 C firmware port and hardware acceptance"
+  ],
+  "sha256": {
+    "p2-carrier-b.kicad_pcb": "8270b475628812fd84612c47f23fb62b1357641c655db0555ac697dc0ca312bf",
+    "netlist.xml": "94f036ae5a36f2c0579496b1cd85ef42146e2bccff30b96a0379632f203ef6ff",
+    "drc.json": "6703cdd8cefd62c986adce5867f8681d866e4fbddcde9ed8373fff15364bf2eb",
+    "erc.json": "c6271e8ac00e432fb5390a0f7013cd1a3861cd5558dcc2f9c15fb0b89d4a34aa",
+    "circuit.json": "94a78ff347510662131517f944ad44e948a1cbe117d1c066de30ad9c0e1328ab",
+    "power-budget.json": "92f6a9dcc21dbe65afa8f4d729986fae4ac5c9f44e70faffc6b1dd5e1ff7da26",
+    "mechanical-review.json": "c3beff4c92e22ef29c6815cdb5ab48afc49b58960b07c935ae880e5c0b93d913",
+    "critical-routes.json": "f731b5f8015a72c3142f23d7236ceb90000211c9287a38126ddd700a4c5692ff",
+    "local-routes.json": "eed861048386ad8ec1901411eff96183142a8d2fec7755f10381f0a1e6069da6",
+    "placement-refs.json": "a587fed0927fc46b518fd01493b206323872748509e81288b3b2533f9bd04c70",
+    "body-clearances.json": "52af72d1e58d04ca448a04e25d37aaff7b64d044530e705de176ad478a9fa61e",
+    "power-fanouts.json": "4c591fc1dd0bd96972703224f5615982a07963ee8f2582d20c48e85056b7d589",
+    "p2-b.ses": "718396c1b278bdd5d835043dc21174feaa8a5d859ac73b41a46a6cb569618eed",
+    "p2-carrier-b.kicad_pro": "2b6838d5c3421db74917a1db5e6dded0c250bf56f9f5ae28f8f0c44e35c3d275"
+  }
+}

@@ -1,0 +1,276 @@
+{
+  "covered_control_interference": {
+    "conditional": true,
+    "outline_mm": [
+      76,
+      100
+    ],
+    "edge_segments": 4,
+    "large_openings": 0,
+    "edge_notches": 0,
+    "covered_controls": [
+      {
+        "base_ref": "SWCLOCK",
+        "base_occupied_envelope_mm": [
+          62.665,
+          73.34,
+          72.945,
+          86.255
+        ],
+        "part_height_admission_mm": 8.0,
+        "tht_leads_over": [],
+        "nearest_leads": [
+          {
+            "ref": "R3",
+            "pin": "2",
+            "at_mm": [
+              58.12,
+              85.0
+            ],
+            "solder_envelope_mm": [
+              57.17,
+              84.05,
+              59.07,
+              85.95
+            ],
+            "xy_gap_mm": 3.594999999999999
+          },
+          {
+            "ref": "C7",
+            "pin": "1",
+            "at_mm": [
+              67.5,
+              68.0
+            ],
+            "solder_envelope_mm": [
+              66.35,
+              66.85,
+              68.65,
+              69.15
+            ],
+            "xy_gap_mm": 4.189999999999998
+          },
+          {
+            "ref": "C7",
+            "pin": "2",
+            "at_mm": [
+              70.0,
+              68.0
+            ],
+            "solder_envelope_mm": [
+              68.85,
+              66.85,
+              71.15,
+              69.15
+            ],
+            "xy_gap_mm": 4.189999999999998
+          }
+        ],
+        "z_clearance_after_flex_mm": 1.7
+      },
+      {
+        "base_ref": "SWSTOP",
+        "base_occupied_envelope_mm": [
+          11.225,
+          82.225,
+          21.275,
+          90.275
+        ],
+        "part_height_admission_mm": 8.0,
+        "tht_leads_over": [],
+        "nearest_leads": [
+          {
+            "ref": "RV1",
+            "pin": "MP",
+            "at_mm": [
+              11.6,
+              97.5
+            ],
+            "solder_envelope_mm": [
+              9.85,
+              95.25,
+              13.35,
+              99.75
+            ],
+            "xy_gap_mm": 4.974999999999994
+          },
+          {
+            "ref": "RV1",
+            "pin": "MP",
+            "at_mm": [
+              20.4,
+              97.5
+            ],
+            "solder_envelope_mm": [
+              18.65,
+              95.25,
+              22.15,
+              99.75
+            ],
+            "xy_gap_mm": 4.974999999999994
+          },
+          {
+            "ref": "RV2",
+            "pin": "MP",
+            "at_mm": [
+              30.6,
+              97.5
+            ],
+            "solder_envelope_mm": [
+              28.85,
+              95.25,
+              32.35,
+              99.75
+            ],
+            "xy_gap_mm": 9.062629309422292
+          }
+        ],
+        "z_clearance_after_flex_mm": 1.7
+      },
+      {
+        "base_ref": "SWTEST",
+        "base_occupied_envelope_mm": [
+          5.225,
+          106.225,
+          15.275,
+          114.275
+        ],
+        "part_height_admission_mm": 8.0,
+        "tht_leads_over": [],
+        "nearest_leads": [
+          {
+            "ref": "RV1",
+            "pin": "1",
+            "at_mm": [
+              13.5,
+              104.5
+            ],
+            "solder_envelope_mm": [
+              12.35,
+              103.35,
+              14.65,
+              105.65
+            ],
+            "xy_gap_mm": 0.5749999999999886
+          },
+          {
+            "ref": "RV1",
+            "pin": "2",
+            "at_mm": [
+              16.0,
+              104.5
+            ],
+            "solder_envelope_mm": [
+              14.85,
+              103.35,
+              17.15,
+              105.65
+            ],
+            "xy_gap_mm": 0.5749999999999886
+          },
+          {
+            "ref": "RV1",
+            "pin": "3",
+            "at_mm": [
+              18.5,
+              104.5
+            ],
+            "solder_envelope_mm": [
+              17.35,
+              103.35,
+              19.65,
+              105.65
+            ],
+            "xy_gap_mm": 2.153195300013446
+          }
+        ],
+        "z_clearance_after_flex_mm": 1.7
+      }
+    ],
+    "minimum_z_clearance_after_flex_mm": 1.7,
+    "physical_fit_accepted": false
+  },
+  "placement_unchanged_from_parent_pcb": true,
+  "smt_pad_via_hole_intersections": 0,
+  "date": "2026-11-18",
+  "kicad": "10.0.5",
+  "electrical_references": 46,
+  "mounts": 7,
+  "electrical_physical_pads": 159,
+  "total_physical_pads": 166,
+  "uno_mates": 32,
+  "max_mate_error_mm": 1.4210854715202004e-14,
+  "copper_layers": 2,
+  "segments": 674,
+  "vias": 28,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "drc_exclusions": 0,
+  "ignored_checks": [
+    {
+      "description": "Footprint has no courtyard defined",
+      "key": "missing_courtyard"
+    },
+    {
+      "description": "Track endpoint not centered on via",
+      "key": "track_not_centered_on_via"
+    },
+    {
+      "description": "Tuning profile track geometries",
+      "key": "tuning_profile_track_geometries"
+    },
+    {
+      "description": "Footprint doesn't match symbol's footprint filters",
+      "key": "footprint_filters_mismatch"
+    },
+    {
+      "description": "Footprint component type doesn't match footprint pads",
+      "key": "footprint_type_mismatch"
+    }
+  ],
+  "track_min_mm": 0.25,
+  "mechanical": {
+    "conditional": true,
+    "knob_axes_local_mm": [
+      [
+        6.0,
+        87.0
+      ],
+      [
+        25.0,
+        87.0
+      ],
+      [
+        44.0,
+        87.0
+      ],
+      [
+        63.0,
+        87.0
+      ]
+    ],
+    "knob_min_gap_after_allowance_mm": 2.0,
+    "lcd_low_parts": [
+      "R10",
+      "R11",
+      "R12",
+      "R14",
+      "R15",
+      "R16",
+      "R17",
+      "R18",
+      "R19",
+      "R7"
+    ],
+    "lcd_min_z_gap_mm": 4.5,
+    "base_smt_min_z_gap_mm": 4.5,
+    "source_xy_gap_mm": 7,
+    "icsp_tht_intrusions": [],
+    "physical_fit_accepted": false
+  },
+  "firmware_changed": false,
+  "host_changed": false,
+  "hardware_accepted": false
+}

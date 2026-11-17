@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="950" viewBox="0 0 1280 950" role="img" aria-labelledby="title desc">
+<title id="title">H1 hand-soldered carrier concept, 180 by 140 mm</title>
+<desc id="desc">Preassembled UP5K, Pico 2 and clock modules; DIP and SOIC 1.27 mm ICs; 1206 passives. Rectangles are reserved functional areas, not footprints or wiring.</desc>
+<rect width="1280" height="950" fill="#ffffff"/>
+<g font-family="sans-serif" fill="#183047">
+<text x="35" y="35" font-size="25">H1 / Hand-soldered carrier / Pico 2 + iCE40UP5K</text>
+<text x="35" y="65" font-size="17" fill="#a02d24">CONCEPT ONLY: module dimensions, full BOM, pads and routing are not verified</text>
+<text x="35" y="93" font-size="16">Top view / USB access at top / analog output at bottom-right / dimensions in mm</text>
+<rect x="35" y="115" width="900" height="700" rx="5" fill="#f7f9fc" stroke="#324c63" stroke-width="2"/>
+<circle cx="55" cy="135" r="15" fill="#fff" stroke="#8191a4" stroke-dasharray="3 3"/>
+<circle cx="915" cy="135" r="15" fill="#fff" stroke="#8191a4" stroke-dasharray="3 3"/>
+<circle cx="55" cy="795" r="15" fill="#fff" stroke="#8191a4" stroke-dasharray="3 3"/>
+<circle cx="915" cy="795" r="15" fill="#fff" stroke="#8191a4" stroke-dasharray="3 3"/>
+<rect x="75" y="155" width="160" height="160" rx="5" fill="#fff0cd" stroke="#70859a"/>
+<text x="155.0" y="179" font-size="13" text-anchor="middle">POWER</text>
+<text x="155.0" y="200" font-size="13" text-anchor="middle">USB breakout</text>
+<text x="155.0" y="221" font-size="13" text-anchor="middle">TO-220 + C</text>
+<rect x="265" y="155" width="150" height="310" rx="5" fill="#e1edff" stroke="#70859a"/>
+<text x="340.0" y="179" font-size="13" text-anchor="middle">PICO 2</text>
+<text x="340.0" y="200" font-size="13" text-anchor="middle">socket</text>
+<text x="340.0" y="221" font-size="13" text-anchor="middle">USB up</text>
+<rect x="445" y="155" width="180" height="360" rx="5" fill="#e1edff" stroke="#70859a"/>
+<text x="535.0" y="179" font-size="13" text-anchor="middle">UP5K MODULE</text>
+<text x="535.0" y="200" font-size="13" text-anchor="middle">UPduino candidate</text>
+<text x="535.0" y="221" font-size="13" text-anchor="middle">36 x 72 reserve</text>
+<text x="535.0" y="242" font-size="13" text-anchor="middle">USB up</text>
+<rect x="645" y="155" width="110" height="150" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="700.0" y="179" font-size="13" text-anchor="middle">DATA BUS</text>
+<text x="700.0" y="200" font-size="13" text-anchor="middle">SOIC24 1.27</text>
+<text x="700.0" y="221" font-size="13" text-anchor="middle">5 V &lt;-&gt; 3V3</text>
+<rect x="775" y="155" width="120" height="160" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="835.0" y="179" font-size="13" text-anchor="middle">CONTROL</text>
+<text x="835.0" y="200" font-size="13" text-anchor="middle">AHCT541</text>
+<text x="835.0" y="221" font-size="13" text-anchor="middle">DIP20</text>
+<rect x="645" y="355" width="130" height="300" rx="5" fill="#e1edff" stroke="#70859a"/>
+<text x="710.0" y="379" font-size="13" text-anchor="middle">YM2203C</text>
+<text x="710.0" y="400" font-size="13" text-anchor="middle">DIP40 socket</text>
+<text x="710.0" y="421" font-size="13" text-anchor="middle">5 V</text>
+<rect x="795" y="345" width="100" height="110" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="845.0" y="369" font-size="13" text-anchor="middle">FM + IRQ</text>
+<text x="845.0" y="390" font-size="13" text-anchor="middle">LVC125A</text>
+<text x="845.0" y="411" font-size="13" text-anchor="middle">SOIC14</text>
+<rect x="445" y="555" width="175" height="140" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="532.5" y="579" font-size="13" text-anchor="middle">Si5351 MODULE</text>
+<text x="532.5" y="600" font-size="13" text-anchor="middle">31 x 22 body</text>
+<text x="532.5" y="621" font-size="13" text-anchor="middle">25 MHz ref</text>
+<rect x="645" y="695" width="130" height="90" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="710.0" y="719" font-size="13" text-anchor="middle">YM CLOCK /2</text>
+<text x="710.0" y="740" font-size="13" text-anchor="middle">AHCT74</text>
+<text x="710.0" y="761" font-size="13" text-anchor="middle">DIP14</text>
+<rect x="75" y="540" width="130" height="110" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="140.0" y="564" font-size="13" text-anchor="middle">INHIBIT</text>
+<text x="140.0" y="585" font-size="13" text-anchor="middle">HC11 DIP14</text>
+<text x="140.0" y="606" font-size="13" text-anchor="middle">ARM / PG</text>
+<rect x="75" y="360" width="160" height="120" rx="5" fill="#fff0cd" stroke="#70859a"/>
+<text x="155.0" y="384" font-size="13" text-anchor="middle">MONITORS</text>
+<text x="155.0" y="405" font-size="13" text-anchor="middle">TO-92 / SOIC</text>
+<text x="155.0" y="426" font-size="13" text-anchor="middle">PG -&gt; gates</text>
+<rect x="265" y="520" width="140" height="210" rx="5" fill="#f5e3f0" stroke="#70859a"/>
+<text x="335.0" y="544" font-size="13" text-anchor="middle">PCM5102A</text>
+<text x="335.0" y="565" font-size="13" text-anchor="middle">DIP module</text>
+<text x="335.0" y="586" font-size="13" text-anchor="middle">external caps</text>
+<rect x="795" y="495" width="100" height="180" rx="5" fill="#f5e3f0" stroke="#70859a"/>
+<text x="845.0" y="519" font-size="13" text-anchor="middle">MIX / MUTE</text>
+<text x="845.0" y="540" font-size="13" text-anchor="middle">MCP6022</text>
+<text x="845.0" y="561" font-size="13" text-anchor="middle">HC4053</text>
+<text x="845.0" y="582" font-size="13" text-anchor="middle">DIP8 + 16</text>
+<rect x="445" y="725" width="140" height="60" rx="5" fill="#f5e3f0" stroke="#70859a"/>
+<text x="515.0" y="749" font-size="13" text-anchor="middle">VOLUME</text>
+<text x="515.0" y="770" font-size="13" text-anchor="middle">THT dual pot</text>
+<rect x="805" y="695" width="90" height="100" rx="5" fill="#f5e3f0" stroke="#70859a"/>
+<text x="850.0" y="719" font-size="13" text-anchor="middle">LINE OUT</text>
+<text x="850.0" y="740" font-size="13" text-anchor="middle">TRS jack</text>
+<rect x="75" y="695" width="160" height="90" rx="5" fill="#def1e7" stroke="#70859a"/>
+<text x="155.0" y="719" font-size="13" text-anchor="middle">HOST / DEBUG</text>
+<text x="155.0" y="740" font-size="13" text-anchor="middle">2.54 mm</text>
+<text x="155.0" y="761" font-size="13" text-anchor="middle">I2C / TP</text>
+<text x="975" y="145" font-size="13" font-weight="bold">PRIORITY</text>
+<text x="975" y="162" font-size="12">Working room over density</text>
+<text x="975" y="183" font-size="13" font-weight="bold">USER IC SOLDERING</text>
+<text x="975" y="200" font-size="12">DIP: 2.54 mm</text>
+<text x="975" y="238" font-size="12">SOIC: 1.27 mm</text>
+<text x="975" y="276" font-size="12">No bare QFN / MSOP / TSSOP</text>
+<text x="975" y="297" font-size="13" font-weight="bold">PASSIVES</text>
+<text x="975" y="314" font-size="12">1206 first; 0805 optional</text>
+<text x="975" y="335" font-size="13" font-weight="bold">FPGA MODULE</text>
+<text x="975" y="352" font-size="12">UPduino candidate, socketed</text>
+<text x="975" y="390" font-size="12">Flash boot; USB programming</text>
+<text x="975" y="428" font-size="12">Runtime SPI separate from Flash</text>
+<text x="975" y="449" font-size="13" font-weight="bold">FPGA I/O BUDGET</text>
+<text x="975" y="466" font-size="12">30 used / 31 conservative</text>
+<text x="975" y="504" font-size="12">1 spare; revision audit pending</text>
+<text x="975" y="525" font-size="13" font-weight="bold">CLOCKS</text>
+<text x="975" y="542" font-size="12">Si5351 -&gt; SYS: 49.152 MHz</text>
+<text x="975" y="580" font-size="12">Si5351 -&gt; AHCT74 /2 -&gt; YM</text>
+<text x="975" y="601" font-size="13" font-weight="bold">RESERVED OUTLINE</text>
+<text x="975" y="618" font-size="12">180 x 140 mm / 25,200 mm2</text>
+<text x="975" y="656" font-size="12">+31.25% vs Rev C 160 x 120</text>
+<text x="975" y="677" font-size="13" font-weight="bold">NOT CHECKED</text>
+<text x="975" y="694" font-size="12">Actual footprints / wire routes</text>
+<text x="975" y="732" font-size="12">Power sequence / audio / costs</text>
+<text x="35" y="854" font-size="18">Functional area reservations only; blank space is not a proven routing budget.</text>
+<text x="35" y="885" font-size="16">Use preassembled modules for fine-pitch ICs. Reserve access for soldering, probes and module removal.</text>
+<text x="35" y="915" font-size="14">Source: hand-assembly-plan.json / Generated by tools/analyze_hand_assembly.py / MIT</text>
+</g></svg>

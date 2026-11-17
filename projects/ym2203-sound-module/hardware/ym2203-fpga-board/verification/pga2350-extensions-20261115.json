@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-15",
+  "variant": "P2",
+  "revision": "2.1",
+  "scope": "extension architecture, GPIO arithmetic, static signal tables and existing clock generator calculation only",
+  "python": "3.15.2",
+  "checks_passed": [
+    "six user requested extensions present; P2 remains FPGA-free",
+    "UNO R3 logical38 contacts,20 unique signals,3.3V user confirmation",
+    "I2C and SPI aliases not double-counted; HOST bus remains separate",
+    "native GPIO29 plus expansion18=47, GP47 reserved, no spare or physical pin approval claimed",
+    "panel13 of16bits, seven outputs and six inputs, output-only GPA7/GPB7 respected",
+    "hardware RUN reset separate from polled STOP/TEST, STOP priority",
+    "all16 DIP codes, eight nominal profiles, reserved mute and no live retune",
+    "existing Si5351 generator ran eight exact nominal clock calculations; no P2 firmware ROM created",
+    "voice display uses executed register state and gates, not VU meter",
+    "RX50ms and panel driver preserved",
+    "USB WYM1 bounded FIFO, CRC/ACK/version requirements and binary-console separation",
+    "unchanged I2C v2 contract and no implicit file-clock override",
+    "implementation/electrical/pinmap/hardware flags remain false",
+    "local links, whitespace and protected previous implementation/checks unchanged"
+  ],
+  "local_links_checked": 80,
+  "header_contacts": 38,
+  "unique_extension_signals": 20,
+  "native_gpio_used": 47,
+  "native_gpio_available_with_psram_reservation": 47,
+  "panel_bits_used": 13,
+  "panel_bits_available": 16,
+  "dip_codes_checked": 16,
+  "nominal_clock_calculations": [
+    {
+      "ym_hz": 4000000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 800000000,
+      "ms0_divider": 200
+    },
+    {
+      "ym_hz": 3579545,
+      "xtal_hz": 25000000,
+      "pllb_hz": 715909000,
+      "ms0_divider": 200
+    },
+    {
+      "ym_hz": 3993600,
+      "xtal_hz": 25000000,
+      "pllb_hz": 798720000,
+      "ms0_divider": 200
+    },
+    {
+      "ym_hz": 3000000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 750000000,
+      "ms0_divider": 250
+    },
+    {
+      "ym_hz": 2000000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 800000000,
+      "ms0_divider": 400
+    },
+    {
+      "ym_hz": 1500000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 825000000,
+      "ms0_divider": 550
+    },
+    {
+      "ym_hz": 2500000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 750000000,
+      "ms0_divider": 300
+    },
+    {
+      "ym_hz": 3500000,
+      "xtal_hz": 25000000,
+      "pllb_hz": 875000000,
+      "ms0_divider": 250
+    }
+  ],
+  "clock_calculation_limitation": "F1 generator also emits unused CLK1; evaluated YM nominal frequency only; not P2 ROM or measured clock",
+  "clock_generator_sha256": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+  "sources_sha256": {
+    "README.md": "e147c6daf0c942516e20a983551f4c2b53cf9b1c81ba7aa5e646c8e0ce0af5aa",
+    "hardware/ym2203-fpga-board/README.md": "88eea18916a386260cdfa3dc7ab4dc3b8d8b0586b01d4c534ffd293873ccada6",
+    "hardware/ym2203-fpga-board/active-plan.json": "02dfb28c9b5e4b1e9109983369399a79395ce2284ac001a896def98c81645af6",
+    "hardware/ym2203-fpga-board/pga2350-standalone-plan.json": "925cf826d775533d751e7dfd0bf3fc41c3573eb7067739efbb9b0957a9d1cad1",
+    "hardware/ym2203-fpga-board/PGA2350-STANDALONE.md": "7e44350b36f65a4eb1abef84b59705a7cc2f6e6b9a7f87d3ecbd34aa7769ff98",
+    "hardware/ym2203-fpga-board/PGA2350-EXTENSIONS.md": "26b433d57ca702f229ac9689f517719cb49d72836a0291082dfb7dca7a07d022",
+    "hardware/ym2203-fpga-board/pga2350-arduino-header.csv": "c2425eec672bf43f105963a30aa321f9455310160bb3b39e88eae44b68461d5b",
+    "hardware/ym2203-fpga-board/pga2350-clock-switches.csv": "93408e4d96f2528cc0838ab9a458d6a41949d932229d89c247df7f0983141ae0",
+    "hardware/ym2203-fpga-board/pga2350-expander.csv": "6a2e5efc775e1cbfbb2054b2d2dc55427fb4c5ff4e61148d9aea90de3726366e"
+  },
+  "protected_previous_files_checked": 403,
+  "prior_reports_modified": false,
+  "not_run": [
+    "P2 firmware implementation/build",
+    "USB WYM1 byte protocol implementation",
+    "physical pin mux validation",
+    "UNO shield electrical/mechanical validation",
+    "schematic ERC",
+    "PCB DRC",
+    "P2 clock/electrical/audio/USB hardware acceptance"
+  ]
+}

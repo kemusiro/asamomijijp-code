@@ -1,0 +1,52 @@
+{
+  "base_width_current_mm": 194,
+  "base_width_candidate_mm": 220,
+  "base_height_mm": 142,
+  "source_right_edge_mm": 190,
+  "current_margin_mm": 4,
+  "proposal": [
+    {
+      "ref": "SWCLOCK",
+      "proposed_origin_mm": [
+        203,
+        50
+      ],
+      "bounds_mm": [
+        201.915,
+        47.59,
+        211.695,
+        60.005
+      ],
+      "existing_part_conflicts": []
+    },
+    {
+      "ref": "SWSTOP",
+      "proposed_origin_mm": [
+        203,
+        82
+      ],
+      "bounds_mm": [
+        201.475,
+        80.475,
+        211.025,
+        88.025
+      ],
+      "existing_part_conflicts": []
+    },
+    {
+      "ref": "SWTEST",
+      "proposed_origin_mm": [
+        203,
+        105
+      ],
+      "bounds_mm": [
+        201.475,
+        103.475,
+        211.025,
+        111.025
+      ],
+      "existing_part_conflicts": []
+    }
+  ],
+  "status": "body-envelope-only feasibility; base not edited, no new wiring/DRC/stack verification; not the current rectangular-shield implementation"
+}

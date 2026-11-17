@@ -1,0 +1,271 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "revision": "3.7-pcb-review-j",
+  "tool": "10.0.5",
+  "scope": "native CAD, electrical equivalence and conditional mechanical envelope; no firmware/bench acceptance",
+  "boards": {
+    "base": {
+      "components": 152,
+      "pcb_only_holes": 12,
+      "physical_pad_checks": 571,
+      "segments": 2055,
+      "vias": 229,
+      "layers": 4,
+      "erc": 0,
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "pcb_sha256": "30813709d50bf47ee6059b1d5e76f183f1fa2c64c3587448ab6b33c4d984b704",
+      "schematic_sha256": "4d60f84153345a734de9346c9c6af157fc8883444bec97d78323a2d7410424cb"
+    },
+    "module": {
+      "components": 76,
+      "pcb_only_holes": 4,
+      "physical_pad_checks": 376,
+      "segments": 1160,
+      "vias": 150,
+      "layers": 4,
+      "erc": 0,
+      "violations": 0,
+      "unconnected_items": 0,
+      "schematic_parity": 0,
+      "ignored_checks": [
+        {
+          "description": "Footprint has no courtyard defined",
+          "key": "missing_courtyard"
+        },
+        {
+          "description": "Track endpoint not centered on via",
+          "key": "track_not_centered_on_via"
+        },
+        {
+          "description": "Tuning profile track geometries",
+          "key": "tuning_profile_track_geometries"
+        },
+        {
+          "description": "Footprint doesn't match symbol's footprint filters",
+          "key": "footprint_filters_mismatch"
+        },
+        {
+          "description": "Footprint component type doesn't match footprint pads",
+          "key": "footprint_type_mismatch"
+        }
+      ],
+      "pcb_sha256": "6a62c316fc91d181308fe27c4a65a3173f74a021cb56a4a7039572ed5c152a99",
+      "schematic_sha256": "07eb8a14e5aa342410439853e79486bfb8c36c2bc4dd985728196ea898d76082"
+    }
+  },
+  "integration": {
+    "scope": "native coordinate/copper equivalence and conditional body/lead/height envelopes; physical fit not accepted",
+    "contracts": {
+      "unintended_placement_changes": 0,
+      "electrical_and_pin_changes": 0,
+      "non_control_copper_changes": 0,
+      "shield_mates": 32,
+      "shield_mate_error_mm": 0.0,
+      "shield_mount_errors": 0,
+      "shield_edge_segments": 4,
+      "shield_openings": 0,
+      "source_xy_gap_mm": 7.0,
+      "control_source_gap_mm": 11.225,
+      "control_edge_gap_mm": 8.055,
+      "control_conflicts": 0,
+      "shield_tall_part_conflicts": 0,
+      "shield_smt_cavity_mm": 4.5,
+      "icsp_tht_collisions": 0,
+      "icsp_face_clearance_mm": 1.9900000000000002,
+      "ground_plane_right_mm": 219.5,
+      "source_byte_identical": true
+    },
+    "rejection_mutations": 18,
+    "controls": [
+      {
+        "ref": "SWCLOCK",
+        "origin_mm": [
+          203.0,
+          50.0
+        ],
+        "occupied_bounds_mm": [
+          201.915,
+          47.59,
+          211.695,
+          60.005
+        ],
+        "xy_allowance_mm": 0.25,
+        "source_gap_after_allowance_mm": 11.665,
+        "edge_gap_after_allowance_mm": 8.055,
+        "nearest_parts": [
+          [
+            12.331841914328937,
+            "H6"
+          ],
+          [
+            20.21999999999999,
+            "SWSTOP"
+          ],
+          [
+            24.057275926421934,
+            "JHOST"
+          ]
+        ]
+      },
+      {
+        "ref": "SWSTOP",
+        "origin_mm": [
+          203.0,
+          82.0
+        ],
+        "occupied_bounds_mm": [
+          201.475,
+          80.475,
+          211.025,
+          88.025
+        ],
+        "xy_allowance_mm": 0.25,
+        "source_gap_after_allowance_mm": 11.225,
+        "edge_gap_after_allowance_mm": 8.725,
+        "nearest_parts": [
+          [
+            15.199999999999989,
+            "SWTEST"
+          ],
+          [
+            20.21999999999999,
+            "SWCLOCK"
+          ],
+          [
+            36.682761619049344,
+            "H6"
+          ]
+        ]
+      },
+      {
+        "ref": "SWTEST",
+        "origin_mm": [
+          203.0,
+          105.0
+        ],
+        "occupied_bounds_mm": [
+          201.475,
+          103.475,
+          211.025,
+          111.025
+        ],
+        "xy_allowance_mm": 0.25,
+        "source_gap_after_allowance_mm": 11.225,
+        "edge_gap_after_allowance_mm": 8.725,
+        "nearest_parts": [
+          [
+            15.199999999999989,
+            "SWSTOP"
+          ],
+          [
+            22.05957841845578,
+            "H7"
+          ],
+          [
+            23.283577903750103,
+            "H3"
+          ]
+        ]
+      }
+    ],
+    "source_origin_on_base_mm": [
+      90,
+      38
+    ],
+    "shield_origin_on_base_mm": [
+      10,
+      10
+    ],
+    "shield_bounds_mm": [
+      7,
+      7,
+      83,
+      107
+    ],
+    "source_bounds_mm": [
+      90,
+      38,
+      190,
+      138
+    ],
+    "moved_refs": {
+      "SWCLOCK": [
+        203,
+        50
+      ],
+      "SWSTOP": [
+        203,
+        82
+      ],
+      "SWTEST": [
+        203,
+        105
+      ],
+      "H2": [
+        216,
+        4
+      ],
+      "H3": [
+        216,
+        138
+      ]
+    },
+    "shield_reference": "../editor-shield-review-b/pcb-review-b",
+    "source_revision": "3.6-pcb-review-i byte-identical module",
+    "shield_standoffs_mm": {
+      "nominal_face_gap": 11.01,
+      "analysis_min_face_gap": 10.5,
+      "underside_leads_max": 3,
+      "lcd_standoff": 12
+    },
+    "mcu_under_gap_mm": 5.9,
+    "source_cavity_mm": 3.5,
+    "physical_fit_accepted": false
+  },
+  "contracts": {
+    "mating_error_mm": 1.4210854715202004e-14,
+    "mount_error_mm": 0.0,
+    "uno_error_mm": 1.4210854715202004e-14,
+    "core_error_mm": 0.0,
+    "electrical_errors": 0,
+    "socket_errors": 0,
+    "signal_tracks_in_ground_layer": 0,
+    "drc_failures": 0,
+    "erc_failures": 0,
+    "exclusions": 0,
+    "tall_parts_under_source": [],
+    "cavity_mm": 3.5
+  },
+  "positive_checks": 12,
+  "rejection_mutations": 12,
+  "mating_positions": 40,
+  "uno_contacts": 38,
+  "core_contacts": 64,
+  "hardware_accepted": false,
+  "firmware_changed": false
+}

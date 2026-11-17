@@ -1,0 +1,8 @@
+Item,Quantity,Selection,Scope
+FPGA assembly,1,ULX3S 85F PCB v3.0.8,Module; not a bare ECP5 on carrier
+YM IC socket,1,DIP40 wide 15.24mm,Additional socket for U12; IC is already represented by U12
+D51 module modification,1,STPS2L30AF candidate,Cut IN5V bridge; verify footprint and diode orientation on module
+D8 module inspection,0,US1 reverse-blocking Schottky required,Reuse if populated; otherwise select and fit suitable module diode
+D9 / D52 module modification,0,OPEN / REMOVE,Never fit a bridge or a D9 power diode
+External volume,1,Dual A10k,Offboard; wiring shown at JPOT
+NC stop loop,1,Normally-closed switch or deliberate fitted loop,Offboard JESTOP; open loop inhibits

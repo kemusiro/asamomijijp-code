@@ -1,0 +1,15 @@
+{
+  "repository": "https://github.com/avakar/usbcorev",
+  "commit": "8f799bb9f188f0266ff7926fdc93fad0fc754eae",
+  "license": "No-notice MIT License (verbatim LICENSE)",
+  "files_sha256": {
+    "LICENSE": "37d897f62a4324d8d2f313d7d1b98cd26f872d2ae598b7eb9a69b1c129bcc135",
+    "README.md": "9b263301048e78e0b0630c08b393853f39f2e216ed15c967a1ff51eb9a6aa195",
+    "usb.v": "48811abe0b7d6706a7c92f36e086aea74e5a9bd7f65e716e11f18ed7d1bc964f",
+    "usb_recv.v": "5e7d80c57ebd23d26aefe60aadc2c2326ce8d0c53e2929dcd5e9f1b18746b025",
+    "usb_tx.v": "f532efe10aac7ec97212f75b4b7c40f5ff96d0cde8a608056c681baf869183df",
+    "usb_utils.v": "3d310e1a2acfaa920787cf9b1be01ccdfc5a04a105c15b00f8969c6ed01032cf",
+    "utils.v": "ba19a6dc37c8afd18bb4f88247fcbdd32003adaf046b5844fdd0c0ad124527db"
+  },
+  "modified": false
+}

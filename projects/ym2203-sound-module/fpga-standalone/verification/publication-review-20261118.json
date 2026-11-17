@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "kind": "Publication content review and functional rerun; no new hardware acceptance",
+  "all_passed": true,
+  "scope": [
+    "JT03 simulator and analysis",
+    "UP5K core synthesis experiment and dual-clock minimal RTL",
+    "F1 real-YM I2C/audio/clock/USB RTL and ULX3S/Diamond preparation"
+  ],
+  "tools": {
+    "verilator": {
+      "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+      "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+    },
+    "yosys": {
+      "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+    },
+    "cc": {
+      "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    },
+    "c++": {
+      "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    }
+  },
+  "analysis_requirements": {
+    "python": "3.14.6",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "isolated_environment": true
+  },
+  "reviewed_content": {
+    "no_music_audio_or_executables_in_commit": true,
+    "no_local_paths_or_secret_key_findings": true,
+    "usbcorev_fixed_commit": "8f799bb9f188f0266ff7926fdc93fad0fc754eae",
+    "usbcorev_original_files_verified": 7,
+    "third_party_license_notices_retained": true,
+    "upstream_vendor_whitespace_preserved": true
+  },
+  "fresh_checks": {
+    "jt03_simulator": {
+      "tests": 8,
+      "log_sha256": "983e0ef8e28084e55c00db57d6896c5fb704d7051df042d18bf376d6f5129471",
+      "passed": true
+    },
+    "jt03_up5k_report_tests": {
+      "tests": 8,
+      "log_sha256": "f94941ef12132c1e03be5fb0521b1cabfccaf31ec4103102805d8f544d9d451e",
+      "passed": true
+    },
+    "jt03_minimal_python": {
+      "tests": 13,
+      "log_sha256": "eafe1f954b5d1fa739f5c773889f6d38c07a82c3db3252181b0fba85b9c1d17a",
+      "passed": true
+    },
+    "jt03_minimal_rtl": [
+      {
+        "suite": "system",
+        "passed": 17,
+        "log_sha256": "09eaf15d403469cbe6ef1a1d88bd091c7af5d0c5c45891a592e250a81071f7dc"
+      },
+      {
+        "suite": "fifo",
+        "passed": 3,
+        "log_sha256": "610f3434d478293216f780257d8d5e4c3dcbef25b7d2be39e620c24c08b39b0b"
+      },
+      {
+        "suite": "default-lease",
+        "passed": 1,
+        "log_sha256": "30829b6a23faa50d7c096701443c72867f084ad6566e248062f25b45313d141d"
+      }
+    ],
+    "f1_static_checks": {
+      "tests": 15,
+      "log_sha256": "bede74f0433dfbcc858153564aca6177bab28a2271a55f4df07fb7221c4f1425",
+      "passed": true
+    },
+    "diamond_preparation": {
+      "tests": 7,
+      "log_sha256": "f4620c45b1a1d7db32c4d9b1cfd373932cb1b21fed31ef3744341fd5d6a48bdb",
+      "passed": true
+    },
+    "f1_frame": {
+      "schema_version": 1,
+      "date_utc": "2026-11-17T18:04:11.817427+00:00",
+      "scope": "F1 v2 frame validator only; not a board or complete protocol implementation",
+      "tools": {
+        "verilator": {
+          "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+          "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+        },
+        "yosys": {
+          "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+          "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+        },
+        "cc": {
+          "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+          "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+        }
+      },
+      "rtl_vectors": 576,
+      "c_parser_comparisons": 380,
+      "result": "PASS 576 framing vectors; hold/readback/reset checks",
+      "synthesis": {
+        "num_wires": 732,
+        "num_wire_bits": 1277,
+        "num_pub_wires": 732,
+        "num_pub_wire_bits": 1277,
+        "num_ports": 17,
+        "num_port_bits": 102,
+        "num_memories": 0,
+        "num_memory_bits": 0,
+        "num_processes": 0,
+        "num_cells": 632,
+        "num_submodules": 0,
+        "num_cells_by_type": {
+          "CCU2C": 23,
+          "L6MUX21": 12,
+          "LUT4": 314,
+          "PFUMX": 41,
+          "TRELLIS_DPR16X4": 104,
+          "TRELLIS_FF": 138
+        }
+      },
+      "source_sha256": {
+        "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+        "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+        "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+      },
+      "c_oracle_sha256": {
+        "stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+        "stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+        "wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+        "wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799"
+      },
+      "place_route": "not run",
+      "timing": "not measured",
+      "physical_pinout": "not assigned",
+      "limits": [
+        "No physical I2C or USB receiver, session state/sequence/lease engine, MIDI, clock setup or audio.",
+        "Ready/valid backpressure requires upstream buffering; physical overflow must fail safe.",
+        "Mapped cells describe this slice only; no full-system resource or timing conclusion."
+      ]
+    },
+    "f1_session": {
+      "session": {
+        "tests": 25,
+        "skipped": 1,
+        "passed": 24,
+        "log_sha256": "b45a171643ddc7d37937f2b88190556bec8aeaa2c602838b78dfe9eba79c16ae"
+      },
+      "i2c_wire": {
+        "tests": 8,
+        "skipped": 0,
+        "passed": 8,
+        "log_sha256": "be7a547e10f2a389545fd0b6f36566068d49206e6ed651b5629f6a8563e15a61"
+      }
+    },
+    "usb_metadata": {
+      "tests": 3,
+      "skipped": 0,
+      "passed": 3,
+      "log_sha256": "78cb8e08a73cf7d9ec89ecbeba02c566ad32f69819a27f89b198977989c5297b"
+    },
+    "usb_components": {
+      "midi": "PASS MIDI planner: 768 C pitch/setup/note comparisons (702 valid); immutable BUSY, stale off, CC120/123, cable/channel filters, ownership blocking/tagging, release hold, timeout, disconnect/quarantine",
+      "phy": "PASS USB PHY validation: unACKed IN retry, delayed address, CRC/stuff/EOP/oversize rejection, aligned/staged MIDI backpressure/flush, CDC line coding/notification/bulk/ZLP, HALT/CLEAR, STALL recovery, SOF wrap/suspend/resume, VBUS; smoke: descriptors, address, configuration, CDC class, CDC bytes, MIDI packet and duplicate",
+      "disabled": "PASS USB default-zero ID guard: detached, no drive, no configuration"
+    },
+    "usb_integrated": {
+      "tests": 5,
+      "passed": 5,
+      "log_sha256": "a06801a7225adcd93a73c971d6d5d9012e6aa13ca916e685f41dffa035a5cde4"
+    },
+    "usb_mapping": {
+      "num_wires": 17940,
+      "num_wire_bits": 37971,
+      "num_pub_wires": 17940,
+      "num_pub_wire_bits": 37971,
+      "num_ports": 90,
+      "num_port_bits": 781,
+      "num_memories": 0,
+      "num_memory_bits": 0,
+      "num_processes": 0,
+      "num_cells": 23141,
+      "num_submodules": 0,
+      "num_cells_by_type": {
+        "$scopeinfo": 48,
+        "CCU2C": 2242,
+        "DP16KD": 5,
+        "L6MUX21": 211,
+        "LUT4": 11715,
+        "MULT18X18D": 4,
+        "PFUMX": 1484,
+        "TRELLIS_DPR16X4": 211,
+        "TRELLIS_FF": 7221
+      }
+    },
+    "usb_cdc_audit": {
+      "synchronizer_bits": 46,
+      "constant_synchronizer_bits": 5,
+      "registered_control_bits": 24,
+      "reset_release_bits": 12,
+      "mutation_bypasses_rejected": 2,
+      "scope": "listed direct synchronizer chains, exclusive first-stage fanout, reset release pairs and registered controls only",
+      "exhaustive_cdc": false,
+      "sta_mtbf_signoff": false
+    }
+  },
+  "historical_reports_integrity": {
+    "simulation-jt03/verification/ysii-20261114.json": {
+      "sha256": "b379f72c23c832d3ff869b8712fdc9c45dae462d9f0b5373c4e3bd5615f2a1ea",
+      "matched_sources": 5
+    },
+    "synthesis-jt03/verification/up5k-20261114.json": {
+      "sha256": "371a3c433986c2543f335fd89cd33649c0b3d85b593c265dba7477daa786cb5f",
+      "matched_sources": 5
+    },
+    "fpga-jt03-minimal/verification/minimal-up5k-20261114.json": {
+      "sha256": "71cf566b8ada1a6c41aeac2d8cebc4b59a612a6f05346a8e52d1e5191e478b54",
+      "matched_sources": 18
+    },
+    "fpga-standalone/verification/ulx3s-board-20261115.json": {
+      "sha256": "32edbf63302f782abe6cc23729ae21fba29de6b26028d4b84326f6f9207e17bf",
+      "matched_functional_sources_and_host": 82
+    }
+  },
+  "source_files_sha256": {
+    "fpga-jt03-minimal/PROTOCOL.md": "0d18add07fd888c27deb5137c24a478a0eff1bc8a412eb55c64504dece1a319f",
+    "fpga-jt03-minimal/README.md": "2c2d25f0dd52b47a86dfdd81379d030400919c925781b55bdfb4a4d85204215d",
+    "fpga-jt03-minimal/rtl/async_pcm_fifo.v": "d9d117adeedeaf0ce18a7027cb2f4da564fcae98f61a548ccd9d4fdae00140bd",
+    "fpga-jt03-minimal/rtl/audio_bridge.v": "208a75f05bb478250fd04d49463039dd8d2eff00b7af51ee82f98795b3c6f1f9",
+    "fpga-jt03-minimal/rtl/event_fifo.v": "aa3d68bc037b0b1bb5e29908430dbeb15efe98656b0897ccb092280c7447ec7e",
+    "fpga-jt03-minimal/rtl/i2s_output.v": "46e3c5a4287bd7a555740aef2ca03a5fa386b61f94e40310e84ea9fd3ed6ad2a",
+    "fpga-jt03-minimal/rtl/jt03_minimal.v": "aff606069d4df3401b01f767590840036e7d750a3a911c0fb8eeeb056b77dc19",
+    "fpga-jt03-minimal/rtl/reset_sync.v": "36ec053506795eb9d2c2b1694b73152dbf837de648fc1887fca2078d3cf08a13",
+    "fpga-jt03-minimal/rtl/spi_command.v": "8d7a31d6fa2fcdbf1b41c8e43eaee04130c0df20b8e0fb1f575a8a240ef7fec7",
+    "fpga-jt03-minimal/rtl/ym_bus_writer.v": "270a5eae2f156feb09bbcae8253810b02d70b309b0a08c4d6f54589562cd6b28",
+    "fpga-jt03-minimal/tests/fifo_test.cpp": "cef25fc6241439afc0254e5cea5a64553d5f404849d5802e75f7dc1b92995ab0",
+    "fpga-jt03-minimal/tests/system_test.cpp": "0fa2d68c0839956607d5b069269829be0728076d27936abe4c70562c9212a856",
+    "fpga-jt03-minimal/tests/test_cdc.py": "e847a8ecc2d403f93e4a3268c09e210736c8066a826cd7f0b5a1436adc51caa1",
+    "fpga-jt03-minimal/tests/test_protocol.py": "d9200619379cffa55e8f9d86877fd5285957ce1dd318cede1a1bfade933d54a6",
+    "fpga-jt03-minimal/tests/test_timing_report.py": "467f41917c93e8097ac48632c56c8e0361fe20d2d6e7627dbda2ac1fdebe76e5",
+    "fpga-jt03-minimal/tools/cdc_check.py": "b3c2de527de7ed3bd78a05c72875ed0a8d444aae4490997c70afb101aa610c95",
+    "fpga-jt03-minimal/tools/check.py": "163391f35f7b1974f426eb1c71d626e9bee2f95e0e12d9c53746ffb7c5b98eb6",
+    "fpga-jt03-minimal/tools/protocol.py": "634dcf47f913f47ad1fd9af12d1316a583723cc98414b3df0e706a39da792506",
+    "fpga-jt03-minimal/verification/minimal-up5k-20261114.json": "71cf566b8ada1a6c41aeac2d8cebc4b59a612a6f05346a8e52d1e5191e478b54",
+    "fpga-standalone/API-COMPATIBILITY.md": "a0b4d7d1496ccde07174be934a3dc9ef57542af38888a605fc0eaa3479d44993",
+    "fpga-standalone/AUDIO.md": "640fb090b625c62f7c3ae56e258857efda711d3fcd6652c19b31a3a5e29550ce",
+    "fpga-standalone/BOARD.md": "80dc71edea59d99e44c0efafcac2d37d606d4056ee228b505317af9d8efe2fd5",
+    "fpga-standalone/CLOCKS.md": "1d44e2a6fe5d574b11eb21c457e38c59c8da4516126055a7c7192698136889bc",
+    "fpga-standalone/README.md": "e62b705ea62863310d98ee574dad7c16f61abc48e88a0fedc1ce909ab7cbfe5f",
+    "fpga-standalone/SESSION.md": "b936470e45e34c312d142ecee435b657906645f84d13bace41e2e9bb0bd9c3eb",
+    "fpga-standalone/TIMING.md": "8cb5519de0b405d660055d7bbfcc1b7bbe0be2c5dd2d043afdd1942ea917bd52",
+    "fpga-standalone/USB.md": "f2b5289bda10f381e67efd028414bbb265ff172802885e74d77396bfc12e31ea",
+    "fpga-standalone/boards/ulx3s/PINOUT.md": "d1a48e6884dc5d1e64a8a55fb6b530d038a4e1d3cd8114b2f76f7e750597af25",
+    "fpga-standalone/boards/ulx3s/UPSTREAM-LICENSE.md": "d60e70ec6e2bf2b3153f74015cb9ee0f84773ed32d46d8a252e0aadef1d702f9",
+    "fpga-standalone/boards/ulx3s/board.lpf": "a5de0110c16496653f1bc892bf75bab4699a3b4400376a3fe65b333cde873243",
+    "fpga-standalone/boards/ulx3s/board.sdc": "9805e0fff9cbde698a35aae264f4bd5b72cd6c30b4d5be2df954385c5224caa0",
+    "fpga-standalone/boards/ulx3s/clock_routes.py": "e2b72e6022e1253500fcd65d78fec08323267159bc277b60cfc096ccc1e9bd2d",
+    "fpga-standalone/boards/ulx3s/clocking.v": "e6a37a69939c07124c77c34885af041f27867dad229e0c62ef753c1364b6a52f",
+    "fpga-standalone/boards/ulx3s/diamond/README.md": "c1782a009acd1f78c6afdbde37dc708c3744e40c1f66eb5a6bf14f540fdeddfe",
+    "fpga-standalone/boards/ulx3s/diamond/check_bundle_oss.py": "0e7db2d0cc9955bcb361339fc41c0963c59dbc81918abce2cea64f9633c0acb3",
+    "fpga-standalone/boards/ulx3s/diamond/collect.py": "44b2e06ac834b7608e7290b85b2d1f1a10f4a0def7c08a013f533cd417d27239",
+    "fpga-standalone/boards/ulx3s/diamond/prepare.py": "c90b0855d55e884a2f8b0c4ea059b0df9106cc495d188fa779f86532d58a17d6",
+    "fpga-standalone/boards/ulx3s/diamond/project.tcl": "4e07dfe59e20c27c223e18049214e52b4f739770238f79ca8d250c0324dccb95",
+    "fpga-standalone/boards/ulx3s/diamond/route.tcl": "6850e01ca5e5b2fa5ae5a7031a215bb4ba518c6237a48355dea17800c0f15c9c",
+    "fpga-standalone/boards/ulx3s/diamond/test_prepare.py": "0001533454396b140e79a2cc478b09005c7ed95b0f295519f0cb2c45a9584b02",
+    "fpga-standalone/boards/ulx3s/pins.json": "44c06b4eff9d05a8f0ae596f2e31ee8dc72b8a527dbd2c3b13d82a3ab8c5eefe",
+    "fpga-standalone/boards/ulx3s/top.v": "758e39614f58cdb7e1e50324c84f582e950288ca4ca664beeae82c9a2c15d3f0",
+    "fpga-standalone/check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+    "fpga-standalone/check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+    "fpga-standalone/check_board.py": "c0b973e49b169e024d87f1b63dc6105e03bbf94aa9ef2e13b3154b13998e43fa",
+    "fpga-standalone/check_clocks.py": "87c8d74f4284816a034bac3a5fb3fa9cc8b43110c158f98e9ff84e9535f1b098",
+    "fpga-standalone/check_pnr.py": "6515195578940e206d9e2b2b2cb508bc7afb464af8362651946c99fd357eb118",
+    "fpga-standalone/check_pnr_cdc.py": "f7860d73ec7c9de9cf0eade216ba79c16a69e37c842c8c3ba9290b9f8b844ab4",
+    "fpga-standalone/check_real_cdc.py": "556c7fb3d1d00a4caf5cfce9b24945379d2e2bdd0a08ca8f7080dd45a054709d",
+    "fpga-standalone/check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+    "fpga-standalone/check_usb.py": "58d0fc1cdb20a85673ca5385284cedd170839187cebd4ec15ccef399910b96c9",
+    "fpga-standalone/constraints/ecp5-ooc.sdc": "a6fd4cdd18707b90956900a2c61fb6d969ce93f6971f7b511c0d7a849c64b112",
+    "fpga-standalone/rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+    "fpga-standalone/rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+    "fpga-standalone/rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+    "fpga-standalone/rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+    "fpga-standalone/rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+    "fpga-standalone/rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+    "fpga-standalone/rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+    "fpga-standalone/rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+    "fpga-standalone/rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+    "fpga-standalone/rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+    "fpga-standalone/rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+    "fpga-standalone/rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+    "fpga-standalone/rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+    "fpga-standalone/rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+    "fpga-standalone/rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+    "fpga-standalone/rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+    "fpga-standalone/rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+    "fpga-standalone/rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+    "fpga-standalone/rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+    "fpga-standalone/rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+    "fpga-standalone/rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+    "fpga-standalone/rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+    "fpga-standalone/rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+    "fpga-standalone/rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+    "fpga-standalone/rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+    "fpga-standalone/rtl/revc_v2_session.v": "c91c4ea6cfdc4771ae3648907946ec488722cea6f423531b30b146c22d29a122",
+    "fpga-standalone/rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+    "fpga-standalone/rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+    "fpga-standalone/tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+    "fpga-standalone/tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+    "fpga-standalone/tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+    "fpga-standalone/tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+    "fpga-standalone/tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+    "fpga-standalone/tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+    "fpga-standalone/tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+    "fpga-standalone/tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+    "fpga-standalone/tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+    "fpga-standalone/tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+    "fpga-standalone/tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+    "fpga-standalone/tests/test_board_checks.py": "d98aaccf86a053e5410a786cc07ae5f959e15f0323502d80a6e44a14b9644320",
+    "fpga-standalone/tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+    "fpga-standalone/tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+    "fpga-standalone/tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+    "fpga-standalone/tests/test_pnr_checks.py": "6a44ed1c3e8a0c810a2a4e132b3ba4bef7e1afeb50866e703ab2ec31299be405",
+    "fpga-standalone/tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+    "fpga-standalone/tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+    "fpga-standalone/tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+    "fpga-standalone/tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+    "fpga-standalone/tests/ulx3s_adapter_test.cpp": "26901d3a0d8066a6e58dcf32afda5934f41536706559245bf9f6bd2477072dc2",
+    "fpga-standalone/tests/ulx3s_stubs.v": "8400eb9ddd28d192d1bb85711f61a3300c782ba3d2711a2cf72bdd7ed9738150",
+    "fpga-standalone/tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+    "fpga-standalone/tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+    "fpga-standalone/tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+    "fpga-standalone/tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+    "fpga-standalone/tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+    "fpga-standalone/toolchain-pnr-lock.json": "5127fe77c964617cb7137a477978f97b79104c1c638bcb556243e990edba358a",
+    "fpga-standalone/tools/board_checks.py": "9c82b092458c3063d2f07a1eb78a5391e19dfff9d3ee448c4f09a470775ae9fd",
+    "fpga-standalone/tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+    "fpga-standalone/tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+    "fpga-standalone/tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+    "fpga-standalone/tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+    "fpga-standalone/tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+    "fpga-standalone/vendor/usbcorev/LICENSE": "37d897f62a4324d8d2f313d7d1b98cd26f872d2ae598b7eb9a69b1c129bcc135",
+    "fpga-standalone/vendor/usbcorev/README.md": "9b263301048e78e0b0630c08b393853f39f2e216ed15c967a1ff51eb9a6aa195",
+    "fpga-standalone/vendor/usbcorev/patches/f1-validation.patch": "ea6b27ad85a11b8471093365dc782b12ecf9601078fccf47f49765cd7bc639e7",
+    "fpga-standalone/vendor/usbcorev/upstream.json": "49360e80f416749080edb814f027628235763b44733676bf601402add2e3ee58",
+    "fpga-standalone/vendor/usbcorev/usb.v": "48811abe0b7d6706a7c92f36e086aea74e5a9bd7f65e716e11f18ed7d1bc964f",
+    "fpga-standalone/vendor/usbcorev/usb_recv.v": "5e7d80c57ebd23d26aefe60aadc2c2326ce8d0c53e2929dcd5e9f1b18746b025",
+    "fpga-standalone/vendor/usbcorev/usb_tx.v": "f532efe10aac7ec97212f75b4b7c40f5ff96d0cde8a608056c681baf869183df",
+    "fpga-standalone/vendor/usbcorev/usb_utils.v": "3d310e1a2acfaa920787cf9b1be01ccdfc5a04a105c15b00f8969c6ed01032cf",
+    "fpga-standalone/vendor/usbcorev/utils.v": "ba19a6dc37c8afd18bb4f88247fcbdd32003adaf046b5844fdd0c0ad124527db",
+    "fpga-standalone/verification/audio-20261115.json": "0de062e7d889fa791f330ad4bfedda422779fe48b98ed8b76927f3a99031e0bb",
+    "fpga-standalone/verification/clocks-20261115.json": "0c29e2f942c3eabbe715246df718d982edc82f506c42801a702fefe25910ef67",
+    "fpga-standalone/verification/diamond-preparation-20261115.json": "2561e16b1f187557c23e37b1628b86fe236501c70bb22ba4f733a1b78eea3a9e",
+    "fpga-standalone/verification/diamond-sourcecheck-20261115.json": "56ecc819dce540d4bbb6e5a55ae62344c72da945f2aac905a161f2251a4e0ef8",
+    "fpga-standalone/verification/frame-20261114.json": "95a4c57d1cf88c4de21b4dda54801c4a3ef1c5090acef55a867adfaeb8e92592",
+    "fpga-standalone/verification/pnr-20261115.json": "aa9a643f2e7369d462a72297ffc7697ac88061391ee54bbc8a6d7eaa0b0aa31a",
+    "fpga-standalone/verification/session-20261114.json": "bc494b762817dfb92dd709689ce52accc2c359717d1aafb8a7d30abd3c30e374",
+    "fpga-standalone/verification/ulx3s-board-20261115.json": "32edbf63302f782abe6cc23729ae21fba29de6b26028d4b84326f6f9207e17bf",
+    "fpga-standalone/verification/usb-20261115.json": "a48db963a1096575c63754f1e9fa7e4aac43205f52039f6712a3f2a5d0d15c85",
+    "simulation-jt03/LICENSE-GPL-3.0.txt": "589ed823e9a84c56feb95ac58e7cf384626b9cbf4fda2a907bc36e103de1bad2",
+    "simulation-jt03/README.md": "bc37e5c4c1ad4dbbc4e3566939216bbfad83e4318fa1e4298d64f00324b12859",
+    "simulation-jt03/audio.py": "7bfc5512c63ff3b09a548afb18eca03960da55a8e422f7a53ec71fb815e5cdfa",
+    "simulation-jt03/build.py": "86493c4d06b7fd6c85a82a0fe646fa93180aa5fa743701655a6199c1510c1523",
+    "simulation-jt03/core-lock.json": "b979c6d33ff5fc4dd76a28c08362251bf42c456acb792185d73ed0e6e2b0eda9",
+    "simulation-jt03/render.py": "4c14607fdab5d9e42179567fe3e5e148219059447179fd779d8650ae169e02b8",
+    "simulation-jt03/requirements-analysis.txt": "983665a6331eda07ab1f4b23ef92d66f4b024c27b360ee0e7420511ef3b28c64",
+    "simulation-jt03/revc_jt03.v": "de3c143e0605da8aad64525500d8356bf140545a417ab1cdd1b379a52df73219",
+    "simulation-jt03/simulator.cpp": "e50acdd6eec210941ce8388bb73abcdaee8f11828d50c5a8e9df5e1dc1de0d2f",
+    "simulation-jt03/tests/test_audio.py": "da280068cbb092fcd4f278cd45be7aeab4c67413339202e3415f6f10007d61ba",
+    "simulation-jt03/tests/test_simulation.py": "833e1ab1714756dec89a2451239c426b4fae3f91f658f9c49d65f5177067d47e",
+    "simulation-jt03/verification/ysii-20261114.json": "b379f72c23c832d3ff869b8712fdc9c45dae462d9f0b5373c4e3bd5615f2a1ea",
+    "synthesis-jt03/README.md": "327c047c09ab7cc24cee1e67ffe7a421dc2c2fb29820f6e0485711d7e8726400",
+    "synthesis-jt03/jt03_fit_probe.v": "a414357b2a8756e098643da36a9d5c142db6c454d3debf7ed6813f73a8acc161",
+    "synthesis-jt03/run.py": "899255f44e67e05c45c5db83d91f3a4fee2535de6e9a85bf276e130215ec663a",
+    "synthesis-jt03/tests/test_reports.py": "c4bdbbb04d78b487179efd29f9fa3872afacce4d27194171124137981152acbe",
+    "synthesis-jt03/toolchain-lock.json": "759788a7913aa54318de4d10dfc270925da2604b4a3371e7b5b3da19e539fcde",
+    "synthesis-jt03/verification/up5k-20261114.json": "371a3c433986c2543f335fd89cd33649c0b3d85b593c265dba7477daa786cb5f"
+  },
+  "exclusions": [
+    "private WYM1 and generated music/audio",
+    "compiled simulators, shared libraries, FPGA bitstreams and toolchains",
+    "local editor settings and unrelated PCB router intermediates"
+  ],
+  "limits": [
+    "The optional private-score session test is skipped; no private song is rerun for this publication check.",
+    "Old P&R/STA reports are retained and their sources are matched; P&R is not rerun here.",
+    "Fresh USB reuses the SHA-matched post-timing-refactor regression from the stored ULX3S report for non-USB reachable RTL.",
+    "No Diamond execution, OS USB enumeration, board programming, physical timing/USB compliance or new hardware acceptance."
+  ]
+}

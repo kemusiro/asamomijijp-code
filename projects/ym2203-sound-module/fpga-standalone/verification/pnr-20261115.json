@@ -1,0 +1,2462 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T17:28:14.641860+00:00",
+  "kind": "ECP5 USB-integrated out-of-context routed internal timing; not board signoff",
+  "configuration": {
+    "device": "LFE5U-85F",
+    "package_context": "CABGA381",
+    "speed_grade": 6,
+    "mode": "out-of-context",
+    "seeds": [
+      1,
+      2,
+      3
+    ],
+    "control_usb_mhz": 48,
+    "audio_mhz": 49.152,
+    "simulation_only_vid_pid": "cafe:4001",
+    "physical_io_allocated": false,
+    "global_clocks_routed": false
+  },
+  "sources_sha256": {
+    "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+    "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+    "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+    "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+    "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+    "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+    "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+    "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+    "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+    "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+    "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+    "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+    "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+    "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+    "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+    "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+    "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+    "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+    "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+    "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+    "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+    "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+    "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+    "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+    "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+    "rtl/revc_v2_session.v": "c91c4ea6cfdc4771ae3648907946ec488722cea6f423531b30b146c22d29a122",
+    "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+    "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+    "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+    "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+    "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+    "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+    "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+    "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+    "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+    "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+    "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+    "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+    "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+    "tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+    "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+    "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+    "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+    "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+    "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+    "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+    "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+    "tests/test_pnr_checks.py": "6a44ed1c3e8a0c810a2a4e132b3ba4bef7e1afeb50866e703ab2ec31299be405",
+    "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+    "tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+    "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+    "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+    "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+    "tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+    "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+    "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+    "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+    "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+    "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+    "check_clocks.py": "87c8d74f4284816a034bac3a5fb3fa9cc8b43110c158f98e9ff84e9535f1b098",
+    "check_pnr.py": "6515195578940e206d9e2b2b2cb508bc7afb464af8362651946c99fd357eb118",
+    "check_pnr_cdc.py": "f7860d73ec7c9de9cf0eade216ba79c16a69e37c842c8c3ba9290b9f8b844ab4",
+    "check_real_cdc.py": "556c7fb3d1d00a4caf5cfce9b24945379d2e2bdd0a08ca8f7080dd45a054709d",
+    "check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+    "check_usb.py": "58d0fc1cdb20a85673ca5385284cedd170839187cebd4ec15ccef399910b96c9",
+    "constraints/ecp5-ooc.sdc": "a6fd4cdd18707b90956900a2c61fb6d969ce93f6971f7b511c0d7a849c64b112",
+    "toolchain-pnr-lock.json": "5127fe77c964617cb7137a477978f97b79104c1c638bcb556243e990edba358a",
+    "vendor/usbcorev/usb_tx.v": "f532efe10aac7ec97212f75b4b7c40f5ff96d0cde8a608056c681baf869183df",
+    "vendor/usbcorev/usb.v": "48811abe0b7d6706a7c92f36e086aea74e5a9bd7f65e716e11f18ed7d1bc964f",
+    "vendor/usbcorev/LICENSE": "37d897f62a4324d8d2f313d7d1b98cd26f872d2ae598b7eb9a69b1c129bcc135",
+    "vendor/usbcorev/README.md": "9b263301048e78e0b0630c08b393853f39f2e216ed15c967a1ff51eb9a6aa195",
+    "vendor/usbcorev/utils.v": "ba19a6dc37c8afd18bb4f88247fcbdd32003adaf046b5844fdd0c0ad124527db",
+    "vendor/usbcorev/usb_utils.v": "3d310e1a2acfaa920787cf9b1be01ccdfc5a04a105c15b00f8969c6ed01032cf",
+    "vendor/usbcorev/upstream.json": "49360e80f416749080edb814f027628235763b44733676bf601402add2e3ee58",
+    "vendor/usbcorev/usb_recv.v": "5e7d80c57ebd23d26aefe60aadc2c2326ce8d0c53e2929dcd5e9f1b18746b025",
+    "vendor/usbcorev/patches/f1-validation.patch": "ea6b27ad85a11b8471093365dc782b12ecf9601078fccf47f49765cd7bc639e7"
+  },
+  "tools": {
+    "nextpnr-ecp5": {
+      "version": "\"nextpnr-ecp5\" -- Next Generation Place and Route (Version nextpnr-0.11.1-92-g5e2718b6)",
+      "sha256": "cc2debf20d058c969a939083469180afb501de9dc2f003787d67ec6c1824693c"
+    },
+    "yosys": {
+      "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+    }
+  },
+  "distribution_lock": {
+    "schema_version": 1,
+    "purpose": "Reproducible ECP5 internal out-of-context P&R evaluation; no programming tool invocation",
+    "distribution": "OSS CAD Suite",
+    "release": "2026-11-14",
+    "platform": "darwin-arm64",
+    "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-11-14/oss-cad-suite-darwin-arm64-20261114.tgz",
+    "archive_sha256": "e8f4edd46387bc75dc7449e0b4834bf5a7bd8465e2d7c83239120a14ef22b3ca",
+    "nextpnr_commit": "5e2718b6364e189e414c35b8eef3db4d5e3c0773",
+    "nextpnr_version": "nextpnr-0.11.1-92-g5e2718b6",
+    "nextpnr_relative_executable": "libexec/nextpnr-ecp5",
+    "note": "Invoke libexec directly: the distribution's bin wrapper changes user-level XDG directories. This project does not change HOME or global tools. Other platforms require their own verified distribution and report."
+  },
+  "functional_regression": {
+    "schema_version": 1,
+    "kind": "Targeted current-RTL functional regression after timing refactor; no physical acceptance",
+    "all_passed": true,
+    "sources_sha256": {
+      "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+      "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+      "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+      "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+      "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+      "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+      "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+      "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+      "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+      "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+      "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+      "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+      "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+      "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+      "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+      "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+      "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+      "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+      "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+      "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+      "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+      "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+      "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+      "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+      "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+      "rtl/revc_v2_session.v": "c91c4ea6cfdc4771ae3648907946ec488722cea6f423531b30b146c22d29a122",
+      "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+      "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+      "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+      "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+      "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+      "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+      "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+      "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+      "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+      "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+      "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+      "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+      "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+      "tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+      "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+      "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+      "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+      "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+      "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+      "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+      "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+      "tests/test_pnr_checks.py": "6a44ed1c3e8a0c810a2a4e132b3ba4bef7e1afeb50866e703ab2ec31299be405",
+      "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+      "tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+      "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+      "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+      "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+      "tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+      "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+      "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+      "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+      "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+      "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+      "check_clocks.py": "87c8d74f4284816a034bac3a5fb3fa9cc8b43110c158f98e9ff84e9535f1b098",
+      "check_pnr.py": "6515195578940e206d9e2b2b2cb508bc7afb464af8362651946c99fd357eb118",
+      "check_pnr_cdc.py": "f7860d73ec7c9de9cf0eade216ba79c16a69e37c842c8c3ba9290b9f8b844ab4",
+      "check_real_cdc.py": "556c7fb3d1d00a4caf5cfce9b24945379d2e2bdd0a08ca8f7080dd45a054709d",
+      "check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+      "check_usb.py": "58d0fc1cdb20a85673ca5385284cedd170839187cebd4ec15ccef399910b96c9"
+    },
+    "tools": {
+      "verilator": {
+        "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+        "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+      },
+      "yosys": {
+        "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+        "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+      },
+      "cc": {
+        "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+        "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+      },
+      "c++": {
+        "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+        "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+      }
+    },
+    "c_oracle_sha256": {
+      "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+      "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+      "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+      "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+      "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+      "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+      "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1",
+      "firmware-c/src/midi.c": "076ab1bc64111344cf60c8d77aa31b01d9d4a37802a8c2bdfa1e6ad69c4cf8d0",
+      "firmware-c/src/midi_pitch.h": "cc84f6ab223a5da847b446a62b9b1fa5d36fb75c072be12e350974d9ad47e07a",
+      "firmware-c/tests/midi_bridge.c": "7675651e5e11d0fe83da37a9e0f824ac4afef861f438cf98987f6b85dd5e2d27"
+    },
+    "unchanged_host_sha256": {
+      "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f",
+      "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+      "firmware-c/host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+      "firmware-c/host/midi_handover.py": "cbb28c593be55a7492fe81ba2f22129062aab15fc601b85a1bf84045b7697d28",
+      "firmware-c/host/player.py": "1c35513ed6cc49d8e1d858ac5647b627e7a9cc865d6ec57b7cecd8358475082a",
+      "firmware-c/host/recovery_check.py": "7eb774ece8cee0b6f4babc8ee63650a57b30c54423ba6d712a7144a0c3785f5b",
+      "firmware-c/host/usb_disconnect_check.py": "130c395848260de3ca8f7c6af20765a9aa3eb8cfc6eacfa302de537f44fc868b"
+    },
+    "session": {
+      "schema_version": 1,
+      "date_utc": "2026-11-14T17:19:05.320660+00:00",
+      "kind": "F1 I2C v2 RTL simulation and ECP5 technology mapping; not hardware/audio acceptance",
+      "tools": {
+        "verilator": {
+          "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+          "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+        },
+        "yosys": {
+          "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+          "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+        },
+        "cc": {
+          "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+          "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+        },
+        "c++": {
+          "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+          "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+        }
+      },
+      "python_version": "3.15.2",
+      "sources_sha256": {
+        "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+        "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+        "rtl/revc_clocked_ym_top.v": "89181747c0631354461361e96fc07a9437f16027ebbd18b0cf267ecce0df59a8",
+        "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+        "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+        "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+        "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+        "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+        "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+        "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+        "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+        "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+        "rtl/revc_midi_planner.v": "cb6ef0e0e4c937d6152967d227f9b2565ed8ae2c77b39678cc1f5b256179174d",
+        "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+        "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+        "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+        "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+        "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+        "rtl/revc_usb_composite.v": "451556f56ced66f04f6a75a7e6e5c1d371ea586f854096d2b11486b865d7575d",
+        "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+        "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+        "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+        "rtl/revc_usb_ym_top.v": "ee7629ae70e7c53cda8f65fc18e66ea6ee2abc594d8171b5f0106b50ec3fbf25",
+        "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+        "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+        "rtl/revc_v2_session.v": "0593019e66d470a2f2f21d0754458e7aa409aab7b7da2ae4e9680785ba29a5ba",
+        "rtl/revc_ym_backend.v": "deef1a32059300396bed83255ff3bce0cba8954db993e7447baeb3c26b83c053",
+        "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+        "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+        "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+        "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+        "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+        "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+        "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+        "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+        "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+        "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+        "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+        "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+        "tests/usb_phy_test.cpp": "1fce92670c99f505fd5aa4d4216a65d931a043d6000960f3e3a3c6e5c21a4a18",
+        "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+        "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+        "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+        "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+        "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+        "tools/pnr_checks.py": "f41b9a3839af0a801bce4c220ddce0fde3b83842f19a27d156f4d1d92c42472a",
+        "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+        "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+        "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+        "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+        "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+        "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+        "tests/test_pnr_checks.py": "5ef11e5dea11f9810c087c9700b083ed0c33b6b95ec2df48ecaba53a112f3a28",
+        "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+        "tests/test_session.py": "5a2560035f0292e05eaa1a62a0f4a2e6bc6e279646c0af2bba78353bd19ba93a",
+        "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+        "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+        "check_session.py": "03595aaeec8f3d053a13fb43323964ee048053c6174dba8da5d6e33657500226",
+        "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+      },
+      "c_oracle_sha256": {
+        "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+        "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+        "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+        "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+        "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+        "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+        "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1"
+      },
+      "unchanged_host_sha256": {
+        "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+        "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f"
+      },
+      "frame": {
+        "schema_version": 1,
+        "date_utc": "2026-11-14T17:18:32.294911+00:00",
+        "scope": "F1 v2 frame validator only; not a board or complete protocol implementation",
+        "tools": {
+          "verilator": {
+            "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+            "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+          },
+          "yosys": {
+            "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+            "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+          },
+          "cc": {
+            "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+            "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+          }
+        },
+        "rtl_vectors": 576,
+        "c_parser_comparisons": 380,
+        "result": "PASS 576 framing vectors; hold/readback/reset checks",
+        "synthesis": {
+          "num_wires": 732,
+          "num_wire_bits": 1277,
+          "num_pub_wires": 732,
+          "num_pub_wire_bits": 1277,
+          "num_ports": 17,
+          "num_port_bits": 102,
+          "num_memories": 0,
+          "num_memory_bits": 0,
+          "num_processes": 0,
+          "num_cells": 632,
+          "num_submodules": 0,
+          "num_cells_by_type": {
+            "CCU2C": 23,
+            "L6MUX21": 12,
+            "LUT4": 314,
+            "PFUMX": 41,
+            "TRELLIS_DPR16X4": 104,
+            "TRELLIS_FF": 138
+          }
+        },
+        "source_sha256": {
+          "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+          "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+          "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+        },
+        "c_oracle_sha256": {
+          "stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+          "stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+          "wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+          "wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799"
+        },
+        "place_route": "not run",
+        "timing": "not measured",
+        "physical_pinout": "not assigned",
+        "limits": [
+          "No physical I2C or USB receiver, session state/sequence/lease engine, MIDI, clock setup or audio.",
+          "Ready/valid backpressure requires upstream buffering; physical overflow must fail safe.",
+          "Mapped cells describe this slice only; no full-system resource or timing conclusion."
+        ]
+      },
+      "tests": {
+        "session": {
+          "tests": 25,
+          "skipped": 0,
+          "passed": 25,
+          "log_sha256": "5221ab42cb5f48fcb7590fb71c1ede7093dbd82fe4e5b592acc7685e790734f5"
+        },
+        "i2c_wire": {
+          "tests": 8,
+          "skipped": 0,
+          "passed": 8,
+          "log_sha256": "1356a7bcd75b48a62eb0c2967abe9b858300eeb3d1a6ec4833319147c748f0db"
+        }
+      },
+      "private_score": {
+        "events": 123137,
+        "period_ms": 298218,
+        "clock_hz": 4000000,
+        "crc32": "ae592289",
+        "sha256": "d7b6846c7515237ee6c7a7c785d03769e923433f8f9c4652482f7ee25fc8e853",
+        "kind": "private-data control simulation; no audio output or data included"
+      },
+      "synthesis": {
+        "num_wires": 6440,
+        "num_wire_bits": 12731,
+        "num_pub_wires": 6440,
+        "num_pub_wire_bits": 12731,
+        "num_ports": 30,
+        "num_port_bits": 189,
+        "num_memories": 0,
+        "num_memory_bits": 0,
+        "num_processes": 0,
+        "num_cells": 7566,
+        "num_submodules": 0,
+        "num_cells_by_type": {
+          "$scopeinfo": 7,
+          "CCU2C": 812,
+          "DP16KD": 4,
+          "L6MUX21": 109,
+          "LUT4": 3721,
+          "PFUMX": 402,
+          "TRELLIS_DPR16X4": 171,
+          "TRELLIS_FF": 2340
+        }
+      },
+      "configuration": {
+        "queue_capacity": 1024,
+        "event_bits": 48,
+        "packet_slots": 4,
+        "packet_max_bytes": 208,
+        "address": "0x42",
+        "i2c_model_nominal_hz": 100000,
+        "wire_model_clock_hz": 16000000,
+        "control_wrapper_clock_hz": 48000000,
+        "lease_us": 1000000,
+        "play_delay_us": 250000,
+        "late_limit_us": 100000,
+        "prepare_cleanup_timeout_us": 100000
+      },
+      "place_route": "not run",
+      "timing_measured": false,
+      "physical_pins_assigned": false,
+      "limits": [
+        "YM writer, prepare, silence and audio_ok are explicit simulated adapters, not audio RTL.",
+        "Wire tests model open-drain SDA/SCL, finite clock stretching and input glitch rejection; not electrical compliance.",
+        "Model time can advance without simulating every oscillator cycle; no real-time performance or Fmax claim.",
+        "No USB/MIDI core, Si5351 startup manager, external YM bus/FM RX/audio or final external inhibit implementation.",
+        "Mapping includes timebase, I2C, request queue, session, event FIFO and status; excludes remaining full-board functions."
+      ],
+      "wall_seconds": 37.044
+    },
+    "clocked_ym": {
+      "tests": 10,
+      "all_passed": true,
+      "log_sha256": "b7ae029446496ec0c023155b2c2425a8844e94d84e8f0e93533e4d2bfe4d6ec1"
+    },
+    "usb_ym": {
+      "tests": 5,
+      "all_passed": true,
+      "log_sha256": "be30054d111089d82bee2742ecab61172c5fa67d684b56761590594ef3480c79"
+    },
+    "metadata": {
+      "tests": 3,
+      "all_passed": true,
+      "log_sha256": "5269388055ea088cacca2a77d32e43af4066472f7503cb67185ce9fa712ecb20"
+    },
+    "components": {
+      "midi": {
+        "result": "PASS MIDI planner: 768 C pitch/setup/note comparisons (702 valid); immutable BUSY, stale off, CC120/123, cable/channel filters, ownership blocking/tagging, release hold, timeout, disconnect/quarantine",
+        "log_sha256": "52f8fd41ea81eb0bd3324a024aa8da4f09a35749fcd2c558eefe9711943f7c0f"
+      },
+      "phy": {
+        "result": "PASS USB PHY validation: unACKed IN retry, delayed address, CRC/stuff/EOP/oversize rejection, aligned/staged MIDI backpressure/flush, CDC line coding/notification/bulk/ZLP, HALT/CLEAR, STALL recovery, SOF wrap/suspend/resume, VBUS; smoke: descriptors, address, configuration, CDC class, CDC bytes, MIDI packet and duplicate",
+        "log_sha256": "84d3d37b423eef0235787a8363bbd7c2a71c1a0b2b09ab9914c8635d1a461f95"
+      }
+    },
+    "boundary_regression": {
+      "before": "Intermediate relative-time pipeline accepts one late event; original unpipelined baseline is not implicated",
+      "before_expected_failure_log_sha256": "f0c54976a88f2f443a1577dda2266f4e098d467d1237478ca29d5cf9d0ffc720",
+      "after": "Current-time absolute deadline guard passes the added regression in the 25-test session suite"
+    },
+    "coverage": [
+      "Unchanged HOST/player, CRC/order, local full YsII control model, STOP/lease/replay and exact late boundary.",
+      "Si5351 startup/eight profiles, real-YM bus/serial/PCM/I2S synthetic fixture, audio/control clock loss and permit/fault safety.",
+      "USB ownership rejection, I2C STOP, blocked MIDI discard, detach/reset/suspend, explicit restart, I2C continuity, CDC backpressure STOP.",
+      "MIDI 768 pitch/setup/note C comparisons; USB CRC/stuff/EOP/retry/halt, staged-word backpressure/flush."
+    ],
+    "limits": [
+      "Behavioral peripherals and ideal USB host; not OS enumeration or physical sound acceptance.",
+      "Low-level PCM/RX/I2S/bus RTL did not change; prior 136 PCM cases, 54 RX cases and bus/I2S component runs are not repeated here."
+    ]
+  },
+  "report_acceptance_tests": {
+    "tests": 4,
+    "skipped": 0,
+    "passed": 4,
+    "log_sha256": "30a5f59a3edeb245ae71264f7feaa1288e2a2b37ce9bd73480d85340e0d8c96c"
+  },
+  "synthesis": {
+    "num_wires": 17940,
+    "num_wire_bits": 37971,
+    "num_pub_wires": 17940,
+    "num_pub_wire_bits": 37971,
+    "num_ports": 90,
+    "num_port_bits": 781,
+    "num_memories": 0,
+    "num_memory_bits": 0,
+    "num_processes": 0,
+    "num_cells": 23141,
+    "num_submodules": 0,
+    "num_cells_by_type": {
+      "$scopeinfo": 48,
+      "CCU2C": 2242,
+      "DP16KD": 5,
+      "L6MUX21": 211,
+      "LUT4": 11715,
+      "MULT18X18D": 4,
+      "PFUMX": 1484,
+      "TRELLIS_DPR16X4": 211,
+      "TRELLIS_FF": 7221
+    }
+  },
+  "direct_pair_audit": {
+    "synchronizer_bits": 46,
+    "constant_synchronizer_bits": 5,
+    "registered_control_bits": 24,
+    "reset_release_bits": 12,
+    "mutation_bypasses_rejected": 2,
+    "scope": "listed direct synchronizer chains, exclusive first-stage fanout, reset release pairs and registered controls only",
+    "exhaustive_cdc": false,
+    "sta_mtbf_signoff": false
+  },
+  "mapped_ff_crossings": {
+    "ff_bits_checked": 7221,
+    "cross_domain_input_bits": 25,
+    "consumers": [
+      {
+        "cell": "board.gates_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "audio_clk",
+        "to": "clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "audio_clk",
+        "to": "clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "audio_clk",
+        "to": "clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "audio_clk",
+        "to": "clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "stable bundled configuration; captured only during stream reset"
+      },
+      {
+        "cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+        "port": "LSR",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "asynchronous assert into synchronous-release reset chain"
+      },
+      {
+        "cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+        "port": "LSR",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "asynchronous assert into synchronous-release reset chain"
+      },
+      {
+        "cell": "board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "clk",
+        "to": "audio_clk",
+        "reason": "two-flop input"
+      },
+      {
+        "cell": "gates_meta_TRELLIS_FF_Q",
+        "port": "DI",
+        "from": "audio_clk",
+        "to": "clk",
+        "reason": "two-flop input"
+      }
+    ],
+    "scope": "All mapped FF D/CE/LSR cones for listed cell types; primary async inputs and physical timing are outside this census",
+    "unclassified_crossings": 0,
+    "physical_cdc_signoff": false,
+    "bypass_mutations_rejected": 2
+  },
+  "routes": [
+    {
+      "clocks": {
+        "clk": {
+          "required_mhz": 48.00076675415039,
+          "fmax_mhz": 49.85293197631836,
+          "setup_margin_ns": 0.7739997940969303
+        },
+        "audio_clk": {
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 85.61643981933594,
+          "setup_margin_ns": 8.664999999763584
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 0
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 0
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 18427
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 7221
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 0
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "critical_paths": [
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 11.67999991774559,
+          "start": "board.real_ym.backend.audio.converter.fraction_TRELLIS_FF_Q_18",
+          "end": "board.real_ym.backend.audio.converter.weighted_left_TRELLIS_FF_Q_39",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "mul2dsp.v:175.32-175.125",
+            "mul2dsp.v:80.6-84.5",
+            "revc_fm_pcm.v:28.17-28.25",
+            "revc_fm_pcm.v:45.28-45.60",
+            "revc_fm_pcm.v:64.36-64.68"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge clk",
+          "delay_ns": 20.058999955654144,
+          "start": "board.real_ym.control.core.session.fifo.ram.0.0",
+          "end": "midi.done_revision[5]_TRELLIS_FF_Q_27",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:133.22-133.24",
+            "cells_map_trellis.v:141.30-141.32",
+            "cells_map_trellis.v:141.38-141.40"
+          ]
+        },
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge clk",
+          "delay_ns": 3.43599995970726,
+          "start": "board.real_ym.backend.audio.fault_TRELLIS_FF_Q",
+          "end": "gates_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "revc_usb_ym_top.v:35.80-35.90",
+            "revc_usb_ym_top.v:38.26-38.37",
+            "revc_ym_backend.v:64.23-64.33"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 14.754000060260296,
+          "start": "board.real_ym.control.now_us_TRELLIS_FF_Q_32",
+          "end": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:157.70-157.72",
+            "revc_v2_session.v:67.35-67.52",
+            "revc_v2_session.v:67.35-67.67"
+          ]
+        }
+      ],
+      "interstage": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.51200008392334,
+        "scope": "Listed synchronizer and reset-release net delay only; ideal OOC clocks, no MTBF or recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0479999780654907,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 2.51200008392334,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7640000581741333,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8279999494552612,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8140000104904175,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4789999723434448,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2009999752044678,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2009999752044678,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.465000033378601,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2100000381469727,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.003000020980835,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.465000033378601,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2369999885559082,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4579999446868896,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2120000123977661,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.5140000581741333,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4830000400543213,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2120000123977661,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.1959999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4989999532699585,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2089999914169312,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2089999914169312,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8140000104904175,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.565999984741211,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "seed": 1,
+      "report_sha256": "f3183a2b7252a62d05a95a3ff7c8d27e6dd1834ea930acdd9128dd9410bca58e",
+      "routed_sha256": "b76857b1f7708a6c908edf096460c90b764856b7a966ea1bfba825baf44aec01",
+      "log_sha256": "aa43670dd1d4e122487df7851da1dec780c2bbea592f549f6d77f5f1a3dbdb72"
+    },
+    {
+      "clocks": {
+        "clk": {
+          "required_mhz": 48.00076675415039,
+          "fmax_mhz": 50.54844665527344,
+          "setup_margin_ns": 1.0499989669953216
+        },
+        "audio_clk": {
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 83.66100311279297,
+          "setup_margin_ns": 8.391999444041035
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 0
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 0
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 18427
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 7221
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 0
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "critical_paths": [
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 11.953000113368034,
+          "start": "board.real_ym.backend.audio.converter.fraction_TRELLIS_FF_Q_8",
+          "end": "board.real_ym.backend.audio.converter.weighted_left_TRELLIS_FF_Q_39",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "mul2dsp.v:175.32-175.125",
+            "mul2dsp.v:80.6-84.5",
+            "revc_fm_pcm.v:28.17-28.25",
+            "revc_fm_pcm.v:45.28-45.60",
+            "revc_fm_pcm.v:64.36-64.68"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge clk",
+          "delay_ns": 19.782999888062477,
+          "start": "board.real_ym.control.core.session.fifo.ram.0.0",
+          "end": "midi.done_revision[2]_TRELLIS_FF_Q_29",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:133.22-133.24",
+            "cells_map_trellis.v:141.30-141.32",
+            "cells_map_trellis.v:141.38-141.40"
+          ]
+        },
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge clk",
+          "delay_ns": 3.838999956846237,
+          "start": "board.real_ym.backend.sys_stalled_TRELLIS_FF_Q",
+          "end": "gates_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "revc_usb_ym_top.v:35.80-35.90",
+            "revc_usb_ym_top.v:38.26-38.37",
+            "revc_ym_backend.v:67.26-67.37"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 13.3989999294281,
+          "start": "board.real_ym.control.now_us_TRELLIS_FF_Q_32",
+          "end": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:157.46-157.48",
+            "cells_map_trellis.v:157.62-157.64",
+            "cells_map_trellis.v:157.70-157.72",
+            "revc_v2_session.v:83.28-83.52",
+            "revc_v2_session.v:83.28-83.66"
+          ]
+        }
+      ],
+      "interstage": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.4590001106262207,
+        "scope": "Listed synchronizer and reset-release net delay only; ideal OOC clocks, no MTBF or recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 2.4590001106262207,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.5770000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.3240000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8200000524520874,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0479999780654907,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2000000476837158,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.468999981880188,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4759999513626099,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.4830000400543213,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2740000486373901,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2740000486373901,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.8200000524520874,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2640000581741333,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "seed": 2,
+      "report_sha256": "3e8239dfc1641126b2cf1eeb1fae6dccb78181ecfe74dfdadaa9db3feff03e18",
+      "routed_sha256": "d06b4b88388cb97d2e8e4be25c643b0ad3daac5a532c747e07757760b92787f2",
+      "log_sha256": "221dc367c27cdb101d3c3eb268a2f25bdbb3466a559dc9f5be4da14980b51d78"
+    },
+    {
+      "clocks": {
+        "clk": {
+          "required_mhz": 48.00076675415039,
+          "fmax_mhz": 51.41123962402344,
+          "setup_margin_ns": 1.3820009725490259
+        },
+        "audio_clk": {
+          "required_mhz": 49.15212631225586,
+          "fmax_mhz": 86.05851745605469,
+          "setup_margin_ns": 8.724999484547515
+        }
+      },
+      "utilization": {
+        "ALU54B": {
+          "available": 78,
+          "used": 0
+        },
+        "CLKDIVF": {
+          "available": 4,
+          "used": 0
+        },
+        "DCCA": {
+          "available": 56,
+          "used": 0
+        },
+        "DCSC": {
+          "available": 2,
+          "used": 0
+        },
+        "DCUA": {
+          "available": 2,
+          "used": 0
+        },
+        "DDRDLL": {
+          "available": 4,
+          "used": 0
+        },
+        "DLLDELD": {
+          "available": 8,
+          "used": 0
+        },
+        "DP16KD": {
+          "available": 208,
+          "used": 5
+        },
+        "DQSBUFM": {
+          "available": 14,
+          "used": 0
+        },
+        "DTR": {
+          "available": 1,
+          "used": 0
+        },
+        "ECLKBRIDGECS": {
+          "available": 2,
+          "used": 0
+        },
+        "ECLKSYNCB": {
+          "available": 10,
+          "used": 0
+        },
+        "EHXPLLL": {
+          "available": 4,
+          "used": 0
+        },
+        "EXTREFB": {
+          "available": 2,
+          "used": 0
+        },
+        "GND": {
+          "available": 1,
+          "used": 1
+        },
+        "GSR": {
+          "available": 1,
+          "used": 0
+        },
+        "IOLOGIC": {
+          "available": 224,
+          "used": 0
+        },
+        "JTAGG": {
+          "available": 1,
+          "used": 0
+        },
+        "MULT18X18D": {
+          "available": 156,
+          "used": 4
+        },
+        "OSCG": {
+          "available": 1,
+          "used": 0
+        },
+        "PCSCLKDIV": {
+          "available": 2,
+          "used": 0
+        },
+        "SEDGA": {
+          "available": 1,
+          "used": 0
+        },
+        "SIOLOGIC": {
+          "available": 141,
+          "used": 0
+        },
+        "TRELLIS_COMB": {
+          "available": 83640,
+          "used": 18427
+        },
+        "TRELLIS_ECLKBUF": {
+          "available": 8,
+          "used": 0
+        },
+        "TRELLIS_FF": {
+          "available": 83640,
+          "used": 7221
+        },
+        "TRELLIS_IO": {
+          "available": 365,
+          "used": 0
+        },
+        "TRELLIS_RAMW": {
+          "available": 10455,
+          "used": 211
+        },
+        "USRMCLK": {
+          "available": 1,
+          "used": 0
+        },
+        "VCC": {
+          "available": 1,
+          "used": 1
+        }
+      },
+      "critical_paths": [
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 11.61999998986721,
+          "start": "board.real_ym.backend.audio.converter.fraction_TRELLIS_FF_Q_21",
+          "end": "board.real_ym.backend.audio.converter.weighted_left_TRELLIS_FF_Q_39",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "mul2dsp.v:175.32-175.125",
+            "mul2dsp.v:80.6-84.5",
+            "revc_fm_pcm.v:28.17-28.25",
+            "revc_fm_pcm.v:45.28-45.60",
+            "revc_fm_pcm.v:64.36-64.68"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge clk",
+          "delay_ns": 19.450999960303307,
+          "start": "board.real_ym.control.core.session.fifo.ram.0.0",
+          "end": "midi.done_revision[4]_TRELLIS_FF_Q_9",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:133.22-133.24",
+            "cells_map_trellis.v:141.30-141.32",
+            "cells_map_trellis.v:141.38-141.40"
+          ]
+        },
+        {
+          "from": "posedge audio_clk",
+          "to": "posedge clk",
+          "delay_ns": 4.5609999895095825,
+          "start": "board.real_ym.backend.audio.fault_TRELLIS_FF_Q",
+          "end": "gates_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "cells_map_trellis.v:108.23-108.24",
+            "revc_usb_ym_top.v:35.80-35.90",
+            "revc_usb_ym_top.v:38.26-38.37",
+            "revc_ym_backend.v:64.23-64.33"
+          ]
+        },
+        {
+          "from": "posedge clk",
+          "to": "posedge audio_clk",
+          "delay_ns": 13.28300017863512,
+          "start": "board.real_ym.control.now_us_TRELLIS_FF_Q_32",
+          "end": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+          "source_locations": [
+            "arith_map_ccu2c.v:74.7-80.4",
+            "ccu2c_sim.vh:9.9-9.13",
+            "cells_map_trellis.v:108.23-108.24",
+            "cells_map_trellis.v:141.34-141.36",
+            "cells_map_trellis.v:157.70-157.72",
+            "revc_v2_session.v:67.35-67.52",
+            "revc_v2_session.v:67.35-67.67"
+          ]
+        }
+      ],
+      "interstage": {
+        "checks": 52,
+        "max_interstage_net_delay_ns": 2.635999917984009,
+        "scope": "Listed synchronizer and reset-release net delay only; ideal OOC clocks, no MTBF or recovery/removal signoff",
+        "routes": [
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4529999494552612,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audio.rx.meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.audio.rx.sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_7",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_2",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_5",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_6",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_3",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.bus.data_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.bus.data_sync_TRELLIS_FF_Q_4",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.control.target.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.control.target.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.audible_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.audible_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 2.635999917984009,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sys_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.sys_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.hb_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.hb_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.600000023841858,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.healthy_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.healthy_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.7869999408721924,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.6319999694824219,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.scl_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.scl_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0269999504089355,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.clocks.master.sda_meta_TRELLIS_FF_Q",
+            "second_cell": "board.clocks.master.sda_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_3",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_15",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_12",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_6",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.8849999904632568,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_14",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_5",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.468999981880188,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.7799999713897705,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_6",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_13",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9449999928474426,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_15",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_3",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2510000467300415,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_13",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_14",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.7799999713897705,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_5",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_4",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2050000429153442,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_11",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_10",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9459999799728394,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_10",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2170000076293945,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_4",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_12",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_7",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_2",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_9",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_11",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9490000009536743,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_8",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.2089999914169312,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_2",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_9",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.3109999895095825,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_8",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.rate_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.rate_sync_TRELLIS_FF_Q_7",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.gates_meta_TRELLIS_FF_Q",
+            "second_cell": "board.gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 2.3510000705718994,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2089999914169312,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "gates_meta_TRELLIS_FF_Q",
+            "second_cell": "gates_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2089999914169312,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.fault_meta_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.fault_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.6319999694824219,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.rx_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.024999976158142,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.rx_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.phy.recv.d_filter.in_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.vbus_meta_TRELLIS_FF_Q",
+            "second_cell": "usb_device.vbus_sync_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 1.0199999809265137,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.real_ym.backend.ar.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4739999771118164,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "board.real_ym.backend.sr.release_pipe_TRELLIS_FF_Q",
+            "clock": "audio_clk",
+            "max_net_delay_ns": 1.4910000562667847,
+            "budget_ns": 10.172526041666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2230000495910645,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2230000495910645,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q_1",
+            "second_cell": "usb_device.usb_domain.release_pipe_TRELLIS_FF_Q",
+            "clock": "clk",
+            "max_net_delay_ns": 0.9520000219345093,
+            "budget_ns": 10.416666666666666
+          },
+          {
+            "first_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q",
+            "second_cell": "board.management_domain.release_pipe_TRELLIS_FF_Q_1",
+            "clock": "clk",
+            "max_net_delay_ns": 1.2230000495910645,
+            "budget_ns": 10.416666666666666
+          }
+        ]
+      },
+      "seed": 3,
+      "report_sha256": "17bdd201da929c010e51ec9eb02bc5897a6b44d7ee09ed11b960a4acf279f7f9",
+      "routed_sha256": "cbd2749c2e16a1800e396a10f7dd21d9b8577747544c4a95d68dae8fa054bc73",
+      "log_sha256": "5b725394fe4d229f6407d8a2d075b7339600709b5e00aaec06df1595e072a05a"
+    }
+  ],
+  "all_internal_clock_targets_met": true,
+  "physical_pin_assignment": false,
+  "bitstream_generated": false,
+  "hardware_programmed": false,
+  "timing_analyzed": true,
+  "timing_measured": false,
+  "limits": [
+    "Experimental nextpnr OOC mode: logic data routes only; clocks are ideal and IO buffers/global promotion/routing are disabled.",
+    "No assigned module pins, pad/USB/translator/PCB/Si5351 electrical timing, clock skew/jitter/uncertainty, hold or reset recovery/removal signoff.",
+    "No unsupported SDC false-path waiver, broad clock-group cutoff, timing-allow-fail or ignored loop/related-clock option used.",
+    "Mapped FF D/CE/LSR census is complete only for its listed cell types. Bundled rate configuration relies on documented stable-during-reset protocol; no physical MTBF proof.",
+    "MIDI USB detach/reset/suspend stops only MIDI; I2C owner continues. HOST wire format remains unchanged.",
+    "Tool-estimated internal Fmax and utilization are not full-board operating-frequency or physical audio acceptance."
+  ],
+  "wall_seconds": 194.074,
+  "post_route_analysis_recheck": {
+    "reason": "Whitespace-only normalization of CDC checker; four unit tests, full census/bypass mutations and all three report/interstage analyses rerun; routing/RTL unchanged",
+    "unit_log_sha256": "30a5f59a3edeb245ae71264f7feaa1288e2a2b37ce9bd73480d85340e0d8c96c"
+  }
+}

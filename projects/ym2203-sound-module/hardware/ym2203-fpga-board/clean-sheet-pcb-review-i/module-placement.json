@@ -1,0 +1,642 @@
+{
+  "RD7": {
+    "xy": [
+      64.0,
+      45.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMCLK": {
+    "xy": [
+      15.0,
+      34.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C11": {
+    "xy": [
+      51.0,
+      41.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RTXDIS": {
+    "xy": [
+      29.0,
+      60.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMC33": {
+    "xy": [
+      44.5,
+      84.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "H2": {
+    "xy": [
+      96.0,
+      4.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RDOE": {
+    "xy": [
+      41.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CMOD5": {
+    "xy": [
+      7.0,
+      8.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMC34": {
+    "xy": [
+      44.5,
+      87.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "UALERT": {
+    "xy": [
+      32.0,
+      57.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "H3": {
+    "xy": [
+      94.0,
+      94.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RDIR": {
+    "xy": [
+      37.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RENPD": {
+    "xy": [
+      11.0,
+      39.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "ULINK0": {
+    "xy": [
+      20.0,
+      27.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JCORE1": {
+    "xy": [
+      18.0,
+      66.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C19": {
+    "xy": [
+      91.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "ULINK1": {
+    "xy": [
+      20.0,
+      42.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JCORE4": {
+    "xy": [
+      18.0,
+      66.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RSMIXB": {
+    "xy": [
+      66.0,
+      62.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CULINK1": {
+    "xy": [
+      23.0,
+      37.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMTXMISO": {
+    "xy": [
+      15.0,
+      32.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CCORE": {
+    "xy": [
+      23.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD2": {
+    "xy": [
+      64.5,
+      35.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD4": {
+    "xy": [
+      64.5,
+      40.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD1": {
+    "xy": [
+      64.0,
+      33.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RL1": {
+    "xy": [
+      68.0,
+      67.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CURUNOD": {
+    "xy": [
+      16.0,
+      55.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CUALERT": {
+    "xy": [
+      36.5,
+      56.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "H4": {
+    "xy": [
+      4.0,
+      96.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "H1": {
+    "xy": [
+      4.0,
+      4.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RSMIXC": {
+    "xy": [
+      66.0,
+      65.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JSWD": {
+    "xy": [
+      55.0,
+      90.0
+    ],
+    "angle": 90.0,
+    "layer": "F.Cu"
+  },
+  "RCOE": {
+    "xy": [
+      45.0,
+      82.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C13": {
+    "xy": [
+      60.0,
+      44.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R32": {
+    "xy": [
+      68.0,
+      54.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD5": {
+    "xy": [
+      60.5,
+      39.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R34": {
+    "xy": [
+      68.0,
+      49.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CULINK0": {
+    "xy": [
+      23.0,
+      22.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "URUNOD": {
+    "xy": [
+      15.0,
+      59.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R33": {
+    "xy": [
+      68.0,
+      51.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMSCK": {
+    "xy": [
+      12.0,
+      22.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R35": {
+    "xy": [
+      68.0,
+      46.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMADR": {
+    "xy": [
+      29.5,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RS3": {
+    "xy": [
+      85.0,
+      71.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CCOREB": {
+    "xy": [
+      19.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RRUNUP": {
+    "xy": [
+      44.5,
+      72.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RL0": {
+    "xy": [
+      72.0,
+      68.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMC32": {
+    "xy": [
+      44.5,
+      75.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C27": {
+    "xy": [
+      92.0,
+      71.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMTXDATA": {
+    "xy": [
+      16.0,
+      47.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMMOSI": {
+    "xy": [
+      11.0,
+      27.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C14": {
+    "xy": [
+      59.0,
+      71.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RS6": {
+    "xy": [
+      83.0,
+      76.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD6": {
+    "xy": [
+      64.5,
+      43.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RS8": {
+    "xy": [
+      85.0,
+      80.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C16": {
+    "xy": [
+      68.0,
+      74.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "U16": {
+    "xy": [
+      89.0,
+      76.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD0": {
+    "xy": [
+      68.0,
+      31.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JCORE3": {
+    "xy": [
+      18.0,
+      66.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RD3": {
+    "xy": [
+      64.5,
+      38.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RYMRESET": {
+    "xy": [
+      76.0,
+      68.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C12": {
+    "xy": [
+      57.0,
+      41.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "UTXOR": {
+    "xy": [
+      32.0,
+      51.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JCORE2": {
+    "xy": [
+      18.0,
+      66.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "U8": {
+    "xy": [
+      54.0,
+      47.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "CUTXOR": {
+    "xy": [
+      33.0,
+      47.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMLR": {
+    "xy": [
+      12.0,
+      48.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMBCK": {
+    "xy": [
+      12.0,
+      45.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RL2": {
+    "xy": [
+      68.0,
+      56.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "U12": {
+    "xy": [
+      72.0,
+      17.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "U9": {
+    "xy": [
+      62.0,
+      77.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R39": {
+    "xy": [
+      66.0,
+      14.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMCS": {
+    "xy": [
+      13.5,
+      25.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RSMIXA": {
+    "xy": [
+      66.0,
+      59.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C20": {
+    "xy": [
+      95.0,
+      63.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "R40": {
+    "xy": [
+      91.0,
+      22.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "C15": {
+    "xy": [
+      65.0,
+      71.5
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RMA": {
+    "xy": [
+      44.5,
+      78.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "RRELDEFAULT": {
+    "xy": [
+      49.0,
+      82.0
+    ],
+    "angle": 0.0,
+    "layer": "F.Cu"
+  },
+  "JMOD": {
+    "xy": [
+      7.0,
+      12.0
+    ],
+    "angle": 180.0,
+    "layer": "B.Cu"
+  }
+}

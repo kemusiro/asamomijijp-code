@@ -1,0 +1,322 @@
+{
+  "date": "2026-11-18",
+  "supplier": "Akizuki Denshi",
+  "items": [
+    {
+      "code": "131019",
+      "part": "M154-240240-RGB",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 840,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g131019/",
+      "note": "1.54inch240x240; use20261020 datasheet; no old Waveshare cable",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "LCD module"
+      ],
+      "extended_jpy": 840
+    },
+    {
+      "code": "114827",
+      "part": "RK09D117000B B10k",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 60,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g114827/",
+      "note": "center detent,6mm D shaft,30mm; collar footprint/sample fit pending",
+      "required_units": 4,
+      "sale_units": 4,
+      "references": [
+        "RV1",
+        "RV2",
+        "RV3",
+        "RV4"
+      ],
+      "extended_jpy": 240
+    },
+    {
+      "code": "114936",
+      "part": "RE111F-4S1-152S4-15P-A",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 200,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g114936/",
+      "note": "SMD center-push; supplied black shaft,not a6mm D knob",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "ENC1"
+      ],
+      "extended_jpy": 200
+    },
+    {
+      "code": "103568",
+      "part": "24FC256-I/P",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 90,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g103568/",
+      "note": "DIP8 EEPROM32KiB;100kHz;64byte page,5ms max write",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "U1"
+      ],
+      "extended_jpy": 90
+    },
+    {
+      "code": "117166",
+      "part": "TVDP01-095BB1",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 15,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g117166/",
+      "note": "6x6mm;9.5mm high momentary",
+      "required_units": 6,
+      "sale_units": 6,
+      "references": [
+        "SW1",
+        "SW2",
+        "SW3",
+        "SW4",
+        "SW5",
+        "SW6"
+      ],
+      "extended_jpy": 90
+    },
+    {
+      "code": "116278",
+      "part": "S-42",
+      "units_per_pack": 1,
+      "price_jpy_tax_included": 40,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g116278/",
+      "note": "6mm D knob,16mm diameter; A12mm limit superseded",
+      "required_units": 4,
+      "sale_units": 4,
+      "references": [
+        "RV knobs"
+      ],
+      "extended_jpy": 160
+    },
+    {
+      "code": "100167",
+      "part": "PH-1x40SG",
+      "units_per_pack": 40,
+      "price_jpy_tax_included": 35,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g100167/",
+      "note": "cut32UNO+8shieldLCD+8moduleLCD pins;2strips,allow cut loss",
+      "required_units": 48,
+      "sale_units": 2,
+      "references": [
+        "J1",
+        "J2",
+        "J3",
+        "J4",
+        "J5",
+        "LCD module male pins if not included"
+      ],
+      "extended_jpy": 70
+    },
+    {
+      "code": "115868",
+      "part": "20cm40P female-female cable",
+      "units_per_pack": 40,
+      "price_jpy_tax_included": 200,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g115868/",
+      "note": "8channels used; start SPI2MHz,128byte tiles; waveform bench pending",
+      "required_units": 8,
+      "sale_units": 1,
+      "references": [
+        "LCD harness channels"
+      ],
+      "extended_jpy": 200
+    },
+    {
+      "code": "116102",
+      "part": "CF16J1KB 1k",
+      "units_per_pack": 100,
+      "price_jpy_tax_included": 170,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g116102/",
+      "note": "1/6W leaded;stock-common horizontal7.62mm footprint",
+      "required_units": 6,
+      "sale_units": 1,
+      "references": [
+        "R1",
+        "R2",
+        "R3",
+        "R4",
+        "R6",
+        "R8"
+      ],
+      "extended_jpy": 170
+    },
+    {
+      "code": "116272",
+      "part": "RD16S 2K7 2.7k",
+      "units_per_pack": 100,
+      "price_jpy_tax_included": 100,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g116272/",
+      "note": "1/6W leaded,5%;stock-limited but currently available",
+      "required_units": 2,
+      "sale_units": 1,
+      "references": [
+        "R5",
+        "R7"
+      ],
+      "extended_jpy": 100
+    },
+    {
+      "code": "116472",
+      "part": "RD16S 4K7 4.7k",
+      "units_per_pack": 100,
+      "price_jpy_tax_included": 100,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g116472/",
+      "note": "1/6W leaded,5%;stock-limited but currently available",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "R9"
+      ],
+      "extended_jpy": 100
+    },
+    {
+      "code": "116103",
+      "part": "RD16S 10K 10k",
+      "units_per_pack": 100,
+      "price_jpy_tax_included": 100,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g116103/",
+      "note": "1/6W leaded,5%",
+      "required_units": 8,
+      "sale_units": 1,
+      "references": [
+        "R10",
+        "R11",
+        "R12",
+        "R13",
+        "R14",
+        "R15",
+        "R16",
+        "R17"
+      ],
+      "extended_jpy": 100
+    },
+    {
+      "code": "108517",
+      "part": "MFS25F33RB 33ohm",
+      "units_per_pack": 100,
+      "price_jpy_tax_included": 300,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g108517/",
+      "note": "small1/4W metal film,3.3x1.8mm,1%",
+      "required_units": 2,
+      "sale_units": 1,
+      "references": [
+        "R18",
+        "R19"
+      ],
+      "extended_jpy": 300
+    },
+    {
+      "code": "107549",
+      "part": "CL21B105KPFNNNE 1uF10V",
+      "units_per_pack": 40,
+      "price_jpy_tax_included": 150,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g107549/",
+      "note": "2012 X7R;stock-limited but currently available",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "C1"
+      ],
+      "extended_jpy": 150
+    },
+    {
+      "code": "117591",
+      "part": "GRM219B31E106KA12 10uF25V",
+      "units_per_pack": 10,
+      "price_jpy_tax_included": 150,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g117591/",
+      "note": "2012 B; bulk decoupling",
+      "required_units": 1,
+      "sale_units": 1,
+      "references": [
+        "C3"
+      ],
+      "extended_jpy": 150
+    },
+    {
+      "code": "113582",
+      "part": "RDER71H104K0P1H03B 100nF50V",
+      "units_per_pack": 10,
+      "price_jpy_tax_included": 100,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g113582/",
+      "note": "radial X7R2.5mm pitch; replaces discontinued0805 items",
+      "required_units": 6,
+      "sale_units": 1,
+      "references": [
+        "C2",
+        "C4",
+        "C5",
+        "C6",
+        "C7",
+        "C8"
+      ],
+      "extended_jpy": 100
+    },
+    {
+      "code": "108138",
+      "part": "RDER71H103K0K1H03B 10nF50V",
+      "units_per_pack": 10,
+      "price_jpy_tax_included": 100,
+      "availability": "in_stock_as_listed",
+      "checked_on": "2026-11-18",
+      "url": "https://akizukidenshi.com/catalog/g/g108138/",
+      "note": "radial X7R5mm pitch; replaces discontinued0805 item",
+      "required_units": 2,
+      "sale_units": 1,
+      "references": [
+        "C9",
+        "C10"
+      ],
+      "extended_jpy": 100
+    }
+  ],
+  "total_jpy": 3160,
+  "all_electrical_refs_mapped": 46,
+  "excludes": [
+    "PCB fabrication",
+    "shipping",
+    "standoffs/washers/screws after actual mating",
+    "optional DIP socket",
+    "optional front panel"
+  ],
+  "not_an_order": true,
+  "stock_scope": "primary product pages as retrieved; supplier stock/price can change"
+}

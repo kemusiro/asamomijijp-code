@@ -1,0 +1,7 @@
+Item,Quantity,Selection,Scope
+MCU module,1,Pimoroni PGA2350 PIM722,Socket MPGA; onboard regulator/crystal/flash/PSRAM/USB resistors retained
+MCU sockets,1,64 contacts on10x10 perimeter2.54mm grid,"Use four2x08 dual-row female segments; solder separately, check orientation/height"
+YM IC socket,1,DIP40 wide15.24mm,U12 socketed YM2203C
+External volume,1,Dual A10k,Offboard wiring at JPOT
+UNO sockets,1,1x08+1x10+1x06+1x08 plus2x03SPI,UNO R3 top-view coordinates from header-geometry.json
+External5V PSU,1,regulated5V1.5A target,USB is detection/data only

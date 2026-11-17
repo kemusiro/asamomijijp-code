@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "python": "3.15.2",
+  "scope": "unchanged implementation/history regression only; NOT new digital-module runtime acceptance",
+  "checks": [
+    {
+      "cwd": "projects/ym2203-sound-module",
+      "command": "python3 -B -m unittest discover -s firmware-c/tests",
+      "total": 115,
+      "passed": 111,
+      "skipped": 4,
+      "skip_reason": "REVC_TEST_SONG/private music not provided"
+    },
+    {
+      "cwd": "projects/ym2203-sound-module/hardware/ym2203-fpga-board/carrier-p2",
+      "command": "python3 -B -m unittest check.Regression",
+      "passed": 12
+    },
+    {
+      "cwd": "projects/ym2203-sound-module/hardware/ym2203-fpga-board/modular-review-a",
+      "command": "python3 -B check.py",
+      "passed": 18
+    }
+  ],
+  "firmware_changed": false,
+  "new_hardware_accepted": false
+}

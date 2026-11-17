@@ -1,0 +1,11 @@
+{
+  "date": "2026-11-16",
+  "pages": 15,
+  "project_output": "outputs/p2/p2-digital-module-pcb-review-d.pdf",
+  "pdf_sha256": "e671d92fb151ced53c8c71207d73daee14adbe13fde5949d1f32713727980663",
+  "qa": "All15pages rendered and contact-sheet reviewed; stack/source numbered assembly/key inspected at high resolution",
+  "native_board_sha256": {
+    "base": "bf7faeb83c8bad8883fc7dc3eaf10a51836b86fd1d121986f686913dafa7d19a",
+    "module": "9553894373a7635e583c2167e7804bb72610ccaa9ebd46608d26560d69776c1a"
+  }
+}

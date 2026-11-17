@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="950" viewBox="0 0 1400 950"><style>text{font-family:Arial,Helvetica,sans-serif}</style>
+<rect x="0" y="0" width="1400" height="950" fill="#11202e" stroke="none"/>
+<text x="40" y="43" font-size="26" fill="#d7e2ef" text-anchor="start">P2 YM2203 EDITOR B / RECTANGULAR PCB REVIEW B</text>
+<text x="40" y="70" font-size="17" fill="#9cb4c9" text-anchor="start">76 x 100 mm / 2 copper layers / prototype CAD; physical fit and firmware acceptance pending</text>
+<polygon points="100,108 480,108 480,608 100,608" fill="#1d6757" stroke="#96bdae" stroke-width="2"/>
+<circle cx="432.5" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="419.79999999999995" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="407.1" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="394.4" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="381.70000000000005" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="369.0" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="356.3" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="343.6" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="323.28" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="310.58" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="297.88" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="285.18" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="272.48" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="259.78000000000003" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="247.07999999999998" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="234.38" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="221.68" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="208.98" cy="135.7" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="369.0" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="381.70000000000005" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="394.4" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="407.1" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="419.79999999999995" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="432.5" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="254.7" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="267.4" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="280.1" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="292.8" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="305.5" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="318.2" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="330.9" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="343.6" cy="377.0" r="3.1" fill="#d3bc69" stroke="#9aabbc"/>
+<circle cx="445.20000000000005" cy="211.9" r="8.0" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="445.20000000000005" cy="351.6" r="8.0" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="184.85" cy="377.0" r="8.0" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="117.5" cy="165.5" r="5.5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="316.1" cy="165.5" r="5.5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="117.5" cy="300.5" r="5.5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="316.1" cy="300.5" r="5.5" fill="#11202e" stroke="#9aabbc"/>
+<rect x="110" y="153" width="218.6" height="160" fill="#0c1724" stroke="#82a8a0"/>
+<rect x="130" y="173" width="140" height="120" fill="#10364a" stroke="#316078"/>
+<text x="140" y="198" font-size="13" fill="#7ce6bd" text-anchor="start">07 / Brass *</text>
+<text x="140" y="228" font-size="12" fill="#d7e2ef" text-anchor="start">OP2 ENVELOPE</text>
+<text x="140" y="258" font-size="13" fill="#d7e2ef" text-anchor="start">AR31 DR12</text>
+<text x="140" y="283" font-size="13" fill="#d7e2ef" text-anchor="start">SR04 RR08</text>
+<circle cx="117.5" cy="165.5" r="5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="316.1" cy="165.5" r="5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="117.5" cy="300.5" r="5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="316.1" cy="300.5" r="5" fill="#11202e" stroke="#9aabbc"/>
+<circle cx="117.5" cy="188.55" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="201.25" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="213.95" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="226.65" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="239.35" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="252.04999999999998" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="264.75" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<circle cx="117.5" cy="277.45" r="2" fill="#c2ac62" stroke="#9aabbc"/>
+<path d="M117.5 233 H55 V343 H325" fill="none" stroke="#92c9ed" stroke-width="6" stroke-dasharray="6 4"/>
+<text x="45" y="358" font-size="13" fill="#92c9ed" text-anchor="start">LCD cable exits LEFT</text>
+<circle cx="377.5" cy="238" r="31" fill="#34485a" stroke="#9aabbc"/>
+<circle cx="377.5" cy="238" r="11" fill="#acbdcc" stroke="#9aabbc"/>
+<text x="377.5" y="198" font-size="12" fill="#d7e2ef" text-anchor="middle">ENC</text>
+<rect x="125" y="403" width="30" height="30" fill="#354b60" stroke="#82a8a0"/>
+<text x="140" y="448" font-size="12" fill="#d7e2ef" text-anchor="middle">OP1</text>
+<rect x="190" y="403" width="30" height="30" fill="#354b60" stroke="#82a8a0"/>
+<text x="205" y="448" font-size="12" fill="#d7e2ef" text-anchor="middle">OP2</text>
+<rect x="255" y="403" width="30" height="30" fill="#354b60" stroke="#82a8a0"/>
+<text x="270" y="448" font-size="12" fill="#d7e2ef" text-anchor="middle">OP3</text>
+<rect x="320" y="403" width="30" height="30" fill="#354b60" stroke="#82a8a0"/>
+<text x="335" y="448" font-size="12" fill="#d7e2ef" text-anchor="middle">OP4</text>
+<rect x="360" y="298" width="30" height="30" fill="#548fd6" stroke="#82a8a0"/>
+<text x="375" y="288" font-size="12" fill="#d7e2ef" text-anchor="middle">NOTE</text>
+<rect x="430" y="298" width="30" height="30" fill="#d36260" stroke="#82a8a0"/>
+<text x="445" y="288" font-size="12" fill="#d7e2ef" text-anchor="middle">STOP</text>
+<rect x="240" y="463" width="50" height="55" fill="#283a4b" stroke="#82a8a0"/>
+<text x="265" y="493" font-size="10" fill="#d7e2ef" text-anchor="middle">EEPROM</text>
+<text x="410" y="463" font-size="12" fill="#d7e2ef" text-anchor="middle">YM2203</text>
+<text x="410" y="488" font-size="12" fill="#d7e2ef" text-anchor="middle">VOICE EDIT</text>
+<circle cx="145" cy="558" r="40" fill="#233546" stroke="#9aabbc"/>
+<circle cx="145" cy="558" r="23" fill="#61778b" stroke="#9aabbc"/>
+<text x="145" y="514" font-size="13" fill="#d7e2ef" text-anchor="middle">K1</text>
+<circle cx="240" cy="558" r="40" fill="#233546" stroke="#9aabbc"/>
+<circle cx="240" cy="558" r="23" fill="#61778b" stroke="#9aabbc"/>
+<text x="240" y="514" font-size="13" fill="#d7e2ef" text-anchor="middle">K2</text>
+<circle cx="335" cy="558" r="40" fill="#233546" stroke="#9aabbc"/>
+<circle cx="335" cy="558" r="23" fill="#61778b" stroke="#9aabbc"/>
+<text x="335" y="514" font-size="13" fill="#d7e2ef" text-anchor="middle">K3</text>
+<circle cx="430" cy="558" r="40" fill="#233546" stroke="#9aabbc"/>
+<circle cx="430" cy="558" r="23" fill="#61778b" stroke="#9aabbc"/>
+<text x="430" y="514" font-size="13" fill="#d7e2ef" text-anchor="middle">K4</text>
+<text x="100" y="650" font-size="14" fill="#9cb4c9" text-anchor="start">Top view; LCD shown installed. Copper and hidden parts: native PCB.</text>
+<text x="100" y="675" font-size="14" fill="#d7e2ef" text-anchor="start">19 mm knob pitch / 16 mm knobs / backside male UNO contacts</text>
+<text x="100" y="710" font-size="16" fill="#d7e2ef" text-anchor="start">Solid rectangular PCB / no access windows</text>
+<text x="100" y="735" font-size="16" fill="#d7e2ef" text-anchor="start">Base DIP / STOP / TEST remain underneath</text>
+<text x="100" y="760" font-size="16" fill="#d7e2ef" text-anchor="start">Use upper STOP; detach shield for base settings</text>
+<text x="100" y="795" font-size="15" fill="#92c9ed" text-anchor="start">LCD: 4 insulating 12 mm supports; detach for solder repair</text>
+<text x="650" y="116" font-size="20" fill="#d7e2ef" text-anchor="start">ON BASE REVIEW I / SAME XY FRAME</text>
+<rect x="650" y="145" width="582" height="426" fill="#243849" stroke="#82a8a0"/>
+<rect x="920" y="259" width="300" height="300" fill="#3b4352" stroke="#82a8a0"/>
+<text x="1070" y="385" font-size="17" fill="#d7e2ef" text-anchor="middle">YM2203 SOURCE</text>
+<rect x="974" y="457" width="76.19999999999999" height="76.19999999999999" fill="#59677a" stroke="#82a8a0"/>
+<text x="974" y="448" font-size="13" fill="#d7e2ef" text-anchor="start">Waveshare Core2350B0</text>
+<rect x="939.44" y="164.44" width="77.69999999999999" height="77.69999999999999" fill="#4c6675" stroke="#82a8a0"/>
+<text x="1025" y="205" font-size="13" fill="#d7e2ef" text-anchor="start">PGA2350</text>
+<polygon points="671,166 899,166 899,466 671,466" fill="#1d6757" stroke="#9bc8b7" stroke-width="1.5"/>
+<text x="776" y="274" font-size="20" fill="#d7e2ef" text-anchor="middle">EDITOR</text>
+<text x="909.5" y="235" font-size="13" fill="#d7e2ef" text-anchor="middle">7 mm</text>
+<text x="650" y="600" font-size="15" fill="#9cb4c9" text-anchor="start">USB, source module and its MCU retain base-I positions.</text>
+<text x="650" y="650" font-size="20" fill="#d7e2ef" text-anchor="start">CONDITIONAL STACK / NOT MEASURED</text>
+<rect x="650" y="820" width="650" height="8" fill="#436d80" stroke="#82a8a0"/>
+<text x="1310" y="828" font-size="13" fill="#d7e2ef" text-anchor="start">BASE</text>
+<rect x="650" y="735" width="650" height="8" fill="#287964" stroke="#82a8a0"/>
+<text x="1310" y="743" font-size="13" fill="#d7e2ef" text-anchor="start">SHIELD</text>
+<rect x="695" y="685" width="300" height="6" fill="#385775" stroke="#82a8a0"/>
+<text x="1010" y="691" font-size="15" fill="#d7e2ef" text-anchor="start">LCD +12 mm</text>
+<rect x="720" y="798" width="80" height="22" fill="#778da1" stroke="#82a8a0"/>
+<text x="720" y="855" font-size="15" fill="#d7e2ef" text-anchor="start">base SMT &lt;=3 mm</text>
+<rect x="860" y="743" width="12" height="25" fill="#d1b063" stroke="#82a8a0"/>
+<text x="890" y="775" font-size="15" fill="#d7e2ef" text-anchor="start">leads &lt;=3 mm</text>
+<text x="650" y="888" font-size="15" fill="#a9d8c6" text-anchor="start">Base/shield face gap &gt;=10.5 mm; remaining SMT cavity &gt;=4.5 mm.</text>
+<text x="650" y="916" font-size="15" fill="#a9d8c6" text-anchor="start">Controls &lt;=8 mm: clearance &gt;=1.7 mm after 0.5 mm flex allowance.</text>
+</svg>

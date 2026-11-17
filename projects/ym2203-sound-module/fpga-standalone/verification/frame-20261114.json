@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T14:17:58.221032+00:00",
+  "scope": "F1 v2 frame validator only; not a board or complete protocol implementation",
+  "tools": {
+    "verilator": {
+      "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+      "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+    },
+    "yosys": {
+      "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+    },
+    "cc": {
+      "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    }
+  },
+  "rtl_vectors": 576,
+  "c_parser_comparisons": 380,
+  "result": "PASS 576 framing vectors; hold/readback/reset checks",
+  "synthesis": {
+    "num_wires": 732,
+    "num_wire_bits": 1277,
+    "num_pub_wires": 732,
+    "num_pub_wire_bits": 1277,
+    "num_ports": 17,
+    "num_port_bits": 102,
+    "num_memories": 0,
+    "num_memory_bits": 0,
+    "num_processes": 0,
+    "num_cells": 632,
+    "num_submodules": 0,
+    "num_cells_by_type": {
+      "CCU2C": 23,
+      "L6MUX21": 12,
+      "LUT4": 314,
+      "PFUMX": 41,
+      "TRELLIS_DPR16X4": 104,
+      "TRELLIS_FF": 138
+    }
+  },
+  "source_sha256": {
+    "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+    "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+    "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+  },
+  "c_oracle_sha256": {
+    "stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+    "stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+    "wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+    "wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799"
+  },
+  "place_route": "not run",
+  "timing": "not measured",
+  "physical_pinout": "not assigned",
+  "limits": [
+    "No physical I2C or USB receiver, session state/sequence/lease engine, MIDI, clock setup or audio.",
+    "Ready/valid backpressure requires upstream buffering; physical overflow must fail safe.",
+    "Mapped cells describe this slice only; no full-system resource or timing conclusion."
+  ]
+}

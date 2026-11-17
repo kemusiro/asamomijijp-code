@@ -1,0 +1,4991 @@
+{
+  "schema_version": 1,
+  "revision": "3.1 review C",
+  "date": "2026-11-16",
+  "status": "connected schematic review NOT FOR FABRICATION",
+  "gpio_approval": "User adopted presented reviewB proposal2026-11-16; no extra MCU GPIO added",
+  "firmware_implemented": false,
+  "pcb_created": false,
+  "hardware_accepted": false,
+  "board": "module",
+  "parts": [
+    {
+      "ref": "Q1",
+      "value": "MMBT3904LT1G",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "B",
+          "net": "RESET_CLAMP_B",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "E",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "C",
+          "net": "Y_RESET_N",
+          "type": "open_collector"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "note": ""
+    },
+    {
+      "ref": "R19",
+      "value": "4.7k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "RESET_CLAMP_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "Q2",
+      "value": "MMBT3904LT1G",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "B",
+          "net": "RESET_REL_B",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "E",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "C",
+          "net": "RESET_CLAMP_B",
+          "type": "open_collector"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "https://www.onsemi.com/pdf/datasheet/mmbt3904lt1-d.pdf",
+      "note": ""
+    },
+    {
+      "ref": "R20",
+      "value": "10k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_RELEASE_SAFE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "RESET_REL_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R21",
+      "value": "100k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "RESET_REL_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R22",
+      "value": "10k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "Y_RESET_N",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R23",
+      "value": "100k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_RESET_RELEASE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "U8",
+      "value": "SN74LVC8T245PWR",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "VCCA",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "DIR",
+          "net": "YM_DATA_DIR",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "A1",
+          "net": "YM_D0",
+          "type": "bidirectional"
+        },
+        {
+          "num": "4",
+          "name": "A2",
+          "net": "YM_D1",
+          "type": "bidirectional"
+        },
+        {
+          "num": "5",
+          "name": "A3",
+          "net": "YM_D2",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "A4",
+          "net": "YM_D3",
+          "type": "bidirectional"
+        },
+        {
+          "num": "7",
+          "name": "A5",
+          "net": "YM_D4",
+          "type": "bidirectional"
+        },
+        {
+          "num": "8",
+          "name": "A6",
+          "net": "YM_D5",
+          "type": "bidirectional"
+        },
+        {
+          "num": "9",
+          "name": "A7",
+          "net": "YM_D6",
+          "type": "bidirectional"
+        },
+        {
+          "num": "10",
+          "name": "A8",
+          "net": "YM_D7",
+          "type": "bidirectional"
+        },
+        {
+          "num": "11",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "12",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "13",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "14",
+          "name": "B8",
+          "net": "Y_D7",
+          "type": "bidirectional"
+        },
+        {
+          "num": "15",
+          "name": "B7",
+          "net": "Y_D6",
+          "type": "bidirectional"
+        },
+        {
+          "num": "16",
+          "name": "B6",
+          "net": "Y_D5",
+          "type": "bidirectional"
+        },
+        {
+          "num": "17",
+          "name": "B5",
+          "net": "Y_D4",
+          "type": "bidirectional"
+        },
+        {
+          "num": "18",
+          "name": "B4",
+          "net": "Y_D3",
+          "type": "bidirectional"
+        },
+        {
+          "num": "19",
+          "name": "B3",
+          "net": "Y_D2",
+          "type": "bidirectional"
+        },
+        {
+          "num": "20",
+          "name": "B2",
+          "net": "Y_D1",
+          "type": "bidirectional"
+        },
+        {
+          "num": "21",
+          "name": "B1",
+          "net": "Y_D0",
+          "type": "bidirectional"
+        },
+        {
+          "num": "22",
+          "name": "OEn",
+          "net": "YM_DATA_OE_N",
+          "type": "input"
+        },
+        {
+          "num": "23",
+          "name": "VCCB",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        },
+        {
+          "num": "24",
+          "name": "VCCB",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf",
+      "note": "Bare IC pinout: OE=22 DIR=2; NOT the Rev C breakout numbering"
+    },
+    {
+      "ref": "U9",
+      "value": "SN74LVC8T245PWR",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "VCCA",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "DIR",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "A1",
+          "net": "YM_A0",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "A2",
+          "net": "YM_CS_N",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "A3",
+          "net": "YM_WR_N",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "A4",
+          "net": "YM_RD_N",
+          "type": "input"
+        },
+        {
+          "num": "7",
+          "name": "A5",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "8",
+          "name": "A6",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "9",
+          "name": "A7",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "A8",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "12",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "13",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "14",
+          "name": "B8",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "15",
+          "name": "B7",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "16",
+          "name": "B6",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "17",
+          "name": "B5",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "18",
+          "name": "B4",
+          "net": "Y_RD_N",
+          "type": "output"
+        },
+        {
+          "num": "19",
+          "name": "B3",
+          "net": "Y_WR_N",
+          "type": "output"
+        },
+        {
+          "num": "20",
+          "name": "B2",
+          "net": "Y_CS_N",
+          "type": "output"
+        },
+        {
+          "num": "21",
+          "name": "B1",
+          "net": "Y_A0",
+          "type": "output"
+        },
+        {
+          "num": "22",
+          "name": "OEn",
+          "net": "YM_CTRL_OE_N",
+          "type": "input"
+        },
+        {
+          "num": "23",
+          "name": "VCCB",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        },
+        {
+          "num": "24",
+          "name": "VCCB",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf",
+      "note": "Bare IC pinout: OE=22 DIR=2; NOT the Rev C breakout numbering"
+    },
+    {
+      "ref": "C11",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C12",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C13",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C14",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C15",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C16",
+      "value": "100n X7R 10V",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "RDIR",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_DATA_DIR",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDOE",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_DATA_OE_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RCOE",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_CTRL_OE_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD0",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D0",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD1",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D1",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD2",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D2",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD3",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD4",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D4",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD5",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D5",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD6",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D6",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RD7",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_D7",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R32",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_CS_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "V5_MODULE",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMC32",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_CS_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R33",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_WR_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "V5_MODULE",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMC33",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_WR_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R34",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_RD_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "V5_MODULE",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMC34",
+      "value": "10k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_RD_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R35",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_A0",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMA",
+      "value": "100k",
+      "sheet": "02-level-bus",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_A0",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "U12",
+      "value": "YM2203C SOCKET",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "D1",
+          "net": "Y_D1",
+          "type": "bidirectional"
+        },
+        {
+          "num": "3",
+          "name": "D2",
+          "net": "Y_D2",
+          "type": "bidirectional"
+        },
+        {
+          "num": "4",
+          "name": "D3",
+          "net": "Y_D3",
+          "type": "bidirectional"
+        },
+        {
+          "num": "5",
+          "name": "D4",
+          "net": "Y_D4",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "D5",
+          "net": "Y_D5",
+          "type": "bidirectional"
+        },
+        {
+          "num": "7",
+          "name": "D6",
+          "net": "Y_D6",
+          "type": "bidirectional"
+        },
+        {
+          "num": "8",
+          "name": "D7",
+          "net": "Y_D7",
+          "type": "bidirectional"
+        },
+        {
+          "num": "9",
+          "name": "IOA7",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "10",
+          "name": "IOA6",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "11",
+          "name": "IOA5",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "12",
+          "name": "IOA4",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "13",
+          "name": "IOA3",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "14",
+          "name": "IOA2",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "15",
+          "name": "IOA1",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "16",
+          "name": "IOA0",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "17",
+          "name": "AGND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "18",
+          "name": "SSG_C",
+          "net": "SSG_C",
+          "type": "output"
+        },
+        {
+          "num": "19",
+          "name": "SSG_B",
+          "net": "SSG_B",
+          "type": "output"
+        },
+        {
+          "num": "20",
+          "name": "SSG_A",
+          "net": "SSG_A",
+          "type": "output"
+        },
+        {
+          "num": "21",
+          "name": "VDD",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        },
+        {
+          "num": "22",
+          "name": "SH",
+          "net": "Y_SH",
+          "type": "output"
+        },
+        {
+          "num": "23",
+          "name": "SD",
+          "net": "Y_SD",
+          "type": "output"
+        },
+        {
+          "num": "24",
+          "name": "RESET_N",
+          "net": "Y_RESET_N",
+          "type": "input"
+        },
+        {
+          "num": "25",
+          "name": "IRQn",
+          "net": null,
+          "type": "open_collector"
+        },
+        {
+          "num": "26",
+          "name": "IOB0",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "27",
+          "name": "IOB1",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "28",
+          "name": "IOB2",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "29",
+          "name": "IOB3",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "30",
+          "name": "IOB4",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "31",
+          "name": "IOB5",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "32",
+          "name": "IOB6",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "33",
+          "name": "IOB7",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "34",
+          "name": "CS_N",
+          "net": "Y_CS_N",
+          "type": "input"
+        },
+        {
+          "num": "35",
+          "name": "WR_N",
+          "net": "Y_WR_N",
+          "type": "input"
+        },
+        {
+          "num": "36",
+          "name": "RD_N",
+          "net": "Y_RD_N",
+          "type": "input"
+        },
+        {
+          "num": "37",
+          "name": "A0",
+          "net": "Y_A0",
+          "type": "input"
+        },
+        {
+          "num": "38",
+          "name": "PHI_M",
+          "net": "Y_PHI_M",
+          "type": "input"
+        },
+        {
+          "num": "39",
+          "name": "CLK",
+          "net": "Y_CLK",
+          "type": "output"
+        },
+        {
+          "num": "40",
+          "name": "D0",
+          "net": "Y_D0",
+          "type": "bidirectional"
+        }
+      ],
+      "footprint": "Package_DIP:DIP-40_W15.24mm_Socket",
+      "source": "https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf",
+      "note": "IO ports A/B unused; IRQ unconnected; 5V supply"
+    },
+    {
+      "ref": "C19",
+      "value": "100n X7R 10V",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C20",
+      "value": "10u 10V",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "U14",
+      "value": "SN74LVC1T45DBVR",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "VCCA",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "3",
+          "name": "A",
+          "net": "YM_CLOCK_3V3",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "B",
+          "net": "YM_CLK_5",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "DIR",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "VCCB",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-6",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1t45.pdf",
+      "note": "Fixed A->B; clock may run while YM RESET is asserted"
+    },
+    {
+      "ref": "C23",
+      "value": "100n X7R 10V",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "C24",
+      "value": "100n X7R 10V",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "R39",
+      "value": "33",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_CLK_5",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "Y_PHI_M",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "R40",
+      "value": "100k",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "Y_PHI_M",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "U16",
+      "value": "SN74LV4T125PWR",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "OEn",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "A",
+          "net": "Y_SD",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "Y",
+          "net": "BUF_M_FM_SD",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "OEn",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "A",
+          "net": "Y_CLK",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "Y",
+          "net": "BUF_M_FM_CLK",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "Y",
+          "net": "BUF_M_FM_SH",
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "A",
+          "net": "Y_SH",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "OEn",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "OEn",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "note": "Ioff5V YM receiver, local3V3. Third output isSH, not LRCK."
+    },
+    {
+      "ref": "C27",
+      "value": "100n X7R 10V",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": "Capacitor body/height and effective capacitance to be checked against final MPN"
+    },
+    {
+      "ref": "RL0",
+      "value": "1.33k 1%",
+      "sheet": "05-ssg",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RL1",
+      "value": "1.33k 1%",
+      "sheet": "05-ssg",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RL2",
+      "value": "1.33k 1%",
+      "sheet": "05-ssg",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RS3",
+      "value": "33",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "BUF_M_FM_SD",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "YM_FM_SD",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RS6",
+      "value": "33",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "BUF_M_FM_CLK",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "YM_FM_CLK",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RS8",
+      "value": "33",
+      "sheet": "04-ym-fm-clock",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "BUF_M_FM_SH",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "YM_FM_SH",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "JCORE1",
+      "value": "Core2350B0 P1 SOCKET",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GPIO2",
+          "net": "YM_D2",
+          "type": "bidirectional"
+        },
+        {
+          "num": "2",
+          "name": "GPIO0",
+          "net": "YM_D0",
+          "type": "bidirectional"
+        },
+        {
+          "num": "3",
+          "name": "GPIO4",
+          "net": "YM_D4",
+          "type": "bidirectional"
+        },
+        {
+          "num": "4",
+          "name": "GPIO1",
+          "net": "YM_D1",
+          "type": "bidirectional"
+        },
+        {
+          "num": "5",
+          "name": "GPIO6",
+          "net": "YM_D6",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "GPIO3",
+          "net": "YM_D3",
+          "type": "bidirectional"
+        },
+        {
+          "num": "7",
+          "name": "GPIO8",
+          "net": "MOD_SPI_MOSI",
+          "type": "input"
+        },
+        {
+          "num": "8",
+          "name": "GPIO5",
+          "net": "YM_D5",
+          "type": "bidirectional"
+        },
+        {
+          "num": "9",
+          "name": "GPIO10",
+          "net": "MOD_SPI_SCK",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "GPIO7",
+          "net": "YM_D7",
+          "type": "bidirectional"
+        },
+        {
+          "num": "11",
+          "name": "GPIO12",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "12",
+          "name": "GPIO9",
+          "net": "MOD_SPI_CS_N",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "GPIO14",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "14",
+          "name": "GPIO11",
+          "net": "MOD_SPI_MISO",
+          "type": "output"
+        },
+        {
+          "num": "15",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "16",
+          "name": "GPIO13",
+          "net": null,
+          "type": "bidirectional"
+        }
+      ],
+      "footprint": "P2D:Core2350B0_P1_IndividualSockets",
+      "source": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "note": "Logical16-contact group; physical16individual receptacles. Not a rectangular2x08 socket. See ASSEMBLY.md."
+    },
+    {
+      "ref": "JCORE2",
+      "value": "Core2350B0 P2 SOCKET",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "GPIO45",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "3",
+          "name": "GPIO47",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "4",
+          "name": "GPIO46",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "5",
+          "name": "BOOTSEL",
+          "net": "CORE_BOOT_N",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "SWD",
+          "net": "CORE_SWD",
+          "type": "bidirectional"
+        },
+        {
+          "num": "7",
+          "name": "USBD_P",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "8",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "9",
+          "name": "USBD_N",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "10",
+          "name": "SWCLK",
+          "net": "CORE_SWCLK",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "RUN",
+          "net": "CORE_RUN_N",
+          "type": "input"
+        },
+        {
+          "num": "12",
+          "name": "ADC_VREF",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "13",
+          "name": "3V3_EN",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "14",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "15",
+          "name": "VBUS",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        },
+        {
+          "num": "16",
+          "name": "3V3",
+          "net": "MCU_3V3",
+          "type": "power_out"
+        }
+      ],
+      "footprint": "P2D:Core2350B0_P2_IndividualSockets",
+      "source": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "note": "Logical16-contact group; physical16individual receptacles. Not a rectangular2x08 socket. See ASSEMBLY.md."
+    },
+    {
+      "ref": "JCORE3",
+      "value": "Core2350B0 P3 SOCKET",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GPIO17",
+          "net": "YM_FM_CLK",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "GPIO15",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "3",
+          "name": "GPIO19",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "4",
+          "name": "GPIO16",
+          "net": "YM_FM_SD",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "GPIO21",
+          "net": "ADC_SCL",
+          "type": "bidirectional"
+        },
+        {
+          "num": "6",
+          "name": "GPIO18",
+          "net": "YM_FM_SH",
+          "type": "input"
+        },
+        {
+          "num": "7",
+          "name": "GPIO23",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "8",
+          "name": "GPIO20",
+          "net": "ADC_SDA",
+          "type": "bidirectional"
+        },
+        {
+          "num": "9",
+          "name": "GPIO25",
+          "net": "MOD_I2S_DATA",
+          "type": "output"
+        },
+        {
+          "num": "10",
+          "name": "GPIO22",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "11",
+          "name": "GPIO27",
+          "net": "MOD_I2S_LRCK",
+          "type": "input"
+        },
+        {
+          "num": "12",
+          "name": "GPIO24",
+          "net": "ADC_DOUT",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "GPIO29",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "14",
+          "name": "GPIO26",
+          "net": "MOD_I2S_BCK",
+          "type": "input"
+        },
+        {
+          "num": "15",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "16",
+          "name": "GPIO28",
+          "net": "MOD_ALERT_DRIVE",
+          "type": "bidirectional"
+        }
+      ],
+      "footprint": "P2D:Core2350B0_P3_IndividualSockets",
+      "source": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "note": "Logical16-contact group; physical16individual receptacles. Not a rectangular2x08 socket. See ASSEMBLY.md."
+    },
+    {
+      "ref": "JCORE4",
+      "value": "Core2350B0 P4 SOCKET",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "GPIO32",
+          "net": "YM_WR_N",
+          "type": "output"
+        },
+        {
+          "num": "2",
+          "name": "GPIO30",
+          "net": "YM_A0",
+          "type": "output"
+        },
+        {
+          "num": "3",
+          "name": "GPIO34",
+          "net": "YM_RESET_RELEASE",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "GPIO31",
+          "net": "YM_CS_N",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "GPIO36",
+          "net": "YM_DATA_OE_N",
+          "type": "output"
+        },
+        {
+          "num": "6",
+          "name": "GPIO33",
+          "net": "YM_RD_N",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GPIO38",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "8",
+          "name": "GPIO35",
+          "net": "YM_DATA_DIR",
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "GPIO40",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "10",
+          "name": "GPIO37",
+          "net": "YM_CTRL_OE_N",
+          "type": "output"
+        },
+        {
+          "num": "11",
+          "name": "GPIO42",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "12",
+          "name": "GPIO39",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "13",
+          "name": "GPIO44",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "14",
+          "name": "GPIO41",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "15",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "16",
+          "name": "GPIO43",
+          "net": null,
+          "type": "bidirectional"
+        }
+      ],
+      "footprint": "P2D:Core2350B0_P4_IndividualSockets",
+      "source": "https://files.waveshare.com/wiki/Core2350B0/Core2350B.pdf",
+      "note": "Logical16-contact group; physical16individual receptacles. Not a rectangular2x08 socket. See ASSEMBLY.md."
+    },
+    {
+      "ref": "CCORE",
+      "value": "100n X7R 10V",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CCOREB",
+      "value": "4.7u X7R 10V",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "JSWD",
+      "value": "Core SWD / VREF input only",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "VREF",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "SWD",
+          "net": "CORE_SWD",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "SWCLK",
+          "net": "CORE_SWCLK",
+          "type": "passive"
+        },
+        {
+          "num": "4",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical",
+      "source": "",
+      "note": "Probe VREF is sense only; carrier supplies power. Do not connect moduleUSB adapter VBUS simultaneously."
+    },
+    {
+      "ref": "SWCOREBOOT",
+      "value": "SWCOREBOOT",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A",
+          "net": "CORE_BOOT_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "B",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H4.3mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "SWCORERESET",
+      "value": "SWCORERESET",
+      "sheet": "02-core",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A",
+          "net": "CORE_RUN_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "B",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Button_Switch_THT:SW_PUSH_6mm_H4.3mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UENABLE",
+      "value": "SN74LVC1G17DBVR",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "num": "2",
+          "name": "A",
+          "net": "L_MOD_ENABLE",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf",
+      "note": ""
+    },
+    {
+      "ref": "URUNOD",
+      "value": "SN74LVC1G07DBVR",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "num": "2",
+          "name": "A",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "CORE_RUN_N",
+          "type": "open_collector"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf",
+      "note": ""
+    },
+    {
+      "ref": "UYMALLOW",
+      "value": "SN74LVC1G08DBVR",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "B",
+          "net": "YM_RESET_RELEASE",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "YM_RELEASE_OK",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "note": ""
+    },
+    {
+      "ref": "CUENABLE",
+      "value": "100n X7R 10V",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CURUNOD",
+      "value": "100n X7R 10V",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CUYMALLOW",
+      "value": "100n X7R 10V",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RENPD",
+      "value": "10k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_ENABLE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RRUNUP",
+      "value": "10k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "CORE_RUN_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADENPD",
+      "value": "10k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UYMRUN",
+      "value": "SN74LVC1G08DBVR",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A",
+          "net": "YM_RELEASE_OK",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "B",
+          "net": "CORE_RUN_N",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "YM_RELEASE_SAFE",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "note": ""
+    },
+    {
+      "ref": "CUYMRUN",
+      "value": "100n X7R 10V",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RYMSAFEPD",
+      "value": "100k",
+      "sheet": "03-default-reset",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "YM_RELEASE_SAFE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "ULINK0",
+      "value": "SN74LV4T125PWR",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "1A",
+          "net": "L_MOD_SPI_SCK",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "1Y",
+          "net": "MOD_SPI_SCK",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "2OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "2A",
+          "net": "L_MOD_SPI_MOSI",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "2Y",
+          "net": "MOD_SPI_MOSI",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "3Y",
+          "net": "MOD_SPI_CS_N",
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "3A",
+          "net": "L_MOD_SPI_CS_N",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "3OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "4Y",
+          "net": "YM_CLOCK_3V3",
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "4A",
+          "net": "L_SOUND_CLK0",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "4OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "note": "Ioff receiver rail; input defaults explicit; unused gates disabled; NOT plainLVC125A"
+    },
+    {
+      "ref": "ULINK1",
+      "value": "SN74LV4T125PWR",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "1A",
+          "net": "L_MOD_I2S_BCK",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "1Y",
+          "net": "MOD_I2S_BCK",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "2OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "2A",
+          "net": "L_MOD_I2S_LRCK",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "2Y",
+          "net": "MOD_I2S_LRCK",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "3Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "3A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "3OE_N",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "4Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "4A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "4OE_N",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "note": "Ioff receiver rail; input defaults explicit; unused gates disabled; NOT plainLVC125A"
+    },
+    {
+      "ref": "ULINKTX",
+      "value": "SN74LV4T125PWR",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1OE_N",
+          "net": "MOD_SPI_CS_N",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "1A",
+          "net": "MOD_SPI_MISO",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "1Y",
+          "net": "LINK_TX_MISO",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "2OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "2A",
+          "net": "MOD_I2S_DATA",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "2Y",
+          "net": "LINK_TX_DATA",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "3Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "3A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "3OE_N",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "4Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "4A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "4OE_N",
+          "net": "MCU_3V3",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "note": "Ioff receiver rail; input defaults explicit; unused gates disabled; NOT plainLVC125A"
+    },
+    {
+      "ref": "CULINK0",
+      "value": "100n X7R 10V",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CULINK1",
+      "value": "100n X7R 10V",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CULINKTX",
+      "value": "100n X7R 10V",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMSCK",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_SPI_SCK",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMMOSI",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_SPI_MOSI",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMCS",
+      "value": "10k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_SPI_CS_N",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMBCK",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_I2S_BCK",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMLR",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_MOD_I2S_LRCK",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMCLK",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "L_SOUND_CLK0",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMSD",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MOD_I2S_DATA",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMADR",
+      "value": "100k",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MOD_ALERT_DRIVE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMTXMISO",
+      "value": "33",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "LINK_TX_MISO",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "L_MOD_SPI_MISO",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMTXDATA",
+      "value": "33",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "LINK_TX_DATA",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "L_MOD_I2S_DATA",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UALERT",
+      "value": "SN74LVC1G07DBVR",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "num": "2",
+          "name": "A",
+          "net": "MOD_ALERT_DRIVE",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "L_MOD_ALERT_N",
+          "type": "open_collector"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf",
+      "note": ""
+    },
+    {
+      "ref": "CUALERT",
+      "value": "100n X7R 10V",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "JMOD",
+      "value": "P2 DIGITAL 32 / pin32 KEY",
+      "sheet": "01-link",
+      "pins": [
+        {
+          "num": "1",
+          "name": "V5_MODULE",
+          "net": "V5_MODULE",
+          "type": "power_out"
+        },
+        {
+          "num": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_out"
+        },
+        {
+          "num": "3",
+          "name": "V5_MODULE",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "4",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "5",
+          "name": "MOD_SPI_SCK",
+          "net": "L_MOD_SPI_SCK",
+          "type": "output"
+        },
+        {
+          "num": "6",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "7",
+          "name": "MOD_SPI_MOSI",
+          "net": "L_MOD_SPI_MOSI",
+          "type": "output"
+        },
+        {
+          "num": "8",
+          "name": "MOD_SPI_MISO",
+          "net": "L_MOD_SPI_MISO",
+          "type": "input"
+        },
+        {
+          "num": "9",
+          "name": "MOD_SPI_CS_N",
+          "net": "L_MOD_SPI_CS_N",
+          "type": "output"
+        },
+        {
+          "num": "10",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "11",
+          "name": "MOD_ENABLE",
+          "net": "L_MOD_ENABLE",
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "MOD_ALERT_N",
+          "net": "L_MOD_ALERT_N",
+          "type": "bidirectional"
+        },
+        {
+          "num": "13",
+          "name": "MOD_I2S_BCK",
+          "net": "L_MOD_I2S_BCK",
+          "type": "output"
+        },
+        {
+          "num": "14",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "15",
+          "name": "MOD_I2S_LRCK",
+          "net": "L_MOD_I2S_LRCK",
+          "type": "output"
+        },
+        {
+          "num": "16",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "17",
+          "name": "MOD_I2S_DATA",
+          "net": "L_MOD_I2S_DATA",
+          "type": "input"
+        },
+        {
+          "num": "18",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "19",
+          "name": "SOUND_CLK0",
+          "net": "L_SOUND_CLK0",
+          "type": "output"
+        },
+        {
+          "num": "20",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "21",
+          "name": "SOUND_CLK1",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "22",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "23",
+          "name": "SOUND_CLK2",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "24",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "25",
+          "name": "RES_MCLK",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "26",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "27",
+          "name": "RES0",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "28",
+          "name": "RES1",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "29",
+          "name": "RES2",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "30",
+          "name": "RES3",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "31",
+          "name": "GND",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "32",
+          "name": "KEY",
+          "net": null,
+          "type": "passive"
+        }
+      ],
+      "footprint": "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Vertical",
+      "source": "https://www.samtec.com/products/tsw-116-07-g-d",
+      "note": "Connector pin electrical types model external board sources for standalone ERC. No hotplug. Key removed/blocked; fit pending."
+    },
+    {
+      "ref": "UADCPOWER",
+      "value": "TLV75533PDBVR",
+      "sheet": "06-adc-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "IN",
+          "net": "V5_MODULE",
+          "type": "power_in"
+        },
+        {
+          "num": "2",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "3",
+          "name": "EN",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "NC",
+          "net": null,
+          "type": "no_connect"
+        },
+        {
+          "num": "5",
+          "name": "OUT",
+          "net": "ADC_3V3",
+          "type": "power_out"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/tlv755p.pdf",
+      "note": "EN low onSTOP; active discharge plus680R bleed. Check effectiveC and measured decay."
+    },
+    {
+      "ref": "CADCIN",
+      "value": "4.7u X7R 10V",
+      "sheet": "06-adc-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCOUT",
+      "value": "4.7u X7R 10V",
+      "sheet": "06-adc-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCBLEED",
+      "value": "680",
+      "sheet": "06-adc-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CMOD5",
+      "value": "22u X7R 10V",
+      "sheet": "06-adc-power",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "V5_MODULE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UADC",
+      "value": "PCM1863DBT",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "VINL2",
+          "net": "ADC_SSG_B",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "VINR2",
+          "net": null,
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "VINL1",
+          "net": "ADC_SSG_A",
+          "type": "input"
+        },
+        {
+          "num": "4",
+          "name": "VINR1",
+          "net": null,
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "MICBIAS",
+          "net": null,
+          "type": "power_out"
+        },
+        {
+          "num": "6",
+          "name": "VREF",
+          "net": "ADC_VREF",
+          "type": "power_out"
+        },
+        {
+          "num": "7",
+          "name": "AGND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "AVDD",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "9",
+          "name": "XO",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "10",
+          "name": "XI",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "LDO_1V8",
+          "net": "ADC_LDO_1V8",
+          "type": "power_out"
+        },
+        {
+          "num": "12",
+          "name": "DGND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "13",
+          "name": "DVDD",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "14",
+          "name": "IOVDD",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        },
+        {
+          "num": "15",
+          "name": "SCKI",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "16",
+          "name": "LRCK",
+          "net": "ADC_LRCK",
+          "type": "input"
+        },
+        {
+          "num": "17",
+          "name": "BCK",
+          "net": "ADC_BCK",
+          "type": "input"
+        },
+        {
+          "num": "18",
+          "name": "DOUT",
+          "net": "ADC_DOUT_RAW",
+          "type": "output"
+        },
+        {
+          "num": "19",
+          "name": "GPIO3_INPUT_ARM",
+          "net": "ADC_INPUT_ARM",
+          "type": "bidirectional"
+        },
+        {
+          "num": "20",
+          "name": "GPIO2",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "21",
+          "name": "GPIO1_DMIN",
+          "net": "ADC_DMIN_PD",
+          "type": "bidirectional"
+        },
+        {
+          "num": "22",
+          "name": "GPIO0",
+          "net": null,
+          "type": "bidirectional"
+        },
+        {
+          "num": "23",
+          "name": "SDA",
+          "net": "ADC_SDA",
+          "type": "bidirectional"
+        },
+        {
+          "num": "24",
+          "name": "SCL",
+          "net": "ADC_SCL",
+          "type": "input"
+        },
+        {
+          "num": "25",
+          "name": "AD",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "26",
+          "name": "MD0_I2C",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "27",
+          "name": "VINL4",
+          "net": null,
+          "type": "input"
+        },
+        {
+          "num": "28",
+          "name": "VINR4",
+          "net": null,
+          "type": "input"
+        },
+        {
+          "num": "29",
+          "name": "VINL3",
+          "net": "ADC_SSG_C",
+          "type": "input"
+        },
+        {
+          "num": "30",
+          "name": "VINR3",
+          "net": null,
+          "type": "input"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-30_4.4x7.8mm_P0.5mm",
+      "source": "https://www.ti.com/lit/ds/symlink/pcm1863.pdf",
+      "note": "8analog inputs but2ADCs; L SUM1+2+3, R muted. No external reset/brownout detector. Pins11/6 decoupling only. Unusedanalog inputs NC/muted."
+    },
+    {
+      "ref": "CADCAV0",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCAV1",
+      "value": "10u X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCDV0",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCDV1",
+      "value": "10u X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCIO0",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCIO1",
+      "value": "10u X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCLDO0",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_LDO_1V8",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCLDO1",
+      "value": "10u X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_LDO_1V8",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDMINPD",
+      "value": "100k",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_DMIN_PD",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CADCVREF",
+      "value": "1u X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_VREF",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCSDA",
+      "value": "4.7k",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_SDA",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ADC_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCSCL",
+      "value": "4.7k",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_SCL",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ADC_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UADCCLK",
+      "value": "SN74LV4T125PWR",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "1A",
+          "net": "MOD_I2S_BCK",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "1Y",
+          "net": "ADC_BCK",
+          "type": "output"
+        },
+        {
+          "num": "4",
+          "name": "2OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "2A",
+          "net": "MOD_I2S_LRCK",
+          "type": "input"
+        },
+        {
+          "num": "6",
+          "name": "2Y",
+          "net": "ADC_LRCK",
+          "type": "output"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "3Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "9",
+          "name": "3A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "10",
+          "name": "3OE_N",
+          "net": "ADC_3V3",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "4Y",
+          "net": null,
+          "type": "output"
+        },
+        {
+          "num": "12",
+          "name": "4A",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "13",
+          "name": "4OE_N",
+          "net": "ADC_3V3",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VCC",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lv4t125.pdf",
+      "note": "Ioff receiver rail; input defaults explicit; unused gates disabled; NOT plainLVC125A"
+    },
+    {
+      "ref": "CUADCCLK",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UADCDATA",
+      "value": "SN74LVC1G125DBVR",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "OE_N",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "A",
+          "net": "ADC_DOUT_RAW",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "ADC_DOUT",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "MCU_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf",
+      "note": "Receiver powered byMCU3V3; Ioff prevents ADC rail feeding unpoweredMCU."
+    },
+    {
+      "ref": "CUADCDATA",
+      "value": "100n X7R 10V",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "MCU_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCDATAPD",
+      "value": "100k",
+      "sheet": "07-adc",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_DOUT",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UINPUTAND",
+      "value": "SN74LVC1G08DBVR",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A",
+          "net": "ADC_INPUT_ARM",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "B",
+          "net": "YM_RELEASE_SAFE",
+          "type": "input"
+        },
+        {
+          "num": "3",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "4",
+          "name": "Y",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "output"
+        },
+        {
+          "num": "5",
+          "name": "VCC",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23-5",
+      "source": "https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf",
+      "note": ""
+    },
+    {
+      "ref": "CUINPUTAND",
+      "value": "100n X7R 10V",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCARM",
+      "value": "10k",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_INPUT_ARM",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RMUXPD",
+      "value": "10k",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "UINPUT",
+      "value": "TMUX1511PWR",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "SEL1",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "input"
+        },
+        {
+          "num": "2",
+          "name": "S1",
+          "net": "SSG_DIV_A",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "D1",
+          "net": "SSG_ISO_A",
+          "type": "passive"
+        },
+        {
+          "num": "4",
+          "name": "SEL2",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "input"
+        },
+        {
+          "num": "5",
+          "name": "S2",
+          "net": "SSG_DIV_B",
+          "type": "passive"
+        },
+        {
+          "num": "6",
+          "name": "D2",
+          "net": "SSG_ISO_B",
+          "type": "passive"
+        },
+        {
+          "num": "7",
+          "name": "GND",
+          "net": "GND",
+          "type": "power_in"
+        },
+        {
+          "num": "8",
+          "name": "D3",
+          "net": "SSG_ISO_C",
+          "type": "passive"
+        },
+        {
+          "num": "9",
+          "name": "S3",
+          "net": "SSG_DIV_C",
+          "type": "passive"
+        },
+        {
+          "num": "10",
+          "name": "SEL3",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "input"
+        },
+        {
+          "num": "11",
+          "name": "D4",
+          "net": null,
+          "type": "passive"
+        },
+        {
+          "num": "12",
+          "name": "S4",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "13",
+          "name": "SEL4",
+          "net": "GND",
+          "type": "input"
+        },
+        {
+          "num": "14",
+          "name": "VDD",
+          "net": "ADC_3V3",
+          "type": "power_in"
+        }
+      ],
+      "footprint": "Package_SO:TSSOP-14_4.4x5mm_P0.65mm",
+      "source": "https://www.ti.com/lit/ds/symlink/tmux1511.pdf",
+      "note": "Powered-off protection0..3.6V; divider bound<1.34V. Before coupling caps; defaultOFF. ARM only afterADC init+local YM permit."
+    },
+    {
+      "ref": "CUINPUT",
+      "value": "100n X7R 10V",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDIVTA",
+      "value": "3.01k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_DIV_A",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDIVBA",
+      "value": "1k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_DIV_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RISOBLEEDA",
+      "value": "100k",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CACA",
+      "value": "2.2u X7R 10V",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_AC_A",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCLIMITA",
+      "value": "4.7k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_AC_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ADC_SSG_A",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CAAFA",
+      "value": "470p C0G",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_SSG_A",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "DCLAMPA",
+      "value": "BAT54S,215",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A1",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "K2",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "K1_A2",
+          "net": "ADC_SSG_A",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf?215=",
+      "note": "Lowerclamp GND->VIN; upper VIN->ADC3V3. Must be series BAT54S, not commonanode/cathode variants."
+    },
+    {
+      "ref": "RDIVTB",
+      "value": "3.01k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_DIV_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDIVBB",
+      "value": "1k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_DIV_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RISOBLEEDB",
+      "value": "100k",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CACB",
+      "value": "2.2u X7R 10V",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_AC_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCLIMITB",
+      "value": "4.7k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_AC_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ADC_SSG_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CAAFB",
+      "value": "470p C0G",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_SSG_B",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "DCLAMPB",
+      "value": "BAT54S,215",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A1",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "K2",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "K1_A2",
+          "net": "ADC_SSG_B",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf?215=",
+      "note": "Lowerclamp GND->VIN; upper VIN->ADC3V3. Must be series BAT54S, not commonanode/cathode variants."
+    },
+    {
+      "ref": "RDIVTC",
+      "value": "3.01k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_DIV_C",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RDIVBC",
+      "value": "1k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_DIV_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RISOBLEEDC",
+      "value": "100k",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CACC",
+      "value": "2.2u X7R 10V",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_ISO_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "SSG_AC_C",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "RADCLIMITC",
+      "value": "4.7k 1%",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "SSG_AC_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "ADC_SSG_C",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Resistor_SMD:R_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "CAAFC",
+      "value": "470p C0G",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "1",
+          "net": "ADC_SSG_C",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "2",
+          "net": "GND",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Capacitor_SMD:C_0805_2012Metric",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "DCLAMPC",
+      "value": "BAT54S,215",
+      "sheet": "08-ssg-adc-protection",
+      "pins": [
+        {
+          "num": "1",
+          "name": "A1",
+          "net": "GND",
+          "type": "passive"
+        },
+        {
+          "num": "2",
+          "name": "K2",
+          "net": "ADC_3V3",
+          "type": "passive"
+        },
+        {
+          "num": "3",
+          "name": "K1_A2",
+          "net": "ADC_SSG_C",
+          "type": "passive"
+        }
+      ],
+      "footprint": "Package_TO_SOT_SMD:SOT-23",
+      "source": "https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf?215=",
+      "note": "Lowerclamp GND->VIN; upper VIN->ADC3V3. Must be series BAT54S, not commonanode/cathode variants."
+    },
+    {
+      "ref": "TPM3",
+      "value": "MCU_3V3",
+      "sheet": "09-test",
+      "pins": [
+        {
+          "num": "1",
+          "name": "TP",
+          "net": "MCU_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "TPADC3",
+      "value": "ADC_3V3",
+      "sheet": "09-test",
+      "pins": [
+        {
+          "num": "1",
+          "name": "TP",
+          "net": "ADC_3V3",
+          "type": "passive"
+        }
+      ],
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "TPADCEN",
+      "value": "MODULE_PERMIT_LOCAL",
+      "sheet": "09-test",
+      "pins": [
+        {
+          "num": "1",
+          "name": "TP",
+          "net": "MODULE_PERMIT_LOCAL",
+          "type": "passive"
+        }
+      ],
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "TPARM",
+      "value": "ADC_INPUT_ENABLE",
+      "sheet": "09-test",
+      "pins": [
+        {
+          "num": "1",
+          "name": "TP",
+          "net": "ADC_INPUT_ENABLE",
+          "type": "passive"
+        }
+      ],
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "",
+      "note": ""
+    },
+    {
+      "ref": "TPRESET",
+      "value": "Y_RESET_N",
+      "sheet": "09-test",
+      "pins": [
+        {
+          "num": "1",
+          "name": "TP",
+          "net": "Y_RESET_N",
+          "type": "passive"
+        }
+      ],
+      "footprint": "TestPoint:TestPoint_Pad_D1.5mm",
+      "source": "",
+      "note": ""
+    }
+  ]
+}

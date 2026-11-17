@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-18",
+  "kicad": "10.0.5",
+  "pcbnew_python": "3.9.13 bundled KiCad",
+  "router": {
+    "name": "Freerouting",
+    "version": "2.1.0",
+    "jar_sha256": "2c07d58f75dac03782664081e7a58b41c25400d871a9fcf166a2ea6fe60d5def",
+    "license": "GPL-3.0",
+    "redistributed": false,
+    "release": "https://github.com/freerouting/freerouting/releases/tag/v2.1.0",
+    "scope": "inherited review-I routing; no new Freerouting run in J"
+  },
+  "local_routing": {
+    "method": "0.05mm obstacle grid with exact native DRC after correction",
+    "python": "3.14.6",
+    "pillow": "12.0.0",
+    "numpy": "2.3.5",
+    "compiler": "Apple clang / C++17",
+    "dependencies_not_runtime_requirements": true,
+    "scope": "six control nets rerouted on 0.05mm grid, In1 GND reserved; exact native DRC authoritative"
+  },
+  "checks": "native ERC/DRC/schematic parity; pin and coordinate contracts; no DRC per-item exclusions",
+  "hardware_accepted": false
+}

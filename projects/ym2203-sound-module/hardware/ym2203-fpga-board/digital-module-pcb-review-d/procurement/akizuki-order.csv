@@ -1,0 +1,16 @@
+﻿id,sales_code,mpn,need_one,need_five,pieces_per_pack,packs_one,packs_five,url,note
+J01,100015,2227-40-06,1,5,10,1,1,https://akizukidenshi.com/catalog/g/g100015/,1パック10個。MCU用ソケットには使わない。
+J03,100167,PH-1x40SG,150,750,40,4,19,https://akizukidenshi.com/catalog/g/g100167/,数量単位は接点。128接点をMCU、22接点をPCB用に使用。最低4本、作業予備を含め5本推奨。MCU四隅は樹脂干渉回避が必要。
+LED01,111637,OSG8HA3Z74A,7,35,1,7,35,https://akizukidenshi.com/catalog/g/g111637/,7個を同色で統一。抵抗内蔵5V品・自己点滅品を選ばない。
+R01,111797,RG2012-N-103-B-T5,34,170,5,7,34,https://akizukidenshi.com/catalog/g/g111797/,汎用/1%指定箇所も0.1%品に統一。
+R02,111798,RG2012N-104-B-T5,40,200,5,8,40,https://akizukidenshi.com/catalog/g/g111798/,汎用/1%指定箇所も0.1%品に統一。
+R03,111796,RG2012N-102-B-T5,10,50,5,2,10,https://akizukidenshi.com/catalog/g/g111796/,汎用/1%指定箇所も0.1%品に統一。
+R11,111795,RG2012N-101-B-T5,2,10,5,1,2,https://akizukidenshi.com/catalog/g/g111795/,汎用/1%指定箇所も0.1%品に統一。
+C02,117593,GRM21BR71A106KE51,9,45,10,1,5,https://akizukidenshi.com/catalog/g/g117593/,0805/2012M。X7Rを維持。
+C03,114788,GRM21BR71E225KE11,5,25,10,1,3,https://akizukidenshi.com/catalog/g/g114788/,0805/2012M。X7Rを維持。
+C04,107549,CL21B105KPFNNNE,2,10,40,1,1,https://akizukidenshi.com/catalog/g/g107549/,0805/2012M。X7Rを維持。
+C05,131147,GRM21BR71C475KE51,5,25,20,1,2,https://akizukidenshi.com/catalog/g/g131147/,仕様・サイズ適合。LDO用4.7µFは3.3V/5Vバイアス後の実効容量1µF以上を確認。
+C12,105002,16MH5100MEFC6.3X5,1,5,1,1,5,https://akizukidenshi.com/catalog/g/g105002/,指定10V以上を満たす16V品。
+C13,130140,50NXA4R7MEFC5X11,4,20,1,4,20,https://akizukidenshi.com/catalog/g/g130140/,必ず無極性。極性付き電解は不可。
+E01,116478,JH16T2A103L20KC,1,5,1,1,5,https://akizukidenshi.com/catalog/g/g116478/,
+E02,106257,MJ-073H,1,5,1,1,5,https://akizukidenshi.com/catalog/g/g106257/,JPOT/JLINEは配線式。JLINE 1=L 2=GND 3=R。ヘッドホン直駆動用ではない。

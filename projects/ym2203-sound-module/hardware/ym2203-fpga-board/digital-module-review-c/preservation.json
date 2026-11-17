@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-16",
+  "baseline_sources": 1928,
+  "edited_entries": 6,
+  "protected_existing_sources": 1922,
+  "approved_gpio": "reviewC new pins.json; reviewB proposed pins accepted by user",
+  "old_revc_or_p2_manifests_changed": false,
+  "old_acceptance_or_firmware_changed": false,
+  "protected_groups": {
+    "projects/ym2203-sound-module/firmware-c/": {
+      "files": 187,
+      "aggregate_sha256": "ea757f874916d4e01f85ba75d2f29c3959d0c4636773e55266a8a096753d05e1"
+    },
+    "projects/ym2203-sound-module/hardware/ym2203-fpga-board/carrier-p2/": {
+      "files": 110,
+      "aggregate_sha256": "5b0d79e76d4ebd9c873c13cecf9a1800d371fbb3b733d245321e0ec89fbf80b8"
+    },
+    "projects/ym2203-sound-module/hardware/ym2203-fpga-board/modular-review-a/": {
+      "files": 51,
+      "aggregate_sha256": "393513c8837621cf03eb3bb578584d5492628a5a162684085f21c085ce28fc1f"
+    },
+    "projects/ym2203-sound-module/hardware/ym2203-fpga-board/digital-module-review-b/": {
+      "files": 17,
+      "aggregate_sha256": "b47b78b9493d5c8e3141b7124f9cc738141a58a3c35410520f448477eaa5f299"
+    }
+  }
+}

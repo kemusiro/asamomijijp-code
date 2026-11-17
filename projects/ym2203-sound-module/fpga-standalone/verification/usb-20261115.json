@@ -1,0 +1,722 @@
+{
+  "schema_version": 1,
+  "date_utc": "2026-11-14T16:55:48.005517+00:00",
+  "kind": "USB FS CDC/MIDI functional RTL + I2C/Si5351/real-YM behavioral integration; not physical acceptance",
+  "tools": {
+    "verilator": {
+      "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+      "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+    },
+    "yosys": {
+      "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+      "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+    },
+    "cc": {
+      "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    },
+    "c++": {
+      "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+      "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+    }
+  },
+  "sources_sha256": {
+    "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+    "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+    "rtl/revc_clocked_ym_top.v": "0f6de50e160419bb342e141ddf2027d6604387f60a0d1a8eae9ee1a2162c7b8d",
+    "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+    "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+    "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+    "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+    "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+    "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+    "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+    "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+    "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+    "rtl/revc_midi_planner.v": "25a75d77541fba5ea586f4a744e3f877836a795dfd2933d36fae11fdb70ab567",
+    "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+    "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+    "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+    "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+    "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+    "rtl/revc_usb_composite.v": "e69ebcf65fdd088ed02cc93af83bd19e6ff1674ab78bce13d2533aa91c45faf8",
+    "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+    "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+    "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+    "rtl/revc_usb_ym_top.v": "ea26520896e4e1f5efb5f05b30e73d3763d155dedd3c205991398b79d66bb45d",
+    "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+    "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+    "rtl/revc_v2_session.v": "f3898e5f7f06168a139c7b71dd1b8d79ca8a874555ef60d11fe09cff3dc1e613",
+    "rtl/revc_ym_backend.v": "3353ea2ced9d6f43d24c68fefc01b0b26e63f9775e6cc70df72df9aa568a4f72",
+    "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+    "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+    "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+    "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+    "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+    "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+    "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+    "tests/midi_planner_test.cpp": "bb5332641c40ea6e9e61a55afd4c4881a19787ed06cc95d659b9e97341de9778",
+    "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+    "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+    "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+    "tests/usb_disabled_test.cpp": "ac7f10ac4f5d6e1b0f38a11a1f4de013b9d80f2746eb7d2b7d282145079e61ae",
+    "tests/usb_phy_test.cpp": "295a06f42baa988b627638004cec941dbae515ef17ef606d9c86fd5af5960964",
+    "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+    "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+    "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+    "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+    "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+    "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+    "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+    "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+    "tests/test_session.py": "e7f01e2248e9e806a53991043c669290564aab4cc13e59cb4a9d0f7ef60f006f",
+    "tests/test_usb_metadata.py": "44d5474384c3b14b807efe92357e852f4630ae2c21ff129e6fcbbc0af1cb023a",
+    "tests/test_usb_ym.py": "74d1c2d35f21e8d3c14a135b7dd6d733ad1b5e64f7b86812436e0cba1a905199",
+    "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+    "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+    "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+    "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+    "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+    "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+    "check_clocks.py": "7fa582d7833fcd50ea623e2b2c89df6afe5b4a2e585c436349b2de018ed402f3",
+    "check_real_cdc.py": "2495f157830e610071259b5f502b03cfa6098286d74f03b8cbbf9956361ed823",
+    "check_session.py": "492fc382b0ef92e9549846f35b313597ce24b10e7a5e6f72bb8c5f61c50b41cb",
+    "check_usb.py": "4ffbedef56355dec1f5a173165860b9a6cb373f377e055dc86f52d62ca1dd8ab",
+    "vendor/usbcorev/LICENSE": "37d897f62a4324d8d2f313d7d1b98cd26f872d2ae598b7eb9a69b1c129bcc135",
+    "vendor/usbcorev/README.md": "9b263301048e78e0b0630c08b393853f39f2e216ed15c967a1ff51eb9a6aa195",
+    "vendor/usbcorev/patches/f1-validation.patch": "ea6b27ad85a11b8471093365dc782b12ecf9601078fccf47f49765cd7bc639e7",
+    "vendor/usbcorev/upstream.json": "49360e80f416749080edb814f027628235763b44733676bf601402add2e3ee58",
+    "vendor/usbcorev/usb.v": "48811abe0b7d6706a7c92f36e086aea74e5a9bd7f65e716e11f18ed7d1bc964f",
+    "vendor/usbcorev/usb_recv.v": "5e7d80c57ebd23d26aefe60aadc2c2326ce8d0c53e2929dcd5e9f1b18746b025",
+    "vendor/usbcorev/usb_tx.v": "f532efe10aac7ec97212f75b4b7c40f5ff96d0cde8a608056c681baf869183df",
+    "vendor/usbcorev/usb_utils.v": "3d310e1a2acfaa920787cf9b1be01ccdfc5a04a105c15b00f8969c6ed01032cf",
+    "vendor/usbcorev/utils.v": "ba19a6dc37c8afd18bb4f88247fcbdd32003adaf046b5844fdd0c0ad124527db"
+  },
+  "unchanged_host_sha256": {
+    "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f",
+    "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+    "firmware-c/host/main.py": "0b41652a823e35480ee38713779d28c29dd6937141e3fd58c8e74aeb7a77ed38",
+    "firmware-c/host/midi_handover.py": "cbb28c593be55a7492fe81ba2f22129062aab15fc601b85a1bf84045b7697d28",
+    "firmware-c/host/player.py": "1c35513ed6cc49d8e1d858ac5647b627e7a9cc865d6ec57b7cecd8358475082a",
+    "firmware-c/host/recovery_check.py": "7eb774ece8cee0b6f4babc8ee63650a57b30c54423ba6d712a7144a0c3785f5b",
+    "firmware-c/host/usb_disconnect_check.py": "130c395848260de3ca8f7c6af20765a9aa3eb8cfc6eacfa302de537f44fc868b"
+  },
+  "c_oracle_sha256": {
+    "firmware-c/src/midi.c": "076ab1bc64111344cf60c8d77aa31b01d9d4a37802a8c2bdfa1e6ad69c4cf8d0",
+    "firmware-c/src/midi_pitch.h": "cc84f6ab223a5da847b446a62b9b1fa5d36fb75c072be12e350974d9ad47e07a",
+    "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+    "firmware-c/tests/midi_bridge.c": "7675651e5e11d0fe83da37a9e0f824ac4afef861f438cf98987f6b85dd5e2d27"
+  },
+  "vendor": {
+    "repository": "https://github.com/avakar/usbcorev",
+    "commit": "8f799bb9f188f0266ff7926fdc93fad0fc754eae",
+    "license": "No-notice MIT License (verbatim LICENSE)",
+    "files_sha256": {
+      "LICENSE": "37d897f62a4324d8d2f313d7d1b98cd26f872d2ae598b7eb9a69b1c129bcc135",
+      "README.md": "9b263301048e78e0b0630c08b393853f39f2e216ed15c967a1ff51eb9a6aa195",
+      "usb.v": "48811abe0b7d6706a7c92f36e086aea74e5a9bd7f65e716e11f18ed7d1bc964f",
+      "usb_recv.v": "5e7d80c57ebd23d26aefe60aadc2c2326ce8d0c53e2929dcd5e9f1b18746b025",
+      "usb_tx.v": "f532efe10aac7ec97212f75b4b7c40f5ff96d0cde8a608056c681baf869183df",
+      "usb_utils.v": "3d310e1a2acfaa920787cf9b1be01ccdfc5a04a105c15b00f8969c6ed01032cf",
+      "utils.v": "ba19a6dc37c8afd18bb4f88247fcbdd32003adaf046b5844fdd0c0ad124527db"
+    },
+    "modified": false
+  },
+  "metadata": {
+    "tests": 3,
+    "skipped": 0,
+    "passed": 3,
+    "log_sha256": "78cb8e08a73cf7d9ec89ecbeba02c566ad32f69819a27f89b198977989c5297b"
+  },
+  "components": {
+    "midi": "PASS MIDI planner: 768 C pitch/setup/note comparisons (702 valid); immutable BUSY, stale off, CC120/123, cable/channel filters, ownership blocking/tagging, release hold, timeout, disconnect/quarantine",
+    "phy": "PASS USB PHY validation: unACKed IN retry, delayed address, CRC/stuff/EOP/oversize rejection, aligned MIDI, CDC line coding/notification/bulk/ZLP, HALT/CLEAR, STALL recovery, SOF wrap/suspend/resume, VBUS; smoke: descriptors, address, configuration, CDC class, CDC bytes, MIDI packet and duplicate",
+    "disabled": "PASS USB default-zero ID guard: detached, no drive, no configuration"
+  },
+  "integrated": {
+    "tests": 5,
+    "passed": 5,
+    "log_sha256": "de14090362f014c4c9a4ad41eae114ee1139c117ee87e7cf012e9e031b302c57"
+  },
+  "regression": {
+    "kind": "Successful clocked regression models and mapping; structural audit resumed after mapped-net alias name correction",
+    "tools": {
+      "verilator": {
+        "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+        "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+      },
+      "yosys": {
+        "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+        "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+      },
+      "cc": {
+        "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+        "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+      },
+      "c++": {
+        "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+        "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+      }
+    },
+    "sources_sha256": {
+      "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+      "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+      "rtl/revc_clocked_ym_top.v": "0f6de50e160419bb342e141ddf2027d6604387f60a0d1a8eae9ee1a2162c7b8d",
+      "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+      "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+      "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+      "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+      "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+      "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+      "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+      "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+      "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+      "rtl/revc_midi_planner.v": "25a75d77541fba5ea586f4a744e3f877836a795dfd2933d36fae11fdb70ab567",
+      "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+      "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+      "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+      "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+      "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+      "rtl/revc_usb_composite.v": "0b4e29c349d8ece09ad980d49b4e7d15b8637256dc9d6beaff4d46c87f5d34d6",
+      "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+      "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+      "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+      "rtl/revc_usb_ym_top.v": "ea26520896e4e1f5efb5f05b30e73d3763d155dedd3c205991398b79d66bb45d",
+      "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+      "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+      "rtl/revc_v2_session.v": "f3898e5f7f06168a139c7b71dd1b8d79ca8a874555ef60d11fe09cff3dc1e613",
+      "rtl/revc_ym_backend.v": "3353ea2ced9d6f43d24c68fefc01b0b26e63f9775e6cc70df72df9aa568a4f72",
+      "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+      "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+      "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+      "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+      "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+      "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+      "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+      "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+      "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+      "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+      "tests/usb_phy_test.cpp": "e80badcc6aced8ce523160d9cc00c5afc48b7f803e9ecf96be91f10a899b19be",
+      "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+      "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+      "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+      "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+      "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+      "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+      "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+      "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+      "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+      "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+      "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+      "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+      "tests/test_session.py": "e7f01e2248e9e806a53991043c669290564aab4cc13e59cb4a9d0f7ef60f006f",
+      "tests/test_usb_ym.py": "8bcd8c50219739faa547ed9dcc8f0b16545b2aaea0162881bf50e85bfe9e5ef5",
+      "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+      "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+      "check_clocks.py": "7fa582d7833fcd50ea623e2b2c89df6afe5b4a2e585c436349b2de018ed402f3",
+      "check_real_cdc.py": "9bd922b215d22a8b400ee4cadb4545ea2a3a6fb541d814e4d622f02266f28b35",
+      "check_session.py": "492fc382b0ef92e9549846f35b313597ce24b10e7a5e6f72bb8c5f61c50b41cb"
+    },
+    "unchanged_host_sha256": {
+      "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+      "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f"
+    },
+    "audio_regression": {
+      "schema_version": 1,
+      "date_utc": "2026-11-14T16:42:17.841895+00:00",
+      "kind": "F1 real-YM bus and audio RTL simulation/ECP5 mapping; not hardware/audio acceptance",
+      "tools": {
+        "verilator": {
+          "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+          "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+        },
+        "yosys": {
+          "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+          "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+        },
+        "cc": {
+          "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+          "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+        },
+        "c++": {
+          "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+          "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+        }
+      },
+      "python_version": "3.15.2",
+      "sources_sha256": {
+        "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+        "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+        "rtl/revc_clocked_ym_top.v": "0f6de50e160419bb342e141ddf2027d6604387f60a0d1a8eae9ee1a2162c7b8d",
+        "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+        "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+        "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+        "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+        "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+        "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+        "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+        "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+        "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+        "rtl/revc_midi_planner.v": "25a75d77541fba5ea586f4a744e3f877836a795dfd2933d36fae11fdb70ab567",
+        "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+        "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+        "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+        "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+        "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+        "rtl/revc_usb_composite.v": "0b4e29c349d8ece09ad980d49b4e7d15b8637256dc9d6beaff4d46c87f5d34d6",
+        "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+        "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+        "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+        "rtl/revc_usb_ym_top.v": "ea26520896e4e1f5efb5f05b30e73d3763d155dedd3c205991398b79d66bb45d",
+        "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+        "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+        "rtl/revc_v2_session.v": "f3898e5f7f06168a139c7b71dd1b8d79ca8a874555ef60d11fe09cff3dc1e613",
+        "rtl/revc_ym_backend.v": "3353ea2ced9d6f43d24c68fefc01b0b26e63f9775e6cc70df72df9aa568a4f72",
+        "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+        "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+        "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+        "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+        "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+        "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+        "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+        "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+        "tests/real_ym_bridge.cpp": "447318845b52efaebe657244c3f9756b60532dd6e5cac3129b1f0d6e0d887ab1",
+        "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+        "tests/usb_phy_test.cpp": "e80badcc6aced8ce523160d9cc00c5afc48b7f803e9ecf96be91f10a899b19be",
+        "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+        "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+        "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+        "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+        "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+        "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+        "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+        "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+        "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+        "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+        "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+        "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+        "tests/test_session.py": "e7f01e2248e9e806a53991043c669290564aab4cc13e59cb4a9d0f7ef60f006f",
+        "tests/test_usb_ym.py": "8bcd8c50219739faa547ed9dcc8f0b16545b2aaea0162881bf50e85bfe9e5ef5",
+        "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194",
+        "check_audio.py": "d3930780cec9ab380ce413fbd6f9c516085020d1d7ca53bbc3d7eb69a68bef45",
+        "check_clocks.py": "7fa582d7833fcd50ea623e2b2c89df6afe5b4a2e585c436349b2de018ed402f3",
+        "check_real_cdc.py": "9bd922b215d22a8b400ee4cadb4545ea2a3a6fb541d814e4d622f02266f28b35",
+        "check_session.py": "492fc382b0ef92e9549846f35b313597ce24b10e7a5e6f72bb8c5f61c50b41cb"
+      },
+      "unchanged_host_sha256": {
+        "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+        "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f"
+      },
+      "c_oracle_sha256": {
+        "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+        "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+        "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+        "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+        "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+        "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+        "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1"
+      },
+      "control_regression": {
+        "schema_version": 1,
+        "date_utc": "2026-11-14T16:40:06.960134+00:00",
+        "kind": "F1 I2C v2 RTL simulation and ECP5 technology mapping; not hardware/audio acceptance",
+        "tools": {
+          "verilator": {
+            "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+            "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+          },
+          "yosys": {
+            "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+            "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+          },
+          "cc": {
+            "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+            "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+          },
+          "c++": {
+            "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+            "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+          }
+        },
+        "python_version": "3.15.2",
+        "sources_sha256": {
+          "rtl/revc_audio_fifo.v": "d29a79ae09951ff347eb8b6dc0cc2c11636550a34630791d04cc37a3b2e64251",
+          "rtl/revc_audio_path.v": "568afa14e84f20798948a522f2b68dcd70e4df21239d6dcdb398af3497350913",
+          "rtl/revc_clocked_ym_top.v": "0f6de50e160419bb342e141ddf2027d6604387f60a0d1a8eae9ee1a2162c7b8d",
+          "rtl/revc_domain_reset.v": "026687ae549e9eeace31fb0969ac36c728870993a5fec5071f7fb39dc6820f53",
+          "rtl/revc_event_fifo.v": "c2a0b4997ac071b7d756d4cb10848c9300d776fa47945b1083544036dde141db",
+          "rtl/revc_fm_pcm.v": "81d43ef86a65a7f2f326aafc0245c7d588a886f6f48d7cd163c3d417ee1388ce",
+          "rtl/revc_fm_rx.v": "7a9aeca0ee02add077a7515be4f4b121f9c626d020f4a7994adf574ce4d35331",
+          "rtl/revc_i2c_control.v": "1571c9e772b482c097c8bfecdff5a525212da4e7483311d8da2cbd71e841f6f0",
+          "rtl/revc_i2c_register_master.v": "72f0ab014d580047664e5cdf2a5920aa84438cb9e985ad66b5abae028bdfadbe",
+          "rtl/revc_i2c_stream.v": "5484cb3004d68c63f5c2081ac9efad47c0b04e3a2e525706d7ffe8e581549769",
+          "rtl/revc_i2c_target.v": "f9bfa2833cf57277b5baf88047fcef28156e207b89cbdd370a03a75e34d4629c",
+          "rtl/revc_i2s_tx.v": "48a33f38878aaf52667e78fc1c33acd1e3d1f65bf3ffb8a2fea7c756cc93f0b2",
+          "rtl/revc_midi_planner.v": "25a75d77541fba5ea586f4a744e3f877836a795dfd2933d36fae11fdb70ab567",
+          "rtl/revc_midi_rom.v": "91c2e6e3b4a1286f6bbe0ad48f1847e61aa85eb2482d2ed6fbfd77491e8f1abc",
+          "rtl/revc_packet_queue.v": "1146513b9cfb5cee9075f6477ec589526508f198c9b4227a571124cad5301224",
+          "rtl/revc_real_ym_top.v": "fdb217a39a44e6cd35b29ee5f0315eb3ff45b29d4bde633173e998ff73eb723f",
+          "rtl/revc_si5351_manager.v": "02ee96ff72f1ae96a6a54611959cb1fcb9b929435bac744ec003c51f4efdbf2e",
+          "rtl/revc_si5351_rom.v": "22bcb101f9516f3bdff256743dbbfda8c1b3a262b459c4a0765aac7c5603f100",
+          "rtl/revc_usb_composite.v": "0b4e29c349d8ece09ad980d49b4e7d15b8637256dc9d6beaff4d46c87f5d34d6",
+          "rtl/revc_usb_console.v": "af43625e97cf4cf10c2917b12643a3547fbb8832f85bb2aa494fd6c8961ece18",
+          "rtl/revc_usb_control.v": "f35b78f85d2b1d443a4cbbe1c2602b97cec6c36ed6341ed9987583da588ad602",
+          "rtl/revc_usb_descriptors.v": "4a25f3589e8b15702186fbe94b24fd9ab527ea456e86594345cb34172f7086ab",
+          "rtl/revc_usb_ym_top.v": "ea26520896e4e1f5efb5f05b30e73d3763d155dedd3c205991398b79d66bb45d",
+          "rtl/revc_v2_core.v": "3bb67c2189716b94ffc24b06349fbaa50cf83b9f995498b9f5937188b19d42b2",
+          "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+          "rtl/revc_v2_session.v": "f3898e5f7f06168a139c7b71dd1b8d79ca8a874555ef60d11fe09cff3dc1e613",
+          "rtl/revc_ym_backend.v": "3353ea2ced9d6f43d24c68fefc01b0b26e63f9775e6cc70df72df9aa568a4f72",
+          "rtl/revc_ym_bus.v": "df0d9ee64c71b71a3166129197a66f813a8007cb00d4cbfe5ac43a68e3862237",
+          "tests/audio_path_test.cpp": "734356e282f69c01253e79cc99fc2bf6b802a6b26f62773e4f543a01e174a1d1",
+          "tests/bus_test.cpp": "8a5edf1d68c4c3da6888100925553ca75706e002524ab5f1d1222b2b4a05f282",
+          "tests/clock_manager_test.cpp": "c9fe8a65376ef3d8f40fabff4e83e079b29853b24ec996c71469b16c77bba6cc",
+          "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+          "tests/i2c_bridge.cpp": "ef9e436c3d76b5713929767b65ef3e7a4bf1236cf3ff76e2fbc435a171328e3e",
+          "tests/i2s_test.cpp": "920b6858707505192d373c48232a678745278571b45dd265a06159955e2beea5",
+          "tests/pcm_test.cpp": "2c4481384c7fc3b488b60969df8213a4fa4912f9b28d741884ea569af44f65ee",
+          "tests/real_ym_bridge.cpp": "7512bfb0602fec8f570b86bc7e7a421305442567dc32d125d61bc1136f47d1a2",
+          "tests/session_bridge.cpp": "05395088cdafbbad1caff9cde6a7b21a9ba107c4dd4b2339d28d205397d54bd7",
+          "tests/usb_phy_test.cpp": "40d6becef51dffe303128f4b7af5ae8e092a1eb173ff2732ad4586dd8f96856c",
+          "tests/variable_audio_test.cpp": "842ed200fc3566d79a46b11a013e0f281213e90d8abb67ffc3f826194e0432f3",
+          "tests/variable_pcm_test.cpp": "dafe9f6941ea03db582739bd954f4b4fd792b7af2ab9fbec6a3937ef3e0294f7",
+          "tests/si5351_fixture.h": "d142966d1b32a7c9bc766392602deed6afa0d8655bf5cfc5753d6d76ab479f7d",
+          "tests/usb_host.h": "dd06c3f1ae688abaa5046b9f654211770d12edf5ebb315e192804aaad906402b",
+          "tools/midi_rom.py": "c4c6ed75a0071b18d1c97192b53a60e6f6c18103e8b78ed3d20c3ae5c22db7ac",
+          "tools/prepare_usbcore.py": "5c3f976a3778740eca7d2563e261b20c678d097fe714fcc87cf32bd78fc06954",
+          "tools/si5351_profiles.py": "4fc8640f5d4a3c67010e26cb7d3727f0b7d2503687dcf092a849a243b2956d42",
+          "tools/usb_descriptors.py": "5a9d0bf5b35051b193effb94b67a815dfdae98ab6f92ee1b16a6e59caef58d74",
+          "tests/test_clock_plans.py": "400383c1449e8bca772037ce869dcfe1ecdd35992ac74d7feafe8abf6cabe761",
+          "tests/test_clocked_ym.py": "4ef2d68d783b96904af66bebd4cce05cf4985d609e1512c0b785352aa1f513cf",
+          "tests/test_i2c_wire.py": "10b498a90755a424d45cf34cfcf84af30fa6ce68bd6bb2f9246078f66eeb29c6",
+          "tests/test_real_ym.py": "62009baec5dd1ba517decb589728401b3a3ac39740a36e7da4e313ad66871b31",
+          "tests/test_session.py": "e7f01e2248e9e806a53991043c669290564aab4cc13e59cb4a9d0f7ef60f006f",
+          "check_session.py": "492fc382b0ef92e9549846f35b313597ce24b10e7a5e6f72bb8c5f61c50b41cb",
+          "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+        },
+        "c_oracle_sha256": {
+          "firmware-c/src/stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+          "firmware-c/src/stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+          "firmware-c/src/transport.c": "cdc5a04ed61a8d62e85756565de16022bcdc2c004299ab67cd31310ef7e945b4",
+          "firmware-c/src/transport.h": "e3fffc8181a5170a0ae7e78115ee2a91446186df9c595cd307f847c9638633c8",
+          "firmware-c/src/wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+          "firmware-c/src/wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799",
+          "firmware-c/tests/stream_bridge.c": "790b6ff6e322a1344a51b24ac350b6a93c880eb427f6e3176dfb295e5b9d66c1"
+        },
+        "unchanged_host_sha256": {
+          "firmware-c/host/lib/ym2203_revc_stream.py": "c638850478924a70d0184a3084476871f12eb9eac172714920f407c2d3d54226",
+          "firmware-c/host/lib/ym2203_revc_player.py": "79a2d4720b43e26ac19ef0c73406ab95f3e3b7362f4e501218cc80be4e6ef80f"
+        },
+        "frame": {
+          "schema_version": 1,
+          "date_utc": "2026-11-14T16:39:43.548533+00:00",
+          "scope": "F1 v2 frame validator only; not a board or complete protocol implementation",
+          "tools": {
+            "verilator": {
+              "version": "Verilator 5.054 2026-11-01 rev vUNKNOWN-built20261101",
+              "sha256": "d74a5f9cbe9665135fcdcfe2415894e26951d98eb5f01621c38955e6845003d9"
+            },
+            "yosys": {
+              "version": "Yosys 0.71+post (git sha1 5628c13240f670b97aaaca3d47940c4afb8ff572, Release, AppleClang clang++ 21.0.0.21000401)",
+              "sha256": "7ea50dc9192c02f22c755fcaf0f8ab21737fb37f3f7f34a526edd3176497a1aa"
+            },
+            "cc": {
+              "version": "Apple clang version 21.0.0 (clang-2100.4.1.1)",
+              "sha256": "34129c71a01a74f7f3b2443521519b2e5447553fa187f5fcafaaf8c42cc192e2"
+            }
+          },
+          "rtl_vectors": 576,
+          "c_parser_comparisons": 380,
+          "result": "PASS 576 framing vectors; hold/readback/reset checks",
+          "synthesis": {
+            "num_wires": 732,
+            "num_wire_bits": 1277,
+            "num_pub_wires": 732,
+            "num_pub_wire_bits": 1277,
+            "num_ports": 17,
+            "num_port_bits": 102,
+            "num_memories": 0,
+            "num_memory_bits": 0,
+            "num_processes": 0,
+            "num_cells": 632,
+            "num_submodules": 0,
+            "num_cells_by_type": {
+              "CCU2C": 23,
+              "L6MUX21": 12,
+              "LUT4": 314,
+              "PFUMX": 41,
+              "TRELLIS_DPR16X4": 104,
+              "TRELLIS_FF": 138
+            }
+          },
+          "source_sha256": {
+            "rtl/revc_v2_frame.v": "cc6f0299f50caf19181c3260547159f60e0efc028c3ae3897f3cf05a494d214e",
+            "tests/frame_test.cpp": "2c01aef1d1c1c350b311a255221d68f94ceb623a9f8b353e694d9c84e823bd60",
+            "check.py": "5c1eaa15cc8bbaac5eec0bc9eb015ffab598ccb183d128a4268a3d6c35e14194"
+          },
+          "c_oracle_sha256": {
+            "stream.c": "88a5ed2e21d793d22f8ef922cbf8de55c2bd045c0d8b012f83bd8dcbf5cdf797",
+            "stream.h": "d5a121937b31a4a723787d0fd96b18d31aa70c7f3d47cea138577946f7db0976",
+            "wym1.c": "66c6d1b325330bfaed3b05c007a262b2f3b39ed4751b4f5d739497ad3545cbdc",
+            "wym1.h": "b3ce11c0c1751e06ee31ffb85b04015c15e39ad7ac0eac847fe99820a58bf799"
+          },
+          "place_route": "not run",
+          "timing": "not measured",
+          "physical_pinout": "not assigned",
+          "limits": [
+            "No physical I2C or USB receiver, session state/sequence/lease engine, MIDI, clock setup or audio.",
+            "Ready/valid backpressure requires upstream buffering; physical overflow must fail safe.",
+            "Mapped cells describe this slice only; no full-system resource or timing conclusion."
+          ]
+        },
+        "tests": {
+          "session": {
+            "tests": 24,
+            "skipped": 1,
+            "passed": 23,
+            "log_sha256": "bbfcfb4294961430dce672a09ff36485cc10b1b8992e2cdc8b4ff0d7067d83bf"
+          },
+          "i2c_wire": {
+            "tests": 8,
+            "skipped": 0,
+            "passed": 8,
+            "log_sha256": "703fcdf3c60762ebfb3bb99281fe993eec2dd8a95508d91cadf65c2d527eafd1"
+          }
+        },
+        "private_score": null,
+        "synthesis": {
+          "num_wires": 5911,
+          "num_wire_bits": 11757,
+          "num_pub_wires": 5911,
+          "num_pub_wire_bits": 11757,
+          "num_ports": 30,
+          "num_port_bits": 189,
+          "num_memories": 0,
+          "num_memory_bits": 0,
+          "num_processes": 0,
+          "num_cells": 6581,
+          "num_submodules": 0,
+          "num_cells_by_type": {
+            "$scopeinfo": 7,
+            "CCU2C": 856,
+            "DP16KD": 4,
+            "L6MUX21": 2,
+            "LUT4": 3244,
+            "PFUMX": 236,
+            "TRELLIS_DPR16X4": 171,
+            "TRELLIS_FF": 2061
+          }
+        },
+        "configuration": {
+          "queue_capacity": 1024,
+          "event_bits": 48,
+          "packet_slots": 4,
+          "packet_max_bytes": 208,
+          "address": "0x42",
+          "i2c_model_nominal_hz": 100000,
+          "wire_model_clock_hz": 16000000,
+          "control_wrapper_clock_hz": 48000000,
+          "lease_us": 1000000,
+          "play_delay_us": 250000,
+          "late_limit_us": 100000,
+          "prepare_cleanup_timeout_us": 100000
+        },
+        "place_route": "not run",
+        "timing_measured": false,
+        "physical_pins_assigned": false,
+        "limits": [
+          "YM writer, prepare, silence and audio_ok are explicit simulated adapters, not audio RTL.",
+          "Wire tests model open-drain SDA/SCL, finite clock stretching and input glitch rejection; not electrical compliance.",
+          "Model time can advance without simulating every oscillator cycle; no real-time performance or Fmax claim.",
+          "No USB/MIDI core, Si5351 startup manager, external YM bus/FM RX/audio or final external inhibit implementation.",
+          "Mapping includes timebase, I2C, request queue, session, event FIFO and status; excludes remaining full-board functions."
+        ],
+        "wall_seconds": 27.379
+      },
+      "component_tests": {
+        "pcm": "PASS PCM 136 C-equivalence cases / 73440 output samples / invalid gain",
+        "bus": "PASS BUS 128 writes, readback, both BUSY checks, held reply, four cancels, 100ms timeout",
+        "i2s": "PASS I2S 59 left frames, zero right/padding, mute, continuous clocks, reset/reprime, underrun",
+        "audio_path": "PASS AUDIO 54 phase/skew/glitch cases; 100ms PCM/RX parity; level=15..16; exponent/clock faults"
+      },
+      "integrated_tests": {
+        "tests": 7,
+        "skipped": 0,
+        "passed": 7,
+        "log_sha256": "32e7fe187e97139d2947d3a5552764488b432c36f79bea37ee808457d5c4177b"
+      },
+      "synthesis": {
+        "num_wires": 8336,
+        "num_wire_bits": 16381,
+        "num_pub_wires": 8336,
+        "num_pub_wire_bits": 16381,
+        "num_ports": 70,
+        "num_port_bits": 600,
+        "num_memories": 0,
+        "num_memory_bits": 0,
+        "num_processes": 0,
+        "num_cells": 8989,
+        "num_submodules": 0,
+        "num_cells_by_type": {
+          "$scopeinfo": 19,
+          "CCU2C": 1304,
+          "DP16KD": 4,
+          "L6MUX21": 10,
+          "LUT4": 4058,
+          "MULT18X18D": 2,
+          "PFUMX": 324,
+          "TRELLIS_DPR16X4": 203,
+          "TRELLIS_FF": 3065
+        }
+      },
+      "clock_boundary_structure": {
+        "synchronizer_bits": 17,
+        "constant_synchronizer_bits": 0,
+        "registered_control_bits": 18,
+        "reset_release_bits": 6,
+        "mutation_bypasses_rejected": 2,
+        "scope": "listed direct synchronizer chains, exclusive first-stage fanout, reset release pairs and registered controls only",
+        "exhaustive_cdc": false,
+        "sta_mtbf_signoff": false
+      },
+      "configuration": {
+        "control_hz": 48000000,
+        "audio_hz": 49152000,
+        "ym_hz": 4000000,
+        "native_hz": "4000000/72",
+        "pcm_hz": 48000,
+        "ratio": "125:108",
+        "gain_eighths": 8,
+        "i2s_bclk_hz": 3072000,
+        "i2s_slot_bits": 32,
+        "i2s_left_pcm_bits": 16,
+        "i2s_right": 0,
+        "native_fifo_words": 64,
+        "pcm_fifo_words": 64,
+        "queue_events": 1024
+      },
+      "place_route": "not run",
+      "timing_measured": false,
+      "physical_pins_assigned": false,
+      "limits": [
+        "Synthetic bus/serial peripheral is a protocol fixture, not a YM2203 sound emulator or electrical model.",
+        "Integrated tests cycle both clocks; optional private full-song test exercises the control model only.",
+        "Structural check proves listed synchronizer chains and registered controls, not exhaustive CDC or STA/MTBF signoff.",
+        "No final module/pin constraints, place/route, Fmax, analog listening or physical acceptance.",
+        "Si5351 startup manager, USB/MIDI and independent external final inhibit remain to be implemented.",
+        "Only fixed 4MHz YM with coherent 49.152MHz audio is verified; no runtime variable-clock or gain ramp support."
+      ],
+      "wall_seconds": 158.314
+    },
+    "plans": {
+      "tests": 3,
+      "passed": 3,
+      "log_sha256": "a912bbe0ef8fec614ecd87958dccc88335583023cbcae2e75a4ce1d3d3021db3"
+    },
+    "integrated": {
+      "tests": 10,
+      "passed": 10,
+      "log_sha256": "bbc786f713fa6fe4f470ef5982aa3ffd86ea22cadc35fd491abe73af7e68cfc4"
+    },
+    "components": {
+      "manager": "PASS CLOCK MANAGER 25 cases; eight exact plans, RMW/readback, repeated START/read NACK, hold, interlock, fault/retry\n",
+      "variable-pcm": "PASS VARIABLE PCM 136 cases / 34816 samples; all gains, up/down sampling, reset, stalls, invalid rates\n",
+      "variable-audio": "RATE 4000000 PCM=4799 level=15..16\nRATE 3579545 PCM=4799 level=14..16\nRATE 3993600 PCM=4799 level=15..16\nRATE 3000000 PCM=4799 level=15..17\nRATE 2000000 PCM=4797 level=14..17\nRATE 1500000 PCM=4797 level=14..17\nRATE 2500000 PCM=4799 level=14..16\nRATE 3500000 PCM=4798 level=15..17\nPASS VARIABLE AUDIO 8 x100ms serial-to-PCM/I2S runs / 38387 samples\n"
+    },
+    "synthesis": {
+      "num_wires": 10055,
+      "num_wire_bits": 19682,
+      "num_pub_wires": 10055,
+      "num_pub_wire_bits": 19682,
+      "num_ports": 82,
+      "num_port_bits": 628,
+      "num_memories": 0,
+      "num_memory_bits": 0,
+      "num_processes": 0,
+      "num_cells": 10623,
+      "num_submodules": 0,
+      "num_cells_by_type": {
+        "$scopeinfo": 24,
+        "CCU2C": 1584,
+        "DP16KD": 4,
+        "L6MUX21": 13,
+        "LUT4": 4876,
+        "MULT18X18D": 4,
+        "PFUMX": 427,
+        "TRELLIS_DPR16X4": 203,
+        "TRELLIS_FF": 3488
+      }
+    },
+    "clock_boundary_structure": {
+      "synchronizer_bits": 38,
+      "constant_synchronizer_bits": 5,
+      "registered_control_bits": 24,
+      "reset_release_bits": 8,
+      "mutation_bypasses_rejected": 2,
+      "scope": "listed direct synchronizer chains, exclusive first-stage fanout, reset release pairs and registered controls only",
+      "exhaustive_cdc": false,
+      "sta_mtbf_signoff": false
+    },
+    "resume_note": "All model tests passed. Initial structural check failed because Yosys retained only top-level active_profile alias. Checker now verifies its registered bits via that public net; audit and bypass mutations rerun successfully. Models were not rerun."
+  },
+  "regression_reuse_scope": "SHA check for all old-top reachable RTL; unreachable USB/MIDI modules and USB harness rebuilt for this report",
+  "synthesis": {
+    "num_wires": 16937,
+    "num_wire_bits": 36316,
+    "num_pub_wires": 16937,
+    "num_pub_wire_bits": 36316,
+    "num_ports": 90,
+    "num_port_bits": 781,
+    "num_memories": 0,
+    "num_memory_bits": 0,
+    "num_processes": 0,
+    "num_cells": 21716,
+    "num_submodules": 0,
+    "num_cells_by_type": {
+      "$scopeinfo": 48,
+      "CCU2C": 2296,
+      "DP16KD": 4,
+      "L6MUX21": 22,
+      "LUT4": 11116,
+      "MULT18X18D": 4,
+      "PFUMX": 1099,
+      "TRELLIS_DPR16X4": 211,
+      "TRELLIS_FF": 6916
+    }
+  },
+  "clock_boundary_structure": {
+    "synchronizer_bits": 41,
+    "constant_synchronizer_bits": 5,
+    "registered_control_bits": 24,
+    "reset_release_bits": 12,
+    "mutation_bypasses_rejected": 2,
+    "scope": "listed direct synchronizer chains, exclusive first-stage fanout, reset release pairs and registered controls only",
+    "exhaustive_cdc": false,
+    "sta_mtbf_signoff": false
+  },
+  "configuration": {
+    "usb_hz": 48000000,
+    "audio_hz": 49152000,
+    "midi_ym_hz": 4000000,
+    "i2c_address": "0x42",
+    "i2c_protocol": 2,
+    "simulation_only_vid_pid": "cafe:4001",
+    "production_id_defaults": "0000:0000, USB detached",
+    "sof_timeout_us": 3000,
+    "midi_quarantine_us": 200000
+  },
+  "place_route": "not run",
+  "timing_measured": false,
+  "physical_pins_assigned": false,
+  "os_enumeration_tested": false,
+  "usb_electrical_compliance_tested": false,
+  "limits": [
+    "Ideal USB bit-level host and synthetic register/serial peripherals; not an OS, analog PLL, USB pad or real YM model.",
+    "No allocated production VID/PID or board-specific USB transceiver, VBUS detection, pull-up, constraints or external inhibit selection.",
+    "MIDI subset: six monophonic voices, Note On/Off, velocity-zero Off, CC120/123 and System Reset; fixed amplitude, no GM/program/pitch bend/sustain/SysEx.",
+    "CDC subset: status/help/stop/s/Ctrl+C/panic; no REPL, file upload, embedded play/test, fm/bus/profile console commands or MCU reset commands.",
+    "All endpoint payloads are at most 64 bytes; single buffered OUT per class, with normal USB NAK backpressure.",
+    "Limited structural CDC audit only; no exhaustive CDC, STA, Fmax, place/route, USB certification or physical acceptance."
+  ],
+  "wall_seconds": 258.059
+}

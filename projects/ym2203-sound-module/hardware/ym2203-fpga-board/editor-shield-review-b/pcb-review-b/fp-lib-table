@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "ED2") (type "KiCad") (uri "${KIPRJMOD}/ED2.pretty") (options "") (descr "Original review B PCB dimensional models")))

@@ -1,0 +1,10 @@
+{
+  "date": "2026-11-16",
+  "command": "python3 -B -m unittest discover -s firmware-c/tests",
+  "total": 115,
+  "passed": 111,
+  "skipped": 4,
+  "skip_reason": "REVC_TEST_SONG not provided; private music dependent tests",
+  "host_or_firmware_changed": false,
+  "scope": "Existing RevC model/HOST regressions; not P2bench acceptance"
+}
