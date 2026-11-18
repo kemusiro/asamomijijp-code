@@ -1,0 +1,15 @@
+P2 manufacturing candidate / module / 2026-11-18
+Board: p2-ym2203-i
+Outline CENTERLINE: 100.0 x 100.0 mm (not the stroked job extents)
+FR4; nominal thickness 1.6 mm; copper 4 layers, 35 um nominal per layer.
+Top to bottom: F.Cu / In1.Cu / In2.Cu / B.Cu
+Solder mask and silkscreen both sides. ENIG preferred for hand assembly.
+No panelization, V-score or internal cutouts. Mounting/component holes remain.
+PTH and NPTH are separate Excellon files, metric/absolute origin, routed slots.
+All fabrication layers use the SAME origin. DO NOT mirror the bottom files manually.
+No solder paste/stencil/PCBA in this package.
+KiCad job extents include a 0.10 mm outline stroke: route on the CENTER of Edge_Cuts.
+Native ERC/DRC/unconnected/parity: 0/0/0/0. This is not hardware acceptance.
+Quote manufacturer capability for 0.20 mm via drills on base/module and routed plated/unplated slots.
+Order quantity independently; these files contain ONE board.
+Read the accompanying manufacturing/assembly notes before ordering parts or assembly.

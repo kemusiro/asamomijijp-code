@@ -1,11 +1,23 @@
 # 次期音源基板：P2ベース＋交換式音源基板
 
-2026-11-18。主案は[review J：220mm幅・右側操作部の配置配線済みPCB](clean-sheet-pcb-review-j/README.md)。
-ベース220×142mm・音源100×100mm、4層。Hの全228参照・値・GPIO・pin/netを維持した。
-両基板ERC/DRC/未配線/回路図差分0。40嵌合位置、947 pad、38 UNO接点、64 Core接点を照合した。
+2026-11-18。**ベースJ・4層＋音源K・2層＋開口なしシールドB・2層を主案として採用した。**
+今回の発注入口は[主案：各5枚・部品1セット](primary-order-5pcb-1set/README.md)。
+3基板の製造用Gerber、購入用CSV/Excel、調達先別一覧、数量とSHAをまとめた。PCBは計15枚、実装3枚、予備12枚。
+P2実機受入・現物嵌合・部品確認事項は未完、PCB発注・部品購入・支払いは未実施。
+
+[2層比較版K](clean-sheet-pcb-review-k/README.md)のベースは比較用として保存し、今回の発注には含めない。
+[層構成の検討A](layer-study-review-a/README.md)、J/Iの旧CADと従来の製造・見積記録も保持する。
+[製造・送料比較K](manufacturing-review-k/README.md)は両案の検証・見積の記録で、今回の選択は主案注文資料を正本とする。
+G40・UNO・GPIO・HOST/USB-MIDI・停止仕様は維持する要件。新PCBでの実機合格は未確認。
 
 | 資料 | 内容 |
 | --- | --- |
+| [今回の主案注文一式](primary-order-5pcb-1set/README.md) | J4/K2/B2、各5枚・部品1セット。選別済みGerber・90購入行・部品表Excel |
+| [製造・送料比較K](manufacturing-review-k/README.md) | 4種類のCAM・個別ZIP、主案4/2と比較2/2の各5枚・部品1セット見積 |
+| [2層比較版K](clean-sheet-pcb-review-k/README.md) | 新規2層PCB・13抵抗の配置変更・電気/積層照合。従来CADを保存 |
+| [層構成の検討A](layer-study-review-a/README.md) | 主案4/2と比較案2/2。既存内層配線の読取監査、GND/USB/音声・電源・製造比較の方針。当時は新CAD未作成の保存記録 |
+| [今回の購入表・PCB送料比較](manufacturing-review-j/procurement/order-5pcb-1set/README.md) | 基板各5枚・部品1セット。15枚中3枚実装、12枚予備。JLCPCB/PCBWay匿名送料見積、数量計算を更新 |
+| [製造Gerber・購入用部品表](manufacturing-review-j/README.md) | 3枚のGerber/Excellon・新規ERC/DRC0、90購入行・274参照対応。未確定容量/嵌合条件あり |
 | [review J PCB・BOM・検証](clean-sheet-pcb-review-j/README.md) | 配置配線済みCADと12電気契約＋18積層契約・6回帰試験 |
 | [配置図](clean-sheet-pcb-review-j/layout.svg) / [組立・高さ](clean-sheet-pcb-review-j/ASSEMBLY.md) | 対向面間・ソケット・UNO・6か所のビア先埋め条件 |
 | [電源・配線](clean-sheet-pcb-review-j/POWER-ROUTING.md) | GND参照面、電源補助面、USB/音声の記録と測定課題 |
@@ -53,7 +65,10 @@ M1のJSON内statusは検討時点の記録であり、現在の主案P2はactive
 | [旧算術検証一覧](verification/README.md) | 旧条件の入力・算術・資料整合性 |
 
 Rev Cの承認済みGPIO・UF2・受入結果は維持する。
-P2の回路図、製造用BOM、PCB、部品購入はまだ確定していない。
+review Jと開口なしシールドの製造データ・購入候補を[製造準備資料](manufacturing-review-j/README.md)へ追加した。
+現在の購入条件は[基板各5枚・部品1セット](manufacturing-review-j/procurement/order-5pcb-1set/README.md)。
+従来の1/5セット比較と製造検証記録は保存し、今回の数量表・見積を別記録にした。
+ADC結合容量の型番確定・ソケット等の現物合わせ・他店見積・部品購入・P2実機受入は未完了。
 
 I2C制御部分の[実装・検証結果](../../fpga-standalone/SESSION.md)を追加した。
 

@@ -1,0 +1,192 @@
+{
+  "reason": "Two-layer fanout spacing; same 13 series-link parts, all GPIO/pin contracts retained",
+  "changes": {
+    "RBD0": {
+      "from_mm": [
+        100.0,
+        36.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        108,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD1": {
+      "from_mm": [
+        96.5,
+        34.0
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        111,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD2": {
+      "from_mm": [
+        96.0,
+        36.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        114,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD3": {
+      "from_mm": [
+        99.5,
+        39.0
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        117,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD4": {
+      "from_mm": [
+        103.5,
+        40.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        120,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD5": {
+      "from_mm": [
+        103.5,
+        43.0
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        123,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD6": {
+      "from_mm": [
+        93.5,
+        46.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        126,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBD7": {
+      "from_mm": [
+        101.5,
+        46.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        129,
+        40
+      ],
+      "to_degrees": 270
+    },
+    "RBCTL0": {
+      "from_mm": [
+        97.5,
+        46.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        112,
+        52
+      ],
+      "to_degrees": 270
+    },
+    "RBCTL1": {
+      "from_mm": [
+        99.5,
+        44.0
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        116,
+        52
+      ],
+      "to_degrees": 270
+    },
+    "RBCTL2": {
+      "from_mm": [
+        101.0,
+        49.0
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        120,
+        52
+      ],
+      "to_degrees": 270
+    },
+    "RBCTL3": {
+      "from_mm": [
+        101.0,
+        51.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        124,
+        52
+      ],
+      "to_degrees": 270
+    },
+    "RALERT": {
+      "from_mm": [
+        99.5,
+        41.5
+      ],
+      "from_degrees": 0.0,
+      "to_mm": [
+        128,
+        52
+      ],
+      "to_degrees": 270
+    }
+  },
+  "resistor_fanout_reroute_nets": [
+    "AUDIO_BCK",
+    "BASE_ADC_DOUT",
+    "BUS_D0",
+    "BUS_D1",
+    "BUS_D2",
+    "BUS_D3",
+    "BUS_D4",
+    "BUS_D5",
+    "BUS_D6",
+    "BUS_D7",
+    "EXT_D5",
+    "L_BUS_D0",
+    "L_BUS_D1",
+    "L_BUS_D2",
+    "L_BUS_D3",
+    "L_BUS_D4",
+    "L_BUS_D5",
+    "L_BUS_D6",
+    "L_BUS_D7",
+    "L_MOD_ALERT_N",
+    "L_MOD_CTL0",
+    "L_MOD_CTL1",
+    "L_MOD_CTL2",
+    "L_MOD_CTL3",
+    "MOD_ALERT_N",
+    "MOD_CTL0",
+    "MOD_CTL1",
+    "MOD_CTL2",
+    "MOD_CTL3"
+  ]
+}

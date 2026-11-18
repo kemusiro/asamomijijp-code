@@ -1,0 +1,18 @@
+{
+  "output_directory": "outputs/p2-primary-order-20261118",
+  "files": {
+    "p2-module-k2-gerber.zip": "5694ae1129ed34c38d5ee388cb046a991f6982471ac761f83820b56e264b2d1b",
+    "purchase-bom.csv": "fe0fe8b0beaa4e4b304c42150a0f5a9fa90951c0f89ffa8bbcf863fc7a6c32f3",
+    "order-plan.json": "475208494ad453dd0387bdd41681e67af05c8bbb1f21e2cae2c22894a46fa6d7",
+    "p2-primary-order-5pcb-1set.zip": "ac301b82531f08b8cf5f366ef478eeff61a539449098aed184dd0bb226bdeed9",
+    "p2-shield-b2-gerber.zip": "78b178bf07c7c691c396f511749bea828b89ed203540780511dc314c439d5b4e",
+    "other-suppliers.csv": "660f5e11b68b05c989a3ee95890ce060e1d7491b58fa9a8f23e8f449d20895fd",
+    "akizuki-order.csv": "e6110f4e559d3a53369ef4ebb723f60d999a54a71b4c283cfc26ae409b47818c",
+    "assembly-vias.json": "65f668bd13b4a4de04cf92ae371f858aadbc6c8bb571cb3a90ab425fb859e97f",
+    "README.md": "9156edfdd8c419962642a71aeea6f731f9da18818cda623782d80060fefffbd9",
+    "p2-base-j4-gerber.zip": "1dcadd95ffd8d076a0bbf5641854de8f2f4e920c6b47aace2596bf4f966ef928",
+    "reference-map.csv": "ea246da55a548e510206aa9a518dd739e84962e8bfba05c02d13d26e0ad8a95d",
+    "p2-primary-4-2-order.xlsx": "726bfcded10935be5c374d25e2b3ca47e6e6b1feac4279b17b18e56cb241ba69"
+  },
+  "binary_files_git_ignored": true
+}

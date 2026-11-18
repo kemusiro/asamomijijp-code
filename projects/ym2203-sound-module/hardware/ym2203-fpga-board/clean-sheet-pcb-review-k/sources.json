@@ -1,0 +1,26 @@
+{
+  "date": "2026-11-18",
+  "original_project_license": "MIT",
+  "vendor_assets_redistributed": false,
+  "references": [
+    {
+      "url": "../clean-sheet-schematic-review-h/sources.json",
+      "purpose": "unchanged electrical circuit, component identities and supplier references"
+    },
+    {
+      "url": "../clean-sheet-pcb-review-j/sources.json",
+      "purpose": "original placement/socket/UNO geometry and own library provenance"
+    },
+    {
+      "url": "../layer-study-review-a/README.md",
+      "purpose": "primary base4/module2 and comparative base2/module2 strategy"
+    }
+  ],
+  "reused_original_project_assets": [
+    "H symbols and electrical parts",
+    "J footprint placements, excluding the thirteen recorded resistor relocations",
+    "I/J short Y_SD/Y_SH paths",
+    "P2H project footprints"
+  ],
+  "native_source": "Final KiCad PCB is the routing source; do not overwrite it with older placement generators"
+}

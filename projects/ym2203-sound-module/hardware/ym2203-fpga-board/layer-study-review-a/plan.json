@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "checked": "2026-11-18",
+  "status": "layer_choice_and_routing_strategy_only",
+  "primary_variant": "base4-module2",
+  "comparison_variant": "base2-module2",
+  "reference_variant": "review-j-base4-module4",
+  "latest_validated_cad": {
+    "base": "clean-sheet-pcb-review-j/base/p2-base-j.kicad_pcb",
+    "module": "clean-sheet-pcb-review-j/module/p2-ym2203-i.kicad_pcb",
+    "shield": "editor-shield-review-b/pcb-review-b/p2-editor-b.kicad_pcb",
+    "layers": {"base": 4, "module": 4, "shield": 2},
+    "validation_scope": "historical native ERC/DRC/parity and conditional mechanical checks, not P2 bench acceptance"
+  },
+  "variants": [
+    {
+      "id": "base4-module2",
+      "role": "primary",
+      "layers": {"base": 4, "module": 2, "shield": 2},
+      "base_scope": "retain review J placement/routing and stackup",
+      "module_scope": "re-place SMT and re-route for two layers; share this future module with comparison variant",
+      "cad_status": "not_created",
+      "routed": false,
+      "drc_passed": false,
+      "quoted_total_usd": null,
+      "hardware_accepted": false
+    },
+    {
+      "id": "base2-module2",
+      "role": "comparison",
+      "layers": {"base": 2, "module": 2, "shield": 2},
+      "base_scope": "re-place SMT and re-route with ground continuity, USB and analog priority",
+      "module_scope": "same two-layer module as primary variant",
+      "cad_status": "not_created",
+      "routed": false,
+      "drc_passed": false,
+      "quoted_total_usd": null,
+      "hardware_accepted": false
+    }
+  ],
+  "comparison_assumptions": {
+    "outline_mm": {"base": [220, 142], "module": [100, 100], "shield": [76, 100]},
+    "thickness_mm": 1.6,
+    "outer_copper_oz": 1,
+    "four_layer_inner_copper_oz": 1,
+    "finish": "ENIG 1 microinch",
+    "mask": "green",
+    "silkscreen": "white",
+    "pcb_quantity_each": 5,
+    "parts_fitted_sets": 1,
+    "gpio_change": false,
+    "connector_pin_change": false,
+    "schematic_net_change": false,
+    "mechanical_anchors_fixed": ["40-contact KEY6 connector", "UNO R3 headers and shield outline", "PGA2350 and Core2350B0 receptacles", "YM2203C socket", "mounting holes", "right-side DIP/STOP/TEST"],
+    "smt_relocation_in_future_candidates": true,
+    "zero_ohm_jumpers_in_future_candidates": "possible if required; count, footprints and underside height must be reported; not added yet",
+    "via_drill_target_mm": 0.3,
+    "via_drill_target_is_verified": false,
+    "small_vias_permitted_if_needed_mm": 0.2,
+    "board_thickness_change": "not part of this comparison; USB geometry needs independent review at 1.6 mm"
+  },
+  "preserved_requirements": {
+    "host": {"profile": "opn1", "format": "WYM1", "clock_hz": 4000000, "signature": "YM22S002", "address": 66, "hz": 100000, "status_bytes": 64, "push_max_events": 32, "fifo_events": 1024, "lease_ms": 1000},
+    "usb": ["CDC", "MIDI 1.0", "ownership handover", "disconnect cleanup without automatic replay"],
+    "controls": ["UNO R3 3.3V", "clock DIP", "RUN", "STOP", "TEST", "RX LED", "six voice LEDs"],
+    "safety": ["global STOP", "lease cancellation", "output muted before reset/clock halt", "existing >=4 ms planned mute guard"],
+    "scope": "requirements retained; P2 firmware and bench validation remain pending"
+  },
+  "release_gates": [
+    "new native two-layer routing with all connections complete, ERC/DRC/schematic parity zero and no disabled checks",
+    "same pin/net and connector/UNO/socket/mount coordinates; explicit additional jumper BOM if needed",
+    "review ground return paths, USB differential geometry including PGA module path, clock and analog separation",
+    "verify 5V voltage drop, power copper and LDO thermal layout after removal of planes",
+    "re-run stack/lead/socket interference checks including any added underside parts",
+    "new vendor quote from final via rules and Gerber; no reuse of 4/4 quote as a 4/2 or 2/2 quote",
+    "P2 hardware USB/MIDI/HOST, audio, STOP/lease and restart regressions"
+  ],
+  "new_cad_created": false,
+  "existing_cad_modified": false,
+  "new_firmware_created": false,
+  "order_placed": false
+}

@@ -1,0 +1,153 @@
+Reference,Value,Footprint,Sheet,Datasheet,Note
+MPGA,PGA2350 PIM722 SOCKET,P2H:PGA2350_Socket_64,01-module,https://shop.pimoroni.com/products/pga2350,"New G base GPIO0..7 data,8..11 control,14..18 audio. GP47 reserved. Fixed USB/RUN/SWD identity retained; no old-net compatibility."
+JHOST,JHOST,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,01-module,,Existing OTHER Pico GP0 SDA / GP1 SCL; 100kHz / 0x42; NO supply pin
+JSWD,JSWD,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,01-module,,3.3V SWD probe; never power carrier through probe
+SWRESET,RESET,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,01-module,,Two contact numbers; each has two duplicated physical pads in KiCad footprint
+SWBOOT,BOOTSEL,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,01-module,,Two contact numbers; each has two duplicated physical pads in KiCad footprint
+RRUN,10k,Resistor_SMD:R_0805_2012Metric,01-module,,
+CRUN,1n C0G,Capacitor_SMD:C_0805_2012Metric,01-module,,Capacitor body/height and effective capacitance to be checked against final MPN
+JPOWER,JPOWER,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,02-power-usb,,Regulated5.1V/2A input; verify4.75..5.25V at YM under load. USB VBUS remains isolated; no module/shield external supply.
+F1,MF-MSMF200/16X-2 / 2A hold@23C,Fuse:Fuse_1812_4532Metric,02-power-usb,https://bourns.com/docs/product-datasheets/mf-msmf.pdf,
+C1,100u 10V,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,02-power-usb,,Capacitor body/height and effective capacitance to be checked against final MPN
+C2,10u 10V,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,Capacitor body/height and effective capacitance to be checked against final MPN
+JUSB,HRO TYPE-C-31-M-12 USB2 DEVICE,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,02-power-usb,http://www.krhro.com/uploads/soft/180320/1-1P320120243.pdf,Self-powered. A6/B6 DP; A7/B7 DM; SBU NC. Verify exact purchased connector drawing before layout release.
+RCC1,5.1k 1%,Resistor_SMD:R_0805_2012Metric,02-power-usb,,
+RCC2,5.1k 1%,Resistor_SMD:R_0805_2012Metric,02-power-usb,,
+UESD,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,02-power-usb,https://www.st.com/resource/en/datasheet/usblc6-2.pdf,"Place at USB connector, short return. VBUS protection/sense only; no external5V power path."
+CVBUS,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,Capacitor body/height and effective capacitance to be checked against final MPN
+RVB1,47k 0.1%,Resistor_SMD:R_0805_2012Metric,02-power-usb,,
+RVB2,68k 0.1%,Resistor_SMD:R_0805_2012Metric,02-power-usb,,
+CVBD,100p C0G,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,Capacitor body/height and effective capacitance to be checked against final MPN
+UVBUS,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,02-power-usb,https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf,Schmitt buffer / Ioff; USB VBUS sense to GP46; no power through USB
+CVB3,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,Capacitor body/height and effective capacitance to be checked against final MPN
+RVB3,100k,Resistor_SMD:R_0805_2012Metric,02-power-usb,,
+RPDAC,10k,Resistor_SMD:R_0805_2012Metric,03-default-stop,,
+RPLINE,10k,Resistor_SMD:R_0805_2012Metric,03-default-stop,,
+U13,Si5351A-B-GT,Package_SO:MSOP-10_3x3mm_P0.5mm,05-clock-ym,https://www.skyworksinc.com/-/media/SkyWorks/SL/documents/public/data-sheets/Si5351-B.pdf,Blank no-boot preset; P2 firmware must disable CLK1/2 and configure CLK0 before reset release
+Y1,25MHz CL10pF +/-20ppm,Crystal:Crystal_SMD_3225-4Pin_3.2x2.5mm,05-clock-ym,,ABM8-25.000MHZ-10-1-U-T candidate; ESR/drive and actual footprint need confirmation
+C21,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,05-clock-ym,,Capacitor body/height and effective capacitance to be checked against final MPN
+C22,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,05-clock-ym,,Capacitor body/height and effective capacitance to be checked against final MPN
+R37,2.2k,Resistor_SMD:R_0805_2012Metric,05-clock-ym,,
+R38,2.2k,Resistor_SMD:R_0805_2012Metric,05-clock-ym,,
+R45,2.2k,Resistor_SMD:R_0805_2012Metric,06-dac,,
+R46,2.2k,Resistor_SMD:R_0805_2012Metric,06-dac,,
+FB1,BLM21PG601SN1 / 600R@100MHz,Inductor_SMD:L_0805_2012Metric,06-dac,,
+U17,PCM5102APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,06-dac,https://www.ti.com/lit/ds/symlink/pcm5102a.pdf,"Digital DVDD=PGA3V3; AVDD/CPVDD=AV3V3. Ground-centred line output, BCK PLL. XSMT is common final mute; no analog bypass."
+C28,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C29,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C30,1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C31,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C32,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C33,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C34,10u 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+C35,10u 10V,Capacitor_SMD:C_0805_2012Metric,06-dac,,Capacitor body/height and effective capacitance to be checked against final MPN
+R47,33,Resistor_SMD:R_0805_2012Metric,06-dac,,
+R48,33,Resistor_SMD:R_0805_2012Metric,06-dac,,
+R49,33,Resistor_SMD:R_0805_2012Metric,06-dac,,
+R50,10k,Resistor_SMD:R_0805_2012Metric,06-dac,,
+R53,470,Resistor_SMD:R_0805_2012Metric,07-lineout,,
+C38,2.2n C0G,Capacitor_SMD:C_0805_2012Metric,07-lineout,,Capacitor body/height and effective capacitance to be checked against final MPN
+JPOT,External dual10k log volume / 6pin,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,07-lineout,,"Direct capless DAC line signal via470R/2.2n LPF. Wipers feed100R line outputs; load>=10k preferred, not headphone drive."
+R59,100,Resistor_SMD:R_0805_2012Metric,07-lineout,,
+R60,100,Resistor_SMD:R_0805_2012Metric,07-lineout,,
+JLINE,JLINE,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,07-lineout,,"Line output, not headphone driver"
+UPANEL,MCP23017-E/SO,Package_SO:SOIC-28W_7.5x17.9mm_P1.27mm,08-panel,https://ww1.microchip.com/downloads/aemDocuments/documents/APID/ProductDocuments/DataSheets/MCP23017-Data-Sheet-DS20001952.pdf,Address0x20. Poll10ms; no IRQ. GPA7 and GPB7 output-only. OLAT high BEFORE output direction; reset clears LEDs in firmware.
+CPANEL,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,08-panel,,Capacitor body/height and effective capacitance to be checked against final MPN
+SWCLOCK,4-bit DIP ON=0 SW1=LSB,Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile,08-panel,,OFF/OFF/OFF/OFF=4MHz. Latched at reset only. Codes8..15 remain muted.
+RP0,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+RP1,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+RP2,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+RP3,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+RP4,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+RP5,10k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+SWSTOP,STOP,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,08-panel,,STOP global priority; TEST only when no owner; each debounced20ms
+SWTEST,TEST,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,08-panel,,STOP global priority; TEST only when no owner; each debounced20ms
+RLED0,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED0,RX GREEN,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED1,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED1,FM1,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED2,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED2,FM2,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED3,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED3,FM3,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED4,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED4,SSGA,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED5,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED5,SSGB,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+RLED6,1k,Resistor_SMD:R_0805_2012Metric,08-panel,,
+DLED6,SSGC,LED_THT:LED_D3.0mm,08-panel,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+JUNO_D0,JUNO_D0 3V3 ONLY,P2H:JUNO_D0,09-uno,https://docs.arduino.cc/hardware/uno-rev3/,UNO geometry and role aliases; not universal5V shield / not AVR programmer. AREF and VIN NC.
+JUNO_D8,JUNO_D8 3V3 ONLY,P2H:JUNO_D8,09-uno,https://docs.arduino.cc/hardware/uno-rev3/,UNO geometry and role aliases; not universal5V shield / not AVR programmer. AREF and VIN NC.
+JUNO_A,JUNO_A 3V3 ONLY,P2H:JUNO_A,09-uno,https://docs.arduino.cc/hardware/uno-rev3/,UNO geometry and role aliases; not universal5V shield / not AVR programmer. AREF and VIN NC.
+JUNO_PWR,JUNO_PWR 3V3 ONLY,P2H:JUNO_PWR,09-uno,https://docs.arduino.cc/hardware/uno-rev3/,UNO geometry and role aliases; not universal5V shield / not AVR programmer. AREF and VIN NC. 3V3 power from independent AUX LDO; IOREF remains PGA logic rail; shield3V3 limit100mA provisional.
+JUNO_SPI,JUNO_SPI 3V3 ONLY,P2H:JUNO_SPI,09-uno,https://docs.arduino.cc/hardware/uno-rev3/,UNO geometry and role aliases; not universal5V shield / not AVR programmer. AREF and VIN NC.
+JP_SDA,CLOSED I2C / OPEN ADC (STOPPED),Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,09-uno,,Normally closed. Opening isolates Si5351/panel AND board pullups; disable clock control/panel software; no sound allowed in ADC service mode.
+JP_SCL,CLOSED I2C / OPEN ADC (STOPPED),Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,09-uno,,Normally closed. Opening isolates Si5351/panel AND board pullups; disable clock control/panel software; no sound allowed in ADC service mode.
+JP5V,OPEN DEFAULT / SHIELD POWER,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,09-uno,,Fit only for3.3V-compatible shield using optional5V supply; never feed power back.
+RI2SD,100k,Resistor_SMD:R_0805_2012Metric,02-power-usb,,Default low while PGA IO rail is absent; DAC XSMT remains low
+RI2SB,100k,Resistor_SMD:R_0805_2012Metric,02-power-usb,,Default low while PGA IO rail is absent; DAC XSMT remains low
+RI2SL,100k,Resistor_SMD:R_0805_2012Metric,02-power-usb,,Default low while PGA IO rail is absent; DAC XSMT remains low
+RCLK0,33,Resistor_SMD:R_0805_2012Metric,05-clock-ym,,
+RCLK1,33,Resistor_SMD:R_0805_2012Metric,05-clock-ym,,
+RCLK2,33,Resistor_SMD:R_0805_2012Metric,05-clock-ym,,
+R53R,470,Resistor_SMD:R_0805_2012Metric,07-lineout,,
+C38R,2.2n C0G,Capacitor_SMD:C_0805_2012Metric,07-lineout,,
+UAUX,TLV1117LV33DCYR,Package_TO_SOT_SMD:SOT-223-3_TabPin2,02-power-usb,https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf,Always-on shared analog/aux supply. Ceramic stable; copper/thermal measurement pending.
+CAUXIN,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,
+CAUXOUT,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-power-usb,,
+UMUTE,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,03-default-stop,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,XSMT high only when both permissions high; default low. Not an independent analog disconnect.
+CUMUTE,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,03-default-stop,,
+UADC,PCM1863DBT,Package_SO:TSSOP-30_4.4x7.8mm_P0.5mm,11-common-adc,https://www.ti.com/lit/ds/symlink/pcm1863.pdf,"Base common stereo ADC; VINL1/VINR1 only. AVDD=AV3V3,DVDD=V3_AUX,IOVDD=PGA3V3. AD=0 ->0x4A. No external reset pin; always powered on STOP."
+CADCAV0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCAV1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCDV0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCDV1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCIO0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCIO1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCLDO0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCLDO1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+CADCVREF,1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,11-common-adc,,
+RDMINPD,100k,Resistor_SMD:R_0805_2012Metric,11-common-adc,,
+RADCBCK,33,Resistor_SMD:R_0805_2012Metric,11-common-adc,,
+RADCLR,33,Resistor_SMD:R_0805_2012Metric,11-common-adc,,
+RADCDATA,33,Resistor_SMD:R_0805_2012Metric,11-common-adc,,
+RADCDATAPD,100k,Resistor_SMD:R_0805_2012Metric,11-common-adc,,
+RATTL,6.81k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+RSHUNTL,10k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+CACL,10u X7R 16V / effective>=4.7u,Capacitor_SMD:C_0805_2012Metric,12-analog-input,,
+RLIMITL,2.2k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+CAAFL,470p C0G,Capacitor_SMD:C_0805_2012Metric,12-analog-input,,
+DCLAMPL,"BAT54S,215",Package_TO_SOT_SMD:SOT-23,12-analog-input,https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf,Limited-current transient rail clamp after AC coupling. Attenuation preserves normal line headroom; no TMUX/ADC power switching.
+RATTR,6.81k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+RSHUNTR,10k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+CACR,10u X7R 16V / effective>=4.7u,Capacitor_SMD:C_0805_2012Metric,12-analog-input,,
+RLIMITR,2.2k 1%,Resistor_SMD:R_0805_2012Metric,12-analog-input,,
+CAAFR,470p C0G,Capacitor_SMD:C_0805_2012Metric,12-analog-input,,
+DCLAMPR,"BAT54S,215",Package_TO_SOT_SMD:SOT-23,12-analog-input,https://assets.nexperia.com/documents/data-sheet/BAT54S.pdf,Limited-current transient rail clamp after AC coupling. Attenuation preserves normal line headroom; no TMUX/ADC power switching.
+RBD0,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD1,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD2,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD3,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD4,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD5,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD6,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBD7,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBCTL0,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBCTL1,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBCTL2,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBCTL3,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RLKEN,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RLKBCK,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RLKLR,33,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBEN,10k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBCS,10k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBMISO,100k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBSCK,100k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBMOSI,100k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBALERT,10k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RALERT,0,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBI1,100k,Resistor_SMD:R_0805_2012Metric,10-link,,
+RBSD,100k,Resistor_SMD:R_0805_2012Metric,10-link,,
+URXDATA,SN74LVC1G125DBVR,Package_TO_SOT_SMD:SOT-23-5,10-link,https://www.ti.com/lit/ds/symlink/sn74lvc1g125.pdf,PGA-powered Ioff receiver for optional source I2S data. Shared bidirectional bus has no inline receive-only buffer.
+CURXDATA,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,10-link,,
+JMOD,P2 G40 / KEY6 / NO LEGACY MATE,Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical,10-link,https://www.samtec.com/products/ssw-120-02-g-d,Symbol types model the remote board for standalone ERC; connector is passive. Female6 blocked/male6 removed. Mechanical fit pending.

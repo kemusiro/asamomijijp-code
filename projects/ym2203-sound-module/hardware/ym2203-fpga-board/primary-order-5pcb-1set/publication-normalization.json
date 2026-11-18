@@ -1,0 +1,34 @@
+{
+  "reason": "git diff --check on initial publication",
+  "cad_and_cam_changed": false,
+  "svg_changes": [
+    {
+      "path": "clean-sheet-pcb-review-k/base/preview-top.svg",
+      "before_sha256": "d754901aaf81ddfeece26fb2407620a4c111a2ab88ab51c20add68dc505bbddd",
+      "after_sha256": "12f509790eb8642d577c94b17b3aa917fcd8fcd4fe78409c355499e94ed8c958",
+      "raster_equal": true,
+      "change": "line-end whitespace only"
+    },
+    {
+      "path": "clean-sheet-pcb-review-k/base/preview-bottom.svg",
+      "before_sha256": "74ff3160baa824d1c6f6afa47db7dcb54e9df647534172215cbb9eddeac2e651",
+      "after_sha256": "c42d4f9633e80f0eef2d9a05d2f929d16cba7db1908ed470e1ad429709ea37ad",
+      "raster_equal": true,
+      "change": "line-end whitespace only"
+    },
+    {
+      "path": "clean-sheet-pcb-review-k/module/preview-top.svg",
+      "before_sha256": "58aec5f6c5aa4ad96d1a56cc8f9a8b577ef9442af92313d268f6cebd9c2f5930",
+      "after_sha256": "4b22f3cae0cbc7c5413a07f9de1c33500cb8d24a9eab84ab688f2cfb8cbaba9b",
+      "raster_equal": true,
+      "change": "line-end whitespace only"
+    },
+    {
+      "path": "clean-sheet-pcb-review-k/module/preview-bottom.svg",
+      "before_sha256": "2de0430dba9615e6dee57d4259f09aab140d3940ade010e2982e4052022de88f",
+      "after_sha256": "229d2410fe25881e3a0e2c54743969a55b8849d15772b8164d3466bbe5260a14",
+      "raster_equal": true,
+      "change": "line-end whitespace only"
+    }
+  ]
+}
