@@ -1,9 +1,15 @@
 # 次期音源基板：P2ベース＋交換式音源基板
 
-2026-11-18。**ベースJ・4層＋音源K・2層＋開口なしシールドB・2層を主案として採用した。**
-今回の発注入口は[主案：各5枚・部品1セット](primary-order-5pcb-1set/README.md)。
+2026-11-19。**ベースL・4層＋音源K・2層＋開口なしシールドB・2層を主案として採用する。**
+今回の発注準備入口は[購入資料review B：各5枚・部品1セット](primary-order-review-b/README.md)。
 3基板の製造用Gerber、購入用CSV/Excel、調達先別一覧、数量とSHAをまとめた。PCBは計15枚、実装3枚、予備12枚。
 P2実機受入・現物嵌合・部品確認事項は未完、PCB発注・部品購入・支払いは未実施。
+
+**主案ベースのUSB-C修正版**：[review L](clean-sheet-pcb-review-l/README.md)を新規作成した。
+[部品適合review A](preorder-review-a/README.md)のJUSB寸法差を修正し、ERC/DRC/未配線/回路図差分0、571pad・G40/UNO接点とCAMを照合。
+ベース4層・音源2層、各5枚・部品1セットの条件を維持する。旧Jと既存J4/K2/B2の注文一式は保存履歴。
+新L4/K2/B2の製造ZIPと購入CSV/Excelを別版としてまとめた。CACL/CACRはGRM21BZ71C106KE15Lを試作採用した。
+DC/小信号ACの代表曲線による選別であり、複合条件の容量保証・実測ではない。現物嵌合・新Gerberの確定見積は未完。
 
 [2層比較版K](clean-sheet-pcb-review-k/README.md)のベースは比較用として保存し、今回の発注には含めない。
 [層構成の検討A](layer-study-review-a/README.md)、J/Iの旧CADと従来の製造・見積記録も保持する。
@@ -12,7 +18,8 @@ G40・UNO・GPIO・HOST/USB-MIDI・停止仕様は維持する要件。新PCBで
 
 | 資料 | 内容 |
 | --- | --- |
-| [今回の主案注文一式](primary-order-5pcb-1set/README.md) | J4/K2/B2、各5枚・部品1セット。選別済みGerber・90購入行・部品表Excel |
+| [今回の発注準備review B](primary-order-review-b/README.md) | L4/K2/B2、各5枚・部品1セット。USB修正版・C14試作選定・90購入行・Excel・現物確認票 |
+| [旧主案注文一式](primary-order-5pcb-1set/README.md) | J4/K2/B2の保存記録。旧USBランドを含むため今回の発注に混在させない |
 | [製造・送料比較K](manufacturing-review-k/README.md) | 4種類のCAM・個別ZIP、主案4/2と比較2/2の各5枚・部品1セット見積 |
 | [2層比較版K](clean-sheet-pcb-review-k/README.md) | 新規2層PCB・13抵抗の配置変更・電気/積層照合。従来CADを保存 |
 | [層構成の検討A](layer-study-review-a/README.md) | 主案4/2と比較案2/2。既存内層配線の読取監査、GND/USB/音声・電源・製造比較の方針。当時は新CAD未作成の保存記録 |
@@ -66,9 +73,9 @@ M1のJSON内statusは検討時点の記録であり、現在の主案P2はactive
 
 Rev Cの承認済みGPIO・UF2・受入結果は維持する。
 review Jと開口なしシールドの製造データ・購入候補を[製造準備資料](manufacturing-review-j/README.md)へ追加した。
-現在の購入条件は[基板各5枚・部品1セット](manufacturing-review-j/procurement/order-5pcb-1set/README.md)。
+現在の購入条件は[review B：基板各5枚・部品1セット](primary-order-review-b/README.md)。
 従来の1/5セット比較と製造検証記録は保存し、今回の数量表・見積を別記録にした。
-ADC結合容量の型番確定・ソケット等の現物合わせ・他店見積・部品購入・P2実機受入は未完了。
+ADC結合Cの複合条件実測・ソケット等の現物合わせ・新Gerber確定見積・部品購入・P2実機受入は未完了。
 
 I2C制御部分の[実装・検証結果](../../fpga-standalone/SESSION.md)を追加した。
 

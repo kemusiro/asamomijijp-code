@@ -1,0 +1,102 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-18T23:36:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3",
+            "violations": []
+        },
+        {
+            "path": "/01-module-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/59adf310-99c1-582f-9692-1111640ece8e",
+            "violations": []
+        },
+        {
+            "path": "/02-power-usb-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/b566dd30-7320-5090-a334-c6b6bc77d837",
+            "violations": []
+        },
+        {
+            "path": "/03-default-stop-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/e4efe51d-05f8-5b95-a37e-41206c6e530b",
+            "violations": []
+        },
+        {
+            "path": "/05-clock-ym-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/32d02c4a-6693-5749-bba7-8e1cecbe0f55",
+            "violations": []
+        },
+        {
+            "path": "/06-dac-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/7fd05a39-f40b-5361-bd13-fb7cf53ea22b",
+            "violations": []
+        },
+        {
+            "path": "/07-lineout-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/d09542b9-c9f3-547f-a537-0b009d726efc",
+            "violations": []
+        },
+        {
+            "path": "/08-panel-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/3944ef7d-7010-5a09-9cca-840a91dbcdb2",
+            "violations": []
+        },
+        {
+            "path": "/08-panel-2/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/68318431-1fd9-54cb-b784-76c67e6f7645",
+            "violations": []
+        },
+        {
+            "path": "/09-uno-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/ac520554-9b12-57d5-8697-f358574b3365",
+            "violations": []
+        },
+        {
+            "path": "/10-link-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/443f6a69-3138-5d76-9b8b-bff956e60e33",
+            "violations": []
+        },
+        {
+            "path": "/10-link-2/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/a1e94533-362d-581f-90ca-a0c3824ec386",
+            "violations": []
+        },
+        {
+            "path": "/11-common-adc-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/18814f74-eaa8-52a2-a53b-3e60f6b8c8d1",
+            "violations": []
+        },
+        {
+            "path": "/12-analog-input-1/",
+            "uuid_path": "/f392bfb3-ec3d-5f1c-b66a-83e58e7000e3/9731ffbb-3522-5fb2-9892-44b05b04d8dc",
+            "violations": []
+        }
+    ],
+    "source": "p2-base-l.kicad_sch"
+}

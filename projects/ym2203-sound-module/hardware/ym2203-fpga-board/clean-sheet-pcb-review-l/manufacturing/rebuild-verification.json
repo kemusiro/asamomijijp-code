@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-18",
+  "fresh_empty_work_directory": true,
+  "script": "tools/rebuild_cam.py",
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "parity": 0,
+  "native_geometry_matches_delivery": true,
+  "independent_cam_report_matches_delivery": true,
+  "physical_source_equivalence": {
+    "base-l4": {
+      "physical_pad_track_zone_geometry_unchanged": true,
+      "pads": 585,
+      "tracks_and_vias": 2282,
+      "copper_layers": 4
+    }
+  },
+  "source_inputs_unchanged": true,
+  "hardware_accepted": false,
+  "firmware_changed": false
+}

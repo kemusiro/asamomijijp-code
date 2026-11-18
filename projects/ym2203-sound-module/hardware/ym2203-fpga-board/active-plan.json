@@ -122,10 +122,29 @@
     },
     "implementation_document": "clean-sheet-pcb-review-k/README.md",
     "primary_cad_pair": {
-      "base": "clean-sheet-pcb-review-j/base/p2-base-j.kicad_pcb",
+      "base": "clean-sheet-pcb-review-l/base/p2-base-l.kicad_pcb",
       "module": "clean-sheet-pcb-review-k/module/p2-ym2203-k.kicad_pcb"
     },
     "selected_order": {
+      "variant": "base4-module2",
+      "confirmed_by_user": true,
+      "date": "2026-11-19",
+      "document": "primary-order-review-b/README.md",
+      "plan": "primary-order-review-b/order-plan.json",
+      "pcb_each": 5,
+      "fitted_sets": 1,
+      "boards": [
+        "base-l4",
+        "module-k2",
+        "shield-b2"
+      ],
+      "order_placed": false,
+      "hardware_accepted": false,
+      "procurement_review": "B",
+      "physical_fit_confirmed": false,
+      "cart_quote_obtained": false
+    },
+    "historical_selected_order_20261118": {
       "variant": "base4-module2",
       "confirmed_by_user": true,
       "date": "2026-11-18",
@@ -141,5 +160,13 @@
       "order_placed": false,
       "hardware_accepted": false
     }
+  },
+  "latest_procurement_review": {
+    "revision": "B",
+    "document": "primary-order-review-b/README.md",
+    "base_cad": "clean-sheet-pcb-review-l/base/p2-base-l.kicad_pcb",
+    "base_verification": "clean-sheet-pcb-review-l/verification.json",
+    "base_revision": "3.8-pcb-review-l",
+    "scope": "USB land-pattern correction and C14 prototype procurement selection; original review J architecture fields retained as historical baseline; no GPIO/firmware/bench changes"
   }
 }
