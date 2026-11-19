@@ -1,0 +1,18 @@
+{
+  "output_directory": "outputs/p2-review-k-fabrication-20261118",
+  "files": {
+    "p2-base-j4-gerber.zip": "1dcadd95ffd8d076a0bbf5641854de8f2f4e920c6b47aace2596bf4f966ef928",
+    "p2-base-k2-gerber.zip": "9758815b518075d83840ebce367eb6e2dfe609261de435ca2871c5a345b5070b",
+    "p2-comparison-2-2.zip": "3cfed6411b11af44bfda5fdc30e0f6eb634d2cb32949f45aaa43cec2977e3cf5",
+    "p2-module-k2-gerber.zip": "5694ae1129ed34c38d5ee388cb046a991f6982471ac761f83820b56e264b2d1b",
+    "p2-primary-4-2.zip": "8023e2f8a62dacf79a391b749cd2ceada51181d6a92538e1869865aaec0038b9",
+    "p2-shield-b2-gerber.zip": "78b178bf07c7c691c396f511749bea828b89ed203540780511dc314c439d5b4e"
+  },
+  "binary_archives_git_ignored": true,
+  "per_board_zip_names": {
+    "base-j4": "p2-base-j4-gerber.zip",
+    "base-k2": "p2-base-k2-gerber.zip",
+    "module-k2": "p2-module-k2-gerber.zip",
+    "shield-b2": "p2-shield-b2-gerber.zip"
+  }
+}

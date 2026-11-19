@@ -1,0 +1,437 @@
+{
+  "kind": "engineering screening, not manufacturer minimum or bench acceptance",
+  "mpn": "GRM21BZ71C106KE15L",
+  "refs": [
+    "base:CACL",
+    "base:CACR"
+  ],
+  "source_dc_assumption_v": [
+    0,
+    5.25
+  ],
+  "adc_avdd_assumption_v": [
+    3,
+    3.6
+  ],
+  "adc_bias_model": "AVDD/2",
+  "normal_powered_max_abs_cap_dc_v": 1.8,
+  "unpowered_adc_left_node_bound_v": 3.1483977460975305,
+  "dc_curve_screen_v": 2,
+  "source_resistance_assumption_ohm": [
+    0,
+    4700
+  ],
+  "adc_input_resistance_screen_ohm": [
+    10000,
+    40000
+  ],
+  "adc_input_resistance_manufacturer_typical_ohm": 20000,
+  "factors": {
+    "nominal_uF": 10,
+    "tolerance": 0.9,
+    "dc_typical_read_down": 0.95,
+    "small_signal_ac_typical_read_down": 0.7,
+    "temperature_design_allowance": 0.85,
+    "additional_design_reserve_not_aging_spec": 0.95
+  },
+  "screened_capacitance_uF": 4.832887499999998,
+  "largest_fc_hz": 2.034243113720736,
+  "largest_relative_loss_20hz_db": 0.04469852435731194,
+  "largest_five_tau_seconds_at_15uF": 3.571224697505778,
+  "initial_muted_settling_candidate_seconds": 4,
+  "guaranteed_combined_minimum": false,
+  "physical_measurement_completed": false,
+  "notes": [
+    "DC/AC curves are typical and measured separately; their multiplication is a selection heuristic.",
+    "0.85 temperature factor is a design allowance, not independent Z7 guarantee at every bias.",
+    "0.95 reserve is not manufacturer aging or service-life data.",
+    "Input resistance 10..40k and maximum effective C 15uF are screening assumptions, not TI limits.",
+    "No hotplug, negative source DC or externally powered input qualification is claimed."
+  ],
+  "corners": [
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16188.648423557406,
+      "fc_hz": 2.034243113720736,
+      "relative_loss_20hz_db": 0.04469852435731194,
+      "five_tau_seconds_at_15uF": 1.2141486317668055
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26188.648423557406,
+      "fc_hz": 1.257477898189079,
+      "relative_loss_20hz_db": 0.017134366061623767,
+      "five_tau_seconds_at_15uF": 1.9641486317668055
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46188.6484235574,
+      "fc_hz": 0.7129813861206581,
+      "relative_loss_20hz_db": 0.005515753976294279,
+      "five_tau_seconds_at_15uF": 3.4641486317668053
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17485.62537543518,
+      "fc_hz": 1.8833553772879061,
+      "relative_loss_20hz_db": 0.03834161320551873,
+      "five_tau_seconds_at_15uF": 1.3114219031576384
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27485.62537543518,
+      "fc_hz": 1.1981407054139588,
+      "relative_loss_20hz_db": 0.015558288464438776,
+      "five_tau_seconds_at_15uF": 2.061421903157638
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47485.62537543518,
+      "fc_hz": 0.6935076945012416,
+      "relative_loss_20hz_db": 0.005218743171742006,
+      "five_tau_seconds_at_15uF": 3.561421903157638
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16232.648423557406,
+      "fc_hz": 2.0287291215077454,
+      "relative_loss_20hz_db": 0.04445776869599924,
+      "five_tau_seconds_at_15uF": 1.2174486317668054
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26232.648423557406,
+      "fc_hz": 1.2553687315267212,
+      "relative_loss_20hz_db": 0.01707704811417516,
+      "five_tau_seconds_at_15uF": 1.9674486317668056
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46232.6484235574,
+      "fc_hz": 0.7123028357442681,
+      "relative_loss_20hz_db": 0.005505266841694087,
+      "five_tau_seconds_at_15uF": 3.467448631766805
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17529.62537543518,
+      "fc_hz": 1.8786280864972658,
+      "relative_loss_20hz_db": 0.03815021893689593,
+      "five_tau_seconds_at_15uF": 1.3147219031576385
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27529.62537543518,
+      "fc_hz": 1.1962257432479548,
+      "relative_loss_20hz_db": 0.015508683883204637,
+      "five_tau_seconds_at_15uF": 2.064721903157638
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47529.62537543518,
+      "fc_hz": 0.692865687788228,
+      "relative_loss_20hz_db": 0.005209091051822216,
+      "five_tau_seconds_at_15uF": 3.564721903157638
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16221.082431317132,
+      "fc_hz": 2.0301756504540305,
+      "relative_loss_20hz_db": 0.04452086608366783,
+      "five_tau_seconds_at_15uF": 1.2165811823487849
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26221.082431317132,
+      "fc_hz": 1.2559224685833645,
+      "relative_loss_20hz_db": 0.017092087029911204,
+      "five_tau_seconds_at_15uF": 1.9665811823487849
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46221.08243131713,
+      "fc_hz": 0.7124810766819004,
+      "relative_loss_20hz_db": 0.005508020627242269,
+      "five_tau_seconds_at_15uF": 3.466581182348785
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17542.57740496428,
+      "fc_hz": 1.877241058474598,
+      "relative_loss_20hz_db": 0.03809415187608536,
+      "five_tau_seconds_at_15uF": 1.315693305372321
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27542.57740496428,
+      "fc_hz": 1.1956632123372775,
+      "relative_loss_20hz_db": 0.01549412722835878,
+      "five_tau_seconds_at_15uF": 2.0656933053723208
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47542.57740496428,
+      "fc_hz": 0.6926769303136069,
+      "relative_loss_20hz_db": 0.0052062549122480345,
+      "five_tau_seconds_at_15uF": 3.565693305372321
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16265.082431317132,
+      "fc_hz": 2.0246836568538025,
+      "relative_loss_20hz_db": 0.04428154001213134,
+      "five_tau_seconds_at_15uF": 1.219881182348785
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26265.082431317132,
+      "fc_hz": 1.2538185121704282,
+      "relative_loss_20hz_db": 0.017034980784523264,
+      "five_tau_seconds_at_15uF": 1.969881182348785
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46265.08243131713,
+      "fc_hz": 0.7118034778162647,
+      "relative_loss_20hz_db": 0.005497555524990157,
+      "five_tau_seconds_at_15uF": 3.469881182348785
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17586.57740496428,
+      "fc_hz": 1.8725443739139302,
+      "relative_loss_20hz_db": 0.03790460257265863,
+      "five_tau_seconds_at_15uF": 1.3189933053723208
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27586.57740496428,
+      "fc_hz": 1.1937561551271514,
+      "relative_loss_20hz_db": 0.01544482875467308,
+      "five_tau_seconds_at_15uF": 2.068993305372321
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47586.57740496428,
+      "fc_hz": 0.6920364601096999,
+      "relative_loss_20hz_db": 0.00519663739447659,
+      "five_tau_seconds_at_15uF": 3.568993305372321
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16236.45655944356,
+      "fc_hz": 2.0282532987109048,
+      "relative_loss_20hz_db": 0.04443702300276976,
+      "five_tau_seconds_at_15uF": 1.217734241958267
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26236.456559443563,
+      "fc_hz": 1.2551865188599287,
+      "relative_loss_20hz_db": 0.01707210084876182,
+      "five_tau_seconds_at_15uF": 1.967734241958267
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46236.45655944356,
+      "fc_hz": 0.712244168921755,
+      "relative_loss_20hz_db": 0.005504360601773189,
+      "five_tau_seconds_at_15uF": 3.4677342419582673
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17514.747198308974,
+      "fc_hz": 1.8802239166345038,
+      "relative_loss_20hz_db": 0.03821477662350458,
+      "five_tau_seconds_at_15uF": 1.3136060398731733
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27514.747198308974,
+      "fc_hz": 1.1968725839535115,
+      "relative_loss_20hz_db": 0.015525430631758489,
+      "five_tau_seconds_at_15uF": 2.0636060398731733
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47514.74719830898,
+      "fc_hz": 0.6930826431344188,
+      "relative_loss_20hz_db": 0.005212351825406877,
+      "five_tau_seconds_at_15uF": 3.5636060398731737
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16280.45655944356,
+      "fc_hz": 2.02277168676609,
+      "relative_loss_20hz_db": 0.04419837062833562,
+      "five_tau_seconds_at_15uF": 1.2210342419582672
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26280.456559443563,
+      "fc_hz": 1.2530850254286818,
+      "relative_loss_20hz_db": 0.017015094588891975,
+      "five_tau_seconds_at_15uF": 1.9710342419582672
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46280.45655944356,
+      "fc_hz": 0.7115670203851517,
+      "relative_loss_20hz_db": 0.005493905921577182,
+      "five_tau_seconds_at_15uF": 3.471034241958267
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17558.747198308974,
+      "fc_hz": 1.8755123132725122,
+      "relative_loss_20hz_db": 0.038024328730926565,
+      "five_tau_seconds_at_15uF": 1.3169060398731731
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27558.747198308974,
+      "fc_hz": 1.1949616700315178,
+      "relative_loss_20hz_db": 0.015475982890849817,
+      "five_tau_seconds_at_15uF": 2.066906039873173
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47558.74719830898,
+      "fc_hz": 0.6924414227891738,
+      "relative_loss_20hz_db": 0.00520271741962819,
+      "five_tau_seconds_at_15uF": 3.5669060398731736
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16269.671624033313,
+      "fc_hz": 2.024112553533138,
+      "relative_loss_20hz_db": 0.044256689347315116,
+      "five_tau_seconds_at_15uF": 1.2202253718024985
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26269.67162403331,
+      "fc_hz": 1.2535994757520899,
+      "relative_loss_20hz_db": 0.01702904108896877,
+      "five_tau_seconds_at_15uF": 1.9702253718024982
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46269.67162403331,
+      "fc_hz": 0.7117328785830935,
+      "relative_loss_20hz_db": 0.005496465734117875,
+      "five_tau_seconds_at_15uF": 3.4702253718024982
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17572.329300077035,
+      "fc_hz": 1.8740626819418496,
+      "relative_loss_20hz_db": 0.037965827578251676,
+      "five_tau_seconds_at_15uF": 1.3179246975057777
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27572.329300077035,
+      "fc_hz": 1.194373033110978,
+      "relative_loss_20hz_db": 0.015460766839267108,
+      "five_tau_seconds_at_15uF": 2.067924697505778
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47572.329300077035,
+      "fc_hz": 0.6922437278263434,
+      "relative_loss_20hz_db": 0.005199748825423538,
+      "five_tau_seconds_at_15uF": 3.567924697505778
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 16313.671624033313,
+      "fc_hz": 2.0186532703988465,
+      "relative_loss_20hz_db": 0.044019483868639527,
+      "five_tau_seconds_at_15uF": 1.2235253718024985
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 26313.67162403331,
+      "fc_hz": 1.251503288731092,
+      "relative_loss_20hz_db": 0.016972250048002995,
+      "five_tau_seconds_at_15uF": 1.9735253718024983
+    },
+    {
+      "source_ohm": 0,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 46313.67162403331,
+      "fc_hz": 0.7110567014293605,
+      "relative_loss_20hz_db": 0.005486033523081821,
+      "five_tau_seconds_at_15uF": 3.4735253718024985
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 10000,
+      "series_equivalent_ohm": 17616.329300077035,
+      "fc_hz": 1.8693818681014152,
+      "relative_loss_20hz_db": 0.037777232679838825,
+      "five_tau_seconds_at_15uF": 1.3212246975057778
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 20000,
+      "series_equivalent_ohm": 27616.329300077035,
+      "fc_hz": 1.1924700860217452,
+      "relative_loss_20hz_db": 0.015411627276462458,
+      "five_tau_seconds_at_15uF": 2.071224697505778
+    },
+    {
+      "source_ohm": 4700,
+      "input_ohm": 40000,
+      "series_equivalent_ohm": 47616.329300077035,
+      "fc_hz": 0.6916040581064787,
+      "relative_loss_20hz_db": 0.005190149318166529,
+      "five_tau_seconds_at_15uF": 3.571224697505778
+    }
+  ]
+}

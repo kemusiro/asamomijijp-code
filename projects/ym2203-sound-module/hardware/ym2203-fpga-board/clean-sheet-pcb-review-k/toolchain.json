@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-18",
+  "kicad": "10.0.5",
+  "pcbnew_python": "3.9.13",
+  "routing_aid": {
+    "freerouting": "2.1.0",
+    "jar_sha256": "2c07d58f75dac03782664081e7a58b41c25400d871a9fcf166a2ea6fe60d5def",
+    "jar_redistributed": false,
+    "grid_mm": [
+      0.05,
+      0.02
+    ],
+    "routing_result_authority": "native KiCad PCB; intermediate routing files are not fabrication inputs"
+  },
+  "validation_scope": "native CAD/ERC/DRC/netlist/geometry only; no firmware or hardware acceptance"
+}

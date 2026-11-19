@@ -1,0 +1,22 @@
+{
+  "base-j4": {
+    "dir": "clean-sheet-pcb-review-j/base",
+    "name": "p2-base-j",
+    "layers": 4
+  },
+  "base-k2": {
+    "dir": "clean-sheet-pcb-review-k/base",
+    "name": "p2-base-k",
+    "layers": 2
+  },
+  "module-k2": {
+    "dir": "clean-sheet-pcb-review-k/module",
+    "name": "p2-ym2203-k",
+    "layers": 2
+  },
+  "shield-b2": {
+    "dir": "editor-shield-review-b/pcb-review-b",
+    "name": "p2-editor-b",
+    "layers": 2
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "checked": "2026-11-19",
+  "vendor": "JLCPCB",
+  "url": "https://cart.jlcpcb.com/quote",
+  "scope": "anonymous input calculator, no Gerber upload/order/cart/terms",
+  "currency": "USD",
+  "fx_jpy_per_usd_assumption": 160,
+  "coupon_or_desktop_discount_used": false,
+  "standard": {
+    "qty": 5,
+    "thickness_mm": 1.6,
+    "outer_oz": 1,
+    "base_inner_oz": 0.5,
+    "finish": "LeadFree HASL",
+    "via_drill_mm": 0.3,
+    "source": "web price; normal lead time explicitly selected"
+  },
+  "boards": [
+    {
+      "id": "base",
+      "size_mm": [
+        100,
+        100
+      ],
+      "layers": 4,
+      "price_usd": "13.30",
+      "detail": {
+        "special_offer": "8.00",
+        "surface_finish": "5.30",
+        "via_covering": "0.00"
+      },
+      "display_weight_kg": 0.29,
+      "lead_days": "3-4"
+    },
+    {
+      "id": "sound",
+      "size_mm": [
+        100,
+        80
+      ],
+      "layers": 2,
+      "price_usd": "5.30",
+      "detail": {
+        "special_offer": "4.00",
+        "surface_finish": "1.30",
+        "via_covering": "0.00"
+      },
+      "display_weight_kg": 0.26,
+      "lead_days": "2"
+    },
+    {
+      "id": "panel",
+      "size_mm": [
+        100,
+        76
+      ],
+      "layers": 2,
+      "price_usd": "5.30",
+      "detail": {
+        "special_offer": "4.00",
+        "surface_finish": "1.30",
+        "via_covering": "0.00"
+      },
+      "display_weight_kg": 0.25,
+      "lead_days": "2"
+    }
+  ],
+  "fallback_base": {
+    "size_mm": [
+      120,
+      100
+    ],
+    "layers": 4,
+    "price_usd": "37.70",
+    "detail": {
+      "engineering": "25.00",
+      "board": "7.40",
+      "surface_finish": "5.30",
+      "via_covering": "0.00"
+    },
+    "display_weight_kg": 0.33
+  },
+  "warning": "same-time layer switches can reset finish to OSP and leave transient expedited totals; record only stable LeadFree HASL normal-leadtime web totals",
+  "shipping": {
+    "new_cart_quote_obtained": false,
+    "pcb_freight_budget_jpy": 3500,
+    "basis": "budget allowance, previous Japan DHL1.3kg21.60USD reference rounded up; new combined cart/actual weight unverified"
+  },
+  "new_quote_not_cam_approval": true
+}

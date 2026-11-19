@@ -1,0 +1,11 @@
+{
+  "xlsx_sha256": "ce5ac987e0049d5987a80ed0897f5ee06a402b12554f7f19c42e5a42c6b8bea8",
+  "zip_crc": "PASS",
+  "formula_errors": 0,
+  "reference_cells_and_effective_styles": "unchanged",
+  "reference_layout_and_table": "unchanged",
+  "changed_cells": 301,
+  "changed_cells_within_scope": true,
+  "table_headers_match_cells": true,
+  "native_excel_recalculation": "not run"
+}

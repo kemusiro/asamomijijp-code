@@ -1,0 +1,26 @@
+[
+  {
+    "id": "U01",
+    "previous_mpn": "SI5351A-B-GTR",
+    "selected_mpn": "SI5351A-B-GTR",
+    "old_subtotal_jpy": "412.94",
+    "new_subtotal_jpy": "412.94",
+    "decision": "retain_original_pending_stock"
+  },
+  {
+    "id": "U10",
+    "previous_mpn": "SN74LV4T125PWR",
+    "selected_mpn": "SN74LV4T125QPWRQ1",
+    "old_subtotal_jpy": "501.60",
+    "new_subtotal_jpy": "931.92",
+    "decision": "select_pin_compatible_automotive_variant"
+  },
+  {
+    "id": "U17",
+    "previous_mpn": "SN74LVC1G32DBVR",
+    "selected_mpn": "SN74LVC1G32DBVRE4",
+    "old_subtotal_jpy": "21.12",
+    "new_subtotal_jpy": "124.19",
+    "decision": "select_same_device_lead_finish_order_option"
+  }
+]

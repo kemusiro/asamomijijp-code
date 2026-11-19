@@ -1,0 +1,843 @@
+{
+  "revision": "LC-A-study",
+  "checked": "2026-11-19",
+  "status": "cost_and_architecture_study_not_routed_cad",
+  "pcb_each": 5,
+  "fitted_sets": 1,
+  "current_design_preserved": true,
+  "active_plan_changed": false,
+  "adoption": "candidate_only; reset breakout and LED isolation are gates before schematic implementation",
+  "primary": "two Picossci 2B modules soldered by castellations; ordinary detachable G40; separate wired editing panel",
+  "boards": [
+    {
+      "id": "base",
+      "size_mm": [
+        100,
+        100
+      ],
+      "layers": 4,
+      "old_size_mm": [
+        220,
+        142
+      ],
+      "blocks": [
+        [
+          "IO / USB / STOP / TEST",
+          3,
+          2,
+          94,
+          16
+        ],
+        [
+          "MCU direct module",
+          4,
+          23,
+          24,
+          42
+        ],
+        [
+          "Si5351A",
+          33,
+          23,
+          25,
+          16
+        ],
+        [
+          "ADC",
+          62,
+          23,
+          33,
+          22
+        ],
+        [
+          "DAC / filter",
+          62,
+          49,
+          33,
+          23
+        ],
+        [
+          "LED / DIP service",
+          33,
+          44,
+          25,
+          24
+        ],
+        [
+          "Power",
+          4,
+          71,
+          29,
+          23
+        ],
+        [
+          "G40 socket",
+          40,
+          90,
+          54,
+          6
+        ]
+      ],
+      "fallback_mm": [
+        120,
+        100
+      ]
+    },
+    {
+      "id": "sound",
+      "size_mm": [
+        100,
+        80
+      ],
+      "layers": 2,
+      "old_size_mm": [
+        100,
+        100
+      ],
+      "blocks": [
+        [
+          "YM2203C + socket",
+          4,
+          7,
+          62,
+          25
+        ],
+        [
+          "Clock / levels",
+          70,
+          7,
+          26,
+          28
+        ],
+        [
+          "MCU direct module",
+          4,
+          40,
+          42,
+          24
+        ],
+        [
+          "Bus / FM / outputs",
+          51,
+          40,
+          45,
+          25
+        ],
+        [
+          "G40 header",
+          40,
+          70,
+          54,
+          6
+        ]
+      ]
+    },
+    {
+      "id": "panel",
+      "size_mm": [
+        100,
+        76
+      ],
+      "layers": 2,
+      "old_size_mm": [
+        76,
+        100
+      ],
+      "blocks": [
+        [
+          "LCD 240 x 240",
+          4,
+          4,
+          44,
+          40
+        ],
+        [
+          "OP1 - OP4",
+          54,
+          4,
+          42,
+          10
+        ],
+        [
+          "Encoder",
+          65,
+          18,
+          21,
+          17
+        ],
+        [
+          "NOTE / STOP",
+          54,
+          38,
+          42,
+          9
+        ],
+        [
+          "Four knobs, 16mm caps",
+          4,
+          51,
+          92,
+          19
+        ]
+      ],
+      "no_stack_on_base": true,
+      "connector_on_back": true
+    }
+  ],
+  "board_layout_scope": "rectangular functional envelopes only; excludes detailed routing, underside/lead and full-height validation",
+  "manufacturing": {
+    "thickness_mm": 1.6,
+    "finish": "lead-free HASL",
+    "outer_copper_oz": 1,
+    "base_inner_copper_oz": 0.5,
+    "min_via_drill_mm": 0.3,
+    "preferred_via_pad_mm": 0.6,
+    "minimum_clearance_mm": 0.15,
+    "signal_track_target_mm": 0.18,
+    "via_in_pad": false,
+    "epoxy_fill": false,
+    "castellations_on_carrier": false,
+    "base_via_cover_quote": "standard Plugged auto-selected; soldermask process, not epoxy",
+    "sound_panel_via_cover_quote": "Tented",
+    "old_seven_manual_prefill_vias_reused": false,
+    "four_layer_goal": "signal/GND/power+slow signal/signal; prefer continuous ground; USB stack calculation pending"
+  },
+  "mcu": {
+    "part": "Picossci 2B / SSCI-105071",
+    "quantity": 2,
+    "price_jpy_each_incl_tax": 2310,
+    "size_mm": [
+      36.83,
+      17.8
+    ],
+    "edge_pitch_mm": 1.27,
+    "edge_pin_count": 56,
+    "gpio_count": 48,
+    "gpio_to_manufacturer_terminal": {
+      "0": "J1.4",
+      "1": "J1.5",
+      "2": "J1.6",
+      "3": "J1.7",
+      "4": "J1.8",
+      "5": "J1.9",
+      "6": "J1.10",
+      "7": "J1.11",
+      "8": "J1.12",
+      "9": "J1.13",
+      "10": "J1.14",
+      "11": "J1.15",
+      "12": "J1.16",
+      "13": "J1.17",
+      "14": "J1.18",
+      "15": "J1.19",
+      "16": "J1.20",
+      "17": "JP6.1",
+      "18": "JP6.2",
+      "19": "JP6.3",
+      "20": "JP6.4",
+      "21": "JP6.5",
+      "22": "JP6.6",
+      "23": "JP6.7",
+      "24": "JP7.2",
+      "25": "JP7.3",
+      "26": "JP7.4",
+      "27": "JP7.5",
+      "28": "JP7.6",
+      "29": "JP7.7",
+      "30": "JP7.8",
+      "31": "J2.1",
+      "32": "J2.2",
+      "33": "J2.3",
+      "34": "J2.4",
+      "35": "J2.5",
+      "36": "J2.6",
+      "37": "J2.7",
+      "38": "J2.8",
+      "39": "J2.9",
+      "40": "J2.11",
+      "41": "J2.12",
+      "42": "J2.13",
+      "43": "J2.14",
+      "44": "J2.15",
+      "45": "J2.16",
+      "46": "J2.17",
+      "47": "J2.18"
+    },
+    "grounds": [
+      "J1.1",
+      "JP6.8",
+      "J2.10",
+      "JP7.1"
+    ],
+    "vin": "J2.19 VBUS label = module regulator input, fed from external5V",
+    "v3v3": "J2.20 output; never tie to AUX or other MCU output",
+    "usb_dm": "J1.2",
+    "usb_dp": "J1.3",
+    "swd": [
+      "JP1.1 SWCLK",
+      "JP1.2 GND",
+      "JP1.3 SWDIO"
+    ],
+    "led_removal_candidate": [
+      "R5 on GP24",
+      "R6 on GP25"
+    ],
+    "reset": {
+      "edge_terminal": null,
+      "candidate": "wire from non-ground pad of SW1 RESET, verified by continuity with RUN",
+      "base_use": "external hard reset, plus onboard RESET accessible before stacking",
+      "source_use": "existing ENABLE -> open-drain buffer -> RUN reset chain",
+      "must_not_replace_with_software_stop_only": true,
+      "physically_verified": false
+    },
+    "flash": {
+      "product_page_mbit": 32,
+      "schematic_label": "W25Q16JVUX (16Mbit)",
+      "verified_capacity": false,
+      "policy": "read actual JEDEC; conservative <=2MiB firmware layout until resolved; WYM1 streamed from HOST, no song embedded"
+    },
+    "psram_required": false,
+    "regulator_advertised_ma": 700,
+    "guaranteed_assembled_load_ma": null,
+    "thermal_policy": "keep existing separated AUX; no 700mA continuous assumption; test 5V-to-3V3 dissipation"
+  },
+  "retained_ics": [
+    "YM2203C (reuse Rev C)",
+    "Si5351A",
+    "PCM1863",
+    "PCM5102A",
+    "MCP23017",
+    "74xx voltage translators and existing gate/reset buffers",
+    "24FC256"
+  ],
+  "ordinary_connectors": {
+    "g40_female": {
+      "part": "FH-2x20SG",
+      "sku": "100085",
+      "price_jpy": 80
+    },
+    "g40_male": {
+      "part": "PH-2x20SG/RH",
+      "sku": "100080",
+      "price_jpy": 50
+    },
+    "panel_headers": {
+      "part": "PH-2x20SG/RH",
+      "quantity": 2,
+      "price_jpy_each": 50
+    },
+    "panel_cable": {
+      "part": "DG01032-0025-02",
+      "sku": "108931",
+      "length_mm": 152,
+      "price_jpy": 450
+    },
+    "g40_key6": "retain removed pin and blocking key; PK-01-06 fit in ordinary socket not verified, budget retained",
+    "g40_alignment": "new source placed over base with offset[0,20]mm, connector conceptual envelope identical at x40,y90; real pad map/orientation not yet laid out",
+    "panel_not_g40": "PANEL40 has different functions and only3.3V; identify separately and use polarization/labels; never cross-connect"
+  },
+  "height": {
+    "source_face_gap_target_mm": 11,
+    "base_under_card_envelope_max_mm": 5,
+    "source_under_leads_max_mm": 3,
+    "nominal_remaining_mm": 3,
+    "status": "envelope budget only, not verified mating depth/tolerance",
+    "tall_parts": "place electrolytic/USB/buttons outside source shadow or revise stack; no lead pressed onto MCU",
+    "lcd_mount": "separate panel, four M2 supports, buy small quantity or use cut-to-length insulating spacer; preserve LCD clearance",
+    "shim_policy": "do not pre-buy three precision shim types at all7 positions; select actual support height after fit"
+  },
+  "compatibility": {
+    "gpio_numbers_changed": false,
+    "wire_protocol_changed": false,
+    "firmware_applied": false,
+    "bench_tested": false,
+    "host": {
+      "signature": "YM22S002",
+      "address": 66,
+      "frequency_hz": 100000,
+      "request_max": 208,
+      "status_bytes": 64,
+      "events_per_push": 32,
+      "queue_events": 1024,
+      "lease_ms": 1000,
+      "wym1": "unchanged",
+      "host_pico_sda": 0,
+      "host_pico_scl": 1,
+      "base_sda": 20,
+      "base_scl": 21
+    },
+    "usb": "CDC+MIDI1.0, six logical channels FM3+SSG3; descriptor/HOST source unchanged",
+    "ownership": "existing I2C/MIDI exclusion, global STOP, no replay after reattach; LOCAL_EDIT staging rules preserved",
+    "safe_states": "ENABLE/reset closed, DAC+LINE closed, event and PCM queues cleared; explicit new session required",
+    "physical_usb_loss": "MIDI/local edit stop; valid I2C lease continues; raw USB VBUS sense kept separate from external5V"
+  },
+  "base_gpio": [
+    {
+      "gpio": 0,
+      "net": "BUS_D0",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.4"
+    },
+    {
+      "gpio": 1,
+      "net": "BUS_D1",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.5"
+    },
+    {
+      "gpio": 2,
+      "net": "BUS_D2",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.6"
+    },
+    {
+      "gpio": 3,
+      "net": "BUS_D3",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.7"
+    },
+    {
+      "gpio": 4,
+      "net": "BUS_D4",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.8"
+    },
+    {
+      "gpio": 5,
+      "net": "BUS_D5",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.9"
+    },
+    {
+      "gpio": 6,
+      "net": "BUS_D6",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.10"
+    },
+    {
+      "gpio": 7,
+      "net": "BUS_D7",
+      "function": "pio0_data_or_SPI0_if_bit0to3",
+      "terminal": "J1.11"
+    },
+    {
+      "gpio": 8,
+      "net": "MOD_CTL0",
+      "function": "pio0_control_or_SIO",
+      "terminal": "J1.12"
+    },
+    {
+      "gpio": 9,
+      "net": "MOD_CTL1",
+      "function": "pio0_control_or_SIO",
+      "terminal": "J1.13"
+    },
+    {
+      "gpio": 10,
+      "net": "MOD_CTL2",
+      "function": "pio0_control_or_SIO",
+      "terminal": "J1.14"
+    },
+    {
+      "gpio": 11,
+      "net": "MOD_CTL3",
+      "function": "pio0_control_or_SIO",
+      "terminal": "J1.15"
+    },
+    {
+      "gpio": 12,
+      "net": "MOD_ENABLE",
+      "function": "sio_output_default_low",
+      "terminal": "J1.16"
+    },
+    {
+      "gpio": 13,
+      "net": "MOD_ALERT_N",
+      "function": "sio_input_open_drain",
+      "terminal": "J1.17"
+    },
+    {
+      "gpio": 14,
+      "net": "DAC_I2S_DATA",
+      "function": "pio1_tx_data",
+      "terminal": "J1.18"
+    },
+    {
+      "gpio": 15,
+      "net": "AUDIO_BCK",
+      "function": "pio1_clock",
+      "terminal": "J1.19"
+    },
+    {
+      "gpio": 16,
+      "net": "AUDIO_LRCK",
+      "function": "pio1_clock",
+      "terminal": "J1.20"
+    },
+    {
+      "gpio": 17,
+      "net": "BASE_ADC_DOUT",
+      "function": "pio1_rx_data",
+      "terminal": "JP6.1"
+    },
+    {
+      "gpio": 18,
+      "net": "MOD_I2S_DATA",
+      "function": "pio1_rx_data",
+      "terminal": "JP6.2"
+    },
+    {
+      "gpio": 19,
+      "net": "EXT_D2",
+      "function": "sio",
+      "terminal": "JP6.3"
+    },
+    {
+      "gpio": 20,
+      "net": "HOST_SDA",
+      "function": "i2c0_sda",
+      "terminal": "JP6.4"
+    },
+    {
+      "gpio": 21,
+      "net": "HOST_SCL",
+      "function": "i2c0_scl",
+      "terminal": "JP6.5"
+    },
+    {
+      "gpio": 22,
+      "net": "EXT_D3",
+      "function": "sio",
+      "terminal": "JP6.6"
+    },
+    {
+      "gpio": 23,
+      "net": "EXT_D4",
+      "function": "sio",
+      "terminal": "JP6.7"
+    },
+    {
+      "gpio": 24,
+      "net": "EXT_D12",
+      "function": "spi1_rx",
+      "terminal": "JP7.2"
+    },
+    {
+      "gpio": 25,
+      "net": "EXT_D10",
+      "function": "spi1_ss_n",
+      "terminal": "JP7.3"
+    },
+    {
+      "gpio": 26,
+      "net": "EXT_D13",
+      "function": "spi1_sclk",
+      "terminal": "JP7.4"
+    },
+    {
+      "gpio": 27,
+      "net": "EXT_D11",
+      "function": "spi1_tx",
+      "terminal": "JP7.5"
+    },
+    {
+      "gpio": 28,
+      "net": "EXT_D1",
+      "function": "uart0_tx",
+      "terminal": "JP7.6"
+    },
+    {
+      "gpio": 29,
+      "net": "EXT_D0",
+      "function": "uart0_rx",
+      "terminal": "JP7.7"
+    },
+    {
+      "gpio": 30,
+      "net": "EXT_D5",
+      "function": "sio",
+      "terminal": "JP7.8"
+    },
+    {
+      "gpio": 31,
+      "net": "EXT_D6",
+      "function": "sio",
+      "terminal": "J2.1"
+    },
+    {
+      "gpio": 32,
+      "net": "EXT_D7",
+      "function": "sio",
+      "terminal": "J2.2"
+    },
+    {
+      "gpio": 33,
+      "net": "EXT_D8",
+      "function": "sio",
+      "terminal": "J2.3"
+    },
+    {
+      "gpio": 34,
+      "net": "EXT_D9",
+      "function": "sio",
+      "terminal": "J2.4"
+    },
+    {
+      "gpio": 38,
+      "net": "M_DAC_ALLOW",
+      "function": "sio_output_default_low",
+      "terminal": "J2.8"
+    },
+    {
+      "gpio": 39,
+      "net": "M_LINE_ALLOW",
+      "function": "sio_output_default_low",
+      "terminal": "J2.9"
+    },
+    {
+      "gpio": 40,
+      "net": "EXT_A0",
+      "function": "adc_or_sio",
+      "terminal": "J2.11"
+    },
+    {
+      "gpio": 41,
+      "net": "EXT_A1",
+      "function": "adc_or_sio",
+      "terminal": "J2.12"
+    },
+    {
+      "gpio": 42,
+      "net": "EXT_A4",
+      "function": "i2c1_sda",
+      "terminal": "J2.13"
+    },
+    {
+      "gpio": 43,
+      "net": "EXT_A5",
+      "function": "i2c1_scl",
+      "terminal": "J2.14"
+    },
+    {
+      "gpio": 44,
+      "net": "EXT_A2",
+      "function": "adc_or_sio",
+      "terminal": "J2.15"
+    },
+    {
+      "gpio": 45,
+      "net": "EXT_A3",
+      "function": "adc_or_sio",
+      "terminal": "J2.16"
+    },
+    {
+      "gpio": 46,
+      "net": "M_VBUS_SENSE",
+      "function": "sio_input_with_voltage_divider",
+      "terminal": "J2.17"
+    }
+  ],
+  "sound_gpio": [
+    {
+      "gpio": 0,
+      "net": "YM_D0",
+      "function": "sio_data",
+      "terminal": "J1.4"
+    },
+    {
+      "gpio": 1,
+      "net": "YM_D1",
+      "function": "sio_data",
+      "terminal": "J1.5"
+    },
+    {
+      "gpio": 2,
+      "net": "YM_D2",
+      "function": "sio_data",
+      "terminal": "J1.6"
+    },
+    {
+      "gpio": 3,
+      "net": "YM_D3",
+      "function": "sio_data",
+      "terminal": "J1.7"
+    },
+    {
+      "gpio": 4,
+      "net": "YM_D4",
+      "function": "sio_data",
+      "terminal": "J1.8"
+    },
+    {
+      "gpio": 5,
+      "net": "YM_D5",
+      "function": "sio_data",
+      "terminal": "J1.9"
+    },
+    {
+      "gpio": 6,
+      "net": "YM_D6",
+      "function": "sio_data",
+      "terminal": "J1.10"
+    },
+    {
+      "gpio": 7,
+      "net": "YM_D7",
+      "function": "sio_data",
+      "terminal": "J1.11"
+    },
+    {
+      "gpio": 8,
+      "net": "MOD_SPI_MOSI",
+      "function": "spi1_rx",
+      "terminal": "J1.12"
+    },
+    {
+      "gpio": 9,
+      "net": "MOD_SPI_CS_N",
+      "function": "spi1_ss_n",
+      "terminal": "J1.13"
+    },
+    {
+      "gpio": 10,
+      "net": "MOD_SPI_SCK",
+      "function": "spi1_sclk",
+      "terminal": "J1.14"
+    },
+    {
+      "gpio": 11,
+      "net": "MOD_SPI_MISO",
+      "function": "spi1_tx",
+      "terminal": "J1.15"
+    },
+    {
+      "gpio": 12,
+      "net": "YM_A0",
+      "function": "sio_control",
+      "terminal": "J1.16"
+    },
+    {
+      "gpio": 13,
+      "net": "YM_CS_N",
+      "function": "sio_control",
+      "terminal": "J1.17"
+    },
+    {
+      "gpio": 14,
+      "net": "YM_WR_N",
+      "function": "sio_control",
+      "terminal": "J1.18"
+    },
+    {
+      "gpio": 15,
+      "net": "YM_RD_N",
+      "function": "sio_control",
+      "terminal": "J1.19"
+    },
+    {
+      "gpio": 16,
+      "net": "YM_FM_SD",
+      "function": "pio0_input",
+      "terminal": "J1.20"
+    },
+    {
+      "gpio": 17,
+      "net": "YM_FM_CLK",
+      "function": "pio0_input",
+      "terminal": "JP6.1"
+    },
+    {
+      "gpio": 18,
+      "net": "YM_FM_SH",
+      "function": "pio0_input",
+      "terminal": "JP6.2"
+    },
+    {
+      "gpio": 19,
+      "net": "YM_DATA_DIR",
+      "function": "sio_output",
+      "terminal": "JP6.3"
+    },
+    {
+      "gpio": 20,
+      "net": "YM_DATA_OE_N",
+      "function": "sio_output",
+      "terminal": "JP6.4"
+    },
+    {
+      "gpio": 21,
+      "net": "YM_CTRL_OE_N",
+      "function": "sio_output",
+      "terminal": "JP6.5"
+    },
+    {
+      "gpio": 22,
+      "net": "YM_RESET_RELEASE",
+      "function": "sio_output",
+      "terminal": "JP6.6"
+    },
+    {
+      "gpio": 23,
+      "net": "MOD_ALERT_DRIVE",
+      "function": "sio_output",
+      "terminal": "JP6.7"
+    },
+    {
+      "gpio": 24,
+      "net": "MOD_I2S_DATA",
+      "function": "pio1_output",
+      "terminal": "JP7.2"
+    },
+    {
+      "gpio": 25,
+      "net": "MOD_I2S_BCK",
+      "function": "pio1_input",
+      "terminal": "JP7.3"
+    },
+    {
+      "gpio": 26,
+      "net": "MOD_I2S_LRCK",
+      "function": "pio1_input",
+      "terminal": "JP7.4"
+    },
+    {
+      "gpio": 27,
+      "net": "LINK_TX_DISABLE",
+      "function": "sio_output",
+      "terminal": "JP7.5"
+    }
+  ],
+  "base_reserved_gpio": [
+    47
+  ],
+  "sound_reserved_gpio": [
+    39,
+    47
+  ],
+  "acceptance_required": [
+    "100x100 base detailed placement with0.3mm vias",
+    "RUN wire continuity, boot/reset and gate default test",
+    "LED load isolation on GP24/25",
+    "JEDEC/flash linker verification",
+    "module carrier underside inspection and HASL solder test",
+    "G40 contact depth, key and polarity fit",
+    "USB signal integrity/thermal tests",
+    "unchanged HOST YsII whole-song and STOP/lease/reconnect",
+    "USB-MIDI six voices, panic, ownership and USB loss",
+    "LCD update and EEPROM SAVE while STOP remains bounded",
+    "preset64slot, CRC, partial-write and JSON export/import"
+  ],
+  "risk": "no new native schematic/PCB/ERC/DRC/Gerber yet; conceptual price is not fabrication release",
+  "power_budget": {
+    "base_mcu_only_ma": 175,
+    "peripherals_moved_to_aux_ma": 90,
+    "aux_old_budget_ma": 350,
+    "aux_new_budget_ma": 440,
+    "aux_design_limit_ma": 500,
+    "sound_mcu_budget_ma": 250,
+    "at_5_25v_base_ldo_loss_w": 0.34125,
+    "at_5_25v_sound_ldo_loss_w": 0.4875,
+    "measured": false,
+    "startup_backfeed_review_pending": true
+  }
+}

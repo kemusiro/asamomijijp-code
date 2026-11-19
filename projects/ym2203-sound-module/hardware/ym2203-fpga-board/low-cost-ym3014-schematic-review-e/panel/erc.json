@@ -1,0 +1,76 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-19T03:23:24",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf",
+            "violations": []
+        },
+        {
+            "path": "/01-host-power-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/4b66f4db-b6f9-5e52-b57c-b98204210172",
+            "violations": []
+        },
+        {
+            "path": "/01-panel-mcu-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/0e5e3b26-9379-5f1a-8445-4832a31e60fd",
+            "violations": []
+        },
+        {
+            "path": "/02-eeprom-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/316ec393-05aa-5233-ae73-fd51575c12ab",
+            "violations": []
+        },
+        {
+            "path": "/03-mux-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/88e02a14-a1a9-54ae-9526-9fc41785cdd6",
+            "violations": []
+        },
+        {
+            "path": "/03-pots-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/f4421f7d-9837-5b99-9908-cb83e0f4e736",
+            "violations": []
+        },
+        {
+            "path": "/04-encoder-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/c52e4426-cd1a-5273-a3a6-0930260d26f6",
+            "violations": []
+        },
+        {
+            "path": "/05-buttons-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/93bacee6-b39d-5e6f-8704-c1c04d46795a",
+            "violations": []
+        },
+        {
+            "path": "/06-lcd-1/",
+            "uuid_path": "/2bc00d46-1792-5d54-a930-23535b030acf/3fe5fd89-6a43-519d-88ed-569a94125ead",
+            "violations": []
+        }
+    ],
+    "source": "p2-panel-lc-e.kicad_sch"
+}

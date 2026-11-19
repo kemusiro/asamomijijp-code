@@ -1,0 +1,39 @@
+{
+  "date": "2026-11-18",
+  "pcb_each": 5,
+  "fitted_sets": 1,
+  "full_order_pack_regenerated": false,
+  "unchanged_component_counts": true,
+  "changes": [
+    {
+      "id": "PCB1",
+      "from": "base-j4",
+      "to": "base-l4",
+      "layers": 4,
+      "quantity": 5,
+      "fitted": 1,
+      "spare": 4,
+      "zip": "p2-base-l4-gerber.zip"
+    },
+    {
+      "id": "J10",
+      "mpn": "TYPE-C-31-M-12",
+      "supplier": "LCSC",
+      "supplier_code": "C165948",
+      "quantity": 1,
+      "contacts": 16,
+      "physical_signal_solder_locations": 12,
+      "url": "https://www.lcsc.com/product-detail/USB-Connectors_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.html",
+      "pack_size_verified": false,
+      "price_researched": false,
+      "note": "Match HRO drawing 2020-12-08; physical connector fit pending"
+    }
+  ],
+  "still_open": [
+    "C14 exact MPN and DC-bias effective capacitance",
+    "MCU sockets and header physical engagement",
+    "G40/UNO/LCD/spacer fit",
+    "final cart/CAM approval",
+    "P2 firmware and hardware acceptance"
+  ]
+}

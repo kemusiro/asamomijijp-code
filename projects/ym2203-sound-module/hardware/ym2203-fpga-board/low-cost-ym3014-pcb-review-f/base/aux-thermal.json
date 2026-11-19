@@ -1,0 +1,50 @@
+{
+  "net": "V3_AUX",
+  "polygon_mm": [
+    [
+      84,
+      9
+    ],
+    [
+      95,
+      9
+    ],
+    [
+      95,
+      31
+    ],
+    [
+      84,
+      31
+    ]
+  ],
+  "layers": [
+    "F.Cu",
+    "B.Cu"
+  ],
+  "vias": [
+    [
+      92,
+      15
+    ],
+    [
+      92,
+      21
+    ],
+    [
+      88,
+      12
+    ],
+    [
+      88,
+      27
+    ]
+  ],
+  "loss_at_5v_440ma_w": 0.748,
+  "loss_at_5p25v_440ma_w": 0.858,
+  "thermal_bench_accepted": false,
+  "ca_aux_in_ground_stitch_via_mm": [
+    83.95,
+    23
+  ]
+}

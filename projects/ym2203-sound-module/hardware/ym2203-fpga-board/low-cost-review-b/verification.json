@@ -1,0 +1,64 @@
+{
+  "status": "static_study_pass_not_hardware_acceptance",
+  "gpio": {
+    "base_compact": {
+      "assigned": 27,
+      "usable": 29,
+      "spare": [
+        24,
+        29
+      ]
+    },
+    "base_large": {
+      "assigned": 27,
+      "usable": 46,
+      "spare": [
+        19,
+        22,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        40,
+        41,
+        44,
+        45,
+        47
+      ]
+    },
+    "panel": {
+      "assigned": 21,
+      "usable": 26,
+      "spare": [
+        20,
+        21,
+        22,
+        27,
+        28
+      ]
+    },
+    "base_pico2": {
+      "assigned": 27,
+      "exported_used": 26,
+      "spare": []
+    }
+  },
+  "service_addresses": [
+    32,
+    48,
+    74,
+    96
+  ],
+  "panel_poll_occupancy_percent_excluding_start_stop": 15.299999999999999,
+  "preserved_files": 63,
+  "new_cad_erc_drc": "not_run_no_new_cad",
+  "firmware_and_hardware_tests": "not_implemented"
+}

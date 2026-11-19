@@ -1,0 +1,89 @@
+{
+  "selected": "base4-module2",
+  "count": 7,
+  "sites_by_board": {
+    "base-j4": [
+      {
+        "board": "base",
+        "ref": "RBSCK",
+        "pin": "2",
+        "net": "GND",
+        "via_mm": [
+          94.2125,
+          15.5
+        ],
+        "drill_mm": 0.3
+      },
+      {
+        "board": "base",
+        "ref": "RADCDATAPD",
+        "pin": "2",
+        "net": "GND",
+        "via_mm": [
+          100.7125,
+          34.0
+        ],
+        "drill_mm": 0.3
+      },
+      {
+        "board": "base",
+        "ref": "UESD",
+        "pin": "2",
+        "net": "GND",
+        "via_mm": [
+          133.0,
+          12.5625
+        ],
+        "drill_mm": 0.3
+      }
+    ],
+    "module-k2": [
+      {
+        "board": "module",
+        "ref": "UALERT",
+        "pin": "3",
+        "net": "GND",
+        "via_mm": [
+          30.1625,
+          57.95
+        ],
+        "drill_mm": 0.3
+      },
+      {
+        "board": "module",
+        "ref": "ULINK0",
+        "pin": "10",
+        "net": "GND",
+        "via_mm": [
+          22.0625,
+          27.65
+        ],
+        "drill_mm": 0.3
+      },
+      {
+        "board": "module",
+        "ref": "U8",
+        "pin": "7",
+        "net": "YM_D4",
+        "via_mm": [
+          51.1375,
+          47.325
+        ],
+        "drill_mm": 0.2
+      },
+      {
+        "board": "module",
+        "ref": "U9",
+        "pin": "4",
+        "net": "YM_CS_N",
+        "via_mm": [
+          59.1375,
+          75.375
+        ],
+        "drill_mm": 0.2
+      }
+    ],
+    "shield-b2": []
+  },
+  "condition": "prefill and flatten before SMT; not factory resin fill/cap"
+}

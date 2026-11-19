@@ -1,0 +1,52 @@
+{
+  "date": "2026-11-19",
+  "result": "PASS",
+  "scope": "native ERC, independent static pin/power/routing/budget/preservation checks; no firmware or bench acceptance",
+  "boards": {
+    "base": {
+      "components": 143,
+      "pages": 15,
+      "erc_violations": 0,
+      "nets": 114
+    },
+    "module": {
+      "components": 83,
+      "pages": 11,
+      "erc_violations": 0,
+      "nets": 81
+    },
+    "panel": {
+      "components": 51,
+      "pages": 9,
+      "erc_violations": 0,
+      "nets": 38
+    }
+  },
+  "installed_refs": 277,
+  "purchase_rows": 81,
+  "total_jpy": 29936,
+  "delta_review_C_jpy": 185,
+  "preserved_current_files": 306,
+  "preserved_prior_files": 404,
+  "gpio_changed": false,
+  "base_and_panel_electrical_parts_unchanged": true,
+  "analog_calculation": {
+    "pre_coupling_unloaded_divider_gain_range_1percent": [
+      0.586875333451894,
+      0.5965388931545685
+    ],
+    "fm_conservative_peak_at_adc_v": 0.7883261473037623,
+    "assumed_adc_bias_v": 1.65,
+    "required_20khz_slew_v_per_us": 0.16493361431346415,
+    "opamp_typical_slew_v_per_us": 0.6,
+    "spice_or_hardware_measurement": false
+  },
+  "footprint": {
+    "pads": 16,
+    "pitch_mm": 1.27,
+    "sample_fit_verified": false
+  },
+  "pcb_created": false,
+  "firmware_implemented": false,
+  "hardware_accepted": false
+}

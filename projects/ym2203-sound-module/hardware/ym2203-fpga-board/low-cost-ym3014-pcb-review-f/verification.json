@@ -1,0 +1,97 @@
+{
+  "date": "2026-11-19",
+  "kicad_version": "10.0.5",
+  "boards": {
+    "base": {
+      "parts": 143,
+      "layers": 4,
+      "size_mm": [
+        100,
+        100
+      ],
+      "tracks": 2222,
+      "vias": 299,
+      "drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "ignored_checks": [
+        "missing_courtyard",
+        "track_not_centered_on_via",
+        "tuning_profile_track_geometries",
+        "footprint_filters_mismatch",
+        "footprint_type_mismatch"
+      ]
+    },
+    "module": {
+      "parts": 83,
+      "layers": 2,
+      "size_mm": [
+        100,
+        80
+      ],
+      "tracks": 1718,
+      "vias": 253,
+      "drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "ignored_checks": [
+        "missing_courtyard",
+        "track_not_centered_on_via",
+        "tuning_profile_track_geometries",
+        "footprint_filters_mismatch",
+        "footprint_type_mismatch"
+      ]
+    },
+    "panel": {
+      "parts": 51,
+      "layers": 2,
+      "size_mm": [
+        100,
+        76
+      ],
+      "tracks": 528,
+      "vias": 27,
+      "drc": {
+        "violations": 0,
+        "unconnected_items": 0,
+        "schematic_parity": 0
+      },
+      "erc_violations": 0,
+      "ignored_checks": [
+        "missing_courtyard",
+        "track_not_centered_on_via",
+        "tuning_profile_track_geometries",
+        "footprint_filters_mismatch",
+        "footprint_type_mismatch"
+      ]
+    }
+  },
+  "gpio_changed": false,
+  "firmware_implemented": false,
+  "hardware_accepted": false,
+  "base_inner1_signal_escape_mm": 4.37,
+  "base_power_planes_and_four_aux_heat_vias_verified": true,
+  "g40_all_40_mating_coordinates_match": true,
+  "drc_exclusions": 0,
+  "base_in1_gnd_plane_with_local_control_escape": true,
+  "assembly_model_mm": {
+    "base_source_gap": 12,
+    "source_trimmed_leads_max": 2.5,
+    "low_component_height_max": 5,
+    "low_component_gap_min": 4.5,
+    "lcd_standoffs": 12,
+    "panel_feet": 20,
+    "physical_fit_accepted": false
+  },
+  "installed_refs": 277,
+  "preserved_review_e_files": 81,
+  "preserved_prior_files": 404,
+  "result": "PASS",
+  "scope": "Native ERC/DRC, every pin/net, G40 geometry and preservation; no hardware or firmware acceptance"
+}

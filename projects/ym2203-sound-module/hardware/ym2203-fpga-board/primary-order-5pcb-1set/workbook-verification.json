@@ -1,0 +1,13 @@
+{
+  "workbook_sha256": "726bfcded10935be5c374d25e2b3ca47e6e6b1feac4279b17b18e56cb241ba69",
+  "zip_crc": "PASS",
+  "rows": 90,
+  "references": 274,
+  "pcb_ordered": 15,
+  "pcb_used": 3,
+  "pcb_spare": 12,
+  "saved_error_cells": 0,
+  "known_parts_subtotal_jpy": 6290,
+  "unpriced_rows": 60,
+  "native_excel_recalculation_confirmed": false
+}

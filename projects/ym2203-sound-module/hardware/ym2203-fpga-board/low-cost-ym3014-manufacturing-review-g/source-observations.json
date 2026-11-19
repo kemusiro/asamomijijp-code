@@ -1,0 +1,974 @@
+{
+  "date": "2026-11-19",
+  "akizuki": [
+    {
+      "id": "MPANEL",
+      "url": "https://akizukidenshi.com/catalog/g/g116132/",
+      "price_jpy": 800,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S40",
+      "url": "https://akizukidenshi.com/catalog/g/g100034/",
+      "price_jpy": 110,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "SOCKPICO",
+      "url": "https://akizukidenshi.com/catalog/g/g103077/",
+      "price_jpy": 50,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "GROVE",
+      "url": "https://akizukidenshi.com/catalog/g/g112634/",
+      "price_jpy": 150,
+      "stock": "在庫あり",
+      "pack": "1パック10個入",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "GROVECABLE",
+      "url": "https://akizukidenshi.com/catalog/g/g116938/",
+      "price_jpy": 110,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "DPOWER",
+      "url": "https://akizukidenshi.com/catalog/g/g117244/",
+      "price_jpy": 100,
+      "stock": "在庫あり",
+      "pack": "1パック10本入",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "ADCAC",
+      "url": "https://akizukidenshi.com/catalog/g/g130142/",
+      "price_jpy": 20,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "OPAMP",
+      "url": "https://akizukidenshi.com/catalog/g/g130011/",
+      "price_jpy": 80,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "RB_CAP",
+      "url": "https://akizukidenshi.com/catalog/g/g117897/",
+      "price_jpy": 10,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "DIP",
+      "url": "https://akizukidenshi.com/catalog/g/g100586/",
+      "price_jpy": 100,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_100u",
+      "url": "https://akizukidenshi.com/catalog/g/g105002/",
+      "price_jpy": 20,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_10u",
+      "url": "https://akizukidenshi.com/catalog/g/g117593/",
+      "price_jpy": 150,
+      "stock": "在庫あり",
+      "pack": "1パック10個入",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_2.2u",
+      "url": "https://akizukidenshi.com/catalog/g/g114788/",
+      "price_jpy": 100,
+      "stock": "not_observed",
+      "pack": "1パック10個入",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_4.7u",
+      "url": "https://akizukidenshi.com/catalog/g/g131147/",
+      "price_jpy": 100,
+      "stock": "在庫あり",
+      "pack": "1パック20個入",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "HDR",
+      "url": "https://akizukidenshi.com/catalog/g/g100167/",
+      "price_jpy": 35,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "LED01",
+      "url": "https://akizukidenshi.com/catalog/g/g111637/",
+      "price_jpy": 10,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "J04",
+      "url": "https://akizukidenshi.com/catalog/g/g100085/",
+      "price_jpy": 80,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "J10",
+      "url": "https://akizukidenshi.com/catalog/g/g100161/",
+      "price_jpy": 50,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "J05",
+      "url": "https://akizukidenshi.com/catalog/g/g100080/",
+      "price_jpy": 50,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "EPU",
+      "url": "https://akizukidenshi.com/catalog/g/g103568/",
+      "price_jpy": 90,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "EPOT",
+      "url": "https://akizukidenshi.com/catalog/g/g114827/",
+      "price_jpy": 60,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "EENC",
+      "url": "https://akizukidenshi.com/catalog/g/g114936/",
+      "price_jpy": 200,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "ESW",
+      "url": "https://akizukidenshi.com/catalog/g/g117166/",
+      "price_jpy": 15,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "LCD",
+      "url": "https://akizukidenshi.com/catalog/g/g131019/",
+      "price_jpy": 840,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "KNOB",
+      "url": "https://akizukidenshi.com/catalog/g/g116278/",
+      "price_jpy": 40,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "LCDWIRE",
+      "url": "https://akizukidenshi.com/catalog/g/g115868/",
+      "price_jpy": 200,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "E01",
+      "url": "https://akizukidenshi.com/catalog/g/g116478/",
+      "price_jpy": 150,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "E02",
+      "url": "https://akizukidenshi.com/catalog/g/g106257/",
+      "price_jpy": 120,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "E03",
+      "url": "https://akizukidenshi.com/catalog/g/g105657/",
+      "price_jpy": 30,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "E13",
+      "url": "https://akizukidenshi.com/catalog/g/g114167/",
+      "price_jpy": 980,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "WIRE22",
+      "url": "https://akizukidenshi.com/catalog/g/g111641/",
+      "price_jpy": 520,
+      "stock": "在庫あり",
+      "pack": "1セット [111641]",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "DCADAPT",
+      "url": "https://akizukidenshi.com/catalog/g/g108851/",
+      "price_jpy": 90,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "SLEEVING",
+      "url": "https://akizukidenshi.com/catalog/g/g131355/",
+      "price_jpy": 130,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "USB_CABLE",
+      "url": "https://akizukidenshi.com/catalog/g/g117015/",
+      "price_jpy": 110,
+      "stock": "在庫あり",
+      "pack": "single_unit",
+      "checked": "2026-11-19"
+    }
+  ],
+  "digikey": [
+    {
+      "id": "MUX",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/CD74HC4051E/475938",
+      "price_incl": 199.1,
+      "stock": 3117,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 181
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 130.2
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 117.56
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 103.57
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 96.908
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 92.89
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 90.947
+        },
+        {
+          "qty": 5000,
+          "unit_ex_tax": 85.7996
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "DAC",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/PCM5102APWR/3727211",
+      "price_incl": 690.8,
+      "stock": null,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 628
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 473.4
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 434.72
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 392.24
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 371.984
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 368.964
+        },
+        {
+          "qty": 2000,
+          "unit_ex_tax": 341.4575
+        },
+        {
+          "qty": 4000,
+          "unit_ex_tax": 334.65225
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "ADC",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/PCM1863DBT/4895616",
+      "price_incl": 1227.6,
+      "stock": 4563,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 1116
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 858.6
+        },
+        {
+          "qty": 60,
+          "unit_ex_tax": 746.53333
+        },
+        {
+          "qty": 120,
+          "unit_ex_tax": 716.16667
+        },
+        {
+          "qty": 300,
+          "unit_ex_tax": 684.11667
+        },
+        {
+          "qty": 540,
+          "unit_ex_tax": 667.5037
+        },
+        {
+          "qty": 1020,
+          "unit_ex_tax": 652.36078
+        },
+        {
+          "qty": 2520,
+          "unit_ex_tax": 634.99921
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "RX",
+      "url": "https://www.digikey.jp/en/products/detail/toshiba-semiconductor-and-storage/TC7SZ125F-LJ-CT/870689",
+      "price_incl": null,
+      "stock": null,
+      "tiers": [],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "CLAMP",
+      "url": "https://www.digikey.jp/ja/products/detail/nexperia-usa-inc/BAT54S-QR/24630583",
+      "price_incl": 29.7,
+      "stock": 35879,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 27
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 16.3
+        },
+        {
+          "qty": 50,
+          "unit_ex_tax": 11.54
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 10
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 7.244
+        },
+        {
+          "qty": 3000,
+          "unit_ex_tax": 5.19833
+        },
+        {
+          "qty": 9000,
+          "unit_ex_tax": 4.32156
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_100n",
+      "url": "https://www.digikey.jp/ja/products/detail/yageo/CC0805KRX7R9BB104/302874",
+      "price_incl": 33,
+      "stock": 4901417,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 30
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 16.2
+        },
+        {
+          "qty": 50,
+          "unit_ex_tax": 11.3
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 9.81
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 7.308
+        },
+        {
+          "qty": 4000,
+          "unit_ex_tax": 5.3935
+        },
+        {
+          "qty": 12000,
+          "unit_ex_tax": 4.75508
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "C_1u",
+      "url": "https://www.digikey.jp/ja/products/detail/tdk/C2012X7R1H105K125AB/2733619",
+      "price_incl": 45.1,
+      "stock": 0,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 41
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 23.6
+        },
+        {
+          "qty": 50,
+          "unit_ex_tax": 16.92
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 14.86
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 11.436
+        },
+        {
+          "qty": 2000,
+          "unit_ex_tax": 8.978
+        },
+        {
+          "qty": 6000,
+          "unit_ex_tax": 7.96433
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "S01",
+      "url": "https://www.digikey.jp/ja/products/detail/alps-alpine/SKHHALA010/19529104",
+      "price_incl": 42.9,
+      "stock": 418,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 39
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 34.4
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 32.16
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 28.85
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 26.756
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 25.248
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 23.832
+        },
+        {
+          "qty": 3000,
+          "unit_ex_tax": 21.80067
+        },
+        {
+          "qty": 5000,
+          "unit_ex_tax": 20.952
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U01",
+      "url": "https://www.digikey.jp/ja/products/detail/skyworks-solutions-inc/SI5351A-B-GT/3679847",
+      "price_incl": 422.4,
+      "stock": 0,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 384
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 283.2
+        },
+        {
+          "qty": 95,
+          "unit_ex_tax": 231.54737
+        },
+        {
+          "qty": 190,
+          "unit_ex_tax": 221.17368
+        },
+        {
+          "qty": 285,
+          "unit_ex_tax": 215.97193
+        },
+        {
+          "qty": 570,
+          "unit_ex_tax": 208.35088
+        },
+        {
+          "qty": 1045,
+          "unit_ex_tax": 202.8
+        },
+        {
+          "qty": 2565,
+          "unit_ex_tax": 196.13216
+        },
+        {
+          "qty": 5035,
+          "unit_ex_tax": 192.12214
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "L01",
+      "url": "https://www.digikey.jp/ja/products/detail/murata-electronics/BLM21PG601SN1D/24763118",
+      "price_incl": 34.1,
+      "stock": 885,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 31
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 22.1
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 19.24
+        },
+        {
+          "qty": 50,
+          "unit_ex_tax": 17.24
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 15.4
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 13.208
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 11.69
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 10.286
+        },
+        {
+          "qty": 4000,
+          "unit_ex_tax": 7.118
+        },
+        {
+          "qty": 8000,
+          "unit_ex_tax": 6.59338
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U06",
+      "url": "https://www.digikey.jp/ja/products/detail/microchip-technology/MCP23017-E-SO/894271",
+      "price_incl": 293.7,
+      "stock": 18454,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 267
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 222.52
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 205.55
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U07",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/TLV1117LV33DCYR/2666508",
+      "price_incl": 59.4,
+      "stock": 0,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 54
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 37.5
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 33.24
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 28.66
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 26.444
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 25.114
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 24.019
+        },
+        {
+          "qty": 2500,
+          "unit_ex_tax": 23.1888
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U09",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC1G08DBVR/385718",
+      "price_incl": 22,
+      "stock": null,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 20
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 13.4
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 11.72
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 9.87
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 8.988
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 8.452
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 8.013
+        },
+        {
+          "qty": 3000,
+          "unit_ex_tax": 7.46967
+        },
+        {
+          "qty": 6000,
+          "unit_ex_tax": 7.20383
+        },
+        {
+          "qty": 9000,
+          "unit_ex_tax": 7.07067
+        },
+        {
+          "qty": 15000,
+          "unit_ex_tax": 6.92327
+        },
+        {
+          "qty": 21000,
+          "unit_ex_tax": 6.8371
+        },
+        {
+          "qty": 30000,
+          "unit_ex_tax": 6.75413
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U11",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC8T245PWR/857773",
+      "price_incl": 311.3,
+      "stock": null,
+      "tiers": [],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U10",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LV4T125PWR/4806529",
+      "price_incl": 173.8,
+      "stock": null,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 158
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 113.1
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 101.88
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 89.55
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 83.688
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 80.144
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 79.863
+        },
+        {
+          "qty": 2000,
+          "unit_ex_tax": 74.832
+        },
+        {
+          "qty": 4000,
+          "unit_ex_tax": 72.857
+        },
+        {
+          "qty": 6000,
+          "unit_ex_tax": 71.86833
+        },
+        {
+          "qty": 10000,
+          "unit_ex_tax": 70.7727
+        },
+        {
+          "qty": 14000,
+          "unit_ex_tax": 70.1325
+        },
+        {
+          "qty": 20000,
+          "unit_ex_tax": 69.51645
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U13",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC1G07DBVR/377455",
+      "price_incl": 27.5,
+      "stock": null,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 25
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 16.3
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 14.32
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 12.12
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 11.064
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 10.428
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 9.903
+        },
+        {
+          "qty": 3000,
+          "unit_ex_tax": 9.25433
+        },
+        {
+          "qty": 6000,
+          "unit_ex_tax": 8.93683
+        },
+        {
+          "qty": 9000,
+          "unit_ex_tax": 8.77756
+        },
+        {
+          "qty": 15000,
+          "unit_ex_tax": 8.60147
+        },
+        {
+          "qty": 21000,
+          "unit_ex_tax": 8.49848
+        },
+        {
+          "qty": 30000,
+          "unit_ex_tax": 8.39947
+        }
+      ],
+      "checked": "2026-11-19"
+    },
+    {
+      "id": "U17",
+      "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC1G32DBVR/381323",
+      "price_incl": 25.3,
+      "stock": 16941,
+      "tiers": [
+        {
+          "qty": 1,
+          "unit_ex_tax": 23
+        },
+        {
+          "qty": 10,
+          "unit_ex_tax": 15.5
+        },
+        {
+          "qty": 25,
+          "unit_ex_tax": 13.52
+        },
+        {
+          "qty": 100,
+          "unit_ex_tax": 11.44
+        },
+        {
+          "qty": 250,
+          "unit_ex_tax": 10.436
+        },
+        {
+          "qty": 500,
+          "unit_ex_tax": 9.838
+        },
+        {
+          "qty": 1000,
+          "unit_ex_tax": 9.343
+        },
+        {
+          "qty": 3000,
+          "unit_ex_tax": 8.73033
+        },
+        {
+          "qty": 6000,
+          "unit_ex_tax": 8.431
+        },
+        {
+          "qty": 9000,
+          "unit_ex_tax": 8.28089
+        },
+        {
+          "qty": 15000,
+          "unit_ex_tax": 8.1146
+        },
+        {
+          "qty": 21000,
+          "unit_ex_tax": 8.01748
+        },
+        {
+          "qty": 30000,
+          "unit_ex_tax": 7.92403
+        }
+      ],
+      "checked": "2026-11-19"
+    }
+  ]
+}

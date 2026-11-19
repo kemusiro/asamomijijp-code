@@ -1,0 +1,97 @@
+{
+  "checked": "2026-11-20",
+  "scope": "Only three previously unavailable rows; other 83 rows preserved from I",
+  "stock_interpretation": "Public indexed observations, not reserved stock. Japan direct product access failed. Different cache ages/currencies are recorded separately.",
+  "fx_budget_jpy": {
+    "JPY": 1,
+    "USD": 160,
+    "EUR": 200
+  },
+  "jct_rate": 0.1,
+  "selected": [
+    {
+      "id": "U01",
+      "mpn": "SI5351A-B-GTR",
+      "stock": 0,
+      "url": "https://www.mouser.jp/en/ProductDetail/Skyworks-Solutions-Inc/SI5351A-B-GTR?qs=p9T7GgSe1IEYql%252BRMAlVcw%3D%3D",
+      "stock_url": "https://www.mouser.com/en/c/semiconductors/clock-timer-ics/clock-generators-support-products/?package+%2F+case=MSOP-10&series=Si5351",
+      "currency": "JPY",
+      "tiers": [
+        [
+          1,
+          375.4
+        ]
+      ],
+      "minimum": 1,
+      "multiple": 1,
+      "method": "indexed_product_price_and_newer_listing_stock",
+      "crawled": "price: one month; stock: three days",
+      "price_checked": "2026-11-19",
+      "decision": "retain_original_pending_stock",
+      "availability": "在庫0・GTも0。納期未確定",
+      "evidence": "11/20再調査: GTR/GT在庫0。375.4円税別はIから継承。",
+      "note": "未解決。10-MSOPブランクGT/GTRのカットテープ待ち。入荷予告は確約ではない。工場設定品02075は27MHz/アドレス0x6F、04486は0x62のため無条件代替せず。"
+    },
+    {
+      "id": "U10",
+      "mpn": "SN74LV4T125QPWRQ1",
+      "stock": 18,
+      "url": "https://www.mouser.jp/ja/c/semiconductors/logic-ics/buffers-line-drivers/?m=Texas+Instruments&series=SN74LV4T125",
+      "currency": "JPY",
+      "tiers": [
+        [
+          1,
+          282.4
+        ],
+        [
+          10,
+          207.6
+        ],
+        [
+          25,
+          189.4
+        ]
+      ],
+      "minimum": 1,
+      "multiple": 1,
+      "method": "indexed_japan_series_listing",
+      "crawled": "two days ago",
+      "price_checked": "2026-11-20",
+      "decision": "select_pin_compatible_automotive_variant",
+      "availability": "掲載在庫18・必要3。カート再確認",
+      "evidence": "11/20検索収録: 18個、282.4円税別/個、最少1・倍数1。",
+      "note": "Q1版を3個カットテープで選択。PW14同端子/同パッド、MCU_3V3・5.5V入力・Ioff対応。伝搬遅延は同一ではなく実機確認未実施。2000個リール・MouseReel不要。"
+    },
+    {
+      "id": "U17",
+      "mpn": "SN74LVC1G32DBVRE4",
+      "stock": 1656,
+      "url": "https://www.mouser.jp/ja/c/semiconductors/logic-ics/logic-gates/?m=Texas+Instruments&series=SN74LVC1G32",
+      "stock_url": "https://www.mouser.com/en/c/semiconductors/integrated-circuits-ics/logic-ics/?number+of+output+lines=1+Output&package+%2F+case=SOT-23-5&supply+voltage+-+max=5.5+V",
+      "currency": "JPY",
+      "tiers": [
+        [
+          1,
+          112.9
+        ],
+        [
+          10,
+          80.4
+        ],
+        [
+          25,
+          72.1
+        ]
+      ],
+      "minimum": 1,
+      "multiple": 1,
+      "method": "indexed_japan_price_and_newer_global_stock",
+      "crawled": "JPY price: four months; USD stock: one week",
+      "price_checked": "2026-11-20",
+      "decision": "select_same_device_lead_finish_order_option",
+      "availability": "掲載在庫1656・必要1。カート再確認",
+      "evidence": "11/20再調査: 在庫1656は1週前収録。112.9円税別は古い円価格。",
+      "note": "DBVRE4を1個カットテープ。TI現行DBV5端子共通、NiPdAu注文区分。円価格収録4か月前で確定価格ではない。新しい米国掲載USD0.79なら160円換算で139.04円税込（総額+14.85円）。3000個リール・MouseReel不要。"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+Reference,Value,Footprint,Sheet,Datasheet,Note
+C1,1uF,Capacitor_SMD:C_0805_2012Metric,01-host-power,,
+C2,100nF,Capacitor_SMD:C_0805_2012Metric,02-eeprom,,
+C3,10uF,Capacitor_SMD:C_0805_2012Metric,01-host-power,,
+C4,100nF,Capacitor_SMD:C_0805_2012Metric,01-host-power,,
+U1,24FC256-I/P,Package_DIP:DIP-8_W7.62mm,02-eeprom,https://akizukidenshi.com/catalog/g/g103568/,"32KiB EEPROM,0x50;64byte pages; ACK polling <=10ms; explicit SAVE only; no extra pulls"
+RV1,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,03-pots,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+R1,1k,Resistor_SMD:R_0805_2012Metric,03-pots,,
+C5,100nF,Capacitor_SMD:C_0805_2012Metric,03-pots,,
+RV2,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,03-pots,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+R2,1k,Resistor_SMD:R_0805_2012Metric,03-pots,,
+C6,100nF,Capacitor_SMD:C_0805_2012Metric,03-pots,,
+RV3,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,03-pots,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+R3,1k,Resistor_SMD:R_0805_2012Metric,03-pots,,
+C7,100nF,Capacitor_SMD:C_0805_2012Metric,03-pots,,
+RV4,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,03-pots,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+R4,1k,Resistor_SMD:R_0805_2012Metric,03-pots,,
+C8,100nF,Capacitor_SMD:C_0805_2012Metric,03-pots,,
+ENC1,ALPHA RE111F-4S1-152S4-15P-A,P2LC:RE111F_4S1_ReviewB,04-encoder,https://akizukidenshi.com/catalog/g/g114936/,30detents/15pulses;SMD;use supplied black shaft; ABC mapping/locator fit provisional; no 6mm knob
+R5,2.7k,Resistor_SMD:R_0805_2012Metric,04-encoder,,
+R6,1k,Resistor_SMD:R_0805_2012Metric,04-encoder,,
+C9,10nF,Capacitor_SMD:C_0805_2012Metric,04-encoder,,
+R7,2.7k,Resistor_SMD:R_0805_2012Metric,04-encoder,,
+R8,1k,Resistor_SMD:R_0805_2012Metric,04-encoder,,
+C10,10nF,Capacitor_SMD:C_0805_2012Metric,04-encoder,,
+R9,4.7k,Resistor_SMD:R_0805_2012Metric,04-encoder,,
+SW1,OP1 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R10,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+SW2,OP2 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R11,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+SW3,OP3 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R12,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+SW4,OP4 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R13,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+SW5,NOTE TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R14,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+SW6,STOP TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,05-buttons,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+R15,10k,Resistor_SMD:R_0805_2012Metric,05-buttons,,
+R16,10k,Resistor_SMD:R_0805_2012Metric,06-lcd,,
+R17,10k,Resistor_SMD:R_0805_2012Metric,06-lcd,,
+R18,33,Resistor_SMD:R_0805_2012Metric,06-lcd,,
+R19,33,Resistor_SMD:R_0805_2012Metric,06-lcd,,
+J5,M154-240240-RGB 20261020 cable,Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical,06-lcd,https://akizukidenshi.com/catalog/g/g131019/,M154 module via8pin harness;3.3Vlocal. Pin1GND2VCC3SCK4MOSI5RST6DC7CS8BLK;unchanged20261020 order.
+UPICO,Raspberry Pi Pico SC0915 RP2040,Module:RaspberryPi_Pico_Common_THT,01-panel-mcu,https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf,"VSYS from3V3 Grove throughDPOWER. GPIO29VSYS/25LED/24VBUS/23SMPS internal,not externalADC. USB service only withGrove unplugged. Two20pin2.54mm sockets."
+JUPLINK,110990037 Grove I2C 3V3 ONLY,P2LC:Grove_110990037_RA,01-panel-mcu,https://akizukidenshi.com/catalog/g/g112634/,150mm cable116938;no5V;power off for insertion;pin1SCL/2SDA/3VCC/4GND. Footprint deferred: RA drawing lacks unambiguous drill/top-view numbering;verify actual2mm part before PCB.
+DPOWER,1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,01-panel-mcu,https://www.vishay.com/docs/88525/1n5817.pdf,"CommonSchottky reverseblock;USBserviceONLYGroveunplugged,avoidSDAbackfeed."
+CPIN,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,01-panel-mcu,,
+RPANELRUN,10k,Resistor_SMD:R_0805_2012Metric,01-panel-mcu,,
+REEPSDA,4.7k,Resistor_SMD:R_0805_2012Metric,02-eeprom,,
+REEPSCL,4.7k,Resistor_SMD:R_0805_2012Metric,02-eeprom,,
+CMUX,100nF,Capacitor_SMD:C_0805_2012Metric,03-mux,,
+UMUX,CD74HC4051E,Package_DIP:DIP-16_W7.62mm,03-mux,https://www.ti.com/lit/ds/symlink/cd74hc4051.pdf,HC2..6V;notHCT. CH0..3=knob1..4;C/INH/VEE=GND. 250ussettle then discardfirstADCsample;no audio goes throughthismux.

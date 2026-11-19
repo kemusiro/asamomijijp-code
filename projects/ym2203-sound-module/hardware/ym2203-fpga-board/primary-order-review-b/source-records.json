@@ -1,0 +1,24 @@
+{
+  "checked": "2026-11-19",
+  "sources": [
+    {
+      "url": "https://www.farnell.com/datasheets/4127428.pdf",
+      "document": "Murata Product Search Data Sheet, 4 pages, 2024-01-10, typical data",
+      "sha256": "d110982b7921d9f755fe858e28fb6a0a7298e104d7d84b34d80c8a24a20d0506",
+      "visual_review": "specifications page 2; DC and AC curves page 3",
+      "limitations": "Not the latest approval sheet. Murata PIM link returned 403. Approximate chart readings are not guaranteed limits."
+    },
+    {
+      "url": "https://www.ti.com/lit/ds/symlink/pcm1863.pdf",
+      "document": "TI SLAS831D, 2018-03, 7.3 / 9.3.1; AVDD/2 bias and 20k typical input"
+    },
+    {
+      "url": "https://www.digikey.jp/ja/products/detail/murata-electronics/GRM21BZ71C106KE15L/16602141",
+      "observed": "CT 1-piece tier JPY56 ex tax /61.60 displayed incl tax, stock0, expected2026-11-24; final cart not obtained"
+    },
+    {
+      "url": "https://www.lcsc.com/product-detail/C162430.html",
+      "observed": "Exact MPN alternate listing; stock, price and minimum quantity not confirmed"
+    }
+  ]
+}
