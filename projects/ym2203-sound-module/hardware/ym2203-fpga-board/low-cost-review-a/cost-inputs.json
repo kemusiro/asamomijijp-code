@@ -1,0 +1,76 @@
+{
+  "baseline": "../procurement-review-d/budget.json",
+  "baseline_goods_jpy": 43317,
+  "baseline_subtotal_jpy": 85753,
+  "delta": [
+    {
+      "name": "MCU用単端子ソケット128本を廃止",
+      "remove": [
+        "J02"
+      ],
+      "add_jpy": 0,
+      "basis": "castellated modules direct solder"
+    },
+    {
+      "name": "MCU2枚をPicossci2Bへ",
+      "remove": [
+        "M01",
+        "M02"
+      ],
+      "add_jpy": 4620,
+      "basis": "2310JPY x2 incltax; same48GPIO RP2350B; reset/LED conditions"
+    },
+    {
+      "name": "G40を一般連結ソケットへ",
+      "remove": [
+        "J04",
+        "J05"
+      ],
+      "add_jpy": 130,
+      "basis": "80+50JPY; H06key budget retained pending fit"
+    },
+    {
+      "name": "UNO廃止・有線編集パネルへ",
+      "remove": [
+        "J06",
+        "J07",
+        "J08",
+        "J09"
+      ],
+      "add_jpy": 550,
+      "basis": "2x50JPY headers +450JPY IDC cable"
+    },
+    {
+      "name": "7箇所の精密シムセットを通常支持材へ",
+      "remove": [
+        "H05A",
+        "H05B",
+        "H05C"
+      ],
+      "add_jpy": 600,
+      "basis": "allowance NOT catalog price; existingH01/H03 supports retained; actual spacer/washer fit pending"
+    },
+    {
+      "name": "LCD支柱MOQ50個を小口調達へ",
+      "remove": [
+        "H02"
+      ],
+      "add_jpy": 300,
+      "basis": "allowance NOT catalog price; four insulating/M2 supports, existing screwsH04 retained"
+    },
+    {
+      "name": "MCU/UNO用オス端子減数",
+      "remove": [],
+      "add_jpy": -140,
+      "basis": "J03 40pin x6(210JPY) to x2(70JPY); used31+spare40 requires80contacts"
+    }
+  ],
+  "retained_price_policy": "other D prices/packs remain, including ADC/DAC/Si5351A/EEPROM/LCD/all controls/5V translators; no hidden deletion of editing functionality",
+  "parts_freight_budget_jpy": 7000,
+  "existing_mcu_comparison_freight_jpy": 5000,
+  "import_and_payment_allowance_jpy": 3000,
+  "redesign_small_parts_allowance_jpy": 3000,
+  "round_budget_to_jpy": 5000,
+  "unit_scope": "5bare PCB each/onefitted set/YMreused/noPCBA/tools/case",
+  "constraints": "mixed catalog and explicit allowances; not a new complete order BOM. No savings from precision resistors/ADC downgrades assumed"
+}

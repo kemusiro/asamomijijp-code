@@ -1,0 +1,86 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-20T00:46:12",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.5",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0",
+            "violations": []
+        },
+        {
+            "path": "/01-link-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/31bfddcc-4134-5e9c-965b-90ebc9c43bbe",
+            "violations": []
+        },
+        {
+            "path": "/01-link-2/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/c461b23b-1c12-5535-8bee-619d244712ca",
+            "violations": []
+        },
+        {
+            "path": "/02-core-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/0570026d-d176-58cd-a627-5549f70f2963",
+            "violations": []
+        },
+        {
+            "path": "/02-level-bus-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/1753c3a4-4f7a-510c-8c41-7acf83c66812",
+            "violations": []
+        },
+        {
+            "path": "/02-level-bus-2/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/5922f5b5-8319-565a-9eea-cdb7c4142fde",
+            "violations": []
+        },
+        {
+            "path": "/02-source-mcu-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/eab5db26-571e-5d7e-9319-68e915c01d52",
+            "violations": []
+        },
+        {
+            "path": "/03-reset-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/d9e60d3a-a98f-538c-993d-4701edcddcb0",
+            "violations": []
+        },
+        {
+            "path": "/04-ym-fm-clock-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/a2e4441e-1ad3-5300-bee6-b3ac09766225",
+            "violations": []
+        },
+        {
+            "path": "/05-ssg-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/e28cee01-4a7f-5902-8925-c7b63f6006f4",
+            "violations": []
+        },
+        {
+            "path": "/06-fm-dac-1/",
+            "uuid_path": "/4b0fbda7-20c1-5bc9-99ab-9f6e14d7b9a0/4753712e-3fed-55ab-bd0d-369fc262717c",
+            "violations": []
+        }
+    ],
+    "source": "p2-ym2203-lc-k.kicad_sch"
+}

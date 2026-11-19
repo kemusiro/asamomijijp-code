@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "P2LC") (type "KiCad") (uri "${KIPRJMOD}/../P2LC.pretty") (options "") (descr "MIT encoder geometry from editorB; LC-C custom landings pending")))

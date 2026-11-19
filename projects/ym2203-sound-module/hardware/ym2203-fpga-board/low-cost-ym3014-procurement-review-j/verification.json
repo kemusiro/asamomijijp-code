@@ -1,0 +1,15 @@
+{
+  "date": "2026-11-20",
+  "rows": 86,
+  "preserved_rows": 83,
+  "refs_reconciled": 277,
+  "current_pcb_stock_flags": [
+    "U01"
+  ],
+  "current_pcb_total_jpy": "27216.46",
+  "next_pcb_module_option_jpy": "27453.52",
+  "next_pcb_option_requires_cad_change": true,
+  "design_or_firmware_changed": false,
+  "manufacturer_datasheet_checks": "static pin/package/power checks; no hardware measurement",
+  "source_limits": "Mouser indexed observations; direct Japanese product fetch unavailable; no reserved stock; other40 overseas records inherited"
+}

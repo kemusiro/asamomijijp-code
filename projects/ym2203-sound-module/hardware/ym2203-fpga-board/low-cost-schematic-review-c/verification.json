@@ -1,0 +1,42 @@
+{
+  "date": "2026-11-19",
+  "result": "PASS",
+  "scope": "native ERC + static circuit/quantity contracts only",
+  "boards": {
+    "base": {
+      "components": 143,
+      "pages": 15,
+      "erc_violations": 0,
+      "nets": 114
+    },
+    "module": {
+      "components": 73,
+      "pages": 10,
+      "erc_violations": 0,
+      "nets": 73
+    },
+    "panel": {
+      "components": 51,
+      "pages": 9,
+      "erc_violations": 0,
+      "nets": 38
+    }
+  },
+  "base_gpio": 27,
+  "panel_gpio": 21,
+  "source_gpio": 28,
+  "g40_contacts": 40,
+  "preserved_files": 404,
+  "installed_refs": 267,
+  "purchase_rows": 78,
+  "budget_jpy": 29751,
+  "deferred_footprints": [
+    "base:UBASE",
+    "base:JUSB",
+    "base:JEDIT",
+    "module:USOURCE",
+    "panel:JUPLINK"
+  ],
+  "pcb_or_firmware_implemented": false,
+  "hardware_accepted": false
+}

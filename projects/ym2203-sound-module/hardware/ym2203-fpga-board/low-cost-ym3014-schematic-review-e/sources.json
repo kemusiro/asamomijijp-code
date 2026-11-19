@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-19",
+  "sources": [
+    {
+      "id": "YAMAHA-DAC",
+      "url": "https://bitsavers.trailing-edge.com/components/yamaha/YM3014B_199403.pdf",
+      "origin": "Yamaha LSI-2130143 1994-03 primary scan",
+      "pages_1based": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "checked": [
+        "16SOP pinout",
+        "RB capacitor and two voltage followers",
+        "5V/clock conditions",
+        "5.3x10.2/7.8span/1.27pitch drawing"
+      ],
+      "redistributed_pdf": false,
+      "sha256_read_copy": "9817e2ee9b02e7dddeb085abbae08408673ca4f50e048bad44000aeafcaca76b"
+    },
+    {
+      "id": "YAMAHA-OPN",
+      "url": "https://bitsavers.trailing-edge.com/components/yamaha/YM2203_198911.pdf",
+      "origin": "Yamaha primary scan",
+      "checked": [
+        "SD23/SH22/CLK39/PHI_M38",
+        "SSG source follower",
+        "max master4.2MHz with prescaler"
+      ],
+      "redistributed_pdf": false
+    },
+    {
+      "id": "MICROCHIP",
+      "url": "https://www.microchip.com/content/dam/mchp/documents/MSLD/ProductDocuments/DataSheets/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf",
+      "origin": "Microchip DS20001733L",
+      "checked": [
+        "MCP6002 PDIP8 pins",
+        "RRIO 1.8..6V",
+        "unity follower",
+        "output isolation/capacitive load",
+        "typ slew and common-mode crossover"
+      ]
+    },
+    {
+      "id": "AKIZUKI-AMP",
+      "url": "https://akizukidenshi.com/catalog/g/g130011/",
+      "mpn": "MCP6002-E/P",
+      "jpy_incl": 80,
+      "pack": 1,
+      "stock_observed": 290
+    },
+    {
+      "id": "AKIZUKI-RB-CAP",
+      "url": "https://akizukidenshi.com/catalog/g/g117897/",
+      "mpn": "50PX10MEFC5X11",
+      "jpy_incl": 10,
+      "pack": 1,
+      "stock_observed": 132616,
+      "observed_via": "Akizuki product listing/link on130011;cart recheck"
+    },
+    {
+      "id": "TI-ADC",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm1863.pdf",
+      "origin": "TI SLAS831D",
+      "checked": [
+        "2channel ADC",
+        "single-ended2.1Vrms",
+        "20kohm typical analog input",
+        "PGA and clock interface"
+      ]
+    },
+    {
+      "id": "TI-DAC",
+      "url": "https://www.ti.com/lit/ds/symlink/pcm5102a.pdf",
+      "origin": "TI manufacturer datasheet",
+      "checked": [
+        "I2S final stereo DAC",
+        "XSMT final mute retained"
+      ]
+    }
+  ],
+  "other_purchase_prices": "saved C/D records and explicit per-family allowances;not everyMPN refreshed;purchase-plan evidence distinguishes",
+  "datasheet_images_or_pdfs_vendored": false
+}

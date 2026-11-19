@@ -1,0 +1,716 @@
+{
+  "UMUX": {
+    "origin_mm": [
+      40.0,
+      12.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      38.915,
+      10.455,
+      48.695,
+      31.325
+    ]
+  },
+  "C3": {
+    "origin_mm": [
+      55.5,
+      11.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      54.495,
+      9.275,
+      56.505,
+      12.725
+    ]
+  },
+  "CMUX": {
+    "origin_mm": [
+      41.5,
+      9.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      39.775,
+      7.995,
+      43.225,
+      10.005
+    ]
+  },
+  "R9": {
+    "origin_mm": [
+      55.0,
+      31.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      53.295,
+      30.025,
+      56.705,
+      31.975
+    ]
+  },
+  "R10": {
+    "origin_mm": [
+      16.0,
+      42.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      15.025,
+      40.295,
+      16.975,
+      43.705
+    ]
+  },
+  "R12": {
+    "origin_mm": [
+      36.0,
+      39.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      34.295,
+      38.025,
+      37.705,
+      39.975
+    ]
+  },
+  "SW3": {
+    "origin_mm": [
+      56.75,
+      40.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      55.225,
+      39.225,
+      64.775,
+      46.775
+    ]
+  },
+  "JUPLINK": {
+    "origin_mm": [
+      61.0,
+      7.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      55.575,
+      0.075,
+      66.425,
+      8.925
+    ]
+  },
+  "RV3": {
+    "origin_mm": [
+      57.5,
+      71.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      53.325,
+      58.225,
+      66.675,
+      72.675
+    ]
+  },
+  "RV4": {
+    "origin_mm": [
+      81.5,
+      71.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      77.325,
+      58.225,
+      90.675,
+      72.675
+    ]
+  },
+  "R7": {
+    "origin_mm": [
+      58.5,
+      25.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      57.525,
+      23.795,
+      59.475,
+      27.205
+    ]
+  },
+  "R15": {
+    "origin_mm": [
+      67.0,
+      44.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      65.295,
+      43.025,
+      68.705,
+      44.975
+    ]
+  },
+  "R19": {
+    "origin_mm": [
+      36.5,
+      11.5
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      34.795,
+      10.525,
+      38.205,
+      12.475
+    ]
+  },
+  "C1": {
+    "origin_mm": [
+      12.0,
+      16.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      10.995,
+      14.275,
+      13.005,
+      17.725
+    ]
+  },
+  "R18": {
+    "origin_mm": [
+      35.0,
+      15.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      34.025,
+      13.295,
+      35.975,
+      16.705
+    ]
+  },
+  "R4": {
+    "origin_mm": [
+      66.5,
+      47.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      65.525,
+      45.295,
+      67.475,
+      48.705
+    ]
+  },
+  "R6": {
+    "origin_mm": [
+      50.0,
+      30.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      49.025,
+      28.795,
+      50.975,
+      32.205
+    ]
+  },
+  "SW2": {
+    "origin_mm": [
+      39.75,
+      40.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      38.225,
+      39.225,
+      47.775,
+      46.775
+    ]
+  },
+  "R17": {
+    "origin_mm": [
+      41.5,
+      33.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      39.795,
+      32.025,
+      43.205,
+      33.975
+    ]
+  },
+  "SW1": {
+    "origin_mm": [
+      3.75,
+      40.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      2.225,
+      39.225,
+      11.775,
+      46.775
+    ]
+  },
+  "SW5": {
+    "origin_mm": [
+      86.75,
+      32.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      85.225,
+      31.225,
+      94.775,
+      38.775
+    ]
+  },
+  "U1": {
+    "origin_mm": [
+      83.0,
+      8.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      81.915,
+      6.455,
+      91.695,
+      17.165
+    ]
+  },
+  "R11": {
+    "origin_mm": [
+      36.5,
+      42.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      35.525,
+      40.795,
+      37.475,
+      44.205
+    ]
+  },
+  "R1": {
+    "origin_mm": [
+      30.0,
+      45.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      29.025,
+      43.795,
+      30.975,
+      47.205
+    ]
+  },
+  "RPANELRUN": {
+    "origin_mm": [
+      12.5,
+      31.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      11.525,
+      29.795,
+      13.475,
+      33.205
+    ]
+  },
+  "RV2": {
+    "origin_mm": [
+      33.5,
+      71.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      29.325,
+      58.225,
+      42.675,
+      72.675
+    ]
+  },
+  "C5": {
+    "origin_mm": [
+      55.5,
+      19.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      54.495,
+      17.775,
+      56.505,
+      21.225
+    ]
+  },
+  "R16": {
+    "origin_mm": [
+      36.5,
+      18.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      34.795,
+      17.025,
+      38.205,
+      18.975
+    ]
+  },
+  "C7": {
+    "origin_mm": [
+      37.5,
+      14.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      36.495,
+      12.775,
+      38.505,
+      16.225
+    ]
+  },
+  "CPIN": {
+    "origin_mm": [
+      12.0,
+      8.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      10.995,
+      6.775,
+      13.005,
+      10.225
+    ]
+  },
+  "J5": {
+    "origin_mm": [
+      52.0,
+      6.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      50.205,
+      4.205,
+      53.795,
+      25.575
+    ]
+  },
+  "C2": {
+    "origin_mm": [
+      93.0,
+      9.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      91.995,
+      7.275,
+      94.005,
+      10.725
+    ]
+  },
+  "SW6": {
+    "origin_mm": [
+      88.75,
+      40.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      87.225,
+      39.225,
+      96.775,
+      46.775
+    ]
+  },
+  "C4": {
+    "origin_mm": [
+      52.0,
+      2.5
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      50.275,
+      1.495,
+      53.725,
+      3.505
+    ]
+  },
+  "REEPSCL": {
+    "origin_mm": [
+      61.5,
+      13.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      59.795,
+      12.025,
+      63.205,
+      13.975
+    ]
+  },
+  "R2": {
+    "origin_mm": [
+      42.0,
+      48.5
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      40.295,
+      47.525,
+      43.705,
+      49.475
+    ]
+  },
+  "C8": {
+    "origin_mm": [
+      51.0,
+      27.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      49.275,
+      25.995,
+      52.725,
+      28.005
+    ]
+  },
+  "DPOWER": {
+    "origin_mm": [
+      36.0,
+      31.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      34.375,
+      19.465,
+      37.625,
+      32.375
+    ]
+  },
+  "R8": {
+    "origin_mm": [
+      50.0,
+      34.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      49.025,
+      32.795,
+      50.975,
+      36.205
+    ]
+  },
+  "ENC1": {
+    "origin_mm": [
+      70.0,
+      23.0
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      60.14,
+      14.39,
+      79.86,
+      31.61
+    ]
+  },
+  "R3": {
+    "origin_mm": [
+      53.5,
+      43.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      52.525,
+      41.295,
+      54.475,
+      44.705
+    ]
+  },
+  "C10": {
+    "origin_mm": [
+      30.0,
+      39.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      28.995,
+      37.275,
+      31.005,
+      40.725
+    ]
+  },
+  "R5": {
+    "origin_mm": [
+      58.5,
+      20.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      57.525,
+      18.795,
+      59.475,
+      22.205
+    ]
+  },
+  "R14": {
+    "origin_mm": [
+      66.5,
+      40.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      65.525,
+      38.295,
+      67.475,
+      41.705
+    ]
+  },
+  "C9": {
+    "origin_mm": [
+      30.0,
+      34.0
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      28.995,
+      32.275,
+      31.005,
+      35.725
+    ]
+  },
+  "REEPSDA": {
+    "origin_mm": [
+      58.5,
+      14.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      57.525,
+      12.795,
+      59.475,
+      16.205
+    ]
+  },
+  "SW4": {
+    "origin_mm": [
+      73.75,
+      40.75
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      72.225,
+      39.225,
+      81.775,
+      46.775
+    ]
+  },
+  "RV1": {
+    "origin_mm": [
+      9.5,
+      71.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      5.325,
+      58.225,
+      18.675,
+      72.675
+    ]
+  },
+  "C6": {
+    "origin_mm": [
+      55.5,
+      15.5
+    ],
+    "rotation_deg": 90.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      54.495,
+      13.775,
+      56.505,
+      17.225
+    ]
+  },
+  "R13": {
+    "origin_mm": [
+      62.0,
+      48.5
+    ],
+    "rotation_deg": 0.0,
+    "layer": "F.Cu",
+    "bounds_mm": [
+      60.295,
+      47.525,
+      63.705,
+      49.475
+    ]
+  },
+  "UPICO": {
+    "origin_mm": [
+      32.0,
+      6.0
+    ],
+    "rotation_deg": 180.0,
+    "layer": "B.Cu",
+    "bounds_mm": [
+      11.545,
+      -17.07,
+      34.675,
+      56.705
+    ]
+  }
+}

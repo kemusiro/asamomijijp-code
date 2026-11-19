@@ -1,0 +1,43 @@
+{
+  "checked": "2026-11-20",
+  "scope": "Fresh PCB manual quote, Japan1kg shipping and three part-vendor freight policies. Part unit prices/stock otherwise inherited from K/J/I; no blanket85-row refresh. Clock and two SS module prices match K; exact product shipping class200 confirmed.",
+  "sources": {
+    "pcb": "https://cart.jlcpcb.com/quote",
+    "pcb_shipping": "https://jlcpcb.com/shipping",
+    "akizuki_shipping": "https://akizukidenshi.com/catalog/pages/buy.aspx",
+    "switch_science_shipping": "https://www.switch-science.com/policies/shipping-policy",
+    "mouser_shipping_and_jct": "https://www.mouser.jp/ja/cs/localsites/",
+    "clock_module": "https://akizukidenshi.com/catalog/g/g110679"
+  },
+  "observations": {
+    "akizuki_clock_module_jpy_incl": 650,
+    "akizuki_clock_stock": "available;purchase limit10sets,not reserved",
+    "akizuki_freight_one_sagawa_parcel_jpy": 550,
+    "switch_science_freight_jpy": 0,
+    "switch_science_condition": "all chosen products shipping class200,goods4070JPY>=3000;class650 or expedited courier would cost650",
+    "mouser_freight_jpy": 0,
+    "mouser_condition": "one ordinary JPY order;budget goods6730.80JPYexcl>6000;DDP with consumption tax added at checkout",
+    "pcb_methods_used": "separate lots,one combined Japan1kg shipment assumed;not a postcode-specific checkout",
+    "unit_prices_not_rechecked_count": 82,
+    "foreign_currency_estimate_rows": 18,
+    "switch_science_products": [
+      {
+        "sku": "9795",
+        "price_jpy_incl": 1760,
+        "shipping_class": 200,
+        "stock_observed": 21,
+        "url": "https://www.switch-science.com/products/9795",
+        "crawl": "two weeks ago"
+      },
+      {
+        "sku": "10507",
+        "price_jpy_incl": 2310,
+        "shipping_class": 200,
+        "stock_observed": 42,
+        "url": "https://www.switch-science.com/products/10507",
+        "crawl": "four days ago"
+      }
+    ]
+  },
+  "order_placed": false
+}

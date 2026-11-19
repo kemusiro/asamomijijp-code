@@ -1,0 +1,10 @@
+{
+  "rows": 86,
+  "changed_rows": 14,
+  "untouched_rows_preserved": 72,
+  "all_purchase_formulas_preserved": true,
+  "formula_totals_match": true,
+  "nonnegative_spares": true,
+  "total_jpy": 30048.860000000008,
+  "formula_errors": 0
+}

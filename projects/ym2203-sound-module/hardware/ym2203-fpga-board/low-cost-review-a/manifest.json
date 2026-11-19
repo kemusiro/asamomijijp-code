@@ -1,0 +1,19 @@
+{
+  "files": {
+    "ASSEMBLY.md": "84151a5cad5d591ba752e7f2550a7157c2016c248ca0486f82f2a9a5ba89f9f6",
+    "COMPATIBILITY.md": "e1115d5e6d99549e5ca94bca3de7735e74c66fc2211d0e35cc9b75a2a1c093e1",
+    "COST.md": "ea7cce914430757390d7eb015aa09542de590bee69514c07b2ce4394eee811ed",
+    "PIN-COMPATIBILITY.md": "f44766cee1573aa1d76d9f9b7f7f411d243e202edf4573f5e647dd4c3ca7d2af",
+    "README.md": "9a48a76b726f108485d50a55f6081f951e8b9e1e86aa34c2029112842aac4b88",
+    "cost-inputs.json": "cb6824d7857d967ddad214923af4dcc82bc9cd371179aedd98058cd8d3886ec7",
+    "cost-report.json": "357fdcc170f5e9ee31bd92adf1f7fcc65bd40bf059f66a1c2de1c89d40795385",
+    "layout-study.svg": "c9c85d035ecb3f8360cebdad6452b5d32c66b8eef1934893e1037d997c6e9bc2",
+    "panel-connector.json": "2a623fb9a8211d30641191d1ee8b7a09eaddc19acc3ae1f7292391181a2f2037",
+    "pcb-price-observations.json": "a7679da7302174a12e1a136cba943a629d1795316636aedfd32b63b34c2c5d55",
+    "plan.json": "87cd5583dfc5e77a44ab7ea2779972c29ff3f0ce76455e6623fcefeb263f1204",
+    "source-lock.json": "54addc6f5609893c2f96ba4c651816368b7eb1e0479537222e31f2a18de69b05",
+    "tools/build.py": "a3048df1ff8ee85c3519526df53234181d604cd73744a3d44c8ec271a69022ba",
+    "tools/verify.py": "76ae654eb41546826996dc192eceb2137c8ccde64a821c40cd5f56e03f907d3f",
+    "verification.json": "fa1149f23b1b7bef75728fbc0e5998b852cd3077944dd38f27f951564906ed4d"
+  }
+}

@@ -2,6 +2,7 @@
 
 2026-11-19。**ベースL・4層＋音源K・2層＋開口なしシールドB・2層を主案として採用する。**
 今回の発注準備入口は[購入資料review B：各5枚・部品1セット](primary-order-review-b/README.md)。
+追加の価格・販売単位調査は[調達確認review C](procurement-review-c/README.md)。L4/K2/B2の送料比較と未確定56行＋C14別調達先を記録した。
 3基板の製造用Gerber、購入用CSV/Excel、調達先別一覧、数量とSHAをまとめた。PCBは計15枚、実装3枚、予備12枚。
 P2実機受入・現物嵌合・部品確認事項は未完、PCB発注・部品購入・支払いは未実施。
 
@@ -18,6 +19,7 @@ G40・UNO・GPIO・HOST/USB-MIDI・停止仕様は維持する要件。新PCBで
 
 | 資料 | 内容 |
 | --- | --- |
+| [調達確認review C](procurement-review-c/README.md) | L4/K2/B2各5枚の送料込み参考比較、57行の購入先/販売条件、廃番・在庫0・残件の区別 |
 | [今回の発注準備review B](primary-order-review-b/README.md) | L4/K2/B2、各5枚・部品1セット。USB修正版・C14試作選定・90購入行・Excel・現物確認票 |
 | [旧主案注文一式](primary-order-5pcb-1set/README.md) | J4/K2/B2の保存記録。旧USBランドを含むため今回の発注に混在させない |
 | [製造・送料比較K](manufacturing-review-k/README.md) | 4種類のCAM・個別ZIP、主案4/2と比較2/2の各5枚・部品1セット見積 |
@@ -95,3 +97,55 @@ PGA2350内蔵300mA電源の設計予算を259.4mAとした。一般2列ソケッ
 47 GPIO、UNO接点座標、既存HOSTは変更しない。回路・DRCの結果はBの検査記録を参照。
 P2専用ファームウェア、実組立、電流・温度・USBインピーダンスの確認、製造リリースは未完。
 レビューAの回路図と検査記録は履歴として保存する。
+
+購入予算の最新追補は[review D：残る18行・代替候補・送料込み総額](procurement-review-d/README.md)。
+YM2203CはRev Cから流用、部品は1セット、基板は各5枚。B/CとCADを保存した別の購入候補計算であり、発注・実機受入は未実施。
+
+UNO形状を廃止し音色編集を残す[低コスト別案LC-A](low-cost-review-a/README.md)を追加した。
+Picossci直付け・一般連結ソケット・0.3mmビア・鉛フリーHASLの構成と条件付き予算を比較。現行L/K/Bとactive-planを保存した検討資料で、新CAD/firmware/実機受入ではない。
+
+3.3V I2C編集パネルと小型ベースMCUの[低コスト別案LC-B](low-cost-review-b/README.md)を追加した。
+Picossci 2 RP2350A＋Pico RP2040パネル＋Groveの端子候補・電源・停止処理・費用を比較。
+既存L/K/B・LC-A・HOST・firmwareを保存した未適用の構成検討であり、新CAD・実機受入ではない。
+
+LC-BのGPIOを採用した[接続済み回路図review C](low-cost-schematic-review-c/README.md)を追加した。
+base143・source73・panel51参照、3枚ともnative ERC0。汎用品・3店同梱へ見直し、各5枚/部品1セットで送料・予備枠込み約3万円を目標とする。
+旧L/K/BとLC-A/B、active-plan、Rev C firmware/HOSTは保存。新PCB/DRC/firmware/実機受入ではない。
+
+音声経路の最新方針は[LC audio review D：YM3014B-F＋共通ADC・I2S維持](low-cost-audio-review-d/README.md)。
+YM2203はFM/SSG分離アナログ、将来音源はI2S＋アナログ併用に対応する設計契約。
+約3万円・各5枚/部品1セットを目標に、source MCU・共通ADC・出力DACを維持する。
+回路図C・承認GPIO・HOST/firmwareは保存し、Dの回路化/ERC/実機受入は次工程。
+
+YM3014B-F採用の[接続済み回路図review E](low-cost-ym3014-schematic-review-e/README.md)を追加した。
+G40の37=アナログFM、39=アナログSSG、base ADC/I2S/DACと全GPIOを維持。
+新音源83参照、3基板native ERC0、全277参照/81購入行、各5枚/部品1セットの送料・予備枠込み概算29,936円。
+C/D・既存HOST/firmwareは保存。新PCB/DRC・firmware・実機受入は未完。
+
+review Eの回路を維持した[配線済みPCB review F](low-cost-ym3014-pcb-review-f/README.md)を追加した。ベース100×100mm・4層、音源100×80mm・2層、パネル100×76mm・2層。ネイティブERC/DRC、全277参照の端子・ネット、40接点の嵌合座標を検証。各5枚・部品1セットは送料込み29,936円の計画枠で、CAM確定見積とP2実機受入は未実施。
+
+review Fの[製造・購入資料 G](low-cost-ym3014-manufacturing-review-g/README.md)を追加した。3基板各5枚のGerber/Excellonと86行の購入表、送料・予備費込み約28,103円の計画。CAMの外形・銅層・全穴とFを照合し、ERC/DRC0、277参照を購入表と照合。元のFとHOST/firmwareは保存。最終カート・在庫確認・P2実機受入は未実施。ZIP/XLSXはGit管理外へローカル生成する。
+
+購入表の最新追補は[review H：在庫3行と価格11行の調達確認](low-cost-ym3014-procurement-review-h/README.md)。F/Gを保存し、277参照・86購入行を維持。1µFを同仕様のWürth品へ、LDOは同じTI型番をMouser調達へ変更し、秋月中心の各5枚/部品1セットで送料枠・予備費込み約30,050円。Mouser少額送料は未確定の2,500円枠、最終カート・現物確保・P2実機受入は未実施。
+
+購入表の最新追補は[review I：海外43行をMouserへ集約](low-cost-ym3014-procurement-review-i/README.md)。秋月・スイッチサイエンスを第1・第2優先に維持し、F/G/HのCAD・HOST/firmwareを保存。各5枚/部品1セット、送料・部品税・予備費込み概算26,684円。43行の掲載価格・販売単位・在庫を照合したが3行は在庫0、21行は外貨掲載から予算換算。日本円カート・欠品納期・最終配送額は未確定。
+
+購入資料の最新追補は[review J：欠品3行の代替と在庫優先の基板変更候補](low-cost-ym3014-procurement-review-j/README.md)。
+現Fの277参照・86行を維持し、ロジック2品を同パッドのQ1/E4品へ変更した購入候補は送料・税・予備費込み約27,217円。Si5351A GT/GTRは欠品のまま。
+追加方針により、秋月650円のSi5351Aモジュールを使う次期ベース基板変更を推奨し、水晶等の削減未控除で約27,454円を比較する。
+秋月・SS優先と海外Mouser集約を維持。Jは購入・接続の比較資料で、F/G/H/I・現CAD・HOST/firmwareを保存。新モジュール用の配置配線/ERC/DRC、最終カート・実機受入は未実施。
+
+LC案の最新CADは[秋月Si5351Aモジュール採用 review K](low-cost-ym3014-pcb-review-k/README.md)。
+F/G/H/I/Jを保存した別リビジョンで、U13を110679へ置換し旧Y1を削除。調達Jの同パッドQ1/E4ロジックも採用した。
+ベース100×100mm/4層・音源100×80mm/2層・パネル100×76mm/2層、G40全40接点・GPIO・既存HOST/USB-MIDI/停止処理の設計契約を維持。
+3枚ともERC/DRC/未接続/回路図差分0、全276参照を照合。各5枚・部品1セット、送料・税・予備費込み概算27,358.48円。
+クロックは25MHz/0x60を維持し、P2 firmwareではCL8pFの初期化が必要。モジュール6mm以下・基板間12mmの条件で高さを整理した。
+新Gerberと最終カート、P2 firmware移植、現物嵌合・電源/熱/波形・HOST/MIDI実機受入は未実施。
+
+review Kの[製造・購入資料 L](low-cost-ym3014-manufacturing-review-l/README.md)を追加した。
+3種各5枚のGerber/Excellon/ZIPと、部品1セットの85行購入表・購入先別CSV/XLSXを準備。
+Kを変更せず、ERC/DRC/未接続/回路図差分0、CAM外形・銅層構成・全920穴/長穴を照合し、負例7件を検出。
+秋月・SS優先/海外Mouser集約を維持。JLCPCBの仕様手入力価格と日本1kg送料を再確認し、送料・税・予備費込み概算27,358.48円。
+Gerberアップロード後の業者CAM審査・最終カート・全85行の部品在庫確保・P2実機受入は未完。旧F/G/J/KとHOST/firmwareは保存。
+
+公開前の再検証と個人設定ファイルを除いた保存ハッシュ一覧の扱いは、[review K/L公開記録](publication-review-kl/README.md)を参照。元の検証一覧・過去の検査報告は履歴として保持する。

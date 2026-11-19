@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-19",
+  "revision": "LC-YM3014-schematic-E",
+  "status": "connected_schematic_native_ERC_only",
+  "user_selected": {
+    "ym_dac": "YM3014B-F supplied",
+    "base_adc": true,
+    "base_i2s_input": true,
+    "base_dac": true,
+    "budget_target_jpy": 30000,
+    "pcb_each": 5,
+    "populated_sets": 1
+  },
+  "gpio_changed": false,
+  "base_panel_electrical_parts_unchanged_from_C": true,
+  "source_g40": {
+    "37": "analog CH1 FM",
+    "39": "analog CH2 SSG",
+    "31": "I2S BCK retained",
+    "33": "I2S LRCK retained",
+    "34": "I2S DATA retained"
+  },
+  "profile": "split-analog",
+  "normal_module_i2s_contribution": 0,
+  "module_gpio27_tx_disable_high_required": true,
+  "final_output": "dual mono FM+SSG",
+  "schematic_applied": true,
+  "pcb_created": false,
+  "firmware_implemented": false,
+  "hardware_accepted": false,
+  "input_reviews_preserved": [
+    "low-cost-schematic-review-c",
+    "low-cost-audio-review-d"
+  ]
+}

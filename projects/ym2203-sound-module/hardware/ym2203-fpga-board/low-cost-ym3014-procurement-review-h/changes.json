@@ -1,0 +1,156 @@
+[
+  {
+    "id": "C_1u",
+    "old_mpn": "C2012X7R1H105K125AB /0805 X7R50V",
+    "new_mpn": "885012207103R /0805 1uF X7R50V +/-10%",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "135.30",
+    "new_subtotal_jpy": "102.30",
+    "delta_jpy": "-33.00",
+    "url": "https://www.digikey.jp/ja/products/detail/w%C3%BCrth-elektronik/885012207103R/21719367"
+  },
+  {
+    "id": "C_2.2u",
+    "old_mpn": "GRM21BR71E225KE11 X7R25V",
+    "new_mpn": "GRM21BR71E225KE11 X7R25V",
+    "old_supplier": "Akizuki",
+    "new_supplier": "Akizuki",
+    "old_subtotal_jpy": "100.00",
+    "new_subtotal_jpy": "100.00",
+    "delta_jpy": "0.00",
+    "url": "https://akizukidenshi.com/catalog/g/g114788/"
+  },
+  {
+    "id": "U07",
+    "old_mpn": "TLV1117LV33DCYR",
+    "new_mpn": "TLV1117LV33DCYR",
+    "old_supplier": "DigiKey",
+    "new_supplier": "Mouser",
+    "old_subtotal_jpy": "59.40",
+    "new_subtotal_jpy": "60.28",
+    "delta_jpy": "0.88",
+    "url": "https://www.mouser.jp/en/ProductDetail/Texas-Instruments/TLV1117LV33DCYR?qs=sGAEpiMZZMug9GoBKXZ754ENSUSpJrT1oXgLIl6RErY%3D"
+  },
+  {
+    "id": "RX",
+    "old_mpn": "TC7SZ125F,LJ(CT",
+    "new_mpn": "TC7SZ125F,LJ(CT",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "30.80",
+    "new_subtotal_jpy": "29.70",
+    "delta_jpy": "-1.10",
+    "url": "https://www.digikey.jp/ja/products/detail/toshiba-semiconductor-and-storage/TC7SZ125F-LJ-CT/870689"
+  },
+  {
+    "id": "C_100p",
+    "old_mpn": "CC0805JRNPO9BN101 C0G",
+    "new_mpn": "CC0805JRNPO9BN101 C0G",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "41.80",
+    "new_subtotal_jpy": "41.80",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/en/products/detail/yageo/CC0805JRNPO9BN101/303021"
+  },
+  {
+    "id": "C_10n",
+    "old_mpn": "CC0805KRX7R9BB103 X7R50V",
+    "new_mpn": "CC0805KRX7R9BB103 X7R50V",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "70.00",
+    "new_subtotal_jpy": "50.60",
+    "delta_jpy": "-19.40",
+    "url": "https://www.digikey.jp/ja/products/detail/yageo/CC0805KRX7R9BB103/302870"
+  },
+  {
+    "id": "C_1n",
+    "old_mpn": "CC0805JRNPO9BN102 C0G",
+    "new_mpn": "CC0805JRNPO9BN102 C0G",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "115.50",
+    "new_subtotal_jpy": "115.50",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/yageo/CC0805JRNPO9BN102/303032"
+  },
+  {
+    "id": "C_2.2n",
+    "old_mpn": "C0805C222J5GACTU C0G",
+    "new_mpn": "C0805C222J5GACTU C0G",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "264.00",
+    "new_subtotal_jpy": "264.00",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/kemet/C0805C222J5GACTU/2212256"
+  },
+  {
+    "id": "C_22u",
+    "old_mpn": "C3225X7R1C226K250AC /1210 X7R16V",
+    "new_mpn": "C3225X7R1C226K250AC /1210 X7R16V",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "143.00",
+    "new_subtotal_jpy": "141.90",
+    "delta_jpy": "-1.10",
+    "url": "https://www.digikey.jp/ja/products/detail/tdk-corporation/C3225X7R1C226K250AC/1944417"
+  },
+  {
+    "id": "C_470p",
+    "old_mpn": "CC0805JRNPO9BN471 C0G",
+    "new_mpn": "CC0805JRNPO9BN471 C0G",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "61.60",
+    "new_subtotal_jpy": "61.60",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/yageo/CC0805JRNPO9BN471/302853"
+  },
+  {
+    "id": "F01",
+    "old_mpn": "MF-MSMF200/16X-2",
+    "new_mpn": "MF-MSMF200/16X-2",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "152.90",
+    "new_subtotal_jpy": "152.90",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/bourns-inc/MF-MSMF200-16X-2/26779953"
+  },
+  {
+    "id": "U16",
+    "old_mpn": "USBLC6-2SC6",
+    "new_mpn": "USBLC6-2SC6",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "97.90",
+    "new_subtotal_jpy": "97.90",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/stmicroelectronics/USBLC6-2SC6/1040559"
+  },
+  {
+    "id": "U08",
+    "old_mpn": "SN74LVC1G17DBVR",
+    "new_mpn": "SN74LVC1G17DBVR",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "27.50",
+    "new_subtotal_jpy": "27.50",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC1G17DBVR/389051"
+  },
+  {
+    "id": "X01",
+    "old_mpn": "ABM8-25.000MHZ-10-B1U-T",
+    "new_mpn": "ABM8-25.000MHZ-10-B1U-T",
+    "old_supplier": "DigiKey",
+    "new_supplier": "DigiKey",
+    "old_subtotal_jpy": "99.00",
+    "new_subtotal_jpy": "99.00",
+    "delta_jpy": "0.00",
+    "url": "https://www.digikey.jp/ja/products/detail/abracon-llc/ABM8-25-000MHZ-10-B1U-T/9998053"
+  }
+]

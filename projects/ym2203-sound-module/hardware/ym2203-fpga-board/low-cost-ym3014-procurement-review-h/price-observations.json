@@ -1,0 +1,31 @@
+{
+  "checked": "2026-11-19",
+  "scope": "review G inventory flags 3 plus saved prices 11, all 14 rows",
+  "stock_interpretation": "Public product/listing observations, including indexed pages; no inventory reserved and no checkout submitted. Direct detail page zero stock overrides positive search snippets for that SKU.",
+  "selected": [
+    {"id":"C_1u","mpn":"885012207103R /0805 1uF X7R50V +/-10%","supplier":"DigiKey","pack":1,"price_jpy_incl":"34.10","url":"https://www.digikey.jp/ja/products/detail/w%C3%BCrth-elektronik/885012207103R/21719367","availability":"商品掲載在庫5031・CT 3個","observation_method":"正規販売店商品検索収録31円税別/CT1個","note":"GのTDK品は直接ページ在庫0のため不採用。同じ1uF/50V/X7R/2012/±10%。高さ1.25±0.2mmで元TDKの最大1.45mm以内。メーカー資料で確認。"},
+    {"id":"C_2.2u","price_jpy_incl":"100","url":"https://akizukidenshi.com/catalog/g/g114788/","availability":"直接商品ページ通販2パック・在庫僅少、10個入1パック購入","observation_method":"直接商品ページ100円税込/10個入","note":"必要2個、10個入1パック、余り8。表示の7月入荷予定は古いため納期根拠に使わない。売切時の同一GRM21BR71E225KE11L CT2個はDigiKey63.80円候補。"},
+    {"id":"U07","supplier":"Mouser","price_jpy_incl":"60.28","url":"https://www.mouser.jp/en/ProductDetail/Texas-Instruments/TLV1117LV33DCYR?qs=sGAEpiMZZMug9GoBKXZ754ENSUSpJrT1oXgLIl6RErY%3D","availability":"商品/シリーズ掲載在庫1450・CT1個、注文時再確認","observation_method":"商品検索収録54.8円税別×1.10、シリーズ一覧在庫","note":"TLV1117LV33DCYRを維持。シリーズ表示43.2円との価格差は高い54.8円税別で計上。商品ページ再取得はアクセス制限。少額別送の送料は未見積で2500円枠。汎用1117への無検証置換はしない。"},
+    {"id":"RX","price_jpy_incl":"29.70","url":"https://www.digikey.jp/ja/products/detail/toshiba-semiconductor-and-storage/TC7SZ125F-LJ-CT/870689","availability":"商品検索収録在庫32461・CT1個","observation_method":"正規販売店商品検索収録27円税別/CT1個","note":"同MPNの別表示870688は29円税別。採用URLのCT27円税別を計上。FのSMV/SOT-23-5ランドと機能を維持。"},
+    {"id":"C_100p","price_jpy_incl":"41.80","url":"https://www.digikey.jp/en/products/detail/yageo/CC0805JRNPO9BN101/303021","availability":"商品掲載在庫57470・CT1個","observation_method":"正規販売店商品検索収録38円税別/CT1個"},
+    {"id":"C_10n","price_jpy_incl":"25.30","url":"https://www.digikey.jp/ja/products/detail/yageo/CC0805KRX7R9BB103/302870","availability":"商品掲載在庫455663・CT2個","observation_method":"正規販売店商品検索収録23円税別/CT1個","note":"今回の直接再取得403のため正規販売店の商品検索収録を使用。別MPNへの変更なし。"},
+    {"id":"C_1n","price_jpy_incl":"115.50","url":"https://www.digikey.jp/ja/products/detail/yageo/CC0805JRNPO9BN102/303032","availability":"直接商品価格表在庫216447・CT1個","observation_method":"直接商品価格表105円税別/CT1個","note":"検索には20円税別の表示もあるが直接価格表105円税別を優先。Marketplace追加候補の2万個MOQや価格を計上せず、DigiKey CT1個を指定。"},
+    {"id":"C_2.2n","price_jpy_incl":"132.00","url":"https://www.digikey.jp/ja/products/detail/kemet/C0805C222J5GACTU/2212256","availability":"直接商品価格表在庫33670・CT2個","observation_method":"直接商品価格表120円税別/CT1個","note":"安価なTDK C2012C0G1H222J060AAはNRND表示のため今回置換しない。"},
+    {"id":"C_22u","price_jpy_incl":"141.90","url":"https://www.digikey.jp/ja/products/detail/tdk-corporation/C3225X7R1C226K250AC/1944417","availability":"商品掲載在庫168267・CT1個、NRND","observation_method":"正規販売店商品検索収録129円税別/CT1個","note":"元の同MPNを維持、NRNDを明示。将来の現行代替CL32B226KOJNNNEは115.50円候補だが回路/CADを変更せず今回は未採用。"},
+    {"id":"C_470p","price_jpy_incl":"30.80","url":"https://www.digikey.jp/ja/products/detail/yageo/CC0805JRNPO9BN471/302853","availability":"商品掲載在庫53540・CT2個","observation_method":"正規販売店商品検索収録28円税別/CT1個"},
+    {"id":"F01","price_jpy_incl":"152.90","url":"https://www.digikey.jp/ja/products/detail/bourns-inc/MF-MSMF200-16X-2/26779953","availability":"商品掲載在庫3293・CT1個","observation_method":"正規販売店商品検索収録139円税別/CT1個","note":"同MPN別商品ページ26779976は143円税別。元URLの139円税別を使用。"},
+    {"id":"U16","price_jpy_incl":"97.90","url":"https://www.digikey.jp/ja/products/detail/stmicroelectronics/USBLC6-2SC6/1040559","availability":"正規販売店フィルタ掲載在庫29996・ST品CT1個","observation_method":"正規販売店フィルタ価格表89円税別/CT1個","note":"STMicroelectronics製を指定。同名UMW/GOODWORK/他社品は不採用。直接商品ページ403のためDigiKey公式フィルタ価格で確認。"},
+    {"id":"U08","price_jpy_incl":"27.50","url":"https://www.digikey.jp/ja/products/detail/texas-instruments/SN74LVC1G17DBVR/389051","availability":"商品掲載在庫150182・TI品CT1個","observation_method":"正規販売店商品検索収録25円税別/CT1個"},
+    {"id":"X01","price_jpy_incl":"99.00","url":"https://www.digikey.jp/ja/products/detail/abracon-llc/ABM8-25-000MHZ-10-B1U-T/9998053","availability":"商品掲載在庫6272・CT1個","observation_method":"正規販売店商品検索収録90円税別/CT1個"}
+  ],
+  "compatibility_sources": [
+    "https://www.we-online.com/components/products/datasheet/885012207103R.pdf",
+    "https://product.tdk.com/ja/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1H105K125AB",
+    "https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf"
+  ],
+  "inventory_sources": [
+    "https://www.mouser.jp/ja/c/power/power-management-ics/?series=TLV1117LV",
+    "https://www.digikey.jp/ja/products/detail/murata-electronics/GRM21BR71E225KE11L/6606096",
+    "https://www.digikey.jp/ja/products/filter/%E9%81%8E%E6%B8%A1%E9%9B%BB%E5%9C%A7%E3%82%B5%E3%83%97%E3%83%AC%E3%83%83%E3%82%B5-tvs/tvs%E3%83%80%E3%82%A4%E3%82%AA%E3%83%BC%E3%83%89/144?s=N4Ig7CBcoIYE5QIwA5EGYA0IYBcmZAAcBLKAJgBYAGRMugX3qA"
+  ]
+}
