@@ -15,3 +15,10 @@ __pycache__/
 *.pdf
 *.png
 .DS_Store
+
+# Preserve local-only assets, dependencies and editor/build state.
+local-test-data/
+node_modules/
+.vscode/
+~*.lck
+firmware-c/build*/

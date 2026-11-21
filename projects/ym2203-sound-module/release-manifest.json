@@ -2,7 +2,7 @@
   "schema_version": 1,
   "files": {
     ".gitattributes": "6651cfd9bec09b5cb8207c42ee176a8b013ecad02bf216158ca28204219c68eb",
-    ".gitignore": "f391a0dc02fa8e1a3bcb1d37603b0a2afdfd8c08dfdb6acb573fcb9e3d491d21",
+    ".gitignore": "168bf4a7cb96f1cdf81321ba8f93dc1e1d266b019e000c45ba4eaf148aeca3c8",
     ".node-version": "08062faf0d7a2d22f5d7933c50e975dd1527034275597be7c1b3b9fd2b9d079a",
     "LICENSE": "e5b8d6ccd5d33420066ebd42128cc1e2663a77f737dd99bde004270e64f38a67",
     "README.md": "71abb8b907253f5f10bbf957d1a46203f80850e3bef107f13a9f868169727668",
