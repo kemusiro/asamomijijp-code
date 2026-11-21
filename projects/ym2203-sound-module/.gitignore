@@ -1,20 +1,17 @@
-# Local tools, music test data and generated binary distributions.
 .cache/
-node_modules/
+outputs/
+**/local-output/
 __pycache__/
 *.py[cod]
-.DS_Store
-local-test-data/
-outputs/
+*.kicad_prl
+*-backups/
 *.zip
-*.pdf
-*.png
 *.uf2
 *.bin
 *.vgm
 *.vgz
-*.kicad_prl
-*-backups/
-~*.lck
-# SDK builds and private score assets stay outside source history.
-firmware-c/build*/
+*.wav
+*.mp3
+*.pdf
+*.png
+.DS_Store

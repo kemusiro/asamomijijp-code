@@ -1,7 +1,0 @@
-{
-  "kicad": "10.0.5",
-  "footprint_pin_sets": 46,
-  "physical_pads": 157,
-  "uno_contacts": 32,
-  "scope": "standard footprint identities and original UNO coordinates; no routing/height/purchased-part fit acceptance"
-}

@@ -1,0 +1,50 @@
+[
+  {
+    "text": "A",
+    "old_pos": [
+      33.269999,
+      1.1
+    ],
+    "new_pos": [
+      33.269999,
+      1.1
+    ],
+    "new_text": "SSGA"
+  },
+  {
+    "text": "B",
+    "old_pos": [
+      40.269999,
+      1.1
+    ],
+    "new_pos": [
+      40.269999,
+      1.1
+    ],
+    "new_text": "SSGB"
+  },
+  {
+    "text": "C",
+    "old_pos": [
+      47.269999,
+      1.1
+    ],
+    "new_pos": [
+      47.269999,
+      1.1
+    ],
+    "new_text": "SSGC"
+  },
+  {
+    "text": "P2 LC-T MODULE / 3V3 HOST",
+    "old_pos": [
+      50.0,
+      78.0
+    ],
+    "new_pos": [
+      50.0,
+      78.0
+    ],
+    "new_text": "P2 LC-T MODULE / 3V3 HOST / FAB U"
+  }
+]

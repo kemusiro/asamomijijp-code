@@ -1,0 +1,230 @@
+{
+  "board": "base",
+  "components": 155,
+  "paper": "User",
+  "wire_segments": 858,
+  "junctions": 57,
+  "named_connections": 252,
+  "local_wired_branches": 144,
+  "fallback_named_connections": 0,
+  "fallback_nets": [],
+  "symbol_envelope_overlaps": [],
+  "bad_crossings": [],
+  "blocks": [
+    {
+      "title": "01  External 5V, AUX regulator, analog supply",
+      "parts": [
+        "JPOWER",
+        "F1",
+        "C1",
+        "UAUX",
+        "CAUXIN",
+        "CAUXOUT"
+      ]
+    },
+    {
+      "title": "02  USB Type-C, ESD and VBUS detection",
+      "parts": [
+        "JUSB",
+        "UESD",
+        "RCC1",
+        "RCC2",
+        "CVBUS",
+        "RVB1",
+        "RVB2",
+        "CVBD",
+        "UVBUS",
+        "CVB3",
+        "RVB3"
+      ]
+    },
+    {
+      "title": "03  HOST I2C, SWD and reset",
+      "parts": [
+        "JHOST",
+        "JSWD",
+        "R45",
+        "R46",
+        "RRUN",
+        "SWRESET",
+        "CRUN"
+      ]
+    },
+    {
+      "title": "04  Base MCU / GPIO allocation",
+      "parts": [
+        "UBASE",
+        "C2"
+      ]
+    },
+    {
+      "title": "05  Variable sound clock and editor I2C",
+      "parts": [
+        "U13",
+        "RCLK0",
+        "RCLK1",
+        "RCLK2",
+        "JEDIT",
+        "R37",
+        "R38",
+        "C21",
+        "C22",
+        "CPANELPORT"
+      ]
+    },
+    {
+      "title": "06  G40 interface - parallel/SPI, clocks, I2S and analog",
+      "parts": [
+        "JMOD",
+        "RBD0",
+        "RBD1",
+        "RBD2",
+        "RBD3",
+        "RBD4",
+        "RBD5",
+        "RBD6",
+        "RBD7",
+        "RBCTL0",
+        "RBCTL1",
+        "RBCTL2",
+        "RBCTL3",
+        "RLKEN",
+        "RALERT",
+        "RLKBCK",
+        "RLKLR",
+        "RBEN",
+        "RBCS",
+        "RBMISO",
+        "RBSCK",
+        "RBMOSI",
+        "RBALERT",
+        "RBI1",
+        "RBSD",
+        "URXDATA",
+        "CURXDATA"
+      ]
+    },
+    {
+      "title": "07  Clock DIP, status LEDs, STOP/TEST and mute gate",
+      "parts": [
+        "URGB",
+        "DRGB",
+        "RRGB",
+        "RRGBPD",
+        "CURGB",
+        "CRGB",
+        "SWCLOCK",
+        "RP0",
+        "RP1",
+        "RP2",
+        "RP3",
+        "RP4",
+        "RP5",
+        "SWSTOP",
+        "SWTEST",
+        "RPOWER",
+        "DPOWER",
+        "RLED0",
+        "DLED0",
+        "RTX",
+        "DTX",
+        "UMUTE",
+        "RPDAC",
+        "RPLINE",
+        "CUMUTE"
+      ]
+    },
+    {
+      "title": "08  Two-channel analog input / attenuation / protection",
+      "parts": [
+        "RATTL",
+        "RSHUNTL",
+        "CACL",
+        "RLIMITL",
+        "CAAFL",
+        "DCLAMPL",
+        "RATTR",
+        "RSHUNTR",
+        "CACR",
+        "RLIMITR",
+        "CAAFR",
+        "DCLAMPR"
+      ]
+    },
+    {
+      "title": "09  Common ADC / I2S to MCU",
+      "parts": [
+        "UADC",
+        "RADCBCK",
+        "RADCLR",
+        "RADCDATA",
+        "RADCDATAPD",
+        "RDMINPD",
+        "CADCAV0",
+        "CADCAV1",
+        "CADCDV0",
+        "CADCDV1",
+        "CADCIO0",
+        "CADCIO1",
+        "CADCLDO0",
+        "CADCLDO1",
+        "CADCVREF"
+      ]
+    },
+    {
+      "title": "10  PCM5102A DAC and I2S termination",
+      "parts": [
+        "U17",
+        "FB1",
+        "R47",
+        "R48",
+        "R49",
+        "RI2SD",
+        "RI2SB",
+        "RI2SL",
+        "R50",
+        "C28",
+        "C29",
+        "C30",
+        "C31",
+        "C32",
+        "C33",
+        "C34",
+        "C35"
+      ]
+    },
+    {
+      "title": "11  Line filtering, onboard dual volume and TRS output",
+      "parts": [
+        "R53",
+        "R53R",
+        "C38",
+        "C38R",
+        "RVOL",
+        "R59",
+        "R60",
+        "JLINE"
+      ]
+    },
+    {
+      "title": "12  PHONES / VARIABLE LINE driver - 3.3V, unity gain, shared mute",
+      "parts": [
+        "UHP",
+        "CHPINL",
+        "RHPINL",
+        "RHPFBL",
+        "CHPOUTL",
+        "CHPINR",
+        "RHPINR",
+        "RHPFBR",
+        "CHPOUTR",
+        "FBHP",
+        "CHPVDD",
+        "CHPHF",
+        "CHPFLY",
+        "CHPVSS",
+        "RHPMUTE"
+      ]
+    }
+  ]
+}

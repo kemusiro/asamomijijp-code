@@ -1,7 +1,0 @@
-{
-  "source_board_sha256": "ed368da9e8bf3a2d26233566f8b743dd524223c4199e6b161bb654903b4fe109",
-  "cam_work_board_sha256": "ed368da9e8bf3a2d26233566f8b743dd524223c4199e6b161bb654903b4fe109",
-  "cam_generated_from_identical_native_file": true,
-  "kicad": "10.0.5",
-  "gerbonara": "1.6.3"
-}

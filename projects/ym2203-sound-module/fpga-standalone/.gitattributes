@@ -1,4 +1,0 @@
-# Preserve pinned upstream bytes and whitespace-sensitive patch context.
-# upstream.json and prepare_usbcore.py verify exact source integrity.
-vendor/usbcorev/*.v -whitespace
-vendor/usbcorev/patches/*.patch -whitespace

@@ -1,1 +1,0 @@
-(fp_lib_table (version 7) (lib (name "ED1") (type "KiCad") (uri "${KIPRJMOD}/../ED1.pretty") (options "") (descr "Original UNO contact geometry from H")))

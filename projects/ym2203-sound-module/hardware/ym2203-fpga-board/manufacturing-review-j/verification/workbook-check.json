@@ -1,7 +1,0 @@
-{
-  "rows": 90,
-  "references": 274,
-  "akizuki_known_subtotal_one": 6290,
-  "input_recalculation_tests": 5,
-  "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
-}

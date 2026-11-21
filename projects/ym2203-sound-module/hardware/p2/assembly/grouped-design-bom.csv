@@ -1,0 +1,100 @@
+value,footprint,used_for_1set,references,datasheets
+0,Resistor_SMD:R_0805_2012Metric,1,base:RALERT,
+1.33k 1%,Resistor_SMD:R_0805_2012Metric,3,module:RL0;module:RL1;module:RL2,
+10,Resistor_SMD:R_0805_2012Metric,2,base:R59;base:R60,
+100,Resistor_SMD:R_0805_2012Metric,1,module:RFMOUT,
+100k,Resistor_SMD:R_0805_2012Metric,31,base:RVB3;base:RI2SD;base:RI2SB;base:RI2SL;base:RDMINPD;base:RADCDATAPD;base:RBMISO;base:RBSCK;base:RBMOSI;base:RBI1;base:RBSD;base:RRGBPD;base:RHPMUTE;module:RD0;module:RD1;module:RD2;module:RD3;module:RD4;module:RD5;module:RD6;module:RD7;module:R35;module:RMA;module:R40;module:RRELDEFAULT;module:RMSCK;module:RMMOSI;module:RMBCK;module:RMLR;module:RMCLK;module:RMADR,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+100n,Capacitor_SMD:C_0805_2012Metric,3,base:CRGB;base:CURGB;base:CHPHF,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,29,base:CVBUS;base:CVB3;base:C21;base:C22;base:C31;base:C32;base:C33;base:CUMUTE;base:CADCAV0;base:CADCDV0;base:CADCIO0;base:CADCLDO0;base:CURXDATA;module:C11;module:C12;module:C13;module:C14;module:C15;module:C16;module:C19;module:C27;module:CCORE;module:CURUNOD;module:CUTXOR;module:CULINK0;module:CULINK1;module:CUALERT;module:CFMDAC;module:COPAMP,
+100nF,Capacitor_SMD:C_0805_2012Metric,7,panel:C2;panel:C4;panel:C5;panel:C6;panel:C7;panel:C8;panel:CMUX,
+100p C0G,Capacitor_SMD:C_0805_2012Metric,1,base:CVBD,
+100u 10V,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,base:C1,
+10k,Resistor_SMD:R_0805_2012Metric,36,base:RRUN;base:RPDAC;base:RPLINE;base:R50;base:RP0;base:RP1;base:RP2;base:RP3;base:RP4;base:RP5;base:RBEN;base:RBCS;base:RBALERT;module:RDIR;module:RDOE;module:RCOE;module:R32;module:RMC32;module:R33;module:RMC33;module:R34;module:RMC34;module:RYMRESET;module:RENPD;module:RRUNUP;module:RTXDIS;module:RMCS;panel:R10;panel:R11;panel:R12;panel:R13;panel:R14;panel:R15;panel:R16;panel:R17;panel:RPANELRUN,
+10k 1%,Resistor_SMD:R_0805_2012Metric,9,base:RSHUNTL;base:RSHUNTR;base:RHPINL;base:RHPFBL;base:RHPINR;base:RHPFBR;module:RSMIXA;module:RSMIXB;module:RSMIXC,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+10nF,Capacitor_SMD:C_0805_2012Metric,2,panel:C9;panel:C10,
+10u 10V,Capacitor_SMD:C_0805_2012Metric,4,base:C2;base:C34;base:C35;module:C20,
+10u 50V NP +/-20% 50NXA10MEFC5X11,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,4,base:CACL;base:CACR;base:CHPINL;base:CHPINR,https://akizukidenshi.com/catalog/g/g130142/
+10u 50V polar,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,module:CRB,https://akizukidenshi.com/catalog/g/g117897/
+10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,9,base:CAUXIN;base:CAUXOUT;base:CADCAV1;base:CADCDV1;base:CADCIO1;base:CADCLDO1;base:CPANELPORT;module:CANABULK;panel:CPIN,
+10uF,Capacitor_SMD:C_0805_2012Metric,1,panel:C3,
+110990037 Grove I2C 3V3 ONLY,P2LC:Grove_110990037_RA,2,base:JEDIT;panel:JUPLINK,https://akizukidenshi.com/catalog/g/g112634/
+18742 / DC5V CENTER+ / Akizuki109408,P2LC:DCJack_4UCON_18742,1,base:JPOWER,https://akizukidenshi.com/goodsaffix/18742.pdf
+1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,2,module:DMCU5V;panel:DPOWER,https://www.vishay.com/docs/88525/1n5817.pdf
+1k,Resistor_SMD:R_0805_2012Metric,14,base:RLED0;base:RTX;module:RVOICE1;module:RVOICE2;module:RVOICE3;module:RVOICE4;module:RVOICE5;module:RVOICE6;panel:R1;panel:R2;panel:R3;panel:R4;panel:R6;panel:R8,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+1n C0G,Capacitor_SMD:C_0805_2012Metric,3,base:CRUN;base:CHPOUTL;base:CHPOUTR,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,2,base:C30;base:CADCVREF,
+1uF,Capacitor_SMD:C_0805_2012Metric,1,panel:C1,
+2.2k,Resistor_SMD:R_0805_2012Metric,3,base:R45;base:R46;base:RPOWER,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+2.2k 1%,Resistor_SMD:R_0805_2012Metric,2,base:RLIMITL;base:RLIMITR,
+2.2n C0G,Capacitor_SMD:C_0805_2012Metric,2,base:C38;base:C38R,
+2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,2,base:C28;base:C29,
+2.7k,Resistor_SMD:R_0805_2012Metric,2,panel:R5;panel:R7,
+220,Resistor_SMD:R_0805_2012Metric,1,base:RRGB,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+22u X7R 16V C3225X7R1C226K250AC,Capacitor_SMD:C_1210_3225Metric,1,module:CMOD5,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1C226K250AC
+24FC256-I/P,Package_DIP:DIP-8_W7.62mm,1,panel:U1,https://akizukidenshi.com/catalog/g/g103568/
+33,Resistor_SMD:R_0805_2012Metric,35,base:R47;base:R48;base:R49;base:RCLK0;base:RCLK1;base:RCLK2;base:RADCBCK;base:RADCLR;base:RADCDATA;base:RBD0;base:RBD1;base:RBD2;base:RBD3;base:RBD4;base:RBD5;base:RBD6;base:RBD7;base:RBCTL0;base:RBCTL1;base:RBCTL2;base:RBCTL3;base:RLKEN;base:RLKBCK;base:RLKLR;module:R39;module:RS3;module:RS6;module:RS8;module:RMTXMISO;module:RMTXDATA;module:RFMSD;module:RFMCLK;module:RFMSH;panel:R18;panel:R19,
+4.7k,Resistor_SMD:R_0805_2012Metric,3,panel:R9;panel:REEPSDA;panel:REEPSCL,
+4.7k 1%,Resistor_SMD:R_0805_2012Metric,2,base:R37;base:R38,
+4.7u 25V X7R / GRM31CR71E475KA88L,Capacitor_SMD:C_1206_3216Metric,3,base:CHPFLY;base:CHPVSS;base:CHPVDD,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+4.7u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,module:CCOREB,
+470,Resistor_SMD:R_0805_2012Metric,2,base:R53;base:R53R,
+470p C0G,Capacitor_SMD:C_0805_2012Metric,2,base:CAAFL;base:CAAFR,
+47k 1%,Resistor_SMD:R_0805_2012Metric,1,base:RVB1,
+5.1k 1% 0805,Resistor_SMD:R_0805_2012Metric,2,base:RCC1;base:RCC2,https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24
+5077CR-16-SMC2-BK-TR USB2 Type-C DEVICE,P2LC:USB_C_Neltron_5077CR_16_SMC2,1,base:JUSB,https://akizukidenshi.com/goodsaffix/5077CR-16-SMC2-BK-TR.pdf
+6.8k 1%,Resistor_SMD:R_0805_2012Metric,2,base:RATTL;base:RATTR,
+600R @100MHz / BLM21PG601SN1D,Inductor_SMD:L_0805_2012Metric,1,base:FBHP,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+68k 1%,Resistor_SMD:R_0805_2012Metric,1,base:RVB2,
+AE-Si5351A-B (110679),P2LC:AE_Si5351A_B_10x10mm,1,base:U13,https://akizukidenshi.com/goodsaffix/AE-Si5351A.PDF
+ALPHA RE111F-4S1-152S4-15P-A,P2LC:RE111F_4S1_ReviewB,1,panel:ENC1,https://akizukidenshi.com/catalog/g/g114936/
+B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,4,panel:RV1;panel:RV2;panel:RV3;panel:RV4,https://akizukidenshi.com/catalog/g/g114827/
+BAT54S-QR,Package_TO_SOT_SMD:SOT-23,2,base:DCLAMPL;base:DCLAMPR,https://assets.nexperia.com/documents/data-sheet/BAT54S-Q.pdf
+BLM21PG601SN1 / 600R@100MHz,Inductor_SMD:L_0805_2012Metric,1,base:FB1,
+CD74HC4051E,Package_DIP:DIP-16_W7.62mm,1,panel:UMUX,https://www.ti.com/lit/ds/symlink/cd74hc4051.pdf
+EDS104SZ 4-bit DIP ON=0 SW1=LSB,Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile,1,base:SWCLOCK,https://akizukidenshi.com/catalog/g/g100586/
+FM1,LED_THT:LED_D3.0mm,1,module:DVOICE1,
+FM2,LED_THT:LED_D3.0mm,1,module:DVOICE2,
+FM3,LED_THT:LED_D3.0mm,1,module:DVOICE3,
+G40 2x20 ordinary female / KEY6,P2LC:G40_Female_Top,1,base:JMOD,https://akizukidenshi.com/catalog/g/g100085/
+G40 2x20 ordinary male / KEY6,P2LC:G40_Male_Underside,1,module:JMOD,https://akizukidenshi.com/catalog/g/g100080/
+JHOST,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,base:JHOST,
+JSWD,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,base:JSWD,
+M154 LCD direct 1x8 socket / no harness,P2LC:LCD_M154_Socket_1x08,1,panel:J5,https://akizukidenshi.com/goodsaffix/M154-240240-RGB-8_20261020.pdf
+MCP6002-E/P,Package_DIP:DIP-8_W7.62mm,1,module:UAF,https://www.microchip.com/content/dam/mchp/documents/MSLD/ProductDocuments/DataSheets/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf
+MF-MSMF200/16X-2 / 2A hold@23C,Fuse:Fuse_1812_4532Metric,1,base:F1,https://bourns.com/docs/product-datasheets/mf-msmf.pdf
+NOTE TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW5,https://akizukidenshi.com/catalog/g/g117166/
+OP1 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW1,https://akizukidenshi.com/catalog/g/g117166/
+OP2 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW2,https://akizukidenshi.com/catalog/g/g117166/
+OP3 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW3,https://akizukidenshi.com/catalog/g/g117166/
+OP4 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW4,https://akizukidenshi.com/catalog/g/g117166/
+PCM1863DBT,Package_SO:TSSOP-30_4.4x7.8mm_P0.5mm,1,base:UADC,https://www.ti.com/lit/ds/symlink/pcm1863.pdf
+PCM5102APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1,base:U17,https://www.ti.com/lit/ds/symlink/pcm5102a.pdf
+POWER GREEN,LED_THT:LED_D3.0mm,1,base:DPOWER,
+Picossci 2B RP2350B SSCI-105071,P2LC:Picossci2B_DirectSolder_DebugWire,2,base:UBASE;module:USOURCE,https://www.switch-science.com/products/10507
+RESET,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,base:SWRESET,
+RK0971220-F15-C0-A103 / dual A10k,P2LC:RK0971220_Dual_A10k,1,base:RVOL,https://akizukidenshi.com/goodsaffix/RK0971220-F15-C0-A103.pdf
+RX GREEN,LED_THT:LED_D3.0mm,1,base:DLED0,
+Raspberry Pi Pico SC0915 RP2040,Module:RaspberryPi_Pico_Common_THT,1,panel:UPICO,https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf
+SN74AHCT1G125DBVR,Package_TO_SOT_SMD:SOT-23-5,1,base:URGB,https://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf
+SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,3,module:U16;module:ULINK0;module:ULINK1,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf
+SN74LVC1G07DBVR,Package_TO_SOT_SMD:SOT-23-5,2,module:URUNOD;module:UALERT,https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf
+SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,1,base:UMUTE,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf
+SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,1,base:UVBUS,https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf
+SN74LVC1G32DBVRE4,Package_TO_SOT_SMD:SOT-23-5,1,module:UTXOR,https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf
+SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,2,module:U8;module:U9,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf
+SSGA,LED_THT:LED_D3.0mm,1,module:DVOICE4,
+SSGB,LED_THT:LED_D3.0mm,1,module:DVOICE5,
+SSGC,LED_THT:LED_D3.0mm,1,module:DVOICE6,
+ST-005-G / PHONES + VARIABLE LINE,P2LC:ST005G_TRS,1,base:JLINE,https://akizukidenshi.com/goodsaffix/ST-005-G.pdf
+STOP,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,base:SWSTOP,
+STOP TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,panel:SW6,https://akizukidenshi.com/catalog/g/g117166/
+SWD service / program source 2B,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,module:JSWD,https://www.switch-science.com/products/10507
+"TC7SZ125F,LJ(CT",Package_TO_SOT_SMD:SOT-23-5,1,base:URXDATA,https://toshiba.semicon-storage.com/info/TC7SZ125F_datasheet_en_20171221.pdf?did=20049&prodName=TC7SZ125F
+TEST,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,base:SWTEST,
+TLV1117LV33DCYR,Package_TO_SOT_SMD:SOT-223-3_TabPin2,1,base:UAUX,https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf
+TPA6138A2PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,base:UHP,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf
+TX GREEN,LED_THT:LED_D3.0mm,1,base:DTX,
+USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,1,base:UESD,https://www.st.com/resource/en/datasheet/usblc6-2.pdf
+WS2812B-V6 / STATUS,LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,1,base:DRGB,https://akizukidenshi.com/goodsaffix/WS2812B-V6.pdf
+YM2203C SOCKET,Package_DIP:DIP-40_W15.24mm_Socket,1,module:U12,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf
+YM3014B-F 16SOP / supplied,P2LC:YM3014BF_SOP16_5.3x10.2_P1.27mm,1,module:UDAC,https://bitsavers.trailing-edge.com/components/yamaha/YM3014B_199403.pdf

@@ -1,0 +1,303 @@
+board,ref,value,footprint,used_per_set,source,note
+base,JHOST,JHOST,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,1,,Existing OTHER Pico GP0 SDA / GP1 SCL; 100kHz / 0x42; NO supply pin
+base,JSWD,JSWD,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,,3.3V SWD probe; never power carrier through probe
+base,SWRESET,RESET,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,,Two contact numbers; each has two duplicated physical pads in KiCad footprint
+base,RRUN,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,CRUN,1n C0G,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,JPOWER,18742 / DC5V CENTER+ / Akizuki109408,P2LC:DCJack_4UCON_18742,1,https://akizukidenshi.com/goodsaffix/18742.pdf,"5V center-positive external supply. Pin1=center +5V, pin2=outer GND, pin3=outer switched contact NC. USB VBUS remains sense/ESD only. Body14.5x9x10.7mm; mounting pattern converted from manufacturer BOTTOM view to TOP view; three plated1.0x1.6mm slots. No pin bending."
+base,F1,MF-MSMF200/16X-2 / 2A hold@23C,Fuse:Fuse_1812_4532Metric,1,https://bourns.com/docs/product-datasheets/mf-msmf.pdf,
+base,C1,100u 10V,Capacitor_THT:CP_Radial_D6.3mm_P2.50mm,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C2,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,UESD,USBLC6-2SC6,Package_TO_SOT_SMD:SOT-23-6,1,https://www.st.com/resource/en/datasheet/usblc6-2.pdf,"Place at USB connector, short return. VBUS protection/sense only; no external5V power path."
+base,CVBUS,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,RVB1,47k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,RVB2,68k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,CVBD,100p C0G,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,UVBUS,SN74LVC1G17DBVR,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74lvc1g17.pdf,Ioff Schmitt;RAWVBUS47k/68k -> GP28. No USB-to-external5V supply path.
+base,CVB3,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,RVB3,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RPDAC,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RPLINE,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,U13,AE-Si5351A-B (110679),P2LC:AE_Si5351A_B_10x10mm,1,https://akizukidenshi.com/goodsaffix/AE-Si5351A.PDF,25MHz crystal included;I2C0x60;CL8pF required;module top view pins1..8;3V3 both VDD/VDDO;no GPIO change;2.54mm standoff direct solder
+base,C21,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C22,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,R37,4.7k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,R38,4.7k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,R45,2.2k,Resistor_SMD:R_0805_2012Metric,1,,
+base,R46,2.2k,Resistor_SMD:R_0805_2012Metric,1,,
+base,FB1,BLM21PG601SN1 / 600R@100MHz,Inductor_SMD:L_0805_2012Metric,1,,
+base,U17,PCM5102APWR,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/pcm5102a.pdf,"Digital DVDD=BASE3V3; AVDD/CPVDD=AV3V3. Ground-centred line output, BCK PLL. XSMT is common final mute; no analog bypass."
+base,C28,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C29,2.2u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C30,1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C31,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C32,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C33,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C34,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,C35,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,R47,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,R48,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,R49,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,R50,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,R53,470,Resistor_SMD:R_0805_2012Metric,1,,
+base,C38,2.2n C0G,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+base,RVOL,RK0971220-F15-C0-A103 / dual A10k,P2LC:RK0971220_Dual_A10k,1,https://akizukidenshi.com/goodsaffix/RK0971220-F15-C0-A103.pdf,"Rev C footprint and gang numbering. 1/4=CCW GND;2/5=L/R wipers;3/6=CW LINE_FILTER_L/R. Rotation viewed from shaft: clockwise increases both channels. Two inputs remain independent stereo, not tied to mono. No external harness."
+base,R59,10,Resistor_SMD:R_0805_2012Metric,1,,Output isolation after amplifier; datasheet typical10R/1nF. Included in headphone source impedance.
+base,R60,10,Resistor_SMD:R_0805_2012Metric,1,,Output isolation after amplifier; datasheet typical10R/1nF. Included in headphone source impedance.
+base,JLINE,ST-005-G / PHONES + VARIABLE LINE,P2LC:ST005G_TRS,1,https://akizukidenshi.com/goodsaffix/ST-005-G.pdf,"Rev C footprint. Manufacturer2=RING R,3=SLEEVE GND,4=TIP L with two physical4 legs. No electrical pin1. 1.2mm plated signal holes,1.0mm NPTH locators. Line out, not a headphone driver. Shared grounded stereo output,16..64ohm headphones or line input. Turn volume down before insertion; high-Z line max approx1.9Vrms; headphone full-scale may clip, adjust physical knob. No fixed-level LINE output."
+base,SWCLOCK,EDS104SZ 4-bit DIP ON=0 SW1=LSB,Button_Switch_THT:SW_DIP_SPSTx04_Slide_6.7x11.72mm_W7.62mm_P2.54mm_LowProfile,1,https://akizukidenshi.com/catalog/g/g100586/,OFF/OFF/OFF/OFF=4MHz. Latched at reset only. Codes8..15 remain muted.
+base,RP0,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RP1,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RP2,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RP3,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RP4,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RP5,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,SWSTOP,STOP,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,,"GPIO23direct;external10k;globalmute priority,not I2C expander."
+base,SWTEST,TEST,Button_Switch_THT:SW_PUSH_6mm_H4.3mm,1,,STOP global priority; TEST only when no owner; each debounced20ms
+base,RLED0,1k,Resistor_SMD:R_0805_2012Metric,1,,
+base,DLED0,RX GREEN,LED_THT:LED_D3.0mm,1,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+base,RI2SD,100k,Resistor_SMD:R_0805_2012Metric,1,,Default low while PGA IO rail is absent; DAC XSMT remains low
+base,RI2SB,100k,Resistor_SMD:R_0805_2012Metric,1,,Default low while PGA IO rail is absent; DAC XSMT remains low
+base,RI2SL,100k,Resistor_SMD:R_0805_2012Metric,1,,Default low while PGA IO rail is absent; DAC XSMT remains low
+base,RCLK0,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RCLK1,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RCLK2,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,R53R,470,Resistor_SMD:R_0805_2012Metric,1,,
+base,C38R,2.2n C0G,Capacitor_SMD:C_0805_2012Metric,1,,
+base,UAUX,TLV1117LV33DCYR,Package_TO_SOT_SMD:SOT-223-3_TabPin2,1,https://www.ti.com/lit/ds/symlink/tlv1117lv.pdf,Always-on shared analog/aux supply. Ceramic stable; copper/thermal measurement pending.
+base,CAUXIN,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CAUXOUT,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,UMUTE,SN74LVC1G08DBVR,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74lvc1g08.pdf,XSMT high only when both permissions high; default low. Not an independent analog disconnect.
+base,CUMUTE,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,UADC,PCM1863DBT,Package_SO:TSSOP-30_4.4x7.8mm_P0.5mm,1,https://www.ti.com/lit/ds/symlink/pcm1863.pdf,"Base common stereo ADC; VINL1/VINR1 only. AVDD=AV3V3,DVDD=V3_AUX,IOVDD=PGA3V3. AD=0 ->0x4A. No external reset pin; always powered on STOP."
+base,CADCAV0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCAV1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCDV0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCDV1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCIO0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCIO1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCLDO0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCLDO1,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,CADCVREF,1u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,RDMINPD,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RADCBCK,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RADCLR,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RADCDATA,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RADCDATAPD,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RATTL,6.8k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,RSHUNTL,10k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,CACL,10u 50V NP +/-20% 50NXA10MEFC5X11,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,https://akizukidenshi.com/catalog/g/g130142/,"NON-POLAR NXA coupling,minimum8uF at20percent tolerance,avoidsMLCCbiasrareMPN;electricalpolaritynotrequired despitegenericCPfootprint. BodyD5xH11mm;outsideoverlapofsourcecard. Ripple/leakage/bias/THD bench pending."
+base,RLIMITL,2.2k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,CAAFL,470p C0G,Capacitor_SMD:C_0805_2012Metric,1,,
+base,DCLAMPL,BAT54S-QR,Package_TO_SOT_SMD:SOT-23,1,https://assets.nexperia.com/documents/data-sheet/BAT54S-Q.pdf,Limited-current transient rail clamp after AC coupling. Attenuation preserves normal line headroom; no TMUX/ADC power switching.
+base,RATTR,6.8k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,RSHUNTR,10k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,CACR,10u 50V NP +/-20% 50NXA10MEFC5X11,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,https://akizukidenshi.com/catalog/g/g130142/,"NON-POLAR NXA coupling,minimum8uF at20percent tolerance,avoidsMLCCbiasrareMPN;electricalpolaritynotrequired despitegenericCPfootprint. BodyD5xH11mm;outsideoverlapofsourcecard. Ripple/leakage/bias/THD bench pending."
+base,RLIMITR,2.2k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+base,CAAFR,470p C0G,Capacitor_SMD:C_0805_2012Metric,1,,
+base,DCLAMPR,BAT54S-QR,Package_TO_SOT_SMD:SOT-23,1,https://assets.nexperia.com/documents/data-sheet/BAT54S-Q.pdf,Limited-current transient rail clamp after AC coupling. Attenuation preserves normal line headroom; no TMUX/ADC power switching.
+base,RBD0,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD1,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD2,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD3,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD4,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD5,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD6,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBD7,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBCTL0,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBCTL1,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBCTL2,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBCTL3,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RLKEN,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RLKBCK,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RLKLR,33,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBEN,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBCS,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBMISO,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBSCK,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBMOSI,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBALERT,10k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RALERT,0,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBI1,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,RBSD,100k,Resistor_SMD:R_0805_2012Metric,1,,
+base,URXDATA,"TC7SZ125F,LJ(CT",Package_TO_SOT_SMD:SOT-23-5,1,https://toshiba.semicon-storage.com/info/TC7SZ125F_datasheet_en_20171221.pdf?did=20049&prodName=TC7SZ125F,"CommonSOT25 buffer alternative to out-of-stockTI1G125. Pin1OE2A3GND4Y5VCC;Ioff/5.5Vinputs maintained. F(SMV)ONLY,notFU(SC70)."
+base,CURXDATA,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,JMOD,G40 2x20 ordinary female / KEY6,P2LC:G40_Female_Top,1,https://akizukidenshi.com/catalog/g/g100085/,"40pin2.54mm female;blockpin6,removeopposingmale6. Hconnector electrical order unchanged. Fit not yet measured."
+base,UBASE,Picossci 2B RP2350B SSCI-105071,P2LC:Picossci2B_DirectSolder_DebugWire,1,https://www.switch-science.com/products/10507,48 GPIO. GP24/25 onboard LEDs retained and not used externally. Three SWD stitching wires and SW1 non-GND RUN wire required; no edge RUN pad. Direct solder 1.27mm.
+base,JUSB,5077CR-16-SMC2-BK-TR USB2 Type-C DEVICE,P2LC:USB_C_Neltron_5077CR_16_SMC2,1,https://akizukidenshi.com/goodsaffix/5077CR-16-SMC2-BK-TR.pdf,"USB2FS UFP; CC1/CC2 separate5k1 toGND; paired D+/D-; VBUS RAW sense/ESD only, never power external5V. 12 PCB lands for16contacts plus4shell slots."
+base,JEDIT,110990037 Grove I2C 3V3 ONLY,P2LC:Grove_110990037_RA,1,https://akizukidenshi.com/catalog/g/g112634/,150mm cable116938;no5V;power off for insertion;pin1SCL/2SDA/3VCC/4GND. Footprint deferred: RA drawing lacks unambiguous drill/top-view numbering;verify actual2mm part before PCB.
+base,CPANELPORT,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+base,RCC1,5.1k 1% 0805,Resistor_SMD:R_0805_2012Metric,1,https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24,Independent UFP Rd; do not short CC1 and CC2.
+base,RCC2,5.1k 1% 0805,Resistor_SMD:R_0805_2012Metric,1,https://www.usb.org/document-library/usb-type-cr-cable-and-connector-specification-release-24,Independent UFP Rd; do not short CC1 and CC2.
+base,DPOWER,POWER GREEN,LED_THT:LED_D3.0mm,1,,Fused 5V power indication independent of firmware.
+base,RPOWER,2.2k,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,DTX,TX GREEN,LED_THT:LED_D3.0mm,1,,<=2mA sink target; RX50ms / voice shadow20ms update; not VU
+base,RTX,1k,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,DRGB,WS2812B-V6 / STATUS,LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm,1,https://akizukidenshi.com/goodsaffix/WS2812B-V6.pdf,5V power; 800k GRB24; one PIO GPIO; no audio-critical refresh.
+base,URGB,SN74AHCT1G125DBVR,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74ahct1g125.pdf,
+base,RRGB,220,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,RRGBPD,100k,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CRGB,100n,Capacitor_SMD:C_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CURGB,100n,Capacitor_SMD:C_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,UHP,TPA6138A2PWR,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,"3.0..3.6V only; UVP deliberately unused per datasheet internal pull-up. MUTE tied to AND output of DAC/LINE allows. Same inversion both channels, RFB/RIN=1. No output DC capacitors. 16ohm minimum design load."
+base,FBHP,600R @100MHz / BLM21PG601SN1D,Inductor_SMD:L_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CHPFLY,4.7u 25V X7R / GRM31CR71E475KA88L,Capacitor_SMD:C_1206_3216Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,Charge pump flying/storage and supply; effective C target >=1uF at rail voltage; layout and bench verification required.
+base,CHPVSS,4.7u 25V X7R / GRM31CR71E475KA88L,Capacitor_SMD:C_1206_3216Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,Charge pump flying/storage and supply; effective C target >=1uF at rail voltage; layout and bench verification required.
+base,CHPVDD,4.7u 25V X7R / GRM31CR71E475KA88L,Capacitor_SMD:C_1206_3216Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,Charge pump flying/storage and supply; effective C target >=1uF at rail voltage; layout and bench verification required.
+base,CHPHF,100n,Capacitor_SMD:C_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,RHPMUTE,100k,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CHPINL,10u 50V NP +/-20% 50NXA10MEFC5X11,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,https://akizukidenshi.com/catalog/g/g130142/,10uF nonpolar input coupling; >=8uF at20% tolerance; D5 H11mm outside source overlap.
+base,RHPINL,10k 1%,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,RHPFBL,10k 1%,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CHPOUTL,1n C0G,Capacitor_SMD:C_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CHPINR,10u 50V NP +/-20% 50NXA10MEFC5X11,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,https://akizukidenshi.com/catalog/g/g130142/,10uF nonpolar input coupling; >=8uF at20% tolerance; D5 H11mm outside source overlap.
+base,RHPINR,10k 1%,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,RHPFBR,10k 1%,Resistor_SMD:R_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+base,CHPOUTR,1n C0G,Capacitor_SMD:C_0805_2012Metric,1,https://www.ti.com/lit/ds/symlink/tpa6138a2.pdf,
+module,U8,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,"Bidirectional YM data translation: VCCA=Core3V3,VCCB=5V. DIR and OE controlled locally; default disabled."
+module,U9,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,Fixed A->B: A0/CS/WR/RD plus clock and RESET on two formerly spare channels. OE_N default high disables clock and holds RESET via10k pull-down.
+module,C11,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C12,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C13,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C14,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C15,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C16,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,RDIR,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RDOE,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RCOE,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD0,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD1,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD2,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD3,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD4,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD5,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD6,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RD7,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,R32,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMC32,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,R33,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMC33,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,R34,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMC34,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,R35,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMA,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,U12,YM2203C SOCKET,Package_DIP:DIP-40_W15.24mm_Socket,1,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf,IO ports A/B unused; IRQ unconnected; 5V supply
+module,C19,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,C20,10u 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,R39,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,R40,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,U16,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,"Retained 5V-to-3V3 FM diagnostic receive taps. Normal E playback uses YM3014 and ADC,not this digital stream. No GP16..18 remap. Procurement J Q1 substitute;PW14 pinout retained;static checks only."
+module,C27,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Capacitor body/height and effective capacitance to be checked against final MPN
+module,RL0,1.33k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+module,RL1,1.33k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+module,RL2,1.33k 1%,Resistor_SMD:R_0805_2012Metric,1,,
+module,RS3,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RS6,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RS8,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RYMRESET,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RRELDEFAULT,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,CMOD5,22u X7R 16V C3225X7R1C226K250AC,Capacitor_SMD:C_1210_3225Metric,1,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1C226K250AC,"Larger1210commonX7R supplybulk,notrare0805high-density. No GPIOorresetpathchange."
+module,RSMIXA,10k 1%,Resistor_SMD:R_0805_2012Metric,1,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+module,RSMIXB,10k 1%,Resistor_SMD:R_0805_2012Metric,1,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+module,RSMIXC,10k 1%,Resistor_SMD:R_0805_2012Metric,1,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+module,CCORE,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,CCOREB,4.7u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,URUNOD,SN74LVC1G07DBVR,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf,ENABLE low sinks CORE_RUN_N. Picossci2B RUN is reached by insulated wire from SW1 non-GND node to carrier SW1.S; no edge RUN pad.
+module,CURUNOD,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,RENPD,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RRUNUP,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,ULINK0,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,"Ioff receiving-domain buffer, 5V-tolerant inputs; unused channels disabled. Procurement J Q1 substitute;PW14 pinout retained;static checks only."
+module,ULINK1,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,1,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,I2S and SPI TX retained. In E split-analog profile GP27 LINK_TX_DISABLE stays HIGH;DSP mix ignores moduleI2S. Future profiles explicit only. Procurement J Q1 substitute;PW14 pinout retained;static checks only.
+module,UTXOR,SN74LVC1G32DBVRE4,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf,MISO disabled when unselected OR Core output permission not initialized. Default GPIO27 HiZ -> pull-up disables both return channels. Procurement J E4 lead finish/order option;DBV5 retained.
+module,CUTXOR,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,RTXDIS,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,CULINK0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,CULINK1,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,RMSCK,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMMOSI,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMCS,10k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMBCK,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMLR,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMCLK,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMADR,100k,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMTXMISO,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RMTXDATA,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,UALERT,SN74LVC1G07DBVR,Package_TO_SOT_SMD:SOT-23-5,1,https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf,Core sets HIGH when ready -> open drain released; LOW/reset reports not-ready/fault.
+module,CUALERT,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+module,JMOD,G40 2x20 ordinary male / KEY6,P2LC:G40_Male_Underside,1,https://akizukidenshi.com/catalog/g/g100080/,"G40 existing order;37 CH1=FM,39 CH2=SSG;31/33/34 I2S retained. Split-analog profile;not stereo panning."
+module,USOURCE,Picossci 2B RP2350B SSCI-105071,P2LC:Picossci2B_DirectSolder_DebugWire,1,https://www.switch-science.com/products/10507,48 GPIO. GP24/25 onboard LEDs retained and not used externally. Three SWD stitching wires and SW1 non-GND RUN wire required; no edge RUN pad. Direct solder 1.27mm.
+module,UDAC,YM3014B-F 16SOP / supplied,P2LC:YM3014BF_SOP16_5.3x10.2_P1.27mm,1,https://bitsavers.trailing-edge.com/components/yamaha/YM3014B_199403.pdf,"16SOP only,not DIP8. VDD5V, RB10u and follower toMP per Yamaha basic circuit. 10bit mantissa+3bit exponent. DACclock fromY_CLK,not master. Sample source stock/marking/dimensions toverify."
+module,UAF,MCP6002-E/P,Package_DIP:DIP-8_W7.62mm,1,https://www.microchip.com/content/dam/mchp/documents/MSLD/ProductDocuments/DataSheets/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf,"A=RB voltage follower -> MP; B=TO_BUFF voltage follower. 5V single supply,RRIO,unity stable;100ohm output isolation. No LM358/TL072 substitution without bias/swing check."
+module,RFMSD,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RFMCLK,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RFMSH,33,Resistor_SMD:R_0805_2012Metric,1,,
+module,RFMOUT,100,Resistor_SMD:R_0805_2012Metric,1,,Output isolation outside opamp feedback. G40CH1DC biased;AC coupling already on base. Not a headphone driver.
+module,CFMDAC,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Close toUDAC1/12.
+module,COPAMP,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Within2mm ofUAF8/4.
+module,CRB,10u 50V polar,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,1,https://akizukidenshi.com/catalog/g/g117897/,"Positive pin1=RB,negative2=GND. Yamaha reference bypass10uF. D5xH11mm;RB not MP. No bulk C directly on follower output."
+module,CANABULK,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,Local5Vbulk;existingbag spare covers onepiece. No series supply resistor thatviolates4.75V DACminimum.
+module,DMCU5V,1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,1,https://www.vishay.com/docs/88525/1n5817.pdf,G40 5V -> diode -> MCU_5V -> Picossci2B regulator input. Does not drop YM3014 supply. Source service interface is SWD; no AE-RP2040 USB connector remains.
+module,RVOICE1,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE1,FM1,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,RVOICE2,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE2,FM2,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,RVOICE3,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE3,FM3,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,RVOICE4,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE4,SSGA,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,RVOICE5,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE5,SSGB,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,RVOICE6,1k,Resistor_SMD:R_0805_2012Metric,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,DVOICE6,SSGC,LED_THT:LED_D3.0mm,1,,"Source-local channel/key-enable indication, not measured PCM level."
+module,JSWD,SWD service / program source 2B,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,1,https://www.switch-science.com/products/10507,
+panel,C1,1uF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,C2,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,C3,10uF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,C4,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,U1,24FC256-I/P,Package_DIP:DIP-8_W7.62mm,1,https://akizukidenshi.com/catalog/g/g103568/,"32KiB EEPROM,0x50;64byte pages; ACK polling <=10ms; explicit SAVE only; no extra pulls"
+panel,RV1,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,1,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+panel,R1,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C5,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,RV2,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,1,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+panel,R2,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C6,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,RV3,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,1,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+panel,R3,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C7,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,RV4,B10K RK09D117000B,Potentiometer_THT:Potentiometer_Alps_RK09K_Single_Vertical,1,https://akizukidenshi.com/catalog/g/g114827/,center detent;6mm D shaft;S-42 16mm knob;RK09K vertical footprint electrical/mount pattern reference; collar/30mm shaft sample fit pending
+panel,R4,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C8,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,ENC1,ALPHA RE111F-4S1-152S4-15P-A,P2LC:RE111F_4S1_ReviewB,1,https://akizukidenshi.com/catalog/g/g114936/,30detents/15pulses;SMD;use supplied black shaft; ABC mapping/locator fit provisional; no 6mm knob
+panel,R5,2.7k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R6,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C9,10nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,R7,2.7k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R8,1k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,C10,10nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,R9,4.7k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW1,OP1 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R10,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW2,OP2 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R11,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW3,OP3 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R12,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW4,OP4 TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R13,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW5,NOTE TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R14,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,SW6,STOP TVDP01-095BB1,Button_Switch_THT:SW_PUSH_6mm_H9.5mm,1,https://akizukidenshi.com/catalog/g/g117166/,6x6mm/9.5mm;4.5mm row pitch;duplicate pins;sample fit pending
+panel,R15,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R16,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R17,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R18,33,Resistor_SMD:R_0805_2012Metric,1,,
+panel,R19,33,Resistor_SMD:R_0805_2012Metric,1,,
+panel,J5,M154 LCD direct 1x8 socket / no harness,P2LC:LCD_M154_Socket_1x08,1,https://akizukidenshi.com/goodsaffix/M154-240240-RGB-8_20261020.pdf,"Top-view portrait pin1GND left. Rotate LCD90degCW: connector onright, pin1top. Replace factory right-angle header with straight downward male, mate to8.5mm socket+2.54mm header shoulder. 12mm supports conditional on measured11.04..12mm stack. Hole pitch38.72x27, not39.72. SPI/power order unchanged."
+panel,UPICO,Raspberry Pi Pico SC0915 RP2040,Module:RaspberryPi_Pico_Common_THT,1,https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf,"VSYS from3V3 Grove throughDPOWER. GPIO29VSYS/25LED/24VBUS/23SMPS internal,not externalADC. USB service only withGrove unplugged. Two20pin2.54mm sockets."
+panel,JUPLINK,110990037 Grove I2C 3V3 ONLY,P2LC:Grove_110990037_RA,1,https://akizukidenshi.com/catalog/g/g112634/,150mm cable116938;no5V;power off for insertion;pin1SCL/2SDA/3VCC/4GND. Footprint deferred: RA drawing lacks unambiguous drill/top-view numbering;verify actual2mm part before PCB.
+panel,DPOWER,1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,1,https://www.vishay.com/docs/88525/1n5817.pdf,"CommonSchottky reverseblock;USBserviceONLYGroveunplugged,avoidSDAbackfeed."
+panel,CPIN,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,RPANELRUN,10k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,REEPSDA,4.7k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,REEPSCL,4.7k,Resistor_SMD:R_0805_2012Metric,1,,
+panel,CMUX,100nF,Capacitor_SMD:C_0805_2012Metric,1,,
+panel,UMUX,CD74HC4051E,Package_DIP:DIP-16_W7.62mm,1,https://www.ti.com/lit/ds/symlink/cd74hc4051.pdf,HC2..6V;notHCT. CH0..3=knob1..4;C/INH/VEE=GND. 250ussettle then discardfirstADCsample;no audio goes throughthismux.

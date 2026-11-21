@@ -1,1 +1,0 @@
-(fp_lib_table (version 7) (lib (name "P2D") (type "KiCad") (uri "${KIPRJMOD}/../P2D.pretty") (options "") (descr "Original MIT socket geometry for PCB review D")))

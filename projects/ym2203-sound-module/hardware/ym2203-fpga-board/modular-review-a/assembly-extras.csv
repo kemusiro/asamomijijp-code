@@ -1,8 +1,0 @@
-Item,Quantity,Scope,Qualification
-PGA2350 PIM722,1,"Base MPGA placeholder includes module, not its socket terminals",Onboard flash/PSRAM/crystal/USB resistors retained
-PGA female receptacle terminals,64,Reuse reviewB Mill-Max0300-2-15-15-47-27-10-0 candidate,Actual mating/height/retention not measured
-YM DIP40 wide socket,1,Module U12 socketed,15.24mm row pitch; verify purchased socket drawing
-JMOD key plug,1,Block socket contact60; remove module header pin60,Asymmetric guides/standoffs also required; key alone not a shifted-insertion guarantee
-Dual A10k volume,1,Base JPOT offboard component,Not an additional onboard BOM ref
-UNO header set,1,Base JUNO_*; SamtecSSW equivalent plus male ICSP,IOREF3.3V; never generic5V shield compatibility
-External5V supply,1,Base JPOWER,1.5A target; measure drop/temperature; USB VBUS is sense only

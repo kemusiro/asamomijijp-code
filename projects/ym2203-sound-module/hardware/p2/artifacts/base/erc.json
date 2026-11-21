@@ -1,0 +1,107 @@
+{
+  "$schema": "https://schemas.kicad.org/erc.v1.json",
+  "coordinate_units": "mm",
+  "date": "2026-11-20T22:11:11",
+  "ignored_checks": [
+    {
+      "description": "Global label only appears once in the schematic",
+      "key": "single_global_label"
+    },
+    {
+      "description": "Four connection points are joined together",
+      "key": "four_way_junction"
+    },
+    {
+      "description": "SPICE model issue",
+      "key": "simulation_model_issue"
+    },
+    {
+      "description": "Assigned footprint doesn't match footprint filters",
+      "key": "footprint_filter"
+    }
+  ],
+  "included_severities": [
+    "error",
+    "warning",
+    "exclusion"
+  ],
+  "kicad_version": "10.0.5",
+  "sheets": [
+    {
+      "path": "/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b",
+      "violations": []
+    },
+    {
+      "path": "/01-mcu-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/cabe57ad-f9e6-5a0b-a36e-87d45dd044eb",
+      "violations": []
+    },
+    {
+      "path": "/01-module-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/58f2a7f7-2b96-52d5-bdba-fd80f3e87c14",
+      "violations": []
+    },
+    {
+      "path": "/02-power-usb-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/58ed8edb-c293-51f6-b3c7-7da439d539ff",
+      "violations": []
+    },
+    {
+      "path": "/03-default-stop-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/94341428-6815-5b58-925a-faec1ac90cc0",
+      "violations": []
+    },
+    {
+      "path": "/05-clock-ym-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/cab1d095-ff2d-5cae-9c83-6f462c7a4e22",
+      "violations": []
+    },
+    {
+      "path": "/06-dac-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/d98cf67a-ded7-59ec-a1a5-0f51b701ae5b",
+      "violations": []
+    },
+    {
+      "path": "/07-lineout-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/b28caebe-c37a-5d40-93cd-1fdb7baa874f",
+      "violations": []
+    },
+    {
+      "path": "/08-panel-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/65557a1d-15ed-5734-b1d6-0ae9ef5a185b",
+      "violations": []
+    },
+    {
+      "path": "/10-link-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/2fd0050b-67fc-5bc2-ba66-17ce43cc97f3",
+      "violations": []
+    },
+    {
+      "path": "/10-link-2/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/7e78bdbb-02e8-5c17-907e-f0bf4e661100",
+      "violations": []
+    },
+    {
+      "path": "/11-common-adc-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/d529fade-c0d0-5410-aff5-4fcf9bc098df",
+      "violations": []
+    },
+    {
+      "path": "/12-analog-input-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/ec5da5c1-5bad-504e-9cc5-349c19b0800f",
+      "violations": []
+    },
+    {
+      "path": "/13-i2c-panel-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/27a0e431-ad26-5272-aed8-e93d158cedb6",
+      "violations": []
+    },
+    {
+      "path": "/14-headphone-1/",
+      "uuid_path": "/03237567-6bdd-5239-aa13-6bc7fdc4451b/e8661999-ad2a-52df-9419-abd527fb5145",
+      "violations": []
+    }
+  ],
+  "source": "p2-base-lc-t.kicad_sch"
+}

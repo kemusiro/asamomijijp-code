@@ -1,0 +1,58 @@
+{
+  "result": "PASS",
+  "date": "2026-11-21",
+  "scope": "adopted Rev C/C SDK0.5.0-alpha.4 and P2 T/T/N FAB U public current-tree curation",
+  "tests": {
+    "C_and_HOST": {
+      "run": 115,
+      "passed": 111,
+      "skipped": 4
+    },
+    "legacy_MicroPython": {
+      "run": 55,
+      "passed": 55
+    },
+    "P2_contract_and_general_BOM": {
+      "run": 15,
+      "passed": 15
+    },
+    "CAM_negative_injections": {
+      "run": 14,
+      "passed": 14
+    },
+    "total_passed": 195,
+    "skipped_reason": "four optional song-data models; no song files distributed"
+  },
+  "native_P2": {
+    "boards": 3,
+    "ERC_DRC_unconnected_parity": 0,
+    "CAM_files_equal_except_generation_timestamps": 32,
+    "issued_Gerber_ZIPs_bit_identical": 3,
+    "BOM_rows": 88,
+    "references": 302
+  },
+  "isolation": "separate archive of staged Git tree; original worktrees unreadable; network denied",
+  "compatibility": "firmware C/PIO, existing I2C HOST/player, USB-MIDI and STOP/lease sources unchanged",
+  "hardware_acceptance": "Rev C original acceptance retained; P2 HAL not ported and hardware not accepted",
+  "public_history_rewritten": false,
+  "notes": "Historical provenance hashes are preserved. Current payload uses release-manifest.json. This validation does not add new hardware acceptance.",
+  "firmware_build": {
+    "version": "0.5.0-alpha.4",
+    "UF2_target": "RP2350 Arm Secure / Pico 2",
+    "UF2_sha256": "5d197332a2c940ea36ecbb0b2d5b3327593c2c86a7255676a577bde2b1a72acd",
+    "UF2_bit_identical_to_independent_extraction_build": true,
+    "asset": "original synthetic 191 events / 13000ms",
+    "memory": {
+      "text_bytes": 60344,
+      "data_bytes": 0,
+      "bss_bytes": 463660
+    }
+  },
+  "tools": {
+    "Python": "3.15.2",
+    "KiCad": "10.0.5",
+    "Gerbonara": "1.6.3",
+    "Pico_SDK": "2.2.0",
+    "Arm_GCC": "10.3.1 20210824"
+  }
+}

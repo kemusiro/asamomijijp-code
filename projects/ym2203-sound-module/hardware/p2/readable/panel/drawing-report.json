@@ -1,0 +1,101 @@
+{
+  "board": "panel",
+  "components": 51,
+  "paper": "A1",
+  "wire_segments": 234,
+  "junctions": 14,
+  "named_connections": 109,
+  "local_wired_branches": 44,
+  "fallback_named_connections": 0,
+  "fallback_nets": [],
+  "symbol_envelope_overlaps": [],
+  "bad_crossings": [],
+  "blocks": [
+    {
+      "title": "01  Grove power and reset",
+      "parts": [
+        "JUPLINK",
+        "DPOWER",
+        "CPIN",
+        "RPANELRUN",
+        "C1",
+        "C3",
+        "C4"
+      ]
+    },
+    {
+      "title": "02  Editor controller - physical Pico pin numbers",
+      "parts": [
+        "UPICO"
+      ]
+    },
+    {
+      "title": "03  32 KiB patch EEPROM",
+      "parts": [
+        "U1",
+        "REEPSDA",
+        "REEPSCL",
+        "C2"
+      ]
+    },
+    {
+      "title": "04  LCD socket - SPI, not I2C",
+      "parts": [
+        "J5",
+        "R18",
+        "R19",
+        "R16",
+        "R17"
+      ]
+    },
+    {
+      "title": "05  Four knobs, RC filters and analog multiplexer",
+      "parts": [
+        "RV1",
+        "R1",
+        "C5",
+        "RV2",
+        "R2",
+        "C6",
+        "RV3",
+        "R3",
+        "C7",
+        "RV4",
+        "R4",
+        "C8",
+        "UMUX",
+        "CMUX"
+      ]
+    },
+    {
+      "title": "06  Rotary encoder / push switch",
+      "parts": [
+        "ENC1",
+        "R5",
+        "R7",
+        "R9",
+        "R6",
+        "R8",
+        "C9",
+        "C10"
+      ]
+    },
+    {
+      "title": "07  Operator select, NOTE and STOP",
+      "parts": [
+        "R10",
+        "SW1",
+        "R11",
+        "SW2",
+        "R12",
+        "SW3",
+        "R13",
+        "SW4",
+        "R14",
+        "SW5",
+        "R15",
+        "SW6"
+      ]
+    }
+  ]
+}

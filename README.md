@@ -8,7 +8,7 @@
 
 ## 収録プロジェクト
 
-- [YM2203サウンドモジュール](projects/ym2203-sound-module/README.md) — Rev C基板設計、組立診断、Pico 2のI2C/USB-MIDIファームウェア、Ys II全曲再生への移行計画
+- [YM2203サウンドモジュール](projects/ym2203-sound-module/README.md) — 採用Rev C/P2基板設計、C SDK・I2C HOSTプレーヤー、USB-MIDIと独立した再現・検証手順
 - [超エレキ万博2026 展示版](projects/cho-eleki-expo-2026-clusters/README.md) — Pi 4車体進化、Pico 16台の車体・球体巡回描画、Pi 5の2画面、導入・監視・停止復旧コードとテスト
 - [Terraformで構築するALBとprivate subnetのEC2](projects/terraform-aws-iac-basics/README.md) — VPC、public/private subnet、NAT Gateway、ALB、EC2を含むAWS学習用構成
 - [AQM1602XA Arduino／MicroPythonクラス](projects/aqm1602-arduino-notes/README.md) — 文字表示・外字・スクロール・電源回路設定、Pico 2 W・UNO R4 WiFi／Minimaでの実機確認と自動テスト

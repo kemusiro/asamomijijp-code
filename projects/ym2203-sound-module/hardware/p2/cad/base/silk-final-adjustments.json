@@ -1,0 +1,25 @@
+[
+  {
+    "text": "PHONES/LINE",
+    "old_pos": [
+      71.0,
+      99.1
+    ],
+    "new_pos": [
+      71.0,
+      98.9
+    ],
+    "new_text": "PHONES/LINE"
+  },
+  {
+    "text": "DRGB pin1",
+    "old_pos": [
+      27.4,
+      93.9
+    ],
+    "new_pos": [
+      26.799999999999997,
+      93.9
+    ]
+  }
+]

@@ -1,0 +1,55 @@
+{
+  "base": {
+    "path": "local-output/gerbers/p2-base-t-fab-u-5pcs-gerber.zip",
+    "sha256": "503af22a6f9d58bf34e6a6d61916d31691dad634fbba3303f3b5994cfb0ad03b",
+    "pcb_quantity": 5,
+    "contents": {
+      "p2-base-lc-t-B_Cu.gbl": "3a76cf3c8cec7289d62d3ec488c85e4910846c9b54ca4bfebadde70c2ef57791",
+      "p2-base-lc-t-B_Mask.gbs": "34ab4696daa3bbf95c571a42147fe8d746d9ce3443b23496f3d038fab93bd643",
+      "p2-base-lc-t-B_Silkscreen.gbo": "4d0b0fcf82099f76e9420d298083de2a1ee713d52397f5326d01dfc2e475fe96",
+      "p2-base-lc-t-Edge_Cuts.gm1": "ff5e23e935c64f8b83781abaff72ada1b9861d4b9a0aff7b4b5c47a3502cab8f",
+      "p2-base-lc-t-F_Cu.gtl": "ab1a3ac1d741be8cc8988239cc52dd1bfc22ca352f8f71039f633c28db00ec20",
+      "p2-base-lc-t-F_Mask.gts": "b31a07136067ed9bac3b30c8396f4b7f1db9275fbb7f98b735a4ad64712fce30",
+      "p2-base-lc-t-F_Silkscreen.gto": "da8b15d874ae6c54fb4bf6fa7ba48e7e039759bcf72455c0f7e136b031593bf4",
+      "p2-base-lc-t-In1_Cu.g1": "de2e09a2ec40d052561a3c2a40a73176de76a2118ba123acd4c1d339721c8a5d",
+      "p2-base-lc-t-In2_Cu.g2": "e4ed3a963956e82094876fdb7c875e34db614e98fb7d8325e742727e0de9127b",
+      "p2-base-lc-t-NPTH.drl": "62c23d4ac64b0c67e1289005b303fbe415bad9c1ef88dbe63345e10703480a10",
+      "p2-base-lc-t-PTH.drl": "c8c3c367aef40103e7c443f65319d887f2463a5e9501a76e84b19a5f82739f4e",
+      "p2-base-lc-t-job.gbrjob": "3a7d3056b3e413f24bc40b39fff4042faa525e8cc33a75b2d2c1ed16b6c3e28e"
+    }
+  },
+  "module": {
+    "path": "local-output/gerbers/p2-module-t-fab-u-5pcs-gerber.zip",
+    "sha256": "fe7b79dc894e393c24af59a75086fea7dc4620250299ae027585822147c69fba",
+    "pcb_quantity": 5,
+    "contents": {
+      "p2-ym2203-lc-t-B_Cu.gbl": "0a9a47df054069a0e810109345d73161ea15bd0e4e17877f7b8f850fbe30c50c",
+      "p2-ym2203-lc-t-B_Mask.gbs": "1cb34c3cf2bf7e75650901470b388b933752b37281397c221e79518855fe5d40",
+      "p2-ym2203-lc-t-B_Silkscreen.gbo": "3e927b65aebbab1862a2a36dc73c46e2bce137e6c12a00d43b1d77506211f31c",
+      "p2-ym2203-lc-t-Edge_Cuts.gm1": "55e998a0f372c9b346e0694b50a317548d1439a5702b8fabb2cd911d3cc7b78c",
+      "p2-ym2203-lc-t-F_Cu.gtl": "4df442b7c2044d828265dc9c26641d14886f7edaf6d27fc6b84e34a9a75efc20",
+      "p2-ym2203-lc-t-F_Mask.gts": "91c768dbd62cf6e07f4b32e12599157aefc70bde0edd674ff806de3944647307",
+      "p2-ym2203-lc-t-F_Silkscreen.gto": "5af15af44ff37e8f2bae125a71bc12cfc31c35ec51c1d766ebd03dcec803d253",
+      "p2-ym2203-lc-t-NPTH.drl": "a966f07b10ced43f72463d20e6d58040f05e315f93da6009f644dd4187459a34",
+      "p2-ym2203-lc-t-PTH.drl": "7526d3cb25d79be6803b0fb5a1741e1818c1ddd51b65a208b1fe2f0771b4648d",
+      "p2-ym2203-lc-t-job.gbrjob": "bec8f5048d476656a5eccdaf39ed262e5c45a81bbb7580fd38ad1abc45ee66c7"
+    }
+  },
+  "panel": {
+    "path": "local-output/gerbers/p2-panel-n-fab-u-5pcs-gerber.zip",
+    "sha256": "c02ff03f952bb85918ba6fa693d16dcf80944ad78845c779e9e9c7fa8bd74005",
+    "pcb_quantity": 5,
+    "contents": {
+      "p2-panel-lc-n-B_Cu.gbl": "9563bb95a15e9f8bd54d5937be4847017d55e34f34686de6b4d8767b35c432ad",
+      "p2-panel-lc-n-B_Mask.gbs": "666e9c89972ce639d6c936b393ad1e833e8e149133313f5100d36be6e687b749",
+      "p2-panel-lc-n-B_Silkscreen.gbo": "5fd3b615f2d9ae2974b2116bda1d3fe8e80aa1623a09c0736b24800c0d765091",
+      "p2-panel-lc-n-Edge_Cuts.gm1": "b1cb2c5379cb5d80afe724f1f6c42e1c1a74053362c9b13bf08746cd316ea19b",
+      "p2-panel-lc-n-F_Cu.gtl": "48c56d11c979af2fd143ee687c0744d5da7c587b70cdbfcf6be339a95ff6b701",
+      "p2-panel-lc-n-F_Mask.gts": "06eeb002fc4c67e6670f467663f04f214136814fabaa565ebc09758ec341f929",
+      "p2-panel-lc-n-F_Silkscreen.gto": "ed269fd121040fea43d2cda7b4e3d7c321c14d883ffe3f401c65f7b52f3c1a90",
+      "p2-panel-lc-n-NPTH.drl": "046ea0b7527e70aa00a0382f66e1cb63271d5231c523f5918c7bfb978f637587",
+      "p2-panel-lc-n-PTH.drl": "e701cc8d0461cc7583e7d8a6d72d2ed2354e34030080a7d4b95955707fb60a48",
+      "p2-panel-lc-n-job.gbrjob": "27ba6abb196ba4828422e14e8ab88d427217f9881e0941df409abd314d8beff0"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+Drill report for p2-base-lc-t.kicad_pcb
+Created on 2026-11-20T22:11:13
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  In1.Cu                    in1
+    L3 :  In2.Cu                    in2
+    L4 :  B.Cu                      back
+
+
+Drill file 'p2-base-lc-t-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.300mm  0.0118"  (493 holes))
+    T2  0.600mm  0.0236"  (4 holes)  (with 4 slots)
+    T3  0.800mm  0.0315"  (19 holes))
+    T4  0.900mm  0.0354"  (6 holes))
+    T5  1.000mm  0.0394"  (71 holes)  (with 3 slots)
+    T6  1.100mm  0.0433"  (12 holes))
+    T7  1.200mm  0.0472"  (4 holes))
+
+    Total plated holes count 609
+
+
+Drill file 'p2-base-lc-t-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+    T1  0.650mm  0.0256"  (2 holes))
+    T2  1.000mm  0.0394"  (2 holes))
+    T3  3.200mm  0.1260"  (6 holes))
+
+    Total unplated holes count 10
