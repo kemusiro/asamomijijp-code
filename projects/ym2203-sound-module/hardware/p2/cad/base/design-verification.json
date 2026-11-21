@@ -1,0 +1,15 @@
+{
+  "result": "PASS",
+  "board": "base",
+  "visible_silk_texts": 15,
+  "minimum_text_height_mm": 1.0,
+  "minimum_text_stroke_mm": 0.15,
+  "minimum_silk_shape_stroke_mm": 0.15,
+  "minimum_silk_clearance_mm": 0.15,
+  "electrical_geometry_unchanged": true,
+  "erc": 0,
+  "drc": 0,
+  "unconnected": 0,
+  "schematic_parity": 0,
+  "hardware_accepted": false
+}

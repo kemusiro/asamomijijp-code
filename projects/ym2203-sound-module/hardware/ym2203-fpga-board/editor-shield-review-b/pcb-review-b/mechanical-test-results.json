@@ -1,7 +1,0 @@
-{
-  "tests": 4,
-  "failures": 0,
-  "errors": 0,
-  "scope": "native CAD defect injection: rectangular original passes; hidden THT lead, tall control and reopened edge rejected",
-  "hardware_accepted": false
-}

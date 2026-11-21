@@ -1,0 +1,97 @@
+Reference,Value,Footprint,Sheet,Datasheet,Note
+U8,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,02-level-bus,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,"Bidirectional YM data translation: VCCA=Core3V3,VCCB=5V. DIR and OE controlled locally; default disabled."
+U9,SN74LVC8T245PWR,Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm,02-level-bus,https://www.ti.com/lit/ds/symlink/sn74lvc8t245.pdf,Fixed A->B: A0/CS/WR/RD plus clock and RESET on two formerly spare channels. OE_N default high disables clock and holds RESET via10k pull-down.
+C11,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+C12,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+C13,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+C14,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+C15,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+C16,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-level-bus,,Capacitor body/height and effective capacitance to be checked against final MPN
+RDIR,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RDOE,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RCOE,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD0,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD1,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD2,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD3,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD4,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD5,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD6,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RD7,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+R32,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RMC32,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+R33,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RMC33,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+R34,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RMC34,10k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+R35,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+RMA,100k,Resistor_SMD:R_0805_2012Metric,02-level-bus,,
+U12,YM2203C SOCKET,Package_DIP:DIP-40_W15.24mm_Socket,04-ym-fm-clock,https://www.bitsavers.org/components/yamaha/YM2203_198911.pdf,IO ports A/B unused; IRQ unconnected; 5V supply
+C19,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,04-ym-fm-clock,,Capacitor body/height and effective capacitance to be checked against final MPN
+C20,10u 10V,Capacitor_SMD:C_0805_2012Metric,04-ym-fm-clock,,Capacitor body/height and effective capacitance to be checked against final MPN
+R39,33,Resistor_SMD:R_0805_2012Metric,04-ym-fm-clock,,
+R40,100k,Resistor_SMD:R_0805_2012Metric,04-ym-fm-clock,,
+U16,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,04-ym-fm-clock,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,"Retained 5V-to-3V3 FM diagnostic receive taps. Normal E playback uses YM3014 and ADC,not this digital stream. No GP16..18 remap. Procurement J Q1 substitute;PW14 pinout retained;static checks only."
+C27,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,04-ym-fm-clock,,Capacitor body/height and effective capacitance to be checked against final MPN
+RL0,1.33k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,
+RL1,1.33k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,
+RL2,1.33k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,
+RS3,33,Resistor_SMD:R_0805_2012Metric,04-ym-fm-clock,,
+RS6,33,Resistor_SMD:R_0805_2012Metric,04-ym-fm-clock,,
+RS8,33,Resistor_SMD:R_0805_2012Metric,04-ym-fm-clock,,
+RYMRESET,10k,Resistor_SMD:R_0805_2012Metric,03-reset,,
+RRELDEFAULT,100k,Resistor_SMD:R_0805_2012Metric,03-reset,,
+CMOD5,22u X7R 16V C3225X7R1C226K250AC,Capacitor_SMD:C_1210_3225Metric,04-ym-fm-clock,https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C3225X7R1C226K250AC,"Larger1210commonX7R supplybulk,notrare0805high-density. No GPIOorresetpathchange."
+RSMIXA,10k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+RSMIXB,10k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+RSMIXC,10k 1%,Resistor_SMD:R_0805_2012Metric,05-ssg,,SSG passive average -> G40 pin39 CH2;never mixed into FM on pin37.
+CCORE,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-core,,
+CCOREB,4.7u X7R 10V,Capacitor_SMD:C_0805_2012Metric,02-core,,
+URUNOD,SN74LVC1G07DBVR,Package_TO_SOT_SMD:SOT-23-5,03-reset,https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf,ENABLE low sinks CORE_RUN_N. Picossci2B RUN is reached by insulated wire from SW1 non-GND node to carrier SW1.S; no edge RUN pad.
+CURUNOD,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,03-reset,,
+RENPD,10k,Resistor_SMD:R_0805_2012Metric,03-reset,,
+RRUNUP,10k,Resistor_SMD:R_0805_2012Metric,03-reset,,
+ULINK0,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,01-link,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,"Ioff receiving-domain buffer, 5V-tolerant inputs; unused channels disabled. Procurement J Q1 substitute;PW14 pinout retained;static checks only."
+ULINK1,SN74LV4T125QPWRQ1,Package_SO:TSSOP-14_4.4x5mm_P0.65mm,01-link,https://www.ti.com/lit/ds/symlink/sn74lv4t125-q1.pdf,I2S and SPI TX retained. In E split-analog profile GP27 LINK_TX_DISABLE stays HIGH;DSP mix ignores moduleI2S. Future profiles explicit only. Procurement J Q1 substitute;PW14 pinout retained;static checks only.
+UTXOR,SN74LVC1G32DBVRE4,Package_TO_SOT_SMD:SOT-23-5,01-link,https://www.ti.com/lit/ds/symlink/sn74lvc1g32.pdf,MISO disabled when unselected OR Core output permission not initialized. Default GPIO27 HiZ -> pull-up disables both return channels. Procurement J E4 lead finish/order option;DBV5 retained.
+CUTXOR,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,01-link,,
+RTXDIS,10k,Resistor_SMD:R_0805_2012Metric,01-link,,
+CULINK0,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,01-link,,
+CULINK1,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,01-link,,
+RMSCK,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMMOSI,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMCS,10k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMBCK,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMLR,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMCLK,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMADR,100k,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMTXMISO,33,Resistor_SMD:R_0805_2012Metric,01-link,,
+RMTXDATA,33,Resistor_SMD:R_0805_2012Metric,01-link,,
+UALERT,SN74LVC1G07DBVR,Package_TO_SOT_SMD:SOT-23-5,01-link,https://www.ti.com/lit/ds/symlink/sn74lvc1g07.pdf,Core sets HIGH when ready -> open drain released; LOW/reset reports not-ready/fault.
+CUALERT,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,01-link,,
+JMOD,G40 2x20 ordinary male / KEY6,P2LC:G40_Male_Underside,01-link,https://akizukidenshi.com/catalog/g/g100080/,"G40 existing order;37 CH1=FM,39 CH2=SSG;31/33/34 I2S retained. Split-analog profile;not stereo panning."
+USOURCE,Picossci 2B RP2350B SSCI-105071,P2LC:Picossci2B_DirectSolder_DebugWire,02-source-mcu,https://www.switch-science.com/products/10507,48 GPIO. GP24/25 onboard LEDs retained and not used externally. Three SWD stitching wires and SW1 non-GND RUN wire required; no edge RUN pad. Direct solder 1.27mm.
+UDAC,YM3014B-F 16SOP / supplied,P2LC:YM3014BF_SOP16_5.3x10.2_P1.27mm,06-fm-dac,https://bitsavers.trailing-edge.com/components/yamaha/YM3014B_199403.pdf,"16SOP only,not DIP8. VDD5V, RB10u and follower toMP per Yamaha basic circuit. 10bit mantissa+3bit exponent. DACclock fromY_CLK,not master. Sample source stock/marking/dimensions toverify."
+UAF,MCP6002-E/P,Package_DIP:DIP-8_W7.62mm,06-fm-dac,https://www.microchip.com/content/dam/mchp/documents/MSLD/ProductDocuments/DataSheets/MCP6001-1R-1U-2-4-1-MHz-Low-Power-Op-Amp-DS20001733L.pdf,"A=RB voltage follower -> MP; B=TO_BUFF voltage follower. 5V single supply,RRIO,unity stable;100ohm output isolation. No LM358/TL072 substitution without bias/swing check."
+RFMSD,33,Resistor_SMD:R_0805_2012Metric,06-fm-dac,,
+RFMCLK,33,Resistor_SMD:R_0805_2012Metric,06-fm-dac,,
+RFMSH,33,Resistor_SMD:R_0805_2012Metric,06-fm-dac,,
+RFMOUT,100,Resistor_SMD:R_0805_2012Metric,06-fm-dac,,Output isolation outside opamp feedback. G40CH1DC biased;AC coupling already on base. Not a headphone driver.
+CFMDAC,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-fm-dac,,Close toUDAC1/12.
+COPAMP,100n X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-fm-dac,,Within2mm ofUAF8/4.
+CRB,10u 50V polar,Capacitor_THT:CP_Radial_D5.0mm_P2.00mm,06-fm-dac,https://akizukidenshi.com/catalog/g/g117897/,"Positive pin1=RB,negative2=GND. Yamaha reference bypass10uF. D5xH11mm;RB not MP. No bulk C directly on follower output."
+CANABULK,10u X7R 10V,Capacitor_SMD:C_0805_2012Metric,06-fm-dac,,Local5Vbulk;existingbag spare covers onepiece. No series supply resistor thatviolates4.75V DACminimum.
+DMCU5V,1N5819,Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal,02-source-mcu,https://www.vishay.com/docs/88525/1n5817.pdf,G40 5V -> diode -> MCU_5V -> Picossci2B regulator input. Does not drop YM3014 supply. Source service interface is SWD; no AE-RP2040 USB connector remains.
+RVOICE1,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE1,FM1,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+RVOICE2,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE2,FM2,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+RVOICE3,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE3,FM3,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+RVOICE4,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE4,SSGA,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+RVOICE5,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE5,SSGB,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+RVOICE6,1k,Resistor_SMD:R_0805_2012Metric,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+DVOICE6,SSGC,LED_THT:LED_D3.0mm,09-voice-indicators,,"Source-local channel/key-enable indication, not measured PCM level."
+JSWD,SWD service / program source 2B,Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical,02-source-mcu,https://www.switch-science.com/products/10507,

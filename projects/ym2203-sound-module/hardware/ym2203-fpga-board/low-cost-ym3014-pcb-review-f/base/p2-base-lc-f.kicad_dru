@@ -1,2 +1,0 @@
-(version 1)
-(rule "Si5351 MSOP native pin spacing" (condition "A.memberOfFootprint('U13') && B.memberOfFootprint('U13')") (constraint clearance (min 0.15mm)))

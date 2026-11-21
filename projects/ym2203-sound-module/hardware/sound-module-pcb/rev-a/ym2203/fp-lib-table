@@ -1,1 +1,0 @@
-(fp_lib_table (version 7) (lib (name "SOUNDPCB") (type "KiCad") (uri "${KIPRJMOD}/SOUNDPCB.pretty") (options "") (descr "Original prototype footprints")))

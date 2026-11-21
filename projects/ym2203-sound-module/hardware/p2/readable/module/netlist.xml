@@ -1,0 +1,5013 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>module/p2-module-readable-t.kicad_sch</source>
+    <date>2026-11-21T21:43:04</date>
+    <tool>Eeschema 10.0.5</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>P2 module / complete schematic</title>
+        <company/>
+        <rev>PCB T / drawing T</rev>
+        <date>2026-11-20</date>
+        <source>p2-module-readable-t.kicad_sch</source>
+        <comment number="1" value="Logical redraw only - board connectivity unchanged"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C11">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C11</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C11" description=""/>
+      <property name="View0" value="C11"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f7224b4-ae1e-516f-87e4-f61e72e58903</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C12">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C12</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C12" description=""/>
+      <property name="View0" value="C12"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d4ca7a27-7aa7-59e0-860f-05a7352055da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C13">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C13</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C13" description=""/>
+      <property name="View0" value="C13"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73f74c64-71e9-5f14-9d5d-a7a499746c7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C14">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C14</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C14" description=""/>
+      <property name="View0" value="C14"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>01d7da7c-2f6e-5627-b6a4-105013a47ecd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C15">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C15</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C15" description=""/>
+      <property name="View0" value="C15"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>45e49e86-4a05-563e-b07b-31adc61c51e9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C16">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C16</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C16" description=""/>
+      <property name="View0" value="C16"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4feee3e8-98f0-5a35-bcae-e86acddde7a6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C19">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C19</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C19" description=""/>
+      <property name="View0" value="C19"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7fdbf92-d7fb-5375-9f1e-d95b6952acba</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C20">
+      <value>10u 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C20</field>
+        <field name="View1">10u</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C20" description=""/>
+      <property name="View0" value="C20"/>
+      <property name="View1" value="10u"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bd4e1823-b0ed-5101-adaa-70bd739c8e25</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="C27">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">C27</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="C27" description=""/>
+      <property name="View0" value="C27"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f834e3e5-1dcc-5108-9434-8d9a7e4b23f3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CANABULK">
+      <value>10u X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CANABULK</field>
+        <field name="View1">10u</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CANABULK" description=""/>
+      <property name="View0" value="CANABULK"/>
+      <property name="View1" value="10u"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ffb02ba4-f539-530d-967c-1d71972ad9e6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CCORE">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CCORE</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CCORE" description=""/>
+      <property name="View0" value="CCORE"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>eb01a892-95de-59d6-b2c8-55d525e583d0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CCOREB">
+      <value>4.7u X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CCOREB</field>
+        <field name="View1">4.7u</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CCOREB" description=""/>
+      <property name="View0" value="CCOREB"/>
+      <property name="View1" value="4.7u"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>320bb570-766f-59b1-8a9a-06d3d48891d6</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CFMDAC">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CFMDAC</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CFMDAC" description=""/>
+      <property name="View0" value="CFMDAC"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>20b09807-52e3-539c-9b23-4a6624358745</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CMOD5">
+      <value>22u X7R 16V C3225X7R1C226K250AC</value>
+      <footprint>Capacitor_SMD:C_1210_3225Metric</footprint>
+      <fields>
+        <field name="View0">CMOD5</field>
+        <field name="View1">22u / 16V X7R</field>
+        <field name="Footprint">Capacitor_SMD:C_1210_3225Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CMOD5" description=""/>
+      <property name="View0" value="CMOD5"/>
+      <property name="View1" value="22u / 16V X7R"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9c39d3f9-2c12-5346-bf2b-427dd5bc0829</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="COPAMP">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">COPAMP</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="COPAMP" description=""/>
+      <property name="View0" value="COPAMP"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b3c68afe-01a2-508a-baae-ad069466acae</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CRB">
+      <value>10u 50V polar</value>
+      <footprint>Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</footprint>
+      <fields>
+        <field name="View0">CRB</field>
+        <field name="View1">10u / 50V +</field>
+        <field name="Footprint">Capacitor_THT:CP_Radial_D5.0mm_P2.00mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CRB" description=""/>
+      <property name="View0" value="CRB"/>
+      <property name="View1" value="10u / 50V +"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aba95da6-cc76-50ce-a70b-ab0979e18dd0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CUALERT">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CUALERT</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CUALERT" description=""/>
+      <property name="View0" value="CUALERT"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30cda887-0a4d-5894-b9a8-aea122232693</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CULINK0">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CULINK0</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CULINK0" description=""/>
+      <property name="View0" value="CULINK0"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b83da678-1397-5863-a57c-d67c9abf845d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CULINK1">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CULINK1</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CULINK1" description=""/>
+      <property name="View0" value="CULINK1"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3c87555e-834b-5c1e-b9e7-0d23e503d83d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CURUNOD">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CURUNOD</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CURUNOD" description=""/>
+      <property name="View0" value="CURUNOD"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c9b05e32-f8c6-5b6a-9cbf-ad06e707ac2d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="CUTXOR">
+      <value>100n X7R 10V</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">CUTXOR</field>
+        <field name="View1">100n</field>
+        <field name="Footprint">Capacitor_SMD:C_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="CUTXOR" description=""/>
+      <property name="View0" value="CUTXOR"/>
+      <property name="View1" value="100n"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f185027c-0ad0-5b91-862f-ed8677bed79c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DMCU5V">
+      <value>1N5819</value>
+      <footprint>Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</footprint>
+      <fields>
+        <field name="View0">DMCU5V</field>
+        <field name="View1">1N5819</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DMCU5V" description=""/>
+      <property name="View0" value="DMCU5V"/>
+      <property name="View1" value="1N5819"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4678e3b4-eebc-58dd-8013-0a95c8dc34d9</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE1">
+      <value>FM1</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE1</field>
+        <field name="View1">FM1</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE1" description=""/>
+      <property name="View0" value="DVOICE1"/>
+      <property name="View1" value="FM1"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e2a54560-b5a6-5f81-b8c3-2a747116fbf2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE2">
+      <value>FM2</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE2</field>
+        <field name="View1">FM2</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE2" description=""/>
+      <property name="View0" value="DVOICE2"/>
+      <property name="View1" value="FM2"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7b5916b2-5412-5e91-b35b-b44cda7cbe3e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE3">
+      <value>FM3</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE3</field>
+        <field name="View1">FM3</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE3" description=""/>
+      <property name="View0" value="DVOICE3"/>
+      <property name="View1" value="FM3"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1b2b5b79-10e1-5a94-ba06-6e16c89b910d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE4">
+      <value>SSGA</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE4</field>
+        <field name="View1">SSGA</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE4" description=""/>
+      <property name="View0" value="DVOICE4"/>
+      <property name="View1" value="SSGA"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dabebb5e-2faf-5a50-b771-fb5ae3fc0ad7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE5">
+      <value>SSGB</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE5</field>
+        <field name="View1">SSGB</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE5" description=""/>
+      <property name="View0" value="DVOICE5"/>
+      <property name="View1" value="SSGB"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4895f4a9-f1e9-5c42-88df-4dd7055d941a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="DVOICE6">
+      <value>SSGC</value>
+      <footprint>LED_THT:LED_D3.0mm</footprint>
+      <fields>
+        <field name="View0">DVOICE6</field>
+        <field name="View1">SSGC</field>
+        <field name="Footprint">LED_THT:LED_D3.0mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="DVOICE6" description=""/>
+      <property name="View0" value="DVOICE6"/>
+      <property name="View1" value="SSGC"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cc46bbb7-866b-58b5-a5b9-f125b12fb83b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JMOD">
+      <value>G40 2x20 ordinary male / KEY6</value>
+      <footprint>P2LC:G40_Male_Underside</footprint>
+      <fields>
+        <field name="View0">JMOD</field>
+        <field name="View1">G40 / KEY6</field>
+        <field name="Footprint">P2LC:G40_Male_Underside</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="JMOD" description=""/>
+      <property name="View0" value="JMOD"/>
+      <property name="View1" value="G40 / KEY6"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f8a1e237-9af4-5f47-b993-53d56bc7b882</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="7"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+            <pin num="17"/>
+            <pin num="19"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="25"/>
+            <pin num="27"/>
+            <pin num="29"/>
+            <pin num="31"/>
+            <pin num="33"/>
+            <pin num="35"/>
+            <pin num="37"/>
+            <pin num="39"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="10"/>
+            <pin num="12"/>
+            <pin num="14"/>
+            <pin num="16"/>
+            <pin num="18"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="24"/>
+            <pin num="26"/>
+            <pin num="28"/>
+            <pin num="30"/>
+            <pin num="32"/>
+            <pin num="34"/>
+            <pin num="36"/>
+            <pin num="38"/>
+            <pin num="40"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="JSWD">
+      <value>SWD service / program source 2B</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</footprint>
+      <fields>
+        <field name="View0">JSWD</field>
+        <field name="View1">SWD</field>
+        <field name="Footprint">Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="JSWD" description=""/>
+      <property name="View0" value="JSWD"/>
+      <property name="View1" value="SWD"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fa05678-6482-5608-820d-5661fd5dc2f5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R32">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R32</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R32" description=""/>
+      <property name="View0" value="R32"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f60f206b-df5f-5314-bfb4-b68c67954abd</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R33">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R33</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R33" description=""/>
+      <property name="View0" value="R33"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa36b234-2e86-512c-a162-3541576f342b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R34">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R34</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R34" description=""/>
+      <property name="View0" value="R34"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fc92a685-3866-521d-9016-50f9d0312f2e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R35">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R35</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R35" description=""/>
+      <property name="View0" value="R35"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>b021e0ed-2534-5945-b3ce-07a26661c95b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R39">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R39</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R39" description=""/>
+      <property name="View0" value="R39"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4803acc6-9ecd-51b5-8b83-bf3801e18efa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="R40">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">R40</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="R40" description=""/>
+      <property name="View0" value="R40"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a7019f74-bd31-5c44-b119-e80c36fb9a95</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RCOE">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RCOE</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RCOE" description=""/>
+      <property name="View0" value="RCOE"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9e236d91-8bd6-5eab-94cc-aa1c3a4f48d3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD0">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD0</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD0" description=""/>
+      <property name="View0" value="RD0"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>608b8c4b-6aa8-58a5-acc8-9fc7a7429441</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD1">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD1</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD1" description=""/>
+      <property name="View0" value="RD1"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>1dfb40e4-90cb-57cb-8432-898feb45e208</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD2">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD2</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD2" description=""/>
+      <property name="View0" value="RD2"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c5a3dd20-497d-507d-8233-1ef9b29d895d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD3">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD3</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD3" description=""/>
+      <property name="View0" value="RD3"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73e0ed6e-23cc-5aef-a51a-dd3dfdb9aeb1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD4">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD4</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD4" description=""/>
+      <property name="View0" value="RD4"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>53460e0f-c450-5ca4-9439-f65e5aae086e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD5">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD5</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD5" description=""/>
+      <property name="View0" value="RD5"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>15ada571-f152-522e-b324-2e6106643af4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD6">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD6</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD6" description=""/>
+      <property name="View0" value="RD6"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fee2623c-1daa-561d-949c-46e5a0f589b3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RD7">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RD7</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RD7" description=""/>
+      <property name="View0" value="RD7"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7c989ae3-9622-5004-9609-6947f7cd0cb8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RDIR">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RDIR</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RDIR" description=""/>
+      <property name="View0" value="RDIR"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a22e4f48-a653-5bb3-ac82-8e8e3b6a9a1f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RDOE">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RDOE</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RDOE" description=""/>
+      <property name="View0" value="RDOE"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb0a5bc5-379c-5509-ad95-709252f54d1a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RENPD">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RENPD</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RENPD" description=""/>
+      <property name="View0" value="RENPD"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f5ddeac1-c48e-5c9c-85b3-1fe05adf3203</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RFMCLK">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RFMCLK</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RFMCLK" description=""/>
+      <property name="View0" value="RFMCLK"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2849f169-bfaa-530a-83e6-5cad7acf41d4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RFMOUT">
+      <value>100</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RFMOUT</field>
+        <field name="View1">100</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RFMOUT" description=""/>
+      <property name="View0" value="RFMOUT"/>
+      <property name="View1" value="100"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>bfbfa77c-4823-5d29-b0e9-6c4be07fe857</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RFMSD">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RFMSD</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RFMSD" description=""/>
+      <property name="View0" value="RFMSD"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3fd16aa9-6946-52c3-8c39-ff27ee7793ff</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RFMSH">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RFMSH</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RFMSH" description=""/>
+      <property name="View0" value="RFMSH"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d310737c-b3d9-5199-8839-010c648c82f8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RL0">
+      <value>1.33k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RL0</field>
+        <field name="View1">1.33k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RL0" description=""/>
+      <property name="View0" value="RL0"/>
+      <property name="View1" value="1.33k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5a90df18-7dd5-5728-9d13-8b3f815ba76a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RL1">
+      <value>1.33k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RL1</field>
+        <field name="View1">1.33k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RL1" description=""/>
+      <property name="View0" value="RL1"/>
+      <property name="View1" value="1.33k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>10b50b84-0e5f-5f7c-9fd5-67d65530c55b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RL2">
+      <value>1.33k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RL2</field>
+        <field name="View1">1.33k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RL2" description=""/>
+      <property name="View0" value="RL2"/>
+      <property name="View1" value="1.33k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5c399b5-bced-523d-b1a1-abbfaf4e628c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMA">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMA</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMA" description=""/>
+      <property name="View0" value="RMA"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>97dff9b4-c807-5dbf-9213-912799a4fc7f</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMADR">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMADR</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMADR" description=""/>
+      <property name="View0" value="RMADR"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c8423fbb-1b85-5e1f-bb40-3c71defe3547</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMBCK">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMBCK</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMBCK" description=""/>
+      <property name="View0" value="RMBCK"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>f1c04dcd-8988-589d-b054-232249c5d7fe</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMC32">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMC32</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMC32" description=""/>
+      <property name="View0" value="RMC32"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d0a0ed5f-4da0-5ea4-ac5d-c59eb387aed0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMC33">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMC33</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMC33" description=""/>
+      <property name="View0" value="RMC33"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>83cd821b-17c7-5daa-abcc-a42d45bd5a26</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMC34">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMC34</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMC34" description=""/>
+      <property name="View0" value="RMC34"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d5acd5e2-50ba-52f2-af57-c63bf19149c8</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMCLK">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMCLK</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMCLK" description=""/>
+      <property name="View0" value="RMCLK"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>49cadba2-b6e2-5baf-b654-e065f2104b65</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMCS">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMCS</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMCS" description=""/>
+      <property name="View0" value="RMCS"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>0c88dc0f-f490-5eb9-b16e-fd8eefcd7386</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMLR">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMLR</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMLR" description=""/>
+      <property name="View0" value="RMLR"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6d6e8484-0dda-5406-9aff-caf6dbfedda3</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMMOSI">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMMOSI</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMMOSI" description=""/>
+      <property name="View0" value="RMMOSI"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>8516d238-99f3-5c69-a68c-54196abe5abf</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMSCK">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMSCK</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMSCK" description=""/>
+      <property name="View0" value="RMSCK"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>863c226a-56aa-575c-89a8-a8d5f33b495c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMTXDATA">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMTXDATA</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMTXDATA" description=""/>
+      <property name="View0" value="RMTXDATA"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d363fc3-c099-55a2-9c17-c75e3bec3343</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RMTXMISO">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RMTXMISO</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RMTXMISO" description=""/>
+      <property name="View0" value="RMTXMISO"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>dff37d0a-3cb7-5be9-9687-d2b3025c7b64</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RRELDEFAULT">
+      <value>100k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RRELDEFAULT</field>
+        <field name="View1">100k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RRELDEFAULT" description=""/>
+      <property name="View0" value="RRELDEFAULT"/>
+      <property name="View1" value="100k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e62c0a74-3767-560d-bb90-407ba018dd7c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RRUNUP">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RRUNUP</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RRUNUP" description=""/>
+      <property name="View0" value="RRUNUP"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6cffab0a-1f36-5683-99cd-397f24ce749c</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RS3">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RS3</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RS3" description=""/>
+      <property name="View0" value="RS3"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>243bf602-4468-5f46-b4f6-793b1982d03d</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RS6">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RS6</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RS6" description=""/>
+      <property name="View0" value="RS6"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>ed6c1de9-374a-53e6-917a-92bcd2c66d3e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RS8">
+      <value>33</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RS8</field>
+        <field name="View1">33</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RS8" description=""/>
+      <property name="View0" value="RS8"/>
+      <property name="View1" value="33"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>4a1089b7-a034-52f2-9555-75c23a01816b</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RSMIXA">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RSMIXA</field>
+        <field name="View1">10k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RSMIXA" description=""/>
+      <property name="View0" value="RSMIXA"/>
+      <property name="View1" value="10k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fa21e67f-1810-579a-8f26-9b675b1c395a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RSMIXB">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RSMIXB</field>
+        <field name="View1">10k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RSMIXB" description=""/>
+      <property name="View0" value="RSMIXB"/>
+      <property name="View1" value="10k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5d9eb2df-7f7e-5652-8e07-dfd7d539b126</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RSMIXC">
+      <value>10k 1%</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RSMIXC</field>
+        <field name="View1">10k / 1%</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RSMIXC" description=""/>
+      <property name="View0" value="RSMIXC"/>
+      <property name="View1" value="10k / 1%"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>edd54ee6-2f62-5739-a47d-d0a3fc1fae1a</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RTXDIS">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RTXDIS</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RTXDIS" description=""/>
+      <property name="View0" value="RTXDIS"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>aa6617bc-76c0-5bd6-a6c9-fa33d326dc77</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE1">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE1</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE1" description=""/>
+      <property name="View0" value="RVOICE1"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>425744cd-e469-5ecb-ba73-bb39fe770ae2</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE2">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE2</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE2" description=""/>
+      <property name="View0" value="RVOICE2"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>335d121b-05b3-5c2c-b83c-776106498ec5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE3">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE3</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE3" description=""/>
+      <property name="View0" value="RVOICE3"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>30cfbb7e-14d5-5508-a6e3-0452827379c7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE4">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE4</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE4" description=""/>
+      <property name="View0" value="RVOICE4"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>9344e5c0-dd2e-5bed-acc9-25f2c5459ad0</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE5">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE5</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE5" description=""/>
+      <property name="View0" value="RVOICE5"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>48bf8689-f7d8-5c88-a07d-fe177bdae9da</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RVOICE6">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RVOICE6</field>
+        <field name="View1">1k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RVOICE6" description=""/>
+      <property name="View0" value="RVOICE6"/>
+      <property name="View1" value="1k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3cd94104-33bc-559d-993f-a3378c90a76e</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="RYMRESET">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <fields>
+        <field name="View0">RYMRESET</field>
+        <field name="View1">10k</field>
+        <field name="Footprint">Resistor_SMD:R_0805_2012Metric</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="RYMRESET" description=""/>
+      <property name="View0" value="RYMRESET"/>
+      <property name="View1" value="10k"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>3b73be25-f288-5b25-bbb4-15830a0a04f7</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U8">
+      <value>SN74LVC8T245PWR</value>
+      <footprint>Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <fields>
+        <field name="View0">U8</field>
+        <field name="View1">SN74LVC8T245PWR</field>
+        <field name="Footprint">Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="U8" description=""/>
+      <property name="View0" value="U8"/>
+      <property name="View1" value="SN74LVC8T245PWR"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>462b7778-9829-5549-bcde-dd73904b2dc5</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="22"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="24"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U9">
+      <value>SN74LVC8T245PWR</value>
+      <footprint>Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</footprint>
+      <fields>
+        <field name="View0">U9</field>
+        <field name="View1">SN74LVC8T245PWR</field>
+        <field name="Footprint">Package_SO:TSSOP-24_4.4x7.8mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="U9" description=""/>
+      <property name="View0" value="U9"/>
+      <property name="View1" value="SN74LVC8T245PWR"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6fde6f8e-1533-50e4-b7c3-d590f53644b4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="22"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="17"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="21"/>
+            <pin num="23"/>
+            <pin num="24"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U12">
+      <value>YM2203C SOCKET</value>
+      <footprint>Package_DIP:DIP-40_W15.24mm_Socket</footprint>
+      <fields>
+        <field name="View0">U12</field>
+        <field name="View1">YM2203C</field>
+        <field name="Footprint">Package_DIP:DIP-40_W15.24mm_Socket</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="U12" description=""/>
+      <property name="View0" value="U12"/>
+      <property name="View1" value="YM2203C"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>34f83658-ce45-5299-89bf-f491bef07d26</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="7"/>
+            <pin num="8"/>
+            <pin num="17"/>
+            <pin num="21"/>
+            <pin num="24"/>
+            <pin num="34"/>
+            <pin num="35"/>
+            <pin num="36"/>
+            <pin num="37"/>
+            <pin num="38"/>
+            <pin num="39"/>
+            <pin num="40"/>
+            <pin num="9"/>
+            <pin num="10"/>
+            <pin num="11"/>
+            <pin num="12"/>
+            <pin num="13"/>
+            <pin num="14"/>
+            <pin num="15"/>
+            <pin num="16"/>
+            <pin num="18"/>
+            <pin num="19"/>
+            <pin num="20"/>
+            <pin num="22"/>
+            <pin num="23"/>
+            <pin num="25"/>
+            <pin num="26"/>
+            <pin num="27"/>
+            <pin num="28"/>
+            <pin num="29"/>
+            <pin num="30"/>
+            <pin num="31"/>
+            <pin num="32"/>
+            <pin num="33"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="U16">
+      <value>SN74LV4T125QPWRQ1</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <fields>
+        <field name="View0">U16</field>
+        <field name="View1">SN74LV4T125Q</field>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="U16" description=""/>
+      <property name="View0" value="U16"/>
+      <property name="View1" value="SN74LV4T125Q"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>58096f63-82e6-5fdb-9561-e70996646888</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="UAF">
+      <value>MCP6002-E/P</value>
+      <footprint>Package_DIP:DIP-8_W7.62mm</footprint>
+      <fields>
+        <field name="View0">UAF</field>
+        <field name="View1">MCP6002</field>
+        <field name="Footprint">Package_DIP:DIP-8_W7.62mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="UAF" description=""/>
+      <property name="View0" value="UAF"/>
+      <property name="View1" value="MCP6002"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>2a63a20c-642c-5194-a60b-1084590af015</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="3"/>
+            <pin num="2"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="7"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="UALERT">
+      <value>SN74LVC1G07DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="View0">UALERT</field>
+        <field name="View1">SN74LVC1G07</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="UALERT" description=""/>
+      <property name="View0" value="UALERT"/>
+      <property name="View1" value="SN74LVC1G07"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>73a9f224-805a-57f7-b2c1-5cd88a60db89</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="UDAC">
+      <value>YM3014B-F 16SOP / supplied</value>
+      <footprint>P2LC:YM3014BF_SOP16_5.3x10.2_P1.27mm</footprint>
+      <fields>
+        <field name="View0">UDAC</field>
+        <field name="View1">YM3014B-F</field>
+        <field name="Footprint">P2LC:YM3014BF_SOP16_5.3x10.2_P1.27mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="UDAC" description=""/>
+      <property name="View0" value="UDAC"/>
+      <property name="View1" value="YM3014B-F"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c06b0753-5287-580c-8941-47c94e1276f4</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="7"/>
+            <pin num="10"/>
+            <pin num="4"/>
+            <pin num="1"/>
+            <pin num="12"/>
+            <pin num="3"/>
+            <pin num="5"/>
+            <pin num="6"/>
+            <pin num="14"/>
+            <pin num="16"/>
+            <pin num="2"/>
+            <pin num="8"/>
+            <pin num="9"/>
+            <pin num="11"/>
+            <pin num="13"/>
+            <pin num="15"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="ULINK0">
+      <value>SN74LV4T125QPWRQ1</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <fields>
+        <field name="View0">ULINK0</field>
+        <field name="View1">SN74LV4T125Q</field>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="ULINK0" description=""/>
+      <property name="View0" value="ULINK0"/>
+      <property name="View1" value="SN74LV4T125Q"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>5ba7e5ed-7544-5db7-9660-b1695173c9ee</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="ULINK1">
+      <value>SN74LV4T125QPWRQ1</value>
+      <footprint>Package_SO:TSSOP-14_4.4x5mm_P0.65mm</footprint>
+      <fields>
+        <field name="View0">ULINK1</field>
+        <field name="View1">SN74LV4T125Q</field>
+        <field name="Footprint">Package_SO:TSSOP-14_4.4x5mm_P0.65mm</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="ULINK1" description=""/>
+      <property name="View0" value="ULINK1"/>
+      <property name="View1" value="SN74LV4T125Q"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e77535f6-ce37-53f1-840e-25342612eaaa</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="4"/>
+            <pin num="5"/>
+            <pin num="10"/>
+            <pin num="9"/>
+            <pin num="13"/>
+            <pin num="12"/>
+            <pin num="7"/>
+            <pin num="3"/>
+            <pin num="6"/>
+            <pin num="8"/>
+            <pin num="11"/>
+            <pin num="14"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="URUNOD">
+      <value>SN74LVC1G07DBVR</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="View0">URUNOD</field>
+        <field name="View1">SN74LVC1G07</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="URUNOD" description=""/>
+      <property name="View0" value="URUNOD"/>
+      <property name="View1" value="SN74LVC1G07"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>c6a8d2f0-ae7b-5b4d-b086-c05c49ec2ca1</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="2"/>
+            <pin num="1"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="USOURCE">
+      <value>Picossci 2B RP2350B SSCI-105071</value>
+      <footprint>P2LC:Picossci2B_DirectSolder_DebugWire</footprint>
+      <fields>
+        <field name="View0">USOURCE</field>
+        <field name="View1">AE-RP2040</field>
+        <field name="Footprint">P2LC:Picossci2B_DirectSolder_DebugWire</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="USOURCE" description=""/>
+      <property name="View0" value="USOURCE"/>
+      <property name="View1" value="AE-RP2040"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>92ab3d49-78d2-5a27-9319-e50822b1ce90</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="J1.4"/>
+            <pin num="J1.5"/>
+            <pin num="J1.6"/>
+            <pin num="J1.7"/>
+            <pin num="J1.8"/>
+            <pin num="J1.9"/>
+            <pin num="J1.10"/>
+            <pin num="J1.11"/>
+            <pin num="J1.12"/>
+            <pin num="J1.13"/>
+            <pin num="J1.14"/>
+            <pin num="J1.15"/>
+            <pin num="J1.16"/>
+            <pin num="J1.17"/>
+            <pin num="J1.18"/>
+            <pin num="J1.19"/>
+            <pin num="J1.20"/>
+            <pin num="J2.1"/>
+            <pin num="J2.2"/>
+            <pin num="J2.3"/>
+            <pin num="J2.4"/>
+            <pin num="J2.5"/>
+            <pin num="J2.6"/>
+            <pin num="J2.7"/>
+            <pin num="J1.1"/>
+            <pin num="J1.2"/>
+            <pin num="J1.3"/>
+            <pin num="J2.10"/>
+            <pin num="J2.19"/>
+            <pin num="J2.20"/>
+            <pin num="J2.8"/>
+            <pin num="J2.9"/>
+            <pin num="J2.11"/>
+            <pin num="J2.12"/>
+            <pin num="J2.13"/>
+            <pin num="J2.14"/>
+            <pin num="J2.15"/>
+            <pin num="J2.16"/>
+            <pin num="J2.17"/>
+            <pin num="J2.18"/>
+            <pin num="JP6.1"/>
+            <pin num="JP6.2"/>
+            <pin num="JP6.3"/>
+            <pin num="JP6.4"/>
+            <pin num="JP6.5"/>
+            <pin num="JP6.6"/>
+            <pin num="JP6.7"/>
+            <pin num="JP7.2"/>
+            <pin num="JP7.3"/>
+            <pin num="JP7.4"/>
+            <pin num="JP7.5"/>
+            <pin num="JP7.6"/>
+            <pin num="JP7.7"/>
+            <pin num="JP7.8"/>
+            <pin num="JP6.8"/>
+            <pin num="JP7.1"/>
+            <pin num="JP1.1"/>
+            <pin num="JP1.2"/>
+            <pin num="JP1.3"/>
+            <pin num="SW1.S"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+    <comp ref="UTXOR">
+      <value>SN74LVC1G32DBVRE4</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <fields>
+        <field name="View0">UTXOR</field>
+        <field name="View1">SN74LVC1G32E4</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-23-5</field>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <libsource lib="P2R" part="UTXOR" description=""/>
+      <property name="View0" value="UTXOR"/>
+      <property name="View1" value="SN74LVC1G32E4"/>
+      <property name="Sheetname" value="ルート"/>
+      <property name="Sheetfile" value="p2-module-readable-t.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>cb58c786-fb31-551b-9075-37e8d1304130</tstamps>
+      <units>
+        <unit name="A">
+          <pins>
+            <pin num="1"/>
+            <pin num="2"/>
+            <pin num="3"/>
+            <pin num="4"/>
+            <pin num="5"/>
+          </pins>
+        </unit>
+      </units>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="P2R" part="C11">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C12">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C13">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C14">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C15">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C16">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C19">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C20">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="C27">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CANABULK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CCORE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CCOREB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CFMDAC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CMOD5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="COPAMP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CRB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CUALERT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CULINK0">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CULINK1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CURUNOD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="CUTXOR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DMCU5V">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="DVOICE6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="JMOD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="V5_MODULE" type="power_out"/>
+        <pin num="2" name="GND" type="power_out"/>
+        <pin num="3" name="V5_MODULE" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="V3V3_MODULE_AUX" type="passive"/>
+        <pin num="6" name="KEY" type="passive"/>
+        <pin num="7" name="MOD_ENABLE" type="output"/>
+        <pin num="8" name="MOD_ALERT_N" type="bidirectional"/>
+        <pin num="9" name="BUS_D0" type="bidirectional"/>
+        <pin num="10" name="BUS_D1" type="bidirectional"/>
+        <pin num="11" name="BUS_D2" type="bidirectional"/>
+        <pin num="12" name="BUS_D3" type="bidirectional"/>
+        <pin num="13" name="GND" type="passive"/>
+        <pin num="14" name="GND" type="passive"/>
+        <pin num="15" name="BUS_D4" type="passive"/>
+        <pin num="16" name="BUS_D5" type="passive"/>
+        <pin num="17" name="BUS_D6" type="passive"/>
+        <pin num="18" name="BUS_D7" type="passive"/>
+        <pin num="19" name="MOD_CTL0" type="passive"/>
+        <pin num="20" name="MOD_CTL1" type="passive"/>
+        <pin num="21" name="MOD_CTL2" type="passive"/>
+        <pin num="22" name="MOD_CTL3" type="passive"/>
+        <pin num="23" name="MOD_I2C_SDA" type="passive"/>
+        <pin num="24" name="MOD_I2C_SCL" type="passive"/>
+        <pin num="25" name="SOUND_CLK0" type="output"/>
+        <pin num="26" name="GND" type="passive"/>
+        <pin num="27" name="SOUND_CLK1" type="passive"/>
+        <pin num="28" name="GND" type="passive"/>
+        <pin num="29" name="SOUND_CLK2" type="passive"/>
+        <pin num="30" name="GND" type="passive"/>
+        <pin num="31" name="MOD_I2S_BCK" type="output"/>
+        <pin num="32" name="GND" type="passive"/>
+        <pin num="33" name="MOD_I2S_LRCK" type="output"/>
+        <pin num="34" name="MOD_I2S_DATA" type="input"/>
+        <pin num="35" name="GND" type="passive"/>
+        <pin num="36" name="GND" type="passive"/>
+        <pin num="37" name="AUDIO_L" type="passive"/>
+        <pin num="38" name="GND" type="passive"/>
+        <pin num="39" name="AUDIO_R" type="passive"/>
+        <pin num="40" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="JSWD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="SWCLK" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SWDIO" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R32">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R33">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R34">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R35">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R39">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="R40">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RCOE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD0">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RD7">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RDIR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RDOE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RENPD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RFMCLK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RFMOUT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RFMSD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RFMSH">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RL0">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RL1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RL2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMA">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMADR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMBCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMC32">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMC33">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMC34">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMCLK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMCS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMLR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMMOSI">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMSCK">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMTXDATA">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RMTXMISO">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RRELDEFAULT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RRUNUP">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RS3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RS6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RS8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RSMIXA">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RSMIXB">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RSMIXC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RTXDIS">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE2">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE3">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE4">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE5">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RVOICE6">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="RYMRESET">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="U12">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="D1" type="bidirectional"/>
+        <pin num="3" name="D2" type="bidirectional"/>
+        <pin num="4" name="D3" type="bidirectional"/>
+        <pin num="5" name="D4" type="bidirectional"/>
+        <pin num="6" name="D5" type="bidirectional"/>
+        <pin num="7" name="D6" type="bidirectional"/>
+        <pin num="8" name="D7" type="bidirectional"/>
+        <pin num="9" name="IOA7" type="bidirectional"/>
+        <pin num="10" name="IOA6" type="bidirectional"/>
+        <pin num="11" name="IOA5" type="bidirectional"/>
+        <pin num="12" name="IOA4" type="bidirectional"/>
+        <pin num="13" name="IOA3" type="bidirectional"/>
+        <pin num="14" name="IOA2" type="bidirectional"/>
+        <pin num="15" name="IOA1" type="bidirectional"/>
+        <pin num="16" name="IOA0" type="bidirectional"/>
+        <pin num="17" name="AGND" type="power_in"/>
+        <pin num="18" name="SSG_C" type="output"/>
+        <pin num="19" name="SSG_B" type="output"/>
+        <pin num="20" name="SSG_A" type="output"/>
+        <pin num="21" name="VDD" type="power_in"/>
+        <pin num="22" name="SH" type="output"/>
+        <pin num="23" name="SD" type="output"/>
+        <pin num="24" name="RESET_N" type="input"/>
+        <pin num="25" name="IRQn" type="open_collector"/>
+        <pin num="26" name="IOB0" type="bidirectional"/>
+        <pin num="27" name="IOB1" type="bidirectional"/>
+        <pin num="28" name="IOB2" type="bidirectional"/>
+        <pin num="29" name="IOB3" type="bidirectional"/>
+        <pin num="30" name="IOB4" type="bidirectional"/>
+        <pin num="31" name="IOB5" type="bidirectional"/>
+        <pin num="32" name="IOB6" type="bidirectional"/>
+        <pin num="33" name="IOB7" type="bidirectional"/>
+        <pin num="34" name="CS_N" type="input"/>
+        <pin num="35" name="WR_N" type="input"/>
+        <pin num="36" name="RD_N" type="input"/>
+        <pin num="37" name="A0" type="input"/>
+        <pin num="38" name="PHI_M" type="input"/>
+        <pin num="39" name="CLK" type="output"/>
+        <pin num="40" name="D0" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="U16">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OEn" type="input"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="Y" type="output"/>
+        <pin num="4" name="OEn" type="input"/>
+        <pin num="5" name="A" type="input"/>
+        <pin num="6" name="Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="Y" type="output"/>
+        <pin num="9" name="A" type="input"/>
+        <pin num="10" name="OEn" type="input"/>
+        <pin num="11" name="Y" type="output"/>
+        <pin num="12" name="A" type="input"/>
+        <pin num="13" name="OEn" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="U8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="DIR" type="input"/>
+        <pin num="3" name="A1" type="bidirectional"/>
+        <pin num="4" name="A2" type="bidirectional"/>
+        <pin num="5" name="A3" type="bidirectional"/>
+        <pin num="6" name="A4" type="bidirectional"/>
+        <pin num="7" name="A5" type="bidirectional"/>
+        <pin num="8" name="A6" type="bidirectional"/>
+        <pin num="9" name="A7" type="bidirectional"/>
+        <pin num="10" name="A8" type="bidirectional"/>
+        <pin num="11" name="GND" type="power_in"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="B8" type="bidirectional"/>
+        <pin num="15" name="B7" type="bidirectional"/>
+        <pin num="16" name="B6" type="bidirectional"/>
+        <pin num="17" name="B5" type="bidirectional"/>
+        <pin num="18" name="B4" type="bidirectional"/>
+        <pin num="19" name="B3" type="bidirectional"/>
+        <pin num="20" name="B2" type="bidirectional"/>
+        <pin num="21" name="B1" type="bidirectional"/>
+        <pin num="22" name="OEn" type="input"/>
+        <pin num="23" name="VCCB" type="power_in"/>
+        <pin num="24" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="U9">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VCCA" type="power_in"/>
+        <pin num="2" name="DIR" type="input"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="A2" type="input"/>
+        <pin num="5" name="A3" type="input"/>
+        <pin num="6" name="A4" type="input"/>
+        <pin num="7" name="A5" type="input"/>
+        <pin num="8" name="A6" type="input"/>
+        <pin num="9" name="A7" type="input"/>
+        <pin num="10" name="A8" type="input"/>
+        <pin num="11" name="GND" type="power_in"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="B8" type="output"/>
+        <pin num="15" name="B7" type="output"/>
+        <pin num="16" name="B6" type="output"/>
+        <pin num="17" name="B5" type="output"/>
+        <pin num="18" name="B4" type="output"/>
+        <pin num="19" name="B3" type="output"/>
+        <pin num="20" name="B2" type="output"/>
+        <pin num="21" name="B1" type="output"/>
+        <pin num="22" name="OEn" type="input"/>
+        <pin num="23" name="VCCB" type="power_in"/>
+        <pin num="24" name="VCCB" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="UAF">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="OUT_A" type="output"/>
+        <pin num="2" name="IN_A-" type="input"/>
+        <pin num="3" name="IN_A+" type="input"/>
+        <pin num="4" name="VSS" type="power_in"/>
+        <pin num="5" name="IN_B+" type="input"/>
+        <pin num="6" name="IN_B-" type="input"/>
+        <pin num="7" name="OUT_B" type="output"/>
+        <pin num="8" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="UALERT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="open_collector"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="UDAC">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="power_in"/>
+        <pin num="2" name="TO_BUFF" type="output"/>
+        <pin num="3" name="NC" type="no_connect"/>
+        <pin num="4" name="LOAD" type="input"/>
+        <pin num="5" name="NC" type="no_connect"/>
+        <pin num="6" name="NC" type="no_connect"/>
+        <pin num="7" name="SD" type="input"/>
+        <pin num="8" name="NC" type="no_connect"/>
+        <pin num="9" name="NC" type="no_connect"/>
+        <pin num="10" name="CLOCK" type="input"/>
+        <pin num="11" name="NC" type="no_connect"/>
+        <pin num="12" name="VSS" type="power_in"/>
+        <pin num="13" name="NC" type="no_connect"/>
+        <pin num="14" name="RB" type="output"/>
+        <pin num="15" name="NC" type="no_connect"/>
+        <pin num="16" name="MP" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="ULINK0">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE_N" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="2OE_N" type="input"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="output"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3OE_N" type="input"/>
+        <pin num="11" name="4Y" type="output"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4OE_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="ULINK1">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="1OE_N" type="input"/>
+        <pin num="2" name="1A" type="input"/>
+        <pin num="3" name="1Y" type="output"/>
+        <pin num="4" name="2OE_N" type="input"/>
+        <pin num="5" name="2A" type="input"/>
+        <pin num="6" name="2Y" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="3Y" type="output"/>
+        <pin num="9" name="3A" type="input"/>
+        <pin num="10" name="3OE_N" type="input"/>
+        <pin num="11" name="4Y" type="output"/>
+        <pin num="12" name="4A" type="input"/>
+        <pin num="13" name="4OE_N" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="URUNOD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="NC" type="no_connect"/>
+        <pin num="2" name="A" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="open_collector"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="USOURCE">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="J1.1" name="3V3_OUT" type="power_out"/>
+        <pin num="J1.2" name="USB_DM" type="bidirectional"/>
+        <pin num="J1.3" name="USB_DP" type="bidirectional"/>
+        <pin num="J1.4" name="GP0" type="bidirectional"/>
+        <pin num="J1.5" name="GP1" type="bidirectional"/>
+        <pin num="J1.6" name="GP2" type="bidirectional"/>
+        <pin num="J1.7" name="GP3" type="bidirectional"/>
+        <pin num="J1.8" name="GP4" type="bidirectional"/>
+        <pin num="J1.9" name="GP5" type="bidirectional"/>
+        <pin num="J1.10" name="GP6" type="bidirectional"/>
+        <pin num="J1.11" name="GP7" type="bidirectional"/>
+        <pin num="J1.12" name="GP8" type="input"/>
+        <pin num="J1.13" name="GP9" type="input"/>
+        <pin num="J1.14" name="GP10" type="input"/>
+        <pin num="J1.15" name="GP11" type="output"/>
+        <pin num="J1.16" name="GP12" type="output"/>
+        <pin num="J1.17" name="GP13" type="output"/>
+        <pin num="J1.18" name="GP14" type="output"/>
+        <pin num="J1.19" name="GP15" type="output"/>
+        <pin num="J1.20" name="GP16" type="input"/>
+        <pin num="J2.1" name="GP31" type="input"/>
+        <pin num="J2.2" name="GP32" type="output"/>
+        <pin num="J2.3" name="GP33" type="output"/>
+        <pin num="J2.4" name="GP34" type="output"/>
+        <pin num="J2.5" name="GP35" type="output"/>
+        <pin num="J2.6" name="GP36" type="output"/>
+        <pin num="J2.7" name="GP37" type="output"/>
+        <pin num="J2.8" name="GP38" type="bidirectional"/>
+        <pin num="J2.9" name="GP39" type="bidirectional"/>
+        <pin num="J2.10" name="GND" type="power_in"/>
+        <pin num="J2.11" name="GP40" type="bidirectional"/>
+        <pin num="J2.12" name="GP41" type="bidirectional"/>
+        <pin num="J2.13" name="GP42" type="bidirectional"/>
+        <pin num="J2.14" name="GP43" type="bidirectional"/>
+        <pin num="J2.15" name="GP44" type="bidirectional"/>
+        <pin num="J2.16" name="GP45" type="bidirectional"/>
+        <pin num="J2.17" name="GP46" type="bidirectional"/>
+        <pin num="J2.18" name="GP47" type="bidirectional"/>
+        <pin num="J2.19" name="REG_IN_5V" type="power_in"/>
+        <pin num="J2.20" name="3V3_OUT" type="passive"/>
+        <pin num="JP1.1" name="SWCLK" type="input"/>
+        <pin num="JP1.2" name="GND" type="power_in"/>
+        <pin num="JP1.3" name="SWDIO" type="bidirectional"/>
+        <pin num="JP6.1" name="GP17" type="input"/>
+        <pin num="JP6.2" name="GP18" type="input"/>
+        <pin num="JP6.3" name="GP19" type="output"/>
+        <pin num="JP6.4" name="GP20" type="output"/>
+        <pin num="JP6.5" name="GP21" type="output"/>
+        <pin num="JP6.6" name="GP22" type="output"/>
+        <pin num="JP6.7" name="GP23" type="output"/>
+        <pin num="JP6.8" name="GND" type="power_in"/>
+        <pin num="JP7.1" name="GND" type="power_in"/>
+        <pin num="JP7.2" name="GP24" type="bidirectional"/>
+        <pin num="JP7.3" name="GP25" type="bidirectional"/>
+        <pin num="JP7.4" name="GP26" type="bidirectional"/>
+        <pin num="JP7.5" name="GP27" type="output"/>
+        <pin num="JP7.6" name="GP28" type="bidirectional"/>
+        <pin num="JP7.7" name="GP29" type="output"/>
+        <pin num="JP7.8" name="GP30" type="input"/>
+        <pin num="SW1.S" name="RESET_EXTRA_WIRE" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="P2R" part="UTXOR">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value"/>
+        <field name="Footprint"/>
+        <field name="Datasheet"/>
+        <field name="Description"/>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="input"/>
+        <pin num="2" name="B" type="input"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="Y" type="output"/>
+        <pin num="5" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="P2R">
+      <uri>${KIPRJMOD}/P2R.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/AUDIO_L" class="Default">
+      <node ref="JMOD" pin="37" pinfunction="AUDIO_L_37" pintype="passive"/>
+      <node ref="RFMOUT" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="2" name="/AUDIO_R" class="Default">
+      <node ref="JMOD" pin="39" pinfunction="AUDIO_R_39" pintype="passive"/>
+      <node ref="RSMIXA" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RSMIXB" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RSMIXC" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="3" name="/CORE_RUN_N" class="Default">
+      <node ref="RRUNUP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="URUNOD" pin="4" pinfunction="Y_4" pintype="open_collector"/>
+      <node ref="USOURCE" pin="SW1.S" pinfunction="RESET_EXTRA_WIRE_SW1.S" pintype="input"/>
+    </net>
+    <net code="4" name="/FM1_LED_N" class="Default">
+      <node ref="DVOICE1" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.2" pinfunction="GP32_J2.2" pintype="output"/>
+    </net>
+    <net code="5" name="/FM2_LED_N" class="Default">
+      <node ref="DVOICE2" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.3" pinfunction="GP33_J2.3" pintype="output"/>
+    </net>
+    <net code="6" name="/FM3_LED_N" class="Default">
+      <node ref="DVOICE3" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.4" pinfunction="GP34_J2.4" pintype="output"/>
+    </net>
+    <net code="7" name="/GND" class="Default">
+      <node ref="C11" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C12" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C13" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C14" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C15" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C16" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C19" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C20" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="C27" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CANABULK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CCORE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CCOREB" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CFMDAC" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CMOD5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="COPAMP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CRB" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CUALERT" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CULINK0" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CULINK1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CURUNOD" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="CUTXOR" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="JMOD" pin="13" pinfunction="GND_13" pintype="passive"/>
+      <node ref="JMOD" pin="14" pinfunction="GND_14" pintype="passive"/>
+      <node ref="JMOD" pin="2" pinfunction="GND_2" pintype="power_out"/>
+      <node ref="JMOD" pin="26" pinfunction="GND_26" pintype="passive"/>
+      <node ref="JMOD" pin="28" pinfunction="GND_28" pintype="passive"/>
+      <node ref="JMOD" pin="30" pinfunction="GND_30" pintype="passive"/>
+      <node ref="JMOD" pin="32" pinfunction="GND_32" pintype="passive"/>
+      <node ref="JMOD" pin="35" pinfunction="GND_35" pintype="passive"/>
+      <node ref="JMOD" pin="36" pinfunction="GND_36" pintype="passive"/>
+      <node ref="JMOD" pin="38" pinfunction="GND_38" pintype="passive"/>
+      <node ref="JMOD" pin="4" pinfunction="GND_4" pintype="passive"/>
+      <node ref="JMOD" pin="40" pinfunction="GND_40" pintype="passive"/>
+      <node ref="JSWD" pin="2" pinfunction="GND_2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R40" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD0" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RD7" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RDIR" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RENPD" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RL0" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RL1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RL2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMA" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMADR" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMBCK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMCLK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMLR" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMMOSI" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMSCK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RRELDEFAULT" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RYMRESET" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U12" pin="1" pinfunction="GND_1" pintype="power_in"/>
+      <node ref="U12" pin="17" pinfunction="AGND_17" pintype="power_in"/>
+      <node ref="U16" pin="1" pinfunction="OEn_1" pintype="input"/>
+      <node ref="U16" pin="10" pinfunction="OEn_10" pintype="input"/>
+      <node ref="U16" pin="12" pinfunction="A_12" pintype="input"/>
+      <node ref="U16" pin="4" pinfunction="OEn_4" pintype="input"/>
+      <node ref="U16" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="U8" pin="11" pinfunction="GND_11" pintype="power_in"/>
+      <node ref="U8" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U8" pin="13" pinfunction="GND_13" pintype="power_in"/>
+      <node ref="U9" pin="10" pinfunction="A8_10" pintype="input"/>
+      <node ref="U9" pin="11" pinfunction="GND_11" pintype="power_in"/>
+      <node ref="U9" pin="12" pinfunction="GND_12" pintype="power_in"/>
+      <node ref="U9" pin="13" pinfunction="GND_13" pintype="power_in"/>
+      <node ref="U9" pin="9" pinfunction="A7_9" pintype="input"/>
+      <node ref="UAF" pin="4" pinfunction="VSS_4" pintype="power_in"/>
+      <node ref="UALERT" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="UDAC" pin="12" pinfunction="VSS_12" pintype="power_in"/>
+      <node ref="ULINK0" pin="1" pinfunction="1OE_N_1" pintype="input"/>
+      <node ref="ULINK0" pin="10" pinfunction="3OE_N_10" pintype="input"/>
+      <node ref="ULINK0" pin="13" pinfunction="4OE_N_13" pintype="input"/>
+      <node ref="ULINK0" pin="4" pinfunction="2OE_N_4" pintype="input"/>
+      <node ref="ULINK0" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="ULINK1" pin="1" pinfunction="1OE_N_1" pintype="input"/>
+      <node ref="ULINK1" pin="4" pinfunction="2OE_N_4" pintype="input"/>
+      <node ref="ULINK1" pin="7" pinfunction="GND_7" pintype="power_in"/>
+      <node ref="URUNOD" pin="3" pinfunction="GND_3" pintype="power_in"/>
+      <node ref="USOURCE" pin="J2.10" pinfunction="GND_J2.10" pintype="power_in"/>
+      <node ref="USOURCE" pin="JP1.2" pinfunction="GND_JP1.2" pintype="power_in"/>
+      <node ref="USOURCE" pin="JP6.8" pinfunction="GND_JP6.8" pintype="power_in"/>
+      <node ref="USOURCE" pin="JP7.1" pinfunction="GND_JP7.1" pintype="power_in"/>
+      <node ref="UTXOR" pin="3" pinfunction="GND_3" pintype="power_in"/>
+    </net>
+    <net code="8" name="/LINK_TX_DATA" class="Default">
+      <node ref="RMTXDATA" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK1" pin="11" pinfunction="4Y_11" pintype="output"/>
+    </net>
+    <net code="9" name="/LINK_TX_DISABLE" class="Default">
+      <node ref="RTXDIS" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK1" pin="13" pinfunction="4OE_N_13" pintype="input"/>
+      <node ref="USOURCE" pin="JP7.5" pinfunction="GP27_JP7.5" pintype="output"/>
+      <node ref="UTXOR" pin="2" pinfunction="B_2" pintype="input"/>
+    </net>
+    <net code="10" name="/LINK_TX_MISO" class="Default">
+      <node ref="RMTXMISO" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK1" pin="8" pinfunction="3Y_8" pintype="output"/>
+    </net>
+    <net code="11" name="/L_BUS_D0" class="Default">
+      <node ref="JMOD" pin="9" pinfunction="BUS_D0_9" pintype="bidirectional"/>
+      <node ref="RMTXMISO" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="12" name="/L_BUS_D1" class="Default">
+      <node ref="JMOD" pin="10" pinfunction="BUS_D1_10" pintype="bidirectional"/>
+      <node ref="RMCS" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK0" pin="9" pinfunction="3A_9" pintype="input"/>
+    </net>
+    <net code="13" name="/L_BUS_D2" class="Default">
+      <node ref="JMOD" pin="11" pinfunction="BUS_D2_11" pintype="bidirectional"/>
+      <node ref="RMSCK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK0" pin="2" pinfunction="1A_2" pintype="input"/>
+    </net>
+    <net code="14" name="/L_BUS_D3" class="Default">
+      <node ref="JMOD" pin="12" pinfunction="BUS_D3_12" pintype="bidirectional"/>
+      <node ref="RMMOSI" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK0" pin="5" pinfunction="2A_5" pintype="input"/>
+    </net>
+    <net code="15" name="/L_MOD_ALERT_N" class="Default">
+      <node ref="JMOD" pin="8" pinfunction="MOD_ALERT_N_8" pintype="bidirectional"/>
+      <node ref="UALERT" pin="4" pinfunction="Y_4" pintype="open_collector"/>
+    </net>
+    <net code="16" name="/L_MOD_ENABLE" class="Default">
+      <node ref="JMOD" pin="7" pinfunction="MOD_ENABLE_7" pintype="output"/>
+      <node ref="RENPD" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="URUNOD" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="17" name="/L_MOD_I2S_BCK" class="Default">
+      <node ref="JMOD" pin="31" pinfunction="MOD_I2S_BCK_31" pintype="output"/>
+      <node ref="RMBCK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK1" pin="2" pinfunction="1A_2" pintype="input"/>
+    </net>
+    <net code="18" name="/L_MOD_I2S_DATA" class="Default">
+      <node ref="JMOD" pin="34" pinfunction="MOD_I2S_DATA_34" pintype="input"/>
+      <node ref="RMTXDATA" pin="2" pinfunction="2_2" pintype="passive"/>
+    </net>
+    <net code="19" name="/L_MOD_I2S_LRCK" class="Default">
+      <node ref="JMOD" pin="33" pinfunction="MOD_I2S_LRCK_33" pintype="output"/>
+      <node ref="RMLR" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK1" pin="5" pinfunction="2A_5" pintype="input"/>
+    </net>
+    <net code="20" name="/L_SOUND_CLK0" class="Default">
+      <node ref="JMOD" pin="25" pinfunction="SOUND_CLK0_25" pintype="output"/>
+      <node ref="RMCLK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="ULINK0" pin="12" pinfunction="4A_12" pintype="input"/>
+    </net>
+    <net code="21" name="/MCU_3V3" class="Default">
+      <node ref="C11" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C14" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C27" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CCORE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CCOREB" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CUALERT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CULINK0" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CULINK1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CURUNOD" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CUTXOR" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="RCOE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RDOE" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMC32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMC33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMC34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RMCS" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RRUNUP" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RTXDIS" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE1" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE2" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE4" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE5" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="RVOICE6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U16" pin="13" pinfunction="OEn_13" pintype="input"/>
+      <node ref="U16" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="U8" pin="1" pinfunction="VCCA_1" pintype="power_in"/>
+      <node ref="U9" pin="1" pinfunction="VCCA_1" pintype="power_in"/>
+      <node ref="U9" pin="2" pinfunction="DIR_2" pintype="input"/>
+      <node ref="UALERT" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="ULINK0" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="ULINK1" pin="14" pinfunction="VCC_14" pintype="power_in"/>
+      <node ref="URUNOD" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+      <node ref="USOURCE" pin="J1.1" pinfunction="3V3_OUT_J1.1" pintype="power_out"/>
+      <node ref="USOURCE" pin="J2.20" pinfunction="3V3_OUT_J2.20" pintype="passive"/>
+      <node ref="UTXOR" pin="5" pinfunction="VCC_5" pintype="power_in"/>
+    </net>
+    <net code="22" name="/MCU_5V" class="Default">
+      <node ref="DMCU5V" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.19" pinfunction="REG_IN_5V_J2.19" pintype="power_in"/>
+    </net>
+    <net code="23" name="/MISO_OE_N" class="Default">
+      <node ref="ULINK1" pin="10" pinfunction="3OE_N_10" pintype="input"/>
+      <node ref="UTXOR" pin="4" pinfunction="Y_4" pintype="output"/>
+    </net>
+    <net code="24" name="/MOD_ALERT_DRIVE" class="Default">
+      <node ref="RMADR" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="UALERT" pin="2" pinfunction="A_2" pintype="input"/>
+      <node ref="USOURCE" pin="JP6.7" pinfunction="GP23_JP6.7" pintype="output"/>
+    </net>
+    <net code="25" name="/MOD_I2S_BCK" class="Default">
+      <node ref="ULINK1" pin="3" pinfunction="1Y_3" pintype="output"/>
+      <node ref="USOURCE" pin="JP7.8" pinfunction="GP30_JP7.8" pintype="input"/>
+    </net>
+    <net code="26" name="/MOD_I2S_DATA" class="Default">
+      <node ref="ULINK1" pin="12" pinfunction="4A_12" pintype="input"/>
+      <node ref="USOURCE" pin="JP7.7" pinfunction="GP29_JP7.7" pintype="output"/>
+    </net>
+    <net code="27" name="/MOD_I2S_LRCK" class="Default">
+      <node ref="ULINK1" pin="6" pinfunction="2Y_6" pintype="output"/>
+      <node ref="USOURCE" pin="J2.1" pinfunction="GP31_J2.1" pintype="input"/>
+    </net>
+    <net code="28" name="/MOD_SPI_CS_N" class="Default">
+      <node ref="ULINK0" pin="8" pinfunction="3Y_8" pintype="output"/>
+      <node ref="USOURCE" pin="J1.13" pinfunction="GP9_J1.13" pintype="input"/>
+      <node ref="UTXOR" pin="1" pinfunction="A_1" pintype="input"/>
+    </net>
+    <net code="29" name="/MOD_SPI_MISO" class="Default">
+      <node ref="ULINK1" pin="9" pinfunction="3A_9" pintype="input"/>
+      <node ref="USOURCE" pin="J1.15" pinfunction="GP11_J1.15" pintype="output"/>
+    </net>
+    <net code="30" name="/MOD_SPI_MOSI" class="Default">
+      <node ref="ULINK0" pin="6" pinfunction="2Y_6" pintype="output"/>
+      <node ref="USOURCE" pin="J1.12" pinfunction="GP8_J1.12" pintype="input"/>
+    </net>
+    <net code="31" name="/MOD_SPI_SCK" class="Default">
+      <node ref="ULINK0" pin="3" pinfunction="1Y_3" pintype="output"/>
+      <node ref="USOURCE" pin="J1.14" pinfunction="GP10_J1.14" pintype="input"/>
+    </net>
+    <net code="32" name="/SSGA_LED_N" class="Default">
+      <node ref="DVOICE4" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.5" pinfunction="GP35_J2.5" pintype="output"/>
+    </net>
+    <net code="33" name="/SSGB_LED_N" class="Default">
+      <node ref="DVOICE5" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.6" pinfunction="GP36_J2.6" pintype="output"/>
+    </net>
+    <net code="34" name="/SSGC_LED_N" class="Default">
+      <node ref="DVOICE6" pin="1" pinfunction="K_1" pintype="passive"/>
+      <node ref="USOURCE" pin="J2.7" pinfunction="GP37_J2.7" pintype="output"/>
+    </net>
+    <net code="35" name="/SSG_A" class="Default">
+      <node ref="RL0" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="RSMIXA" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="20" pinfunction="SSG_A_20" pintype="output"/>
+    </net>
+    <net code="36" name="/SSG_B" class="Default">
+      <node ref="RL1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="RSMIXB" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="19" pinfunction="SSG_B_19" pintype="output"/>
+    </net>
+    <net code="37" name="/SSG_C" class="Default">
+      <node ref="RL2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="RSMIXC" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="18" pinfunction="SSG_C_18" pintype="output"/>
+    </net>
+    <net code="38" name="/V5_MODULE" class="Default">
+      <node ref="C12" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C13" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C15" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C16" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C19" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="C20" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CANABULK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CFMDAC" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="CMOD5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="COPAMP" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="DMCU5V" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="JMOD" pin="1" pinfunction="V5_MODULE_1" pintype="power_out"/>
+      <node ref="JMOD" pin="3" pinfunction="V5_MODULE_3" pintype="passive"/>
+      <node ref="R32" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R33" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R34" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="U12" pin="21" pinfunction="VDD_21" pintype="power_in"/>
+      <node ref="U8" pin="23" pinfunction="VCCB_23" pintype="power_in"/>
+      <node ref="U8" pin="24" pinfunction="VCCB_24" pintype="power_in"/>
+      <node ref="U9" pin="23" pinfunction="VCCB_23" pintype="power_in"/>
+      <node ref="U9" pin="24" pinfunction="VCCB_24" pintype="power_in"/>
+      <node ref="UAF" pin="8" pinfunction="VDD_8" pintype="power_in"/>
+      <node ref="UDAC" pin="1" pinfunction="VDD_1" pintype="power_in"/>
+    </net>
+    <net code="39" name="/YM_A0" class="Default">
+      <node ref="RMA" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="3" pinfunction="A1_3" pintype="input"/>
+      <node ref="USOURCE" pin="J1.16" pinfunction="GP12_J1.16" pintype="output"/>
+    </net>
+    <net code="40" name="/YM_CLK_5" class="Default">
+      <node ref="R39" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="17" pinfunction="B5_17" pintype="output"/>
+    </net>
+    <net code="41" name="/YM_CLOCK_3V3" class="Default">
+      <node ref="U9" pin="7" pinfunction="A5_7" pintype="input"/>
+      <node ref="ULINK0" pin="11" pinfunction="4Y_11" pintype="output"/>
+    </net>
+    <net code="42" name="/YM_CS_N" class="Default">
+      <node ref="RMC32" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="4" pinfunction="A2_4" pintype="input"/>
+      <node ref="USOURCE" pin="J1.17" pinfunction="GP13_J1.17" pintype="output"/>
+    </net>
+    <net code="43" name="/YM_CTRL_OE_N" class="Default">
+      <node ref="RCOE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="22" pinfunction="OEn_22" pintype="input"/>
+      <node ref="USOURCE" pin="JP6.5" pinfunction="GP21_JP6.5" pintype="output"/>
+    </net>
+    <net code="44" name="/YM_D0" class="Default">
+      <node ref="U8" pin="3" pinfunction="A1_3" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.4" pinfunction="GP0_J1.4" pintype="bidirectional"/>
+    </net>
+    <net code="45" name="/YM_D1" class="Default">
+      <node ref="U8" pin="4" pinfunction="A2_4" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.5" pinfunction="GP1_J1.5" pintype="bidirectional"/>
+    </net>
+    <net code="46" name="/YM_D2" class="Default">
+      <node ref="U8" pin="5" pinfunction="A3_5" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.6" pinfunction="GP2_J1.6" pintype="bidirectional"/>
+    </net>
+    <net code="47" name="/YM_D3" class="Default">
+      <node ref="U8" pin="6" pinfunction="A4_6" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.7" pinfunction="GP3_J1.7" pintype="bidirectional"/>
+    </net>
+    <net code="48" name="/YM_D4" class="Default">
+      <node ref="U8" pin="7" pinfunction="A5_7" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.8" pinfunction="GP4_J1.8" pintype="bidirectional"/>
+    </net>
+    <net code="49" name="/YM_D5" class="Default">
+      <node ref="U8" pin="8" pinfunction="A6_8" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.9" pinfunction="GP5_J1.9" pintype="bidirectional"/>
+    </net>
+    <net code="50" name="/YM_D6" class="Default">
+      <node ref="U8" pin="9" pinfunction="A7_9" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.10" pinfunction="GP6_J1.10" pintype="bidirectional"/>
+    </net>
+    <net code="51" name="/YM_D7" class="Default">
+      <node ref="U8" pin="10" pinfunction="A8_10" pintype="bidirectional"/>
+      <node ref="USOURCE" pin="J1.11" pinfunction="GP7_J1.11" pintype="bidirectional"/>
+    </net>
+    <net code="52" name="/YM_DATA_DIR" class="Default">
+      <node ref="RDIR" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="DIR_2" pintype="input"/>
+      <node ref="USOURCE" pin="JP6.3" pinfunction="GP19_JP6.3" pintype="output"/>
+    </net>
+    <net code="53" name="/YM_DATA_OE_N" class="Default">
+      <node ref="RDOE" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U8" pin="22" pinfunction="OEn_22" pintype="input"/>
+      <node ref="USOURCE" pin="JP6.4" pinfunction="GP20_JP6.4" pintype="output"/>
+    </net>
+    <net code="54" name="/YM_FM_CLK" class="Default">
+      <node ref="RS6" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="USOURCE" pin="JP6.1" pinfunction="GP17_JP6.1" pintype="input"/>
+    </net>
+    <net code="55" name="/YM_FM_SD" class="Default">
+      <node ref="RS3" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="USOURCE" pin="J1.20" pinfunction="GP16_J1.20" pintype="input"/>
+    </net>
+    <net code="56" name="/YM_FM_SH" class="Default">
+      <node ref="RS8" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="USOURCE" pin="JP6.2" pinfunction="GP18_JP6.2" pintype="input"/>
+    </net>
+    <net code="57" name="/YM_RD_N" class="Default">
+      <node ref="RMC34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="6" pinfunction="A4_6" pintype="input"/>
+      <node ref="USOURCE" pin="J1.19" pinfunction="GP15_J1.19" pintype="output"/>
+    </net>
+    <net code="58" name="/YM_RESET_RELEASE" class="Default">
+      <node ref="RRELDEFAULT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="8" pinfunction="A6_8" pintype="input"/>
+      <node ref="USOURCE" pin="JP6.6" pinfunction="GP22_JP6.6" pintype="output"/>
+    </net>
+    <net code="59" name="/YM_WR_N" class="Default">
+      <node ref="RMC33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U9" pin="5" pinfunction="A3_5" pintype="input"/>
+      <node ref="USOURCE" pin="J1.18" pinfunction="GP14_J1.18" pintype="output"/>
+    </net>
+    <net code="60" name="/Y_A0" class="Default">
+      <node ref="R35" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="37" pinfunction="A0_37" pintype="input"/>
+      <node ref="U9" pin="21" pinfunction="B1_21" pintype="output"/>
+    </net>
+    <net code="61" name="/Y_CLK" class="Default">
+      <node ref="RFMCLK" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="39" pinfunction="CLK_39" pintype="output"/>
+      <node ref="U16" pin="5" pinfunction="A_5" pintype="input"/>
+    </net>
+    <net code="62" name="/Y_CS_N" class="Default">
+      <node ref="R32" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="34" pinfunction="CS_N_34" pintype="input"/>
+      <node ref="U9" pin="20" pinfunction="B2_20" pintype="output"/>
+    </net>
+    <net code="63" name="/Y_D0" class="Default">
+      <node ref="RD0" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="40" pinfunction="D0_40" pintype="bidirectional"/>
+      <node ref="U8" pin="21" pinfunction="B1_21" pintype="bidirectional"/>
+    </net>
+    <net code="64" name="/Y_D1" class="Default">
+      <node ref="RD1" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="2" pinfunction="D1_2" pintype="bidirectional"/>
+      <node ref="U8" pin="20" pinfunction="B2_20" pintype="bidirectional"/>
+    </net>
+    <net code="65" name="/Y_D2" class="Default">
+      <node ref="RD2" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="3" pinfunction="D2_3" pintype="bidirectional"/>
+      <node ref="U8" pin="19" pinfunction="B3_19" pintype="bidirectional"/>
+    </net>
+    <net code="66" name="/Y_D3" class="Default">
+      <node ref="RD3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="4" pinfunction="D3_4" pintype="bidirectional"/>
+      <node ref="U8" pin="18" pinfunction="B4_18" pintype="bidirectional"/>
+    </net>
+    <net code="67" name="/Y_D4" class="Default">
+      <node ref="RD4" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="5" pinfunction="D4_5" pintype="bidirectional"/>
+      <node ref="U8" pin="17" pinfunction="B5_17" pintype="bidirectional"/>
+    </net>
+    <net code="68" name="/Y_D5" class="Default">
+      <node ref="RD5" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="6" pinfunction="D5_6" pintype="bidirectional"/>
+      <node ref="U8" pin="16" pinfunction="B6_16" pintype="bidirectional"/>
+    </net>
+    <net code="69" name="/Y_D6" class="Default">
+      <node ref="RD6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="7" pinfunction="D6_7" pintype="bidirectional"/>
+      <node ref="U8" pin="15" pinfunction="B7_15" pintype="bidirectional"/>
+    </net>
+    <net code="70" name="/Y_D7" class="Default">
+      <node ref="RD7" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="8" pinfunction="D7_8" pintype="bidirectional"/>
+      <node ref="U8" pin="14" pinfunction="B8_14" pintype="bidirectional"/>
+    </net>
+    <net code="71" name="/Y_RD_N" class="Default">
+      <node ref="R34" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="36" pinfunction="RD_N_36" pintype="input"/>
+      <node ref="U9" pin="18" pinfunction="B4_18" pintype="output"/>
+    </net>
+    <net code="72" name="/Y_RESET_N" class="Default">
+      <node ref="RYMRESET" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="24" pinfunction="RESET_N_24" pintype="input"/>
+      <node ref="U9" pin="16" pinfunction="B6_16" pintype="output"/>
+    </net>
+    <net code="73" name="/Y_SD" class="Default">
+      <node ref="RFMSD" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="23" pinfunction="SD_23" pintype="output"/>
+      <node ref="U16" pin="2" pinfunction="A_2" pintype="input"/>
+    </net>
+    <net code="74" name="/Y_SH" class="Default">
+      <node ref="RFMSH" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="22" pinfunction="SH_22" pintype="output"/>
+      <node ref="U16" pin="9" pinfunction="A_9" pintype="input"/>
+    </net>
+    <net code="75" name="/Y_WR_N" class="Default">
+      <node ref="R33" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="35" pinfunction="WR_N_35" pintype="input"/>
+      <node ref="U9" pin="19" pinfunction="B3_19" pintype="output"/>
+    </net>
+    <net code="76" name="Net-(DVOICE1-A)" class="Default">
+      <node ref="DVOICE1" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE1" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="77" name="Net-(DVOICE2-A)" class="Default">
+      <node ref="DVOICE2" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE2" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="78" name="Net-(DVOICE3-A)" class="Default">
+      <node ref="DVOICE3" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE3" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="79" name="Net-(DVOICE4-A)" class="Default">
+      <node ref="DVOICE4" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE4" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="80" name="Net-(DVOICE5-A)" class="Default">
+      <node ref="DVOICE5" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE5" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="81" name="Net-(DVOICE6-A)" class="Default">
+      <node ref="DVOICE6" pin="2" pinfunction="A_2" pintype="passive"/>
+      <node ref="RVOICE6" pin="1" pinfunction="1_1" pintype="passive"/>
+    </net>
+    <net code="82" name="Net-(JSWD-SWCLK)" class="Default">
+      <node ref="JSWD" pin="1" pinfunction="SWCLK_1" pintype="passive"/>
+      <node ref="USOURCE" pin="JP1.1" pinfunction="SWCLK_JP1.1" pintype="input"/>
+    </net>
+    <net code="83" name="Net-(JSWD-SWDIO)" class="Default">
+      <node ref="JSWD" pin="3" pinfunction="SWDIO_3" pintype="passive"/>
+      <node ref="USOURCE" pin="JP1.3" pinfunction="SWDIO_JP1.3" pintype="bidirectional"/>
+    </net>
+    <net code="84" name="Net-(RS3-Pad1)" class="Default">
+      <node ref="RS3" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="3" pinfunction="Y_3" pintype="output"/>
+    </net>
+    <net code="85" name="Net-(RS6-Pad1)" class="Default">
+      <node ref="RS6" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="6" pinfunction="Y_6" pintype="output"/>
+    </net>
+    <net code="86" name="Net-(RS8-Pad1)" class="Default">
+      <node ref="RS8" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U16" pin="8" pinfunction="Y_8" pintype="output"/>
+    </net>
+    <net code="87" name="Net-(U12-PHI_M)" class="Default">
+      <node ref="R39" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="R40" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="U12" pin="38" pinfunction="PHI_M_38" pintype="input"/>
+    </net>
+    <net code="88" name="Net-(UAF-IN_A+)" class="Default">
+      <node ref="CRB" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="UAF" pin="3" pinfunction="IN_A+_3" pintype="input"/>
+      <node ref="UDAC" pin="14" pinfunction="RB_14" pintype="output"/>
+    </net>
+    <net code="89" name="Net-(UAF-IN_A-)" class="Default">
+      <node ref="UAF" pin="1" pinfunction="OUT_A_1" pintype="output"/>
+      <node ref="UAF" pin="2" pinfunction="IN_A-_2" pintype="input"/>
+      <node ref="UDAC" pin="16" pinfunction="MP_16" pintype="input"/>
+    </net>
+    <net code="90" name="Net-(UAF-IN_B+)" class="Default">
+      <node ref="UAF" pin="5" pinfunction="IN_B+_5" pintype="input"/>
+      <node ref="UDAC" pin="2" pinfunction="TO_BUFF_2" pintype="output"/>
+    </net>
+    <net code="91" name="Net-(UAF-IN_B-)" class="Default">
+      <node ref="RFMOUT" pin="1" pinfunction="1_1" pintype="passive"/>
+      <node ref="UAF" pin="6" pinfunction="IN_B-_6" pintype="input"/>
+      <node ref="UAF" pin="7" pinfunction="OUT_B_7" pintype="output"/>
+    </net>
+    <net code="92" name="Net-(UDAC-CLOCK)" class="Default">
+      <node ref="RFMCLK" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="UDAC" pin="10" pinfunction="CLOCK_10" pintype="input"/>
+    </net>
+    <net code="93" name="Net-(UDAC-LOAD)" class="Default">
+      <node ref="RFMSH" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="UDAC" pin="4" pinfunction="LOAD_4" pintype="input"/>
+    </net>
+    <net code="94" name="Net-(UDAC-SD)" class="Default">
+      <node ref="RFMSD" pin="2" pinfunction="2_2" pintype="passive"/>
+      <node ref="UDAC" pin="7" pinfunction="SD_7" pintype="input"/>
+    </net>
+    <net code="95" name="unconnected-(JMOD-BUS_D4-Pad15)" class="Default">
+      <node ref="JMOD" pin="15" pinfunction="BUS_D4_15" pintype="passive+no_connect"/>
+    </net>
+    <net code="96" name="unconnected-(JMOD-BUS_D5-Pad16)" class="Default">
+      <node ref="JMOD" pin="16" pinfunction="BUS_D5_16" pintype="passive+no_connect"/>
+    </net>
+    <net code="97" name="unconnected-(JMOD-BUS_D6-Pad17)" class="Default">
+      <node ref="JMOD" pin="17" pinfunction="BUS_D6_17" pintype="passive+no_connect"/>
+    </net>
+    <net code="98" name="unconnected-(JMOD-BUS_D7-Pad18)" class="Default">
+      <node ref="JMOD" pin="18" pinfunction="BUS_D7_18" pintype="passive+no_connect"/>
+    </net>
+    <net code="99" name="unconnected-(JMOD-KEY-Pad6)" class="Default">
+      <node ref="JMOD" pin="6" pinfunction="KEY_6" pintype="passive+no_connect"/>
+    </net>
+    <net code="100" name="unconnected-(JMOD-MOD_CTL0-Pad19)" class="Default">
+      <node ref="JMOD" pin="19" pinfunction="MOD_CTL0_19" pintype="passive+no_connect"/>
+    </net>
+    <net code="101" name="unconnected-(JMOD-MOD_CTL1-Pad20)" class="Default">
+      <node ref="JMOD" pin="20" pinfunction="MOD_CTL1_20" pintype="passive+no_connect"/>
+    </net>
+    <net code="102" name="unconnected-(JMOD-MOD_CTL2-Pad21)" class="Default">
+      <node ref="JMOD" pin="21" pinfunction="MOD_CTL2_21" pintype="passive+no_connect"/>
+    </net>
+    <net code="103" name="unconnected-(JMOD-MOD_CTL3-Pad22)" class="Default">
+      <node ref="JMOD" pin="22" pinfunction="MOD_CTL3_22" pintype="passive+no_connect"/>
+    </net>
+    <net code="104" name="unconnected-(JMOD-MOD_I2C_SCL-Pad24)" class="Default">
+      <node ref="JMOD" pin="24" pinfunction="MOD_I2C_SCL_24" pintype="passive+no_connect"/>
+    </net>
+    <net code="105" name="unconnected-(JMOD-MOD_I2C_SDA-Pad23)" class="Default">
+      <node ref="JMOD" pin="23" pinfunction="MOD_I2C_SDA_23" pintype="passive+no_connect"/>
+    </net>
+    <net code="106" name="unconnected-(JMOD-SOUND_CLK1-Pad27)" class="Default">
+      <node ref="JMOD" pin="27" pinfunction="SOUND_CLK1_27" pintype="passive+no_connect"/>
+    </net>
+    <net code="107" name="unconnected-(JMOD-SOUND_CLK2-Pad29)" class="Default">
+      <node ref="JMOD" pin="29" pinfunction="SOUND_CLK2_29" pintype="passive+no_connect"/>
+    </net>
+    <net code="108" name="unconnected-(JMOD-V3V3_MODULE_AUX-Pad5)" class="Default">
+      <node ref="JMOD" pin="5" pinfunction="V3V3_MODULE_AUX_5" pintype="passive+no_connect"/>
+    </net>
+    <net code="109" name="unconnected-(U9-B7-Pad15)" class="Default">
+      <node ref="U9" pin="15" pinfunction="B7_15" pintype="output+no_connect"/>
+    </net>
+    <net code="110" name="unconnected-(U9-B8-Pad14)" class="Default">
+      <node ref="U9" pin="14" pinfunction="B8_14" pintype="output+no_connect"/>
+    </net>
+    <net code="111" name="unconnected-(U12-IOA0-Pad16)" class="Default">
+      <node ref="U12" pin="16" pinfunction="IOA0_16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="112" name="unconnected-(U12-IOA1-Pad15)" class="Default">
+      <node ref="U12" pin="15" pinfunction="IOA1_15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="113" name="unconnected-(U12-IOA2-Pad14)" class="Default">
+      <node ref="U12" pin="14" pinfunction="IOA2_14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="114" name="unconnected-(U12-IOA3-Pad13)" class="Default">
+      <node ref="U12" pin="13" pinfunction="IOA3_13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="115" name="unconnected-(U12-IOA4-Pad12)" class="Default">
+      <node ref="U12" pin="12" pinfunction="IOA4_12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="116" name="unconnected-(U12-IOA5-Pad11)" class="Default">
+      <node ref="U12" pin="11" pinfunction="IOA5_11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="117" name="unconnected-(U12-IOA6-Pad10)" class="Default">
+      <node ref="U12" pin="10" pinfunction="IOA6_10" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="118" name="unconnected-(U12-IOA7-Pad9)" class="Default">
+      <node ref="U12" pin="9" pinfunction="IOA7_9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="119" name="unconnected-(U12-IOB0-Pad26)" class="Default">
+      <node ref="U12" pin="26" pinfunction="IOB0_26" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="120" name="unconnected-(U12-IOB1-Pad27)" class="Default">
+      <node ref="U12" pin="27" pinfunction="IOB1_27" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="121" name="unconnected-(U12-IOB2-Pad28)" class="Default">
+      <node ref="U12" pin="28" pinfunction="IOB2_28" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="122" name="unconnected-(U12-IOB3-Pad29)" class="Default">
+      <node ref="U12" pin="29" pinfunction="IOB3_29" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="123" name="unconnected-(U12-IOB4-Pad30)" class="Default">
+      <node ref="U12" pin="30" pinfunction="IOB4_30" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="124" name="unconnected-(U12-IOB5-Pad31)" class="Default">
+      <node ref="U12" pin="31" pinfunction="IOB5_31" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="125" name="unconnected-(U12-IOB6-Pad32)" class="Default">
+      <node ref="U12" pin="32" pinfunction="IOB6_32" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="126" name="unconnected-(U12-IOB7-Pad33)" class="Default">
+      <node ref="U12" pin="33" pinfunction="IOB7_33" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="127" name="unconnected-(U12-IRQn-Pad25)" class="Default">
+      <node ref="U12" pin="25" pinfunction="IRQn_25" pintype="open_collector+no_connect"/>
+    </net>
+    <net code="128" name="unconnected-(U16-Y-Pad11)" class="Default">
+      <node ref="U16" pin="11" pinfunction="Y_11" pintype="output+no_connect"/>
+    </net>
+    <net code="129" name="unconnected-(UALERT-NC-Pad1)" class="Default">
+      <node ref="UALERT" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="130" name="unconnected-(UDAC-NC-Pad3)" class="Default">
+      <node ref="UDAC" pin="3" pinfunction="NC_3" pintype="no_connect"/>
+    </net>
+    <net code="131" name="unconnected-(UDAC-NC-Pad5)" class="Default">
+      <node ref="UDAC" pin="5" pinfunction="NC_5" pintype="no_connect"/>
+    </net>
+    <net code="132" name="unconnected-(UDAC-NC-Pad6)" class="Default">
+      <node ref="UDAC" pin="6" pinfunction="NC_6" pintype="no_connect"/>
+    </net>
+    <net code="133" name="unconnected-(UDAC-NC-Pad8)" class="Default">
+      <node ref="UDAC" pin="8" pinfunction="NC_8" pintype="no_connect"/>
+    </net>
+    <net code="134" name="unconnected-(UDAC-NC-Pad9)" class="Default">
+      <node ref="UDAC" pin="9" pinfunction="NC_9" pintype="no_connect"/>
+    </net>
+    <net code="135" name="unconnected-(UDAC-NC-Pad11)" class="Default">
+      <node ref="UDAC" pin="11" pinfunction="NC_11" pintype="no_connect"/>
+    </net>
+    <net code="136" name="unconnected-(UDAC-NC-Pad13)" class="Default">
+      <node ref="UDAC" pin="13" pinfunction="NC_13" pintype="no_connect"/>
+    </net>
+    <net code="137" name="unconnected-(UDAC-NC-Pad15)" class="Default">
+      <node ref="UDAC" pin="15" pinfunction="NC_15" pintype="no_connect"/>
+    </net>
+    <net code="138" name="unconnected-(URUNOD-NC-Pad1)" class="Default">
+      <node ref="URUNOD" pin="1" pinfunction="NC_1" pintype="no_connect"/>
+    </net>
+    <net code="139" name="unconnected-(USOURCE-GP24-PadJP7.2)" class="Default">
+      <node ref="USOURCE" pin="JP7.2" pinfunction="GP24_JP7.2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="140" name="unconnected-(USOURCE-GP25-PadJP7.3)" class="Default">
+      <node ref="USOURCE" pin="JP7.3" pinfunction="GP25_JP7.3" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="141" name="unconnected-(USOURCE-GP26-PadJP7.4)" class="Default">
+      <node ref="USOURCE" pin="JP7.4" pinfunction="GP26_JP7.4" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="142" name="unconnected-(USOURCE-GP28-PadJP7.6)" class="Default">
+      <node ref="USOURCE" pin="JP7.6" pinfunction="GP28_JP7.6" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="143" name="unconnected-(USOURCE-GP38-PadJ2.8)" class="Default">
+      <node ref="USOURCE" pin="J2.8" pinfunction="GP38_J2.8" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="144" name="unconnected-(USOURCE-GP39-PadJ2.9)" class="Default">
+      <node ref="USOURCE" pin="J2.9" pinfunction="GP39_J2.9" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="145" name="unconnected-(USOURCE-GP40-PadJ2.11)" class="Default">
+      <node ref="USOURCE" pin="J2.11" pinfunction="GP40_J2.11" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="146" name="unconnected-(USOURCE-GP41-PadJ2.12)" class="Default">
+      <node ref="USOURCE" pin="J2.12" pinfunction="GP41_J2.12" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="147" name="unconnected-(USOURCE-GP42-PadJ2.13)" class="Default">
+      <node ref="USOURCE" pin="J2.13" pinfunction="GP42_J2.13" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="148" name="unconnected-(USOURCE-GP43-PadJ2.14)" class="Default">
+      <node ref="USOURCE" pin="J2.14" pinfunction="GP43_J2.14" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="149" name="unconnected-(USOURCE-GP44-PadJ2.15)" class="Default">
+      <node ref="USOURCE" pin="J2.15" pinfunction="GP44_J2.15" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="150" name="unconnected-(USOURCE-GP45-PadJ2.16)" class="Default">
+      <node ref="USOURCE" pin="J2.16" pinfunction="GP45_J2.16" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="151" name="unconnected-(USOURCE-GP46-PadJ2.17)" class="Default">
+      <node ref="USOURCE" pin="J2.17" pinfunction="GP46_J2.17" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="152" name="unconnected-(USOURCE-GP47-PadJ2.18)" class="Default">
+      <node ref="USOURCE" pin="J2.18" pinfunction="GP47_J2.18" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="153" name="unconnected-(USOURCE-USB_DM-PadJ1.2)" class="Default">
+      <node ref="USOURCE" pin="J1.2" pinfunction="USB_DM_J1.2" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="154" name="unconnected-(USOURCE-USB_DP-PadJ1.3)" class="Default">
+      <node ref="USOURCE" pin="J1.3" pinfunction="USB_DP_J1.3" pintype="bidirectional+no_connect"/>
+    </net>
+  </nets>
+</export>

@@ -1,9 +1,0 @@
-Item,Quantity,Selection,Scope
-Base MCU module,1,PimoroniPGA2350PIM722,Not included inMPGA socket ref
-Source MCU module,1,WaveshareCore2350B0 noPSRAM,Not included inJCORE1..4 socket refs; NOT PGA pincompatible
-PGA socket terminals,64,Mill-Max0300-2-15-15-47-27-10-0,Implementation ofMPGA; sameconditionalfit as priorreview; not64extraelectricalnets
-YM IC,1,YM2203C,Socket refU12 excludes actualIC supply
-YM socket,1,DIP40wide15.24mm,Implementation ofU12socket
-Volume,1,DualA10koffboard,JPOT
-External PSU,1,regulated5.1Vclass2A,Verify4.75..5.25V atYM; noUSB supply
-Core USB programming adapter,1,Wavesharekitoptional,Useonly withmodule removed/carrieroff; notnormalMIDI interface

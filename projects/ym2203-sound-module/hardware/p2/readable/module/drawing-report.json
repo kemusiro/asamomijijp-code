@@ -1,0 +1,151 @@
+{
+  "board": "module",
+  "components": 96,
+  "paper": "User",
+  "wire_segments": 537,
+  "junctions": 50,
+  "named_connections": 248,
+  "local_wired_branches": 63,
+  "fallback_named_connections": 0,
+  "fallback_nets": [],
+  "symbol_envelope_overlaps": [],
+  "bad_crossings": [],
+  "blocks": [
+    {
+      "title": "01  G40 connector and 3.3V link buffers",
+      "parts": [
+        "JMOD",
+        "ULINK0",
+        "ULINK1"
+      ]
+    },
+    {
+      "title": "02  Picossci2B controller and isolated MCU feed",
+      "parts": [
+        "USOURCE",
+        "DMCU5V",
+        "JSWD",
+        "CCORE",
+        "CCOREB"
+      ]
+    },
+    {
+      "title": "03  YM2203 parallel bus, 3.3V / 5V translation",
+      "parts": [
+        "U8",
+        "U9",
+        "RDIR",
+        "RDOE",
+        "RCOE"
+      ]
+    },
+    {
+      "title": "04  Real YM2203C and FM capture buffers",
+      "parts": [
+        "U12",
+        "U16",
+        "RS3",
+        "RS6",
+        "RS8",
+        "R39",
+        "R40"
+      ]
+    },
+    {
+      "title": "05  YM3014B-F DAC and dual voltage follower",
+      "parts": [
+        "UDAC",
+        "UAF",
+        "RFMSD",
+        "RFMCLK",
+        "RFMSH",
+        "RFMOUT",
+        "CFMDAC",
+        "COPAMP",
+        "CRB",
+        "CANABULK"
+      ]
+    },
+    {
+      "title": "06  SSG mix, reset and safe transmit",
+      "parts": [
+        "RL0",
+        "RL1",
+        "RL2",
+        "RSMIXA",
+        "RSMIXB",
+        "RSMIXC",
+        "URUNOD",
+        "RYMRESET",
+        "RRELDEFAULT",
+        "RENPD",
+        "RRUNUP"
+      ]
+    },
+    {
+      "title": "07  Defaults, link enables and local supply bypass",
+      "parts": [
+        "C11",
+        "C12",
+        "C13",
+        "C14",
+        "C15",
+        "C16",
+        "C19",
+        "C20",
+        "C27",
+        "CMOD5",
+        "CURUNOD",
+        "CULINK0",
+        "CULINK1",
+        "CUTXOR",
+        "CUALERT",
+        "R32",
+        "RMC32",
+        "R33",
+        "RMC33",
+        "R34",
+        "RMC34",
+        "R35",
+        "RMA",
+        "RMSCK",
+        "RMMOSI",
+        "RMCS",
+        "RMBCK",
+        "RMLR",
+        "RMCLK",
+        "RMADR",
+        "UTXOR",
+        "UALERT",
+        "RTXDIS",
+        "RMTXMISO",
+        "RMTXDATA",
+        "RD0",
+        "RD1",
+        "RD2",
+        "RD3",
+        "RD4",
+        "RD5",
+        "RD6",
+        "RD7"
+      ]
+    },
+    {
+      "title": "08  Source-local voice indicators - key enable, not PCM level",
+      "parts": [
+        "RVOICE1",
+        "DVOICE1",
+        "RVOICE2",
+        "DVOICE2",
+        "RVOICE3",
+        "DVOICE3",
+        "RVOICE4",
+        "DVOICE4",
+        "RVOICE5",
+        "DVOICE5",
+        "RVOICE6",
+        "DVOICE6"
+      ]
+    }
+  ]
+}

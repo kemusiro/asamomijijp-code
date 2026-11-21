@@ -1,0 +1,89 @@
+id,manufacturer_part_number,required_per_set,sales_pack_size,packages_for_one_set,suggested_supplier,url,refs,purpose
+MPANEL,Pico SC0915,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g116132/,panel:UPICO,つまみ・ボタン・エンコーダーを読み、LCD表示と音色保存、ベースへのI2C送信を担当する設計。
+S40,2227MC-40-06 round DIP40 600mil,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g100034/,,YM2203Cを取り外し可能にする。MCUモジュール用のソケットではない。
+SOCKPICO,FH-1x20 /103077,3,1,3,Akizuki,https://akizukidenshi.com/catalog/g/g103077/,panel:J5,Pico用に20P×2本、LCD用に8Pへ切る1本。Picossci 2Bは直付けなので使わない。
+GROVE,110990037,2,10,1,Akizuki,https://akizukidenshi.com/catalog/g/g112634/,base:JEDIT;panel:JUPLINK,ベースと編集パネルを3.3V I2C＋電源で接続する。
+GROVECABLE,DG01032-0064-03 150mm,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g116938/,,両基板のGroveコネクタ間をつなぐ。LCDケーブルではない。
+MUX,CD74HC4051E,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/Texas-Instruments/CD74HC4051E?qs=LfG3tU9ud8CbsH7xUrF9XA%3D%3D,panel:UMUX,4個のつまみの電圧を切り替え、Picoの1本のADC入力で順番に測定する。音声を切り替える部品ではない。
+DPOWER,1N5819,2,10,1,Akizuki,https://akizukidenshi.com/catalog/g/g117244/,module:DMCU5V;panel:DPOWER,音源MCUの5V入力と編集PicoのVSYS入力で逆向きの電流を抑える。
+DAC,PCM5102APWR,1,1,1,Mouser,https://www.mouser.jp/en/ProductDetail/Texas-Instruments/PCM5102APWR?qs=E2%2FxqS9xjzrfECkwEYoiyg%3D%3D,base:U17,ベースMCUで合成したI2S音声を、左右のアナログ音声へ変換する。
+ADC,PCM1863DBT,1,1,1,Mouser,https://www.mouser.jp/ja/ProductDetail/Texas-Instruments/PCM1863DBT?qs=sGAEpiMZZMuAhErSRmaBR8GJ1ki4%2FM38ZtBGCIk1dWY%3D,base:UADC,音源基板からのアナログ2系統をデジタル音声へ変換する。YM2203基板ではFMとSSGを別々に取り込む。
+RX,"TC7SZ125F,LJ(CT",1,1,1,Mouser,https://www.mouser.jp/en/ProductDetail/Toshiba/TC7SZ125FLJCT?qs=sGAEpiMZZMutXGli8Ay4kIhN1q%2FnzqK9tUHUSu5fXF4%3D,base:URXDATA,音源基板から戻るオプションI2SデータをベースMCUへ渡す受信バッファ。
+CLAMP,SBAT54SLT1G,2,1,2,Mouser,https://www.mouser.jp/c/?q=863-SBAT54SLT1G,base:DCLAMPL;base:DCLAMPR,ADCのアナログ入力電圧を電源レール付近でクランプし、過大入力を抑える。
+ADCAC,50NXA10MEFC5X11 NP10u50V,4,1,4,Akizuki,https://akizukidenshi.com/catalog/g/g130142/,base:CACL;base:CACR;base:CHPINL;base:CHPINR,ADC入力2個とアンプ入力2個で直流成分を遮断し、音声の交流成分を通す。
+YM_DAC,YM3014B-F,1,1,1,別途調達,,module:UDAC,YM2203CのFM出力をアナログ化する専用DAC。16ピンSOP。
+OPAMP,MCP6002-E/P 8PDIP,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g130011/,module:UAF,YM3014B-Fの基準電圧をバッファし、FMアナログ音声もバッファしてベースへ送る。
+RB_CAP,50PX10MEFC5X11 10u50V polar,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g117897/,module:CRB,YM3014B-FのRB基準電圧を平滑化する。無極性10µFとは用途・極性が異なる。
+DIP,EDS104SZ,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g100586/,base:SWCLOCK,起動時などに読み取るクロック・動作設定用。実際の割当てはファームウェアで定義する。
+R_0,RC0805JR-070RL,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/RC0805JR-070RL?qs=3ldFlDWnkKyEhdaPjQHEFA%3D%3D,base:RALERT,音源からの通知線をつなぐ接続ジャンパー。
+R_1.33k,AC0805FR-071K33L,3,1,3,Mouser,https://www.mouser.com/en/c/passive-components/?case+code+-+in=0805&qualification=AEC-Q200&sort=brand%7C1,module:RL0;module:RL1;module:RL2,SSGのA/B/C各出力の負荷抵抗。出力の電流・電圧特性を整える。
+R_100,RC0805FR-07100RL,1,1,1,Mouser,https://www.mouser.jp/en/ProductDetail/YAGEO/RC0805FR-07100RL?qs=8Y8p%252BasKcI6MtXUgG4E6SQ%3D%3D,module:RFMOUT,FMアナログ出力の直列抵抗。音源基板のバッファ出力を共通コネクタへ接続する。
+R_100k,RC0805FR-07100KL,31,1,31,Mouser,https://www.mouser.jp/en/ProductDetail/YAGEO/RC0805FR-07100KL?qs=sGAEpiMZZMtlubZbdhIBIBEZimkhVqQ4%252BJiJ58dc82A%3D,base:RVB3;base:RI2SD;base:RI2SB;base:RI2SL;base:RDMINPD;base:RADCDATAPD;base:RBMISO;base:RBSCK;base:RBMOSI;base:RBI1;base:RBSD;base:RRGBPD;base:RHPMUTE;module:RD0;module:RD1;module:RD2;module:RD3;module:RD4;module:RD5;module:RD6;module:RD7;module:R35;module:RMA;module:R40;module:RRELDEFAULT;module:RMSCK;module:RMMOSI;module:RMBCK;module:RMLR;module:RMCLK;module:RMADR,データ・クロック・ミュート等の信号をLowへ寄せ、未接続や出力停止時の電位を固定する。
+R_10k,RC0805FR-0710KL,45,1,45,Mouser,https://www.mouser.jp/ja/ProductDetail/YAGEO/RC0805FR-0710KL?qs=sGAEpiMZZMtlubZbdhIBIOFKZRuegvHPJZwbdSsMnYE%3D,base:RRUN;base:RPDAC;base:RPLINE;base:R50;base:RP0;base:RP1;base:RP2;base:RP3;base:RP4;base:RP5;base:RSHUNTL;base:RSHUNTR;base:RBEN;base:RBCS;base:RBALERT;base:RHPINL;base:RHPFBL;base:RHPINR;base:RHPFBR;module:RDIR;module:RDOE;module:RCOE;module:R32;module:RMC32;module:R33;module:RMC33;module:R34;module:RMC34;module:RYMRESET;module:RSMIXA;module:RSMIXB;module:RSMIXC;module:RENPD;module:RRUNUP;module:RTXDIS;module:RMCS;panel:R10;panel:R11;panel:R12;panel:R13;panel:R14;panel:R15;panel:R16;panel:R17;panel:RPANELRUN,信号の初期状態固定、スイッチ入力、SSG3声の抵抗合成、ADC入力分圧、アンプの入力・帰還など。
+R_1k,RC0805FR-071KL,14,1,14,Mouser,https://www.mouser.jp/en/ProductDetail/YAGEO/RC0805FR-071KL?qs=1ogmaHw32WJjeGY0DHXakQ%3D%3D,base:RLED0;base:RTX;module:RVOICE1;module:RVOICE2;module:RVOICE3;module:RVOICE4;module:RVOICE5;module:RVOICE6;panel:R1;panel:R2;panel:R3;panel:R4;panel:R6;panel:R8,RX/TX・6声LEDの電流制限と、編集つまみ／エンコーダーの入力フィルター用。
+R_2.2k,RC0805FR-072K2L,5,1,5,Mouser,https://www.mouser.be/en/ProductDetail/YAGEO/RC0805FR-072K2L?qs=CSLd874fYV2eT6iKTza3nw%3D%3D,base:R45;base:R46;base:RLIMITL;base:RLIMITR;base:RPOWER,HOST I2Cのプルアップ、ADC入力の電流制限、POWER LEDの電流制限。
+R_2.7k,RC0805FR-072K7L,2,1,2,Mouser,https://www.mouser.com/en/c/passive-components/resistors/film-resistors/thick-film-resistors-smd/?case+code+-+in=0805&resistance=2.7+kOhms,panel:R5;panel:R7,ロータリーエンコーダーA/B接点のプルアップ。接点が開いているときの値を固定する。
+R_33,RC0805FR-0733RL,35,1,35,Mouser,https://www.mouser.jp/ja/ProductDetail/YAGEO/RC0805FR-0733RL?qs=g6xwsc4j%252B%2Fq7KbipsIEOLQ%3D%3D,base:R47;base:R48;base:R49;base:RCLK0;base:RCLK1;base:RCLK2;base:RADCBCK;base:RADCLR;base:RADCDATA;base:RBD0;base:RBD1;base:RBD2;base:RBD3;base:RBD4;base:RBD5;base:RBD6;base:RBD7;base:RBCTL0;base:RBCTL1;base:RBCTL2;base:RBCTL3;base:RLKEN;base:RLKBCK;base:RLKLR;module:R39;module:RS3;module:RS6;module:RS8;module:RMTXMISO;module:RMTXDATA;module:RFMSD;module:RFMCLK;module:RFMSH;panel:R18;panel:R19,I2S・SPI・クロック・バス・LCDの信号線に直列に入れ、リンギングや反射を抑える。
+R_4.7k,RC0805FR-074K7L,5,1,5,Mouser,https://eu.mouser.com/en/ProductDetail/YAGEO/RC0805FR-074K7L?qs=sGAEpiMZZMtlubZbdhIBIDa%2FhYjOd3Y%252B7hgy2Q9kHw0%3D,base:R37;base:R38;panel:R9;panel:REEPSDA;panel:REEPSCL,内部サービス／EEPROM用I2Cのプルアップと、エンコーダー押しボタンのプルアップ。
+R_470,RC0805FR-07470RL,2,1,2,Mouser,https://www.mouser.jp/en/ProductDetail/YAGEO/RC0805FR-07470RL?qs=CSLd874fYV2wsnqMGLpcHA%3D%3D,base:R53;base:R53R,DAC左右出力で2.2nFとRCフィルターを作り、高周波ノイズを抑える。
+R_47k,RC0805FR-0747KL,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/RC0805FR-0747KL?qs=sfaR5EV1ye7DERH7OnC2Gg%3D%3D,base:RVB1,68kΩと組み合わせ、USBの5V VBUSを検出回路向けに分圧する上側抵抗。
+R_5.1k,ERJ-6ENF5101V,2,1,2,Mouser,https://www.mouser.jp/en/ProductDetail/Panasonic-Industry/ERJ-6ENF5101V?qs=50QC8w71jAvpGnVxshBP5A%3D%3D,base:RCC1;base:RCC2,USB-CのCC1/CC2に接続し、この基板がUSB機器側であることをPCへ示す。
+R_6.8k,RC0805FR-076K8L,2,1,2,Mouser,https://lv.mouser.com/en/ProductDetail/YAGEO/RC0805FR-076K8L?qs=cW1D1cnQQSo90o3%2FU1tcAQ%3D%3D,base:RATTL;base:RATTR,10kΩと組み合わせ、音源からADCへ入るアナログ信号を減衰する。
+R_68k,RC0805FR-0768KL,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/RC0805FR-0768KL?qs=BrN8wpjQTgGlakzG6SeCwA%3D%3D,base:RVB2,USB VBUS検出用分圧の下側抵抗。
+C_100n,CC0805KRX7R9BB104,39,1,39,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/CC0805KRX7R9BB104?qs=vTakOoo5QyLx0lXWgVtRhQ%3D%3D,base:CVBUS;base:CVB3;base:C21;base:C22;base:C31;base:C32;base:C33;base:CUMUTE;base:CADCAV0;base:CADCDV0;base:CADCIO0;base:CADCLDO0;base:CURXDATA;base:CRGB;base:CURGB;base:CHPHF;module:C11;module:C12;module:C13;module:C14;module:C15;module:C16;module:C19;module:C27;module:CCORE;module:CURUNOD;module:CUTXOR;module:CULINK0;module:CULINK1;module:CUALERT;module:CFMDAC;module:COPAMP;panel:C2;panel:C4;panel:C5;panel:C6;panel:C7;panel:C8;panel:CMUX,各IC電源のノイズ抑制と、編集つまみのADC入力の平滑化。すべてが電源用ではない。
+C_100p,CC0805JRNPO9BN101,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/CC0805JRNPO9BN101?qs=AgBp2OyFlx%252BIBvbseB%252BJ9Q%3D%3D,base:CVBD,USB VBUS検出線の高周波ノイズを抑える。
+C_100u,16MH5100MEFC6.3X5,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g105002/,base:C1,DC入力後の5Vを平滑化する。音源基板の下に収まる低背品。
+C_10n,CC0805KRX7R9BB103,2,1,2,Mouser,https://br.mouser.com/en/ProductDetail/YAGEO/CC0805KRX7R9BB103?qs=AgBp2OyFlx%252BOmOw2rEcWJw%3D%3D,panel:C9;panel:C10,エンコーダーA/B入力を抵抗とともに平滑化し、接点ノイズを抑える。
+C_10u,GRM21BR71A106KE51 X7R10V,14,10,2,Akizuki,https://akizukidenshi.com/catalog/g/g117593/,base:C2;base:C34;base:C35;base:CAUXIN;base:CAUXOUT;base:CADCAV1;base:CADCDV1;base:CADCIO1;base:CADCLDO1;base:CPANELPORT;module:C20;module:CANABULK;panel:C3;panel:CPIN,電源レールやIC内部電源の平滑・電圧変動抑制。
+C_1n,CC0805JRNPO9BN102,3,1,3,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/CC0805JRNPO9BN102?qs=AgBp2OyFlx%2FQdV29SKQPMw%3D%3D,base:CRUN;base:CHPOUTL;base:CHPOUTR,RESET線のノイズ抑制と、左右ヘッドフォン出力の高周波対策。
+C_1u,885012207103R,3,1,3,Mouser,https://www.mouser.com/en/ProductDetail/Wurth-Elektronik/885012207103R?qs=1Kr7Jg1SGW8aoYicPzYEwg%3D%3D,base:C30;base:CADCVREF;panel:C1,DAC内部LDO・ADC基準電圧・編集パネル電源の安定化。
+C_2.2n,C0805C222J5GACTU,2,1,2,Mouser,https://eu.mouser.com/en/ProductDetail/KEMET/C0805C222J5GACTU?qs=bK2T7AVO1ycLdBLHkMP64Q%3D%3D,base:C38;base:C38R,470Ωと組み合わせ、DAC左右出力のRCフィルターを作る。
+C_2.2u,GRM21BR71E225KE11 X7R25V,2,10,1,Akizuki,https://akizukidenshi.com/catalog/g/g114788/,base:C28;base:C29,PCM5102Aのチャージポンプと、生成した負電源の平滑用。
+C_22u,C3225X7R1C226K250AC,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/TDK/C3225X7R1C226K250AC?qs=NRhsANhppD%2F%252BsyLQ7xMVgA%3D%3D,module:CMOD5,音源基板の5Vを平滑化し、電圧変動を抑える。
+C_4.7u,GRM21BR71C475KE51 X7R16V,1,20,1,Akizuki,https://akizukidenshi.com/catalog/g/g131147/,module:CCOREB,音源MCUの3.3V電源を平滑化する。アンプ用1206品とは別。
+C_470p,CC0805JRNPO9BN471,2,1,2,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/CC0805JRNPO9BN471?qs=AgBp2OyFlx%2FIOgREi13fJA%3D%3D,base:CAAFL;base:CAAFR,ADC左右入力に入る高周波ノイズを抑える。
+HDR,PH-1x40SG,66,40,2,Akizuki,https://akizukidenshi.com/catalog/g/g100167/,base:JHOST;base:JSWD;module:JSWD,切断してPico・LCD・Si5351A・HOST・SWDの接続端子を作る。G40は別品目。
+S01,SKHHALA010,3,1,3,Mouser,https://www.mouser.jp/ja/ProductDetail/Alps-Alpine/SKHHALA010?qs=seHrhfPpLDzOzOHig%2FPlAA%3D%3D,base:SWRESET;base:SWSTOP;base:SWTEST,RESET・STOP・TESTの3ボタン。RESETはRUN線、STOP/TESTはMCU入力。
+F01,MF-MSMF200/16X-2,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/Bourns/MF-MSMF200-16X-2?qs=CoAU%2FpHVZXw9NuHKqPHrrg%3D%3D,base:F1,DC入力で過電流時の電流を制限する。原因解消後に復帰する種類。
+U16,USBLC6-2SC6,1,1,1,Mouser,https://www.mouser.jp/en/ProductDetail/STMicroelectronics/USBLC6-2SC6?qs=po45yt2pPpu%2FhNIlwQdTlg%3D%3D,base:UESD,USB D+／D−線の静電気サージ保護。
+U08,SN74LVC1G17DBVR,1,1,1,Mouser,https://www.mouser.com/en/c/semiconductors/integrated-circuits-ics/logic-ics/buffers-line-drivers/?high+level+output+current=-+32+mA&number+of+output+lines=1+Output&package+%2F+case=SOT-23-5,base:UVBUS,分圧したUSB VBUSを安定した論理信号へ整え、PCの接続・切断を検出する。
+U01,AE-Si5351A-B (110679),1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g110679,base:U13,YM2203C等へ送る可変クロックを生成する。水晶・周辺部品を含むモジュール。
+L01,BLM21PG601SN1D,2,1,2,Mouser,https://eu.mouser.com/en/ProductDetail/Murata-Electronics/BLM21PG601SN1D?qs=iLKYxzqNS74FEXcdq8OVUQ%3D%3D,base:FB1;base:FBHP,ADC/DACのアナログ系とヘッドフォンアンプ用3.3Vで、高周波ノイズを減らす。
+LED01,OSG8HA3Z74A,9,1,9,Akizuki,https://akizukidenshi.com/catalog/g/g111637/,base:DLED0;base:DPOWER;base:DTX;module:DVOICE1;module:DVOICE2;module:DVOICE3;module:DVOICE4;module:DVOICE5;module:DVOICE6,ベースのPOWER・RX・TX用3個と、音源側のFM1～3・SSGA～C用6個。発音表示はMCU制御で、実音の音量を検出する回路ではない。
+U07,TLV1117LV33DCYR,1,1,1,Mouser,https://www.mouser.jp/en/ProductDetail/Texas-Instruments/TLV1117LV33DCYR?qs=sGAEpiMZZMug9GoBKXZ754ENSUSpJrT1oXgLIl6RErY%3D,base:UAUX,外部5Vから補助3.3Vを作り、ADC・DACアナログ系・アンプ・編集パネルへ給電する。
+U09,SN74LVC1G08DBVR,1,1,1,Mouser,https://eu.mouser.com/en/ProductDetail/Texas-Instruments/SN74LVC1G08DBVR?qs=sGAEpiMZZMswyCOIqqEme8x5HtyK9bxKuYHkYdYymVU%3D,base:UMUTE,DAC許可とLINE許可の両方が有効な場合だけ、DACとヘッドフォンアンプのミュートを解除する。
+J04,FH-2x20SG,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g100085/,base:JMOD,音源基板を差し込む共通40接点コネクタのベース側。
+J10,5077CR-16-SMC2-BK-TR,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g114356/,base:JUSB,PCとのUSB CDC/MIDI通信とVBUS検出用。基板主電源はDCジャック。
+U11,SN74LVC8T245PWR,2,1,2,Mouser,https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74LVC8T245PWR?qs=dT9u2OTAaVWuDt7hn1wlxQ%3D%3D,module:U8;module:U9,3.3V MCUと5V YM2203Cのデータバス、アドレス・制御・リセット・クロックを電圧変換する。
+M03,YM2203C,1,1,1,別途調達,,module:U12,YM2203C音源IC。音源基板1セットにつき1個必要。
+U10,SN74LV4T125QPWRQ1,3,1,3,Mouser,https://www.mouser.com/en/ProductDetail/Texas-Instruments/SN74LV4T125QPWRQ1?qs=vvQtp7zwQdNOuv1iURI9Jw%3D%3D,module:U16;module:ULINK0;module:ULINK1,YMのFMデジタル出力を3.3Vで受信し、SPI・クロック・オプションI2S等の基板間信号もバッファ／出力切離しする。
+U13,SN74LVC1G07DBVR,2,1,2,Mouser,https://eu.mouser.com/en/ProductDetail/Texas-Instruments/SN74LVC1G07DBVR?qs=FM6NhYOeeBXhZlYg%2Fa2W9g%3D%3D,module:URUNOD;module:UALERT,音源MCUのリセット線とベースへの通知線をオープンドレインで駆動する。
+U17,SN74LVC1G32DBVRE4,1,1,1,Mouser,https://www.mouser.com/en/c/semiconductors/integrated-circuits-ics/logic-ics/?number+of+output+lines=1+Output&package+%2F+case=SOT-23-5&supply+voltage+-+max=5.5+V,module:UTXOR,SPI選択状態と送信禁止状態をまとめ、MISO出力の許可を制御する。
+J05,PH-2x20SG,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g100080/,module:JMOD,音源基板の裏面に取り付け、ベースの雌ソケットへ接続する。6番をキーとして除く。
+EPU,24FC256-I/P,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g103568/,panel:U1,電源を切っても保持する音色設定の保存先。外部への取出しにはファームウェア側の読出し機能が必要。
+EPOT,RK09D117000B,4,1,4,Akizuki,https://akizukidenshi.com/catalog/g/g114827/,panel:RV1;panel:RV2;panel:RV3;panel:RV4,音色パラメーターを調整するつまみ。音声を直接絞る出力ボリュームとは別。
+EENC,RE111F-4S1-152S4-15P-A,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g114936/,panel:ENC1,項目選択や値の増減、押下操作の入力に使う。
+ESW,TVDP01-095BB1,6,1,6,Akizuki,https://akizukidenshi.com/catalog/g/g117166/,panel:SW1;panel:SW2;panel:SW3;panel:SW4;panel:SW5;panel:SW6,OP1～OP4選択・NOTE試聴・STOP用。
+LCD,M154-240240-RGB,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g131019/,,音色の設定値・編集状態を表示する。基板上の8Pソケットへ直結する。
+KNOB,S-42,5,1,5,Akizuki,https://akizukidenshi.com/catalog/g/g116278/,,ベースの出力音量1個と、編集パネルの4ボリュームへ取り付ける。エンコーダー用には数えていない。
+E01,RK0971220-F15-C0-A103,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g103604/,base:RVOL,出力の左右音量を、1本の軸で同時に調整する。
+E02,ST-005-G,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g102460/,base:JLINE,ヘッドフォンまたはアンプ内蔵スピーカー等を接続するPHONES／可変LINE出力。
+E13,ATS012S-W050U,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g114167/,,DCジャックへ安定化5Vを供給する。2.1/5.5mmセンタープラス。
+WIRE22,0.3sq (12/0.18) AWG22x10,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g111641/,,HOST接続などの配線用。PicossciのSWD/RESET追加線は短い細線を使用する。
+DCJACK,18742 /109408,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g109408/,base:JPOWER,外部の安定化5Vを基板へ取り込む。基板へ直付けする。
+SLEEVING,SUMITUBE-F(Z)-3x0.25x1m-RED,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g131355/,,露出したはんだ接続部の絶縁用。基板直付け部品には通常不要。
+USB_CABLE,USB2.0 TypeC-to-TypeC 0.5m /117018,1,1,1,Akizuki,https://akizukidenshi.com/catalog/g/g117018/,,PCとベースのUSB-Cをデータ接続する。PC側もUSB-Cの場合の構成。
+KEY,G40 pin6 key / spare insulating header plastic,1,1,1,DIY,,,G40雌6番を塞ぎ、雄6番を除く。一般コネクタの余剰樹脂を使用、購入なし。
+FOOT20,TP-20 M3 male/female 20mm,10,1,10,Akizuki,https://akizukidenshi.com/catalog/g/g107570/,,ベース下面の足6本と編集パネル下面の足4本。机と裏面はんだを離す。
+STACK12,970120365,4,1,4,Mouser,https://www.mouser.com/en/ProductDetail/Wurth-Elektronik/970120365?qs=wr8lucFkNMUrgA7ysWyR%2FA%3D%3D,,ベース上の音源基板を12mm間隔で支持する。
+LCD12,970120244,4,1,4,Mouser,https://www.mouser.com/en/ProductDetail/Wurth-Elektronik/970120244?qs=wr8lucFkNMXnpHGgMJTt4w%3D%3D,,編集基板とLCDの間隔を保ち、LCDを機械的に固定する。実コネクタ高さの確認が必要。
+M2SCREW,M2x5 screw+nut 20 pairs /113238,8,20,1,Akizuki,https://akizukidenshi.com/catalog/g/g113238/,,LCD支持部の固定にねじ8本を使う。付属ナット20個は計画上余る。
+M3SCREW,M3x6 screw 10pcs /110245,4,10,1,Akizuki,https://akizukidenshi.com/catalog/g/g110245/,,音源基板上面から12mmスペーサーへねじ4本で固定する。
+M3NUT,M3x12 screw+nut 20 pairs /102743,6,20,1,Akizuki,https://akizukidenshi.com/catalog/g/g102743/,,ベース前側2本と編集パネル4本の足にナット計6個を使う。付属の12mmねじ20本は未使用の余り。
+MCORE,Picossci 2B RP2350B SSCI-105071,2,1,2,Switch Science,https://www.switch-science.com/products/10507,base:UBASE;module:USOURCE,ベースはUSB CDC/MIDI・HOST I2C・再生制御・ADC/I2S合成、音源側はYM2203Cのレジスタ制御・基板間通信・6声表示を担当する設計。
+RGB,WS2812B-V6,1,10,1,Akizuki,https://akizukidenshi.com/catalog/g/g132092/,base:DRGB,色で内部状態を表示する。MCUの1本のデータ線で制御する設計。
+HP_PUMP_C,GRM31CR71H475KA12 / 4.7uF 50V X7R 1206,3,20,1,Akizuki,https://akizukidenshi.com/catalog/g/g115634/,base:CHPFLY;base:CHPVSS;base:CHPVDD,ヘッドフォンアンプのチャージポンプ、負電源平滑、3.3V電源平滑の3か所に使用。
+HP,TPA6138A2PW,1,1,1,Mouser,https://www.mouser.jp/c/?q=595-TPA6138A2PW,base:UHP,物理ボリューム後の音声をバッファ・駆動し、PHONES／可変LINE兼用ジャックへ出す。電圧利得は1倍の設計。
+RGB_BUFFER,SN74AHCT1G125DBVR,1,1,1,Mouser,https://www.mouser.com/en/c/semiconductors/integrated-circuits-ics/logic-ics/buffers-line-drivers/?m=Texas+Instruments&series=SN74AHCT1G125,base:URGB,MCUの3.3Vデータを5V系RGB LED向けに変換する。
+R_10,RC0805FR-0710RL,2,1,2,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/RC0805FR-0710RL?qs=8Y8p%252BasKcI5T5bn0nqNRsw%3D%3D,base:R59;base:R60,ヘッドフォンアンプの左右出力に直列に入れ、ケーブル等の容量性負荷による不安定化を抑える。旧表の100Ωとは異なる。
+R_220,AF0805FR-07220RL,1,1,1,Mouser,https://www.mouser.com/en/ProductDetail/YAGEO/AF0805FR-07220RL?qs=tggtontpCXOsaaQbLdBdKg%3D%3D,base:RRGB,RGB LEDのデータ入力に直列に入れ、信号の急峻な変化を抑える。

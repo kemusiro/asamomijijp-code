@@ -1,0 +1,6335 @@
+[
+  {
+    "uuid": "aed50487-929a-4157-bc51-bc72df4acbaf",
+    "kind": "text",
+    "text": "PWR",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "a04acfe0-153e-4d30-8f64-6d0b68697705",
+    "kind": "text",
+    "text": "RX",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "dbbcea57-4d71-4c9f-ae23-a951c7a97f4b",
+    "kind": "text",
+    "text": "TX",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "f9b5fe39-371b-479d-8b7a-b1cf8130cde7",
+    "kind": "text",
+    "text": "STATE",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "e1bce8a1-341e-450f-a3e8-d62b7e9f4f1f",
+    "kind": "text",
+    "text": "U13 CLK 3V3",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "f07e6dce-54a6-463f-80d3-f1eac15bc9c7",
+    "kind": "text",
+    "text": "PHONES/LINE",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "920b0701-b406-4ccd-b2dd-25c0f50cefd7",
+    "kind": "text",
+    "text": "DC 5V  CENTER +",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "6891dfd2-0ed9-4f7e-89eb-e388288fc18d",
+    "kind": "text",
+    "text": "STOP",
+    "old": [
+      0.85,
+      0.85,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "b619cab0-160e-49d4-a197-7c3f7930aacb",
+    "kind": "text",
+    "text": "TEST",
+    "old": [
+      0.85,
+      0.85,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "a1849bc7-97bb-4515-9192-bae3e0f03b2b",
+    "kind": "text",
+    "text": "P2 LC-T BASE / 3V3 HOST",
+    "old": [
+      0.85,
+      0.85,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "e57d544e-7878-44bc-b9df-79a1c15ec54b",
+    "kind": "text",
+    "text": "RESET",
+    "old": [
+      0.85,
+      0.85,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "c8e01569-0cbe-4ebd-8943-e22fbd98d1a7",
+    "kind": "text",
+    "text": "PANEL 3V3",
+    "old": [
+      0.85,
+      0.85,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "798ad8bf-8cae-4a7d-b97a-8068442fb0e8",
+    "kind": "text",
+    "text": "VOLUME",
+    "old": [
+      0.9,
+      0.9,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "ecd4afe6-078b-49f9-955d-5dd1dd720744",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "96977c3d-b3d8-4f8b-adcd-7e1fae54bfcb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f9571b87-9eae-47e4-b658-4513220d6b0e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6ea329a2-07a2-469f-b546-f7fad4def0bc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "20f95a6a-199d-447b-90ee-6aa624674798",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "70952f8c-2271-4aed-b24f-a7d0729d115d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9d6ba58a-43d0-46b5-aa9b-8d5b22685ae0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4f14c714-acd7-4d25-be93-e866f15f3587",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "00fa9b4b-32ce-4dcb-9610-805d8abf6dc5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e6014a9-b432-4127-aa19-e322b1276ecc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "141970b2-64d9-4605-a7a0-38ca2a1a41ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c5e4a7a3-7f9b-4fa1-847d-6f3489650a22",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8329c872-a98b-4502-8241-19a40e723042",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e85ee7de-0af2-46b5-9188-2b533bfd4973",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1f335e1f-28f9-4bfa-8128-2ae62756b187",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0ba489e9-8e3d-4996-b20d-f6519ae67eba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6b6dc50a-2b51-4f75-9b48-8f9bf4d340b7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "be585cce-7d61-4ac6-bb5a-f53587821e7e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c89f253-fb7f-4e1b-a934-78cab22fe3e3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bf28d525-64ac-4873-9ed0-bd222f968f24",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f05efcf2-3c6b-433c-a6f4-d790e07dfb96",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f59efe8c-15c1-4958-9642-bd4f4e7ca271",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6ebb01ef-371c-4403-9187-974e1ddf7965",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e41ebdfa-47c0-4674-a206-4155c9549989",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ca83bfaf-91ed-4ee0-8b17-b288b715c844",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "38925858-bb6e-4888-807a-8c4707a12be8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "26c314a9-0389-49e5-aac4-4509d20ffac6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fa1e82ff-f565-4f0d-8524-c22e509270a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f3c959b6-c509-484d-9874-9d7c32710d6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f5bce7e3-d31c-495b-8bcb-529b33a283a4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6289c8aa-1c65-4854-b620-85c0983c3906",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "66dfb40a-3735-4ee8-b177-29fd9a393d0b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "06c4b3b6-bb76-4d70-a837-ff01c818ce65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a842af89-ff66-4fc6-b5a4-a2f9191fbf78",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "644e39dc-ead5-4580-8454-b40941d10fd9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d4f1afa6-cbb4-4eb6-b42c-768e3987366d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3750853b-8707-4456-98a9-a5fa740b4138",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7858a3ea-663e-465b-ad23-7f1fe68e333e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "223988a1-6a66-4147-adde-1017ab410e70",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed2e6be0-cce1-4bfc-8952-6ded0fa8bd16",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4862ac23-5505-4222-86fe-07a18cc08c40",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "db471f0c-6cb6-4675-9cce-1f98e69ab790",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ee1673fc-0032-45ab-8de8-6c7c408fe901",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a2e826c9-34ef-4b33-a2ee-e2e89a35b15c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "60141b44-316f-4284-9e55-aa6ff25b36ba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "441f8451-71dc-4bc5-b23c-ff52a6882fc7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "03c6d2e8-bbfd-4147-8b29-4329a0ddba34",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ee13a55e-3369-4e45-a7b0-a29954d57ea8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bb447be4-2c12-4165-959b-cadd72955d8e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8b2c81a3-35f8-422a-9b68-873248d3e531",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02b7bd3e-c8c3-4941-9e49-7c6da51fca41",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fa4b08f6-ed3d-41b1-8a9a-d8afeee251a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "05b8a84a-00fb-4d7e-9532-01847965ca74",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a5f8c122-7823-40d8-b739-3f7e37fe9206",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "efee0724-bce6-47bb-8004-a4f8c507fd61",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b7965c13-85a3-4ba1-b832-588db0cde615",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0abb8929-423f-4f79-af1a-919fe4fbbe21",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d59b3a72-19f5-4dbf-8eea-038c50de76be",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bde20fa2-09bf-43a0-9014-24bebdde9748",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cc3c2d1a-4945-4d1d-81a0-3698b437b98b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8c4e1cbf-ec77-4067-a6bd-6dc653f4d134",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "03e2b5ed-f8ca-4e5f-af13-4fb2da4ccc59",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "782bc4d4-2712-4742-8f73-cd00eb734e91",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "31f5789c-98cc-4bca-92c3-e5bd3b2bac16",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "528d93f3-baf0-46a7-9e72-6cd477b04348",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "32461f2b-29ae-49f3-83fb-1d8f04e9e47a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "77d7f901-f052-4579-a837-4be4b739de06",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1d9d13ac-eac4-4244-acbc-9b7e8beae37f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ece3902e-9f37-479a-ac0e-fa54d9d21c7d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "882342cd-1239-4ab2-9712-a059e77f1fc3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0773b7ee-d617-45f7-abac-5ed5e714a583",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c653961-7aae-435b-980f-4068287c2fec",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8862b265-f015-48dd-bdc7-34d7ba4cb509",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dbe54fc3-6a7e-4462-924d-d555959a49b2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8d97e029-7062-4fe2-a418-f5a5937f490e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c8e7eee0-0c93-4b81-a3fe-b636ec139312",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "43ac736d-f6d3-477b-85c1-ae646e5a460e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "65c46804-638f-4c8f-9311-cf58f4dcefea",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0ee158dc-8214-45ae-ba40-1166bd1315e1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6aa9a28d-95c3-4fb9-b72e-dda86b9fab70",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "66a41a86-cf03-4160-b9ac-13a7fde1e8d2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ce25e441-343b-4da6-a9b3-82f600aa815b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "77303316-034d-4442-a400-30fb7ec60a0f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e5d1d39f-a6cc-4260-90e9-46f14a763977",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bce0c10d-26bd-4ae4-be8b-d18a28f5edc7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "54b7f8be-84f5-4af6-b642-52d6b06883b1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "75605f48-6219-4c92-9002-4b170ce90f95",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a2da0399-69f5-4d3f-8b9a-0058e1dc3349",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "16aed85c-b1eb-4c9d-ac20-c4771f324a36",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b7ac37b-3afb-41e6-9ab6-2889a51bd8b3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c3fcdb81-8ea1-48bf-be39-fc6baf4a9f60",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c3d2590-bed2-4cef-8ea0-d7032daac140",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bf747169-5fba-4e5a-8ac3-cf0114f7fca9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c0c0b550-675a-476d-815f-037ed9730ee9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e29a1cb4-1dcc-4516-a4b1-f8eea5ec2b96",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "10deb3cc-c3ac-4929-9b17-4143298b4e95",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e42a33a1-a73b-4621-b142-bdccaf9add1a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9ca47432-d87b-4f6d-81bf-76389168ebf3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9a273de4-0d69-46a3-a6cb-8021a7b1f5e9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef48d25f-c1da-4bda-a940-95744af41856",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "befa7901-43d3-41cd-bb35-19cce4d7c59f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bece1e31-0387-4498-a318-1512427e458d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "27cbb112-4660-4d1d-b9ae-7370ebce1586",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b272edec-7be6-4113-85fc-eccc93133635",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "facd1a41-3a6f-4cd7-99fb-1548e047a3df",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "78f99073-7637-42bd-94d6-5200edc6d0ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b5cce3a0-861e-43b0-bdc9-cd1419918b08",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "279d1bdd-4d86-44a4-960d-5375c22fd25e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed990850-b5c7-4e3a-a756-aeaa19d6e484",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0a20d4b9-95c7-4cde-8b51-cfa45fc30ea6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "573625c1-f756-4e72-a0fc-7a797d687504",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "204fba0b-34da-45a7-9f31-0cef8c5e2d2f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fa3967af-65c4-4d1a-b951-24cf31ba3823",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "57f857cc-b92e-43ec-a212-1a6b5392d2e9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cfab6fb0-fc0b-417b-8aeb-d75d176bb4db",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "10857c82-462c-401c-93d3-99aeadf30313",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "54ed68f1-3736-470d-b8bc-ea4ad04be6a1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c8171e39-e564-44c4-907a-990c869fa539",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "df974463-7e56-438f-9009-5db678b52268",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bdf3b654-7690-446d-ad09-606e94f31014",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8da01125-dda8-4289-8c1b-f36d36a93f32",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9f732123-884a-4b36-a9f9-7a67ba72b180",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1de55e75-c949-4130-a340-c10d3143f27e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "90256364-d195-4fa7-b99e-0b85eac964f6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3237903a-6223-4480-96c8-33862b7b48b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "71a8cd6f-4590-467f-b616-78fb1617d317",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1f438f0b-4614-4e28-8611-51f08d05dcaa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4938ab10-626e-49ae-8b84-775dab8065c4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "aca40fe2-3b40-42d4-8a88-71a497f10b01",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9e1c73ba-7cd9-4f15-a34b-f0b038b2b3c7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e8ea68f-1915-43b8-b8db-d228355b4d45",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "660cbe83-3156-4838-9bf8-d108d76fc5e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0a1330c7-c224-4e38-8558-a3affac609ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3ff274eb-54fc-4d64-8196-87e53c82a0bd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "42d2b086-6165-4da2-99c5-5560a7a551a1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e9bef1ab-9d65-42bb-99c8-9a0ef6cb494c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a0b4e80f-5d36-417c-8382-e8be943f990a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a72555f3-b540-4181-9f2f-b35164838690",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "23b71f9e-68cd-4477-8d9b-df79f7f1a7ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "108bde78-cd8f-4c86-b40a-fa53ab916a9e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02a73ca1-2f82-454c-978d-6e5de386bebe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ee8c3d4b-f722-4b31-a62c-fcfc06798175",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4dc78e12-17e0-4f20-b31a-de6a4f3f4ccc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7512be88-b5b5-4670-957a-44700202b3d3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7eb856cf-4a1e-4b99-b0fd-be3212b0e93c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ada0ebc9-29b7-4b93-9309-fc6fccdc450f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "606b8cd2-68b7-49f4-9bc8-d10d4bfd79fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0f0b0d18-b423-4906-8845-3ceef27630d8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4f0872bd-8032-4b04-a414-c1978d2da57e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b11cee2e-0384-44f2-8045-a2b64295b665",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b1caadd9-cdc8-4d86-9a7e-f4ba0c49b6d0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "645d6778-dfa3-4f02-908a-53ba9dd30633",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f7a78d5a-cd70-45d1-aea3-b31c457459aa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d728d180-6dab-464c-9570-da0b7e427e07",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "447b1830-4248-4453-8dd3-d37b4be31257",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "020affc1-652f-497e-966b-ff53324336d2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d06b0996-dd77-41dd-b191-63cc5c11d6ee",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c9cd223-df00-45f4-a412-ea08bd8b3004",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9e5ae349-f08f-464c-949d-f6ee48f4e478",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a3e0577f-8628-43f8-8e0d-be5d5958a689",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2d21de07-2149-41cc-8d9c-698c020f85ed",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "18d3bd67-ce97-4d70-986a-bcac7731df05",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a35e719b-54e3-4c19-a146-7d4c48943ef3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "59d28a4d-731d-425e-8491-1d851a44dbd9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b54f9722-f5c6-4545-bc23-c82c2c133556",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f0ecb764-86e8-4fda-a2a4-0657effc8fd3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "decacfa8-a4ba-4060-9413-1da822929ca1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0cc02aa0-fe02-458a-8fec-dd24e02998e7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "01739af4-b2e9-4e6c-b1b9-6dc345002858",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e91171de-dbb4-4013-8cfe-b57e42c89158",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e3f7648e-fe04-4962-a32a-17c651d920e1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "230c35dc-1b80-42b0-86ef-b56e83661a46",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cfc3af4f-de94-4227-9386-bfffe2828e7b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cb421af2-0636-4b3c-814c-f2b769237f0c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "15186566-1137-4352-b672-852bf9495c0c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5879259b-ade0-4dae-b651-b2258163ef21",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4df4c11f-e59c-475c-add3-6d2dc4bd873e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ad34e843-e51f-4069-ac45-710c4b8899e2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "79f0d4ab-19a6-41ec-866e-6ab44813145e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "690330f3-f1d0-44f5-98c6-09ea9067b369",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ae961d68-c862-4627-a1e1-23655d295524",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2045ece6-6265-48e3-ba50-54f6d87a0fb6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c20d583d-1935-4067-98c7-484d8e8ae884",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "230eb50a-b153-4d51-af73-1e9effd4a016",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "30387631-37e4-4ac2-aa83-c0b62302eb74",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8c518288-b3d9-4727-a700-98601f94f5ba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dfd8dcc0-16f0-442c-8a87-9083e57e6708",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d207049d-34d3-422f-ac34-6a56522bde1c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "627ff9ad-2d90-4bad-8615-1d80e634a830",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "611f3502-de84-45ff-83a8-c95724404770",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d278b922-f544-458b-8736-60b3d2eee5f0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "81be1e12-a229-4297-b2a2-b1caa2690f0f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7a850779-1d77-4bcc-9269-48cc0ef94b39",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a56d111b-d8f8-40c3-895a-164ca21c9c4d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a5cb269b-3506-4f5b-bef3-e2c973e88a89",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "55d35ade-cc3e-47bd-ba16-495054560500",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7628a774-7c16-4d39-b409-1baeee4387b7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b72f57fc-c4c5-424f-88ba-13be81989680",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "09a7cc62-5ae8-4571-842c-818d7b6e14d9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "076bc4af-c919-486a-9372-c5d5c6f1c427",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b4b7c2a5-e08b-4e2e-86aa-b1196568c19c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "12001b9e-db41-4e41-bdbd-8f8ac1a19d09",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e6847dad-526e-4ad1-8b57-aa71cc7ab6a0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3eef3b4a-0c0a-4ead-a794-77a743b936c1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2ef6b13d-9327-4f65-b35b-7297a084282b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "610168cb-3281-4b5a-a40d-fe8c0984c2d9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3a7585ab-9239-4079-baa4-daf47b6bfd84",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef69119b-a8cb-4718-956c-994d65cbce6b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5ad978e0-5be9-4acf-ab99-6f78492eadd3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed63caa0-760d-4aa1-aa05-6ff1126f20b6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4d62605b-7d49-48c7-a61e-4bcd7978c673",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f9c0c2ea-b37b-4835-8e46-ae7817417c43",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "22ac9cd4-9ec3-4105-9362-ac27bf58e92d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0a8021f5-bd86-460c-994c-0ab16cbebef8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e744808-c1dc-445e-97e1-5e6a9b22e6fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "65127f94-37f2-4934-805b-c2cd74d6c73d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "762c8f74-0ff2-4a27-82bd-0bd06b0e2079",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2eea01d3-0b0d-4148-9322-f6e8bb11dae4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "26a385c4-a1cb-45b3-82f4-10a95ea15d98",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4d78065f-7b98-442f-9029-30cb982ded1a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "303a2c85-a589-458c-947c-b7c5705a4a6e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "50b425ce-d215-4825-9b4f-53b0966618a2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "102aa06f-4148-4497-9fa5-d0220ae32dab",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f26c9663-a6d6-4e76-bd97-fb0bad8c5ebe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0f932ca8-debb-4db4-a19e-fdab1b752e22",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "271840e0-aeb0-48f5-ac0f-e34c5c6e0c86",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "21d6ef02-c2dd-459c-9af9-66ec91653b56",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b1273c2e-bc46-459b-ad32-d4007166ebf1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "977d7608-f96f-41c9-a3f3-0cd3f3b4206e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cbc66594-adf1-4814-9798-36b63095b205",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "38def194-9354-4e9a-8425-99a2f19d802c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8ee66bc6-4519-4ee7-b129-83ac2514776a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "da1632ef-c2f0-4ba1-9064-08446e2e51cf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c810926c-8e80-4b01-be83-162560dbf4a8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "10bce528-705f-4154-8786-83a32a54fd92",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dad8a386-91ad-4d3f-9b5a-56db5d423798",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4f0057ee-05d4-400b-9608-8c35c585ace5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "255c3df5-df1d-4eae-bfa0-700f8f5f01db",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d678f2d4-c028-493b-bb23-64ace7929704",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8d3997b0-7c57-4526-8515-4aac9000ff90",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e07a9e79-40a5-45e6-a7bc-db239712e63f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86c85842-2e67-43ee-9522-69e7088d2945",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cf789c46-b3be-41bf-b78c-c424a9f6ee5e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "08bcf051-d521-4ddf-a9d0-836bf354ff52",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e6915fdb-de5c-4a27-b144-b915480deeff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eae669b4-7a82-4fbf-9094-77d2df06245f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f5b6fc83-a189-4a5d-a3ed-0f8dca2414d8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b3f2e0f-663b-4e0f-930e-baf28524eaac",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1767bb6b-27a9-4f48-8ff5-82a1ba4c0c99",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "99e90e64-87bc-45b5-9d71-eab70a9d96c9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "55e7c619-8a8b-4e4f-81df-c2cc60cfc148",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b501a604-6b8b-4e2d-9b39-267dd63d801b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c845cb04-41cf-4df3-8cb6-dcc4524ca3cd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c06b6536-cd3a-4e1e-8975-b2a225b4227e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86ed5d07-ee03-44e5-8c88-c319e1cab95e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bddd03cc-559c-45b4-ac6f-5e7489d6edb1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cbdefcf3-8ce5-4595-af55-fd5e1131b087",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a1e97f32-c29f-48ad-bbab-322018748b18",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "73590197-8259-46bb-9b31-071d0a9f1c2c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2b969211-1ab1-40fe-87be-f859361d0949",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1d4be0c5-159b-49ce-852d-df1e9b49de73",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "57b2e6ae-6177-4071-a5a7-8053a15c3a2b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f283c93d-1d14-46ed-82f6-4d12c369af27",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4768542a-b7f0-4fa1-bd63-1bdeec5db757",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "de2741fb-57ba-4dc9-bc88-42e4597646e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2d4ed6c9-8fb0-413e-a18e-d93d4d9d2514",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f9d94042-8545-4515-b7ac-3fd7959eee0b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1357a1a0-539d-45e4-b101-c62de62dc9f9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bc6bbabd-0cba-44fe-aed5-d0c87c2e6149",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4a24d103-21ac-4309-95f9-edeef61d9f5e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f470c687-c9f8-43ef-8ccb-7cbc970a1788",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "11cf852d-bcee-41e1-9a99-d655a6faddc9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d709f277-fe77-467f-a544-d52deabc33dc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d7d20cf2-9d41-4504-a55e-4a110214a633",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "786f0c8a-bdb6-4eea-98f4-4cdd8dea92e4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2208d4f2-f1f1-495a-a254-122d49c1d214",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9896488f-60cf-4813-a8ec-89e7a18c7ebb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5ed94fc7-45ce-4148-b1e6-28ec0ee67556",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0f00eda9-5246-4737-9dc0-1e791e6efece",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9e5860f8-57ab-404c-a7ba-fc9d3cebbf09",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0784ee90-a3d9-4703-907d-8c7a021063a4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5212f58d-aa49-4198-85df-0ebef3aad570",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "98dbaece-91bb-45a4-a63f-df3a8c3f2edc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dca7cdd1-6654-4de7-be90-e19e652e34a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "19a3ca25-0967-43d3-8a0e-844380bd1a15",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4a3d0c71-b8fd-4133-a4cd-cee9d580e8c4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a1ce8579-a0ff-4045-856d-85ab8ee9b21f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "da409f48-7a63-42f2-bb16-f662ad360725",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cca55eb2-5d6c-4f12-8170-005b508c6eb9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "012b7888-afdb-4475-9e1d-d13417c5fde9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "497a1dd2-0f8d-4347-aa8c-9481887e1b23",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5d399d64-3546-4e84-a78c-ec47c45de506",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "12588b4a-38ed-43e2-9624-6d0a885392f7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a740f146-8d6f-47be-8dd8-1d2fe8db7b6a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86a9765b-95aa-4bd4-a7b7-7fa0a4dadc50",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c9003c4-e3e9-4a16-aa38-9a975fc28f7e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e8819c4a-9d77-4790-b87c-2b4472349479",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b8a008aa-2e19-4a01-8304-cee77b2aa2ec",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "48aa5776-139d-4dd2-9568-3ec39a4c2407",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "99d64e13-aafc-412b-b658-e950e1428eb5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6c004251-e1d8-4bc4-9e3d-0416cb6eae8c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9913d5dc-5e8d-4b68-84f9-b9207e3b1dbf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c9c561af-1f07-4183-8040-0060417a5bd8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "42219dcf-d611-4ba6-966c-1d4cb3621d02",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1a606015-8f22-4389-903f-2c65402c39a7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "71662de3-2b97-42e7-9379-99cdb692ebb8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3d452a7c-c380-4563-8145-b21545f3e1ec",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c893142a-dedb-46e6-a279-859d5352cc2d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8971df95-836a-4ca6-b816-31b1bce860aa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "636b2cfa-45c3-405a-adf3-1f25d3cf3c65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b24d22fb-a062-40da-8597-5d85db36b0b8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02c07e34-d56d-4b8c-a2c7-89a7e8507122",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8cd94f0f-e787-4326-940f-f6e1c06064b5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "525e7832-2020-4693-a735-7944ae2bafdf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5be9d670-c908-48e2-b64e-27733c783914",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c5528291-4441-43fc-8ce9-559b54a84213",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "82902464-d259-46ed-b882-f92bb22b2693",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e0ba025d-8b22-4592-b2a0-218774199a5f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "84a172f3-dea0-496d-a421-6357db1f046a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0cd84476-8ba6-45f2-9c74-88ea10e0d337",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5ddfcc24-2076-42ba-9493-d003080b83ad",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f34e7cf1-32f5-423b-abbf-1e08714ac86f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ff65396a-5647-4814-a8dd-680a0ed0f76a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8f58b161-3d32-4adc-8fe7-944af88b427f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "af254b66-5ca2-4994-926f-3f0f6bf1c447",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86a9a478-59a3-42b1-83e1-922e9a9c80c2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d4acbee2-b981-4db3-9df8-09cf6aaee71d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f91897de-8b69-4af1-a359-da1b3e47eb56",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "597be4ba-b904-482f-b469-c6c9359e3197",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "650a68eb-ecd5-4326-a39b-2ead6dccd9c3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "130a8e85-a365-4b11-9f75-4c6612104ddd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bb13071b-fb95-43c9-9912-8c818914957d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e3de52b-00c3-41b0-b18e-49c0766d58fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "91ddcfc0-3bb4-4ad8-bd4e-87ca441f5c8f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c1580206-e7ff-4c18-9564-26a3713f5743",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d9cfba57-3687-4b14-bfd6-c18455c412f6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "db040104-1b63-459d-a0d6-a368d8b7e10f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d3b8030c-db15-44e8-abe4-f9f8dcb072ec",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6db2dcdd-1659-4ec4-b237-8ea72a6fc841",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4754cf71-189b-42ff-9fd7-5583d82f23b6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "76dd3714-1a29-4b91-b7ca-6b5fcb734b3d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "60dfc0fa-0c3b-4ee4-964d-53f3ce308ca2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4cbed72f-5e1a-4754-b469-99d8a5581d6c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "96ced834-0cde-44b1-b257-7bd9c7882a1f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "44a755ba-09c9-4dfb-90b0-c09ad639a596",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "63e0a524-05a8-41af-a786-f661d87f9af8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56b27f7c-73a1-4c31-aa86-2fc4bae06197",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3746d07d-22e2-4b40-8aea-e24a14d66f35",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "68f59e8a-40c6-4311-a693-ff17ae5202fb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed8270c3-e0d3-4727-97b5-eda5c364afa6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7a7a6439-40de-4dd2-9601-1b6240a00810",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "323bd660-938f-451e-8307-10177d28c1e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b5ccb06b-1497-4a78-8501-98387bfc9a64",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "43a69c85-3fe6-4be5-8fd2-8c67311a27ac",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "16b9ceb3-0f8a-4636-a411-08052014eb72",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c339feea-1a7f-49d3-9176-dd92185c83b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a96c5e92-e25c-4288-aa22-5b93e37d8e20",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cb2b0267-2503-4e14-a624-59793466209a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6d14330a-0ffd-43eb-aa35-a0415f044c6a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "80c547c1-7277-446e-8d62-ec9116d4b459",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8c2211af-773a-45bf-8f90-296cd20f05d2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "550e5861-faa6-404d-b4d5-e137365f346b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4a731f4e-7328-4986-98d2-2988dc1d6136",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "20075f94-a2de-4521-8aaf-1b3f894876b7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3ddcd9e1-bee0-4a9a-94c3-bc59eaeda144",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0907f0c4-c645-48d8-b050-72988524832e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ffb20574-25e6-4005-874b-d573f9a928cc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "38595824-788b-433c-9b65-fa8c90781411",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "50ba1830-4ca7-45bd-8ee9-0bf993f19873",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "30311de6-5205-4154-9863-5d12a24dc9b1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b99dbc49-acc6-478c-a02c-c229fc77d35c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "74255489-21b8-419a-b84c-73d09f88abee",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a5296e5c-638d-4f80-8d28-8d5899447019",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cb26c1ea-b8ae-4ce4-882e-4cee97dd09ef",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "518a5f36-dad7-4b66-9f14-54be8b26edc7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5107cd38-0be6-419e-af2b-e6bffddc61f3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02992858-ab7d-4dd0-812d-f9aaf30257a8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3f5959db-d690-4e65-b81f-85d07ab09d65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "58a39dde-986d-4e18-bb1c-f1a895e329b9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c7ab773-3810-40f5-8416-08de7efe6958",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86b1cdbf-d71b-489d-8344-fc9d499c8072",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a090dc83-9884-428e-ba15-15e384c0bbe2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "916ff76c-d819-4b22-8a9e-9a44e7428498",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9a9ef34f-6ce1-4692-9521-69bacd93c8b0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b79c6cd-fff9-46c0-b202-7763ab1afcd5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f62ecef4-8872-486f-828c-73f30838bba9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fbe28664-dc0f-42f7-81c2-930e9351d348",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ab905df8-d0df-46dc-a2de-1d23bf607727",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "06413d2d-e20b-4fbf-9ad6-83241f74926f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2382d39a-9464-41ca-a1ad-51e5aec74dc2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7aca0763-174c-4849-9772-5dd2b7817244",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "db8f7335-d906-477d-9f88-9b33e116e4c4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "343550a5-5b77-4ff3-8497-0cebd225c95a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "79d22e66-b6e5-4416-af7f-67b972c0b7e4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56fafca9-594e-4a8f-ad3b-8532ea976605",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f9a22551-5326-4afe-bccb-3002593aea47",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "83587c77-be37-47a6-bae6-72dc2a4c3485",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1f6ba936-6a07-45fb-85ca-937e1db4f30b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "82c40850-f01a-42e6-ae76-554c14a16ea0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "50309aa5-89f7-4045-9f82-959a20a10759",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4972a9b8-081b-46b9-ad77-97982351e8b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a05088c6-ae13-4731-b237-b479c9d67fc5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eef9f2ce-075c-48c7-ac25-b1347134e2cb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0ea03649-f7da-438c-92c7-b327d5a769ce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eff06a99-daf2-40df-90b2-c012d71d25c5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2109a52f-5b8f-414b-8a37-de3c8e6dbcff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4ee88b1f-e2d8-43e1-8c12-82ea5af22581",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fda515cd-56c2-4b53-a257-742bf6a9c40f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "333c8f98-bf68-4a77-bf1b-c16c4bad28ea",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f14dd558-dabf-4e70-990c-d47f9905f321",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2492e933-e86c-433e-a584-819513c5094e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e905a8c2-59e5-4715-a535-bd6dd98930d3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c69e87d-97ba-4ee7-b554-fed2220f1537",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "21229084-0ec0-4a73-8eb2-cfd32d36f217",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef90144e-37ee-4116-b677-f4199ce2917d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dd21af0c-832c-4114-95ac-be84769e2b51",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9f2327c8-fe41-4984-a155-f0aaae4cd6f9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a5feba85-9e4d-4a18-b1c5-e9645d503dc5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e9d0755a-2795-4a0c-b518-8e62bdb5476e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9dbc7872-f73a-49fd-b657-8a76c4a9647d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "11ac300a-f8ca-4b78-993a-615b6c6554d7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "72a1ac4a-c943-43fd-b63b-e051b77103e9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "db6b4b3b-43dc-437a-82fa-87b65147dbef",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9db84309-ab44-4b90-82aa-a31739bdff12",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2a1101a8-b6bf-475a-b89e-51146bee3006",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b0cb2730-c3a0-4ab4-a891-ca00d323e675",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9f08fdc3-8d9c-444d-8f4b-fa6602f137e1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8d51c785-14ad-4c4c-9046-584bc608fe85",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4f70a483-7f6b-455e-8ef3-3c2f87cd4800",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b06a80dd-967e-46c3-a886-b5d00914f9ea",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6dbcb007-3766-492a-9e84-287927aa1e15",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c66731cf-61cd-4d60-bb01-becc313b2331",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3be1c7bb-f599-4672-baae-66e610fdc429",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d2ddd131-08fe-494a-9699-9c833448145e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b691bcc9-eff3-4c13-aee9-5179979f9cda",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "00038de2-2982-41de-b49c-5b8e23f501a1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d14f905b-377a-4c75-b185-951d49867eb1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "08faa0e3-cd90-401e-9a4a-cf5bcec3cb12",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cf745b6e-7804-4643-8bbf-87c7978cc38a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c78f8914-968d-4f68-8ff8-04aa89722ee3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1af61f23-b802-41ad-8a9b-1527ea6a06e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7ccf8dc1-7464-44ce-ad38-8c3fb808a6cf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "679419bd-eb4c-407e-8cc0-93c4d8745ab4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6884694c-5406-470f-b567-fd427217f5fd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f1498ea9-5e99-4a4d-9e02-3f230fb2977a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f1f86770-d50e-4a45-8e9e-e0d3e6cc4d84",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "430bad20-b0de-402f-bda2-8bb54723cab3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1582ad40-1144-43e9-81df-52a645df440d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ea723cc0-abd7-4bab-be24-4a16122c7342",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fe087aa1-da87-458d-ad14-48e74f4d14d6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e8ed413-fbba-41cc-88e9-d3910bb2c992",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "36dc892e-ccf9-44a9-bf4d-c974ba9cd5e9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "37e9c4ef-d763-4f7d-a1cc-29ed897e39f3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2c034b3c-91d0-4e2f-bb33-31e4194fc285",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7883a4ce-4f25-4461-afd4-5ae525f6d2cb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c126c3ce-4c14-47f9-9a06-550dea9bb18b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4522ae95-f3a5-4bf1-a142-d7ea5e705f02",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e420ff63-da2d-4c9f-a737-c8519554ed31",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f186ad8b-3a06-4105-bbe3-be300bd4b710",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "002fedb0-3a1d-49c1-9565-c4926a36f4fe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a9956351-42bb-4133-a632-4be585570c37",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6af805e1-1648-4d81-84aa-1026120f84c7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "712f35c8-ebd6-4d41-95ae-27217d425070",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "64faa01e-356a-47ce-89e1-e5d3d1a03961",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a53ff559-7603-48cc-af8e-4c088a540362",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c5d87ac1-290f-47fa-b72d-3a16d65e9438",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "95e537a3-fb8c-4b3f-8162-f5bbd2502411",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ab826ce1-b8de-4814-a300-64194ce7d4a3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "19302cd4-d626-4bc6-834e-1d10dc890b8d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d9e2a04b-a155-4d0f-a42a-3f0d13bf9b1e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "89468b34-e217-445f-ae4f-944db8fdf57a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b367f9af-752c-4546-9504-9d30a1b24937",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bb50f720-f1f5-466e-9f80-e69cbc8c6b2b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "29f8e6df-160d-4518-9905-685202e4a5f5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "196029f9-402c-42e0-925e-32560b0c4e68",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ce61b07a-e27a-4380-a182-a9d4cf3e36f7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef558322-f9cd-411c-9f23-a0a705f20eb2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "183cbdbe-3f46-4fcf-9ebe-e5752efa354c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7e610e34-1017-4723-a661-ac6724fbc13f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2d190c15-4e8e-4acc-965e-b5000804b29e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c6a47a12-19a0-40c9-a3d1-653291b417c3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3aaa738c-d98d-43d3-8489-de5c44775a31",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c3a61fb9-3384-4b19-81c7-5bec74f21ab7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d2f4bd70-4be1-4ef2-8aff-3310cf96dcf3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d8036038-1da6-458d-b0cf-4a9bef07dec9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "feb6eec9-f284-40e8-b3c3-2c6a30a24dd7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d1e21902-9525-49ee-a877-c85326ab1208",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c3d9a430-59a2-40e0-9bb4-ee32cd5d981d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c9245681-79c1-40a2-a073-a2b58edbab90",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b4e13c8e-96f1-42f0-8c3b-d24168217d8b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "95004db8-e2fa-489a-be62-c60f72415050",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86f33c98-5d5c-4555-bc5e-4925c199abf0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b8673737-8994-48f8-b61b-38413a17e369",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f01a4b13-9f31-4c6f-bcea-e2948d49defc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cda9be71-7295-4ab2-bec3-4a98fa1917d0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e557795-4f31-4997-8ac4-e2d43d312013",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "158cf8af-6ee9-4930-b9ca-18694455dcee",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cfa66b48-93b7-4795-b272-9625d0fa6b25",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02cb3a9b-51a0-463c-9a95-5694dfa1aa65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d3393f6a-6dae-42bf-985a-a222fad5debf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef206f17-7aba-4cf9-8614-5e2fc5f86bb1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f95e5aab-1008-4e2b-8931-9977768324fc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "30a07c8e-407b-40d8-931c-74c5a73e5340",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6a2ac852-3a0a-4694-8921-8a717e6e814e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "04853a67-8292-42d1-ab30-b9957f0e9890",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "168bf29c-b553-48f1-9fb9-c6b0ba40cf5f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02fc4ec5-7fcc-4a97-98e8-a484ddae4043",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ced94a09-6945-435e-a09d-1df651261464",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3cf6dae2-4487-41a2-975d-3577c69e5b8d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fc660b12-64e3-4e9c-a44f-d95a0bc42c55",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e902a78-2f72-42ac-8c14-f40f52b1d188",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "09472e8d-813f-45de-b3e9-d7105494e91d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f70b6d78-b400-4899-bfe1-29c0c93f1756",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "aeda793e-c3d0-4d8c-9dee-c46bf8f30d7e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1ef6b872-89ee-4dc0-8b4c-0694091fcec0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9bcd4a2c-34c8-4a61-877e-d7a5cadadd3b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5981a619-747a-4370-9ca5-0c1b18f7582e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e02bbd70-1f9b-4e53-9712-98dd29e35aca",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5e560510-8c17-4e1a-b748-13f3d31e8d7d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "797740f3-871c-44ce-95f2-616d008e2e8b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "48a0a002-046e-4315-9fb4-43d48b68a246",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6a38c7ce-ba4a-4db3-818e-3dee30cad059",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d4940959-3d64-4c20-b10a-c27cd2d4b862",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "44c30264-1a8f-4f5f-bdb1-2b367bef027d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "68a61091-4d9e-46f7-8482-dd75a56b9d20",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f4aef3f6-ea31-4ff1-994c-141c0284743d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ec27c98c-235b-4e63-ae11-d07a7829a07d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a1aa9034-426e-4f4c-942d-8297874dcdb5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6d92bad0-9560-45c1-9b68-9324cb1ef60a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9fdbc16e-b9c9-4546-8ca7-4dc16dafbf03",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1d97982b-deb9-40db-b01a-b8471e8e0805",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "73ae8dde-b754-4a5f-926b-28e54e7cd97b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "28c7f570-b9bd-4ef3-8a54-6410154ac4b3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "752407bf-6d2a-44b2-8a89-71b3e3b1c694",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a7296e2d-b4e6-4a6e-9c4f-6d8444f2e95b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f445eca5-ec71-442a-acc1-39edde3b2322",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c3b6bc02-e878-4e2f-a9ac-ebc6a96dd16f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "984a7ba7-2d3a-401b-a06d-88e231f3ade0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "556e802e-de9c-4471-a5d2-5a095ac37656",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5111e1ca-cc83-4a6b-a4a6-cbac597d1b42",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bcfa0641-45e5-40ab-9a52-374adda94e19",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cc0f8677-f360-44a3-876e-705859dbf11b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e0049387-cfd5-4cf8-ae0f-e0350976e6b6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b377f0df-684f-433b-96b0-18f3adc853e4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "18a484e9-227b-4145-b51b-93ed6105e9b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6042ea39-05b4-45f8-9dcc-ddb40d2d4f84",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b41879d-afc1-4c57-91cf-b52c918f62ed",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "01f6a327-94d7-4bd2-8feb-af6046b70a18",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ffed5245-a2f8-4876-9824-3ca3aeaeafb4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "93ae0dd2-30e8-4b7a-800e-0fdf59e3967a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3e75a017-b4eb-4091-9d32-c415fcdff4ba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "957d6210-1b0b-428e-abd4-6c7313e96885",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2f97d2a7-96b4-4d07-9048-0e684dc47771",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0f26168d-f56e-46c2-bbec-3d2264c459ca",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8ce3e9e1-73da-45eb-b04f-726a0422eb8a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "222391c7-1214-4635-913b-a3395b75d795",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "aa4a2fb2-acb6-47f1-8885-0a15c7a43d9f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7b1eade1-7f58-4618-b868-0cda336a8eac",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6d5e71c3-4954-4b7b-9b30-83230cc60e8a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c2dc9459-ddc1-4de7-969a-01c6247282a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d046d791-1985-4659-bd98-1afe316c092b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e8ceeadc-ecce-4e02-a696-84b54675d86d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9281f9af-b1dc-4009-b4ee-afa23d72d279",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3030dd1a-43ee-4079-98ac-0c2d15a50bd7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "575533a0-5c2d-444d-a845-5aed10c024a7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "58e5b8b4-3d46-46dd-a3b2-e40b00aa98f6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "24f0c727-f39e-4746-be0a-05a657af03fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3dc4bb3c-ed6d-4462-bffc-fd5d7269bdbd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b73c713a-c554-492e-81d9-05d8ddec103e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1ab5f48d-c1a4-4dbf-aebd-c8a10fb3ca1b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7ca9a59a-272b-43af-a007-c3d2ca9cc29d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9468ad03-e9b3-48d5-b02a-f95fd4217e37",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b289a96f-b9e0-4567-8e9f-5053c1e12f0c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "285f7a74-d3f4-44ce-b74a-782267258cbb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8f3a4558-968d-4d97-8825-1d6bc70f07a4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "65502470-9134-4a6b-a5af-179677dbf6f1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5663ad14-9e77-4fc5-88dc-34b40d86c4af",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4dce04ce-ae30-45ab-9fd7-649318b22e48",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02566e30-b643-4404-a3f6-a1c98ea6d006",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "16e40c74-cb22-4530-a673-067057521f35",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eb56643a-9251-4644-be73-4dc97cd1ad05",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eee6a68e-2dbf-455c-91e1-995d28c73615",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "60799b52-ce29-43bb-a5a1-b179e823e8a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "773d95b0-00d7-49df-9328-464b53ec2ec2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "48f4534c-7b37-4835-9b6a-fb2cecd91cc8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f0970bef-8288-45e1-9587-804922f95e81",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3a5e0ea2-47e4-40d1-a300-528935e6bdec",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4607da18-40c1-45e6-a3d8-62554fa7bde8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f4460787-b0ca-4f6d-a307-aa95b9d93b58",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b8a85e43-76b0-45b1-8c1c-8c29b90172f8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f5b2eb8c-92f7-4e63-8ef0-91ed9a6332e8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3a0720c3-e360-4168-a953-e33b844ef7c5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "af8179c6-a4ed-47fd-af47-55cc425d2478",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bac88efd-4f6b-4f5d-b59c-857d9f78d031",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5057d2f9-8a30-46aa-b1d6-d87b789f4681",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "07fd9cf0-e830-4a46-96e9-57ac8b9fc107",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "044cf915-5b51-473a-a836-f24efdbab05f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e1b6e005-4d82-4025-86aa-35bd95a1a439",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "90fa131f-c1c1-4541-be24-ae242ee1844a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "06971d2a-1826-45c6-b749-04e06df59a28",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e9222f1-9fdc-466d-93ec-f04362c83450",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "42d34df1-033a-466a-b138-8ad6787d98e0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02198a5f-1ad8-49e9-9eb2-6e8591a9d013",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b6e4b84f-eb4b-47be-bb8c-af8194cad736",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9f9b5380-b96c-42f8-a23e-8d759f44ea46",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "afebc33d-d427-4504-94d8-314dfc8f6333",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eec862db-bd98-451b-b444-83e35d39a9cd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef5b945c-7963-4569-a032-74e4a5ac5242",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bdfbf731-ae77-4342-b29a-33d0d22a29c3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dd525929-9b09-43b2-b813-180033d168fe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e2631eb2-a22f-4b8e-ae30-9a72cba29ccc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b22aeae5-3aae-4676-94a0-0cf80fe90881",
+    "kind": "text",
+    "text": "KEY6",
+    "old": [
+      0.8,
+      0.8,
+      0.12
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "f6347c25-54d2-4a41-aa67-9a50147a469f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e9ebadf4-f8c3-446c-808e-d17a866ad286",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dbfb0f06-eccf-46cf-9336-21f3811ad82a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eba27e45-c12f-455d-b380-b4221fb00dc9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b375e47c-ce74-44ca-902b-72c9843c95be",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "421c5b64-f2c6-4970-8bd2-c14e79299268",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "72fa3c93-26e4-425b-ba05-e49f0a29a5a3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a4784bd4-9b83-4a6d-9101-0c49f8be8434",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f099293c-40ec-4d2a-ad61-02d18fdbdeb8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "634d3e1a-0c6a-4211-a040-aeec40c60435",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3622e880-4e46-42b3-b65b-e87c0dfab7c0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "65622d49-2ed2-4ff2-b0a5-c2d034fbcd1f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "83686fc1-f3ef-4c71-9305-a5b1b810eeb9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e5de85e4-ef69-49a4-a37d-7ff9e65ad1e7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2eb2672e-9c52-4432-b86e-de548e09a055",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e66e425-f779-4d7a-8456-31a683ae7f13",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f8d01369-f6ae-48b0-8d8f-54b5b16318b0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "962f7d40-f48d-40a1-b550-e021dbeae911",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b395c8c5-c363-4208-bd9d-b1a5bb63d0fc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a83f5126-33d4-432f-a63a-a051c2c958ce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a4a11d84-6d3b-4c2b-a27f-cfea48d29f84",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "565a75aa-6c62-4140-a626-8f17cc5d9ea1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0b232901-5d14-4202-8fe9-c9156da97d6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e44f12f0-3dca-4c66-86f3-0a910a2955c8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "86bf1757-0f81-49dd-a9e2-ef90f5d5cc4a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4711a655-0f86-4902-bcc3-9229dbfde1d2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2044ba05-14b2-4de2-b6f6-e8c0543ce9d7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "041f3d48-dd3e-4d4a-a18d-ecddfc2e1127",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1cd1159b-39f6-419b-8797-1d2d88fbe3b6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2f52e3d1-5edf-462c-9f62-049c51df2352",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b47098aa-fe30-4fb7-8318-f71f68516d33",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a8835c82-b318-4b02-a4d0-9401467e3313",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4bf6dce8-2b5a-4473-ac46-a639cc28bc4f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0482ad2b-9f6f-4e24-a4b3-7beaafe3f31c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "622fc2ef-456b-49d3-9c46-24f953e69326",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "780d4fa4-29b8-4f65-85a9-9e93d28fd3c8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bbfb9743-e9ea-43db-a9e1-58f798125ad6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e2fabf0b-3548-4bb6-89d1-c4f55ae00b6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "db101c5e-cf86-414d-a284-b495acd51aa2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "43b18dd0-ceda-45e9-8b89-c3823c4a8a8d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a940a14f-e502-4094-8a50-07cc9b0bdd27",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c85cd607-592e-4dd3-beaf-34a349c183a0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f7d6876e-c3d8-4a3e-b581-289acf4a3b38",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b64e3752-177a-4239-9ba1-48b311ac62ce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "11330711-8744-47ec-9d48-1e36440877a2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c4bb579b-155b-4d4a-9466-9e580ed95f13",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a4554a49-8b2a-498c-b54f-51298f9f2ab7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "284bcff0-7119-436e-9eec-8a63d15d38d5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3f05c93e-a2da-4423-84d9-4c3fd2240cce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "93e32a2c-a6a5-43d7-9167-95bad709c6db",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a31f7221-1802-4b87-a7b8-ea41a8162f33",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "68510e12-4f67-4ea9-b052-3e5d75d5993c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "20aab6b7-6f49-47f2-ba03-4a05b6b05d8d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "77b2d5f1-0487-43b4-94a3-21ec9985ec2d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0c723de6-b25b-414d-a6f5-f5a7cdc21aaf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "319496af-4206-4ddc-a983-2e559eabd4c6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "44e22753-cd95-4083-89a1-8c67dd965b4c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "18968bc0-2bbb-4c90-a168-d5a593a468a2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "450c97fa-a4b9-4ac7-8f52-75b5c6ff4e10",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "93b2ee28-6aec-485b-b372-b5f777ce9a33",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8d3a3c39-28b3-45de-8c2c-1aff50582ecb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "01f0ef32-4782-4063-bb84-f06bff8daca9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3e991b8b-a9e5-4f03-939e-64dbb2260376",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8e874b1c-ecee-44fd-aada-c1f5f747e432",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8d0f62bf-15c9-4b21-9739-be035ca29867",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ce66c226-1a5e-453f-98e9-56316c72e7e9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e06e1a0-f145-4fac-85cd-7f6de8461b19",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9878751d-285d-4056-b5db-25fa0813628a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0374ed53-f956-4560-bee4-dbcfa2c49be3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f540a448-8894-4dd6-9fe4-e77069b8430e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ce431df6-8269-4126-8dc1-c980b9bdd678",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f5e35cf3-6bd8-4229-953e-9f4b2b7b3858",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dfeb4a93-59cc-44e8-942e-9afccab6551f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0d5a321d-647f-4e1e-8edd-921128b2daa5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c789a031-91cf-44db-977a-f917fff01cfc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e10cebb2-4a37-464b-bd22-c7b08ba0ac89",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3216dc86-ddd3-419e-894c-83543d252e93",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ef4ec581-6fea-4542-9730-375262900330",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d1baed6e-655e-4c14-82d8-6651f03b4da6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "feb2f28a-7cda-4d53-bad4-ed50f4f52394",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fdf30138-04c6-4f64-88d7-f639368f0a2d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ea5a10e6-015c-4cf5-a357-830c601546e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ace689b8-6b9e-4779-91be-c6ae88cbb099",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fc97acc9-c787-43a3-8b49-24d64a2b6dc1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e4fdad1-35c1-4e05-82ef-9815a84032c5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c927a472-3879-4339-8423-830f46e1cd9a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6771b081-72d0-45d6-ac14-b668dd912fcb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "120d4222-4de9-4fdb-a19f-1b948887c168",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e426d2b1-15ea-4eb6-ae7e-35d1dea854b0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "12397dfe-ff7b-45c6-b244-b834d426f296",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "90354805-afdd-4330-b529-7ba03eaf2331",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "532fb449-f1bb-4666-ba66-2cf5b4d65171",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b78e77ea-3591-4fe4-bb3c-26d2e9b81692",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7d6b4994-8058-49a0-bdb3-f4458c0fc477",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a939bc36-a2d9-4f3f-ab0f-db798c72f45b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2ef9444c-7cfa-435d-8410-c947978389df",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "968ce860-b635-45da-ae1b-b315e6092390",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "45ad929d-9237-49e7-bffc-5de8a88ec740",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56ace42a-4100-4f45-8241-3dbe97898c55",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f096577f-e5e8-496d-a9d4-570b3d7a47e4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1c5b71d9-face-458c-ba20-4524384f2528",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "975d16c6-5d3d-40bc-b231-1daaef021e18",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "952e1dc7-3750-42a1-bd72-76e83240f6e7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ebd67d21-643e-4334-a2b0-2a338a90acf0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "491d6ca0-88b8-4c97-989e-ffb71f87d05b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e39abde7-914b-43d0-91db-c05e3edee640",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "29ef2cdf-b9d9-415c-a8d4-a7072bdf118e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f0df1908-a0a2-4c14-91b1-1a98b3758773",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b92b6a7b-4ec2-4978-abd7-3c3e14775307",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "61827c47-4b4d-4c06-ad08-04dc58049a20",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ad0bc1ea-b3a7-4242-87fa-0de683a20b82",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7e752d7a-47f7-4f6c-9572-1a9546634d12",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d386e1e0-bdec-4ef8-93a6-bc2574f2d492",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d5390a65-5323-486d-9ee9-9e53bca05132",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "90c264c6-0ca7-44e8-8b14-500fb631ff11",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3c03956b-f69d-4f92-9f6b-a1f01be5fadc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "905cc392-0b8d-4d3b-bbf4-e65daf4d0329",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f39bdd1d-a1ce-4021-89f0-0fc51ce6ee91",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e9ea6f02-bf84-4ebf-80d9-17944a4cbc1e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d0c5ef07-6f1e-489f-918d-daf64456156f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3f53fbb4-24ab-4a6c-870b-2962c2e4d7b3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "694d8ec5-5cd1-4b74-8110-33a73dc5ff50",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3369953d-993b-4625-8b7c-8bb4171d7426",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7404b1a7-70ab-4846-814a-bd14f208bbe0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "76e66c00-7d15-4824-8c2c-80752432a692",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "648f631a-463a-48f9-a163-a6fd8c0af609",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a2d3804f-9bc9-45ca-a348-577148f01fb8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5054f07d-e630-48f6-84dd-42383f088fd7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7ca6c8d8-ac06-4684-846f-56035378ce86",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b733c11c-3d00-4db8-825c-3727d2fb6e06",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8062f329-b3f1-4eb3-bde1-5f025dd0998e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8bae198d-5354-42ff-8e7b-850ff3e312a3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "49dbbc0d-6ccd-4c50-a231-23c6b4ed014b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "88583831-59e7-4003-a5f9-f40f948f692b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c8fd3c34-8018-4905-90de-5777af19ce2c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7d3569f1-dcaf-43fd-832b-83c0a2ea7f04",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c45026c4-922f-4fb1-96ef-19eb87fab54c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3d4094c2-c73c-4155-aee2-48e138ffbb32",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a4c57517-1947-4e75-866d-6cb0d1199e9e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e5e845cd-019e-4701-af74-0e255c4a6034",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e5afaaf7-48a7-4298-8b11-4cf3b4f3b47b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1a488dfa-26f6-487c-b6fc-95b940dbb4cf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5e738e3c-12bf-4ede-8e12-5484ad8468c0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "212137e6-9956-4acc-aa16-de08d77e2b85",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "49e8ac2a-34c5-4ee2-b1e0-fab8ffb57158",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c15c060e-54b9-4dc0-bafa-79740c9a6bbb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fd127337-d7b4-440a-826b-2100f8c7ac21",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "83571e8b-af57-4441-a3c9-f590eb384c00",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "318b71d3-89b2-417e-ae98-865b4ff2f0ab",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4804b051-857a-44d1-ad75-54403a650861",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "69fa142e-c62e-4960-9327-74b1f9985748",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c5c74c93-bf27-4a4f-b06b-a79661c80733",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f0a93103-e349-4af7-b758-0036d9bbdaba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0fe70afd-7a07-4db8-8a39-adee31b944fb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "55409767-71db-44f2-a31c-91915fe9afba",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9ca04231-5cd8-406d-8f25-b4c9b87d0780",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7d54fe68-9dd8-40dd-bbb5-82032fc96ebc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2ff5066b-9821-4f99-acb0-d3212bb6d377",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "07a878b7-a2dc-40ac-815a-b30c5079ddd2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "37b14484-6042-4e3c-84a0-ccfcdad15ac7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed213421-64d6-408a-9ee4-3c9421517e0d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "98091611-ec05-4faf-9e16-3e150bda744a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fb57bf2f-5ebc-42e5-a458-7f86f7cdd961",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "39a2aabe-909f-457b-ac2d-7d1724864b3e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "154927df-89c6-420a-8570-f09384fcde07",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "91e1f757-3b15-47ba-a2e5-61839fbcf641",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ba2701bb-3bd0-4bb2-a860-4cb089e14d48",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7d7c0a21-b49d-4f77-beb3-ff0f16411fd9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dd4098b3-0339-454c-b8cc-138daca17d84",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d90bf445-b581-4f99-b949-0a12b86d8cf5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d6941a05-21b9-4836-b24f-b25bf11deed4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b29dfebd-9dd8-4e64-8b68-6e85ffda5e52",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f227f383-8294-4060-bbcf-8e7ca746e3d5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f2510720-61de-4960-b84e-2a35d1d97378",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d1f93dec-43c6-424d-8575-fb5ce7df61f6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3e568f98-faa9-4bf7-a9d9-e9e605f5294e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8e05b1e2-6892-4af3-8e00-8edad281be65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0dcfc8c9-0c2c-4f0a-95cc-d0a2b03f64c7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8632efa0-a0b3-4c83-a2dc-8213e9a01a12",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e120d9be-36f9-498b-9309-04d0d21122b2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fa3095cc-1e73-4f3e-aa5d-3cd2c28341fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e600c8b4-6ea9-4ff1-b40a-8892a9a595a0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a66e7f62-3a8e-4da6-9696-ba9b48db5a95",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "728a6a55-8e4a-4ea8-a19f-a48bc926a70a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56821d51-5d11-4248-9bf9-d96f19978d20",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4a33ab64-615f-4cc7-8fae-c8b52083f894",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f064e714-4ec1-4e99-8af5-e12c06212714",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9415b667-ed14-43cd-a1a4-40792391fd1b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "182b81e8-96b8-49b1-b9f7-d1ec9e15f42a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "477ccfa5-6310-463b-8dab-c35f5f4be5f8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b035275d-d8b6-4574-adc1-58cd9e8e5052",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "32c20d18-7d5e-4059-a094-9119eb0e2726",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f2497cec-4379-4f68-bbd6-6b2b299691dd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dbce0610-67da-4b87-a437-51bdef1b9fcf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "025d8c2a-2f38-4519-a563-fd44d329742f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9351c2f2-b7f5-4caa-95cc-b99ee699a403",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d28632b6-331e-483c-abc0-39bfc778a226",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fdd4aaf6-5a4a-4f16-b4a1-5d7c9a46d29c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "baea4a0e-ff64-4b41-af79-3ce5d710b91b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2dbccff5-6915-470d-8b45-3c33a949ca5e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ae757e9d-664f-47ad-9d74-67d397f1b8e6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "97265ccb-b2e6-414a-ad8a-2d90bd4bac1a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bc3b6982-64b8-4e52-b565-ea598f458173",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "74cd6e88-dd7a-46c8-9b77-6867e4154f0a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "28852826-96bb-4bc5-ac42-2c399370420b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b6705b4-461e-407c-b084-b223b706b2fb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1af58719-b998-4a38-b50b-20ed0ca0d4f6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "01906e77-96df-44a3-b5a1-0182900bbc4a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e07fe02-71ff-4dfa-9186-11f93b51fabc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b3159796-a2eb-477f-892f-8f910801695f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1ba0123a-3a64-44fd-bd54-97b8986bbe29",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "de2a3fd6-07c6-4d20-b928-a38d5ef2e671",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3a51a0c1-14c0-4649-8b58-f64cd3471004",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "80746ae9-7e81-4b2b-86ee-38ccdb2b6389",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4c4b7ebe-76ce-4db1-afaf-3561aadf73fa",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ea84235d-fe3d-40d7-bcc0-180315f6d171",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f89b58d3-8d80-4c6c-a663-fbd16f213a20",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "471958d1-3025-4b43-b4a5-3e2fc7a0ca6b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e7c8ed6-b64d-4252-9414-031277f137fb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "671fb171-fb37-4ab7-bbbf-a579b9b3a632",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "beb54c6a-25fa-4bc3-95ee-bacf7b08d334",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "98051a02-6369-40db-9aa6-5583be9ea40d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "378207bb-96d0-4f5b-b9e7-d64b92d2d683",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1dee9d65-daeb-44b6-8798-e6f6ded57340",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0b708878-fb2b-428b-80b2-6d2a1285f0d1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e520ae5d-af8b-4f3a-aa5c-bfcc39800ec4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c46091b7-a753-4c7a-b411-e9758e5e0e33",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e68c418d-396b-473d-b67f-aaa11ca39ca0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "62ee21c3-c366-435a-908b-e31780d2f875",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c03c6fb2-3a30-44d5-970d-135767262c03",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "160d29f0-b07f-44db-a7d9-e3416b987aea",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9c858767-1a66-4e5e-adb9-b7a5684f5d2e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fe2aee00-1860-4fa4-95d4-5547a93b8fd5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2b3c80b1-c4ed-4534-8a3d-303d2bee095c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e609a921-2197-41b6-b087-a2f98fbcb1b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7cf0f860-da8d-4524-9a7e-4c6d92977131",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "30fdf63f-8057-48c0-ac3b-988a046cf570",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f09278ad-26db-4f69-ba51-ba94415e5265",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d369e9de-2729-4a8c-8575-eb3daaf48204",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4719de46-9706-4871-93b2-43c00f98c98c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6e9e28ee-7f41-42a0-82bd-5eb9251687fb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5a56c228-8615-437c-a632-a656136fc90c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6d50e979-742c-4e12-82df-d1be7242c8b1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "393a8cae-b8e6-4123-b6c9-29043ab80349",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e4415c8c-7243-4a39-adcd-e92e88239817",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1493ba01-aadb-49b7-a75b-a900533d2925",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a1bc47c8-9f94-43b0-aa4b-7e347904397f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "da506e34-7ce7-4cbf-b4aa-a2e68022f8a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "79e1b23a-a2f3-460c-b780-65e34d5263ca",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f4b84cd4-8a5d-44bf-b088-b9a93aeceb52",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "14f118d3-b37f-4dc6-bcd8-9207f59b16ee",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56eb5234-f0e5-4e6e-9c28-fe345b128ca9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "79871839-d12d-40dc-8ecc-ec4e431959de",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3b308ed6-51ba-4b1b-811e-fad14bebd4f8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "acae5fc2-4635-40b5-a1ab-e301ceeff05a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f5c14519-32ce-4c75-9ca6-83c3430813a5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f800d4c8-76c9-4f11-b3cf-a38ff40a8d2f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "739923fe-3bf4-4df5-960d-2a55ed6a0211",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9b9d75c1-4238-4094-babd-13c40c03d4e0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8b6b6f83-834e-4115-8515-41089e4beca2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c9d882ec-133b-44f6-8e18-8c091302e98e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cd9436bc-cd04-4063-b7ac-6e4a970ca0e5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "766c51e8-15b3-4110-a687-b6306768d1b1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5d802f20-a667-4785-a6c9-37dbfe2b1708",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e5c392a2-cb55-4057-b45b-7a7a12a8e703",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "74200cb9-a178-4ac9-b69c-0fc3fc5d0fef",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8ecc65eb-d637-406e-b35b-4021656b592d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b18db513-d2d4-40fa-a01e-0ab9210ebee4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8f947bda-009d-4651-8fc5-8ccb945a9b70",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "84ceb36d-fcac-4fc2-b18c-86fbcd74166f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a8b655a8-9e4a-4add-bec7-dcb749b8b355",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b262c25d-b86f-42f9-a7d1-5e2868f04568",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3761d9f3-b15f-4822-ac18-5e811d8f3eb7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e7a24d08-9dac-4320-b4b4-772b5233035e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a967f16f-6906-4af2-b27a-044c4c2442d3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ab214aa0-ea74-42c6-a835-f8aafe88464a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fd803179-b482-408e-a0c6-43d79fe79a32",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "da4ede69-1917-4300-baaf-6f632016bd56",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a2ea37dc-714e-43b2-8857-1901ee9ddd1f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b51742e5-5a47-456b-b7bf-41f3e2edd958",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6a86760b-4fe4-4603-915f-8f297f5028d1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3111f8ed-6f5d-409d-ba10-b23bd6913fc1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bf4310b4-4f13-4172-981c-d9f94a041396",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ab866d6b-4d31-4993-9032-6de3e0130456",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "febbb6b1-db36-4689-93ea-bc94996d7631",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6a7a8b10-bd3e-4526-97ad-39653c6e0b2a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f294d9b3-2527-466d-8126-3740b2534250",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "56393f7b-0bc3-4a9f-b6d5-f4b2d1112d8c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "89b2bb02-ee47-4828-91b1-a282361ca046",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "068addeb-553b-423f-985d-69e5c3747a51",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "57dac5b3-0137-4499-9f13-ef3256412b4a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "15ec5a7d-395b-42a6-9e71-e009122c6df9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7b40b6ea-dbd1-443f-a9f6-04c2e07e0968",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "481f7554-d94b-43f4-a332-2e6f894daef1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1f68d346-92f5-4138-995c-0c02dce404ce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a8c5d313-c4c9-4610-bb66-bfbe14a73fbf",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "611687fc-f801-4f9b-be94-4d7505541db8",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c67f48aa-72d4-4838-92aa-9cd56f8f911c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2d8272e4-dfe3-4e5d-80ab-c52bfe5aa17a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ab7cc81e-bcf8-4e86-b728-f79c64d6ca97",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "20e1bf48-496a-42eb-a2c4-c814d11b49c9",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "87f64ac8-545a-43be-964e-c72a7cfd09b3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ddf4587a-6fa6-4d87-b4fd-a266d1a81b31",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "72b98be6-edef-4150-b862-e01088bf2e9b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "54960d35-94b5-45d5-897d-d7ab5a61f0f7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d7811250-6497-4d18-b45f-ef66fe55e842",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "02938406-77ba-44db-8704-be2163db48f3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "83b3d3a6-0eaa-442a-b3fa-6f5b8edcbb91",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b2238340-9443-41ae-8b1b-baf31231f14c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "13ceda9e-c310-4bf7-b492-d851b06aba01",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "58556644-fedb-4cd8-b98e-c6fd87e10f6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "45d91a78-cdeb-4c82-9435-95dfb9b528ee",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "feaef258-e148-4b63-93d8-122c0b15d16d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b03a5996-6e19-431a-bc7c-8b7a41464ed1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7ea5c121-0afb-48b9-8ba4-fea20a9373b4",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0521760e-2028-470d-b8b7-86f763808021",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d713b16e-9b46-443d-b1fe-00a08bedc429",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "20432a31-a060-4151-9376-99db5f4ab395",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e09e50cb-b9a7-4ad5-b720-54cd9df41f3e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e48e067f-01fb-4ab0-b01d-e791c3f3cf9f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0548cd79-163b-4bb3-ba41-705909795298",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a5e1a1b1-d50b-4666-b138-0c91df1bfaf6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1c09a1d3-60a8-462d-8fe0-10ff3bc6ce23",
+    "kind": "text",
+    "text": "1",
+    "old": [
+      0.8,
+      0.8,
+      0.15
+    ],
+    "new": [
+      1.0,
+      1.0,
+      0.15
+    ]
+  },
+  {
+    "uuid": "f48959e8-b1e0-4cb3-aab8-11b9f9e8717a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d9d2ccd4-3abe-4a9a-93f5-3d353b884127",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b12ef26f-b81b-44bc-8881-2b728d903267",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e8c60f9b-bad1-46a5-9873-c6ba159dee8d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d13bdabc-41e7-4ebc-8739-e1386db62a89",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b5e09675-4ffe-4db9-9287-8b73d5202592",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7314aec0-2d44-490e-8086-cd03a4ca311a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "232e4e69-2ca5-4a44-b920-398971702ecc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d505f5fb-741b-4a47-9e85-1a65449856ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "dcc16931-3f1c-4a5c-bad0-2aefd9077f3c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5d393e61-758c-4615-a3ce-403190da1d3a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3fbd359f-221b-4dc7-b597-b922f5f228c2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a4a4e58f-e750-4fc8-b1bd-4d46047bfbe6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3ad50bb1-137b-4ceb-aff0-3b242921f398",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "94096018-5a9f-4256-8299-f65100482b4c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "195a175f-686a-46df-80b0-77fc74a9d6f1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6ef4c26c-5c8d-4a9e-9bda-613f4eb73f4a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ddf3ee21-3650-4c70-9e55-4deeef0f298e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "b91df80a-932d-4014-a346-ed1b47408a32",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3ca0473c-b355-4bb4-b159-19daa14f777f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "cbf10241-9922-4203-aaf3-81e77ee2de6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6f133f4e-1143-4d8b-b0ee-7a238dba2bb3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "11300d68-5190-45b3-8185-023ed673301b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9b701146-fb27-435c-af5b-738b780e21db",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "46e47de2-f400-4eeb-8225-9795baba8c4e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "3a936f55-ff04-4955-955f-aaac455841b6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e45faf7f-197e-4b67-ba7b-39ffb4d668dc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c074e567-0624-4df3-9814-89908a338a76",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "e21a98ea-8338-4351-94b2-da77183d244a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b7d2426-fb8f-4169-9beb-44f79103dd87",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a15cb0b6-4ab2-45b5-942b-fb0392ab0bbe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "540f0f9a-3822-468d-b601-7be39dd95e47",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ed412595-f65e-49ba-b4ec-8147ddb957b2",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d5188aed-c5b1-4df6-8fd0-deb32921c4e0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ee6def23-1fe1-402c-8697-a35696840c1c",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d96f2371-0486-433b-a66d-791479a4de51",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "91b1b9ff-30f8-4943-9716-626e2c2780de",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6d0eaf7b-8e53-481f-bb43-5c09e03b5a59",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "ae8fd6d1-f4e2-4932-90cf-ea83d4963f65",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f2a74d91-2fca-4571-8e89-a18b0685c626",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "19c63091-c570-468e-bbd4-1ddcd021aefe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "64918cd6-7241-45dc-85fb-5a21ea56c41a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c6016a3e-f9a0-41d0-9c1a-d1e1d9b78e12",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c3dffca7-6756-411f-a2fb-e5315efb67cb",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "50e5e34d-9741-415b-adf1-f85f84be8739",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1e3d10b5-b4cd-4a45-8460-a6dbc4fd8712",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4f80ed5c-1100-4d76-bff7-2cefbc686546",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d9fb9d1e-f8b6-4487-8244-11fc34ec429d",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "eeb0765a-0462-4628-8580-41fd95e22f6f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d2597718-d2be-4129-8bdf-6a31f8dd7af7",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "71c936fb-8ed2-40ae-9a50-8e6b74036fde",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "55a09f4a-d91a-439c-a7ce-f62e93a36c81",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "74b6cbbe-a142-4189-ae18-148a1e3c44bd",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f7bccdd5-d9aa-495e-a334-f23cc917634e",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "493d1223-e6cf-4e4d-9768-794fb6dce404",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "d6f9d108-6efa-466d-9ae8-56c12f79899f",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f33ff24f-e2b6-4dc4-99fa-72ed32d3d8f3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a3f0e80d-663c-4213-baa8-2cd8b6880887",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c88ff8e4-fc1d-4743-8e48-8e17e29d66d6",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "2ea9385c-bba9-4db2-b099-5b544a9af1da",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "1b90205c-6a87-4a6e-adb7-bee99e261eb5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9963e33d-893a-44ea-907d-8e7ae86e62fc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "40691f56-6343-4a29-9c1b-2a5e1122f8df",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "4ec5b46e-cf05-40cd-bb4a-27256e052576",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "c9f3f122-aceb-4276-b339-8dbc6f9774ce",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "0221f598-910d-429f-8ff1-281c96026e45",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "bbc330bf-7707-49d8-8513-56fa929f1bd3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8a74e63d-5d7f-4782-8a64-755471118817",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "40eabd5a-3d39-4365-a245-f61decb95b62",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "7b183c06-6065-40f2-8003-3108e34aafd3",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "63636fe2-0b58-457d-954c-8d1cd4d9a977",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "a39beaab-d979-4cd1-be49-4b52b9e219ac",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "f507ef2f-df23-49c6-926f-d3a8f83c79d5",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6b526929-7f5b-45ab-baa3-8e349aed9bb0",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "efa51824-ffe5-42e7-8b7b-ac8ac6c4424a",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "fe2f50d7-091c-4229-8240-1c85d9ffa776",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "15fc41fe-4cdd-4589-923c-c5f9e09a9e53",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "603a2859-c67a-4a3e-9a97-bcc62dd2e6dc",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "8cd4ed55-da49-4a70-9906-b302d5b1ddd1",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "df7fe68b-101d-471d-b5f2-a1fda7c6831b",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6b45abaa-9212-4a29-bd4f-a0b0cf7cc4ff",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "48a8d9c8-3c53-4d21-aedf-c78fbee32efe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "5b0d74b8-1f8b-4a28-8582-e25afe267051",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "6b332e39-6576-44b4-aae8-663ed3ecf790",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  },
+  {
+    "uuid": "9fff4c8a-1bc8-4dc2-a1b6-8899e5a4b3fe",
+    "kind": "stroke",
+    "old": 0.12,
+    "new": 0.15
+  }
+]

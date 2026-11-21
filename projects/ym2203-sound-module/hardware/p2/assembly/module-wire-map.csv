@@ -1,0 +1,9 @@
+board,carrier_land,module_signal,net,carrier_x_mm,carrier_y_mm,connection,note
+base,UBASE.JP1.1,SWCLK,SWCLK,44.905,18.72,JSWD.3,insulated wire; fit before mounting module
+base,UBASE.JP1.2,GND,GND,44.905,23.8,JSWD.2,insulated wire; fit before mounting module
+base,UBASE.JP1.3,SWDIO,SWDIO,44.905,21.26,JSWD.1,insulated wire; fit before mounting module
+base,UBASE.SW1.S,RESET_EXTRA_WIRE,RUN_N,69.0,8.5,module SW1 non-GND contact,insulated wire; fit before mounting module
+module,USOURCE.JP1.1,SWCLK,CORE_SWCLK,23.72,44.095,JSWD.1,insulated wire; fit before mounting module
+module,USOURCE.JP1.2,GND,GND,28.8,44.095,JSWD.2,insulated wire; fit before mounting module
+module,USOURCE.JP1.3,SWDIO,CORE_SWD,26.26,44.095,JSWD.3,insulated wire; fit before mounting module
+module,USOURCE.SW1.S,RESET_EXTRA_WIRE,CORE_RUN_N,13.5,20.0,module SW1 non-GND contact,insulated wire; fit before mounting module

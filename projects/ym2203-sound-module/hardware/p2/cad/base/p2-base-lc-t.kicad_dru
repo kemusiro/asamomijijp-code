@@ -1,0 +1,4 @@
+(version 1)
+(rule "Neltron5077 manufacturer pad-to-peg clearance"
+ (condition "A.memberOfFootprint('JUSB') && B.memberOfFootprint('JUSB')")
+ (constraint hole_clearance (min 0.15mm)))

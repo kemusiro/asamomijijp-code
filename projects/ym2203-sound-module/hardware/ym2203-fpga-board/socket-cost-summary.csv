@@ -1,6 +1,0 @@
-case,five_board_total_jpy_low,five_board_total_jpy_high,per_board_jpy_low,per_board_jpy_high,paired_saving_jpy_low_endpoint,paired_saving_jpy_high_endpoint,conditional_acceptance
-U_previous_double_side_full_outsource,115000,204000,23000,41000,0.0,0.0,False
-S_single_side_Standard_owner_sockets_common_logistics,106000,196000,22000,40000,8517.696,8517.696,False
-S_plus_owner_additional_shipping_allowance,106000,198000,22000,40000,8517.696,6405.696,False
-E_conditional_Economic_15_to_25_charged_types_plus_local_shipping,96000,188000,20000,38000,18651.072,16517.952,True
-E_all_types_charged_sensitivity_plus_local_shipping,109000,207000,22000,42000,5683.392,-2933.568,True

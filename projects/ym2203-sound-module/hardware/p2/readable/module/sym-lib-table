@@ -1,0 +1,1 @@
+(sym_lib_table (version 7) (lib (name "P2R") (type "KiCad") (uri "${KIPRJMOD}/P2R.kicad_sym") (options "") (descr "Original MIT readable circuit symbols")))

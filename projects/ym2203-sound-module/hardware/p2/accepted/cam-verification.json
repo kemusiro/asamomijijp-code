@@ -1,0 +1,150 @@
+{
+  "tools": {
+    "kicad": "10.0.5",
+    "gerbonara": "1.6.3"
+  },
+  "boards": {
+    "base": {
+      "outline_mm": [
+        100.0,
+        100.0
+      ],
+      "outline_segments": 4,
+      "copper_layers": 4,
+      "drills": {
+        "PTH": {
+          "holes_and_slots": 609,
+          "slots": 7,
+          "tools_mm": [
+            0.3,
+            0.6,
+            0.8,
+            0.9,
+            1.0,
+            1.1,
+            1.2
+          ],
+          "max_coordinate_rounding_mm": 0.0005
+        },
+        "NPTH": {
+          "holes_and_slots": 10,
+          "slots": 0,
+          "tools_mm": [
+            0.65,
+            1.0,
+            3.2
+          ],
+          "max_coordinate_rounding_mm": 0
+        }
+      },
+      "min_track_mm": 0.16,
+      "via_drills_mm": [
+        0.3
+      ],
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "cam_matches_native": true,
+      "parser_notes": [
+        "Aperture definition using macro RoundRect has more parameters than the macro uses.",
+        "G90 header statement found after end of header",
+        "Layer \"bottom paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, inner_1 copper, inner_2 copper, mechanical outline",
+        "Layer \"top paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, inner_1 copper, inner_2 copper, mechanical outline"
+      ]
+    },
+    "module": {
+      "outline_mm": [
+        100.0,
+        80.0
+      ],
+      "outline_segments": 4,
+      "copper_layers": 2,
+      "drills": {
+        "PTH": {
+          "holes_and_slots": 465,
+          "slots": 0,
+          "tools_mm": [
+            0.3,
+            0.8,
+            0.9,
+            1.0,
+            1.1
+          ],
+          "max_coordinate_rounding_mm": 0.0005
+        },
+        "NPTH": {
+          "holes_and_slots": 4,
+          "slots": 0,
+          "tools_mm": [
+            3.2
+          ],
+          "max_coordinate_rounding_mm": 0
+        }
+      },
+      "min_track_mm": 0.16,
+      "via_drills_mm": [
+        0.3
+      ],
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "cam_matches_native": true,
+      "parser_notes": [
+        "Aperture definition using macro RoundRect has more parameters than the macro uses.",
+        "G90 header statement found after end of header",
+        "Layer \"bottom paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline",
+        "Layer \"top paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline"
+      ]
+    },
+    "panel": {
+      "outline_mm": [
+        100.0,
+        76.0
+      ],
+      "outline_segments": 4,
+      "copper_layers": 2,
+      "drills": {
+        "PTH": {
+          "holes_and_slots": 196,
+          "slots": 8,
+          "tools_mm": [
+            0.3,
+            0.8,
+            1.0,
+            1.1,
+            1.8
+          ],
+          "max_coordinate_rounding_mm": 0.0005
+        },
+        "NPTH": {
+          "holes_and_slots": 10,
+          "slots": 0,
+          "tools_mm": [
+            1.6,
+            2.1,
+            2.2,
+            3.2
+          ],
+          "max_coordinate_rounding_mm": 0
+        }
+      },
+      "min_track_mm": 0.2,
+      "via_drills_mm": [
+        0.3
+      ],
+      "erc": 0,
+      "drc": 0,
+      "unconnected": 0,
+      "parity": 0,
+      "cam_matches_native": true,
+      "parser_notes": [
+        "Aperture definition using macro RoundRect has more parameters than the macro uses.",
+        "G90 header statement found after end of header",
+        "Layer \"bottom paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline",
+        "Layer \"top paste\" not found. Found layers: top copper, top mask, top silk, bottom copper, bottom mask, bottom silk, mechanical outline"
+      ]
+    }
+  }
+}
